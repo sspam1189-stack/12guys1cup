@@ -18,6 +18,39 @@ describe('summarizeSeason', () => {
     expect(team('u3')).toMatchObject({ playoffWins: 0, playoffLosses: 0 }); // toilet bowl doesn't count
   });
 
+  it('counts every playoff win but only the first playoff loss per team', () => {
+    const playoffSeason = summarizeSeason({
+      ...season,
+      matchups: {
+        ...season.matchups,
+        4: [
+          { matchup_id: 1, roster_id: 1, points: 105 },
+          { matchup_id: 1, roster_id: 4, points: 88 },
+          { matchup_id: 2, roster_id: 2, points: 99 },
+          { matchup_id: 2, roster_id: 3, points: 91 },
+        ],
+        5: [
+          { matchup_id: 1, roster_id: 1, points: 110 },
+          { matchup_id: 1, roster_id: 2, points: 103 },
+          { matchup_id: 2, roster_id: 3, points: 97 },
+          { matchup_id: 2, roster_id: 4, points: 82 },
+        ],
+      },
+      winners_bracket: [
+        { r: 1, m: 1, t1: 1, t2: 4, w: 1, l: 4 },
+        { r: 1, m: 2, t1: 2, t2: 3, w: 2, l: 3 },
+        { r: 2, m: 1, t1: 1, t2: 2, w: 1, l: 2, p: 1 },
+        { r: 2, m: 2, t1: 3, t2: 4, w: 3, l: 4, p: 3 },
+      ],
+    });
+    const playoffTeam = (userId) => playoffSeason.standings.find((t) => t.userId === userId);
+
+    expect(playoffTeam('u1')).toMatchObject({ playoffWins: 2, playoffLosses: 0 });
+    expect(playoffTeam('u2')).toMatchObject({ playoffWins: 1, playoffLosses: 1 });
+    expect(playoffTeam('u3')).toMatchObject({ playoffWins: 1, playoffLosses: 1 });
+    expect(playoffTeam('u4')).toMatchObject({ playoffWins: 0, playoffLosses: 1 });
+  });
+
   it('awards honors: champion, runner-up, PF champ, last place', () => {
     expect(summary.champion).toBe('u1');
     expect(summary.runnerUp).toBe('u2');
@@ -54,9 +87,10 @@ describe('summarizeSeason', () => {
     expect(sleeperStyle.lastPlace).toBe('u3');
   });
 
-  it('emits games: 6 regular + 1 playoff, no consolation', () => {
+  it('emits games: regular, playoff, and Shit Bowl display rows', () => {
     expect(summary.games.filter((g) => g.type === 'regular')).toHaveLength(6);
     expect(summary.games.filter((g) => g.type === 'playoff')).toHaveLength(1);
+    expect(summary.games.filter((g) => g.type === 'shit bowl')).toHaveLength(1);
   });
 
   it('builds the draft board', () => {

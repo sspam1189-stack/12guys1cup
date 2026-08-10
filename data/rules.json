@@ -1,4 +1,32 @@
 {
- "payouts": [],
- "bylaws": []
+ "payouts": [
+  {
+   "label": "Trophy plaque",
+   "amount": "$30"
+  },
+  {
+   "label": "Most PF",
+   "amount": "Buy-in back"
+  },
+  {
+   "label": "3rd place",
+   "amount": "Buy-in back"
+  },
+  {
+   "label": "2nd place",
+   "amount": "2x buy-in"
+  },
+  {
+   "label": "1st place",
+   "amount": "The rest"
+  },
+  {
+   "label": "Weekly payouts",
+   "amount": "Based on late punishment fees"
+  }
+ ],
+ "bylaws": [
+  "Punishment is decided by Week 1.",
+  "Punishment late fee: if the loser does not complete the punishment by the start of the next draft, the loser must pay one extra buy-in, which goes into weekly payouts."
+ ]
 }

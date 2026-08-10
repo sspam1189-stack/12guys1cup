@@ -1,11 +1,16 @@
 ---
 import '../styles/global.css';
-const { title = '12 Guys 1 Cup' } = Astro.props;
+import members from '../../data/computed/members.json';
+import seasons from '../../data/computed/seasons.json';
+const { title = '12 Guys 1 Cup', compact = false, hideSeasonHub = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const links = [
-  ['/standings/', 'All-Time'], ['/h2h/', 'Head-to-Head'], ['/records/', 'Records'],
-  ['/trades/', 'Trades'], ['/punishments/', 'Punishments'], ['/rules/', 'Rules'],
+  ['/power/', 'Historical Power Rankings'], ['/standings/', 'All-Time'], ['/h2h/', 'Head-to-Head'], ['/records/', 'Records'],
+  ['/punishments/', 'Punishments'], ['/rules/', 'Rules'],
 ];
+const playerLinks = Object.values(members).sort((a, b) => a.name.localeCompare(b.name));
+const seasonLinks = [...seasons].sort((a, b) => b.season.localeCompare(a.season));
+const currentPath = Astro.url.pathname;
 ---
 <html lang="en">
   <head>
@@ -13,11 +18,40 @@ const links = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
   </head>
-  <body>
+  <body class={compact ? 'compact-page' : undefined}>
     <nav>
-      <a class="brand" href={`${base}/`}>🏆 12 Guys 1 Cup</a>
+      <a class="brand" href={`${base}/`}>12 Guys 1 Cup</a>
+      <details class="nav-dropdown">
+        <summary>Players</summary>
+        <div class="nav-dropdown-menu">
+          {playerLinks.map((player) => (
+            <a href={`${base}/member/${player.userId}/`}>{player.name}</a>
+          ))}
+        </div>
+      </details>
       {links.map(([href, label]) => <a href={`${base}${href}`}>{label}</a>)}
     </nav>
+    {!hideSeasonHub && (
+      <div class="season-hub-strip" aria-label="Season hub">
+        <div class="season-hub-scroll">
+          {seasonLinks.map((season) => {
+            const href = `${base}/season/${season.season}/`;
+            const isActive = currentPath.endsWith(`/season/${season.season}/`);
+            return (
+              <a
+                class="season-hub-pill"
+                href={href}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                <span class="season-hub-year">{season.season}</span>
+                <span class="season-hub-name">{season.name}</span>
+                {season.notStarted && <span class="season-hub-result">Not started</span>}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    )}
     <main><slot /></main>
   </body>
 </html>

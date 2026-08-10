@@ -1,5 +1,12 @@
 const round2 = (n) => Math.round(n * 100) / 100;
 
+const legacyLastPlaceCounts = {
+  // 2020 punishment victim.
+  '467208097522249728': 1,
+  // 2019 punishment victim.
+  '596094153587216384': 1,
+};
+
 export function winPct(c) {
   const games = c.wins + c.losses + c.ties;
   return games ? (c.wins + c.ties / 2) / games : 0;
@@ -27,6 +34,15 @@ export function buildAlltime(seasonSummaries) {
       if (s.lastPlace === t.userId) c.lastPlaces++;
       if (t.playoffWins + t.playoffLosses > 0) c.playoffAppearances++;
     }
+  }
+  for (const [userId, count] of Object.entries(legacyLastPlaceCounts)) {
+    if (careers[userId]) careers[userId].lastPlaces += count;
+  }
+  for (const c of Object.values(careers)) {
+    const finishes = Object.values(c.finishes);
+    c.avgRegularSeasonRank = finishes.length
+      ? round2(finishes.reduce((sum, place) => sum + place, 0) / finishes.length)
+      : null;
   }
   return Object.values(careers).sort((a, b) => winPct(b) - winPct(a));
 }

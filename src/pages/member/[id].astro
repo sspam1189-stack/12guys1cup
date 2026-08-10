@@ -3,30 +3,28 @@ import Base from '../../layouts/Base.astro';
 import members from '../../../data/computed/members.json';
 import alltime from '../../../data/computed/alltime.json';
 import seasons from '../../../data/computed/seasons.json';
-import trades from '../../../data/computed/trades.json';
 
 export function getStaticPaths() {
   return Object.keys(members).map((id) => ({ params: { id } }));
 }
+
 const { id } = Astro.params;
 const m = members[id];
 const career = alltime.find((c) => c.userId === id);
-const name = (uid) => members[uid]?.name ?? uid;
-const myTrades = trades.filter((t) => t.parties.includes(id));
 const rows = seasons
   .filter((s) => !s.notStarted && s.standings.some((t) => t.userId === id))
   .map((s) => ({ s, t: s.standings.find((t) => t.userId === id) }))
   .sort((a, b) => b.s.season.localeCompare(a.s.season));
 const honors = rows.flatMap(({ s }) => [
-  s.champion === id && `🥇 ${s.season} Champion`,
-  s.runnerUp === id && `🥈 ${s.season} Runner-up`,
-  s.third === id && `🥉 ${s.season} Third`,
-  s.pfChamp === id && `📈 ${s.season} PF Champ`,
-  s.lastPlace === id && `💩 ${s.season} Last Place`,
+  s.champion === id && `${s.season} Champion`,
+  s.runnerUp === id && `${s.season} Runner-up`,
+  s.third === id && `${s.season} Third`,
+  s.pfChamp === id && `${s.season} PF Champ`,
+  s.lastPlace === id && `${s.season} Last Place`,
 ]).filter(Boolean);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<Base title={`${m.name} — 12 Guys 1 Cup`}>
+<Base title={`${m.name} - 12 Guys 1 Cup`}>
   <h1>
     {m.avatar && <img src={`https://sleepercdn.com/avatars/thumbs/${m.avatar}`} alt="" width="36" height="36" style="border-radius:50%;vertical-align:middle" />}
     {m.name}
@@ -34,8 +32,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   {career && (
     <p>
       Career: <strong>{career.wins}-{career.losses}{career.ties ? `-${career.ties}` : ''}</strong>
-      &nbsp;· {career.pf.toFixed(2)} PF · playoffs {career.playoffWins}-{career.playoffLosses}
-      &nbsp;· {career.seasons} seasons
+      &nbsp; - {career.pf.toFixed(2)} PF
+      &nbsp; - {career.seasons} seasons
     </p>
   )}
   {honors.length > 0 && <p>{honors.map((h) => <span class="badge" style="margin-right:0.3rem">{h}</span>)}</p>}
@@ -48,19 +46,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <tr>
           <td><a href={`${base}/season/${s.season}/`}>{s.season}</a></td>
           <td>{t.teamName}</td>
-          <td>{t.place}{s.champion === id ? ' 🏆' : s.lastPlace === id ? ' 💩' : ''}</td>
+          <td>{t.place}{s.champion === id ? ' Champ' : s.lastPlace === id ? ' Last' : ''}</td>
           <td>{t.wins}</td><td>{t.losses}</td>
           <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
         </tr>
       ))}
     </tbody>
   </table></div>
-
-  <h2>Trades ({myTrades.length})</h2>
-  {myTrades.map((t) => (
-    <div class="card" style="margin-bottom:0.5rem">
-      <div class="muted">{t.season} · week {t.week} · with {t.parties.filter((p) => p !== id).map(name).join(', ')}</div>
-      <div>Received: {[...t.assets[id].players, ...t.assets[id].picks].join(', ') || 'nothing'}</div>
-    </div>
-  ))}
 </Base>

@@ -3,60 +3,103 @@ import Base from '../layouts/Base.astro';
 import MemberLink from '../components/MemberLink.astro';
 import h2h from '../../data/computed/h2h.json';
 import members from '../../data/computed/members.json';
+
 const ids = Object.keys(members);
 const name = (id) => members[id]?.name ?? id;
 const cell = (r, c) => h2h[r < c ? `${r}|${c}` : `${c}|${r}`] ?? null;
-// Record of `r` against `c` from r's perspective.
 const rec = (r, c) => {
   const x = cell(r, c);
   if (!x) return null;
   const mine = x.a === r;
   const reg = mine ? [x.regular.aWins, x.regular.bWins] : [x.regular.bWins, x.regular.aWins];
-  const po = mine ? [x.playoff.aWins, x.playoff.bWins] : [x.playoff.bWins, x.playoff.aWins];
-  return { reg, po, hasPo: x.playoff.aWins + x.playoff.bWins > 0, key: x.a + x.b };
+  return { reg, key: `${x.a}|${x.b}` };
 };
-const pairings = Object.values(h2h);
+const memberNames = Object.fromEntries(Object.entries(members).map(([id, member]) => [id, member.name ?? id]));
 ---
-<Base title="Head-to-Head — 12 Guys 1 Cup">
-  <h1>Head-to-Head</h1>
-  <p class="muted">All-time regular-season records, row vs column. Playoff meetings in parentheses. Click a cell for the game list.</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th></th>{ids.map((c) => <th>{name(c)}</th>)}</tr></thead>
+<Base title="Head-to-Head - 12 Guys 1 Cup" compact={true} hideSeasonHub={true}>
+  <section class="h2h-page">
+    <div class="h2h-header">
+      <h1>Head-to-Head</h1>
+      <span class="muted">Rows are players. Columns are opponents. Click a record for history.</span>
+    </div>
+    <div class="table-wrap h2h-table-wrap">
+      <table class="h2h-matrix">
+      <thead><tr><th></th>{ids.map((c) => <th title={name(c)}>{name(c)}</th>)}</tr></thead>
       <tbody>
         {ids.map((r) => (
           <tr>
-            <th><MemberLink id={r} /></th>
+            <th title={name(r)}><MemberLink id={r} /></th>
             {ids.map((c) => {
-              if (r === c) return <td class="muted">—</td>;
+              if (r === c) return <td class="muted">-</td>;
               const x = rec(r, c);
               return x
-                ? <td><a href={`#p-${x.key}`}>{x.reg[0]}-{x.reg[1]}{x.hasPo ? ` (${x.po[0]}-${x.po[1]})` : ''}</a></td>
-                : <td class="muted">·</td>;
+                ? (
+                  <td>
+                    <button class="h2h-cell-button" type="button" data-h2h-key={x.key}>
+                      {x.reg[0]}-{x.reg[1]}
+                    </button>
+                  </td>
+                )
+                : <td class="muted">-</td>;
             })}
           </tr>
         ))}
       </tbody>
-    </table>
-  </div>
+      </table>
+    </div>
+  </section>
 
-  <h2>All Matchups</h2>
-  {pairings.map((p) => (
-    <details id={`p-${p.a}${p.b}`} class="card" style="margin-bottom:0.5rem">
-      <summary>
-        {name(p.a)} vs {name(p.b)} — {p.regular.aWins}-{p.regular.bWins}
-        {p.playoff.aWins + p.playoff.bWins > 0 ? ` (playoffs ${p.playoff.aWins}-${p.playoff.bWins})` : ''}
-      </summary>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Season</th><th>Week</th><th>Type</th><th>{name(p.a)}</th><th>{name(p.b)}</th></tr></thead>
-        <tbody>
-          {p.games.map((g) => {
-            const [pa, pb] = g.a.userId === p.a ? [g.a.points, g.b.points] : [g.b.points, g.a.points];
-            return <tr><td>{g.season}</td><td>{g.week}</td><td>{g.type}</td>
-              <td class={pa > pb ? 'gold' : ''}>{pa}</td><td class={pb > pa ? 'gold' : ''}>{pb}</td></tr>;
-          })}
-        </tbody>
-      </table></div>
-    </details>
-  ))}
+  <section class="matchup-panel card" data-h2h-panel hidden>
+    <div class="matchup-panel-head">
+      <h2 data-h2h-title>Matchup History</h2>
+      <button class="matchup-close" type="button" data-h2h-close aria-label="Close matchup history">x</button>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr data-h2h-head></tr></thead>
+      <tbody data-h2h-body></tbody>
+    </table></div>
+  </section>
+
+  <script is:inline define:vars={{ h2hData: h2h, memberNames }}>
+    const buttons = document.querySelectorAll('[data-h2h-key]');
+    const panel = document.querySelector('[data-h2h-panel]');
+    const title = document.querySelector('[data-h2h-title]');
+    const head = document.querySelector('[data-h2h-head]');
+    const body = document.querySelector('[data-h2h-body]');
+    const close = document.querySelector('[data-h2h-close]');
+    const nameFor = (id) => memberNames[id] ?? id;
+    const scoreClass = (mine, theirs) => mine > theirs ? ' class="gold"' : '';
+    const renderMatchup = (key, updateHash = true) => {
+      const p = h2hData[key];
+      if (!p) return;
+      buttons.forEach((button) => {
+        button.setAttribute('aria-selected', button.dataset.h2hKey === key ? 'true' : 'false');
+      });
+      panel.hidden = false;
+      title.textContent = `${nameFor(p.a)} vs ${nameFor(p.b)} - ${p.regular.aWins}-${p.regular.bWins}`;
+      head.innerHTML = `<th>Season</th><th>Week</th><th>${nameFor(p.a)}</th><th>${nameFor(p.b)}</th>`;
+      body.innerHTML = p.games.map((g) => {
+        const pa = g.a.userId === p.a ? g.a.points : g.b.points;
+        const pb = g.a.userId === p.a ? g.b.points : g.a.points;
+        return `<tr><td>${g.season}</td><td>${g.week}</td><td${scoreClass(pa, pb)}>${pa}</td><td${scoreClass(pb, pa)}>${pb}</td></tr>`;
+      }).join('');
+      if (updateHash) window.history.replaceState(null, '', `#p-${p.a}${p.b}`);
+    };
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => renderMatchup(button.dataset.h2hKey));
+    });
+    if (window.location.hash.startsWith('#p-')) {
+      const id = window.location.hash.slice(3);
+      const key = Object.keys(h2hData).find((item) => item.replace('|', '') === id);
+      if (key) renderMatchup(key, false);
+    }
+    close.addEventListener('click', () => {
+      panel.hidden = true;
+      buttons.forEach((button) => button.setAttribute('aria-selected', 'false'));
+      window.history.replaceState(null, '', window.location.pathname);
+    });
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !panel.hidden) close.click();
+    });
+  </script>
 </Base>

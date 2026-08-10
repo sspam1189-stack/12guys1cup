@@ -66,16 +66,43 @@ export function summarizeSeason(raw, overrides = {}) {
   for (const t of teams.values()) { t.pf = round2(t.pf); t.pa = round2(t.pa); }
 
   // Playoffs: winners-bracket games only. Round r plays in week pws + r - 1.
-  for (const match of raw.winners_bracket ?? []) {
+  // Every playoff win counts, but only a team's first playoff loss counts.
+  const playoffLostRosters = new Set();
+  const winnerMatches = [...(raw.winners_bracket ?? [])].sort((a, b) => a.r - b.r || a.m - b.m);
+  for (const match of winnerMatches) {
     if (typeof match.t1 !== 'number' || typeof match.t2 !== 'number' || match.w == null) continue;
     const week = pws + match.r - 1;
     const pair = bracketPair(match);
     if (!pair) continue;
     const ta = teams.get(pair.a.roster_id);
     const tb = teams.get(pair.b.roster_id);
-    if (pair.a.points > pair.b.points) { ta.playoffWins++; tb.playoffLosses++; }
-    else { tb.playoffWins++; ta.playoffLosses++; }
+    if (pair.a.points > pair.b.points) {
+      ta.playoffWins++;
+      if (!playoffLostRosters.has(tb.rosterId)) {
+        tb.playoffLosses++;
+        playoffLostRosters.add(tb.rosterId);
+      }
+    } else {
+      tb.playoffWins++;
+      if (!playoffLostRosters.has(ta.rosterId)) {
+        ta.playoffLosses++;
+        playoffLostRosters.add(ta.rosterId);
+      }
+    }
     games.push(game(week, 'playoff', ta, pair.a.points, tb, pair.b.points));
+  }
+
+  // Shit Bowl / losers-bracket games are shown in weekly results, but do not
+  // count toward playoff W-L.
+  const loserMatches = [...(raw.losers_bracket ?? [])].sort((a, b) => a.r - b.r || a.m - b.m);
+  for (const match of loserMatches) {
+    if (typeof match.t1 !== 'number' || typeof match.t2 !== 'number' || match.w == null) continue;
+    const week = pws + match.r - 1;
+    const pair = bracketPair(match);
+    if (!pair) continue;
+    const ta = teams.get(pair.a.roster_id);
+    const tb = teams.get(pair.b.roster_id);
+    games.push(game(week, 'shit bowl', ta, pair.a.points, tb, pair.b.points));
   }
 
   // Placements. Winners bracket p:X → places X and X+1.
@@ -110,8 +137,8 @@ export function summarizeSeason(raw, overrides = {}) {
   const runnerUp = final ? teams.get(final.l)?.userId ?? null : null;
   const thirdMatch = (raw.winners_bracket ?? []).find((m) => m.p === 3 && m.w != null);
   const third = thirdMatch ? teams.get(thirdMatch.w)?.userId ?? null : null;
-  const loserMatches = (raw.losers_bracket ?? []).filter((m) => m.p === 1);
-  const lastMatch = loserMatches.sort((a, b) => b.r - a.r || b.m - a.m)[0];
+  const lastPlaceMatches = (raw.losers_bracket ?? []).filter((m) => m.p === 1);
+  const lastMatch = lastPlaceMatches.sort((a, b) => b.r - a.r || b.m - a.m)[0];
   const lastPlaceRosterId = lastMatch
     ? (scoreOutcome(lastMatch)?.worseRosterId ?? lastMatch.w)
     : null;

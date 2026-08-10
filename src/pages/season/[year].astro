@@ -8,68 +8,217 @@ export function getStaticPaths() {
   return seasons.map((s) => ({ params: { year: s.season }, props: { s } }));
 }
 const { s } = Astro.props;
-const name = (id) => members[id]?.name ?? id;
-const weeks = s.notStarted ? [] : [...new Set(s.games.map((g) => g.week))].sort((a, b) => a - b);
-const rounds = s.notStarted ? [] : [...new Set(s.draft.map((p) => p.round))].sort((a, b) => a - b);
+const weeks = s.notStarted ? [] : [...new Set(s.games.map((g) => g.week))].sort((a, b) => b - a);
+const winPct = (t) => {
+  const games = t.wins + t.losses + t.ties;
+  return games ? (t.wins + t.ties / 2) / games : 0;
+};
+const finalStandings = s.notStarted ? [] : [...s.standings].sort((a, b) => a.place - b.place);
+const regularStandings = s.notStarted
+  ? []
+  : [...s.standings].sort((a, b) =>
+    winPct(b) - winPct(a)
+    || b.wins - a.wins
+    || b.pf - a.pf
+    || a.pa - b.pa
+    || a.teamName.localeCompare(b.teamName));
+const weeklyResults = s.notStarted
+  ? []
+  : [...s.games].sort((a, b) =>
+    b.week - a.week
+    || a.type.localeCompare(b.type)
+    || Math.max(b.a.points, b.b.points) - Math.max(a.a.points, a.b.points));
+const draftBoard = s.notStarted ? [] : [...s.draft].sort((a, b) => a.pickNo - b.pickNo);
+const draftSlots = [...new Set(draftBoard.map((p) => p.slot))].sort((a, b) => a - b);
+const draftRounds = [...new Set(draftBoard.map((p) => p.round))].sort((a, b) => a - b);
+const draftPickByCell = Object.fromEntries(draftBoard.map((p) => [`${p.round}-${p.slot}`, p]));
+const draftTeamBySlot = draftSlots.map((slot) => draftBoard.find((p) => p.slot === slot));
+const avatarUrl = (id) => {
+  const avatar = members[id]?.avatar;
+  return avatar ? `https://sleepercdn.com/avatars/thumbs/${avatar}` : '';
+};
 ---
-<Base title={`${s.season} Season — 12 Guys 1 Cup`}>
-  <h1>{s.season} — {s.name}</h1>
+<Base title={`${s.season} Season - 12 Guys 1 Cup`}>
+  <h1>{s.season} - {s.name}</h1>
   {s.notStarted ? (
     <p class="badge">This season hasn't started yet.</p>
   ) : (
     <>
-      <p>
-        🥇 <strong class="gold"><MemberLink id={s.champion} /></strong>
-        {s.runnerUp && <> · 🥈 <MemberLink id={s.runnerUp} /></>}
-        {s.third && <> · 🥉 <MemberLink id={s.third} /></>}
-        &nbsp;· 📈 PF champ: <MemberLink id={s.pfChamp} />
-        &nbsp;· 💩 Last place: <span class="red"><MemberLink id={s.lastPlace} /></span>
-      </p>
+      <section class="season-honors" aria-label={`${s.season} season honors`}>
+        <div class="season-honor-lead">
+          <span class="season-honor-label">Champion</span>
+          <strong><MemberLink id={s.champion} /></strong>
+        </div>
+        <div class="season-honor-grid">
+          {s.runnerUp && (
+            <div class="season-honor-item">
+              <span>Runner-up</span>
+              <strong><MemberLink id={s.runnerUp} /></strong>
+            </div>
+          )}
+          {s.third && (
+            <div class="season-honor-item">
+              <span>Third</span>
+              <strong><MemberLink id={s.third} /></strong>
+            </div>
+          )}
+          <div class="season-honor-item">
+            <span>PF champ</span>
+            <strong><MemberLink id={s.pfChamp} /></strong>
+          </div>
+          <div class="season-honor-item danger">
+            <span>Last place</span>
+            <strong><MemberLink id={s.lastPlace} /></strong>
+          </div>
+        </div>
+      </section>
 
-      <h2>Final Standings</h2>
+      <div class="section-heading-row">
+        <h2 id="standings-heading">Final Standings</h2>
+        <div class="view-toggle" role="tablist" aria-label="Standings view">
+          <button
+            class="view-toggle-button"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-standings-view="final"
+          >
+            Final Standings
+          </button>
+          <button
+            class="view-toggle-button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-standings-view="regular"
+          >
+            Regular Season
+          </button>
+        </div>
+      </div>
       <div class="table-wrap"><table>
         <thead><tr><th>#</th><th>Team</th><th>Member</th><th>W</th><th>L</th><th>T</th>
-          <th>PF</th><th>PA</th><th>Playoff W-L</th></tr></thead>
-        <tbody>
-          {s.standings.map((t) => (
+          <th>PF</th><th>PA</th></tr></thead>
+        <tbody data-standings-panel="final">
+          {finalStandings.map((t) => (
             <tr>
               <td>{t.place}</td><td>{t.teamName}</td><td><MemberLink id={t.userId} /></td>
               <td>{t.wins}</td><td>{t.losses}</td><td>{t.ties}</td>
               <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
-              <td>{t.playoffWins + t.playoffLosses > 0 ? `${t.playoffWins}-${t.playoffLosses}` : '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+        <tbody data-standings-panel="regular" hidden>
+          {regularStandings.map((t, i) => (
+            <tr>
+              <td>{i + 1}</td><td>{t.teamName}</td><td><MemberLink id={t.userId} /></td>
+              <td>{t.wins}</td><td>{t.losses}</td><td>{t.ties}</td>
+              <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
       </table></div>
 
-      <h2>Weekly Results</h2>
-      {weeks.map((w) => (
-        <details class="card" style="margin-bottom:0.5rem">
-          <summary>Week {w}{s.games.some((g) => g.week === w && g.type === 'playoff') ? ' · playoffs' : ''}</summary>
-          <div class="table-wrap"><table><tbody>
-            {s.games.filter((g) => g.week === w).map((g) => (
-              <tr>
-                <td class={g.a.points > g.b.points ? 'gold' : ''}>{name(g.a.userId)} {g.a.points}</td>
-                <td class={g.b.points > g.a.points ? 'gold' : ''}>{name(g.b.userId)} {g.b.points}</td>
-                <td class="muted">{g.type}</td>
+      <div class="section-heading-row">
+        <h2>Weekly Results</h2>
+        <div class="week-filter" role="tablist" aria-label="Weekly results filter">
+          {weeks.map((w, i) => (
+            <button class="week-filter-button" type="button" aria-selected={i === 0 ? 'true' : 'false'} data-week-filter={w}>W{w}</button>
+          ))}
+        </div>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Week</th><th>Type</th><th>Winner</th><th>Score</th><th>Opponent</th><th>Score</th></tr></thead>
+        <tbody>
+          {weeklyResults.map((g) => {
+            const aWon = g.a.points >= g.b.points;
+            const winner = aWon ? g.a : g.b;
+            const loser = aWon ? g.b : g.a;
+            return (
+              <tr data-week-row={g.week} hidden={g.week !== weeks[0]}>
+                <td>{g.week}</td>
+                <td><span class="badge">{g.type}</span></td>
+                <td class="result-winner"><MemberLink id={winner.userId} /></td>
+                <td class="result-winner">{winner.points.toFixed(2)}</td>
+                <td class="result-loser"><MemberLink id={loser.userId} /></td>
+                <td class="result-loser">{loser.points.toFixed(2)}</td>
               </tr>
-            ))}
-          </tbody></table></div>
-        </details>
-      ))}
+            );
+          })}
+        </tbody>
+      </table></div>
 
       <h2>Draft Board</h2>
-      {rounds.map((r) => (
-        <details class="card" style="margin-bottom:0.5rem" open={r === 1}>
-          <summary>Round {r}</summary>
-          <div class="table-wrap"><table><tbody>
-            {s.draft.filter((p) => p.round === r).map((p) => (
-              <tr><td class="muted">{p.pickNo}</td><td>{p.player} <span class="badge">{p.position}</span></td>
-                <td><MemberLink id={p.userId} /></td></tr>
-            ))}
-          </tbody></table></div>
-        </details>
-      ))}
+      <div class="draft-board-wrap">
+        <div class="draft-board" style={`--draft-columns:${draftSlots.length}`}>
+          <div class="draft-corner">Round</div>
+          {draftTeamBySlot.map((teamPick) => (
+            <div class="draft-team">
+              {teamPick && avatarUrl(teamPick.userId) && (
+                <img src={avatarUrl(teamPick.userId)} alt="" width="34" height="34" />
+              )}
+              <strong>{teamPick ? <MemberLink id={teamPick.userId} /> : 'Open'}</strong>
+            </div>
+          ))}
+          {draftRounds.map((round) => (
+            <>
+              <div class="draft-round">R{round}</div>
+              {draftSlots.map((slot) => {
+                const p = draftPickByCell[`${round}-${slot}`];
+                return p ? (
+                  <div class="draft-pick" data-position={p.position} title={`${p.pickNo}. ${p.player} - ${p.position}`}>
+                    <div class="draft-pick-top">
+                      <strong>{p.player}</strong>
+                      <span>{p.round}.{p.slot}</span>
+                    </div>
+                    <div class="draft-pick-meta">
+                      <span>{p.position}</span>
+                      <span>#{p.pickNo}</span>
+                    </div>
+                  </div>
+                ) : (
+                  <div class="draft-pick draft-pick-empty">-</div>
+                );
+              })}
+            </>
+          ))}
+        </div>
+      </div>
+
+      <script>
+        const standingsHeading = document.querySelector('#standings-heading');
+        const standingsButtons = document.querySelectorAll('[data-standings-view]');
+        const standingsPanels = document.querySelectorAll('[data-standings-panel]');
+        const labels = {
+          final: 'Final Standings',
+          regular: 'Regular Season Standings',
+        };
+        standingsButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const view = button.dataset.standingsView;
+            standingsButtons.forEach((item) => {
+              item.setAttribute('aria-selected', item === button ? 'true' : 'false');
+            });
+            standingsPanels.forEach((panel) => {
+              panel.hidden = panel.dataset.standingsPanel !== view;
+            });
+            standingsHeading.textContent = labels[view];
+          });
+        });
+        const weekButtons = document.querySelectorAll('[data-week-filter]');
+        const weekRows = document.querySelectorAll('[data-week-row]');
+        weekButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const week = button.dataset.weekFilter;
+            weekButtons.forEach((item) => {
+              item.setAttribute('aria-selected', item === button ? 'true' : 'false');
+            });
+            weekRows.forEach((row) => {
+              row.hidden = row.dataset.weekRow !== week;
+            });
+          });
+        });
+      </script>
     </>
   )}
 </Base>

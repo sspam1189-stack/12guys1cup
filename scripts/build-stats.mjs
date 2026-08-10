@@ -4,6 +4,7 @@ import { summarizeSeason } from './lib/season.mjs';
 import { buildAlltime } from './lib/alltime.mjs';
 import { buildH2h } from './lib/h2h.mjs';
 import { buildRecords } from './lib/records.mjs';
+import { buildPowerRankings } from './lib/power.mjs';
 import { extractTrades } from './lib/trades.mjs';
 
 const DATA = new URL('../data/', import.meta.url);
@@ -62,6 +63,7 @@ const write = (name, data) =>
 await write('members', members);
 await write('seasons', summaries);
 await write('alltime', buildAlltime(summaries));
+await write('power', buildPowerRankings(summaries));
 await write('h2h', buildH2h(allGames));
 await write('records', buildRecords(summaries));
 await write('trades', trades);

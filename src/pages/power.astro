@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import power from '../../data/computed/power.json';
+import members from '../../data/computed/members.json';
+import seasons from '../../data/computed/seasons.json';
+
+const latest = seasons.filter((s) => !s.notStarted).map((s) => s.season).sort().at(-1);
+const isFormer = (id) => !(members[id]?.seasons ?? []).some((s) => s >= latest);
+const activePower = power.filter((p) => !isFormer(p.userId));
+const formerPower = power.filter((p) => isFormer(p.userId));
+const sections = [
+  ['Active Players', activePower],
+  ['Former Players', formerPower],
+];
+---
+<Base title="Historical Power Rankings - 12 Guys 1 Cup">
+  <h1>Historical Power Rankings</h1>
+  <p class="muted">Elo is based on historical regular-season matchups. Bracket adjustment is a small formulaic nudge: +20 for 1st, +10 for 2nd, +5 for 3rd, -5 for a Shit Bowl finalist, and -15 for last place.</p>
+
+  {sections.map(([label, rows]) => (
+    <>
+      <h2>{label}</h2>
+      <div class="table-wrap">
+        <table class="sortable">
+          <thead><tr>
+            <th>#</th>
+            <th>Member</th>
+            <th>Rating</th>
+            <th>Record</th>
+            <th>Last Change</th>
+            <th>Peak</th>
+            <th>Games</th>
+          </tr></thead>
+          <tbody>
+            {rows.map((p, i) => (
+              <tr>
+                <td>{i + 1}</td>
+                <td><MemberLink id={p.userId} /></td>
+                <td data-v={p.rating}><strong>{p.rating.toFixed(1)}</strong></td>
+                <td>{p.wins}-{p.losses}{p.ties ? `-${p.ties}` : ''}</td>
+                <td class={p.lastWeekChange > 0 ? 'green' : p.lastWeekChange < 0 ? 'red' : undefined} data-v={p.lastWeekChange}>
+                  {p.lastWeekChange > 0 ? '+' : ''}{p.lastWeekChange.toFixed(1)}
+                </td>
+                <td data-v={p.peakRating}>{p.peakRating.toFixed(1)}</td>
+                <td>{p.games}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  ))}
+  <script src="../scripts/sort-tables.js"></script>
+</Base>

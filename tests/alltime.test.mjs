@@ -13,7 +13,7 @@ describe('buildAlltime', () => {
   it('sums careers across seasons and skips unstarted ones', () => {
     expect(career('u1')).toMatchObject({
       seasons: 2, wins: 6, losses: 0, pf: 660, championships: 2, pfTitles: 2,
-      playoffAppearances: 2, lastPlaces: 0, playoffWins: 2,
+      playoffAppearances: 2, lastPlaces: 0, playoffWins: 2, avgRegularSeasonRank: 1,
     });
     expect(career('u2')).toMatchObject({ runnerUps: 2, thirds: 0 });
     expect(career('u3')).toMatchObject({ lastPlaces: 2, playoffAppearances: 0 });
@@ -21,6 +21,7 @@ describe('buildAlltime', () => {
 
   it('records year-by-year finishes', () => {
     expect(career('u4').finishes).toEqual({ 2030: 3, 2031: 3 });
+    expect(career('u4').avgRegularSeasonRank).toBe(3);
   });
 
   it('sorts by win percentage descending', () => {
