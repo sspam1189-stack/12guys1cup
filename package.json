@@ -1,0 +1,17 @@
+{
+  "name": "12guys1cup",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-data.mjs",
+    "compute": "node scripts/build-stats.mjs",
+    "test": "vitest run",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.2.0",
+    "vitest": "^4.1.10"
+  }
+}
