@@ -14,8 +14,8 @@ const pct = (c) => {
 <Base title="All-Time Standings - 12 Guys 1 Cup">
   <h1>All-Time Standings</h1>
   <p class="muted">Regular season only. Click headers to sort.</p>
-  <div class="table-wrap">
-    <table class="sortable">
+  <div class="table-wrap alltime-table-wrap">
+    <table class="sortable alltime-table mobile-card-table">
       <thead><tr>
         <th>Member</th><th>Seasons</th><th>Avg Reg Rank</th><th>W</th><th>L</th><th>T</th><th>Win %</th>
         <th>Avg PF</th><th>Avg PA</th><th>Champ</th><th>2nd</th><th>3rd</th>
@@ -24,17 +24,17 @@ const pct = (c) => {
       <tbody>
         {alltime.map((c) => (
           <tr>
-            <td><MemberLink id={c.userId} />{isFormer(c.userId) && <span class="badge"> former</span>}</td>
-            <td>{c.seasons}</td>
-            <td data-v={c.avgRegularSeasonRank ?? 999}>{c.avgRegularSeasonRank?.toFixed(2) ?? ''}</td>
-            <td>{c.wins}</td><td>{c.losses}</td><td>{c.ties}</td>
-            <td data-v={pct(c)}>{pct(c)}</td>
-            <td data-v={c.avgPf}>{c.avgPf.toFixed(2)}</td>
-            <td data-v={c.avgPa}>{c.avgPa.toFixed(2)}</td>
-            <td>{c.championships || ''}</td><td>{c.runnerUps || ''}</td><td>{c.thirds || ''}</td>
-            <td>{c.pfTitles || ''}</td>
-            <td>{c.playoffAppearances}</td>
-            <td class="red">{c.lastPlaces || ''}</td>
+            <td data-label="Member"><MemberLink id={c.userId} />{isFormer(c.userId) && <span class="badge"> former</span>}</td>
+            <td data-label="Seasons">{c.seasons}</td>
+            <td data-label="Avg Reg Rank" data-v={c.avgRegularSeasonRank ?? 999}>{c.avgRegularSeasonRank?.toFixed(2) ?? ''}</td>
+            <td data-label="W">{c.wins}</td><td data-label="L">{c.losses}</td><td data-label="T">{c.ties}</td>
+            <td data-label="Win %" data-v={pct(c)}>{pct(c)}</td>
+            <td data-label="Avg PF" data-v={c.avgPf}>{c.avgPf.toFixed(2)}</td>
+            <td data-label="Avg PA" data-v={c.avgPa}>{c.avgPa.toFixed(2)}</td>
+            <td data-label="Champ">{c.championships || ''}</td><td data-label="2nd">{c.runnerUps || ''}</td><td data-label="3rd">{c.thirds || ''}</td>
+            <td data-label="PF Titles">{c.pfTitles || ''}</td>
+            <td data-label="Playoffs">{c.playoffAppearances}</td>
+            <td data-label="Last Places" class="red">{c.lastPlaces || ''}</td>
           </tr>
         ))}
       </tbody>

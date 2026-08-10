@@ -600,6 +600,10 @@ details summary {
   outline: none;
 }
 
+.h2h-mobile-picker {
+  display: none;
+}
+
 .h2h-page {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
@@ -999,7 +1003,7 @@ details summary {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 640px) {
   main {
     padding: 0.85rem 0.65rem 1.75rem;
   }
@@ -1031,10 +1035,153 @@ details summary {
     max-width: 7.8rem;
   }
 
+  .alltime-table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .alltime-table-wrap::after {
+    display: none;
+  }
+
+  .mobile-card-table,
+  .mobile-card-table thead,
+  .mobile-card-table tbody,
+  .mobile-card-table tr,
+  .mobile-card-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-card-table thead {
+    display: none;
+  }
+
+  .mobile-card-table {
+    min-width: 0;
+    border-spacing: 0;
+    font-size: 0.82rem;
+  }
+
+  .mobile-card-table tbody {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .mobile-card-table tr {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: rgba(17, 24, 34, 0.72);
+  }
+
+  .table-wrap > .mobile-card-table td:first-child,
+  .mobile-card-table td {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: none;
+    gap: 1rem;
+    padding: 0.46rem 0.62rem;
+    border-bottom: 1px solid rgba(143, 158, 178, 0.12);
+    background: transparent;
+    box-shadow: none;
+    white-space: normal;
+  }
+
+  .mobile-card-table td:first-child {
+    padding: 0.62rem;
+    background: rgba(27, 39, 54, 0.72);
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  .mobile-card-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .mobile-card-table td::before {
+    color: var(--muted);
+    font-size: 0.64rem;
+    font-weight: 850;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    content: attr(data-label);
+  }
+
+  .mobile-card-table td:first-child::before {
+    display: none;
+  }
+
   .h2h-header {
     align-items: start;
     flex-direction: column;
     gap: 0.15rem;
+  }
+
+  .h2h-page {
+    display: block;
+    height: auto;
+  }
+
+  .h2h-header .muted {
+    font-size: 0.74rem;
+  }
+
+  .h2h-mobile-picker {
+    display: grid;
+    gap: 0.55rem;
+    margin-bottom: 0.75rem;
+    padding: 0.7rem;
+  }
+
+  .h2h-mobile-picker label {
+    display: grid;
+    gap: 0.24rem;
+  }
+
+  .h2h-mobile-picker span {
+    color: var(--muted);
+    font-size: 0.64rem;
+    font-weight: 850;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .h2h-mobile-picker select,
+  .h2h-picker-button {
+    width: 100%;
+    min-height: 2.35rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 7px;
+    background: rgba(8, 11, 16, 0.72);
+    color: var(--text);
+    font: inherit;
+    font-weight: 800;
+  }
+
+  .h2h-mobile-picker select {
+    padding: 0 0.6rem;
+  }
+
+  .h2h-picker-button {
+    cursor: pointer;
+    background: rgba(53, 208, 111, 0.14);
+    color: var(--accent);
+  }
+
+  .h2h-table-wrap {
+    display: none;
+  }
+
+  .matchup-panel {
+    inset: auto 0.55rem 0.55rem;
+    width: auto;
+    max-height: 58vh;
+    padding: 0.72rem;
   }
 
   .h2h-matrix th,

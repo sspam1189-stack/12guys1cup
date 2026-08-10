@@ -22,6 +22,21 @@ const memberNames = Object.fromEntries(Object.entries(members).map(([id, member]
       <h1>Head-to-Head</h1>
       <span class="muted">Rows are players. Columns are opponents. Click a record for history.</span>
     </div>
+    <div class="h2h-mobile-picker card" aria-label="Head-to-head matchup picker">
+      <label>
+        <span>Player</span>
+        <select data-h2h-player-a>
+          {ids.map((id) => <option value={id}>{name(id)}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Opponent</span>
+        <select data-h2h-player-b>
+          {ids.map((id, index) => <option value={id} selected={index === 1}>{name(id)}</option>)}
+        </select>
+      </label>
+      <button class="h2h-picker-button" type="button" data-h2h-pick>Show History</button>
+    </div>
     <div class="table-wrap h2h-table-wrap">
       <table class="h2h-matrix">
       <thead><tr><th></th>{ids.map((c) => <th title={name(c)}>{name(c)}</th>)}</tr></thead>
@@ -67,8 +82,17 @@ const memberNames = Object.fromEntries(Object.entries(members).map(([id, member]
     const head = document.querySelector('[data-h2h-head]');
     const body = document.querySelector('[data-h2h-body]');
     const close = document.querySelector('[data-h2h-close]');
+    const playerA = document.querySelector('[data-h2h-player-a]');
+    const playerB = document.querySelector('[data-h2h-player-b]');
+    const pick = document.querySelector('[data-h2h-pick]');
     const nameFor = (id) => memberNames[id] ?? id;
     const scoreClass = (mine, theirs) => mine > theirs ? ' class="gold"' : '';
+    const keyForPair = (a, b) => a < b ? `${a}|${b}` : `${b}|${a}`;
+    const syncPickerOptions = () => {
+      if (!playerA || !playerB || playerA.value !== playerB.value) return;
+      const option = [...playerB.options].find((item) => item.value !== playerA.value);
+      if (option) playerB.value = option.value;
+    };
     const renderMatchup = (key, updateHash = true) => {
       const p = h2hData[key];
       if (!p) return;
@@ -87,6 +111,13 @@ const memberNames = Object.fromEntries(Object.entries(members).map(([id, member]
     };
     buttons.forEach((button) => {
       button.addEventListener('click', () => renderMatchup(button.dataset.h2hKey));
+    });
+    playerA?.addEventListener('change', syncPickerOptions);
+    playerB?.addEventListener('change', syncPickerOptions);
+    pick?.addEventListener('click', () => {
+      syncPickerOptions();
+      const key = keyForPair(playerA.value, playerB.value);
+      renderMatchup(key);
     });
     if (window.location.hash.startsWith('#p-')) {
       const id = window.location.hash.slice(3);
