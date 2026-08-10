@@ -202,18 +202,20 @@ nav .brand {
 
 .season-hub-scroll {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8.2rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5.8rem, 1fr));
   gap: 0.5rem;
   width: min(100%, 1480px);
   margin: 0 auto;
-  padding: 0.75rem clamp(0.8rem, 2vw, 1.5rem);
+  padding: 0.55rem clamp(0.8rem, 2vw, 1.5rem);
 }
 
 .season-hub-pill {
   display: grid;
-  gap: 0.12rem;
+  align-content: center;
+  gap: 0.08rem;
   min-width: 0;
-  padding: 0.55rem 0.7rem;
+  min-height: 3rem;
+  padding: 0.42rem 0.65rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(27, 39, 54, 0.78), rgba(17, 24, 34, 0.74));
@@ -244,17 +246,10 @@ nav .brand {
   line-height: 1.05;
 }
 
-.season-hub-name,
 .season-hub-result {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.season-hub-name {
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 650;
 }
 
 .season-hub-result {
@@ -846,11 +841,9 @@ details summary {
   }
 
   nav .brand {
-    position: sticky;
-    left: 0;
-    z-index: 2;
+    position: static;
     margin-right: 0.15rem;
-    background: rgba(8, 11, 16, 0.92);
+    background: transparent;
   }
 
   main {
@@ -870,8 +863,8 @@ details summary {
   }
 
   .season-hub-pill {
-    flex: 0 0 7.4rem;
-    min-height: 4.25rem;
+    flex: 0 0 5.6rem;
+    min-height: 2.9rem;
     padding: 0.45rem 0.55rem;
   }
 
@@ -879,7 +872,6 @@ details summary {
     font-size: 0.95rem;
   }
 
-  .season-hub-name,
   .season-hub-result {
     font-size: 0.68rem;
   }

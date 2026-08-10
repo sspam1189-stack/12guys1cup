@@ -37,7 +37,6 @@ const currentPath = Astro.url.pathname;
                 aria-current={isActive ? 'page' : undefined}
               >
                 <span class="season-hub-year">{season.season}</span>
-                <span class="season-hub-name">{season.name}</span>
                 {season.notStarted && <span class="season-hub-result">Not started</span>}
               </a>
             );
