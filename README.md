@@ -4,7 +4,7 @@ Static site for the 12 Guys 1 Cup Sleeper league: champions wall (1st/2nd/3rd/PF
 champ/last place), all-time standings, head-to-head, record book, season pages
 with draft boards, trade history, punishments, rules, and member profiles.
 
-Live: https://henryphamphp.github.io/12guys1cup/
+Live: https://sspam1189-stack.github.io/12guys1cup/
 
 ## How it works
 
