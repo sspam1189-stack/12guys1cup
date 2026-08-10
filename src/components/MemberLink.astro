@@ -1,0 +1,7 @@
+---
+import members from '../../data/computed/members.json';
+const { id } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const name = members[id]?.name ?? id;
+---
+<a href={`${base}/member/${id}/`}>{name}</a>

@@ -35,8 +35,10 @@ formula) are explicitly **out of scope** for this phase and will be a later addi
    records, standings, and PF/PA totals. Playoff bracket games are tracked
    separately (playoff W-L, brackets, championships). Consolation/toilet-bowl games
    never count toward anyone's record.
-3. **Three per-season honors:**
+3. **Per-season honors (the league recognizes 1st, 2nd, 3rd, most PF, and last):**
    - **Champion** — winner of the playoff bracket final.
+   - **Runner-up** — loser of the playoff bracket final.
+   - **Third place** — winner of the winners-bracket 3rd-place game (when one exists).
    - **PF champ** — highest total points-for across regular-season weeks only.
    - **Last place** — the loser of the losers-bracket final when the season has
      one; otherwise the worst regular-season finish (record, then PF, per Sleeper
@@ -54,6 +56,7 @@ formula) are explicitly **out of scope** for this phase and will be a later addi
 | Season pages | `/season/2021` … | Final standings, playoff bracket, week-by-week matchup scores, full draft board |
 | Trades | `/trades` | All completed trades across seasons: participants, players/picks moved, grouped by season |
 | Punishments | `/punishments` | One entry per season: the punishment, who suffered it (auto-linked to that season's last place), description, and optional photo/video evidence links. Content comes from a hand-editable `data/punishments.json` — Sleeper has no punishment data. |
+| Rules | `/rules` | Current league settings auto-pulled from Sleeper (roster positions, scoring, waivers, playoff format, trade deadline, keepers) plus payouts and bylaws from a hand-editable `data/rules.json`. |
 | Member pages | `/member/<user_id>` | Seasons played, year-by-year finishes, career stats, personal records, PF titles, trade history, all team names used |
 
 ## Architecture

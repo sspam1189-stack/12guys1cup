@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import punishments from '../../data/punishments.json';
+import seasons from '../../data/computed/seasons.json';
+const played = seasons.filter((s) => !s.notStarted).sort((a, b) => b.season.localeCompare(a.season));
+const entry = (season) => punishments.find((p) => p.season === season);
+---
+<Base title="Punishments — 12 Guys 1 Cup">
+  <h1>Punishments</h1>
+  <p class="muted">What last place costs you in this league.</p>
+  {played.map((s) => {
+    const p = entry(s.season);
+    return (
+      <div class="card" style="margin-bottom:0.75rem">
+        <h2 style="margin-top:0">{s.season}</h2>
+        <div>💩 Victim: <span class="red"><MemberLink id={s.lastPlace} /></span></div>
+        {p ? (
+          <>
+            <div><strong>{p.title}</strong></div>
+            <p>{p.description}</p>
+            {(p.media ?? []).map((url) => <div><a href={url}>Evidence →</a></div>)}
+          </>
+        ) : (
+          <p class="muted">No punishment recorded yet — commissioner, edit <code>data/punishments.json</code>.</p>
+        )}
+      </div>
+    );
+  })}
+</Base>

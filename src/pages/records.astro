@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import records from '../../data/computed/records.json';
+
+const gameCols = ['Points', 'Member', 'Opponent', 'When'];
+const sections = [
+  ['Highest single-week score', records.highestGame, 'points'],
+  ['Lowest single-week score', records.lowestGame, 'points'],
+  ['Biggest blowout (margin)', records.biggestBlowout, 'margin'],
+  ['Closest game (margin)', records.closestGame, 'margin'],
+  ['Most points in a loss', records.mostPointsInLoss, 'points'],
+  ['Fewest points in a win', records.fewestPointsInWin, 'points'],
+  ['Playoff: highest single-week score', records.playoffHighestGame, 'points'],
+];
+---
+<Base title="Record Book — 12 Guys 1 Cup">
+  <h1>Record Book</h1>
+  <p class="muted">Regular season unless marked playoff. Top 5 each.</p>
+
+  {sections.map(([title, rows, field]) => (
+    <section>
+      <h2>{title}</h2>
+      <div class="table-wrap"><table>
+        <thead><tr>{gameCols.map((c) => <th>{c}</th>)}</tr></thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr>
+              <td><strong>{r[field].toFixed(2)}</strong>{field === 'margin' ? ` (${r.points}–${r.oppPoints})` : ''}</td>
+              <td><MemberLink id={r.userId} /></td>
+              <td><MemberLink id={r.oppUserId} /></td>
+              <td class="muted">{r.season} wk {r.week}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </section>
+  ))}
+
+  <h2>Longest win streak</h2>
+  <div class="table-wrap"><table><tbody>
+    {records.longestWinStreak.map((r) => <tr><td><strong>{r.length}</strong></td><td><MemberLink id={r.userId} /></td></tr>)}
+  </tbody></table></div>
+
+  <h2>Longest losing streak</h2>
+  <div class="table-wrap"><table><tbody>
+    {records.longestLossStreak.map((r) => <tr><td><strong>{r.length}</strong></td><td><MemberLink id={r.userId} /></td></tr>)}
+  </tbody></table></div>
+
+  <h2>Best season records</h2>
+  <div class="table-wrap"><table><tbody>
+    {records.bestSeasons.map((r) => <tr><td><strong>{r.wins}-{r.losses}{r.ties ? `-${r.ties}` : ''}</strong></td>
+      <td><MemberLink id={r.userId} /></td><td class="muted">{r.season}</td><td>{r.pf.toFixed(2)} PF</td></tr>)}
+  </tbody></table></div>
+
+  <h2>Worst season records</h2>
+  <div class="table-wrap"><table><tbody>
+    {records.worstSeasons.map((r) => <tr><td><strong>{r.wins}-{r.losses}{r.ties ? `-${r.ties}` : ''}</strong></td>
+      <td><MemberLink id={r.userId} /></td><td class="muted">{r.season}</td><td>{r.pf.toFixed(2)} PF</td></tr>)}
+  </tbody></table></div>
+
+  <h2>Highest season points-for</h2>
+  <div class="table-wrap"><table><tbody>
+    {records.highestSeasonPf.map((r) => <tr><td><strong>{r.pf.toFixed(2)}</strong></td>
+      <td><MemberLink id={r.userId} /></td><td class="muted">{r.season}</td></tr>)}
+  </tbody></table></div>
+</Base>

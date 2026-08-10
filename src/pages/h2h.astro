@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import h2h from '../../data/computed/h2h.json';
+import members from '../../data/computed/members.json';
+const ids = Object.keys(members);
+const name = (id) => members[id]?.name ?? id;
+const cell = (r, c) => h2h[r < c ? `${r}|${c}` : `${c}|${r}`] ?? null;
+// Record of `r` against `c` from r's perspective.
+const rec = (r, c) => {
+  const x = cell(r, c);
+  if (!x) return null;
+  const mine = x.a === r;
+  const reg = mine ? [x.regular.aWins, x.regular.bWins] : [x.regular.bWins, x.regular.aWins];
+  const po = mine ? [x.playoff.aWins, x.playoff.bWins] : [x.playoff.bWins, x.playoff.aWins];
+  return { reg, po, hasPo: x.playoff.aWins + x.playoff.bWins > 0, key: x.a + x.b };
+};
+const pairings = Object.values(h2h);
+---
+<Base title="Head-to-Head — 12 Guys 1 Cup">
+  <h1>Head-to-Head</h1>
+  <p class="muted">All-time regular-season records, row vs column. Playoff meetings in parentheses. Click a cell for the game list.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th></th>{ids.map((c) => <th>{name(c)}</th>)}</tr></thead>
+      <tbody>
+        {ids.map((r) => (
+          <tr>
+            <th><MemberLink id={r} /></th>
+            {ids.map((c) => {
+              if (r === c) return <td class="muted">—</td>;
+              const x = rec(r, c);
+              return x
+                ? <td><a href={`#p-${x.key}`}>{x.reg[0]}-{x.reg[1]}{x.hasPo ? ` (${x.po[0]}-${x.po[1]})` : ''}</a></td>
+                : <td class="muted">·</td>;
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>All Matchups</h2>
+  {pairings.map((p) => (
+    <details id={`p-${p.a}${p.b}`} class="card" style="margin-bottom:0.5rem">
+      <summary>
+        {name(p.a)} vs {name(p.b)} — {p.regular.aWins}-{p.regular.bWins}
+        {p.playoff.aWins + p.playoff.bWins > 0 ? ` (playoffs ${p.playoff.aWins}-${p.playoff.bWins})` : ''}
+      </summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Season</th><th>Week</th><th>Type</th><th>{name(p.a)}</th><th>{name(p.b)}</th></tr></thead>
+        <tbody>
+          {p.games.map((g) => {
+            const [pa, pb] = g.a.userId === p.a ? [g.a.points, g.b.points] : [g.b.points, g.a.points];
+            return <tr><td>{g.season}</td><td>{g.week}</td><td>{g.type}</td>
+              <td class={pa > pb ? 'gold' : ''}>{pa}</td><td class={pb > pa ? 'gold' : ''}>{pb}</td></tr>;
+          })}
+        </tbody>
+      </table></div>
+    </details>
+  ))}
+</Base>

@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+const { title = '12 Guys 1 Cup' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const links = [
+  ['/standings/', 'All-Time'], ['/h2h/', 'Head-to-Head'], ['/records/', 'Records'],
+  ['/trades/', 'Trades'], ['/punishments/', 'Punishments'], ['/rules/', 'Rules'],
+];
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav>
+      <a class="brand" href={`${base}/`}>🏆 12 Guys 1 Cup</a>
+      {links.map(([href, label]) => <a href={`${base}${href}`}>{label}</a>)}
+    </nav>
+    <main><slot /></main>
+  </body>
+</html>

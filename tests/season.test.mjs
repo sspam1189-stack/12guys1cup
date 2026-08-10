@@ -25,6 +25,19 @@ describe('summarizeSeason', () => {
     expect(summary.lastPlace).toBe('u3'); // lost toilet bowl despite better record than u4
   });
 
+  it('third place comes only from a winners-bracket 3rd-place game', () => {
+    // Fixture has a 2-team playoff — no 3rd-place game, so no third honor.
+    expect(summary.third).toBeNull();
+    const withThird = summarizeSeason({
+      ...season,
+      winners_bracket: [
+        ...season.winners_bracket,
+        { r: 1, m: 2, t1: 3, t2: 4, w: 3, l: 4, p: 3 },
+      ],
+    });
+    expect(withThird.third).toBe('u3');
+  });
+
   it('assigns final placements from brackets', () => {
     expect(team('u1').place).toBe(1);
     expect(team('u2').place).toBe(2);

@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import trades from '../../data/computed/trades.json';
+const bySeason = {};
+for (const t of trades) (bySeason[t.season] ??= []).push(t);
+const seasonKeys = Object.keys(bySeason).sort((a, b) => b.localeCompare(a));
+---
+<Base title="Trade History — 12 Guys 1 Cup">
+  <h1>Trade History</h1>
+  <p class="muted">{trades.length} completed trades all-time.</p>
+  {seasonKeys.map((season) => (
+    <section>
+      <h2>{season} <span class="badge">{bySeason[season].length} trades</span></h2>
+      {bySeason[season].map((t) => (
+        <div class="card" style="margin-bottom:0.5rem">
+          <div class="muted">Week {t.week}</div>
+          {t.parties.map((userId) => (
+            <div>
+              <MemberLink id={userId} /> received:
+              {[...t.assets[userId].players, ...t.assets[userId].picks].join(', ') || 'nothing'}
+            </div>
+          ))}
+        </div>
+      ))}
+    </section>
+  ))}
+</Base>

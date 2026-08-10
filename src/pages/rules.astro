@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import cfg from '../../data/computed/settings.json';
+import rules from '../../data/rules.json';
+
+const posCounts = {};
+for (const p of cfg.rosterPositions) posCounts[p] = (posCounts[p] ?? 0) + 1;
+const starters = Object.entries(posCounts).filter(([p]) => p !== 'BN');
+const bench = posCounts.BN ?? 0;
+
+const s = cfg.settings;
+const waiverTypes = { 0: 'Rolling priority', 1: 'Reverse standings', 2: `FAAB ($${s.waiver_budget} budget)` };
+const keyScoring = [
+  ['Passing TD', s ? cfg.scoring.pass_td : 0],
+  ['Passing yards', `${cfg.scoring.pass_yd.toFixed(2)}/yd`],
+  ['Interception thrown', cfg.scoring.pass_int],
+  ['Rushing yards', `${cfg.scoring.rush_yd.toFixed(1)}/yd`],
+  ['Rushing TD', cfg.scoring.rush_td],
+  ['Reception', cfg.scoring.rec],
+  ['Receiving yards', `${cfg.scoring.rec_yd.toFixed(1)}/yd`],
+  ['Receiving TD', cfg.scoring.rec_td],
+  ['Fumble lost', cfg.scoring.fum_lost],
+  ['100+ rush yd bonus', cfg.scoring.bonus_rush_yd_100],
+  ['100+ rec yd bonus', cfg.scoring.bonus_rec_yd_100],
+  ['300+ pass yd bonus', cfg.scoring.bonus_pass_yd_300],
+];
+const allScoring = Object.entries(cfg.scoring).filter(([, v]) => v !== 0).sort();
+---
+<Base title="Rules — 12 Guys 1 Cup">
+  <h1>League Rules</h1>
+  <p class="muted">Settings pulled live from Sleeper ({cfg.season} season). Payouts and bylaws maintained by the commissioner.</p>
+
+  <h2>Format</h2>
+  <div class="card">
+    <div>{s.num_teams} teams · {s.playoff_teams}-team playoffs starting week {s.playoff_week_start}</div>
+    <div>Trade deadline: week {s.trade_deadline} · Waivers: {waiverTypes[s.waiver_type] ?? s.waiver_type}</div>
+    <div>Keepers: up to {s.max_keepers} per team</div>
+    <div>Starters: {starters.map(([p, n]) => (n > 1 ? `${n}×${p}` : p)).join(', ')} · {bench} bench</div>
+  </div>
+
+  <h2>Key Scoring (0.5 PPR)</h2>
+  <div class="table-wrap"><table><tbody>
+    {keyScoring.map(([label, v]) => <tr><td>{label}</td><td><strong>{v}</strong></td></tr>)}
+  </tbody></table></div>
+  <details class="card" style="margin-top:0.5rem">
+    <summary>Full scoring settings</summary>
+    <div class="table-wrap"><table><tbody>
+      {allScoring.map(([k, v]) => <tr><td class="muted">{k}</td><td>{v}</td></tr>)}
+    </tbody></table></div>
+  </details>
+
+  <h2>Payouts</h2>
+  {rules.payouts.length > 0 ? (
+    <div class="table-wrap"><table><tbody>
+      {rules.payouts.map((p) => <tr><td>{p.label}</td><td><strong>{p.amount}</strong></td></tr>)}
+    </tbody></table></div>
+  ) : (
+    <p class="muted">No payouts recorded yet — commissioner, edit <code>data/rules.json</code>.</p>
+  )}
+
+  <h2>Bylaws</h2>
+  {rules.bylaws.length > 0 ? (
+    <ol>{rules.bylaws.map((b) => <li>{b}</li>)}</ol>
+  ) : (
+    <p class="muted">No bylaws recorded yet — commissioner, edit <code>data/rules.json</code>.</p>
+  )}
+</Base>

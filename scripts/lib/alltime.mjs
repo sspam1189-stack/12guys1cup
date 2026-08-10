@@ -12,8 +12,8 @@ export function buildAlltime(seasonSummaries) {
     for (const t of s.standings) {
       const c = (careers[t.userId] ??= {
         userId: t.userId, seasons: 0, wins: 0, losses: 0, ties: 0, pf: 0, pa: 0,
-        playoffWins: 0, playoffLosses: 0, championships: 0, pfTitles: 0,
-        playoffAppearances: 0, lastPlaces: 0, finishes: {},
+        playoffWins: 0, playoffLosses: 0, championships: 0, runnerUps: 0,
+        thirds: 0, pfTitles: 0, playoffAppearances: 0, lastPlaces: 0, finishes: {},
       });
       c.seasons++;
       c.wins += t.wins; c.losses += t.losses; c.ties += t.ties;
@@ -21,6 +21,8 @@ export function buildAlltime(seasonSummaries) {
       c.playoffWins += t.playoffWins; c.playoffLosses += t.playoffLosses;
       c.finishes[s.season] = t.place;
       if (s.champion === t.userId) c.championships++;
+      if (s.runnerUp === t.userId) c.runnerUps++;
+      if (s.third === t.userId) c.thirds++;
       if (s.pfChamp === t.userId) c.pfTitles++;
       if (s.lastPlace === t.userId) c.lastPlaces++;
       if (t.playoffWins + t.playoffLosses > 0) c.playoffAppearances++;

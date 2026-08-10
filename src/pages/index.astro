@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import seasons from '../../data/computed/seasons.json';
+import records from '../../data/computed/records.json';
+import members from '../../data/computed/members.json';
+const played = seasons.filter((s) => !s.notStarted).sort((a, b) => b.season.localeCompare(a.season));
+const upcoming = seasons.filter((s) => s.notStarted);
+const name = (id) => members[id]?.name ?? id;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="12 Guys 1 Cup — League History">
+  <h1>12 Guys 1 Cup</h1>
+  <p class="muted">League history &amp; records · est. 2021 (as 14 Guys 1 Cup)</p>
+  {upcoming.map((s) => <p class="badge">{s.season} season: not started yet</p>)}
+
+  <h2>Champions Wall</h2>
+  <div class="wall">
+    {played.map((s) => (
+      <div class="card">
+        <div class="muted">{s.season} · {s.name}</div>
+        <div>🥇 <strong class="gold"><MemberLink id={s.champion} /></strong></div>
+        {s.runnerUp && <div>🥈 <MemberLink id={s.runnerUp} /></div>}
+        {s.third && <div>🥉 <MemberLink id={s.third} /></div>}
+        <div>📈 PF champ: <MemberLink id={s.pfChamp} /></div>
+        <div>💩 Last: <span class="red"><MemberLink id={s.lastPlace} /></span></div>
+        <div><a href={`${base}/season/${s.season}/`}>Season page →</a></div>
+      </div>
+    ))}
+  </div>
+
+  <h2>Headline Records</h2>
+  <div class="wall">
+    <div class="card">
+      <div class="muted">Highest single week</div>
+      <strong>{records.highestGame[0].points}</strong> — {name(records.highestGame[0].userId)}
+      <span class="muted">({records.highestGame[0].season} wk {records.highestGame[0].week})</span>
+    </div>
+    <div class="card">
+      <div class="muted">Biggest blowout</div>
+      <strong>{records.biggestBlowout[0].margin.toFixed(2)}</strong> — {name(records.biggestBlowout[0].userId)}
+      <span class="muted">({records.biggestBlowout[0].season} wk {records.biggestBlowout[0].week})</span>
+    </div>
+    <div class="card">
+      <div class="muted">Longest win streak</div>
+      <strong>{records.longestWinStreak[0].length}</strong> — {name(records.longestWinStreak[0].userId)}
+    </div>
+  </div>
+  <p><a href={`${base}/records/`}>Full record book →</a></p>
+</Base>

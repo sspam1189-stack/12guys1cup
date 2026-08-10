@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import alltime from '../../data/computed/alltime.json';
+import members from '../../data/computed/members.json';
+import seasons from '../../data/computed/seasons.json';
+const latest = seasons.filter((s) => !s.notStarted).map((s) => s.season).sort().at(-1);
+const isFormer = (id) => !(members[id]?.seasons ?? []).some((s) => s >= latest);
+const pct = (c) => {
+  const g = c.wins + c.losses + c.ties;
+  return g ? ((c.wins + c.ties / 2) / g).toFixed(3) : '—';
+};
+---
+<Base title="All-Time Standings — 12 Guys 1 Cup">
+  <h1>All-Time Standings</h1>
+  <p class="muted">Regular season only. Playoff results tracked separately. Click headers to sort.</p>
+  <div class="table-wrap">
+    <table class="sortable">
+      <thead><tr>
+        <th>Member</th><th>Seasons</th><th>W</th><th>L</th><th>T</th><th>Win %</th>
+        <th>PF</th><th>PA</th><th>Playoff W-L</th><th>🥇</th><th>🥈</th><th>🥉</th>
+        <th>PF Titles</th><th>Playoffs</th><th>Last Places</th>
+      </tr></thead>
+      <tbody>
+        {alltime.map((c) => (
+          <tr>
+            <td><MemberLink id={c.userId} />{isFormer(c.userId) && <span class="badge"> former</span>}</td>
+            <td>{c.seasons}</td><td>{c.wins}</td><td>{c.losses}</td><td>{c.ties}</td>
+            <td data-v={pct(c)}>{pct(c)}</td>
+            <td data-v={c.pf}>{c.pf.toFixed(2)}</td>
+            <td data-v={c.pa}>{c.pa.toFixed(2)}</td>
+            <td data-v={c.playoffWins}>{c.playoffWins}-{c.playoffLosses}</td>
+            <td>{c.championships || ''}</td><td>{c.runnerUps || ''}</td><td>{c.thirds || ''}</td>
+            <td>{c.pfTitles || ''}</td>
+            <td>{c.playoffAppearances}</td><td class="red">{c.lastPlaces || ''}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <script src="../scripts/sort-tables.js"></script>
+</Base>

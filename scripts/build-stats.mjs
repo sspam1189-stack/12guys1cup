@@ -65,4 +65,14 @@ await write('alltime', buildAlltime(summaries));
 await write('h2h', buildH2h(allGames));
 await write('records', buildRecords(summaries));
 await write('trades', trades);
+
+// Current league configuration for the rules page (latest season).
+const latest = raws[raws.length - 1];
+await write('settings', {
+  season: latest.season,
+  name: latest.league.name,
+  rosterPositions: latest.league.roster_positions,
+  scoring: latest.league.scoring_settings,
+  settings: latest.league.settings,
+});
 console.log(`Computed ${summaries.length} seasons, ${allGames.length} games, ${trades.length} trades.`);

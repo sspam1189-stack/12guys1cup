@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+import MemberLink from '../../components/MemberLink.astro';
+import seasons from '../../../data/computed/seasons.json';
+import members from '../../../data/computed/members.json';
+
+export function getStaticPaths() {
+  return seasons.map((s) => ({ params: { year: s.season }, props: { s } }));
+}
+const { s } = Astro.props;
+const name = (id) => members[id]?.name ?? id;
+const weeks = s.notStarted ? [] : [...new Set(s.games.map((g) => g.week))].sort((a, b) => a - b);
+const rounds = s.notStarted ? [] : [...new Set(s.draft.map((p) => p.round))].sort((a, b) => a - b);
+---
+<Base title={`${s.season} Season — 12 Guys 1 Cup`}>
+  <h1>{s.season} — {s.name}</h1>
+  {s.notStarted ? (
+    <p class="badge">This season hasn't started yet.</p>
+  ) : (
+    <>
+      <p>
+        🥇 <strong class="gold"><MemberLink id={s.champion} /></strong>
+        {s.runnerUp && <> · 🥈 <MemberLink id={s.runnerUp} /></>}
+        {s.third && <> · 🥉 <MemberLink id={s.third} /></>}
+        &nbsp;· 📈 PF champ: <MemberLink id={s.pfChamp} />
+        &nbsp;· 💩 Last place: <span class="red"><MemberLink id={s.lastPlace} /></span>
+      </p>
+
+      <h2>Final Standings</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Team</th><th>Member</th><th>W</th><th>L</th><th>T</th>
+          <th>PF</th><th>PA</th><th>Playoff W-L</th></tr></thead>
+        <tbody>
+          {s.standings.map((t) => (
+            <tr>
+              <td>{t.place}</td><td>{t.teamName}</td><td><MemberLink id={t.userId} /></td>
+              <td>{t.wins}</td><td>{t.losses}</td><td>{t.ties}</td>
+              <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
+              <td>{t.playoffWins + t.playoffLosses > 0 ? `${t.playoffWins}-${t.playoffLosses}` : '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+
+      <h2>Weekly Results</h2>
+      {weeks.map((w) => (
+        <details class="card" style="margin-bottom:0.5rem">
+          <summary>Week {w}{s.games.some((g) => g.week === w && g.type === 'playoff') ? ' · playoffs' : ''}</summary>
+          <div class="table-wrap"><table><tbody>
+            {s.games.filter((g) => g.week === w).map((g) => (
+              <tr>
+                <td class={g.a.points > g.b.points ? 'gold' : ''}>{name(g.a.userId)} {g.a.points}</td>
+                <td class={g.b.points > g.a.points ? 'gold' : ''}>{name(g.b.userId)} {g.b.points}</td>
+                <td class="muted">{g.type}</td>
+              </tr>
+            ))}
+          </tbody></table></div>
+        </details>
+      ))}
+
+      <h2>Draft Board</h2>
+      {rounds.map((r) => (
+        <details class="card" style="margin-bottom:0.5rem" open={r === 1}>
+          <summary>Round {r}</summary>
+          <div class="table-wrap"><table><tbody>
+            {s.draft.filter((p) => p.round === r).map((p) => (
+              <tr><td class="muted">{p.pickNo}</td><td>{p.player} <span class="badge">{p.position}</span></td>
+                <td><MemberLink id={p.userId} /></td></tr>
+            ))}
+          </tbody></table></div>
+        </details>
+      ))}
+    </>
+  )}
+</Base>

@@ -94,6 +94,8 @@ export function summarizeSeason(raw, overrides = {}) {
   const final = (raw.winners_bracket ?? []).find((m) => m.p === 1 && m.w != null);
   const champion = final ? teams.get(final.w)?.userId ?? null : null;
   const runnerUp = final ? teams.get(final.l)?.userId ?? null : null;
+  const thirdMatch = (raw.winners_bracket ?? []).find((m) => m.p === 3 && m.w != null);
+  const third = thirdMatch ? teams.get(thirdMatch.w)?.userId ?? null : null;
   const loserMatches = (raw.losers_bracket ?? []).filter((m) => m.p != null && m.w != null);
   const lastMatch = loserMatches.sort((a, b) => b.p - a.p)[0];
   const lastPlace = lastMatch
@@ -111,6 +113,6 @@ export function summarizeSeason(raw, overrides = {}) {
   return {
     season, name: league.name, playoffWeekStart: pws,
     standings: [...teams.values()].sort((a, b) => a.place - b.place),
-    champion, runnerUp, pfChamp, lastPlace, games, draft,
+    champion, runnerUp, third, pfChamp, lastPlace, games, draft,
   };
 }
