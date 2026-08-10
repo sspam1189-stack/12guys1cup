@@ -304,11 +304,14 @@ table.sortable th {
 }
 
 .table-wrap {
+  position: relative;
   overflow-x: auto;
+  max-width: 100%;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: rgba(17, 24, 34, 0.62);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03);
+  -webkit-overflow-scrolling: touch;
 }
 
 .card {
@@ -912,6 +915,80 @@ details summary {
     padding: 0.5rem 0.58rem;
   }
 
+  .table-wrap {
+    overscroll-behavior-inline: contain;
+  }
+
+  .table-wrap::after {
+    position: sticky;
+    right: 0;
+    display: block;
+    float: right;
+    width: 1.1rem;
+    height: 0;
+    min-height: 100%;
+    margin-left: -1.1rem;
+    background: linear-gradient(90deg, transparent, rgba(8, 11, 16, 0.82));
+    content: "";
+    pointer-events: none;
+  }
+
+  .table-wrap > table:not(.h2h-matrix) {
+    min-width: max-content;
+  }
+
+  .table-wrap > table:not(.h2h-matrix) th:first-child,
+  .table-wrap > table:not(.h2h-matrix) td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    max-width: 9rem;
+    overflow: hidden;
+    background: rgba(17, 24, 34, 0.98);
+    box-shadow: 1px 0 0 rgba(143, 158, 178, 0.16);
+    text-overflow: ellipsis;
+  }
+
+  .table-wrap > table:not(.h2h-matrix) th:first-child {
+    z-index: 3;
+  }
+
+  .table-wrap > table:not(.h2h-matrix) td:first-child a,
+  .table-wrap > table:not(.h2h-matrix) th:first-child a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .h2h-table-wrap {
+    justify-content: start;
+  }
+
+  .h2h-matrix {
+    font-size: 0.72rem;
+  }
+
+  .h2h-matrix th,
+  .h2h-matrix td {
+    width: 3.15rem;
+    height: 1.72rem;
+  }
+
+  .h2h-matrix th:first-child,
+  .h2h-matrix tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 4;
+    width: 6.4rem;
+    max-width: 6.4rem;
+    background: rgba(17, 24, 34, 0.98);
+    box-shadow: 1px 0 0 rgba(143, 158, 178, 0.16);
+  }
+
+  .h2h-matrix thead th:first-child {
+    z-index: 5;
+  }
+
   .nav-dropdown { position: static; }
 
   .nav-dropdown-menu {
@@ -937,15 +1014,48 @@ details summary {
   }
 
   table {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
   }
 
   th,
   td {
-    padding: 0.48rem 0.52rem;
+    padding: 0.44rem 0.46rem;
+  }
+
+  th {
+    font-size: 0.62rem;
+  }
+
+  .table-wrap > table:not(.h2h-matrix) th:first-child,
+  .table-wrap > table:not(.h2h-matrix) td:first-child {
+    max-width: 7.8rem;
+  }
+
+  .h2h-header {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .h2h-matrix th,
+  .h2h-matrix td {
+    width: 2.85rem;
+    height: 1.62rem;
+    padding: 0.07rem 0.08rem;
+  }
+
+  .h2h-matrix th:first-child,
+  .h2h-matrix tbody th {
+    width: 5.7rem;
+    max-width: 5.7rem;
+  }
+
+  .h2h-matrix .h2h-cell-button {
+    min-height: 1.32rem;
+    font-size: 0.66rem;
   }
 
   .draft-board {
-    --draft-cell-width: 4.75rem;
+    --draft-cell-width: 4.25rem;
   }
 }
