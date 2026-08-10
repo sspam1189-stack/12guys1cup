@@ -19,7 +19,10 @@ const currentPath = Astro.url.pathname;
   <body class={compact ? 'compact-page' : undefined}>
     <nav>
       <a class="brand" href={`${base}/`}>12 Guys 1 Cup</a>
-      {links.map(([href, label]) => <a href={`${base}${href}`}>{label}</a>)}
+      {links.map(([href, label]) => {
+        const isActive = currentPath.endsWith(href);
+        return <a href={`${base}${href}`} aria-current={isActive ? 'page' : undefined}>{label}</a>;
+      })}
     </nav>
     {!hideSeasonHub && (
       <div class="season-hub-strip" aria-label="Season hub">
