@@ -14,6 +14,7 @@ describe('buildAlltime', () => {
     expect(career('u1')).toMatchObject({
       seasons: 2, wins: 6, losses: 0, pf: 660, championships: 2, pfTitles: 2,
       playoffAppearances: 2, lastPlaces: 0, playoffWins: 2, avgRegularSeasonRank: 1,
+      avgPf: 330,
     });
     expect(career('u2')).toMatchObject({ runnerUps: 2, thirds: 0 });
     expect(career('u3')).toMatchObject({ lastPlaces: 2, playoffAppearances: 0 });

@@ -43,6 +43,8 @@ export function buildAlltime(seasonSummaries) {
     c.avgRegularSeasonRank = finishes.length
       ? round2(finishes.reduce((sum, place) => sum + place, 0) / finishes.length)
       : null;
+    c.avgPf = c.seasons ? round2(c.pf / c.seasons) : 0;
+    c.avgPa = c.seasons ? round2(c.pa / c.seasons) : 0;
   }
   return Object.values(careers).sort((a, b) => winPct(b) - winPct(a));
 }

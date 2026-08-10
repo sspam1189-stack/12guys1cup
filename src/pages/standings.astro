@@ -18,7 +18,7 @@ const pct = (c) => {
     <table class="sortable">
       <thead><tr>
         <th>Member</th><th>Seasons</th><th>Avg Reg Rank</th><th>W</th><th>L</th><th>T</th><th>Win %</th>
-        <th>PF</th><th>PA</th><th>Champ</th><th>2nd</th><th>3rd</th>
+        <th>Avg PF</th><th>Avg PA</th><th>Champ</th><th>2nd</th><th>3rd</th>
         <th>PF Titles</th><th>Playoffs</th><th>Last Places</th>
       </tr></thead>
       <tbody>
@@ -29,8 +29,8 @@ const pct = (c) => {
             <td data-v={c.avgRegularSeasonRank ?? 999}>{c.avgRegularSeasonRank?.toFixed(2) ?? ''}</td>
             <td>{c.wins}</td><td>{c.losses}</td><td>{c.ties}</td>
             <td data-v={pct(c)}>{pct(c)}</td>
-            <td data-v={c.pf}>{c.pf.toFixed(2)}</td>
-            <td data-v={c.pa}>{c.pa.toFixed(2)}</td>
+            <td data-v={c.avgPf}>{c.avgPf.toFixed(2)}</td>
+            <td data-v={c.avgPa}>{c.avgPa.toFixed(2)}</td>
             <td>{c.championships || ''}</td><td>{c.runnerUps || ''}</td><td>{c.thirds || ''}</td>
             <td>{c.pfTitles || ''}</td>
             <td>{c.playoffAppearances}</td>
