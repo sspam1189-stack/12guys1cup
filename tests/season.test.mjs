@@ -22,7 +22,7 @@ describe('summarizeSeason', () => {
     expect(summary.champion).toBe('u1');
     expect(summary.runnerUp).toBe('u2');
     expect(summary.pfChamp).toBe('u1');
-    expect(summary.lastPlace).toBe('u3'); // lost toilet bowl despite better record than u4
+    expect(summary.lastPlace).toBe('u3'); // Shit Bowl loser is last place
   });
 
   it('third place comes only from a winners-bracket 3rd-place game', () => {
@@ -43,6 +43,15 @@ describe('summarizeSeason', () => {
     expect(team('u2').place).toBe(2);
     expect(team('u4').place).toBe(3);
     expect(team('u3').place).toBe(4);
+  });
+
+  it('uses the Shit Bowl score loser for last place when losers-bracket metadata is reversed', () => {
+    const sleeperStyle = summarizeSeason({
+      ...season,
+      losers_bracket: [{ ...season.losers_bracket[0], w: 3, l: 4 }],
+    });
+
+    expect(sleeperStyle.lastPlace).toBe('u3');
   });
 
   it('emits games: 6 regular + 1 playoff, no consolation', () => {

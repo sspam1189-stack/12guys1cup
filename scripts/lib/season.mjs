@@ -32,6 +32,23 @@ export function summarizeSeason(raw, overrides = {}) {
   });
   const games = [];
 
+  const bracketPair = (match) => {
+    if (typeof match.t1 !== 'number' || typeof match.t2 !== 'number') return null;
+    const week = pws + match.r - 1;
+    const wanted = [match.t1, match.t2].sort().join();
+    return pairWeek(matchups[week]).find(
+      ({ a, b }) => [a.roster_id, b.roster_id].sort().join() === wanted,
+    ) ?? null;
+  };
+
+  const scoreOutcome = (match) => {
+    const pair = bracketPair(match);
+    if (!pair) return null;
+    const better = pair.a.points >= pair.b.points ? pair.a : pair.b;
+    const worse = pair.a.points >= pair.b.points ? pair.b : pair.a;
+    return { betterRosterId: better.roster_id, worseRosterId: worse.roster_id };
+  };
+
   // Regular season: weeks 1 .. playoff_week_start - 1.
   for (let week = 1; week < pws; week++) {
     for (const { a, b } of pairWeek(matchups[week])) {
@@ -52,10 +69,7 @@ export function summarizeSeason(raw, overrides = {}) {
   for (const match of raw.winners_bracket ?? []) {
     if (typeof match.t1 !== 'number' || typeof match.t2 !== 'number' || match.w == null) continue;
     const week = pws + match.r - 1;
-    const wanted = [match.t1, match.t2].sort().join();
-    const pair = pairWeek(matchups[week]).find(
-      ({ a, b }) => [a.roster_id, b.roster_id].sort().join() === wanted,
-    );
+    const pair = bracketPair(match);
     if (!pair) continue;
     const ta = teams.get(pair.a.roster_id);
     const tb = teams.get(pair.b.roster_id);
@@ -96,10 +110,13 @@ export function summarizeSeason(raw, overrides = {}) {
   const runnerUp = final ? teams.get(final.l)?.userId ?? null : null;
   const thirdMatch = (raw.winners_bracket ?? []).find((m) => m.p === 3 && m.w != null);
   const third = thirdMatch ? teams.get(thirdMatch.w)?.userId ?? null : null;
-  const loserMatches = (raw.losers_bracket ?? []).filter((m) => m.p != null && m.w != null);
-  const lastMatch = loserMatches.sort((a, b) => b.p - a.p)[0];
-  const lastPlace = lastMatch
-    ? teams.get(lastMatch.l)?.userId ?? null
+  const loserMatches = (raw.losers_bracket ?? []).filter((m) => m.p === 1);
+  const lastMatch = loserMatches.sort((a, b) => b.r - a.r || b.m - a.m)[0];
+  const lastPlaceRosterId = lastMatch
+    ? (scoreOutcome(lastMatch)?.worseRosterId ?? lastMatch.w)
+    : null;
+  const lastPlace = lastPlaceRosterId
+    ? teams.get(lastPlaceRosterId)?.userId ?? null
     : [...teams.values()].sort((a, b) => b.place - a.place)[0]?.userId ?? null;
   const pfChamp = [...teams.values()].sort((a, b) => b.pf - a.pf)[0]?.userId ?? null;
 
