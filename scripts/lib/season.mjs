@@ -31,6 +31,36 @@ export function summarizeSeason(raw, overrides = {}) {
     b: { userId: tb.userId, points: pb },
   });
   const games = [];
+  const bracketGame = (week, round, match, type, ta, pa, tb, pb, advancesRosterId) => ({
+    season, week, round, match: match.m, placement: match.p ?? null, type, kind: 'game',
+    advancesUserId: teams.get(advancesRosterId)?.userId ?? null,
+    a: { userId: ta.userId, points: pa },
+    b: { userId: tb.userId, points: pb },
+  });
+  const bracketBye = (week, round, match, side, type, rosterId) => ({
+    season, week, round, match: `${match.m}-${side}`, placement: null, type, kind: 'bye',
+    advancesUserId: teams.get(rosterId)?.userId ?? null,
+    a: { userId: teams.get(rosterId)?.userId ?? null, points: null },
+    b: { userId: null, points: null },
+  });
+  const bracketByes = (matches, type) => {
+    const seen = new Set();
+    const byes = [];
+    for (const match of matches) {
+      if (match.r <= 1) continue;
+      for (const side of ['t1', 't2']) {
+        const fromKey = `${side}_from`;
+        const rosterId = match[side];
+        if (typeof rosterId !== 'number' || match[fromKey] != null || !teams.has(rosterId)) continue;
+        const round = match.r - 1;
+        const key = `${type}-${round}-${rosterId}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        byes.push(bracketBye(pws + round - 1, round, match, side, type, rosterId));
+      }
+    }
+    return byes;
+  };
 
   const bracketPair = (match) => {
     if (typeof match.t1 !== 'number' || typeof match.t2 !== 'number') return null;
@@ -69,6 +99,7 @@ export function summarizeSeason(raw, overrides = {}) {
   // Every playoff win counts, but only a team's first playoff loss counts.
   const playoffLostRosters = new Set();
   const winnerMatches = [...(raw.winners_bracket ?? [])].sort((a, b) => a.r - b.r || a.m - b.m);
+  const playoffBracket = bracketByes(winnerMatches, 'playoff');
   for (const match of winnerMatches) {
     if (typeof match.t1 !== 'number' || typeof match.t2 !== 'number' || match.w == null) continue;
     const week = pws + match.r - 1;
@@ -90,11 +121,13 @@ export function summarizeSeason(raw, overrides = {}) {
       }
     }
     games.push(game(week, 'playoff', ta, pair.a.points, tb, pair.b.points));
+    playoffBracket.push(bracketGame(week, match.r, match, 'playoff', ta, pair.a.points, tb, pair.b.points, pair.a.points > pair.b.points ? pair.a.roster_id : pair.b.roster_id));
   }
 
   // Shit Bowl / losers-bracket games are shown in weekly results, but do not
   // count toward playoff W-L.
   const loserMatches = [...(raw.losers_bracket ?? [])].sort((a, b) => a.r - b.r || a.m - b.m);
+  const shitBowlBracket = bracketByes(loserMatches, 'shit bowl');
   for (const match of loserMatches) {
     if (typeof match.t1 !== 'number' || typeof match.t2 !== 'number' || match.w == null) continue;
     const week = pws + match.r - 1;
@@ -103,6 +136,7 @@ export function summarizeSeason(raw, overrides = {}) {
     const ta = teams.get(pair.a.roster_id);
     const tb = teams.get(pair.b.roster_id);
     games.push(game(week, 'shit bowl', ta, pair.a.points, tb, pair.b.points));
+    shitBowlBracket.push(bracketGame(week, match.r, match, 'shit bowl', ta, pair.a.points, tb, pair.b.points, pair.a.points < pair.b.points ? pair.a.roster_id : pair.b.roster_id));
   }
 
   // Placements. Winners bracket p:X → places X and X+1.
@@ -153,10 +187,19 @@ export function summarizeSeason(raw, overrides = {}) {
     player: `${p.metadata?.first_name ?? ''} ${p.metadata?.last_name ?? ''}`.trim(),
     position: p.metadata?.position ?? '',
   }));
+  const placeByUserId = Object.fromEntries([...teams.values()].map((t) => [t.userId, t.place]));
+  const bracketSort = (a, b) =>
+    a.round - b.round
+    || (a.round === 1 ? (a.kind === 'bye' ? 0 : 1) - (b.kind === 'bye' ? 0 : 1) : 0)
+    || (placeByUserId[a.a.userId] ?? 999) - (placeByUserId[b.a.userId] ?? 999)
+    || String(a.match).localeCompare(String(b.match));
 
   return {
     season, name: league.name, playoffWeekStart: pws,
     standings: [...teams.values()].sort((a, b) => a.place - b.place),
-    champion, runnerUp, third, pfChamp, lastPlace, games, draft,
+    champion, runnerUp, third, pfChamp, lastPlace, games,
+    playoffBracket: playoffBracket.sort(bracketSort),
+    shitBowlBracket: shitBowlBracket.sort(bracketSort),
+    draft,
   };
 }

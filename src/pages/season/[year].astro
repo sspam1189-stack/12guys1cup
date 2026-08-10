@@ -22,12 +22,65 @@ const regularStandings = s.notStarted
     || b.pf - a.pf
     || a.pa - b.pa
     || a.teamName.localeCompare(b.teamName));
+const seedByUserId = Object.fromEntries(regularStandings.map((t, i) => [t.userId, i + 1]));
 const weeklyResults = s.notStarted
   ? []
   : [...s.games].sort((a, b) =>
     b.week - a.week
     || a.type.localeCompare(b.type)
     || Math.max(b.a.points, b.b.points) - Math.max(a.a.points, a.b.points));
+const playoffGames = s.notStarted ? [] : s.games.filter((g) => g.type === 'playoff').sort((a, b) => a.week - b.week);
+const shitBowlGames = s.notStarted ? [] : s.games.filter((g) => g.type === 'shit bowl').sort((a, b) => a.week - b.week);
+const isMainBracketEntry = (g) => g.kind === 'bye' || g.placement == null || g.placement === 1 || g.placement === 3;
+const playoffBracket = s.notStarted ? [] : (s.playoffBracket ?? playoffGames.map((g) => ({ ...g, kind: 'game', round: g.week - s.playoffWeekStart + 1, advancesUserId: g.a.points >= g.b.points ? g.a.userId : g.b.userId }))).filter(isMainBracketEntry);
+const shitBowlBracket = s.notStarted ? [] : (s.shitBowlBracket ?? shitBowlGames.map((g) => ({ ...g, kind: 'game', round: g.week - s.playoffWeekStart + 1, advancesUserId: g.a.points < g.b.points ? g.a.userId : g.b.userId }))).filter(isMainBracketEntry);
+const playoffWeeks = [...new Set(playoffBracket.map((g) => g.week))].sort((a, b) => a - b);
+const shitBowlWeeks = [...new Set(shitBowlBracket.map((g) => g.week))].sort((a, b) => a - b);
+const finalShitBowlWeek = shitBowlWeeks.at(-1);
+const placeByUserId = Object.fromEntries((s.standings ?? []).map((t) => [t.userId, t.place]));
+const bracketWeekEntries = (entries, week) => entries
+  .filter((g) => g.week === week)
+  .sort((a, b) =>
+    (a.kind === 'bye' ? 0 : 1) - (b.kind === 'bye' ? 0 : 1)
+    || (placeByUserId[a.a.userId] ?? 999) - (placeByUserId[b.a.userId] ?? 999)
+    || String(a.match).localeCompare(String(b.match)));
+const entryUsers = (g) => [g.a?.userId, g.b?.userId].filter(Boolean);
+const bracketLayout = (entries, weeks) => {
+  const slotByEntry = new Map();
+  const rounds = weeks.map((week, roundIndex) => {
+    const previousRound = roundIndex > 0 ? entries.filter((g) => g.week === weeks[roundIndex - 1]) : [];
+    const laidOutEntries = bracketWeekEntries(entries, week).map((g, fallbackSlot) => {
+      let slot = fallbackSlot;
+      let sourceMin = fallbackSlot;
+      let sourceMax = fallbackSlot;
+      if (roundIndex > 0) {
+        const users = new Set(entryUsers(g));
+        const advancingSlots = previousRound
+          .filter((prev) => users.has(prev.advancesUserId))
+          .map((prev) => slotByEntry.get(prev))
+          .filter((value) => value != null);
+        const participantSlots = previousRound
+          .filter((prev) => entryUsers(prev).some((id) => users.has(id)))
+          .map((prev) => slotByEntry.get(prev))
+          .filter((value) => value != null);
+        const sourceSlots = advancingSlots.length > 0 ? advancingSlots : participantSlots;
+        if (sourceSlots.length > 0) {
+          slot = sourceSlots.reduce((sum, value) => sum + value, 0) / sourceSlots.length;
+          if (advancingSlots.length === 0) slot += 1.15;
+          sourceMin = Math.min(...sourceSlots);
+          sourceMax = Math.max(...sourceSlots);
+        }
+      }
+      slotByEntry.set(g, slot);
+      return { game: g, slot, sourceMin, sourceMax };
+    }).sort((a, b) => a.slot - b.slot || String(a.game.match).localeCompare(String(b.game.match)));
+    return { week, roundIndex, entries: laidOutEntries };
+  });
+  const maxSlot = Math.max(0, ...rounds.flatMap((round) => round.entries.map((entry) => entry.slot)));
+  return { rounds, slots: Math.ceil(maxSlot) + 1 };
+};
+const playoffBracketLayout = bracketLayout(playoffBracket, playoffWeeks);
+const shitBowlBracketLayout = bracketLayout(shitBowlBracket, shitBowlWeeks);
 const draftBoard = s.notStarted ? [] : [...s.draft].sort((a, b) => a.pickNo - b.pickNo);
 const draftSlots = [...new Set(draftBoard.map((p) => p.slot))].sort((a, b) => a - b);
 const draftRounds = [...new Set(draftBoard.map((p) => p.round))].sort((a, b) => a - b);
@@ -37,6 +90,14 @@ const avatarUrl = (id) => {
   const avatar = members[id]?.avatar;
   return avatar ? `https://sleepercdn.com/avatars/thumbs/${avatar}` : '';
 };
+const seedLabel = (id) => seedByUserId[id] ? `${seedByUserId[id]}` : '';
+const playoffGameLabel = (g) => g.kind === 'bye'
+  ? 'Bye'
+  : g.placement === 1
+    ? 'Championship'
+    : g.placement === 3
+      ? '3rd Place'
+      : 'Final';
 ---
 <Base title={`${s.season} Season - 12 Guys 1 Cup`}>
   <h1>{s.season} - {s.name}</h1>
@@ -147,6 +208,73 @@ const avatarUrl = (id) => {
           })}
         </tbody>
       </table></div>
+
+      {(playoffGames.length > 0 || shitBowlGames.length > 0) && (
+        <section class="bracket-section" aria-label={`${s.season} brackets`}>
+          {playoffBracket.length > 0 && (
+            <div>
+              <h2>Playoff Bracket</h2>
+              <div class="bracket-scroll">
+                <div class="bracket-grid" style={`--bracket-columns:${playoffWeeks.length};--bracket-slots:${playoffBracketLayout.slots}`}>
+                  {playoffBracketLayout.rounds.map(({ week, roundIndex, entries }) => (
+                    <div class="bracket-round" style={`--round-index:${roundIndex}`}>
+                      <div class="bracket-round-title">Week {week}</div>
+                      {entries.map(({ game: g, slot, sourceMin, sourceMax }) => {
+                        const aWon = g.advancesUserId === g.a.userId;
+                        return (
+                          <div class={`bracket-match ${roundIndex < playoffWeeks.length - 1 ? 'has-next' : ''}`} style={`--bracket-slot:${slot};--source-min:${sourceMin};--source-max:${sourceMax}`}>
+                            <div class={`bracket-team ${aWon ? 'advancing' : ''}`}>
+                              <span>{seedLabel(g.a.userId) && <b>{seedLabel(g.a.userId)}</b>}<MemberLink id={g.a.userId} /></span>
+                              <strong>{g.kind === 'bye' ? 'ADV' : g.a.points.toFixed(2)}</strong>
+                            </div>
+                            <div class={`bracket-team ${g.kind !== 'bye' && !aWon ? 'advancing' : ''} ${g.kind === 'bye' ? 'bye-team' : ''}`}>
+                              <span>{g.kind === 'bye' ? 'BYE' : <>{seedLabel(g.b.userId) && <b>{seedLabel(g.b.userId)}</b>}<MemberLink id={g.b.userId} /></>}</span>
+                              <strong>{g.kind === 'bye' ? '-' : g.b.points.toFixed(2)}</strong>
+                            </div>
+                            <div class="bracket-note">{playoffGameLabel(g)}</div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {shitBowlBracket.length > 0 && (
+            <div>
+              <h2>Shit Bowl Bracket</h2>
+              <div class="bracket-scroll">
+                <div class="bracket-grid" style={`--bracket-columns:${shitBowlWeeks.length};--bracket-slots:${shitBowlBracketLayout.slots}`}>
+                  {shitBowlBracketLayout.rounds.map(({ week, roundIndex, entries }) => (
+                    <div class="bracket-round danger" style={`--round-index:${roundIndex}`}>
+                      <div class="bracket-round-title">Week {week}</div>
+                      {entries.map(({ game: g, slot, sourceMin, sourceMax }) => {
+                        const aLost = g.advancesUserId === g.a.userId;
+                        const isFinal = week === finalShitBowlWeek;
+                        return (
+                          <div class={`bracket-match ${roundIndex < shitBowlWeeks.length - 1 ? 'has-next' : ''}`} style={`--bracket-slot:${slot};--source-min:${sourceMin};--source-max:${sourceMax}`}>
+                            <div class={`bracket-team ${aLost ? 'danger-advancing' : ''}`}>
+                              <span>{seedLabel(g.a.userId) && <b>{seedLabel(g.a.userId)}</b>}<MemberLink id={g.a.userId} /></span>
+                              <strong>{g.kind === 'bye' ? 'ADV' : g.a.points.toFixed(2)}</strong>
+                            </div>
+                            <div class={`bracket-team ${g.kind !== 'bye' && !aLost ? 'danger-advancing' : ''} ${g.kind === 'bye' ? 'bye-team' : ''}`}>
+                              <span>{g.kind === 'bye' ? 'BYE' : <>{seedLabel(g.b.userId) && <b>{seedLabel(g.b.userId)}</b>}<MemberLink id={g.b.userId} /></>}</span>
+                              <strong>{g.kind === 'bye' ? '-' : g.b.points.toFixed(2)}</strong>
+                            </div>
+                            <div class="bracket-note">{g.kind === 'bye' ? 'Bye' : isFinal ? 'Final loser' : 'Loser advances'}</div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       <h2>Draft Board</h2>
       <div class="draft-board-wrap">
