@@ -1035,84 +1035,30 @@ details summary {
     max-width: 7.8rem;
   }
 
-  .alltime-table-wrap {
-    overflow: visible;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
+  .alltime-table {
+    min-width: 39rem;
+    font-size: 0.68rem;
   }
 
-  .alltime-table-wrap::after {
-    display: none;
+  .alltime-table th,
+  .alltime-table td {
+    padding: 0.34rem 0.22rem;
+    text-align: center;
   }
 
-  .mobile-card-table,
-  .mobile-card-table thead,
-  .mobile-card-table tbody,
-  .mobile-card-table tr,
-  .mobile-card-table td {
-    display: block;
-    width: 100%;
+  .alltime-table th {
+    font-size: 0.52rem;
   }
 
-  .mobile-card-table thead {
-    display: none;
+  .table-wrap > .alltime-table th:first-child,
+  .table-wrap > .alltime-table td:first-child {
+    width: 6.8rem;
+    max-width: 6.8rem;
+    text-align: left;
+    white-space: nowrap;
   }
 
-  .mobile-card-table {
-    min-width: 0;
-    border-spacing: 0;
-    font-size: 0.82rem;
-  }
-
-  .mobile-card-table tbody {
-    display: grid;
-    gap: 0.65rem;
-  }
-
-  .mobile-card-table tr {
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: rgba(17, 24, 34, 0.72);
-  }
-
-  .table-wrap > .mobile-card-table td:first-child,
-  .mobile-card-table td {
-    position: static;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: none;
-    gap: 1rem;
-    padding: 0.46rem 0.62rem;
-    border-bottom: 1px solid rgba(143, 158, 178, 0.12);
-    background: transparent;
-    box-shadow: none;
-    white-space: normal;
-  }
-
-  .mobile-card-table td:first-child {
-    padding: 0.62rem;
-    background: rgba(27, 39, 54, 0.72);
-    font-size: 0.9rem;
-    font-weight: 900;
-  }
-
-  .mobile-card-table td:last-child {
-    border-bottom: 0;
-  }
-
-  .mobile-card-table td::before {
-    color: var(--muted);
-    font-size: 0.64rem;
-    font-weight: 850;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    content: attr(data-label);
-  }
-
-  .mobile-card-table td:first-child::before {
+  .alltime-table .badge {
     display: none;
   }
 
