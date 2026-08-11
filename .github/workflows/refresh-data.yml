@@ -16,6 +16,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run fetch
+      # Undocumented endpoint — never let an ADP shape change break the refresh.
+      - run: npm run fetch:adp
+        continue-on-error: true
       - run: npm run compute
       - run: npm test
       - name: Commit refreshed data
