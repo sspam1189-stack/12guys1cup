@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import StatTile from '../../components/StatTile.astro';
 import members from '../../../data/computed/members.json';
 import alltime from '../../../data/computed/alltime.json';
 import seasons from '../../../data/computed/seasons.json';
@@ -16,39 +17,59 @@ const rows = seasons
   .map((s) => ({ s, t: s.standings.find((t) => t.userId === id) }))
   .sort((a, b) => b.s.season.localeCompare(a.s.season));
 const honors = rows.flatMap(({ s }) => [
-  s.champion === id && `${s.season} Champion`,
-  s.runnerUp === id && `${s.season} Runner-up`,
-  s.third === id && `${s.season} Third`,
-  s.pfChamp === id && `${s.season} PF Champ`,
-  s.lastPlace === id && `${s.season} Last Place`,
+  s.champion === id && { icon: '🏆', text: `${s.season} Champion`, kind: 'champ' },
+  s.runnerUp === id && { icon: '🥈', text: `${s.season} Runner-up`, kind: '' },
+  s.third === id && { icon: '🥉', text: `${s.season} Third`, kind: '' },
+  s.pfChamp === id && { icon: '📈', text: `${s.season} PF Champ`, kind: '' },
+  s.lastPlace === id && { icon: '💩', text: `${s.season} Shit Bowl`, kind: 'shit' },
 ]).filter(Boolean);
+const record = career
+  ? `${career.wins}-${career.losses}${career.ties ? `-${career.ties}` : ''}`
+  : '-';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <Base title={`${m.name} - 12 Guys 1 Cup`}>
-  <h1>
-    {m.avatar && <img src={`https://sleepercdn.com/avatars/thumbs/${m.avatar}`} alt="" width="36" height="36" style="border-radius:50%;vertical-align:middle" />}
-    {m.name}
-  </h1>
+  <div class="member-head">
+    {m.avatar && <img class="member-avatar" src={`https://sleepercdn.com/avatars/thumbs/${m.avatar}`} alt="" width="64" height="64" />}
+    <div>
+      <h1>{m.name}</h1>
+      <p class="muted">{m.seasons.length} season{m.seasons.length === 1 ? '' : 's'} · {m.seasons[0]}–{m.seasons.at(-1)}</p>
+    </div>
+  </div>
+
   {career && (
-    <p>
-      Career: <strong>{career.wins}-{career.losses}{career.ties ? `-${career.ties}` : ''}</strong>
-      &nbsp; - {career.pf.toFixed(2)} PF
-      &nbsp; - {career.seasons} seasons
-    </p>
+    <div class="tile-grid">
+      <StatTile label="Career record" value={record} sub={`${(career.wins + career.losses + career.ties)} games`} />
+      <StatTile label="Total PF" value={career.pf.toFixed(0)} sub={`${career.avgPf.toFixed(1)} per season`} />
+      <StatTile label="Titles" value={career.championships} sub={`${career.pfTitles} PF titles`} />
+      <StatTile label="Shit bowls" value={career.lastPlaces} sub={`${career.playoffAppearances} playoff trips`} />
+    </div>
   )}
-  {honors.length > 0 && <p>{honors.map((h) => <span class="badge" style="margin-right:0.3rem">{h}</span>)}</p>}
+
+  {honors.length > 0 && (
+    <div class="honors-row">
+      {honors.map((h) => (
+        <span class={`honor-chip ${h.kind === 'champ' ? 'champ' : h.kind === 'shit' ? 'shit' : ''}`}>
+          {h.icon} <span class="who">{h.text}</span>
+        </span>
+      ))}
+    </div>
+  )}
 
   <h2>Season by Season</h2>
-  <div class="table-wrap"><table>
+  <div class="table-wrap"><table class="cards-sm">
     <thead><tr><th>Season</th><th>Team Name</th><th>Finish</th><th>W</th><th>L</th><th>PF</th><th>PA</th></tr></thead>
     <tbody>
       {rows.map(({ s, t }) => (
         <tr>
-          <td><a href={`${base}/season/${s.season}/`}>{s.season}</a></td>
-          <td>{t.teamName}</td>
-          <td>{t.place}{s.champion === id ? ' Champ' : s.lastPlace === id ? ' Last' : ''}</td>
-          <td>{t.wins}</td><td>{t.losses}</td>
-          <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
+          <td data-label="Season"><a href={`${base}/season/${s.season}/`}>{s.season}</a></td>
+          <td class="row-head">{t.teamName}</td>
+          <td data-label="Finish">
+            <span class={`rank-badge ${s.champion === id ? 'first' : s.lastPlace === id ? 'last' : ''}`}>{t.place}</span>
+            {s.champion === id ? ' 🏆' : s.lastPlace === id ? ' 💩' : ''}
+          </td>
+          <td data-label="W">{t.wins}</td><td data-label="L">{t.losses}</td>
+          <td data-label="PF">{t.pf.toFixed(2)}</td><td data-label="PA">{t.pa.toFixed(2)}</td>
         </tr>
       ))}
     </tbody>

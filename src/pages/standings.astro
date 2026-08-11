@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import MemberLink from '../components/MemberLink.astro';
+import Legend from '../components/Legend.astro';
 import alltime from '../../data/computed/alltime.json';
 import members from '../../data/computed/members.json';
 import seasons from '../../data/computed/seasons.json';
@@ -12,10 +13,63 @@ const pct = (c) => {
 };
 const playoffRate = (c) => c.seasons ? c.playoffAppearances / c.seasons : 0;
 const playoffDisplay = (c) => c.seasons ? `${c.playoffAppearances} (${Math.round(playoffRate(c) * 100)}%)` : '-';
+const record = (c) => `${c.wins}-${c.losses}${c.ties ? `-${c.ties}` : ''}`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Only honors actually won get a chip.
+const trophies = (c) => [
+  c.championships && { icon: '🏆', n: c.championships, kind: 'champ', label: 'Champion' },
+  c.runnerUps && { icon: '🥈', n: c.runnerUps, kind: '', label: 'Runner-up' },
+  c.thirds && { icon: '🥉', n: c.thirds, kind: '', label: 'Third' },
+  c.pfTitles && { icon: '📈', n: c.pfTitles, kind: '', label: 'Most PF' },
+  c.lastPlaces && { icon: '💩', n: c.lastPlaces, kind: 'shit', label: 'Shit Bowl' },
+].filter(Boolean);
 ---
 <Base title="All-Time Standings - 12 Guys 1 Cup">
   <h1>All-Time Standings</h1>
-  <p class="muted">Regular season only. Click headers to sort.</p>
+  <p class="muted">Regular season only. Ranked by win percentage.</p>
+  <p class="muted tap-hint">Tap a player for their trophies and stats.</p>
+  <Legend class="mobile-only" />
+
+  <ol class="board">
+    {alltime.map((c, i) => {
+      const diff = c.avgPf - c.avgPa;
+      const avatar = members[c.userId]?.avatar;
+      return (
+        <li>
+          <details class="lb-item">
+            <summary class="lb-row">
+              <span class={`rank-badge ${i === 0 ? 'first' : i === alltime.length - 1 ? 'last' : ''}`}>{i + 1}</span>
+              {avatar && <img class="lb-avatar" src={`https://sleepercdn.com/avatars/thumbs/${avatar}`} alt="" width="21" height="21" loading="lazy" />}
+              <span class="lb-name">{members[c.userId]?.name ?? c.userId}</span>
+              {isFormer(c.userId) && <span class="badge">former</span>}
+              <span class="lb-rec">{record(c)}</span>
+              <span class="lb-pct">{pct(c)}</span>
+              <span class="lb-caret" aria-hidden="true">›</span>
+            </summary>
+            <div class="lb-detail">
+              {trophies(c).length > 0 && (
+                <div class="lb-chips">
+                  {trophies(c).map((t) => (
+                    <span class={`honor-chip ${t.kind}`} title={`${t.label} ×${t.n}`}>
+                      {t.icon} <span class="who">×{t.n}</span>
+                    </span>
+                  ))}
+                </div>
+              )}
+              <div class="lb-grid">
+                <div><em>Seasons</em><b>{c.seasons}</b></div>
+                <div><em>Playoffs</em><b>{c.seasons ? `${Math.round(playoffRate(c) * 100)}%` : '-'}</b></div>
+                <div><em>Avg PF</em><b>{c.avgPf.toFixed(1)}</b></div>
+                <div><em>Diff</em><b class={diff >= 0 ? 'green' : 'red'}>{diff >= 0 ? '+' : ''}{diff.toFixed(0)}</b></div>
+              </div>
+              <a class="lb-profile" href={`${base}/member/${c.userId}/`}>View profile →</a>
+            </div>
+          </details>
+        </li>
+      );
+    })}
+  </ol>
+
   <div class="table-wrap alltime-table-wrap">
     <table class="sortable alltime-table">
       <thead><tr>
@@ -26,7 +80,7 @@ const playoffDisplay = (c) => c.seasons ? `${c.playoffAppearances} (${Math.round
       <tbody>
         {alltime.map((c) => (
           <tr>
-            <td data-label="Member"><MemberLink id={c.userId} />{isFormer(c.userId) && <span class="badge"> former</span>}</td>
+            <td data-label="Member"><MemberLink id={c.userId} avatar={true} />{isFormer(c.userId) && <span class="badge"> former</span>}</td>
             <td data-label="Seasons">{c.seasons}</td>
             <td data-label="W">{c.wins}</td><td data-label="L">{c.losses}</td><td data-label="T">{c.ties}</td>
             <td data-label="Win %" data-v={pct(c)}>{pct(c)}</td>

@@ -1,0 +1,44 @@
+/* Design tokens. Change a value here and it lands everywhere. */
+:root {
+  color-scheme: dark;
+
+  /* Base surfaces — deep indigo, not neutral grey. */
+  --bg: #0e1023;
+  --bg2: #141733;
+  --panel: #171a36;
+  --panel2: #1d2145;
+  --panel3: #262b57;
+
+  /* Translucent overlays used for cards and rows. */
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-2: rgba(255, 255, 255, 0.08);
+  --surface-3: rgba(255, 255, 255, 0.11);
+
+  /* Text. */
+  --text: #f4f2ff;
+  --soft: #cfd4f4;
+  --muted: #a3ade0;
+
+  /* Accents. Violet→cyan is the signature; gold is champions only;
+     rose is the shit bowl; green means a win. */
+  --accent: #a78bfa;
+  --accent2: #22d3ee;
+  --win: #34d399;
+  --gold: #fbbf24;
+  --silver: #cbd5e1;
+  --bronze: #e0a06a;
+  --red: #fb7185;
+
+  --grad: linear-gradient(135deg, #a78bfa, #22d3ee);
+  --grad-soft: linear-gradient(135deg, rgba(167, 139, 250, 0.3), rgba(34, 211, 238, 0.14));
+  --grad-gold: linear-gradient(135deg, #fbbf24, #f59e0b);
+
+  --border: rgba(196, 181, 253, 0.16);
+  --border-strong: rgba(196, 181, 253, 0.32);
+  --shadow: 0 18px 55px rgba(4, 2, 20, 0.5);
+
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-xs: 7px;
+  --nav-height: 3.15rem;
+}

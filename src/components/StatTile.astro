@@ -1,0 +1,8 @@
+---
+const { label, value, sub } = Astro.props;
+---
+<div class="stat-tile">
+  <span class="label">{label}</span>
+  <span class="value">{value}</span>
+  {sub && <span class="sub">{sub}</span>}
+</div>
