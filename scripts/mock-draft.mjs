@@ -17,6 +17,10 @@ const arg = (flag, fallback) => {
   return i === -1 ? fallback : Number(process.argv[i + 1]);
 };
 const MY_SLOT = arg('--slot', 1);
+// --order takes the other managers' display names in slot order, for when the
+// commissioner has posted the board and you are choosing where to slot in.
+const orderFlag = process.argv.indexOf('--order');
+const FIXED_ORDER = orderFlag === -1 ? null : process.argv[orderFlag + 1].split(',').map((n) => n.trim());
 const SIMS = arg('--sims', 400);
 const MIN_PCT = arg('--min', 25);
 const TOP = arg('--top', 8);
@@ -146,6 +150,15 @@ const expectedPoints = (adp) => {
 };
 
 const opponents = [...tendencies.keys()];
+const byName = new Map([...tendencies].map(([id, t]) => [t.name.toLowerCase(), id]));
+const fixedIds = FIXED_ORDER?.map((name) => {
+  const id = byName.get(name.toLowerCase());
+  if (!id) throw new Error(`Unknown manager "${name}". Known: ${[...byName.keys()].join(', ')}`);
+  return id;
+});
+if (fixedIds && fixedIds.length !== TEAMS - 1) {
+  throw new Error(`--order needs ${TEAMS - 1} names, got ${fixedIds.length}`);
+}
 
 // How you draft, per the plan: one quarterback and one tight end, neither of
 // them early, and the rest of the board spent on running backs and receivers.
@@ -171,10 +184,15 @@ function myChoice(available, mine, round) {
 }
 
 function simulate(mySlot) {
-  const shuffled = opponents.slice();
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  let shuffled;
+  if (fixedIds) {
+    shuffled = fixedIds;
+  } else {
+    shuffled = opponents.slice();
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(rand() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
   }
   // Everyone except me, spread across the remaining slots.
   const bySlot = [];
