@@ -100,9 +100,77 @@ for (const user of users) {
   });
 }
 
+// What a pick is actually worth. ADP is not linear in points — the gap between
+// the first player and the twelfth dwarfs the gap between the hundredth and the
+// hundred-and-eleventh — so the value curve is measured off the last three
+// seasons: every drafted player's ADP against the points he went on to score.
+const valueSamples = [];
+for (const { season, picks } of recent) {
+  const adpTable = await readJson(new URL(`adp/${season}.json`, RAW)).catch(() => ({}));
+  const totals = new Map();
+  const matchups = await readJson(at(season, 'matchups'));
+  for (const [week, rows] of Object.entries(matchups)) {
+    if (Number(week) > 17) continue;
+    for (const row of rows) {
+      for (const [playerId, pts] of Object.entries(row.players_points ?? {})) {
+        totals.set(playerId, (totals.get(playerId) ?? 0) + (pts ?? 0));
+      }
+    }
+  }
+  for (const pick of picks) {
+    const adp = adpTable[pick.player_id]?.adp;
+    if (adp == null || adp >= ADP_CEILING) continue;
+    if (!SKILL.includes(position(pick))) continue;
+    valueSamples.push([adp, totals.get(pick.player_id) ?? 0]);
+  }
+}
+valueSamples.sort((a, b) => a[0] - b[0]);
+const WINDOW = 25;
+const curveAdp = [];
+const curvePts = [];
+for (let i = 0; i < valueSamples.length; i++) {
+  const slice = valueSamples.slice(Math.max(0, i - WINDOW), i + WINDOW + 1);
+  curveAdp.push(valueSamples[i][0]);
+  curvePts.push(mean(slice.map((x) => x[1])));
+}
+const expectedPoints = (adp) => {
+  if (!curveAdp.length) return 0;
+  let lo = 0;
+  let hi = curveAdp.length - 1;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (curveAdp[mid] < adp) lo = mid + 1;
+    else hi = mid;
+  }
+  return curvePts[lo];
+};
+
 const opponents = [...tendencies.keys()];
 
-function simulate() {
+// How you draft, per the plan: one quarterback and one tight end, neither of
+// them early, and the rest of the board spent on running backs and receivers.
+const MY_PLAN = { QB: 1, RB: 5, WR: 6, TE: 1 };
+const EARLIEST = { TE: 8, QB: 8 };
+function myChoice(available, mine, round) {
+  const count = (pos) => mine.filter((p) => p.position === pos).length;
+  // The last two rounds go to kicker and defense, which the board doesn't hold.
+  if (round > ROUNDS - 2) return null;
+  const roundsLeft = ROUNDS - 2 - round;
+  let best = null;
+  for (const p of board) {
+    if (!available.has(p.playerId)) continue;
+    if (count(p.position) >= MY_PLAN[p.position]) continue;
+    if (round < (EARLIEST[p.position] ?? 1)) continue;
+    // Don't let a scarce single slot go unfilled by chasing depth to the end.
+    const mustFillNow = ['QB', 'TE'].filter((pos) => count(pos) < MY_PLAN[pos]).length;
+    if (mustFillNow > roundsLeft && !['QB', 'TE'].includes(p.position)) continue;
+    best = p;
+    break;
+  }
+  return best ?? board.find((p) => available.has(p.playerId)) ?? null;
+}
+
+function simulate(mySlot) {
   const shuffled = opponents.slice();
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(rand() * (i + 1));
@@ -112,12 +180,13 @@ function simulate() {
   const bySlot = [];
   let k = 0;
   for (let slot = 1; slot <= TEAMS; slot++) {
-    bySlot[slot] = slot === MY_SLOT ? 'ME' : shuffled[k++];
+    bySlot[slot] = slot === mySlot ? 'ME' : shuffled[k++];
   }
 
   const available = new Set(board.map((p) => p.playerId));
   const rosters = new Map(bySlot.slice(1).map((id) => [id, []]));
   const availableAtMyPick = [];
+  const mine = [];
 
   for (let round = 1; round <= ROUNDS; round++) {
     for (let i = 1; i <= TEAMS; i++) {
@@ -125,10 +194,11 @@ function simulate() {
       const id = bySlot[slot];
       if (id === 'ME') {
         availableAtMyPick.push(board.filter((p) => available.has(p.playerId)).slice(0, 40));
-        // I take the best remaining skill player so the board keeps moving; the
-        // recommendation is read off availability, not off this placeholder.
-        const take = board.find((p) => available.has(p.playerId));
-        if (take) available.delete(take.playerId);
+        const take = myChoice(available, mine, round);
+        if (take) {
+          available.delete(take.playerId);
+          mine.push({ ...take, round });
+        }
         continue;
       }
       const t = tendencies.get(id);
@@ -153,7 +223,11 @@ function simulate() {
         if (short <= 0) continue;
         const opening = count(p.position) === 0 ? t.openingReach[p.position] : 0;
         // Lower score = taken sooner. Reach pulls a player up the board.
-        const score = p.adp - opening - Math.min(short, 2) * 3 + gauss() * 7;
+        // Uncertainty grows down the board: nobody is unsure about the 1.01,
+        // and everybody is guessing by round 12. Flat noise would make the top
+        // of round 1 look like a lottery.
+        const jitter = gauss() * Math.max(1.5, p.adp * 0.15);
+        const score = p.adp - opening - Math.min(short, 2) * 3 + jitter;
         if (score < bestScore) {
           bestScore = score;
           best = p;
@@ -166,12 +240,54 @@ function simulate() {
       }
     }
   }
-  return availableAtMyPick;
+  return { availableAtMyPick, mine };
+}
+
+// --compare: which slot to pick when the commissioner lets you choose. Every
+// slot has the same sum of pick numbers in a snake, so the roster with the
+// lowest total ADP is the one the slot actually bought you.
+if (process.argv.includes('--compare')) {
+  console.log(`Slot comparison — ${SIMS} sims each, ${current} half-PPR ADP, your 1 QB / 1 TE plan\n`);
+  console.log('Slot   projected starter pts   typical 1st pick');
+  const results = [];
+  for (let slot = 1; slot <= TEAMS; slot++) {
+    const starters = [];
+    const openers = new Map();
+    for (let s = 0; s < SIMS; s++) {
+      const { mine } = simulate(slot);
+      // Starting nine: a quarterback, two backs, three receivers, a tight end,
+      // and the best back or receiver left over in the flex.
+      const byPos = (pos) =>
+        mine.filter((p) => p.position === pos).sort((a, b) => a.adp - b.adp);
+      const rb = byPos('RB');
+      const wr = byPos('WR');
+      const lineup = [
+        ...byPos('QB').slice(0, 1),
+        ...rb.slice(0, 2),
+        ...wr.slice(0, 3),
+        ...byPos('TE').slice(0, 1),
+        ...[...rb.slice(2), ...wr.slice(3)].sort((a, b) => a.adp - b.adp).slice(0, 1),
+      ];
+      starters.push(lineup.reduce((a, p) => a + expectedPoints(p.adp), 0));
+      const first = mine[0];
+      if (first) openers.set(first.name, (openers.get(first.name) ?? 0) + 1);
+    }
+    const top = [...openers].sort((a, b) => b[1] - a[1])[0];
+    results.push({ slot, starter: mean(starters), opener: top?.[0] ?? '—' });
+  }
+  const best = Math.max(...results.map((r) => r.starter));
+  for (const r of results) {
+    const flag = r.starter === best ? '  <-- best' : '';
+    console.log(
+      `${String(r.slot).padStart(2)}     ${r.starter.toFixed(0).padStart(19)}   ${r.opener}${flag}`,
+    );
+  }
+  process.exit(0);
 }
 
 const survival = Array.from({ length: ROUNDS }, () => new Map());
 for (let s = 0; s < SIMS; s++) {
-  simulate().forEach((pool, round) => {
+  simulate(MY_SLOT).availableAtMyPick.forEach((pool, round) => {
     for (const p of pool) {
       const row = survival[round];
       row.set(p.playerId, (row.get(p.playerId) ?? 0) + 1);
