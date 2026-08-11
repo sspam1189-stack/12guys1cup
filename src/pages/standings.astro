@@ -26,6 +26,7 @@ const trophies = (c) => [
 <Base title="All-Time Standings - 12 Guys 1 Cup">
   <h1>All-Time Standings</h1>
   <p class="muted">Regular season only. Ranked by win percentage.</p>
+  <p class="muted tap-hint">Tap a player for their trophies and stats.</p>
 
   <ol class="alltime-board">
     {alltime.map((c, i) => {
@@ -41,6 +42,7 @@ const trophies = (c) => [
               {isFormer(c.userId) && <span class="badge">former</span>}
               <span class="lb-rec">{record(c)}</span>
               <span class="lb-pct">{pct(c)}</span>
+              <span class="lb-caret" aria-hidden="true">›</span>
             </summary>
             <div class="lb-detail">
               {trophies(c).length > 0 && (

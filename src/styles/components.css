@@ -211,6 +211,23 @@ table.sortable th {
   font-weight: 800;
 }
 
+/* Points right when closed, down when open — the row is tappable. */
+.lb-caret {
+  flex: none;
+  width: 0.9rem;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  transition: transform 140ms ease;
+}
+
+.lb-item[open] .lb-caret { transform: rotate(90deg); }
+
+/* The hint only makes sense where rows expand. */
+.tap-hint { display: none; }
+
 /* ---------- Member page header ---------- */
 
 .member-head {
@@ -1252,6 +1269,12 @@ details summary {
 
   /* All-time swaps the 14-column table for the tap-to-expand board. */
   .alltime-table-wrap { display: none; }
+
+  .tap-hint {
+    display: block;
+    margin-top: -0.5rem;
+    font-size: 0.78rem;
+  }
 
   .alltime-board {
     display: block;
