@@ -5,6 +5,7 @@
   "scripts": {
     "fetch": "node scripts/fetch-data.mjs",
     "compute": "node scripts/build-stats.mjs",
+    "tendencies": "node scripts/draft-tendencies.mjs",
     "test": "vitest run",
     "dev": "astro dev",
     "build": "astro build",
