@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import MemberLink from '../components/MemberLink.astro';
+import Legend from '../components/Legend.astro';
 import alltime from '../../data/computed/alltime.json';
 import members from '../../data/computed/members.json';
 import seasons from '../../data/computed/seasons.json';
@@ -16,19 +17,20 @@ const record = (c) => `${c.wins}-${c.losses}${c.ties ? `-${c.ties}` : ''}`;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Only honors actually won get a chip.
 const trophies = (c) => [
-  c.championships && { icon: '🏆', n: c.championships, kind: 'champ' },
-  c.runnerUps && { icon: '🥈', n: c.runnerUps, kind: '' },
-  c.thirds && { icon: '🥉', n: c.thirds, kind: '' },
-  c.pfTitles && { icon: '📈', n: c.pfTitles, kind: '' },
-  c.lastPlaces && { icon: '💩', n: c.lastPlaces, kind: 'shit' },
+  c.championships && { icon: '🏆', n: c.championships, kind: 'champ', label: 'Champion' },
+  c.runnerUps && { icon: '🥈', n: c.runnerUps, kind: '', label: 'Runner-up' },
+  c.thirds && { icon: '🥉', n: c.thirds, kind: '', label: 'Third' },
+  c.pfTitles && { icon: '📈', n: c.pfTitles, kind: '', label: 'Most PF' },
+  c.lastPlaces && { icon: '💩', n: c.lastPlaces, kind: 'shit', label: 'Shit Bowl' },
 ].filter(Boolean);
 ---
 <Base title="All-Time Standings - 12 Guys 1 Cup">
   <h1>All-Time Standings</h1>
   <p class="muted">Regular season only. Ranked by win percentage.</p>
   <p class="muted tap-hint">Tap a player for their trophies and stats.</p>
+  <Legend class="mobile-only" />
 
-  <ol class="alltime-board">
+  <ol class="board">
     {alltime.map((c, i) => {
       const diff = c.avgPf - c.avgPa;
       const avatar = members[c.userId]?.avatar;
@@ -48,7 +50,9 @@ const trophies = (c) => [
               {trophies(c).length > 0 && (
                 <div class="lb-chips">
                   {trophies(c).map((t) => (
-                    <span class={`honor-chip ${t.kind}`}>{t.icon} <span class="who">×{t.n}</span></span>
+                    <span class={`honor-chip ${t.kind}`} title={`${t.label} ×${t.n}`}>
+                      {t.icon} <span class="who">×{t.n}</span>
+                    </span>
                   ))}
                 </div>
               )}

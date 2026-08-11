@@ -106,7 +106,7 @@ table.sortable th {
 
 /* The sortable 14-column table is the desktop view; this compact board takes
    over on phones so every member fits on one screen. Rows expand on tap. */
-.alltime-board { display: none; }
+.board { display: none; }
 
 .lb-item { border-bottom: 1px solid var(--border); }
 .lb-item:last-child { border-bottom: 0; }
@@ -209,6 +209,56 @@ table.sortable th {
 .lb-profile {
   font-size: 0.78rem;
   font-weight: 800;
+}
+
+/* ---------- Honor legend ---------- */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin: 0.5rem 0 0.9rem;
+  padding: 0;
+  list-style: none;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.22rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.74rem;
+}
+
+/* Only shown where bare emoji chips appear — the phone leaderboard. */
+.legend.mobile-only { display: none; }
+
+.legend-icon { font-size: 0.86rem; }
+.legend-label { color: var(--soft); font-weight: 800; }
+.legend-detail { color: var(--muted); }
+
+/* The detailed variant reads as a definition list, one honor per line. */
+.legend.detailed {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.legend.detailed li {
+  gap: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+
+.legend.detailed .legend-icon { font-size: 1.05rem; }
+
+.legend.detailed .legend-label {
+  min-width: 6.5rem;
+  color: var(--text);
+  font-weight: 850;
 }
 
 /* Points right when closed, down when open — the row is tappable. */
@@ -1267,8 +1317,9 @@ details summary {
 
   table.cards-sm .badge { display: inline-flex; }
 
-  /* All-time swaps the 14-column table for the tap-to-expand board. */
-  .alltime-table-wrap { display: none; }
+  /* All-time and season standings swap their tables for the tap-to-expand board. */
+  .alltime-table-wrap,
+  .season-table-wrap { display: none; }
 
   .tap-hint {
     display: block;
@@ -1276,7 +1327,9 @@ details summary {
     font-size: 0.78rem;
   }
 
-  .alltime-board {
+  .legend.mobile-only { display: flex; }
+
+  .board {
     display: block;
     overflow: hidden;
     margin: 0.6rem 0 0;

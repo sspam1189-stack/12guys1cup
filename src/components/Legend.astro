@@ -1,0 +1,20 @@
+---
+// What the honor emoji mean. One definition, used wherever they appear.
+export const HONORS = [
+  { icon: '🏆', label: 'Champion', detail: 'Won the playoff final' },
+  { icon: '🥈', label: 'Runner-up', detail: 'Lost the playoff final' },
+  { icon: '🥉', label: 'Third', detail: 'Won the 3rd-place game' },
+  { icon: '📈', label: 'Most PF', detail: 'Most regular-season points for' },
+  { icon: '💩', label: 'Shit Bowl', detail: 'Lost the shit bowl final — last place' },
+];
+const { detailed = false, class: className = '' } = Astro.props;
+---
+<ul class={`legend ${detailed ? 'detailed' : ''} ${className}`.trim()}>
+  {HONORS.map((h) => (
+    <li>
+      <span class="legend-icon" aria-hidden="true">{h.icon}</span>
+      <span class="legend-label">{h.label}</span>
+      {detailed && <span class="legend-detail">{h.detail}</span>}
+    </li>
+  ))}
+</ul>

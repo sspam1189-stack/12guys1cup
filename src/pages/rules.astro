@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Legend from '../components/Legend.astro';
 import cfg from '../../data/computed/settings.json';
 import rules from '../../data/rules.json';
 
@@ -29,6 +30,10 @@ const allScoring = Object.entries(cfg.scoring).filter(([, v]) => v !== 0).sort()
 <Base title="Rules - 12 Guys 1 Cup">
   <h1>League Rules</h1>
   <p class="muted">Settings pulled live from Sleeper ({cfg.season} season). Payouts and bylaws maintained by the commissioner.</p>
+
+  <h2>Honors</h2>
+  <p class="muted">What the badges around the site mean.</p>
+  <Legend detailed={true} />
 
   <h2>Bylaws</h2>
   {rules.bylaws.length > 0 ? (

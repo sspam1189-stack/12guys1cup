@@ -14,7 +14,6 @@ const winPct = (t) => {
   const games = t.wins + t.losses + t.ties;
   return games ? (t.wins + t.ties / 2) / games : 0;
 };
-const finalStandings = s.notStarted ? [] : [...s.standings].sort((a, b) => a.place - b.place);
 const regularStandings = s.notStarted
   ? []
   : [...s.standings].sort((a, b) =>
@@ -111,51 +110,57 @@ const playoffGameLabel = (g) => g.kind === 'bye'
     <>
       <Honors season={s} />
 
-      <div class="section-heading-row">
-        <h2 id="standings-heading">Final Standings</h2>
-        <div class="view-toggle" role="tablist" aria-label="Standings view">
-          <button
-            class="view-toggle-button"
-            type="button"
-            role="tab"
-            aria-selected="true"
-            data-standings-view="final"
-          >
-            Final Standings
-          </button>
-          <button
-            class="view-toggle-button"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-standings-view="regular"
-          >
-            Regular Season
-          </button>
-        </div>
-      </div>
-      <div class="table-wrap"><table class="cards-sm">
+      <h2>Regular Season Standings</h2>
+      <p class="muted tap-hint">Tap a team for its points and playoff result.</p>
+
+      <ol class="board">
+        {regularStandings.map((t, i) => {
+          const diff = t.pf - t.pa;
+          const avatar = members[t.userId]?.avatar;
+          const playoffs = t.playoffWins + t.playoffLosses > 0;
+          return (
+            <li>
+              <details class="lb-item">
+                <summary class="lb-row">
+                  <span class={`rank-badge ${i === 0 ? 'first' : i === regularStandings.length - 1 ? 'last' : ''}`}>{i + 1}</span>
+                  {avatar && <img class="lb-avatar" src={`https://sleepercdn.com/avatars/thumbs/${avatar}`} alt="" width="21" height="21" loading="lazy" />}
+                  <span class="lb-name">{t.teamName}</span>
+                  <span class="lb-rec">{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</span>
+                  <span class="lb-caret" aria-hidden="true">›</span>
+                </summary>
+                <div class="lb-detail">
+                  <div class="lb-chips">
+                    {s.champion === t.userId && <span class="honor-chip champ" title="Champion">🏆 <span class="who">Champion</span></span>}
+                    {s.runnerUp === t.userId && <span class="honor-chip" title="Runner-up">🥈 <span class="who">Runner-up</span></span>}
+                    {s.third === t.userId && <span class="honor-chip" title="Third">🥉 <span class="who">Third</span></span>}
+                    {s.pfChamp === t.userId && <span class="honor-chip" title="Most points for">📈 <span class="who">Most PF</span></span>}
+                    {s.lastPlace === t.userId && <span class="honor-chip shit" title="Lost the shit bowl">💩 <span class="who">Shit Bowl</span></span>}
+                  </div>
+                  <div class="lb-grid">
+                    <div><em>PF</em><b>{t.pf.toFixed(1)}</b></div>
+                    <div><em>PA</em><b>{t.pa.toFixed(1)}</b></div>
+                    <div><em>Diff</em><b class={diff >= 0 ? 'green' : 'red'}>{diff >= 0 ? '+' : ''}{diff.toFixed(0)}</b></div>
+                    <div><em>Playoffs</em><b>{playoffs ? `${t.playoffWins}-${t.playoffLosses}` : '—'}</b></div>
+                  </div>
+                  <MemberLink id={t.userId} avatar={true} />
+                </div>
+              </details>
+            </li>
+          );
+        })}
+      </ol>
+
+      <div class="table-wrap season-table-wrap"><table>
         <thead><tr><th>#</th><th>Team</th><th>Member</th><th>W</th><th>L</th><th>T</th>
           <th>PF</th><th>PA</th></tr></thead>
-        <tbody data-standings-panel="final">
-          {finalStandings.map((t) => (
-            <tr>
-              <td data-label="Place"><span class={`rank-badge ${t.place === 1 ? 'first' : t.place === s.standings.length ? 'last' : ''}`}>{t.place}</span></td>
-              <td class="row-head">{t.teamName}</td>
-              <td data-label="Member"><MemberLink id={t.userId} avatar={true} /></td>
-              <td data-label="W">{t.wins}</td><td data-label="L">{t.losses}</td><td data-label="T">{t.ties}</td>
-              <td data-label="PF">{t.pf.toFixed(2)}</td><td data-label="PA">{t.pa.toFixed(2)}</td>
-            </tr>
-          ))}
-        </tbody>
-        <tbody data-standings-panel="regular" hidden>
+        <tbody>
           {regularStandings.map((t, i) => (
             <tr>
-              <td data-label="Place"><span class={`rank-badge ${i === 0 ? 'first' : i === regularStandings.length - 1 ? 'last' : ''}`}>{i + 1}</span></td>
-              <td class="row-head">{t.teamName}</td>
-              <td data-label="Member"><MemberLink id={t.userId} avatar={true} /></td>
-              <td data-label="W">{t.wins}</td><td data-label="L">{t.losses}</td><td data-label="T">{t.ties}</td>
-              <td data-label="PF">{t.pf.toFixed(2)}</td><td data-label="PA">{t.pa.toFixed(2)}</td>
+              <td><span class={`rank-badge ${i === 0 ? 'first' : i === regularStandings.length - 1 ? 'last' : ''}`}>{i + 1}</span></td>
+              <td>{t.teamName}</td>
+              <td><MemberLink id={t.userId} avatar={true} /></td>
+              <td>{t.wins}</td><td>{t.losses}</td><td>{t.ties}</td>
+              <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
@@ -295,25 +300,6 @@ const playoffGameLabel = (g) => g.kind === 'bye'
       </div>
 
       <script>
-        const standingsHeading = document.querySelector('#standings-heading');
-        const standingsButtons = document.querySelectorAll('[data-standings-view]');
-        const standingsPanels = document.querySelectorAll('[data-standings-panel]');
-        const labels = {
-          final: 'Final Standings',
-          regular: 'Regular Season Standings',
-        };
-        standingsButtons.forEach((button) => {
-          button.addEventListener('click', () => {
-            const view = button.dataset.standingsView;
-            standingsButtons.forEach((item) => {
-              item.setAttribute('aria-selected', item === button ? 'true' : 'false');
-            });
-            standingsPanels.forEach((panel) => {
-              panel.hidden = panel.dataset.standingsPanel !== view;
-            });
-            standingsHeading.textContent = labels[view];
-          });
-        });
         const weekButtons = document.querySelectorAll('[data-week-filter]');
         const weekRows = document.querySelectorAll('[data-week-row]');
         weekButtons.forEach((button) => {
