@@ -18,6 +18,8 @@ const arg = (flag, fallback) => {
 };
 const MY_SLOT = arg('--slot', 1);
 const SIMS = arg('--sims', 400);
+const MIN_PCT = arg('--min', 25);
+const TOP = arg('--top', 8);
 const ADP_CEILING = 250;
 const SKILL = ['QB', 'RB', 'WR', 'TE'];
 // Sleeper's kicker and defense ADP is on its own scale, so those two are drafted
@@ -189,9 +191,9 @@ console.log(`Your picks: ${myPicks.join(', ')}\n`);
 for (let round = 0; round < ROUNDS; round++) {
   const rows = [...survival[round]]
     .map(([playerId, n]) => ({ ...meta.get(playerId), pct: Math.round((n / SIMS) * 100) }))
-    .filter((r) => r.pct >= 25)
+    .filter((r) => r.pct >= MIN_PCT)
     .sort((a, b) => a.adp - b.adp)
-    .slice(0, 8);
+    .slice(0, TOP);
   console.log(`R${round + 1} (pick ${myPicks[round]})`);
   for (const r of rows) {
     console.log(`   ${String(r.pct).padStart(3)}%  ${r.position.padEnd(3)} ${r.name.padEnd(24)} ADP ${r.adp.toFixed(1)}`);
