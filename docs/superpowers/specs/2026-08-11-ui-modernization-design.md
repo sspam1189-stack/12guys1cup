@@ -64,10 +64,17 @@ columns so figures align.
 
 ## UX changes
 
-**Mobile table treatment.** The wide tables — all-time standings, records,
-season final standings — collapse into rounded card rows under 640px instead of
-scrolling horizontally. Each row becomes a card: member (with avatar) on the
-first line, stats as labelled pairs beneath.
+**Mobile table treatment.** Under 640px the wide tables stop scrolling sideways.
+
+- **Season standings and member pages** use a generic `cards-sm` transform: each
+  row becomes a card titled by team name, remaining columns as labelled pairs in
+  a two-column grid. Cells with no value are dropped.
+- **All-time standings** gets a purpose-built leaderboard instead — chosen from
+  mockups over a stat-card and a trophy-case layout. One compact row per member
+  (rank, avatar, name, record, win%) so all 17 fit a single screen; rows are
+  `<details>` elements expanding in place to trophy chips, seasons, playoff rate,
+  average PF, average point differential, and a profile link. No JavaScript.
+- **Records** keeps its table; at four columns it already fits a phone.
 
 **Scanability.** `MemberLink` gains an optional avatar. It is enabled in
 headline spots and card rows, and left off inside dense matrix cells (h2h) where

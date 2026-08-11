@@ -1,0 +1,41 @@
+---
+// Season honors, rendered identically wherever they appear.
+// `variant="panel"` is the full hero + grid used on season pages.
+// `variant="chips"` is the compact row used on member and ELO pages.
+import MemberLink from './MemberLink.astro';
+const { season, variant = 'panel' } = Astro.props;
+
+const secondary = [
+  season.runnerUp && { label: 'Runner-up', id: season.runnerUp, icon: '🥈', kind: '' },
+  season.third && { label: 'Third', id: season.third, icon: '🥉', kind: '' },
+  season.pfChamp && { label: 'PF champ', id: season.pfChamp, icon: '📈', kind: '' },
+  season.lastPlace && { label: 'Last place', id: season.lastPlace, icon: '💩', kind: 'danger' },
+].filter(Boolean);
+---
+{variant === 'chips' ? (
+  <div class="honors-row">
+    {season.champion && (
+      <span class="honor-chip champ">🏆 <span class="who"><MemberLink id={season.champion} /></span></span>
+    )}
+    {secondary.map((h) => (
+      <span class={`honor-chip ${h.kind === 'danger' ? 'shit' : ''}`}>
+        {h.icon} <span class="who"><MemberLink id={h.id} /></span>
+      </span>
+    ))}
+  </div>
+) : (
+  <section class="season-honors" aria-label={`${season.season} season honors`}>
+    <div class="season-honor-lead">
+      <span class="season-honor-label">🏆 Champion</span>
+      <strong><MemberLink id={season.champion} avatar={true} size="lg" /></strong>
+    </div>
+    <div class="season-honor-grid">
+      {secondary.map((h) => (
+        <div class={`season-honor-item ${h.kind}`}>
+          <span>{h.icon} {h.label}</span>
+          <strong><MemberLink id={h.id} avatar={true} /></strong>
+        </div>
+      ))}
+    </div>
+  </section>
+)}

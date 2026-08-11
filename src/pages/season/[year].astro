@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import MemberLink from '../../components/MemberLink.astro';
+import Honors from '../../components/Honors.astro';
 import seasons from '../../../data/computed/seasons.json';
 import members from '../../../data/computed/members.json';
 
@@ -108,34 +109,7 @@ const playoffGameLabel = (g) => g.kind === 'bye'
     <p class="badge">This season hasn't started yet.</p>
   ) : (
     <>
-      <section class="season-honors" aria-label={`${s.season} season honors`}>
-        <div class="season-honor-lead">
-          <span class="season-honor-label">Champion</span>
-          <strong><MemberLink id={s.champion} /></strong>
-        </div>
-        <div class="season-honor-grid">
-          {s.runnerUp && (
-            <div class="season-honor-item">
-              <span>Runner-up</span>
-              <strong><MemberLink id={s.runnerUp} /></strong>
-            </div>
-          )}
-          {s.third && (
-            <div class="season-honor-item">
-              <span>Third</span>
-              <strong><MemberLink id={s.third} /></strong>
-            </div>
-          )}
-          <div class="season-honor-item">
-            <span>PF champ</span>
-            <strong><MemberLink id={s.pfChamp} /></strong>
-          </div>
-          <div class="season-honor-item danger">
-            <span>Last place</span>
-            <strong><MemberLink id={s.lastPlace} /></strong>
-          </div>
-        </div>
-      </section>
+      <Honors season={s} />
 
       <div class="section-heading-row">
         <h2 id="standings-heading">Final Standings</h2>
@@ -160,24 +134,28 @@ const playoffGameLabel = (g) => g.kind === 'bye'
           </button>
         </div>
       </div>
-      <div class="table-wrap"><table>
+      <div class="table-wrap"><table class="cards-sm">
         <thead><tr><th>#</th><th>Team</th><th>Member</th><th>W</th><th>L</th><th>T</th>
           <th>PF</th><th>PA</th></tr></thead>
         <tbody data-standings-panel="final">
           {finalStandings.map((t) => (
             <tr>
-              <td>{t.place}</td><td>{t.teamName}</td><td><MemberLink id={t.userId} /></td>
-              <td>{t.wins}</td><td>{t.losses}</td><td>{t.ties}</td>
-              <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
+              <td data-label="Place"><span class={`rank-badge ${t.place === 1 ? 'first' : t.place === s.standings.length ? 'last' : ''}`}>{t.place}</span></td>
+              <td class="row-head">{t.teamName}</td>
+              <td data-label="Member"><MemberLink id={t.userId} avatar={true} /></td>
+              <td data-label="W">{t.wins}</td><td data-label="L">{t.losses}</td><td data-label="T">{t.ties}</td>
+              <td data-label="PF">{t.pf.toFixed(2)}</td><td data-label="PA">{t.pa.toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
         <tbody data-standings-panel="regular" hidden>
           {regularStandings.map((t, i) => (
             <tr>
-              <td>{i + 1}</td><td>{t.teamName}</td><td><MemberLink id={t.userId} /></td>
-              <td>{t.wins}</td><td>{t.losses}</td><td>{t.ties}</td>
-              <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
+              <td data-label="Place"><span class={`rank-badge ${i === 0 ? 'first' : i === regularStandings.length - 1 ? 'last' : ''}`}>{i + 1}</span></td>
+              <td class="row-head">{t.teamName}</td>
+              <td data-label="Member"><MemberLink id={t.userId} avatar={true} /></td>
+              <td data-label="W">{t.wins}</td><td data-label="L">{t.losses}</td><td data-label="T">{t.ties}</td>
+              <td data-label="PF">{t.pf.toFixed(2)}</td><td data-label="PA">{t.pa.toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
