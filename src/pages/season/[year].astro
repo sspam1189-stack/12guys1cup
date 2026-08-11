@@ -32,8 +32,11 @@ const weeklyResults = s.notStarted
 const playoffGames = s.notStarted ? [] : s.games.filter((g) => g.type === 'playoff').sort((a, b) => a.week - b.week);
 const shitBowlGames = s.notStarted ? [] : s.games.filter((g) => g.type === 'shit bowl').sort((a, b) => a.week - b.week);
 const isMainBracketEntry = (g) => g.kind === 'bye' || g.placement == null || g.placement === 1 || g.placement === 3;
+// The shit bowl only runs down to last place: the ladder games plus the final.
+// Placement games between teams that already escaped (p 3, p 5) aren't part of it.
+const isShitBowlEntry = (g) => g.kind === 'bye' || g.placement == null || g.placement === 1;
 const playoffBracket = s.notStarted ? [] : (s.playoffBracket ?? playoffGames.map((g) => ({ ...g, kind: 'game', round: g.week - s.playoffWeekStart + 1, advancesUserId: g.a.points >= g.b.points ? g.a.userId : g.b.userId }))).filter(isMainBracketEntry);
-const shitBowlBracket = s.notStarted ? [] : (s.shitBowlBracket ?? shitBowlGames.map((g) => ({ ...g, kind: 'game', round: g.week - s.playoffWeekStart + 1, advancesUserId: g.a.points < g.b.points ? g.a.userId : g.b.userId }))).filter(isMainBracketEntry);
+const shitBowlBracket = s.notStarted ? [] : (s.shitBowlBracket ?? shitBowlGames.map((g) => ({ ...g, kind: 'game', round: g.week - s.playoffWeekStart + 1, advancesUserId: g.a.points < g.b.points ? g.a.userId : g.b.userId }))).filter(isShitBowlEntry);
 const playoffWeeks = [...new Set(playoffBracket.map((g) => g.week))].sort((a, b) => a - b);
 const shitBowlWeeks = [...new Set(shitBowlBracket.map((g) => g.week))].sort((a, b) => a - b);
 const finalShitBowlWeek = shitBowlWeeks.at(-1);
