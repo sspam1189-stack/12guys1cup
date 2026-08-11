@@ -34,6 +34,30 @@ const members = buildMembers(
 const nameOf = (userId) => members[userId]?.name ?? userId;
 const roster = (await readJson(at(current, 'users'))).map((u) => u.user_id);
 
+// Sleeper's half-PPR ADP, where we have a snapshot for the season. 999 is its
+// "nobody drafted him" sentinel, and kicker/defense ADP runs on a scale of its
+// own, so both are excluded rather than allowed to invent enormous reaches.
+const ADP_CEILING = 250;
+const NO_ADP_POSITIONS = new Set(['K', 'DEF']);
+const adpBySeason = {};
+for (const season of drafted) {
+  try {
+    adpBySeason[season] = await readJson(new URL(`adp/${season}.json`, RAW));
+  } catch {
+    adpBySeason[season] = null;
+  }
+}
+const adpOf = (season, pick) => {
+  if (NO_ADP_POSITIONS.has(position(pick))) return null;
+  const value = adpBySeason[season]?.[pick.player_id]?.adp;
+  return value == null || value >= ADP_CEILING ? null : value;
+};
+// Positive = taken ahead of the market.
+const reachOf = (season, pick) => {
+  const adp = adpOf(season, pick);
+  return adp == null ? null : adp - pick.pick_no;
+};
+
 const picksBySeason = {};
 const pointsBySeason = {};
 for (const season of drafted) {
@@ -128,6 +152,26 @@ function profile(userId) {
     }
   }
 
+  // Reach against the market, and specifically how early they open at each
+  // position — the first quarterback tells you more than their tenth pick does.
+  const reaches = recentDrafts.flatMap((s) =>
+    seasonsFor.get(s).map((pick) => reachOf(s, pick)).filter((r) => r != null),
+  );
+  const openingSamples = Object.fromEntries(
+    ['QB', 'RB', 'WR', 'TE'].map((pos) => [
+      pos,
+      recentDrafts
+        .map((s) => {
+          const first = seasonsFor.get(s).find((p) => position(p) === pos);
+          return first ? reachOf(s, first) : null;
+        })
+        .filter((r) => r != null),
+    ]),
+  );
+  const openingReach = Object.fromEntries(
+    Object.entries(openingSamples).map(([pos, xs]) => [pos, xs.length ? mean(xs) : null]),
+  );
+
   const graded = recentDrafts.flatMap((s) =>
     seasonsFor.get(s).map((pick) => ({
       pick,
@@ -166,6 +210,9 @@ function profile(userId) {
     favoriteTeams: tally(recentPicks.map(nflTeam)).slice(0, 3),
     stacks,
     rbPairs,
+    reach: reaches.length ? mean(reaches) : null,
+    openingSamples,
+    openingReach,
     value: mean(graded.map((g) => g.residual)),
     earlyHitRate: pct(early.filter((g) => g.residual > 0).length, early.length),
     bestPick: graded.at(-1),
@@ -206,24 +253,46 @@ for (const season of drafted) {
 }
 say();
 
+const signed = (n, digits = 1) => (n >= 0 ? '+' : '') + n.toFixed(digits);
+
+const withAdp = drafted.filter((s) => adpBySeason[s]);
+if (withAdp.length) {
+  say('## Where the room sits against the market');
+  say();
+  say(
+    `Half-PPR ADP from Sleeper, ${withAdp[0]}–${withAdp.at(-1)}. Positive means the room ` +
+      'opens at that position ahead of ADP; negative means it waits past the market.',
+  );
+  say();
+  say('| Position | League avg on its first pick there |');
+  say('| --- | --- |');
+  for (const pos of ['QB', 'RB', 'WR', 'TE']) {
+    const all = profiles.flatMap((p) => p.openingSamples[pos]);
+    say(`| ${pos} | ${signed(mean(all))} picks (n=${all.length}) |`);
+  }
+  say();
+}
+
 say('## Manager profiles');
 say();
-say('| Manager | Drafts | Opening 6 (most recent) | Per draft | 1st QB | 1st TE | 1st K | Rookies | Value/pick |');
-say('| --- | --- | --- | --- | --- | --- | --- | --- | --- |');
+say('| Manager | Drafts | Opening 6 (most recent) | Per draft | 1st QB | 1st TE | 1st K | Rookies | Reach | Value/pick |');
+say('| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |');
 for (const p of profiles) {
   const mix = `${p.perDraft.RB} RB / ${p.perDraft.WR} WR / ${p.perDraft.QB} QB / ${p.perDraft.TE} TE`;
   say(
     `| ${p.name} | ${p.drafts.length} | ${p.openers.at(-1)[1]} | ${mix} | R${p.firstQb.toFixed(
       1,
     )} | R${p.firstTe.toFixed(1)} | R${p.firstK.toFixed(1)} | ${p.rookies.length} | ${
-      p.value >= 0 ? '+' : ''
-    }${p.value.toFixed(1)} |`,
+      p.reach == null ? '—' : signed(p.reach)
+    } | ${signed(p.value)} |`,
   );
 }
 say();
 say('Opening-6 letters: R=RB, W=WR, Q=QB, T=TE. "1st X" is the average round the');
-say('manager first takes that position (16 means they skipped it). Value/pick is');
-say('points above or below the players taken at the same position nearby.');
+say('manager first takes that position (16 means they skipped it). Reach is picks');
+say('ahead of half-PPR ADP, averaged over skill-position picks — positive means');
+say('they pay above market. Value/pick is points above or below the players taken');
+say('at the same position nearby.');
 say();
 
 for (const p of profiles) {
@@ -245,6 +314,13 @@ for (const p of profiles) {
         : ''
     }`,
   );
+  if (p.reach != null) {
+    const opening = ['QB', 'RB', 'WR', 'TE']
+      .filter((pos) => p.openingReach[pos] != null)
+      .map((pos) => `${pos} ${signed(p.openingReach[pos])}`)
+      .join(', ');
+    say(`- Vs ADP: ${signed(p.reach)} per pick · on their first at each position — ${opening}`);
+  }
   say(`- Favorite NFL teams: ${p.favoriteTeams.map(([t, n]) => `${t} ×${n}`).join(', ')}`);
   say(`- Stacks: ${p.stacks.join(', ') || 'none'} · RB pairs: ${p.rbPairs.join(', ') || 'none'}`);
   say(
