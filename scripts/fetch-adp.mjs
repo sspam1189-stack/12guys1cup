@@ -4,12 +4,15 @@
 // documented api.sleeper.app. There is no ADP anywhere in the documented API.
 // Undocumented means unversioned: if the shape moves, this script says so
 // loudly rather than writing empty files.
-import { mkdir, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 
 const BASE = 'https://api.sleeper.com';
 const RAW = new URL('../data/raw/', import.meta.url);
 const OUT = new URL('adp/', RAW);
 const POSITIONS = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+// 12-team era only. The 2021-22 drafts were 14-team, so every pick in them
+// looks like a reach against a league-size-agnostic ADP pool.
+const SEASONS = ['2023', '2024', '2025'];
 
 async function fetchJson(url, { retries = 3, delayMs = 1000 } = {}) {
   for (let attempt = 0; ; attempt++) {
@@ -24,7 +27,7 @@ async function fetchJson(url, { retries = 3, delayMs = 1000 } = {}) {
   }
 }
 
-const seasons = (await readdir(RAW)).filter((d) => /^\d{4}$/.test(d)).sort();
+
 await mkdir(OUT, { recursive: true });
 
 // The row shape is undocumented, so read defensively: the ADP may sit on the
@@ -34,11 +37,12 @@ const adpOf = (row) => stats(row).adp_half_ppr ?? row?.adp_half_ppr ?? null;
 const playerOf = (row) => row?.player ?? row ?? {};
 const nameOf = (row) => {
   const p = playerOf(row);
-  return p.full_name ?? `${p.first_name ?? ''} ${p.last_name ?? ''}`.trim() || String(row?.player_id ?? '?');
+  const built = `${p.first_name ?? ''} ${p.last_name ?? ''}`.trim();
+  return p.full_name ?? (built || String(row?.player_id ?? '?'));
 };
 
 const report = [];
-for (const season of seasons) {
+for (const season of SEASONS) {
   const params = new URLSearchParams({ season_type: 'regular', order_by: 'adp_half_ppr' });
   for (const pos of POSITIONS) params.append('position[]', pos);
   const url = `${BASE}/projections/nfl/${season}?${params}`;
@@ -85,7 +89,7 @@ for (const season of seasons) {
 }
 
 const usable = report.filter((r) => r.withAdp > 0);
-console.log(`\n${usable.length}/${seasons.length} seasons returned half-PPR ADP.`);
+console.log(`\n${usable.length}/${SEASONS.length} seasons returned half-PPR ADP.`);
 if (!usable.length) {
   console.error('No season returned ADP — the endpoint or its shape has changed.');
   process.exit(1);
