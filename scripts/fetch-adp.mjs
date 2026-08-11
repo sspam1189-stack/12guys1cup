@@ -11,8 +11,9 @@ const RAW = new URL('../data/raw/', import.meta.url);
 const OUT = new URL('adp/', RAW);
 const POSITIONS = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
 // 12-team era only. The 2021-22 drafts were 14-team, so every pick in them
-// looks like a reach against a league-size-agnostic ADP pool.
-const SEASONS = ['2023', '2024', '2025'];
+// looks like a reach against a league-size-agnostic ADP pool. The upcoming
+// season is included because its ADP is the live draft board.
+const SEASONS = ['2023', '2024', '2025', '2026'];
 
 async function fetchJson(url, { retries = 3, delayMs = 1000 } = {}) {
   for (let attempt = 0; ; attempt++) {
