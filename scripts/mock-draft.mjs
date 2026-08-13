@@ -24,6 +24,7 @@ const FIXED_ORDER = orderFlag === -1 ? null : process.argv[orderFlag + 1].split(
 const SIMS = arg('--sims', 400);
 const MIN_PCT = arg('--min', 25);
 const TOP = arg('--top', 8);
+const ONLY = arg('--only', 0); // with --compare, score just this one slot
 const ADP_CEILING = 250;
 const SKILL = ['QB', 'RB', 'WR', 'TE'];
 // Sleeper's kicker and defense ADP is on its own scale, so those two are drafted
@@ -269,6 +270,7 @@ if (process.argv.includes('--compare')) {
   console.log('Slot   projected starter pts   typical 1st pick');
   const results = [];
   for (let slot = 1; slot <= TEAMS; slot++) {
+    if (ONLY && slot !== ONLY) continue;
     const starters = [];
     const openers = new Map();
     for (let s = 0; s < SIMS; s++) {
