@@ -139,6 +139,17 @@ function profile(userId) {
 
   const stacks = [];
   const rbPairs = [];
+  let qbDrafts = 0;
+  let doubleQb = 0;
+  let doubleTe = 0;
+  for (const season of recentDrafts) {
+    const picks = seasonsFor.get(season);
+    const qbs = picks.filter((p) => position(p) === 'QB').length;
+    const tes = picks.filter((p) => position(p) === 'TE').length;
+    if (qbs) qbDrafts += 1;
+    if (qbs >= 2) doubleQb += 1;
+    if (tes >= 2) doubleTe += 1;
+  }
   for (const season of recentDrafts) {
     const byTeam = new Map();
     for (const pick of seasonsFor.get(season)) {
@@ -207,6 +218,11 @@ function profile(userId) {
     firstK: firstRoundAt('K'),
     firstDef: firstRoundAt('DEF'),
     rookies: recentPicks.filter(rookie),
+    rookieRound: mean(recentPicks.filter(rookie).map((p) => p.round)),
+    qbDrafts,
+    doubleQb,
+    doubleTe,
+    stackRate: qbDrafts ? stacks.length / qbDrafts : null,
     favoriteTeams: tally(recentPicks.map(nflTeam)).slice(0, 3),
     stacks,
     rbPairs,
@@ -306,11 +322,15 @@ for (const p of profiles) {
     )}, DEF R${p.firstDef.toFixed(1)}`,
   );
   say(
+    `- Doubles up: ${p.doubleQb}/${p.qbDrafts} drafts with two QBs · ${p.doubleTe}/${p.recentDrafts.length} with two TEs` +
+      `${p.stackRate == null ? '' : ` · stacks a QB with a pass catcher in ${Math.round(p.stackRate * 100)}% of drafts where he took a QB`}`,
+  );
+  say(
     `- Rookies taken: ${p.rookies.length}${
       p.rookies.length
-        ? ` (earliest R${Math.min(...p.rookies.map((r) => r.round))} ${
-            playerName(p.rookies.reduce((a, b) => (a.round <= b.round ? a : b)))
-          })`
+        ? `, average round ${p.rookieRound.toFixed(1)} (earliest R${Math.min(
+            ...p.rookies.map((r) => r.round),
+          )} ${playerName(p.rookies.reduce((a, b) => (a.round <= b.round ? a : b)))})`
         : ''
     }`,
   );
