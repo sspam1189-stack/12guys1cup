@@ -54,6 +54,10 @@ at the same position nearby.
 - Doubles up: 2/3 drafts with two QBs · 1/3 with two TEs · stacks a QB with a pass catcher in 0% of drafts where he took a QB
 - Rookies taken: 4, average round 12.3 (earliest R9 Jordan Addison)
 - Vs ADP: -3.6 per pick · on their first at each position — QB -3.2, RB -0.9, WR +1.2, TE -9.4
+- Discipline by segment (picks ahead of ADP): R1–5 +0.9 · R6–10 -1.6 · R11–15 -14.4
+- Roster age: 3.7 years average, 5 picks with 8+ seasons
+- Re-drafts his own 4% of the time · mirrors the pick before him 29% · doubles a position back-to-back 14%
+- Chases last season's production: +4 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: LAC ×3, CIN ×3, BUF ×3
 - Stacks: none · RB pairs: none
 - Value/pick +16.8, 72% of R1–6 picks beat par
@@ -67,6 +71,10 @@ at the same position nearby.
 - Doubles up: 0/3 drafts with two QBs · 0/3 with two TEs · stacks a QB with a pass catcher in 100% of drafts where he took a QB
 - Rookies taken: 4, average round 7.3 (earliest R2 Marvin Harrison)
 - Vs ADP: +5.4 per pick · on their first at each position — QB -8.4, RB -1.7, WR +2.5, TE -6.3
+- Discipline by segment (picks ahead of ADP): R1–5 +1.4 · R6–10 +4.2 · R11–15 +14.0
+- Roster age: 3.7 years average, 1 picks with 8+ seasons
+- Re-drafts his own 0% of the time · mirrors the pick before him 31% · doubles a position back-to-back 17%
+- Chases last season's production: -6 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: LAC ×5, DAL ×4, DEN ×4
 - Stacks: 2023 LAC, 2024 BUF, 2025 DEN · RB pairs: none
 - Value/pick +10.2, 67% of R1–6 picks beat par
@@ -80,6 +88,10 @@ at the same position nearby.
 - Doubles up: 3/3 drafts with two QBs · 2/3 with two TEs · stacks a QB with a pass catcher in 0% of drafts where he took a QB
 - Rookies taken: 7, average round 10.7 (earliest R7 Brock Bowers)
 - Vs ADP: -5.3 per pick · on their first at each position — QB +3.0, RB -1.1, WR -1.1, TE -8.5
+- Discipline by segment (picks ahead of ADP): R1–5 +0.2 · R6–10 -5.5 · R11–15 -14.1
+- Roster age: 3.4 years average, 4 picks with 8+ seasons
+- Re-drafts his own 2% of the time · mirrors the pick before him 24% · doubles a position back-to-back 14%
+- Chases last season's production: -0 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: CLE ×4, MIA ×3, WAS ×3
 - Stacks: none · RB pairs: none
 - Value/pick +5.7, 39% of R1–6 picks beat par
@@ -93,6 +105,10 @@ at the same position nearby.
 - Doubles up: 0/2 drafts with two QBs · 0/3 with two TEs · stacks a QB with a pass catcher in 50% of drafts where he took a QB
 - Rookies taken: 7, average round 7.9 (earliest R1 Bijan Robinson)
 - Vs ADP: +0.4 per pick · on their first at each position — QB -15.8, RB -0.5, WR +0.7, TE -17.1
+- Discipline by segment (picks ahead of ADP): R1–5 -1.9 · R6–10 -1.6 · R11–15 +7.9
+- Roster age: 3.5 years average, 5 picks with 8+ seasons
+- Re-drafts his own 13% of the time · mirrors the pick before him 22% · doubles a position back-to-back 24%
+- Chases last season's production: -10 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: SEA ×6, NYJ ×3, KC ×3
 - Stacks: 2023 PHI · RB pairs: 2024 LAC, 2025 SEA
 - Value/pick +3.1, 61% of R1–6 picks beat par
@@ -106,6 +122,10 @@ at the same position nearby.
 - Doubles up: 2/3 drafts with two QBs · 2/3 with two TEs · stacks a QB with a pass catcher in 67% of drafts where he took a QB
 - Rookies taken: 3, average round 8.3 (earliest R7 Xavier Worthy)
 - Vs ADP: +0.2 per pick · on their first at each position — QB -8.0, RB +2.6, WR +6.6, TE -8.4
+- Discipline by segment (picks ahead of ADP): R1–5 +1.3 · R6–10 +0.8 · R11–15 -3.0
+- Roster age: 3.9 years average, 3 picks with 8+ seasons
+- Re-drafts his own 4% of the time · mirrors the pick before him 29% · doubles a position back-to-back 21%
+- Chases last season's production: +6 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: SF ×4, MIA ×4, BUF ×4
 - Stacks: 2024 SF, 2025 DET · RB pairs: 2023 NYJ
 - Value/pick -0.2, 44% of R1–6 picks beat par
@@ -119,6 +139,10 @@ at the same position nearby.
 - Doubles up: 0/2 drafts with two QBs · 0/2 with two TEs · stacks a QB with a pass catcher in 0% of drafts where he took a QB
 - Rookies taken: 6, average round 9.5 (earliest R4 TreVeyon Henderson)
 - Vs ADP: +5.8 per pick · on their first at each position — QB -12.0, RB +0.7, WR +2.6, TE -7.8
+- Discipline by segment (picks ahead of ADP): R1–5 +2.1 · R6–10 +5.2 · R11–15 +13.0
+- Roster age: 3.6 years average, 2 picks with 8+ seasons
+- Re-drafts his own 0% of the time · mirrors the pick before him 28% · doubles a position back-to-back 21%
+- Chases last season's production: +2 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: JAX ×3, ARI ×3, NYJ ×2
 - Stacks: none · RB pairs: none
 - Value/pick -0.8, 50% of R1–6 picks beat par
@@ -132,6 +156,10 @@ at the same position nearby.
 - Doubles up: 1/3 drafts with two QBs · 2/3 with two TEs · stacks a QB with a pass catcher in 100% of drafts where he took a QB
 - Rookies taken: 1, average round 15.0 (earliest R15 Deuce Vaughn)
 - Vs ADP: +7.1 per pick · on their first at each position — QB -0.9, RB +0.4, WR +3.1, TE +14.4
+- Discipline by segment (picks ahead of ADP): R1–5 +1.3 · R6–10 +11.0 · R11–15 +10.2
+- Roster age: 4.5 years average, 7 picks with 8+ seasons
+- Re-drafts his own 11% of the time · mirrors the pick before him 36% · doubles a position back-to-back 12%
+- Chases last season's production: -7 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: BUF ×7, DAL ×5, BAL ×4
 - Stacks: 2023 BUF, 2024 ATL, 2025 BUF · RB pairs: none
 - Value/pick -2.0, 67% of R1–6 picks beat par
@@ -145,6 +173,10 @@ at the same position nearby.
 - Doubles up: 2/3 drafts with two QBs · 3/3 with two TEs · stacks a QB with a pass catcher in 33% of drafts where he took a QB
 - Rookies taken: 7, average round 10.0 (earliest R7 Jaxon Smith-Njigba)
 - Vs ADP: -0.0 per pick · on their first at each position — QB -0.9, RB -0.3, WR +8.7, TE -5.1
+- Discipline by segment (picks ahead of ADP): R1–5 +3.4 · R6–10 -2.1 · R11–15 -1.9
+- Roster age: 4.7 years average, 6 picks with 8+ seasons
+- Re-drafts his own 7% of the time · mirrors the pick before him 16% · doubles a position back-to-back 17%
+- Chases last season's production: +5 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: GB ×4, DAL ×3, CHI ×3
 - Stacks: 2024 GB · RB pairs: none
 - Value/pick -3.4, 50% of R1–6 picks beat par
@@ -158,6 +190,10 @@ at the same position nearby.
 - Doubles up: 3/3 drafts with two QBs · 3/3 with two TEs · stacks a QB with a pass catcher in 67% of drafts where he took a QB
 - Rookies taken: 10, average round 10.1 (earliest R2 Ashton Jeanty)
 - Vs ADP: +17.9 per pick · on their first at each position — QB +16.4, RB -2.2, WR +2.6, TE -0.7
+- Discipline by segment (picks ahead of ADP): R1–5 +3.6 · R6–10 +16.9 · R11–15 +36.8
+- Roster age: 4.0 years average, 6 picks with 8+ seasons
+- Re-drafts his own 11% of the time · mirrors the pick before him 31% · doubles a position back-to-back 21%
+- Chases last season's production: +3 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: NO ×8, BAL ×5, CLE ×4
 - Stacks: 2025 TB, 2025 TEN · RB pairs: none
 - Value/pick -3.7, 56% of R1–6 picks beat par
@@ -171,6 +207,10 @@ at the same position nearby.
 - Doubles up: 0/3 drafts with two QBs · 0/3 with two TEs · stacks a QB with a pass catcher in 67% of drafts where he took a QB
 - Rookies taken: 4, average round 9.5 (earliest R5 RJ Harvey)
 - Vs ADP: -1.1 per pick · on their first at each position — QB -7.8, RB +3.7, WR -0.9, TE -7.2
+- Discipline by segment (picks ahead of ADP): R1–5 +2.3 · R6–10 -6.9 · R11–15 +3.1
+- Roster age: 3.3 years average, 6 picks with 8+ seasons
+- Re-drafts his own 7% of the time · mirrors the pick before him 32% · doubles a position back-to-back 24%
+- Chases last season's production: -10 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: MIA ×4, DAL ×4, TB ×4
 - Stacks: 2023 MIN, 2024 IND · RB pairs: 2024 CLE
 - Value/pick -5.2, 33% of R1–6 picks beat par
@@ -184,6 +224,10 @@ at the same position nearby.
 - Doubles up: 3/3 drafts with two QBs · 2/3 with two TEs · stacks a QB with a pass catcher in 100% of drafts where he took a QB
 - Rookies taken: 3, average round 9.3 (earliest R6 Rome Odunze)
 - Vs ADP: -2.9 per pick · on their first at each position — QB -6.9, RB +1.0, WR +2.3, TE -5.9
+- Discipline by segment (picks ahead of ADP): R1–5 +0.2 · R6–10 +0.0 · R11–15 -13.0
+- Roster age: 4.5 years average, 7 picks with 8+ seasons
+- Re-drafts his own 11% of the time · mirrors the pick before him 33% · doubles a position back-to-back 14%
+- Chases last season's production: +5 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: KC ×5, TEN ×3, IND ×2
 - Stacks: 2024 KC, 2024 CHI, 2025 HOU · RB pairs: none
 - Value/pick -8.8, 50% of R1–6 picks beat par
@@ -197,6 +241,10 @@ at the same position nearby.
 - Doubles up: 1/3 drafts with two QBs · 0/3 with two TEs · stacks a QB with a pass catcher in 133% of drafts where he took a QB
 - Rookies taken: 6, average round 9.2 (earliest R3 Jahmyr Gibbs)
 - Vs ADP: +2.4 per pick · on their first at each position — QB -2.0, RB +7.1, WR +1.3, TE -14.8
+- Discipline by segment (picks ahead of ADP): R1–5 +0.8 · R6–10 -1.9 · R11–15 +11.1
+- Roster age: 3.8 years average, 7 picks with 8+ seasons
+- Re-drafts his own 11% of the time · mirrors the pick before him 29% · doubles a position back-to-back 19%
+- Chases last season's production: +10 points vs what that ADP normally bought (rookies excluded)
 - Favorite NFL teams: DET ×4, KC ×4, PHI ×4
 - Stacks: 2023 CIN, 2024 PHI, 2024 JAX, 2025 PHI · RB pairs: 2025 KC
 - Value/pick -12.8, 50% of R1–6 picks beat par

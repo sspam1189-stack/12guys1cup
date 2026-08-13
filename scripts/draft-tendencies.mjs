@@ -22,14 +22,20 @@ for (const season of seasons) {
 }
 const recent = drafted.slice(-RECENT_WINDOW);
 
-const members = buildMembers(
-  await Promise.all(
-    seasons.map(async (season) => ({
-      season,
-      users: await readJson(at(season, 'users')),
-      rosters: await readJson(at(season, 'rosters')),
-    })),
-  ),
+const rawSeasons = await Promise.all(
+  seasons.map(async (season) => ({
+    season,
+    users: await readJson(at(season, 'users')),
+    rosters: await readJson(at(season, 'rosters')),
+  })),
+);
+const members = buildMembers(rawSeasons);
+// Who finished each season holding whom, so re-drafting your own guys is visible.
+const finalRosters = Object.fromEntries(
+  rawSeasons.map(({ season, rosters }) => [
+    season,
+    new Map(rosters.map((r) => [String(r.owner_id), new Set(r.players ?? [])])),
+  ]),
 );
 const nameOf = (userId) => members[userId]?.name ?? userId;
 const roster = (await readJson(at(current, 'users'))).map((u) => u.user_id);
@@ -105,6 +111,29 @@ for (const season of drafted) {
     });
   }
 }
+
+// What last season's points normally look like at a given ADP. Rookies are
+// excluded: they score zero by construction, so leaving them in would turn this
+// into a second rookie count rather than a measure of chasing production.
+const priorCurve = {};
+for (const season of drafted) {
+  const previous = String(Number(season) - 1);
+  if (!pointsBySeason[previous] || !adpBySeason[season]) continue;
+  priorCurve[season] = picksBySeason[season]
+    .filter((p) => !rookie(p) && adpOf(season, p) != null)
+    .map((p) => [adpOf(season, p), pointsBySeason[previous].get(p.player_id) ?? 0])
+    .sort((a, b) => a[0] - b[0]);
+}
+const priorPar = (season, adp) => {
+  const rows = priorCurve[season];
+  if (!rows?.length) return null;
+  let nearest = 0;
+  rows.forEach(([a], i) => {
+    if (Math.abs(a - adp) < Math.abs(rows[nearest][0] - adp)) nearest = i;
+  });
+  const window = rows.slice(Math.max(0, nearest - 6), nearest + 7);
+  return window.reduce((a, r) => a + r[1], 0) / window.length;
+};
 
 const boards = new Map(); // userId -> season -> picks in pick order
 for (const season of drafted) {
@@ -183,6 +212,69 @@ function profile(userId) {
     Object.entries(openingSamples).map(([pos, xs]) => [pos, xs.length ? mean(xs) : null]),
   );
 
+  const experience = recentPicks
+    .filter((p) => !NO_ADP_POSITIONS.has(position(p)))
+    .map((p) => Number(p.metadata?.years_exp))
+    .filter((n) => Number.isFinite(n));
+
+  // Picks that were on this manager's own roster at the end of the prior season.
+  let reDrafted = 0;
+  let reDraftable = 0;
+  for (const season of recentDrafts) {
+    const held = finalRosters[String(Number(season) - 1)]?.get(userId);
+    if (!held) continue;
+    for (const pick of seasonsFor.get(season)) {
+      reDraftable += 1;
+      if (held.has(pick.player_id)) reDrafted += 1;
+    }
+  }
+
+  // Does their pick mirror the position taken immediately before them?
+  let follows = 0;
+  let followable = 0;
+  let backToBack = 0;
+  let consecutive = 0;
+  for (const season of recentDrafts) {
+    const board = picksBySeason[season];
+    const order = new Map(board.map((p, i) => [p.pick_no, i]));
+    for (const pick of seasonsFor.get(season)) {
+      const i = order.get(pick.pick_no);
+      if (i > 0) {
+        followable += 1;
+        if (position(board[i - 1]) === position(pick)) follows += 1;
+      }
+    }
+    const own = seasonsFor.get(season);
+    for (let i = 1; i < own.length; i++) {
+      consecutive += 1;
+      if (position(own[i]) === position(own[i - 1])) backToBack += 1;
+    }
+  }
+
+  // Discipline is not constant across a draft, so reach is split by segment.
+  const reachIn = (lo, hi) => {
+    const v = recentDrafts.flatMap((s) =>
+      seasonsFor
+        .get(s)
+        .filter((p) => p.round >= lo && p.round <= hi)
+        .map((p) => reachOf(s, p))
+        .filter((r) => r != null),
+    );
+    return v.length ? mean(v) : null;
+  };
+
+  const recency = recentDrafts.flatMap((s) => {
+    const previous = String(Number(s) - 1);
+    return seasonsFor
+      .get(s)
+      .filter((p) => !rookie(p) && adpOf(s, p) != null && pointsBySeason[previous])
+      .map((p) => {
+        const par = priorPar(s, adpOf(s, p));
+        return par == null ? null : (pointsBySeason[previous].get(p.player_id) ?? 0) - par;
+      })
+      .filter((x) => x != null);
+  });
+
   const graded = recentDrafts.flatMap((s) =>
     seasonsFor.get(s).map((pick) => ({
       pick,
@@ -227,6 +319,15 @@ function profile(userId) {
     stacks,
     rbPairs,
     reach: reaches.length ? mean(reaches) : null,
+    experience: experience.length ? mean(experience) : null,
+    veterans: experience.filter((n) => n >= 8).length,
+    reDraftRate: reDraftable ? reDrafted / reDraftable : null,
+    followRate: followable ? follows / followable : null,
+    backToBackRate: consecutive ? backToBack / consecutive : null,
+    reachEarly: reachIn(1, 5),
+    reachMid: reachIn(6, 10),
+    reachLate: reachIn(11, 15),
+    recency: recency.length ? mean(recency) : null,
     openingSamples,
     openingReach,
     value: mean(graded.map((g) => g.residual)),
@@ -341,6 +442,23 @@ for (const p of profiles) {
       .join(', ');
     say(`- Vs ADP: ${signed(p.reach)} per pick · on their first at each position — ${opening}`);
   }
+  const seg = (v) => (v == null ? '—' : signed(v));
+  say(
+    `- Discipline by segment (picks ahead of ADP): R1–5 ${seg(p.reachEarly)} · R6–10 ${seg(
+      p.reachMid,
+    )} · R11–15 ${seg(p.reachLate)}`,
+  );
+  say(
+    `- Roster age: ${p.experience?.toFixed(1) ?? '—'} years average, ${p.veterans} picks with 8+ seasons`,
+  );
+  say(
+    `- Re-drafts his own ${pct(p.reDraftRate ?? 0, 1)}% of the time · mirrors the pick before him ` +
+      `${pct(p.followRate ?? 0, 1)}% · doubles a position back-to-back ${pct(p.backToBackRate ?? 0, 1)}%`,
+  );
+  say(
+    `- Chases last season's production: ${p.recency == null ? '—' : signed(p.recency, 0)} points vs ` +
+      'what that ADP normally bought (rookies excluded)',
+  );
   say(`- Favorite NFL teams: ${p.favoriteTeams.map(([t, n]) => `${t} ×${n}`).join(', ')}`);
   say(`- Stacks: ${p.stacks.join(', ') || 'none'} · RB pairs: ${p.rbPairs.join(', ') || 'none'}`);
   say(
