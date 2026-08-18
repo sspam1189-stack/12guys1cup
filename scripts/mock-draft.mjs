@@ -589,61 +589,42 @@ if (CONSENSUS) {
   // Off by default: the marginal answers "who goes here", which is what you
   // plan against. --legal answers "what could one draft look like" and is
   // deduplicated, at the cost of frequencies that no longer mean much.
-  // Two things are being asked of each cell: the position the drafts agree on,
-  // and the most likely player. Take the modal position first — that is the part
-  // fifty drafts actually settle — then the highest-percentage player within it,
-  // skipping anyone already shown elsewhere so nobody appears twice.
-  const chosen = new Map();
-  const claimed = new Set();
-  const slots = [];
+  // Per-cell probabilities do not compose into a draft. A manager can be 54%
+  // to take a receiver at one pick and 44% at the next and still never take two,
+  // because the two are anti-correlated — he takes whichever the board leaves.
+  // Reading each cell independently loses that, so the board shows one real run:
+  // the one whose picks were collectively the most common. Every column is then
+  // a draft that happened, and each cell is labelled with how often its player
+  // and its position actually appeared there.
+  const posSplit = new Map();
   for (const [overall, t] of tally) {
     const byPos = new Map();
     for (const [label, n] of t) {
       const pos = label.split('|')[0];
       byPos.set(pos, (byPos.get(pos) ?? 0) + n);
     }
-    const positions = [...byPos].sort((a, b) => b[1] - a[1]);
-    slots.push({ overall, ranked: [...t].sort((a, b) => b[1] - a[1]), positions });
+    posSplit.set(overall, byPos);
   }
-  // Most settled picks claim their player first, so a coin-flip elsewhere cannot
-  // take a name that a near-certain pick needed.
-  slots.sort((a, b) => b.positions[0][1] - a.positions[0][1] || b.ranked[0][1] - a.ranked[0][1]);
-  // Each column also has to stay inside that manager's own quota, or the board
-  // hands somebody eight receivers because eight separate cells each thought a
-  // receiver was most likely.
-  const filled = new Map();
-  const quota = (who, pos) => {
-    if (who === 'YOU') return MY_PLAN[pos] ?? (pos === 'K' || pos === 'DEF' ? 1 : 0);
-    const id = [...tendencies].find(([, t]) => t.name === who)?.[0];
-    const t = id ? tendencies.get(id) : null;
-    return t ? Math.max(1, Math.round(t.target[pos] ?? 0)) : 99;
-  };
-  for (const { overall, ranked, positions } of slots) {
-    const who = owner.get(overall);
-    if (!filled.has(who)) filled.set(who, new Map());
-    const used = filled.get(who);
-    const room = (pos) => (used.get(pos) ?? 0) < quota(who, pos);
-    const modalPos = (positions.find(([pos]) => room(pos)) ?? positions[0])[0];
-    const pick =
-      ranked.find(([label]) => !claimed.has(label) && label.split('|')[0] === modalPos) ??
-      ranked.find(([label]) => !claimed.has(label)) ??
-      ranked[0];
-    claimed.add(pick[0]);
-    const takenPos = pick[0].split('|')[0];
-    used.set(takenPos, (used.get(takenPos) ?? 0) + 1);
+  const runScore = (log) =>
+    log.reduce((sum, p) => {
+      const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
+      return sum + (tally.get(overall)?.get(`${p.position}|${p.name}|${p.team ?? ''}`) ?? 0);
+    }, 0);
+  const bestRun = allDrafts.reduce((a, b) => (runScore(a) >= runScore(b) ? a : b));
+  const chosen = new Map();
+  for (const p of bestRun) {
+    const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
+    const label = `${p.position}|${p.name}|${p.team ?? ''}`;
+    const byPos = posSplit.get(overall) ?? new Map();
     chosen.set(overall, {
-      label: pick[0],
-      n: pick[1],
-      ranked,
-      // How often this pick was the position we ended up showing — the honest
-      // number for a cell whose player is a coin flip.
-      positionPct: Math.round(
-        ((positions.find(([pos]) => pos === takenPos)?.[1] ?? 0) / CONSENSUS) * 100,
-      ),
-      positions: positions.slice(0, 2).map(([position, n]) => ({
-        position,
-        pct: Math.round((n / CONSENSUS) * 100),
-      })),
+      label,
+      n: tally.get(overall)?.get(label) ?? 0,
+      ranked: [...(tally.get(overall) ?? new Map())].sort((a, b) => b[1] - a[1]),
+      positionPct: Math.round(((byPos.get(p.position) ?? 0) / CONSENSUS) * 100),
+      positions: [...byPos]
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 2)
+        .map(([position, n]) => ({ position, pct: Math.round((n / CONSENSUS) * 100) })),
     });
   }
 
