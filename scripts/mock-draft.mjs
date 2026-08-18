@@ -626,6 +626,19 @@ if (CONSENSUS) {
         name,
         team,
         pct: Math.round((c.n / CONSENSUS) * 100),
+        // Player-level confidence collapses long before position-level does:
+        // a pick can be 2% on the name and 40% on "he takes a receiver here".
+        positions: (() => {
+          const byPos = new Map();
+          for (const [label, n] of c.ranked) {
+            const pos = label.split('|')[0];
+            byPos.set(pos, (byPos.get(pos) ?? 0) + n);
+          }
+          return [...byPos]
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 2)
+            .map(([pos, n]) => ({ position: pos, pct: Math.round((n / CONSENSUS) * 100) }));
+        })(),
         alts: c.ranked.slice(1, 4).map(([l, n]) => ({
           name: l.split('|')[1],
           position: l.split('|')[0],
