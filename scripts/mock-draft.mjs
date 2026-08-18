@@ -137,9 +137,11 @@ for (const user of users) {
   for (const { season } of drafts) {
     adpFor.set(season, await readJson(new URL(`adp/${season}.json`, RAW)).catch(() => ({})));
   }
+  // How many of a position he takes in a typical draft. A mean of 1.33 was being
+  // read as "still needs a second quarterback"; the median says one.
   const target = {};
   for (const pos of [...SKILL, 'K', 'DEF']) {
-    target[pos] = mean(drafts.map((d) => d.picks.filter((p) => position(p) === pos).length));
+    target[pos] = median(drafts.map((d) => d.picks.filter((p) => position(p) === pos).length));
   }
   // Reach on a manager's very first pick is really a measure of his seat: the
   // best player left at pick 12 almost always has an ADP under 12, so a late
@@ -189,6 +191,18 @@ for (const user of users) {
     }
   }
 
+  let stackable = 0;
+  let stacked = 0;
+  for (const { picks } of drafts) {
+    const qbTeams = picks.filter((p) => position(p) === 'QB').map((p) => p.metadata?.team);
+    if (!qbTeams.length) continue;
+    stackable += 1;
+    if (picks.some((p) => ['WR', 'TE'].includes(position(p)) && qbTeams.includes(p.metadata?.team))) {
+      stacked += 1;
+    }
+  }
+  const stackRate = stackable ? stacked / stackable : 0;
+
   const habitualRound = {};
   for (const pos of ['K', 'DEF']) {
     const rounds = drafts
@@ -202,6 +216,7 @@ for (const user of users) {
     openingReach,
     habitualRound,
     schedule,
+    stackRate,
     openingCounts,
     openingTotal,
   });
@@ -301,7 +316,16 @@ function myChoice(available, mine, round) {
     best = p;
     break;
   }
-  return best ?? board.find((p) => available.has(p.playerId)) ?? null;
+  if (best) return best;
+  // Nothing passed the round gates — relax those, but never the plan itself.
+  return (
+    board.find(
+      (p) =>
+        available.has(p.playerId) &&
+        !EXCLUDED.has((p.team ?? '').toUpperCase()) &&
+        count(p.position) < MY_PLAN[p.position],
+    ) ?? null
+  );
 }
 
 function simulate(mySlot) {
@@ -323,7 +347,7 @@ function simulate(mySlot) {
   }
 
   const available = new Set(board.map((p) => p.playerId));
-  const rosters = new Map(bySlot.slice(1).map((id) => [id, []]));
+  const rosters = new Map(bySlot.slice(1).map((id) => [id, []])); // {position, team} per pick
   const availableAtMyPick = [];
   const mine = [];
   const picksLog = [];
@@ -345,14 +369,16 @@ function simulate(mySlot) {
       const t = tendencies.get(id);
       const have = rosters.get(id);
       const log = picksLog;
-      const count = (pos) => have.filter((p) => p === pos).length;
+      const count = (pos) => have.filter((p) => p.position === pos).length;
+      const teamsAt = (...positions) =>
+        have.filter((p) => positions.includes(p.position)).map((p) => p.team);
 
       // Kicker and defense come off habit, not off the market.
       const habitual = ['K', 'DEF'].find(
         (pos) => count(pos) < 1 && round >= Math.round(t.habitualRound[pos]),
       );
       if (habitual) {
-        have.push(habitual);
+        have.push({ position: habitual, team: '' });
         log.push({ round, slot, who: t.name, name: habitual, position: habitual, team: '' });
         continue;
       }
@@ -388,10 +414,25 @@ function simulate(mySlot) {
         // and everybody is guessing by round 12. Flat noise would make the top
         // of round 1 look like a lottery.
         const jitter = gauss() * Math.max(1.5, p.adp * 0.15);
+        // Managers who habitually pair a quarterback with one of his receivers
+        // reach for the other half once they own one.
+        let stack = 0;
+        {
+          const mates =
+            p.position === 'QB'
+              ? teamsAt('WR', 'TE')
+              : ['WR', 'TE'].includes(p.position)
+                ? teamsAt('QB')
+                : [];
+          // Measured against the ~30% of stacks that happen by coincidence in any
+          // draft, so a habitual stacker is pulled toward the pair and a manager
+          // who never stacks is pushed off it.
+          if (p.team && mates.includes(p.team)) stack = (t.stackRate - 0.3) * 26;
+        }
         const favoured = favours?.has(p.name.toLowerCase()) ? PREFER_PULL : 0;
         const price = reranked?.get(p.playerId) ?? p.adp;
         const score =
-          price - opening - timing - favoured - (openingBias?.(p.position) ?? 0) + jitter;
+          price - opening - timing - favoured - stack - (openingBias?.(p.position) ?? 0) + jitter;
         if (score < bestScore) {
           bestScore = score;
           best = p;
@@ -400,7 +441,7 @@ function simulate(mySlot) {
       if (!best) best = board.find((p) => available.has(p.playerId));
       if (best) {
         available.delete(best.playerId);
-        have.push(best.position);
+        have.push({ position: best.position, team: best.team ?? '' });
         log.push({ round, slot, who: t.name, ...best });
       }
     }
@@ -530,6 +571,39 @@ if (CONSENSUS) {
         : '';
       console.log(`${mark} ${String(overall).padStart(3)}  ${who.padEnd(14)} ${pos.padEnd(3)} ${(name + (team ? ' (' + team + ')' : '')).padEnd(26)} ${String(pct).padStart(3)}%${alt}`);
     }
+  }
+  process.exit(0);
+}
+
+if (process.argv.includes('--audit')) {
+  // Does the simulation reproduce the habits it was built from?
+  const runs = SIMS;
+  const tally = new Map();
+  for (let i = 0; i < runs; i++) {
+    const { picksLog } = simulate(MY_SLOT);
+    const by = new Map();
+    for (const p of picksLog) {
+      if (!by.has(p.who)) by.set(p.who, []);
+      by.get(p.who).push(p);
+    }
+    for (const [who, picks] of by) {
+      if (!tally.has(who)) tally.set(who, { qb: [], te: [], rb: [], wr: [], stacked: 0, hadQb: 0 });
+      const t = tally.get(who);
+      const n = (pos) => picks.filter((x) => x.position === pos).length;
+      t.qb.push(n('QB')); t.te.push(n('TE')); t.rb.push(n('RB')); t.wr.push(n('WR'));
+      const qbTeams = picks.filter((x) => x.position === 'QB').map((x) => x.team);
+      if (qbTeams.length) {
+        t.hadQb += 1;
+        if (picks.some((x) => ['WR', 'TE'].includes(x.position) && qbTeams.includes(x.team))) t.stacked += 1;
+      }
+    }
+  }
+  console.log(`Audit over ${runs} drafts — average roster, and how often a QB got stacked\n`);
+  console.log('manager          QB   TE   RB   WR   stack rate');
+  for (const [who, t] of tally) {
+    const avg = (a) => (a.reduce((x, y) => x + y, 0) / a.length).toFixed(1);
+    const sr = t.hadQb ? Math.round((t.stacked / t.hadQb) * 100) + '%' : '—';
+    console.log(`${who.padEnd(15)} ${avg(t.qb).padStart(4)} ${avg(t.te).padStart(4)} ${avg(t.rb).padStart(4)} ${avg(t.wr).padStart(4)}   ${sr}`);
   }
   process.exit(0);
 }
