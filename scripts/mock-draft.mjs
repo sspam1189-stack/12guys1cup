@@ -88,6 +88,10 @@ if (onlyFlag !== -1) {
     for (const n of names) NAMED.add(n);
   }
 }
+// --my-rank "A>B>C" is your own board order for a group of players: whenever
+// more than one is available you take them in this order, regardless of ADP.
+const myRankFlag = process.argv.indexOf('--my-rank');
+const MY_RANK = myRankFlag === -1 ? [] : process.argv[myRankFlag + 1].split('>').map((n) => n.trim().toLowerCase());
 const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
@@ -299,6 +303,17 @@ for (const [key, pairs] of RANKS) {
   adjustedAdp.set(key, table);
 }
 
+// Price your ranked group as a tight sequence starting at the best ADP among
+// them, so your order holds inside the group without moving it up the board.
+const myPrice = new Map();
+if (MY_RANK.length) {
+  const found = MY_RANK.map((n) => board.find((p) => p.name.toLowerCase() === n)).filter(Boolean);
+  const anchor = Math.min(...found.map((p) => p.adp));
+  found.forEach((p, i) => myPrice.set(p.playerId, anchor + i * 0.01));
+  const missing = MY_RANK.filter((n) => !board.some((p) => p.name.toLowerCase() === n));
+  if (missing.length) console.error(`--my-rank: not on the board — ${missing.join(', ')}`);
+}
+
 const opponents = [...tendencies.keys()];
 const byName = new Map([...tendencies].map(([id, t]) => [t.name.toLowerCase(), id]));
 const fixedIds = FIXED_ORDER?.map((name) => {
@@ -332,6 +347,7 @@ function myChoice(available, mine, round) {
   }
 
   let best = null;
+  let bestPrice = Infinity;
   for (const p of board) {
     if (!available.has(p.playerId)) continue;
     if (EXCLUDED.has((p.team ?? '').toUpperCase()) && !NAMED.has(p.name.toLowerCase())) continue;
@@ -342,8 +358,15 @@ function myChoice(available, mine, round) {
     // Don't let a scarce single slot go unfilled by chasing depth to the end.
     const mustFillNow = ['QB', 'TE'].filter((pos) => count(pos) < MY_PLAN[pos]).length;
     if (mustFillNow > roundsLeft && !['QB', 'TE'].includes(p.position)) continue;
-    best = p;
-    break;
+    const price = myPrice.get(p.playerId) ?? p.adp;
+    if (price < bestPrice) {
+      bestPrice = price;
+      best = p;
+    }
+    // The board is ADP-ordered, so once we are past everything your ranking
+    // could reprice, the first survivor is the answer.
+    if (!myPrice.size) break;
+    if (p.adp > bestPrice + 40) break;
   }
   if (best) return best;
   // Nothing passed the round gates — relax those, but never the plan itself.
