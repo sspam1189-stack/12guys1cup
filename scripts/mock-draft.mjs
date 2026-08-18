@@ -140,6 +140,26 @@ for (const user of users) {
     openingCounts[pos] = (openingCounts[pos] ?? 0) + 1;
     openingTotal += 1;
   }
+  // When each position comes, not just how many. A manager who takes two backs
+  // inside his first three picks and a manager who takes his second at pick 5
+  // both finish with "some running backs"; only the schedule separates them.
+  const schedule = {};
+  for (const pos of SKILL) {
+    const depth = Math.max(...drafts.map((d) => d.picks.filter((p) => position(p) === pos).length));
+    schedule[pos] = [];
+    for (let n = 0; n < depth; n++) {
+      const at = drafts
+        .map((d) => {
+          const idx = d.picks
+            .map((p, i) => (position(p) === pos ? i + 1 : null))
+            .filter((x) => x != null);
+          return idx[n] ?? null;
+        })
+        .filter((x) => x != null);
+      schedule[pos].push(at.length ? median(at) : Infinity);
+    }
+  }
+
   const habitualRound = {};
   for (const pos of ['K', 'DEF']) {
     const rounds = drafts
@@ -152,6 +172,7 @@ for (const user of users) {
     target,
     openingReach,
     habitualRound,
+    schedule,
     openingCounts,
     openingTotal,
   });
@@ -308,14 +329,18 @@ function simulate(mySlot) {
         if (count(p.position) >= LIMITS[p.position]) continue;
         const short = t.target[p.position] - count(p.position);
         if (short <= 0) continue;
+        // How overdue this position is on their own schedule, in picks.
+        const dueAt = t.schedule[p.position]?.[count(p.position)] ?? Infinity;
+        const timing = Number.isFinite(dueAt)
+          ? Math.max(-6, Math.min(6, 6 - (dueAt - (have.length + 1)) * 1.5))
+          : -6;
         const opening = count(p.position) === 0 ? t.openingReach[p.position] : 0;
         // Lower score = taken sooner. Reach pulls a player up the board.
         // Uncertainty grows down the board: nobody is unsure about the 1.01,
         // and everybody is guessing by round 12. Flat noise would make the top
         // of round 1 look like a lottery.
         const jitter = gauss() * Math.max(1.5, p.adp * 0.15);
-        const score =
-          p.adp - opening - Math.min(short, 2) * 3 - (openingBias?.(p.position) ?? 0) + jitter;
+        const score = p.adp - opening - timing - (openingBias?.(p.position) ?? 0) + jitter;
         if (score < bestScore) {
           bestScore = score;
           best = p;
