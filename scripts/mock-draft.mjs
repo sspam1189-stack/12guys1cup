@@ -497,8 +497,11 @@ if (CONSENSUS) {
   const tally = new Map(); // overall pick -> Map(label -> count)
   const owner = new Map();
   const seat = new Map(); // overall pick -> the manager's draft seat, not its index in the round
+  const allDrafts = [];
   for (let i = 0; i < CONSENSUS; i++) {
-    for (const p of simulate(MY_SLOT).picksLog) {
+    const log = simulate(MY_SLOT).picksLog;
+    allDrafts.push(log);
+    for (const p of log) {
       const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
       owner.set(overall, p.who);
       seat.set(overall, p.slot);
@@ -515,19 +518,28 @@ if (CONSENSUS) {
   // Off by default: the marginal answers "who goes here", which is what you
   // plan against. --legal answers "what could one draft look like" and is
   // deduplicated, at the cost of frequencies that no longer mean much.
-  const claimed = new Set();
+  // A per-cell marginal is not a draft: summed down a column it can hand a
+  // manager four tight ends, and a manager who took a back in every simulation
+  // can show a receiver. So display the single run that best matches the
+  // consensus — every column is then a roster that really happened, and the
+  // percentages beside it still come from all the runs.
+  const score = (log) =>
+    log.reduce((sum, p) => {
+      const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
+      return sum + (tally.get(overall)?.get(`${p.position}|${p.name}|${p.team ?? ''}`) ?? 0);
+    }, 0);
+  const best = allDrafts.reduce((a, b) => (score(a) >= score(b) ? a : b));
   const chosen = new Map();
+  for (const p of best) {
+    const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
+    const label = `${p.position}|${p.name}|${p.team ?? ''}`;
+    const ranked = [...(tally.get(overall) ?? new Map())].sort((x, y) => y[1] - x[1]);
+    chosen.set(overall, { label, n: tally.get(overall)?.get(label) ?? 0, ranked });
+  }
+  const claimed = new Set();
   // Assign in order of confidence, not draft order. Going front-to-back lets an
   // early coin-flip pick claim a player a later high-confidence pick needed,
   // which is how a 60%-certain slot ends up showing a 2% name.
-  const slots = [...tally.entries()]
-    .map(([overall, t]) => ({ overall, ranked: [...t].sort((a, b) => b[1] - a[1]) }))
-    .sort((a, b) => b.ranked[0][1] - a.ranked[0][1]);
-  for (const { overall, ranked } of slots) {
-    const pick = ranked.find(([label]) => !claimed.has(label)) ?? ranked[0];
-    claimed.add(pick[0]);
-    chosen.set(overall, { label: pick[0], n: pick[1], ranked });
-  }
   if (process.argv.includes('--json')) {
     const out = [];
     for (let overall = 1; overall <= ROUNDS * TEAMS; overall++) {
