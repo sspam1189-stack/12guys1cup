@@ -434,6 +434,12 @@ function simulate(mySlot) {
           available.delete(take.playerId);
           mine.push({ ...take, round });
           picksLog.push({ round, slot, who: 'YOU', ...take });
+        } else if (round > ROUNDS - 2) {
+          // Your last two rounds are the kicker and the defense. They have no
+          // comparable ADP, but leaving the cells blank reads as a bug.
+          const position = mine.some((p) => p.position === 'K') ? 'DEF' : 'K';
+          mine.push({ position, name: position, team: '', adp: null, round });
+          picksLog.push({ round, slot, who: 'YOU', position, name: position, team: '' });
         }
         continue;
       }
