@@ -344,15 +344,38 @@ if (CONSENSUS) {
       t.set(label, (t.get(label) ?? 0) + 1);
     }
   }
-  console.log(`Consensus board over ${CONSENSUS} simulated drafts — you at slot ${MY_SLOT}\n`);
+  // Each pick's tally is a marginal: a player who goes 6th half the time and
+  // 7th the other half is the mode at both. Walk the picks in order and give
+  // each one its most frequent player who is still on the board, so the output
+  // is a draft that could actually happen rather than twelve separate polls.
+  // Off by default: the marginal answers "who goes here", which is what you
+  // plan against. --legal answers "what could one draft look like" and is
+  // deduplicated, at the cost of frequencies that no longer mean much.
+  const LEGAL = process.argv.includes('--legal');
+  const claimed = new Set();
+  const chosen = new Map();
+  for (let overall = 1; overall <= ROUNDS * TEAMS; overall++) {
+    const t = tally.get(overall);
+    if (!t) continue;
+    const ranked = [...t].sort((a, b) => b[1] - a[1]);
+    const pick = LEGAL ? (ranked.find(([label]) => !claimed.has(label)) ?? ranked[0]) : ranked[0];
+    claimed.add(pick[0]);
+    chosen.set(overall, { label: pick[0], n: pick[1], ranked });
+  }
+  console.log(`Consensus board over ${CONSENSUS} simulated drafts — you at slot ${MY_SLOT}`);
+  console.log(
+    LEGAL
+      ? 'One plausible draft: each player appears once, so the % is only indicative.\n'
+      : 'Per-pick distribution: % is how often that player went at that pick. A player\n' +
+        'can lead at two consecutive picks — he went 6th in some drafts and 7th in others.\n',
+  );
   for (let round = 1; round <= ROUNDS; round++) {
     console.log(`--- Round ${round} ---`);
     for (let i = 1; i <= TEAMS; i++) {
       const overall = (round - 1) * TEAMS + i;
       const t = tally.get(overall);
       if (!t) continue;
-      const ranked = [...t].sort((a, b) => b[1] - a[1]);
-      const [label, n] = ranked[0];
+      const { label, n, ranked } = chosen.get(overall);
       const [pos, name, team] = label.split('|');
       const who = owner.get(overall);
       const mark = who === 'YOU' ? '>>' : '  ';
