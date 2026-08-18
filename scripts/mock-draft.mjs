@@ -91,7 +91,13 @@ if (onlyFlag !== -1) {
 // --my-rank "A>B>C" is your own board order for a group of players: whenever
 // more than one is available you take them in this order, regardless of ADP.
 const myRankFlag = process.argv.indexOf('--my-rank');
-const MY_RANK = myRankFlag === -1 ? [] : process.argv[myRankFlag + 1].split('>').map((n) => n.trim().toLowerCase());
+// Semicolons separate independent groups — one for backs, one for receivers.
+const MY_RANK = myRankFlag === -1
+  ? []
+  : process.argv[myRankFlag + 1]
+      .split(';')
+      .map((group) => group.split('>').map((n) => n.trim().toLowerCase()))
+      .filter((g) => g.length > 1);
 const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
@@ -306,11 +312,12 @@ for (const [key, pairs] of RANKS) {
 // Price your ranked group as a tight sequence starting at the best ADP among
 // them, so your order holds inside the group without moving it up the board.
 const myPrice = new Map();
-if (MY_RANK.length) {
-  const found = MY_RANK.map((n) => board.find((p) => p.name.toLowerCase() === n)).filter(Boolean);
+for (const group of MY_RANK) {
+  const found = group.map((n) => board.find((p) => p.name.toLowerCase() === n)).filter(Boolean);
+  if (!found.length) continue;
   const anchor = Math.min(...found.map((p) => p.adp));
   found.forEach((p, i) => myPrice.set(p.playerId, anchor + i * 0.01));
-  const missing = MY_RANK.filter((n) => !board.some((p) => p.name.toLowerCase() === n));
+  const missing = group.filter((n) => !board.some((p) => p.name.toLowerCase() === n));
   if (missing.length) console.error(`--my-rank: not on the board — ${missing.join(', ')}`);
 }
 
