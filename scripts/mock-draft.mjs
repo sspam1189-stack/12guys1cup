@@ -58,6 +58,21 @@ if (preferFlag !== -1) {
     PREFER.get(key).add(player.toLowerCase());
   }
 }
+// --rank "manager:Player A>Player B" says one manager has A above B on his own
+// board. Only their order relative to each other changes: A is slotted just
+// ahead of B's market price, so both still compete normally with everyone else.
+const rankFlag = process.argv.indexOf('--rank');
+const RANKS = new Map();
+if (rankFlag !== -1) {
+  for (const entry of process.argv[rankFlag + 1].split(';')) {
+    const [who, pair] = entry.split(':').map((x) => x.trim());
+    const [aboveName, belowName] = (pair ?? '').split('>').map((x) => x.trim());
+    if (!who || !aboveName || !belowName) continue;
+    const key = who.toLowerCase();
+    if (!RANKS.has(key)) RANKS.set(key, []);
+    RANKS.get(key).push([aboveName.toLowerCase(), belowName.toLowerCase()]);
+  }
+}
 const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
@@ -237,6 +252,23 @@ const expectedPoints = (adp) => {
   return curvePts[lo];
 };
 
+// Resolve each manager's re-rankings into an effective price for the players
+// involved, once, rather than searching the board on every pick.
+const adjustedAdp = new Map();
+for (const [key, pairs] of RANKS) {
+  const table = new Map();
+  for (const [aboveName, belowName] of pairs) {
+    const above = board.find((p) => p.name.toLowerCase() === aboveName);
+    const below = board.find((p) => p.name.toLowerCase() === belowName);
+    if (!above || !below) {
+      console.error(`--rank: could not find ${!above ? aboveName : belowName} on the board`);
+      continue;
+    }
+    table.set(above.playerId, Math.min(above.adp, below.adp - 0.5));
+  }
+  adjustedAdp.set(key, table);
+}
+
 const opponents = [...tendencies.keys()];
 const byName = new Map([...tendencies].map(([id, t]) => [t.name.toLowerCase(), id]));
 const fixedIds = FIXED_ORDER?.map((name) => {
@@ -337,6 +369,7 @@ function simulate(mySlot) {
       let bestScore = Infinity;
       const refuses = NEVER.get(t.name.toLowerCase());
       const favours = PREFER.get(t.name.toLowerCase());
+      const reranked = adjustedAdp.get(t.name.toLowerCase());
       for (const p of board) {
         if (!available.has(p.playerId)) continue;
         if (refuses?.has(p.name.toLowerCase())) continue;
@@ -356,8 +389,9 @@ function simulate(mySlot) {
         // of round 1 look like a lottery.
         const jitter = gauss() * Math.max(1.5, p.adp * 0.15);
         const favoured = favours?.has(p.name.toLowerCase()) ? PREFER_PULL : 0;
+        const price = reranked?.get(p.playerId) ?? p.adp;
         const score =
-          p.adp - opening - timing - favoured - (openingBias?.(p.position) ?? 0) + jitter;
+          price - opening - timing - favoured - (openingBias?.(p.position) ?? 0) + jitter;
         if (score < bestScore) {
           bestScore = score;
           best = p;
