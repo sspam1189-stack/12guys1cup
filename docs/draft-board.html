@@ -6,7 +6,8 @@
 :root{
   --bg:#e9ecef; --surface:#fbfcfd; --raised:#f3f5f8; --line:#d2d8df; --line-soft:#e3e8ee;
   --ink:#11151b; --ink-2:#3d4652; --muted:#5f6975;
-  --rb:#2a78d6; --wr:#eb6834; --te:#1baf7a; --qb:#3d4652; --dead:#94a0ad;
+  --qb:#c9185a; --rb:#00887a; --wr:#2f7fd6; --te:#a96a10; --k:#8a3fd0; --def:#8f5442;
+  --dead:#94a0ad; --on-pos:#fff;
   --mine:#0f5ea8; --mine-wash:#dbeaf9;
   --shadow:0 1px 2px rgba(16,22,30,.07),0 8px 24px -12px rgba(16,22,30,.18);
 }
@@ -14,7 +15,8 @@
   :root:not([data-theme="light"]){
     --bg:#0f1218; --surface:#171b22; --raised:#1e232b; --line:#2a313b; --line-soft:#222834;
     --ink:#e7ebf1; --ink-2:#b3bcc8; --muted:#8a95a2;
-    --rb:#3987e5; --wr:#d95926; --te:#199e70; --qb:#98a3b1; --dead:#5b6673;
+    --qb:#fc2b6d; --rb:#00ceb8; --wr:#58a7ff; --te:#ffae58; --k:#bd66ff; --def:#bf755d;
+    --dead:#5b6673; --on-pos:#0f1218;
     --mine:#6fb3f5; --mine-wash:#15304c;
     --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 30px -14px rgba(0,0,0,.8);
   }
@@ -22,7 +24,8 @@
 :root[data-theme="dark"]{
   --bg:#0f1218; --surface:#171b22; --raised:#1e232b; --line:#2a313b; --line-soft:#222834;
   --ink:#e7ebf1; --ink-2:#b3bcc8; --muted:#8a95a2;
-  --rb:#3987e5; --wr:#d95926; --te:#199e70; --qb:#98a3b1; --dead:#5b6673;
+  --qb:#fc2b6d; --rb:#00ceb8; --wr:#58a7ff; --te:#ffae58; --k:#bd66ff; --def:#bf755d;
+  --dead:#5b6673; --on-pos:#0f1218;
   --mine:#6fb3f5; --mine-wash:#15304c;
   --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 30px -14px rgba(0,0,0,.8);
 }
@@ -64,14 +67,14 @@ h2{font-family:"Saira Condensed",Archivo,sans-serif;text-transform:uppercase;
 .sl-alt{font-size:11.5px;color:var(--muted);line-height:1.4;border-top:1px solid var(--line-soft);
   padding-top:6px}
 .chip{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;letter-spacing:.05em;
-  padding:2px 5px;border-radius:2px;color:#fff}
+  padding:2px 5px;border-radius:2px;color:var(--on-pos)}
 
 .p-RB .chip,.chip.p-RB{background:var(--rb)}
 .p-WR .chip,.chip.p-WR{background:var(--wr)}
 .p-TE .chip,.chip.p-TE{background:var(--te)}
-.p-QB .chip,.chip.p-QB{background:transparent;color:var(--ink);
-  box-shadow:inset 0 0 0 1.5px var(--qb)}
-.p-K .chip,.chip.p-K,.p-DEF .chip,.chip.p-DEF{background:var(--dead)}
+.p-QB .chip,.chip.p-QB{background:var(--qb)}
+.p-K .chip,.chip.p-K{background:var(--k)}
+.p-DEF .chip,.chip.p-DEF{background:var(--def)}
 
 .boardwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);
   border-radius:4px;box-shadow:var(--shadow)}
@@ -94,7 +97,7 @@ thead th:first-child{left:0;z-index:4}
 .cell .ov{position:absolute;top:5px;right:6px;font-family:"IBM Plex Mono",monospace;
   font-size:9.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 .cell .pos{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:9.5px;
-  font-weight:600;letter-spacing:.05em;padding:1px 4px;border-radius:2px;color:#fff;
+  font-weight:600;letter-spacing:.05em;padding:1px 4px;border-radius:2px;color:var(--on-pos);
   background:var(--dead)}
 .cell .nm{display:block;margin-top:3px;font-size:13px;font-weight:500;line-height:1.2;
   color:var(--ink);padding-right:14px}
@@ -105,8 +108,9 @@ thead th:first-child{left:0;z-index:4}
 .cell.p-RB .pos,.cell.p-RB .conf{background:var(--rb)}
 .cell.p-WR .pos,.cell.p-WR .conf{background:var(--wr)}
 .cell.p-TE .pos,.cell.p-TE .conf{background:var(--te)}
-.cell.p-QB .pos{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.3px var(--qb)}
-.cell.p-QB .conf{background:var(--qb)}
+.cell.p-QB .pos,.cell.p-QB .conf{background:var(--qb)}
+.cell.p-K .pos,.cell.p-K .conf{background:var(--k)}
+.cell.p-DEF .pos,.cell.p-DEF .conf{background:var(--def)}
 .cell.empty{background:var(--raised)}
 .cell.mine{background:var(--mine-wash);box-shadow:inset 2px 0 0 var(--mine)}
 .cell.mine .nm{font-weight:600}
@@ -156,7 +160,8 @@ tbody tr:hover .cell.mine{background-color:var(--mine-wash)}
       <span class="key"><span class="chip p-WR">WR</span> receiver</span>
       <span class="key"><span class="chip p-TE">TE</span> tight end</span>
       <span class="key"><span class="chip p-QB">QB</span> quarterback</span>
-      <span class="key"><span class="chip p-K">K</span> kicker / defense</span>
+      <span class="key"><span class="chip p-K">K</span> kicker</span>
+      <span class="key"><span class="chip p-DEF">DEF</span> defense</span>
       <span class="key">bar under each cell = confidence</span>
     </p>
   </section>
