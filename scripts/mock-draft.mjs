@@ -25,6 +25,12 @@ const SIMS = arg('--sims', 400);
 const MIN_PCT = arg('--min', 25);
 const TOP = arg('--top', 8);
 const ONLY = arg('--only', 0); // with --compare, score just this one slot
+// --exclude-teams DAL,NYG,WAS drops those NFL teams from your board only —
+// everyone else still drafts them, so they still come off the board.
+const exFlag = process.argv.indexOf('--exclude-teams');
+const EXCLUDED = new Set(
+  exFlag === -1 ? [] : process.argv[exFlag + 1].split(',').map((t) => t.trim().toUpperCase()),
+);
 const ADP_CEILING = 250;
 const SKILL = ['QB', 'RB', 'WR', 'TE'];
 // Sleeper's kicker and defense ADP is on its own scale, so those two are drafted
@@ -173,6 +179,7 @@ function myChoice(available, mine, round) {
   let best = null;
   for (const p of board) {
     if (!available.has(p.playerId)) continue;
+    if (EXCLUDED.has((p.team ?? '').toUpperCase())) continue;
     if (count(p.position) >= MY_PLAN[p.position]) continue;
     if (round < (EARLIEST[p.position] ?? 1)) continue;
     // Don't let a scarce single slot go unfilled by chasing depth to the end.
@@ -327,6 +334,7 @@ console.log(`Your picks: ${myPicks.join(', ')}\n`);
 for (let round = 0; round < ROUNDS; round++) {
   const rows = [...survival[round]]
     .map(([playerId, n]) => ({ ...meta.get(playerId), pct: Math.round((n / SIMS) * 100) }))
+    .filter((r) => !EXCLUDED.has((r.team ?? '').toUpperCase()))
     .filter((r) => r.pct >= MIN_PCT)
     .sort((a, b) => a.adp - b.adp)
     .slice(0, TOP);

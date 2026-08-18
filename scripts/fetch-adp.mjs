@@ -66,6 +66,7 @@ for (const season of SEASONS) {
     adp[String(playerId)] = {
       name: nameOf(row),
       position: playerOf(row).position ?? stats(row).position ?? '',
+      team: playerOf(row).team ?? row?.team ?? '',
       adp: value,
     };
   }
