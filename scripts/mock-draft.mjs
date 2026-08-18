@@ -73,6 +73,21 @@ if (rankFlag !== -1) {
     RANKS.get(key).push([aboveName.toLowerCase(), belowName.toLowerCase()]);
   }
 }
+// --only "TE=George Kittle,Isaiah Likely" restricts your own board at a position
+// to a named shortlist. Named players override --exclude-teams: if you asked for
+// him by name, you want him whatever jersey he is in.
+const onlyFlag = process.argv.indexOf('--only-players');
+const ONLY_AT = new Map();
+const NAMED = new Set();
+if (onlyFlag !== -1) {
+  for (const entry of process.argv[onlyFlag + 1].split(';')) {
+    const [pos, list] = entry.split('=').map((x) => x.trim());
+    if (!pos || !list) continue;
+    const names = new Set(list.split(',').map((n) => n.trim().toLowerCase()));
+    ONLY_AT.set(pos.toUpperCase(), names);
+    for (const n of names) NAMED.add(n);
+  }
+}
 const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
@@ -304,10 +319,24 @@ function myChoice(available, mine, round) {
   // The last two rounds go to kicker and defense, which the board doesn't hold.
   if (round > ROUNDS - 2) return null;
   const roundsLeft = ROUNDS - 2 - round;
+
+  // A position you have restricted to a couple of names does not behave like a
+  // position: waiting for one of them to be the best player left is how you end
+  // the draft without a tight end. Once the shortlist is down to its last man,
+  // take him.
+  for (const [pos, names] of ONLY_AT) {
+    if (count(pos) >= MY_PLAN[pos]) continue;
+    if (round < (EARLIEST[pos] ?? 1)) continue;
+    const left = board.filter((p) => available.has(p.playerId) && names.has(p.name.toLowerCase()));
+    if (left.length && left.length <= 1) return left[0];
+  }
+
   let best = null;
   for (const p of board) {
     if (!available.has(p.playerId)) continue;
-    if (EXCLUDED.has((p.team ?? '').toUpperCase())) continue;
+    if (EXCLUDED.has((p.team ?? '').toUpperCase()) && !NAMED.has(p.name.toLowerCase())) continue;
+    const shortlist = ONLY_AT.get(p.position);
+    if (shortlist && !shortlist.has(p.name.toLowerCase())) continue;
     if (count(p.position) >= MY_PLAN[p.position]) continue;
     if (round < (EARLIEST[p.position] ?? 1)) continue;
     // Don't let a scarce single slot go unfilled by chasing depth to the end.
@@ -322,7 +351,8 @@ function myChoice(available, mine, round) {
     board.find(
       (p) =>
         available.has(p.playerId) &&
-        !EXCLUDED.has((p.team ?? '').toUpperCase()) &&
+        (!EXCLUDED.has((p.team ?? '').toUpperCase()) || NAMED.has(p.name.toLowerCase())) &&
+        !(ONLY_AT.get(p.position) && !ONLY_AT.get(p.position).has(p.name.toLowerCase())) &&
         count(p.position) < MY_PLAN[p.position],
     ) ?? null
   );
@@ -662,7 +692,7 @@ console.log(`Your picks: ${myPicks.join(', ')}\n`);
 for (let round = 0; round < ROUNDS; round++) {
   const rows = [...survival[round]]
     .map(([playerId, n]) => ({ ...meta.get(playerId), pct: Math.round((n / SIMS) * 100) }))
-    .filter((r) => !EXCLUDED.has((r.team ?? '').toUpperCase()))
+    .filter((r) => !EXCLUDED.has((r.team ?? '').toUpperCase()) || NAMED.has(r.name.toLowerCase()))
     .filter((r) => r.pct >= MIN_PCT)
     .sort((a, b) => a.adp - b.adp)
     .slice(0, TOP);
