@@ -485,6 +485,31 @@ if (CONSENSUS) {
     claimed.add(pick[0]);
     chosen.set(overall, { label: pick[0], n: pick[1], ranked });
   }
+  if (process.argv.includes('--json')) {
+    const out = [];
+    for (let overall = 1; overall <= ROUNDS * TEAMS; overall++) {
+      const c = chosen.get(overall);
+      if (!c) continue;
+      const [position, name, team] = c.label.split('|');
+      out.push({
+        overall,
+        round: Math.ceil(overall / TEAMS),
+        slot: overall % TEAMS === 0 ? TEAMS : overall % TEAMS,
+        who: owner.get(overall),
+        position,
+        name,
+        team,
+        pct: Math.round((c.n / CONSENSUS) * 100),
+        alts: c.ranked.slice(1, 4).map(([l, n]) => ({
+          name: l.split('|')[1],
+          position: l.split('|')[0],
+          pct: Math.round((n / CONSENSUS) * 100),
+        })),
+      });
+    }
+    console.log(JSON.stringify({ teams: TEAMS, rounds: ROUNDS, mySlot: MY_SLOT, sims: CONSENSUS, picks: out }));
+    process.exit(0);
+  }
   console.log(`Consensus board over ${CONSENSUS} simulated drafts — you at slot ${MY_SLOT}`);
   console.log('Each player appears once. % is how often he went at that pick.\n');
   for (let round = 1; round <= ROUNDS; round++) {
