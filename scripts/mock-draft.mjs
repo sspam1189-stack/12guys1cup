@@ -112,15 +112,33 @@ for (const user of users) {
   for (const pos of [...SKILL, 'K', 'DEF']) {
     target[pos] = mean(drafts.map((d) => d.picks.filter((p) => position(p) === pos).length));
   }
+  // Reach on a manager's very first pick is really a measure of his seat: the
+  // best player left at pick 12 almost always has an ADP under 12, so a late
+  // drafter looks like a bargain hunter no matter what he does. Drop that pick.
   const openingReach = {};
   for (const pos of SKILL) {
     const samples = [];
     for (const { season, picks } of drafts) {
       const first = picks.find((p) => position(p) === pos);
-      const adp = first && (await adpFor.get(season))?.[first.player_id]?.adp;
+      if (!first || first.pick_no === picks[0].pick_no) continue;
+      const adp = (await adpFor.get(season))?.[first.player_id]?.adp;
       if (adp != null && adp < ADP_CEILING) samples.push(adp - first.pick_no);
     }
     openingReach[pos] = samples.length ? median(samples) : 0;
+  }
+
+  // What they actually open with, which the reach numbers cannot tell you.
+  // Uses every season on record, not just the recent window — which position a
+  // manager reaches for first is a stable habit and three samples is too few.
+  const openingCounts = {};
+  let openingTotal = 0;
+  for (const { picks } of history) {
+    const own = picks.filter((p) => p.picked_by === user.user_id);
+    if (!own.length) continue;
+    const first = own.reduce((a, b) => (a.pick_no <= b.pick_no ? a : b));
+    const pos = position(first);
+    openingCounts[pos] = (openingCounts[pos] ?? 0) + 1;
+    openingTotal += 1;
   }
   const habitualRound = {};
   for (const pos of ['K', 'DEF']) {
@@ -134,6 +152,8 @@ for (const user of users) {
     target,
     openingReach,
     habitualRound,
+    openingCounts,
+    openingTotal,
   });
 }
 
@@ -270,12 +290,21 @@ function simulate(mySlot) {
         continue;
       }
 
+      // First pick of the draft: lean toward the position they habitually open
+      // with. A bias, not a rule — nobody passes a clearly better player to
+      // honour a habit, but a 4-of-5 running back opener does start there.
+      const OPENING_PULL = 9; // picks of pull at a 100% habit
+      const openingBias =
+        !have.length && t.openingTotal
+          ? (pos) => ((t.openingCounts[pos] ?? 0) / t.openingTotal) * OPENING_PULL
+          : null;
       let best = null;
       let bestScore = Infinity;
       const refuses = NEVER.get(t.name.toLowerCase());
       for (const p of board) {
         if (!available.has(p.playerId)) continue;
         if (refuses?.has(p.name.toLowerCase())) continue;
+
         if (count(p.position) >= LIMITS[p.position]) continue;
         const short = t.target[p.position] - count(p.position);
         if (short <= 0) continue;
@@ -285,7 +314,8 @@ function simulate(mySlot) {
         // and everybody is guessing by round 12. Flat noise would make the top
         // of round 1 look like a lottery.
         const jitter = gauss() * Math.max(1.5, p.adp * 0.15);
-        const score = p.adp - opening - Math.min(short, 2) * 3 + jitter;
+        const score =
+          p.adp - opening - Math.min(short, 2) * 3 - (openingBias?.(p.position) ?? 0) + jitter;
         if (score < bestScore) {
           bestScore = score;
           best = p;
