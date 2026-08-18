@@ -51,11 +51,12 @@ const preferFlag = process.argv.indexOf('--prefer');
 const PREFER = new Map();
 if (preferFlag !== -1) {
   for (const entry of process.argv[preferFlag + 1].split(';')) {
-    const [who, player] = entry.split(':').map((x) => x.trim());
+    const [who, player, weight] = entry.split(':').map((x) => x.trim());
     if (!who || !player) continue;
     const key = who.toLowerCase();
-    if (!PREFER.has(key)) PREFER.set(key, new Set());
-    PREFER.get(key).add(player.toLowerCase());
+    if (!PREFER.has(key)) PREFER.set(key, new Map());
+    // Third field is how many picks of pull, so "likely" and "certain" differ.
+    PREFER.get(key).set(player.toLowerCase(), Number(weight) || PREFER_PULL);
   }
 }
 // --rank "manager:Player A>Player B" says one manager has A above B on his own
@@ -499,7 +500,7 @@ function simulate(mySlot) {
           // who never stacks is pushed off it.
           if (p.team && mates.includes(p.team)) stack = (t.stackRate - 0.3) * 26;
         }
-        const favoured = favours?.has(p.name.toLowerCase()) ? PREFER_PULL : 0;
+        const favoured = favours?.get(p.name.toLowerCase()) ?? 0;
         const price = reranked?.get(p.playerId) ?? p.adp;
         const score =
           price - opening - timing - favoured - stack - (openingBias?.(p.position) ?? 0) + jitter;
