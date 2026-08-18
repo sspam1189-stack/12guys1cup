@@ -31,6 +31,10 @@ const exFlag = process.argv.indexOf('--exclude-teams');
 const EXCLUDED = new Set(
   exFlag === -1 ? [] : process.argv[exFlag + 1].split(',').map((t) => t.trim().toUpperCase()),
 );
+const SEED = arg('--seed', 0);
+const QB_ROUND = arg('--qb-round', 8);
+const TE_ROUND = arg('--te-round', 8);
+const BOARDS = arg('--boards', 0); // print this many complete mock drafts
 const ADP_CEILING = 250;
 const SKILL = ['QB', 'RB', 'WR', 'TE'];
 // Sleeper's kicker and defense ADP is on its own scale, so those two are drafted
@@ -38,7 +42,7 @@ const SKILL = ['QB', 'RB', 'WR', 'TE'];
 const LIMITS = { QB: 3, RB: 8, WR: 8, TE: 3, K: 2, DEF: 2 };
 
 // Deterministic PRNG so a rerun with the same flags gives the same board.
-let seed = 0x9e3779b9;
+let seed = (0x9e3779b9 + SEED * 2654435761) >>> 0;
 const rand = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 2 ** 32);
 const gauss = () => {
   const u = Math.max(rand(), 1e-9);
@@ -170,7 +174,7 @@ if (fixedIds && fixedIds.length !== TEAMS - 1) {
 // How you draft, per the plan: one quarterback and one tight end, neither of
 // them early, and the rest of the board spent on running backs and receivers.
 const MY_PLAN = { QB: 1, RB: 5, WR: 6, TE: 1 };
-const EARLIEST = { TE: 8, QB: 8 };
+const EARLIEST = { TE: TE_ROUND, QB: QB_ROUND };
 function myChoice(available, mine, round) {
   const count = (pos) => mine.filter((p) => p.position === pos).length;
   // The last two rounds go to kicker and defense, which the board doesn't hold.
@@ -213,6 +217,7 @@ function simulate(mySlot) {
   const rosters = new Map(bySlot.slice(1).map((id) => [id, []]));
   const availableAtMyPick = [];
   const mine = [];
+  const picksLog = [];
 
   for (let round = 1; round <= ROUNDS; round++) {
     for (let i = 1; i <= TEAMS; i++) {
@@ -224,11 +229,13 @@ function simulate(mySlot) {
         if (take) {
           available.delete(take.playerId);
           mine.push({ ...take, round });
+          picksLog.push({ round, slot, who: 'YOU', ...take });
         }
         continue;
       }
       const t = tendencies.get(id);
       const have = rosters.get(id);
+      const log = picksLog;
       const count = (pos) => have.filter((p) => p === pos).length;
 
       // Kicker and defense come off habit, not off the market.
@@ -237,6 +244,7 @@ function simulate(mySlot) {
       );
       if (habitual) {
         have.push(habitual);
+        log.push({ round, slot, who: t.name, name: habitual, position: habitual, team: '' });
         continue;
       }
 
@@ -263,10 +271,11 @@ function simulate(mySlot) {
       if (best) {
         available.delete(best.playerId);
         have.push(best.position);
+        log.push({ round, slot, who: t.name, ...best });
       }
     }
   }
-  return { availableAtMyPick, mine };
+  return { availableAtMyPick, mine, picksLog, bySlot };
 }
 
 // --compare: which slot to pick when the commissioner lets you choose. Every
@@ -308,6 +317,26 @@ if (process.argv.includes('--compare')) {
     console.log(
       `${String(r.slot).padStart(2)}     ${r.starter.toFixed(0).padStart(19)}   ${r.opener}${flag}`,
     );
+  }
+  process.exit(0);
+}
+
+if (BOARDS) {
+  for (let b = 0; b < BOARDS; b++) {
+    const { picksLog, mine, bySlot } = simulate(MY_SLOT);
+    console.log(`\n${'='.repeat(64)}\nMOCK ${b + 1} — you at slot ${MY_SLOT}\n${'='.repeat(64)}`);
+    for (const round of [1, 2, 3]) {
+      console.log(`\nRound ${round}`);
+      for (const p of picksLog.filter((x) => x.round === round)) {
+        const overall = (round - 1) * TEAMS + (round % 2 ? p.slot : TEAMS + 1 - p.slot);
+        const mark = p.who === 'YOU' ? '>>' : '  ';
+        console.log(`${mark} ${String(overall).padStart(3)}  ${p.who.padEnd(14)} ${p.position.padEnd(3)} ${p.name}${p.team ? ' (' + p.team + ')' : ''}`);
+      }
+    }
+    console.log('\nYOUR ROSTER');
+    for (const p of mine) {
+      console.log(`   R${String(p.round).padStart(2)}  ${p.position.padEnd(3)} ${p.name.padEnd(24)} ADP ${p.adp.toFixed(1)}${p.team ? '  ' + p.team : ''}`);
+    }
   }
   process.exit(0);
 }
