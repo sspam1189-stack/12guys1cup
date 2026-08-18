@@ -589,28 +589,64 @@ if (CONSENSUS) {
   // Off by default: the marginal answers "who goes here", which is what you
   // plan against. --legal answers "what could one draft look like" and is
   // deduplicated, at the cost of frequencies that no longer mean much.
-  // A per-cell marginal is not a draft: summed down a column it can hand a
-  // manager four tight ends, and a manager who took a back in every simulation
-  // can show a receiver. So display the single run that best matches the
-  // consensus — every column is then a roster that really happened, and the
-  // percentages beside it still come from all the runs.
-  const score = (log) =>
-    log.reduce((sum, p) => {
-      const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
-      return sum + (tally.get(overall)?.get(`${p.position}|${p.name}|${p.team ?? ''}`) ?? 0);
-    }, 0);
-  const best = allDrafts.reduce((a, b) => (score(a) >= score(b) ? a : b));
+  // Two things are being asked of each cell: the position the drafts agree on,
+  // and the most likely player. Take the modal position first — that is the part
+  // fifty drafts actually settle — then the highest-percentage player within it,
+  // skipping anyone already shown elsewhere so nobody appears twice.
   const chosen = new Map();
-  for (const p of best) {
-    const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
-    const label = `${p.position}|${p.name}|${p.team ?? ''}`;
-    const ranked = [...(tally.get(overall) ?? new Map())].sort((x, y) => y[1] - x[1]);
-    chosen.set(overall, { label, n: tally.get(overall)?.get(label) ?? 0, ranked });
-  }
   const claimed = new Set();
-  // Assign in order of confidence, not draft order. Going front-to-back lets an
-  // early coin-flip pick claim a player a later high-confidence pick needed,
-  // which is how a 60%-certain slot ends up showing a 2% name.
+  const slots = [];
+  for (const [overall, t] of tally) {
+    const byPos = new Map();
+    for (const [label, n] of t) {
+      const pos = label.split('|')[0];
+      byPos.set(pos, (byPos.get(pos) ?? 0) + n);
+    }
+    const positions = [...byPos].sort((a, b) => b[1] - a[1]);
+    slots.push({ overall, ranked: [...t].sort((a, b) => b[1] - a[1]), positions });
+  }
+  // Most settled picks claim their player first, so a coin-flip elsewhere cannot
+  // take a name that a near-certain pick needed.
+  slots.sort((a, b) => b.positions[0][1] - a.positions[0][1] || b.ranked[0][1] - a.ranked[0][1]);
+  // Each column also has to stay inside that manager's own quota, or the board
+  // hands somebody eight receivers because eight separate cells each thought a
+  // receiver was most likely.
+  const filled = new Map();
+  const quota = (who, pos) => {
+    if (who === 'YOU') return MY_PLAN[pos] ?? (pos === 'K' || pos === 'DEF' ? 1 : 0);
+    const id = [...tendencies].find(([, t]) => t.name === who)?.[0];
+    const t = id ? tendencies.get(id) : null;
+    return t ? Math.max(1, Math.round(t.target[pos] ?? 0)) : 99;
+  };
+  for (const { overall, ranked, positions } of slots) {
+    const who = owner.get(overall);
+    if (!filled.has(who)) filled.set(who, new Map());
+    const used = filled.get(who);
+    const room = (pos) => (used.get(pos) ?? 0) < quota(who, pos);
+    const modalPos = (positions.find(([pos]) => room(pos)) ?? positions[0])[0];
+    const pick =
+      ranked.find(([label]) => !claimed.has(label) && label.split('|')[0] === modalPos) ??
+      ranked.find(([label]) => !claimed.has(label)) ??
+      ranked[0];
+    claimed.add(pick[0]);
+    const takenPos = pick[0].split('|')[0];
+    used.set(takenPos, (used.get(takenPos) ?? 0) + 1);
+    chosen.set(overall, {
+      label: pick[0],
+      n: pick[1],
+      ranked,
+      // How often this pick was the position we ended up showing — the honest
+      // number for a cell whose player is a coin flip.
+      positionPct: Math.round(
+        ((positions.find(([pos]) => pos === takenPos)?.[1] ?? 0) / CONSENSUS) * 100,
+      ),
+      positions: positions.slice(0, 2).map(([position, n]) => ({
+        position,
+        pct: Math.round((n / CONSENSUS) * 100),
+      })),
+    });
+  }
+
   if (process.argv.includes('--json')) {
     const out = [];
     for (let overall = 1; overall <= ROUNDS * TEAMS; overall++) {
@@ -628,17 +664,8 @@ if (CONSENSUS) {
         pct: Math.round((c.n / CONSENSUS) * 100),
         // Player-level confidence collapses long before position-level does:
         // a pick can be 2% on the name and 40% on "he takes a receiver here".
-        positions: (() => {
-          const byPos = new Map();
-          for (const [label, n] of c.ranked) {
-            const pos = label.split('|')[0];
-            byPos.set(pos, (byPos.get(pos) ?? 0) + n);
-          }
-          return [...byPos]
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 2)
-            .map(([pos, n]) => ({ position: pos, pct: Math.round((n / CONSENSUS) * 100) }));
-        })(),
+        positions: c.positions,
+        positionPct: c.positionPct,
         alts: c.ranked.slice(1, 4).map(([l, n]) => ({
           name: l.split('|')[1],
           position: l.split('|')[0],
