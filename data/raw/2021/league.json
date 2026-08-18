@@ -52,7 +52,10 @@
  },
  "avatar": null,
  "company_id": null,
- "last_message_id": "828018106482995200",
+ "shard": 670,
+ "season": "2021",
+ "season_type": "regular",
+ "sport": "nfl",
  "scoring_settings": {
   "sack": 1,
   "fgm_40_49": 0,
@@ -121,11 +124,7 @@
   "idp_ff": 0,
   "st_ff": 1
  },
- "season": "2021",
- "season_type": "regular",
- "shard": 670,
- "sport": "nfl",
- "draft_id": "738898573063782400",
+ "last_message_id": "828018106482995200",
  "last_author_avatar": null,
  "last_author_display_name": "sys",
  "last_author_id": "166666666666666666",
@@ -135,8 +134,14 @@
  "last_message_time": 1651777409723,
  "last_pinned_message_id": null,
  "last_read_id": null,
+ "draft_id": "738898573063782400",
  "league_id": "706592627667050496",
  "previous_league_id": null,
+ "bracket_id": 828018103601508400,
+ "bracket_overrides_id": null,
+ "group_id": null,
+ "loser_bracket_id": 828018103614091300,
+ "loser_bracket_overrides_id": null,
  "roster_positions": [
   "QB",
   "RB",
@@ -154,10 +159,5 @@
   "BN",
   "BN"
  ],
- "bracket_id": 828018103601508400,
- "bracket_overrides_id": null,
- "group_id": null,
- "loser_bracket_id": 828018103614091300,
- "loser_bracket_overrides_id": null,
  "total_rosters": 14
 }

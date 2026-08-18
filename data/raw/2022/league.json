@@ -60,11 +60,10 @@
  },
  "avatar": "85191aaca12ef4baf9310df437b6ec34",
  "company_id": null,
- "last_message_id": "916398285735178240",
- "sport": "nfl",
  "shard": 316,
  "season": "2022",
  "season_type": "regular",
+ "sport": "nfl",
  "scoring_settings": {
   "sack": 1,
   "fgm_40_49": 0,
@@ -131,6 +130,7 @@
   "pts_allow_7_13": 13,
   "st_ff": 1
  },
+ "last_message_id": "916398285735178240",
  "last_author_avatar": "aa7eaf0b20289ffbf3748d209bddea07",
  "last_author_display_name": "henitals",
  "last_author_id": "469223780661587968",
@@ -143,11 +143,6 @@
  "last_read_id": null,
  "league_id": "784476050058035200",
  "previous_league_id": "706592627667050496",
- "bracket_id": 908818568895152100,
- "bracket_overrides_id": null,
- "group_id": null,
- "loser_bracket_id": 908818568899346400,
- "loser_bracket_overrides_id": null,
  "roster_positions": [
   "QB",
   "RB",
@@ -165,5 +160,10 @@
   "BN",
   "BN"
  ],
+ "group_id": null,
+ "bracket_id": 908818568895152100,
+ "bracket_overrides_id": null,
+ "loser_bracket_id": 908818568899346400,
+ "loser_bracket_overrides_id": null,
  "total_rosters": 14
 }
