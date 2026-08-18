@@ -98,6 +98,12 @@ const MY_RANK = myRankFlag === -1
       .split(';')
       .map((group) => group.split('>').map((n) => n.trim().toLowerCase()))
       .filter((g) => g.length > 1);
+// --avoid "Player, Player" removes players from your board only. Everyone else
+// still drafts them, so they still come off the board at the usual time.
+const avoidFlag = process.argv.indexOf('--avoid');
+const AVOID = new Set(
+  avoidFlag === -1 ? [] : process.argv[avoidFlag + 1].split(',').map((n) => n.trim().toLowerCase()),
+);
 const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
@@ -349,7 +355,9 @@ function myChoice(available, mine, round) {
   for (const [pos, names] of ONLY_AT) {
     if (count(pos) >= MY_PLAN[pos]) continue;
     if (round < (EARLIEST[pos] ?? 1)) continue;
-    const left = board.filter((p) => available.has(p.playerId) && names.has(p.name.toLowerCase()));
+    const left = board.filter(
+      (p) => available.has(p.playerId) && names.has(p.name.toLowerCase()) && !AVOID.has(p.name.toLowerCase()),
+    );
     if (left.length && left.length <= 1) return left[0];
   }
 
@@ -357,6 +365,7 @@ function myChoice(available, mine, round) {
   let bestPrice = Infinity;
   for (const p of board) {
     if (!available.has(p.playerId)) continue;
+    if (AVOID.has(p.name.toLowerCase())) continue;
     if (EXCLUDED.has((p.team ?? '').toUpperCase()) && !NAMED.has(p.name.toLowerCase())) continue;
     const shortlist = ONLY_AT.get(p.position);
     if (shortlist && !shortlist.has(p.name.toLowerCase())) continue;
@@ -381,6 +390,7 @@ function myChoice(available, mine, round) {
     board.find(
       (p) =>
         available.has(p.playerId) &&
+        !AVOID.has(p.name.toLowerCase()) &&
         (!EXCLUDED.has((p.team ?? '').toUpperCase()) || NAMED.has(p.name.toLowerCase())) &&
         !(ONLY_AT.get(p.position) && !ONLY_AT.get(p.position).has(p.name.toLowerCase())) &&
         count(p.position) < MY_PLAN[p.position],
