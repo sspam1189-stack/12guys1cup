@@ -35,6 +35,7 @@ const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
 const BOARDS = arg('--boards', 0); // print this many complete mock drafts
+const CONSENSUS = arg('--consensus', 0); // run N drafts, print the modal board
 const ADP_CEILING = 250;
 const SKILL = ['QB', 'RB', 'WR', 'TE'];
 // Sleeper's kicker and defense ADP is on its own scale, so those two are drafted
@@ -70,6 +71,14 @@ const ROUNDS = league.settings.rounds;
 
 const position = (pick) => pick.metadata?.position ?? '?';
 const mean = (xs) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);
+// Opening reach uses a median, not a mean: one freak pick (a quarterback taken
+// 66 picks ahead of his ADP) otherwise rewrites a manager's whole profile.
+const median = (xs) => {
+  if (!xs.length) return 0;
+  const v = xs.slice().sort((a, b) => a - b);
+  const i = v.length >> 1;
+  return v.length % 2 ? v[i] : (v[i - 1] + v[i]) / 2;
+};
 
 // Build each manager's tendency profile from their recent boards.
 const tendencies = new Map();
@@ -98,7 +107,7 @@ for (const user of users) {
       const adp = first && (await adpFor.get(season))?.[first.player_id]?.adp;
       if (adp != null && adp < ADP_CEILING) samples.push(adp - first.pick_no);
     }
-    openingReach[pos] = samples.length ? mean(samples) : 0;
+    openingReach[pos] = samples.length ? median(samples) : 0;
   }
   const habitualRound = {};
   for (const pos of ['K', 'DEF']) {
@@ -317,6 +326,42 @@ if (process.argv.includes('--compare')) {
     console.log(
       `${String(r.slot).padStart(2)}     ${r.starter.toFixed(0).padStart(19)}   ${r.opener}${flag}`,
     );
+  }
+  process.exit(0);
+}
+
+if (CONSENSUS) {
+  // Aggregate many drafts into the single most likely board.
+  const tally = new Map(); // overall pick -> Map(label -> count)
+  const owner = new Map();
+  for (let i = 0; i < CONSENSUS; i++) {
+    for (const p of simulate(MY_SLOT).picksLog) {
+      const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
+      owner.set(overall, p.who);
+      if (!tally.has(overall)) tally.set(overall, new Map());
+      const label = `${p.position}|${p.name}|${p.team ?? ''}`;
+      const t = tally.get(overall);
+      t.set(label, (t.get(label) ?? 0) + 1);
+    }
+  }
+  console.log(`Consensus board over ${CONSENSUS} simulated drafts — you at slot ${MY_SLOT}\n`);
+  for (let round = 1; round <= ROUNDS; round++) {
+    console.log(`--- Round ${round} ---`);
+    for (let i = 1; i <= TEAMS; i++) {
+      const overall = (round - 1) * TEAMS + i;
+      const t = tally.get(overall);
+      if (!t) continue;
+      const ranked = [...t].sort((a, b) => b[1] - a[1]);
+      const [label, n] = ranked[0];
+      const [pos, name, team] = label.split('|');
+      const who = owner.get(overall);
+      const mark = who === 'YOU' ? '>>' : '  ';
+      const pct = Math.round((n / CONSENSUS) * 100);
+      const alt = who === 'YOU'
+        ? '   alt: ' + ranked.slice(1, 4).map(([l, c]) => `${l.split('|')[1]} ${Math.round((c / CONSENSUS) * 100)}%`).join(', ')
+        : '';
+      console.log(`${mark} ${String(overall).padStart(3)}  ${who.padEnd(14)} ${pos.padEnd(3)} ${(name + (team ? ' (' + team + ')' : '')).padEnd(26)} ${String(pct).padStart(3)}%${alt}`);
+    }
   }
   process.exit(0);
 }
