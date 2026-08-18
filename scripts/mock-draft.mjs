@@ -455,10 +455,12 @@ if (CONSENSUS) {
   // Aggregate many drafts into the single most likely board.
   const tally = new Map(); // overall pick -> Map(label -> count)
   const owner = new Map();
+  const seat = new Map(); // overall pick -> the manager's draft seat, not its index in the round
   for (let i = 0; i < CONSENSUS; i++) {
     for (const p of simulate(MY_SLOT).picksLog) {
       const overall = (p.round - 1) * TEAMS + (p.round % 2 ? p.slot : TEAMS + 1 - p.slot);
       owner.set(overall, p.who);
+      seat.set(overall, p.slot);
       if (!tally.has(overall)) tally.set(overall, new Map());
       const label = `${p.position}|${p.name}|${p.team ?? ''}`;
       const t = tally.get(overall);
@@ -494,7 +496,7 @@ if (CONSENSUS) {
       out.push({
         overall,
         round: Math.ceil(overall / TEAMS),
-        slot: overall % TEAMS === 0 ? TEAMS : overall % TEAMS,
+        slot: seat.get(overall),
         who: owner.get(overall),
         position,
         name,
