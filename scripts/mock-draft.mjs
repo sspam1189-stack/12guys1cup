@@ -31,6 +31,19 @@ const exFlag = process.argv.indexOf('--exclude-teams');
 const EXCLUDED = new Set(
   exFlag === -1 ? [] : process.argv[exFlag + 1].split(',').map((t) => t.trim().toUpperCase()),
 );
+// --never "manager:Player Name;manager:Player Name" encodes what you know that
+// the boards do not: a manager who will not draft a particular player.
+const neverFlag = process.argv.indexOf('--never');
+const NEVER = new Map();
+if (neverFlag !== -1) {
+  for (const entry of process.argv[neverFlag + 1].split(';')) {
+    const [who, player] = entry.split(':').map((x) => x.trim());
+    if (!who || !player) continue;
+    const key = who.toLowerCase();
+    if (!NEVER.has(key)) NEVER.set(key, new Set());
+    NEVER.get(key).add(player.toLowerCase());
+  }
+}
 const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
@@ -259,8 +272,10 @@ function simulate(mySlot) {
 
       let best = null;
       let bestScore = Infinity;
+      const refuses = NEVER.get(t.name.toLowerCase());
       for (const p of board) {
         if (!available.has(p.playerId)) continue;
+        if (refuses?.has(p.name.toLowerCase())) continue;
         if (count(p.position) >= LIMITS[p.position]) continue;
         const short = t.target[p.position] - count(p.position);
         if (short <= 0) continue;
