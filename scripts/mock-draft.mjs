@@ -351,24 +351,21 @@ if (CONSENSUS) {
   // Off by default: the marginal answers "who goes here", which is what you
   // plan against. --legal answers "what could one draft look like" and is
   // deduplicated, at the cost of frequencies that no longer mean much.
-  const LEGAL = process.argv.includes('--legal');
   const claimed = new Set();
   const chosen = new Map();
-  for (let overall = 1; overall <= ROUNDS * TEAMS; overall++) {
-    const t = tally.get(overall);
-    if (!t) continue;
-    const ranked = [...t].sort((a, b) => b[1] - a[1]);
-    const pick = LEGAL ? (ranked.find(([label]) => !claimed.has(label)) ?? ranked[0]) : ranked[0];
+  // Assign in order of confidence, not draft order. Going front-to-back lets an
+  // early coin-flip pick claim a player a later high-confidence pick needed,
+  // which is how a 60%-certain slot ends up showing a 2% name.
+  const slots = [...tally.entries()]
+    .map(([overall, t]) => ({ overall, ranked: [...t].sort((a, b) => b[1] - a[1]) }))
+    .sort((a, b) => b.ranked[0][1] - a.ranked[0][1]);
+  for (const { overall, ranked } of slots) {
+    const pick = ranked.find(([label]) => !claimed.has(label)) ?? ranked[0];
     claimed.add(pick[0]);
     chosen.set(overall, { label: pick[0], n: pick[1], ranked });
   }
   console.log(`Consensus board over ${CONSENSUS} simulated drafts — you at slot ${MY_SLOT}`);
-  console.log(
-    LEGAL
-      ? 'One plausible draft: each player appears once, so the % is only indicative.\n'
-      : 'Per-pick distribution: % is how often that player went at that pick. A player\n' +
-        'can lead at two consecutive picks — he went 6th in some drafts and 7th in others.\n',
-  );
+  console.log('Each player appears once. % is how often he went at that pick.\n');
   for (let round = 1; round <= ROUNDS; round++) {
     console.log(`--- Round ${round} ---`);
     for (let i = 1; i <= TEAMS; i++) {
