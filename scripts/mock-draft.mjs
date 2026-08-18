@@ -44,6 +44,20 @@ if (neverFlag !== -1) {
     NEVER.get(key).add(player.toLowerCase());
   }
 }
+// --prefer "manager:Player Name" is the soft counterpart to --never: someone
+// who rates a player well above where the market has him. A pull, not a rule.
+const PREFER_PULL = 12;
+const preferFlag = process.argv.indexOf('--prefer');
+const PREFER = new Map();
+if (preferFlag !== -1) {
+  for (const entry of process.argv[preferFlag + 1].split(';')) {
+    const [who, player] = entry.split(':').map((x) => x.trim());
+    if (!who || !player) continue;
+    const key = who.toLowerCase();
+    if (!PREFER.has(key)) PREFER.set(key, new Set());
+    PREFER.get(key).add(player.toLowerCase());
+  }
+}
 const SEED = arg('--seed', 0);
 const QB_ROUND = arg('--qb-round', 8);
 const TE_ROUND = arg('--te-round', 8);
@@ -322,6 +336,7 @@ function simulate(mySlot) {
       let best = null;
       let bestScore = Infinity;
       const refuses = NEVER.get(t.name.toLowerCase());
+      const favours = PREFER.get(t.name.toLowerCase());
       for (const p of board) {
         if (!available.has(p.playerId)) continue;
         if (refuses?.has(p.name.toLowerCase())) continue;
@@ -340,7 +355,9 @@ function simulate(mySlot) {
         // and everybody is guessing by round 12. Flat noise would make the top
         // of round 1 look like a lottery.
         const jitter = gauss() * Math.max(1.5, p.adp * 0.15);
-        const score = p.adp - opening - timing - (openingBias?.(p.position) ?? 0) + jitter;
+        const favoured = favours?.has(p.name.toLowerCase()) ? PREFER_PULL : 0;
+        const score =
+          p.adp - opening - timing - favoured - (openingBias?.(p.position) ?? 0) + jitter;
         if (score < bestScore) {
           bestScore = score;
           best = p;
