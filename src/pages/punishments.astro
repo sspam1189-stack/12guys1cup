@@ -4,9 +4,11 @@ import MemberLink from '../components/MemberLink.astro';
 import seasons from '../../data/computed/seasons.json';
 
 const seasonByYear = Object.fromEntries(seasons.map((s) => [s.season, s]));
+// Pre-Sleeper seasons: no bracket data, so the loser is recorded by hand.
 const legacyVictims = {
   '2020': '467208097522249728',
-  '2019': '596094153587216384',
+  '2019': '472107756912898048',
+  '2018': '596094153587216384',
 };
 
 const punishments = [
@@ -47,6 +49,11 @@ const punishments = [
   },
   {
     year: '2019',
+    punishment: 'Open mic',
+    status: 'Completed',
+  },
+  {
+    year: '2018',
     punishment: 'Clubbing in a dress',
     status: 'Completed',
   },
