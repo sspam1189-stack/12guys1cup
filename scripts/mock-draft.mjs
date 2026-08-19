@@ -653,7 +653,9 @@ if (CONSENSUS) {
         // a pick can be 2% on the name and 40% on "he takes a receiver here".
         positions: c.positions,
         positionPct: c.positionPct,
-        alts: c.ranked.slice(1, 4).map(([l, n]) => ({
+        // Deep enough that a board renderer can keep walking down the list
+        // when the likelier names are already gone. Only the top few are shown.
+        alts: c.ranked.slice(1, 40).map(([l, n]) => ({
           name: l.split('|')[1],
           position: l.split('|')[0],
           pct: Math.round((n / CONSENSUS) * 100),

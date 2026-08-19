@@ -10,7 +10,8 @@
     "test": "vitest run",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "board": "node scripts/build-board.mjs"
   },
   "dependencies": {
     "astro": "^7.2.0",
