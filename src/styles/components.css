@@ -300,6 +300,25 @@ table.sortable th {
   object-fit: cover;
 }
 
+.member-tagline {
+  margin: 0.05rem 0 0.1rem;
+  background: var(--grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.member-bio {
+  max-width: 62ch;
+  margin: 0.2rem 0 1.4rem;
+  color: var(--soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 /* ---------- Member chip (avatar + name) ---------- */
 
 .mlink {

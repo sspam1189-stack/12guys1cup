@@ -4,6 +4,7 @@ import StatTile from '../../components/StatTile.astro';
 import members from '../../../data/computed/members.json';
 import alltime from '../../../data/computed/alltime.json';
 import seasons from '../../../data/computed/seasons.json';
+import bios from '../../../data/bios.json';
 
 export function getStaticPaths() {
   return Object.keys(members).map((id) => ({ params: { id } }));
@@ -26,6 +27,7 @@ const honors = rows.flatMap(({ s }) => [
 const record = career
   ? `${career.wins}-${career.losses}${career.ties ? `-${career.ties}` : ''}`
   : '-';
+const bio = bios[id];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <Base title={`${m.name} - 12 Guys 1 Cup`}>
@@ -33,6 +35,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     {m.avatar && <img class="member-avatar" src={`https://sleepercdn.com/avatars/thumbs/${m.avatar}`} alt="" width="64" height="64" />}
     <div>
       <h1>{m.name}</h1>
+      {bio?.tagline && <p class="member-tagline">{bio.tagline}</p>}
       <p class="muted">{m.seasons.length} season{m.seasons.length === 1 ? '' : 's'} · {m.seasons[0]}–{m.seasons.at(-1)}</p>
     </div>
   </div>
@@ -55,6 +58,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       ))}
     </div>
   )}
+
+  {bio?.bio && <p class="member-bio">{bio.bio}</p>}
 
   <h2>Season by Season</h2>
   <div class="table-wrap"><table class="cards-sm">
