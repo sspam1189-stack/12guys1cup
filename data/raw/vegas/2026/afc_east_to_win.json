@@ -1,0 +1,278 @@
+{
+ "id": 13945,
+ "type": "nfl_futures_special_fixture_11038_2027_nfl_afc_east_to_win",
+ "name": "2026 NFL AFC East - To Win",
+ "rules": {
+  "season": 2026,
+  "options": {
+   "430": {
+    "sort_order": 1,
+    "option_type": "Yes",
+    "abbreviation": null
+   },
+   "431": {
+    "sort_order": 2,
+    "option_type": "No",
+    "abbreviation": null
+   }
+  },
+  "sort_order": 6
+ },
+ "line_type": "moneyline",
+ "core_market_id": 18513847,
+ "books": [
+  {
+   "book_id": 15,
+   "odds": [
+    {
+     "money": -136,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2390042411,
+     "option_type_id": null
+    },
+    {
+     "money": 135,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2390042410,
+     "option_type_id": null
+    },
+    {
+     "money": 1900,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2390042409,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2390042408,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 68,
+   "odds": [
+    {
+     "money": -136,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2394506525,
+     "option_type_id": null
+    },
+    {
+     "money": 125,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2394506516,
+     "option_type_id": null
+    },
+    {
+     "money": 1900,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2394506507,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2394506521,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 69,
+   "odds": [
+    {
+     "money": -130,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2422303222,
+     "option_type_id": null
+    },
+    {
+     "money": 130,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2422303229,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2422303247,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2422303235,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 71,
+   "odds": [
+    {
+     "money": -148,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2401777184,
+     "option_type_id": null
+    },
+    {
+     "money": 135,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2401777186,
+     "option_type_id": null
+    },
+    {
+     "money": 2000,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2401777187,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2401777185,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 75,
+   "odds": [
+    {
+     "money": -150,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2394292989,
+     "option_type_id": null
+    },
+    {
+     "money": 145,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2394293030,
+     "option_type_id": null
+    },
+    {
+     "money": 2000,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2394293052,
+     "option_type_id": null
+    },
+    {
+     "money": 3500,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2394293009,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 123,
+   "odds": [
+    {
+     "money": -150,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2408318746,
+     "option_type_id": null
+    },
+    {
+     "money": 140,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2408318747,
+     "option_type_id": null
+    },
+    {
+     "money": 2000,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2408318749,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2408318748,
+     "option_type_id": null
+    }
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 125,
+   "abbr": "BUF",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/buf.png",
+   "full_name": "Buffalo Bills",
+   "display_name": "Bills"
+  },
+  {
+   "id": 126,
+   "abbr": "MIA",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/mia.png",
+   "full_name": "Miami Dolphins",
+   "display_name": "Dolphins"
+  },
+  {
+   "id": 127,
+   "abbr": "NYJ",
+   "logo": "https://assets.actionnetwork.com/372790_jets.png",
+   "full_name": "New York Jets",
+   "display_name": "Jets"
+  },
+  {
+   "id": 129,
+   "abbr": "NE",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/ne.png",
+   "full_name": "New England Patriots",
+   "display_name": "Patriots"
+  }
+ ],
+ "players": null
+}

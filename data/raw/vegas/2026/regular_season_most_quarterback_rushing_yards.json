@@ -1,0 +1,586 @@
+{
+ "id": 13961,
+ "type": "nfl_futures_special_fixture_11034_2027_nfl_regular_season_most_quarterback_rushing_yards",
+ "name": "2026 NFL Regular Season - Most Quarterback Rushing Yards",
+ "rules": {
+  "season": 2026,
+  "options": {},
+  "sort_order": null
+ },
+ "line_type": "moneyline",
+ "core_market_id": 23917945,
+ "books": [
+  {
+   "book_id": 15,
+   "odds": [
+    {
+     "money": 370,
+     "value": null,
+     "team_id": 131,
+     "player_id": 82640,
+     "outcome_id": 2820228405,
+     "option_type_id": null
+    },
+    {
+     "money": 400,
+     "value": null,
+     "team_id": 145,
+     "player_id": 277039,
+     "outcome_id": 2820228404,
+     "option_type_id": null
+    },
+    {
+     "money": 500,
+     "value": null,
+     "team_id": 126,
+     "player_id": 195106,
+     "outcome_id": 2820228403,
+     "option_type_id": null
+    },
+    {
+     "money": 600,
+     "value": null,
+     "team_id": 125,
+     "player_id": 82643,
+     "outcome_id": 2820228402,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 142,
+     "player_id": 146747,
+     "outcome_id": 2820228401,
+     "option_type_id": null
+    },
+    {
+     "money": 1000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 304971,
+     "outcome_id": 2820228400,
+     "option_type_id": null
+    },
+    {
+     "money": 1300,
+     "value": null,
+     "team_id": 129,
+     "player_id": 277040,
+     "outcome_id": 2820228399,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 148,
+     "player_id": 111924,
+     "outcome_id": 2820228398,
+     "option_type_id": null
+    },
+    {
+     "money": 2500,
+     "value": null,
+     "team_id": 1325,
+     "player_id": 146733,
+     "outcome_id": 2820228397,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 277048,
+     "outcome_id": 2820228396,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 166294,
+     "outcome_id": 2820228395,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 139,
+     "player_id": 54623,
+     "outcome_id": 2820228394,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 277038,
+     "outcome_id": 2820228393,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 133,
+     "player_id": 111426,
+     "outcome_id": 2820228392,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 305018,
+     "outcome_id": 2820228391,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 154,
+     "player_id": 195321,
+     "outcome_id": 2820228390,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 82644,
+     "outcome_id": 2820228389,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 241861,
+     "outcome_id": 2820228388,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 69,
+   "odds": [
+    {
+     "money": 370,
+     "value": null,
+     "team_id": 131,
+     "player_id": 82640,
+     "outcome_id": 2820180160,
+     "option_type_id": null
+    },
+    {
+     "money": 400,
+     "value": null,
+     "team_id": 145,
+     "player_id": 277039,
+     "outcome_id": 2820180161,
+     "option_type_id": null
+    },
+    {
+     "money": 500,
+     "value": null,
+     "team_id": 126,
+     "player_id": 195106,
+     "outcome_id": 2820180162,
+     "option_type_id": null
+    },
+    {
+     "money": 600,
+     "value": null,
+     "team_id": 125,
+     "player_id": 82643,
+     "outcome_id": 2820180163,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 142,
+     "player_id": 146747,
+     "outcome_id": 2820180164,
+     "option_type_id": null
+    },
+    {
+     "money": 1000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 304971,
+     "outcome_id": 2820180165,
+     "option_type_id": null
+    },
+    {
+     "money": 1300,
+     "value": null,
+     "team_id": 129,
+     "player_id": 277040,
+     "outcome_id": 2820180166,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 148,
+     "player_id": 111924,
+     "outcome_id": 2820180167,
+     "option_type_id": null
+    },
+    {
+     "money": 2500,
+     "value": null,
+     "team_id": 1325,
+     "player_id": 146733,
+     "outcome_id": 2820180168,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 277048,
+     "outcome_id": 2820180169,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 166294,
+     "outcome_id": 2820180170,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 139,
+     "player_id": 54623,
+     "outcome_id": 2820180171,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 277038,
+     "outcome_id": 2820180172,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 133,
+     "player_id": 111426,
+     "outcome_id": 2820180173,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 154,
+     "player_id": 195321,
+     "outcome_id": 2820180175,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 305018,
+     "outcome_id": 2820180174,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 241861,
+     "outcome_id": 2820180177,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 82644,
+     "outcome_id": 2820180176,
+     "option_type_id": null
+    }
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 125,
+   "abbr": "BUF",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/buf.png",
+   "full_name": "Buffalo Bills",
+   "display_name": "Bills"
+  },
+  {
+   "id": 126,
+   "abbr": "MIA",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/mia.png",
+   "full_name": "Miami Dolphins",
+   "display_name": "Dolphins"
+  },
+  {
+   "id": 129,
+   "abbr": "NE",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/ne.png",
+   "full_name": "New England Patriots",
+   "display_name": "Patriots"
+  },
+  {
+   "id": 131,
+   "abbr": "BAL",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/bal.png",
+   "full_name": "Baltimore Ravens",
+   "display_name": "Ravens"
+  },
+  {
+   "id": 133,
+   "abbr": "IND",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/ind.png",
+   "full_name": "Indianapolis Colts",
+   "display_name": "Colts"
+  },
+  {
+   "id": 134,
+   "abbr": "JAC",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/jac.png",
+   "full_name": "Jacksonville Jaguars",
+   "display_name": "Jaguars"
+  },
+  {
+   "id": 136,
+   "abbr": "DEN",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/den.png",
+   "full_name": "Denver Broncos",
+   "display_name": "Broncos"
+  },
+  {
+   "id": 139,
+   "abbr": "KC",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/kc.png",
+   "full_name": "Kansas City Chiefs",
+   "display_name": "Chiefs"
+  },
+  {
+   "id": 142,
+   "abbr": "PHI",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/phi.png",
+   "full_name": "Philadelphia Eagles",
+   "display_name": "Eagles"
+  },
+  {
+   "id": 143,
+   "abbr": "CHI",
+   "logo": "https://assets.actionnetwork.com/598430_bears1.png",
+   "full_name": "Chicago Bears",
+   "display_name": "Bears"
+  },
+  {
+   "id": 144,
+   "abbr": "NYG",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/nygd.png",
+   "full_name": "New York Giants",
+   "display_name": "Giants"
+  },
+  {
+   "id": 145,
+   "abbr": "WAS",
+   "logo": "https://assets.actionnetwork.com/698864_Commanders.png",
+   "full_name": "Washington Commanders",
+   "display_name": "Commanders"
+  },
+  {
+   "id": 148,
+   "abbr": "MIN",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/min.png",
+   "full_name": "Minnesota Vikings",
+   "display_name": "Vikings"
+  },
+  {
+   "id": 149,
+   "abbr": "TB",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/tb.png",
+   "full_name": "Tampa Bay Buccaneers",
+   "display_name": "Buccaneers"
+  },
+  {
+   "id": 150,
+   "abbr": "CAR",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/car.png",
+   "full_name": "Carolina Panthers",
+   "display_name": "Panthers"
+  },
+  {
+   "id": 152,
+   "abbr": "NO",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/no.png",
+   "full_name": "New Orleans Saints",
+   "display_name": "Saints"
+  },
+  {
+   "id": 154,
+   "abbr": "SF",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sf.png",
+   "full_name": "San Francisco 49ers",
+   "display_name": "49ers"
+  },
+  {
+   "id": 1325,
+   "abbr": "LAC",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sd.png",
+   "full_name": "Los Angeles Chargers",
+   "display_name": "Chargers"
+  }
+ ],
+ "players": [
+  {
+   "id": 54623,
+   "abbr": "P.Mahomes",
+   "image": "https://assets.actionnetwork.com/200x200/5e391bf99e2d4dc5a194e76aedfbdb03.png",
+   "team_id": 139,
+   "url_slug": "patrick-mahomes-54623-2",
+   "full_name": "Patrick Mahomes"
+  },
+  {
+   "id": 82640,
+   "abbr": "L.Jackson",
+   "image": "https://assets.actionnetwork.com/200x200/3b6a5896665848aa9ecf7686f5baac32.png",
+   "team_id": 131,
+   "url_slug": "lamar-jackson-82640-2",
+   "full_name": "Lamar Jackson"
+  },
+  {
+   "id": 82643,
+   "abbr": "J.Allen",
+   "image": "https://assets.actionnetwork.com/200x200/f5332efaa4c640e6bd445863e4f45373.png",
+   "team_id": 125,
+   "url_slug": "josh-allen-82643-2",
+   "full_name": "Josh Allen"
+  },
+  {
+   "id": 82644,
+   "abbr": "B.Mayfield",
+   "image": "https://assets.actionnetwork.com/200x200/48dd5e8c2f7f4e379e5d3e0fa3ea435b.png",
+   "team_id": 149,
+   "url_slug": "baker-mayfield-82644-2",
+   "full_name": "Baker Mayfield"
+  },
+  {
+   "id": 111426,
+   "abbr": "D.Jones",
+   "image": "https://assets.actionnetwork.com/200x200/418302b7b344454cb09d2580ccd4d3d1.png",
+   "team_id": 133,
+   "url_slug": "daniel-jones-111426-2",
+   "full_name": "Daniel Jones"
+  },
+  {
+   "id": 111924,
+   "abbr": "K.Murray",
+   "image": "https://assets.actionnetwork.com/200x200/170e031e620c4d6dbb8f453458701462.png",
+   "team_id": 148,
+   "url_slug": "kyler-murray-111924-2",
+   "full_name": "Kyler Murray"
+  },
+  {
+   "id": 146733,
+   "abbr": "J.Herbert",
+   "image": "https://assets.actionnetwork.com/200x200/62a5b58826114e138a307e290f351427.png",
+   "team_id": 1325,
+   "url_slug": "justin-herbert-146733-2",
+   "full_name": "Justin Herbert"
+  },
+  {
+   "id": 146747,
+   "abbr": "J.Hurts",
+   "image": "https://assets.actionnetwork.com/200x200/54eb97f9cc364c36b0e2c7de68d3e671.png",
+   "team_id": 142,
+   "url_slug": "jalen-hurts-146747-2",
+   "full_name": "Jalen Hurts"
+  },
+  {
+   "id": 166294,
+   "abbr": "T.Lawrence",
+   "image": "https://assets.actionnetwork.com/200x200/06ae27e9a4064f3bba3cf700477b4c67.png",
+   "team_id": 134,
+   "url_slug": "trevor-lawrence-166294-2",
+   "full_name": "Trevor Lawrence"
+  },
+  {
+   "id": 195106,
+   "abbr": "M.Willis",
+   "image": "https://assets.actionnetwork.com/200x200/c1fd52e773a74fb98b6d98fff5338849.png",
+   "team_id": 126,
+   "url_slug": "malik-willis-195106-2",
+   "full_name": "Malik Willis"
+  },
+  {
+   "id": 195321,
+   "abbr": "B.Purdy",
+   "image": "https://assets.actionnetwork.com/200x200/10f8254f8f8c4a1c95fdfd1a3a90faa2.png",
+   "team_id": 154,
+   "url_slug": "brock-purdy-195321-2",
+   "full_name": "Brock Purdy"
+  },
+  {
+   "id": 241861,
+   "abbr": "B.Young",
+   "image": "https://assets.actionnetwork.com/200x200/74163d32a8e449f8a97c1348aa009fe8.png",
+   "team_id": 150,
+   "url_slug": "bryce-young-241861-2",
+   "full_name": "Bryce Young"
+  },
+  {
+   "id": 277038,
+   "abbr": "C.Williams",
+   "image": "https://assets.actionnetwork.com/200x200/dfc8ef8a44244027ba69a5113917316d.png",
+   "team_id": 143,
+   "url_slug": "caleb-williams-227038-qb",
+   "full_name": "Caleb Williams"
+  },
+  {
+   "id": 277039,
+   "abbr": "J.Daniels",
+   "image": "https://assets.actionnetwork.com/200x200/a4955c0d0cdb4bad9314010068168463.png",
+   "team_id": 145,
+   "url_slug": "jayden-daniels-277039-qb",
+   "full_name": "Jayden Daniels"
+  },
+  {
+   "id": 277040,
+   "abbr": "D.Maye",
+   "image": "https://assets.actionnetwork.com/200x200/bcc18de6fea543a182f46d960757e3c1.png",
+   "team_id": 129,
+   "url_slug": "drake-maye-277040-qb",
+   "full_name": "Drake Maye"
+  },
+  {
+   "id": 277048,
+   "abbr": "B.Nix",
+   "image": "https://assets.actionnetwork.com/200x200/ec1a5f08c05a4b8ebd7e1baa6574a595.png",
+   "team_id": 136,
+   "url_slug": "bo-nix-277048-qb",
+   "full_name": "Bo Nix"
+  },
+  {
+   "id": 304971,
+   "abbr": "J.Dart",
+   "image": "https://assets.actionnetwork.com/200x200/3064da7df25141b39b8c19a97196e9d2.png",
+   "team_id": 144,
+   "url_slug": "jaxson-dart-304971-qb",
+   "full_name": "Jaxson Dart"
+  },
+  {
+   "id": 305018,
+   "abbr": "T.Shough",
+   "image": "https://assets.actionnetwork.com/200x200/9902e79b07b54c7fb664deb2edab5134.png",
+   "team_id": 152,
+   "url_slug": "tyler-shough-305018-qb",
+   "full_name": "Tyler Shough"
+  }
+ ]
+}

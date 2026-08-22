@@ -1,0 +1,227 @@
+{
+ "id": 13976,
+ "type": "nfl_futures_special_fixture_11059_2027_nfl_regular_season_total_rushing_+_receiving_yards",
+ "name": "2026 NFL Regular Season - Total Rushing + Receiving Yards",
+ "rules": {
+  "season": 2026,
+  "options": {
+   "170": {
+    "sort_order": 1,
+    "option_type": "Over",
+    "abbreviation": "o"
+   },
+   "171": {
+    "sort_order": 2,
+    "option_type": "Under",
+    "abbreviation": "u"
+   }
+  },
+  "sort_order": 27
+ },
+ "line_type": "total",
+ "core_market_id": 23656331,
+ "books": [
+  {
+   "book_id": 15,
+   "odds": [
+    {
+     "money": -115,
+     "value": 1525.5,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2800441314,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1700.5,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2800441310,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1375.5,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2800441308,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1675.5,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2800441312,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1525.5,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2800441313,
+     "option_type_id": 171
+    },
+    {
+     "money": -115,
+     "value": 1700.5,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2800441309,
+     "option_type_id": 171
+    },
+    {
+     "money": -115,
+     "value": 1375.5,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2800441307,
+     "option_type_id": 171
+    },
+    {
+     "money": -115,
+     "value": 1675.5,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2800441311,
+     "option_type_id": 171
+    }
+   ]
+  },
+  {
+   "book_id": 123,
+   "odds": [
+    {
+     "money": -115,
+     "value": 1675.5,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2800427321,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1375.5,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2800427343,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1700.5,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2800427333,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1525.5,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2800427299,
+     "option_type_id": 170
+    },
+    {
+     "money": -115,
+     "value": 1675.5,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2800427322,
+     "option_type_id": 171
+    },
+    {
+     "money": -115,
+     "value": 1375.5,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2800427344,
+     "option_type_id": 171
+    },
+    {
+     "money": -115,
+     "value": 1700.5,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2800427336,
+     "option_type_id": 171
+    },
+    {
+     "money": -115,
+     "value": 1525.5,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2800427300,
+     "option_type_id": 171
+    }
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 126,
+   "abbr": "MIA",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/mia.png",
+   "full_name": "Miami Dolphins",
+   "display_name": "Dolphins"
+  },
+  {
+   "id": 146,
+   "abbr": "DET",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/det.png",
+   "full_name": "Detroit Lions",
+   "display_name": "Lions"
+  },
+  {
+   "id": 151,
+   "abbr": "ATL",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/atl.png",
+   "full_name": "Atlanta Falcons",
+   "display_name": "Falcons"
+  },
+  {
+   "id": 154,
+   "abbr": "SF",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sf.png",
+   "full_name": "San Francisco 49ers",
+   "display_name": "49ers"
+  }
+ ],
+ "players": [
+  {
+   "id": 54135,
+   "abbr": "C.McCaffrey",
+   "image": "https://assets.actionnetwork.com/200x200/9bfffe652e4d4a39be9570267415af2b.png",
+   "team_id": 154,
+   "url_slug": "christian-mccaffrey-54135-2",
+   "full_name": "Christian McCaffrey"
+  },
+  {
+   "id": 241840,
+   "abbr": "J.Gibbs",
+   "image": "https://assets.actionnetwork.com/200x200/2b16bc668b0441b1b0b9e79ea9cccd9d.png",
+   "team_id": 146,
+   "url_slug": "jahmyr-gibbs-241840-2",
+   "full_name": "Jahmyr Gibbs"
+  },
+  {
+   "id": 241851,
+   "abbr": "B.Robinson",
+   "image": "https://assets.actionnetwork.com/200x200/c64d432c7dca428ca3bdbdd1d9c9856b.png",
+   "team_id": 151,
+   "url_slug": "bijan-robinson-241851-2",
+   "full_name": "Bijan Robinson"
+  },
+  {
+   "id": 241887,
+   "abbr": "D.Achane",
+   "image": "https://assets.actionnetwork.com/200x200/ecb7f302353e404f962e3f24c6e14eb1.png",
+   "team_id": 126,
+   "url_slug": "de'von-achane-241887-rb",
+   "full_name": "De'Von Achane"
+  }
+ ]
+}

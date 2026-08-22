@@ -5,6 +5,7 @@
   "scripts": {
     "fetch": "node scripts/fetch-data.mjs",
     "fetch:adp": "node scripts/fetch-adp.mjs",
+    "fetch:vegas": "node scripts/fetch-vegas-props.mjs",
     "compute": "node scripts/build-stats.mjs",
     "tendencies": "node scripts/draft-tendencies.mjs",
     "test": "vitest run",

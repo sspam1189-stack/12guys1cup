@@ -1,0 +1,3075 @@
+{
+ "id": 13933,
+ "type": "nfl_futures_special_fixture_11090_2027_nfl_regular_season_most_rushing_tds",
+ "name": "2026 NFL Regular Season - Most Rushing TDs",
+ "rules": {
+  "season": 2026,
+  "options": {},
+  "sort_order": 35
+ },
+ "line_type": "moneyline",
+ "core_market_id": 22449437,
+ "books": [
+  {
+   "book_id": 15,
+   "odds": [
+    {
+     "money": 500,
+     "value": null,
+     "team_id": 131,
+     "player_id": 4912,
+     "outcome_id": 2716547462,
+     "option_type_id": null
+    },
+    {
+     "money": 550,
+     "value": null,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2716547472,
+     "option_type_id": null
+    },
+    {
+     "money": 600,
+     "value": null,
+     "team_id": 133,
+     "player_id": 146756,
+     "outcome_id": 2716547441,
+     "option_type_id": null
+    },
+    {
+     "money": 847,
+     "value": null,
+     "team_id": 147,
+     "player_id": 110717,
+     "outcome_id": 2716547434,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 125,
+     "player_id": 195079,
+     "outcome_id": 2716547477,
+     "option_type_id": null
+    },
+    {
+     "money": 1000,
+     "value": null,
+     "team_id": 125,
+     "player_id": 82643,
+     "outcome_id": 2716547470,
+     "option_type_id": null
+    },
+    {
+     "money": 1200,
+     "value": null,
+     "team_id": 251,
+     "player_id": 195196,
+     "outcome_id": 2716547428,
+     "option_type_id": null
+    },
+    {
+     "money": 1200,
+     "value": null,
+     "team_id": 140,
+     "player_id": 166333,
+     "outcome_id": 2716547461,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 142,
+     "player_id": 83191,
+     "outcome_id": 2716547471,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2716547474,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2716547453,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 139,
+     "player_id": 195056,
+     "outcome_id": 2716547425,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 1325,
+     "player_id": 304968,
+     "outcome_id": 2716547465,
+     "option_type_id": null
+    },
+    {
+     "money": 2500,
+     "value": null,
+     "team_id": 142,
+     "player_id": 146747,
+     "outcome_id": 2716547449,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 137,
+     "player_id": 109850,
+     "outcome_id": 2716547448,
+     "option_type_id": null
+    },
+    {
+     "money": 3200,
+     "value": null,
+     "team_id": 2045,
+     "player_id": 304952,
+     "outcome_id": 2716547480,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 305103,
+     "outcome_id": 2716547484,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 305104,
+     "outcome_id": 2716547478,
+     "option_type_id": null
+    },
+    {
+     "money": 4100,
+     "value": null,
+     "team_id": 128,
+     "player_id": 242035,
+     "outcome_id": 2716547482,
+     "option_type_id": null
+    },
+    {
+     "money": 4446,
+     "value": null,
+     "team_id": 156,
+     "player_id": 333961,
+     "outcome_id": 2716547481,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 146765,
+     "outcome_id": 2716547476,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305014,
+     "outcome_id": 2716547466,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 333932,
+     "outcome_id": 2716547440,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 305016,
+     "outcome_id": 2716547442,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 195083,
+     "outcome_id": 2716547447,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 166374,
+     "outcome_id": 2716547485,
+     "option_type_id": null
+    },
+    {
+     "money": 7500,
+     "value": null,
+     "team_id": 152,
+     "player_id": 166293,
+     "outcome_id": 2716547437,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 146760,
+     "outcome_id": 2716547435,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 305232,
+     "outcome_id": 2716547429,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 251,
+     "player_id": 277137,
+     "outcome_id": 2716547459,
+     "option_type_id": null
+    },
+    {
+     "money": 9500,
+     "value": null,
+     "team_id": 134,
+     "player_id": 166294,
+     "outcome_id": 2756670980,
+     "option_type_id": null
+    },
+    {
+     "money": 9500,
+     "value": null,
+     "team_id": 132,
+     "player_id": 147180,
+     "outcome_id": 2716547446,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 304971,
+     "outcome_id": 2716547439,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2716547433,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 277211,
+     "outcome_id": 2716547460,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 242138,
+     "outcome_id": 2733430725,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 108171,
+     "outcome_id": 2716547454,
+     "option_type_id": null
+    },
+    {
+     "money": 10910,
+     "value": null,
+     "team_id": 146,
+     "player_id": 195293,
+     "outcome_id": 2716547467,
+     "option_type_id": null
+    },
+    {
+     "money": 11112,
+     "value": null,
+     "team_id": 156,
+     "player_id": 241898,
+     "outcome_id": 2716547486,
+     "option_type_id": null
+    },
+    {
+     "money": 11112,
+     "value": null,
+     "team_id": 145,
+     "player_id": 195104,
+     "outcome_id": 2716547443,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 195431,
+     "outcome_id": 2716547468,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 166368,
+     "outcome_id": 2716547463,
+     "option_type_id": null
+    },
+    {
+     "money": 12004,
+     "value": null,
+     "team_id": 153,
+     "player_id": 195231,
+     "outcome_id": 2716547432,
+     "option_type_id": null
+    },
+    {
+     "money": 12004,
+     "value": null,
+     "team_id": 136,
+     "player_id": 305038,
+     "outcome_id": 2716547444,
+     "option_type_id": null
+    },
+    {
+     "money": 12245,
+     "value": null,
+     "team_id": 148,
+     "player_id": 195488,
+     "outcome_id": 2716547456,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 82640,
+     "outcome_id": 2716547475,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 277040,
+     "outcome_id": 2716547430,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 277039,
+     "outcome_id": 2716547469,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 62997,
+     "outcome_id": 2716547464,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 195106,
+     "outcome_id": 2716547445,
+     "option_type_id": null
+    },
+    {
+     "money": 15938,
+     "value": null,
+     "team_id": 150,
+     "player_id": 277100,
+     "outcome_id": 2716547451,
+     "option_type_id": null
+    },
+    {
+     "money": 17145,
+     "value": null,
+     "team_id": 137,
+     "player_id": 305115,
+     "outcome_id": 2716547431,
+     "option_type_id": null
+    },
+    {
+     "money": 17145,
+     "value": null,
+     "team_id": 149,
+     "player_id": 166540,
+     "outcome_id": 2716547426,
+     "option_type_id": null
+    },
+    {
+     "money": 17145,
+     "value": null,
+     "team_id": 145,
+     "player_id": 305244,
+     "outcome_id": 2716547427,
+     "option_type_id": null
+    },
+    {
+     "money": 18756,
+     "value": null,
+     "team_id": 127,
+     "player_id": 277220,
+     "outcome_id": 2716547455,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 277038,
+     "outcome_id": 2716547457,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 62989,
+     "outcome_id": 2716547483,
+     "option_type_id": null
+    },
+    {
+     "money": 22223,
+     "value": null,
+     "team_id": 144,
+     "player_id": 277293,
+     "outcome_id": 2716547452,
+     "option_type_id": null
+    },
+    {
+     "money": 22223,
+     "value": null,
+     "team_id": 135,
+     "player_id": 241939,
+     "outcome_id": 2716547473,
+     "option_type_id": null
+    },
+    {
+     "money": 22223,
+     "value": null,
+     "team_id": 128,
+     "player_id": 62322,
+     "outcome_id": 2716547479,
+     "option_type_id": null
+    },
+    {
+     "money": 22223,
+     "value": null,
+     "team_id": 151,
+     "player_id": 195113,
+     "outcome_id": 2716547438,
+     "option_type_id": null
+    },
+    {
+     "money": 24004,
+     "value": null,
+     "team_id": 148,
+     "player_id": 111924,
+     "outcome_id": 2716547436,
+     "option_type_id": null
+    },
+    {
+     "money": 24004,
+     "value": null,
+     "team_id": 131,
+     "player_id": 111783,
+     "outcome_id": 2716547458,
+     "option_type_id": null
+    },
+    {
+     "money": 24004,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305125,
+     "outcome_id": 2716547450,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 68,
+   "odds": [
+    {
+     "money": 550,
+     "value": null,
+     "team_id": 131,
+     "player_id": 4912,
+     "outcome_id": 2733429402,
+     "option_type_id": null
+    },
+    {
+     "money": 550,
+     "value": null,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2733429394,
+     "option_type_id": null
+    },
+    {
+     "money": 600,
+     "value": null,
+     "team_id": 133,
+     "player_id": 146756,
+     "outcome_id": 2733429386,
+     "option_type_id": null
+    },
+    {
+     "money": 850,
+     "value": null,
+     "team_id": 125,
+     "player_id": 195079,
+     "outcome_id": 2733429392,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 147,
+     "player_id": 110717,
+     "outcome_id": 2733429382,
+     "option_type_id": null
+    },
+    {
+     "money": 1000,
+     "value": null,
+     "team_id": 125,
+     "player_id": 82643,
+     "outcome_id": 2733429383,
+     "option_type_id": null
+    },
+    {
+     "money": 1200,
+     "value": null,
+     "team_id": 140,
+     "player_id": 166333,
+     "outcome_id": 2733429391,
+     "option_type_id": null
+    },
+    {
+     "money": 1400,
+     "value": null,
+     "team_id": 251,
+     "player_id": 195196,
+     "outcome_id": 2733429376,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2733429406,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 142,
+     "player_id": 83191,
+     "outcome_id": 2733429366,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2733429416,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 139,
+     "player_id": 195056,
+     "outcome_id": 2733429379,
+     "option_type_id": null
+    },
+    {
+     "money": 2500,
+     "value": null,
+     "team_id": 1325,
+     "player_id": 304968,
+     "outcome_id": 2733429373,
+     "option_type_id": null
+    },
+    {
+     "money": 2500,
+     "value": null,
+     "team_id": 142,
+     "player_id": 146747,
+     "outcome_id": 2733429393,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 166293,
+     "outcome_id": 2733429364,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 305104,
+     "outcome_id": 2733429409,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 2045,
+     "player_id": 304952,
+     "outcome_id": 2733429418,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 305103,
+     "outcome_id": 2733429417,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 137,
+     "player_id": 109850,
+     "outcome_id": 2733429403,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 305016,
+     "outcome_id": 2733429363,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 128,
+     "player_id": 242035,
+     "outcome_id": 2733429408,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 156,
+     "player_id": 333961,
+     "outcome_id": 2733429395,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 333932,
+     "outcome_id": 2733429387,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305014,
+     "outcome_id": 2733429372,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 195083,
+     "outcome_id": 2733429413,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 146765,
+     "outcome_id": 2733429404,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 166374,
+     "outcome_id": 2733429370,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 251,
+     "player_id": 277137,
+     "outcome_id": 2733429415,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 277211,
+     "outcome_id": 2733429411,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2733429401,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 146760,
+     "outcome_id": 2733429397,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 304971,
+     "outcome_id": 2733429390,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 305232,
+     "outcome_id": 2733429378,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 242138,
+     "outcome_id": 2733429407,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 108171,
+     "outcome_id": 2733429365,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 156,
+     "player_id": 241898,
+     "outcome_id": 2733429358,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 166368,
+     "outcome_id": 2733429405,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 195104,
+     "outcome_id": 2733429371,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 305038,
+     "outcome_id": 2733429368,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 146,
+     "player_id": 195293,
+     "outcome_id": 2733429398,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 195431,
+     "outcome_id": 2733429388,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 195488,
+     "outcome_id": 2733429384,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 147180,
+     "outcome_id": 2733429369,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 62997,
+     "outcome_id": 2733429420,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 305244,
+     "outcome_id": 2733429396,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 277039,
+     "outcome_id": 2733429389,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 195106,
+     "outcome_id": 2733429374,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 195231,
+     "outcome_id": 2733429361,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 137,
+     "player_id": 305115,
+     "outcome_id": 2733429359,
+     "option_type_id": null
+    },
+    {
+     "money": 17000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 277100,
+     "outcome_id": 2733429385,
+     "option_type_id": null
+    },
+    {
+     "money": 17000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 82640,
+     "outcome_id": 2733429375,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 277040,
+     "outcome_id": 2733429400,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 166540,
+     "outcome_id": 2733429380,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 62989,
+     "outcome_id": 2733429419,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 151,
+     "player_id": 195113,
+     "outcome_id": 2733429412,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 128,
+     "player_id": 62322,
+     "outcome_id": 2733429367,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 277220,
+     "outcome_id": 2733429414,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 241939,
+     "outcome_id": 2733429362,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 277293,
+     "outcome_id": 2733429360,
+     "option_type_id": null
+    },
+    {
+     "money": 30000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305125,
+     "outcome_id": 2733429399,
+     "option_type_id": null
+    },
+    {
+     "money": 30000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 111924,
+     "outcome_id": 2733429377,
+     "option_type_id": null
+    },
+    {
+     "money": 30000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 277038,
+     "outcome_id": 2733429410,
+     "option_type_id": null
+    },
+    {
+     "money": 30000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 111783,
+     "outcome_id": 2733429381,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 69,
+   "odds": [
+    {
+     "money": 500,
+     "value": null,
+     "team_id": 131,
+     "player_id": 4912,
+     "outcome_id": 2756660719,
+     "option_type_id": null
+    },
+    {
+     "money": 550,
+     "value": null,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2756660720,
+     "option_type_id": null
+    },
+    {
+     "money": 850,
+     "value": null,
+     "team_id": 133,
+     "player_id": 146756,
+     "outcome_id": 2756660721,
+     "option_type_id": null
+    },
+    {
+     "money": 950,
+     "value": null,
+     "team_id": 125,
+     "player_id": 195079,
+     "outcome_id": 2756660723,
+     "option_type_id": null
+    },
+    {
+     "money": 1100,
+     "value": null,
+     "team_id": 251,
+     "player_id": 195196,
+     "outcome_id": 2756660727,
+     "option_type_id": null
+    },
+    {
+     "money": 1100,
+     "value": null,
+     "team_id": 140,
+     "player_id": 166333,
+     "outcome_id": 2756660724,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2756660725,
+     "option_type_id": null
+    },
+    {
+     "money": 1700,
+     "value": null,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2756660728,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 1325,
+     "player_id": 304968,
+     "outcome_id": 2756660729,
+     "option_type_id": null
+    },
+    {
+     "money": 2000,
+     "value": null,
+     "team_id": 142,
+     "player_id": 83191,
+     "outcome_id": 2756660731,
+     "option_type_id": null
+    },
+    {
+     "money": 2100,
+     "value": null,
+     "team_id": 125,
+     "player_id": 82643,
+     "outcome_id": 2756660722,
+     "option_type_id": null
+    },
+    {
+     "money": 2200,
+     "value": null,
+     "team_id": 137,
+     "player_id": 109850,
+     "outcome_id": 2756660730,
+     "option_type_id": null
+    },
+    {
+     "money": 2600,
+     "value": null,
+     "team_id": 139,
+     "player_id": 195056,
+     "outcome_id": 2756660732,
+     "option_type_id": null
+    },
+    {
+     "money": 3200,
+     "value": null,
+     "team_id": 2045,
+     "player_id": 304952,
+     "outcome_id": 2756660733,
+     "option_type_id": null
+    },
+    {
+     "money": 4100,
+     "value": null,
+     "team_id": 128,
+     "player_id": 242035,
+     "outcome_id": 2756660738,
+     "option_type_id": null
+    },
+    {
+     "money": 4100,
+     "value": null,
+     "team_id": 142,
+     "player_id": 146747,
+     "outcome_id": 2756660726,
+     "option_type_id": null
+    },
+    {
+     "money": 4500,
+     "value": null,
+     "team_id": 143,
+     "player_id": 146765,
+     "outcome_id": 2756660739,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305014,
+     "outcome_id": 2756660734,
+     "option_type_id": null
+    },
+    {
+     "money": 5500,
+     "value": null,
+     "team_id": 134,
+     "player_id": 305103,
+     "outcome_id": 2781392542,
+     "option_type_id": null
+    },
+    {
+     "money": 5500,
+     "value": null,
+     "team_id": 129,
+     "player_id": 166374,
+     "outcome_id": 2756660737,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 146760,
+     "outcome_id": 2756660740,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 305016,
+     "outcome_id": 2756660742,
+     "option_type_id": null
+    },
+    {
+     "money": 9000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 195083,
+     "outcome_id": 2756660747,
+     "option_type_id": null
+    },
+    {
+     "money": 9500,
+     "value": null,
+     "team_id": 134,
+     "player_id": 166294,
+     "outcome_id": 2756660741,
+     "option_type_id": null
+    },
+    {
+     "money": 9500,
+     "value": null,
+     "team_id": 132,
+     "player_id": 147180,
+     "outcome_id": 2756660748,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 277211,
+     "outcome_id": 2756687590,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 333932,
+     "outcome_id": 2758055266,
+     "option_type_id": null
+    },
+    {
+     "money": 11000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 304971,
+     "outcome_id": 2756660735,
+     "option_type_id": null
+    },
+    {
+     "money": 11000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 166293,
+     "outcome_id": 2756660743,
+     "option_type_id": null
+    },
+    {
+     "money": 11000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 195431,
+     "outcome_id": 2756660746,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 277040,
+     "outcome_id": 2756813659,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 108171,
+     "outcome_id": 2756660745,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 82640,
+     "outcome_id": 2756660744,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 277039,
+     "outcome_id": 2756660736,
+     "option_type_id": null
+    },
+    {
+     "money": 12000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 166368,
+     "outcome_id": 2756706630,
+     "option_type_id": null
+    },
+    {
+     "money": 18000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2757994187,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 277038,
+     "outcome_id": 2852264412,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 71,
+   "odds": [
+    {
+     "money": 550,
+     "value": null,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2717362541,
+     "option_type_id": null
+    },
+    {
+     "money": 550,
+     "value": null,
+     "team_id": 131,
+     "player_id": 4912,
+     "outcome_id": 2717362535,
+     "option_type_id": null
+    },
+    {
+     "money": 600,
+     "value": null,
+     "team_id": 133,
+     "player_id": 146756,
+     "outcome_id": 2717362549,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 147,
+     "player_id": 110717,
+     "outcome_id": 2717362552,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 125,
+     "player_id": 195079,
+     "outcome_id": 2717362543,
+     "option_type_id": null
+    },
+    {
+     "money": 1000,
+     "value": null,
+     "team_id": 125,
+     "player_id": 82643,
+     "outcome_id": 2717362551,
+     "option_type_id": null
+    },
+    {
+     "money": 1400,
+     "value": null,
+     "team_id": 251,
+     "player_id": 195196,
+     "outcome_id": 2717362557,
+     "option_type_id": null
+    },
+    {
+     "money": 1500,
+     "value": null,
+     "team_id": 142,
+     "player_id": 83191,
+     "outcome_id": 2717362565,
+     "option_type_id": null
+    },
+    {
+     "money": 1500,
+     "value": null,
+     "team_id": 140,
+     "player_id": 166333,
+     "outcome_id": 2717362544,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2717362530,
+     "option_type_id": null
+    },
+    {
+     "money": 1800,
+     "value": null,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2717362522,
+     "option_type_id": null
+    },
+    {
+     "money": 2000,
+     "value": null,
+     "team_id": 1325,
+     "player_id": 304968,
+     "outcome_id": 2717362560,
+     "option_type_id": null
+    },
+    {
+     "money": 2000,
+     "value": null,
+     "team_id": 139,
+     "player_id": 195056,
+     "outcome_id": 2717362554,
+     "option_type_id": null
+    },
+    {
+     "money": 2500,
+     "value": null,
+     "team_id": 142,
+     "player_id": 146747,
+     "outcome_id": 2717362542,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 137,
+     "player_id": 109850,
+     "outcome_id": 2717362533,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 2045,
+     "player_id": 304952,
+     "outcome_id": 2717362520,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 146765,
+     "outcome_id": 2717362532,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 305104,
+     "outcome_id": 2717362527,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 305103,
+     "outcome_id": 2717362521,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 305016,
+     "outcome_id": 2717362568,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305014,
+     "outcome_id": 2717362561,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 333932,
+     "outcome_id": 2717362548,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 156,
+     "player_id": 333961,
+     "outcome_id": 2717362540,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 128,
+     "player_id": 242035,
+     "outcome_id": 2717362528,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 195083,
+     "outcome_id": 2717362524,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 166293,
+     "outcome_id": 2717362567,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 166374,
+     "outcome_id": 2717362563,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2717362534,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 277211,
+     "outcome_id": 2717362525,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 251,
+     "player_id": 277137,
+     "outcome_id": 2717362523,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 305232,
+     "outcome_id": 2717362555,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 108171,
+     "outcome_id": 2717362566,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 147180,
+     "outcome_id": 2717362564,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 304971,
+     "outcome_id": 2717362545,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 146760,
+     "outcome_id": 2717362538,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 166368,
+     "outcome_id": 2717362531,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 156,
+     "player_id": 241898,
+     "outcome_id": 2781160194,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 277100,
+     "outcome_id": 2781160191,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 137,
+     "player_id": 305115,
+     "outcome_id": 2717362571,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 195231,
+     "outcome_id": 2717362570,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 305038,
+     "outcome_id": 2717362562,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 195106,
+     "outcome_id": 2717362559,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 82640,
+     "outcome_id": 2717362558,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 166540,
+     "outcome_id": 2717362553,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 195488,
+     "outcome_id": 2717362550,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 195431,
+     "outcome_id": 2717362547,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 277039,
+     "outcome_id": 2717362546,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 146,
+     "player_id": 195293,
+     "outcome_id": 2717362537,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 277040,
+     "outcome_id": 2717362536,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 134,
+     "player_id": 242138,
+     "outcome_id": 2717362529,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 62997,
+     "outcome_id": 2717362518,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 128,
+     "player_id": 62322,
+     "outcome_id": 2781160193,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 305244,
+     "outcome_id": 2717362539,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 62989,
+     "outcome_id": 2717362519,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 111783,
+     "outcome_id": 2781160192,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305125,
+     "outcome_id": 2781160190,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 151,
+     "player_id": 195113,
+     "outcome_id": 2781160189,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 277220,
+     "outcome_id": 2781160188,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 241939,
+     "outcome_id": 2717362569,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 111924,
+     "outcome_id": 2717362556,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 277038,
+     "outcome_id": 2717362526,
+     "option_type_id": null
+    }
+   ]
+  },
+  {
+   "book_id": 123,
+   "odds": [
+    {
+     "money": 500,
+     "value": null,
+     "team_id": 131,
+     "player_id": 4912,
+     "outcome_id": 2716545208,
+     "option_type_id": null
+    },
+    {
+     "money": 500,
+     "value": null,
+     "team_id": 146,
+     "player_id": 241840,
+     "outcome_id": 2716545198,
+     "option_type_id": null
+    },
+    {
+     "money": 550,
+     "value": null,
+     "team_id": 133,
+     "player_id": 146756,
+     "outcome_id": 2716545241,
+     "option_type_id": null
+    },
+    {
+     "money": 800,
+     "value": null,
+     "team_id": 147,
+     "player_id": 110717,
+     "outcome_id": 2716545254,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 125,
+     "player_id": 82643,
+     "outcome_id": 2716545200,
+     "option_type_id": null
+    },
+    {
+     "money": 900,
+     "value": null,
+     "team_id": 125,
+     "player_id": 195079,
+     "outcome_id": 2716545193,
+     "option_type_id": null
+    },
+    {
+     "money": 1200,
+     "value": null,
+     "team_id": 251,
+     "player_id": 195196,
+     "outcome_id": 2716545266,
+     "option_type_id": null
+    },
+    {
+     "money": 1500,
+     "value": null,
+     "team_id": 1325,
+     "player_id": 304968,
+     "outcome_id": 2716545205,
+     "option_type_id": null
+    },
+    {
+     "money": 1500,
+     "value": null,
+     "team_id": 142,
+     "player_id": 83191,
+     "outcome_id": 2716545199,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 140,
+     "player_id": 166333,
+     "outcome_id": 2716545209,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 139,
+     "player_id": 195056,
+     "outcome_id": 2716545272,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 154,
+     "player_id": 54135,
+     "outcome_id": 2716545217,
+     "option_type_id": null
+    },
+    {
+     "money": 1600,
+     "value": null,
+     "team_id": 151,
+     "player_id": 241851,
+     "outcome_id": 2716545196,
+     "option_type_id": null
+    },
+    {
+     "money": 2500,
+     "value": null,
+     "team_id": 142,
+     "player_id": 146747,
+     "outcome_id": 2716545224,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 137,
+     "player_id": 109850,
+     "outcome_id": 2716545227,
+     "option_type_id": null
+    },
+    {
+     "money": 3000,
+     "value": null,
+     "team_id": 2045,
+     "player_id": 304952,
+     "outcome_id": 2716545190,
+     "option_type_id": null
+    },
+    {
+     "money": 3500,
+     "value": null,
+     "team_id": 134,
+     "player_id": 305103,
+     "outcome_id": 2716545186,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 128,
+     "player_id": 242035,
+     "outcome_id": 2716545188,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 333932,
+     "outcome_id": 2716545242,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 305104,
+     "outcome_id": 2716545192,
+     "option_type_id": null
+    },
+    {
+     "money": 4000,
+     "value": null,
+     "team_id": 156,
+     "player_id": 333961,
+     "outcome_id": 2716545189,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305014,
+     "outcome_id": 2716545204,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 146765,
+     "outcome_id": 2716545194,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 305016,
+     "outcome_id": 2716545239,
+     "option_type_id": null
+    },
+    {
+     "money": 5000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 195083,
+     "outcome_id": 2716545229,
+     "option_type_id": null
+    },
+    {
+     "money": 6000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 166374,
+     "outcome_id": 2716545185,
+     "option_type_id": null
+    },
+    {
+     "money": 7500,
+     "value": null,
+     "team_id": 152,
+     "player_id": 166293,
+     "outcome_id": 2716545249,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 305232,
+     "outcome_id": 2716545265,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 147180,
+     "outcome_id": 2716545230,
+     "option_type_id": null
+    },
+    {
+     "money": 8000,
+     "value": null,
+     "team_id": 251,
+     "player_id": 277137,
+     "outcome_id": 2716545211,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 153,
+     "player_id": 195231,
+     "outcome_id": 2716545258,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 241887,
+     "outcome_id": 2716545257,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 146760,
+     "outcome_id": 2716545253,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 304971,
+     "outcome_id": 2716545245,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 108171,
+     "outcome_id": 2716545216,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 277211,
+     "outcome_id": 2716545210,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 146,
+     "player_id": 195293,
+     "outcome_id": 2716545203,
+     "option_type_id": null
+    },
+    {
+     "money": 12500,
+     "value": null,
+     "team_id": 148,
+     "player_id": 195488,
+     "outcome_id": 2716545214,
+     "option_type_id": null
+    },
+    {
+     "money": 12500,
+     "value": null,
+     "team_id": 145,
+     "player_id": 195104,
+     "outcome_id": 2716545236,
+     "option_type_id": null
+    },
+    {
+     "money": 12500,
+     "value": null,
+     "team_id": 150,
+     "player_id": 166368,
+     "outcome_id": 2716545207,
+     "option_type_id": null
+    },
+    {
+     "money": 12500,
+     "value": null,
+     "team_id": 156,
+     "player_id": 241898,
+     "outcome_id": 2716545184,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 127,
+     "player_id": 277220,
+     "outcome_id": 2716545215,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 132,
+     "player_id": 195431,
+     "outcome_id": 2716545202,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 149,
+     "player_id": 166540,
+     "outcome_id": 2716545270,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 129,
+     "player_id": 277040,
+     "outcome_id": 2716545262,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 136,
+     "player_id": 305038,
+     "outcome_id": 2716545234,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 126,
+     "player_id": 195106,
+     "outcome_id": 2716545233,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 150,
+     "player_id": 277100,
+     "outcome_id": 2716545220,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 62997,
+     "outcome_id": 2716545206,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 277039,
+     "outcome_id": 2716545201,
+     "option_type_id": null
+    },
+    {
+     "money": 15000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 82640,
+     "outcome_id": 2716545195,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 145,
+     "player_id": 305244,
+     "outcome_id": 2716545268,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 137,
+     "player_id": 305115,
+     "outcome_id": 2716545260,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 148,
+     "player_id": 111924,
+     "outcome_id": 2716545251,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 151,
+     "player_id": 195113,
+     "outcome_id": 2716545246,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 130,
+     "player_id": 305125,
+     "outcome_id": 2716545222,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 144,
+     "player_id": 277293,
+     "outcome_id": 2716545218,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 143,
+     "player_id": 277038,
+     "outcome_id": 2716545213,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 131,
+     "player_id": 111783,
+     "outcome_id": 2716545212,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 135,
+     "player_id": 241939,
+     "outcome_id": 2716545197,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 128,
+     "player_id": 62322,
+     "outcome_id": 2716545191,
+     "option_type_id": null
+    },
+    {
+     "money": 20000,
+     "value": null,
+     "team_id": 152,
+     "player_id": 62989,
+     "outcome_id": 2716545187,
+     "option_type_id": null
+    }
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "id": 125,
+   "abbr": "BUF",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/buf.png",
+   "full_name": "Buffalo Bills",
+   "display_name": "Bills"
+  },
+  {
+   "id": 126,
+   "abbr": "MIA",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/mia.png",
+   "full_name": "Miami Dolphins",
+   "display_name": "Dolphins"
+  },
+  {
+   "id": 127,
+   "abbr": "NYJ",
+   "logo": "https://assets.actionnetwork.com/372790_jets.png",
+   "full_name": "New York Jets",
+   "display_name": "Jets"
+  },
+  {
+   "id": 128,
+   "abbr": "CIN",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/cin.png",
+   "full_name": "Cincinnati Bengals",
+   "display_name": "Bengals"
+  },
+  {
+   "id": 129,
+   "abbr": "NE",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/ne.png",
+   "full_name": "New England Patriots",
+   "display_name": "Patriots"
+  },
+  {
+   "id": 130,
+   "abbr": "CLE",
+   "logo": "https://assets.actionnetwork.com/519602_browns.png",
+   "full_name": "Cleveland Browns",
+   "display_name": "Browns"
+  },
+  {
+   "id": 131,
+   "abbr": "BAL",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/bal.png",
+   "full_name": "Baltimore Ravens",
+   "display_name": "Ravens"
+  },
+  {
+   "id": 132,
+   "abbr": "PIT",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/pit.png",
+   "full_name": "Pittsburgh Steelers",
+   "display_name": "Steelers"
+  },
+  {
+   "id": 133,
+   "abbr": "IND",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/ind.png",
+   "full_name": "Indianapolis Colts",
+   "display_name": "Colts"
+  },
+  {
+   "id": 134,
+   "abbr": "JAC",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/jac.png",
+   "full_name": "Jacksonville Jaguars",
+   "display_name": "Jaguars"
+  },
+  {
+   "id": 135,
+   "abbr": "TEN",
+   "logo": "https://assets.actionnetwork.com/683711_titans.png",
+   "full_name": "Tennessee Titans",
+   "display_name": "Titans"
+  },
+  {
+   "id": 136,
+   "abbr": "DEN",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/den.png",
+   "full_name": "Denver Broncos",
+   "display_name": "Broncos"
+  },
+  {
+   "id": 137,
+   "abbr": "HOU",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/hou.png",
+   "full_name": "Houston Texans",
+   "display_name": "Texans"
+  },
+  {
+   "id": 139,
+   "abbr": "KC",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/kc.png",
+   "full_name": "Kansas City Chiefs",
+   "display_name": "Chiefs"
+  },
+  {
+   "id": 140,
+   "abbr": "DAL",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/dal.png",
+   "full_name": "Dallas Cowboys",
+   "display_name": "Cowboys"
+  },
+  {
+   "id": 142,
+   "abbr": "PHI",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/phi.png",
+   "full_name": "Philadelphia Eagles",
+   "display_name": "Eagles"
+  },
+  {
+   "id": 143,
+   "abbr": "CHI",
+   "logo": "https://assets.actionnetwork.com/598430_bears1.png",
+   "full_name": "Chicago Bears",
+   "display_name": "Bears"
+  },
+  {
+   "id": 144,
+   "abbr": "NYG",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/nygd.png",
+   "full_name": "New York Giants",
+   "display_name": "Giants"
+  },
+  {
+   "id": 145,
+   "abbr": "WAS",
+   "logo": "https://assets.actionnetwork.com/698864_Commanders.png",
+   "full_name": "Washington Commanders",
+   "display_name": "Commanders"
+  },
+  {
+   "id": 146,
+   "abbr": "DET",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/det.png",
+   "full_name": "Detroit Lions",
+   "display_name": "Lions"
+  },
+  {
+   "id": 147,
+   "abbr": "GB",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/gb.png",
+   "full_name": "Green Bay Packers",
+   "display_name": "Packers"
+  },
+  {
+   "id": 148,
+   "abbr": "MIN",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/min.png",
+   "full_name": "Minnesota Vikings",
+   "display_name": "Vikings"
+  },
+  {
+   "id": 149,
+   "abbr": "TB",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/tb.png",
+   "full_name": "Tampa Bay Buccaneers",
+   "display_name": "Buccaneers"
+  },
+  {
+   "id": 150,
+   "abbr": "CAR",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/car.png",
+   "full_name": "Carolina Panthers",
+   "display_name": "Panthers"
+  },
+  {
+   "id": 151,
+   "abbr": "ATL",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/atl.png",
+   "full_name": "Atlanta Falcons",
+   "display_name": "Falcons"
+  },
+  {
+   "id": 152,
+   "abbr": "NO",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/no.png",
+   "full_name": "New Orleans Saints",
+   "display_name": "Saints"
+  },
+  {
+   "id": 153,
+   "abbr": "ARI",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/ari.png",
+   "full_name": "Arizona Cardinals",
+   "display_name": "Cardinals"
+  },
+  {
+   "id": 154,
+   "abbr": "SF",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sf.png",
+   "full_name": "San Francisco 49ers",
+   "display_name": "49ers"
+  },
+  {
+   "id": 156,
+   "abbr": "SEA",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sea.png",
+   "full_name": "Seattle Seahawks",
+   "display_name": "Seahawks"
+  },
+  {
+   "id": 251,
+   "abbr": "LA",
+   "logo": "https://assets.actionnetwork.com/524632_rams.png",
+   "full_name": "Los Angeles Rams",
+   "display_name": "Rams"
+  },
+  {
+   "id": 1325,
+   "abbr": "LAC",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sd.png",
+   "full_name": "Los Angeles Chargers",
+   "display_name": "Chargers"
+  },
+  {
+   "id": 2045,
+   "abbr": "LV",
+   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/oak.png",
+   "full_name": "Las Vegas Raiders",
+   "display_name": "Raiders"
+  }
+ ],
+ "players": [
+  {
+   "id": 4912,
+   "abbr": "D.Henry",
+   "image": "https://assets.actionnetwork.com/200x200/0e246e3012b24c8b8d68e9adc8b2c11e.png",
+   "team_id": 131,
+   "url_slug": "derrick-henry-4912-rb",
+   "full_name": "Derrick Henry"
+  },
+  {
+   "id": 54135,
+   "abbr": "C.McCaffrey",
+   "image": "https://assets.actionnetwork.com/200x200/9bfffe652e4d4a39be9570267415af2b.png",
+   "team_id": 154,
+   "url_slug": "christian-mccaffrey-54135-2",
+   "full_name": "Christian McCaffrey"
+  },
+  {
+   "id": 62322,
+   "abbr": "S.Perine",
+   "image": "https://assets.actionnetwork.com/200x200/42bb2c5aebb348f8a4c8df3037e00275.png",
+   "team_id": 128,
+   "url_slug": "samaje-perine-62322-2",
+   "full_name": "Samaje Perine"
+  },
+  {
+   "id": 62989,
+   "abbr": "A.Kamara",
+   "image": "https://assets.actionnetwork.com/200x200/6e54e16fb7b04e4da097461242b42c8e.png",
+   "team_id": 152,
+   "url_slug": "alvin-kamara-62989-2",
+   "full_name": "Alvin Kamara"
+  },
+  {
+   "id": 62997,
+   "abbr": "A.Jones",
+   "image": "https://assets.actionnetwork.com/200x200/591d9c151b774998b05087ca5b84296f.png",
+   "team_id": 148,
+   "url_slug": "aaron-jones-62997-2",
+   "full_name": "Aaron Jones"
+  },
+  {
+   "id": 82640,
+   "abbr": "L.Jackson",
+   "image": "https://assets.actionnetwork.com/200x200/3b6a5896665848aa9ecf7686f5baac32.png",
+   "team_id": 131,
+   "url_slug": "lamar-jackson-82640-2",
+   "full_name": "Lamar Jackson"
+  },
+  {
+   "id": 82643,
+   "abbr": "J.Allen",
+   "image": "https://assets.actionnetwork.com/200x200/f5332efaa4c640e6bd445863e4f45373.png",
+   "team_id": 125,
+   "url_slug": "josh-allen-82643-2",
+   "full_name": "Josh Allen"
+  },
+  {
+   "id": 83191,
+   "abbr": "S.Barkley",
+   "image": "https://assets.actionnetwork.com/200x200/00b49214b0094e6a8b4718b2b9a50033.png",
+   "team_id": 142,
+   "url_slug": "saquon-barkley-83191-rb",
+   "full_name": "Saquon Barkley"
+  },
+  {
+   "id": 108171,
+   "abbr": "T.Pollard",
+   "image": "https://assets.actionnetwork.com/200x200/ab1dc56a759d4fde9387868b52d94d50.png",
+   "team_id": 135,
+   "url_slug": "tony-pollard-108171-2",
+   "full_name": "Tony Pollard"
+  },
+  {
+   "id": 109850,
+   "abbr": "D.Montgomery",
+   "image": "https://assets.actionnetwork.com/200x200/3a0e647335e44025a723386da91cbb7e.png",
+   "team_id": 137,
+   "url_slug": "david-montgomery-109850-2",
+   "full_name": "David Montgomery"
+  },
+  {
+   "id": 110717,
+   "abbr": "J.Jacobs",
+   "image": "https://assets.actionnetwork.com/200x200/bbb6f5b67e1547a18a7c317295bdfd7a.png",
+   "team_id": 147,
+   "url_slug": "josh-jacobs-110717-2",
+   "full_name": "Josh Jacobs"
+  },
+  {
+   "id": 111783,
+   "abbr": "J.Hill",
+   "image": "https://assets.actionnetwork.com/200x200/d616138e77954feab6ddb5bdb6b33b9b.png",
+   "team_id": 131,
+   "url_slug": "justice-hill-111783-2",
+   "full_name": "Justice Hill"
+  },
+  {
+   "id": 111924,
+   "abbr": "K.Murray",
+   "image": "https://assets.actionnetwork.com/200x200/170e031e620c4d6dbb8f453458701462.png",
+   "team_id": 148,
+   "url_slug": "kyler-murray-111924-2",
+   "full_name": "Kyler Murray"
+  },
+  {
+   "id": 146747,
+   "abbr": "J.Hurts",
+   "image": "https://assets.actionnetwork.com/200x200/54eb97f9cc364c36b0e2c7de68d3e671.png",
+   "team_id": 142,
+   "url_slug": "jalen-hurts-146747-2",
+   "full_name": "Jalen Hurts"
+  },
+  {
+   "id": 146756,
+   "abbr": "J.Taylor",
+   "image": "https://assets.actionnetwork.com/200x200/c5c8828b88d3483ab6ba6b6a23cd962e.png",
+   "team_id": 133,
+   "url_slug": "jonathan-taylor-146756-2",
+   "full_name": "Jonathan Taylor"
+  },
+  {
+   "id": 146760,
+   "abbr": "J.Dobbins",
+   "image": "https://assets.actionnetwork.com/200x200/1970049f7f49425f8bd1f6d701266d44.png",
+   "team_id": 136,
+   "url_slug": "j.k.-dobbins-146760-2",
+   "full_name": "J.K. Dobbins"
+  },
+  {
+   "id": 146765,
+   "abbr": "D.Swift",
+   "image": "https://assets.actionnetwork.com/200x200/fe2736f94562489bb2356141694ee617.png",
+   "team_id": 143,
+   "url_slug": "d'andre-swift-146765-2",
+   "full_name": "D'Andre Swift"
+  },
+  {
+   "id": 147180,
+   "abbr": "R.Dowdle",
+   "image": "https://assets.actionnetwork.com/200x200/3158013ec99c46d6b39cb5ba85e9c0b7.png",
+   "team_id": 132,
+   "url_slug": "rico-dowdle-147180-2",
+   "full_name": "Rico Dowdle"
+  },
+  {
+   "id": 166293,
+   "abbr": "T.Etienne",
+   "image": "https://assets.actionnetwork.com/200x200/cf58983d0f8348be879b5ccbea1f48e3.png",
+   "team_id": 152,
+   "url_slug": "travis-etienne-166293-2",
+   "full_name": "Travis Etienne"
+  },
+  {
+   "id": 166294,
+   "abbr": "T.Lawrence",
+   "image": "https://assets.actionnetwork.com/200x200/06ae27e9a4064f3bba3cf700477b4c67.png",
+   "team_id": 134,
+   "url_slug": "trevor-lawrence-166294-2",
+   "full_name": "Trevor Lawrence"
+  },
+  {
+   "id": 166333,
+   "abbr": "J.Williams",
+   "image": "https://assets.actionnetwork.com/200x200/38b8fc7ee428484296e72e84eaf26066.png",
+   "team_id": 140,
+   "url_slug": "javonte-williams-166333-2",
+   "full_name": "Javonte Williams"
+  },
+  {
+   "id": 166368,
+   "abbr": "C.Hubbard",
+   "image": "https://assets.actionnetwork.com/200x200/aa332c869e2141a3ad88e03e45300817.png",
+   "team_id": 150,
+   "url_slug": "chuba-hubbard-166368-2",
+   "full_name": "Chuba Hubbard"
+  },
+  {
+   "id": 166374,
+   "abbr": "R.Stevenson",
+   "image": "https://assets.actionnetwork.com/200x200/0d94956d0d5a45ea95cb7f3e91e8a521.png",
+   "team_id": 129,
+   "url_slug": "rhamondre-stevenson-166374-2",
+   "full_name": "Rhamondre Stevenson"
+  },
+  {
+   "id": 166540,
+   "abbr": "K.Gainwell",
+   "image": "https://assets.actionnetwork.com/200x200/a87a67b851b24a3fab1b35a36fc32f46.png",
+   "team_id": 149,
+   "url_slug": "kenneth-gainwell-166540-2",
+   "full_name": "Kenneth Gainwell"
+  },
+  {
+   "id": 195056,
+   "abbr": "K.Walker",
+   "image": "https://assets.actionnetwork.com/200x200/0932cab8c7cf45d28a27f91e5ccab950.png",
+   "team_id": 139,
+   "url_slug": "kenneth-walker-195056-2",
+   "full_name": "Kenneth Walker"
+  },
+  {
+   "id": 195079,
+   "abbr": "J.Cook",
+   "image": "https://assets.actionnetwork.com/200x200/44bf626f7ff5429d8de836331f3c8d1d.png",
+   "team_id": 125,
+   "url_slug": "james-cook-195079-2",
+   "full_name": "James Cook"
+  },
+  {
+   "id": 195083,
+   "abbr": "B.Hall",
+   "image": "https://assets.actionnetwork.com/200x200/fbd568d716fa439eb7c14c1991a2cdc2.png",
+   "team_id": 127,
+   "url_slug": "breece-hall-195083-2",
+   "full_name": "Breece Hall"
+  },
+  {
+   "id": 195104,
+   "abbr": "R.White",
+   "image": "https://assets.actionnetwork.com/200x200/25331dff0a13425d98188fc5970a161e.png",
+   "team_id": 145,
+   "url_slug": "rachaad-white-195104-2",
+   "full_name": "Rachaad White"
+  },
+  {
+   "id": 195106,
+   "abbr": "M.Willis",
+   "image": "https://assets.actionnetwork.com/200x200/c1fd52e773a74fb98b6d98fff5338849.png",
+   "team_id": 126,
+   "url_slug": "malik-willis-195106-2",
+   "full_name": "Malik Willis"
+  },
+  {
+   "id": 195113,
+   "abbr": "B.Robinson",
+   "image": "https://assets.actionnetwork.com/200x200/d18e9785bc53422da83d07191bcd5f2e.png",
+   "team_id": 151,
+   "url_slug": "brian-robinson-195113-3",
+   "full_name": "Brian Robinson"
+  },
+  {
+   "id": 195196,
+   "abbr": "K.Williams",
+   "image": "https://assets.actionnetwork.com/200x200/dd78e04bfc18425c85021803bd5fea35.png",
+   "team_id": 251,
+   "url_slug": "kyren-williams-195196-2",
+   "full_name": "Kyren Williams"
+  },
+  {
+   "id": 195231,
+   "abbr": "T.Allgeier",
+   "image": "https://assets.actionnetwork.com/200x200/d1297890efc94731bc79176a35d5cc9a.png",
+   "team_id": 153,
+   "url_slug": "tyler-allgeier-195231-2",
+   "full_name": "Tyler Allgeier"
+  },
+  {
+   "id": 195293,
+   "abbr": "I.Pacheco",
+   "image": "https://assets.actionnetwork.com/200x200/8c8d4eb615db4024bf362daad5f7cec0.png",
+   "team_id": 146,
+   "url_slug": "isiah-pacheco-195293-rb",
+   "full_name": "Isiah Pacheco"
+  },
+  {
+   "id": 195431,
+   "abbr": "J.Warren",
+   "image": "https://assets.actionnetwork.com/200x200/cc5cedc9e5f4411ca51302f699a096ea.png",
+   "team_id": 132,
+   "url_slug": "jaylen-warren-195431-2",
+   "full_name": "Jaylen Warren"
+  },
+  {
+   "id": 195488,
+   "abbr": "J.Mason",
+   "image": "https://assets.actionnetwork.com/200x200/bffdf51bf2cd451795c9ecfeb252ad57.png",
+   "team_id": 148,
+   "url_slug": "jordan-mason-195488-2",
+   "full_name": "Jordan Mason"
+  },
+  {
+   "id": 241840,
+   "abbr": "J.Gibbs",
+   "image": "https://assets.actionnetwork.com/200x200/2b16bc668b0441b1b0b9e79ea9cccd9d.png",
+   "team_id": 146,
+   "url_slug": "jahmyr-gibbs-241840-2",
+   "full_name": "Jahmyr Gibbs"
+  },
+  {
+   "id": 241851,
+   "abbr": "B.Robinson",
+   "image": "https://assets.actionnetwork.com/200x200/c64d432c7dca428ca3bdbdd1d9c9856b.png",
+   "team_id": 151,
+   "url_slug": "bijan-robinson-241851-2",
+   "full_name": "Bijan Robinson"
+  },
+  {
+   "id": 241887,
+   "abbr": "D.Achane",
+   "image": "https://assets.actionnetwork.com/200x200/ecb7f302353e404f962e3f24c6e14eb1.png",
+   "team_id": 126,
+   "url_slug": "de'von-achane-241887-rb",
+   "full_name": "De'Von Achane"
+  },
+  {
+   "id": 241898,
+   "abbr": "Z.Charbonnet",
+   "image": "https://assets.actionnetwork.com/200x200/9f9eef3fdfe84b239148413017bb2f81.png",
+   "team_id": 156,
+   "url_slug": "zach-charbonnet-241898-2",
+   "full_name": "Zach Charbonnet"
+  },
+  {
+   "id": 241939,
+   "abbr": "T.Spears",
+   "image": "https://assets.actionnetwork.com/200x200/d4b3afd376304a8c9f4dfc5643dab9c6.png",
+   "team_id": 135,
+   "url_slug": "tyjae-spears-241939-2",
+   "full_name": "Tyjae Spears"
+  },
+  {
+   "id": 242035,
+   "abbr": "C.Brown",
+   "image": "https://assets.actionnetwork.com/200x200/9ba7e051c86742af85780bea4e540d41.png",
+   "team_id": 128,
+   "url_slug": "chase-brown-242035-2",
+   "full_name": "Chase Brown"
+  },
+  {
+   "id": 242138,
+   "abbr": "C.Rodriguez",
+   "image": "https://assets.actionnetwork.com/200x200/ca2558371af746e18f2e14265d976695.png",
+   "team_id": 134,
+   "url_slug": "chris-rodriguez-242138-rb",
+   "full_name": "Chris Rodriguez"
+  },
+  {
+   "id": 277038,
+   "abbr": "C.Williams",
+   "image": "https://assets.actionnetwork.com/200x200/dfc8ef8a44244027ba69a5113917316d.png",
+   "team_id": 143,
+   "url_slug": "caleb-williams-227038-qb",
+   "full_name": "Caleb Williams"
+  },
+  {
+   "id": 277039,
+   "abbr": "J.Daniels",
+   "image": "https://assets.actionnetwork.com/200x200/a4955c0d0cdb4bad9314010068168463.png",
+   "team_id": 145,
+   "url_slug": "jayden-daniels-277039-qb",
+   "full_name": "Jayden Daniels"
+  },
+  {
+   "id": 277040,
+   "abbr": "D.Maye",
+   "image": "https://assets.actionnetwork.com/200x200/bcc18de6fea543a182f46d960757e3c1.png",
+   "team_id": 129,
+   "url_slug": "drake-maye-277040-qb",
+   "full_name": "Drake Maye"
+  },
+  {
+   "id": 277100,
+   "abbr": "J.Brooks",
+   "image": "https://assets.actionnetwork.com/200x200/4bf0fe04f7204be682b22bd3eefec5e6.png",
+   "team_id": 150,
+   "url_slug": "jonathon-brooks-277100-rb",
+   "full_name": "Jonathon Brooks"
+  },
+  {
+   "id": 277137,
+   "abbr": "B.Corum",
+   "image": "https://assets.actionnetwork.com/200x200/c82118b208d74c49897c165874625490.png",
+   "team_id": 251,
+   "url_slug": "blake-corum-277137-rb",
+   "full_name": "Blake Corum"
+  },
+  {
+   "id": 277211,
+   "abbr": "B.Irving",
+   "image": "https://assets.actionnetwork.com/200x200/dd9edf5ca5554174a9982269232ede67.png",
+   "team_id": 149,
+   "url_slug": "bucky-irving-277211-rb",
+   "full_name": "Bucky Irving"
+  },
+  {
+   "id": 277220,
+   "abbr": "B.Allen",
+   "image": "https://assets.actionnetwork.com/200x200/a1e4b1805e3a403d91c1f3a67d31560f.png",
+   "team_id": 127,
+   "url_slug": "braelon-allen-277220-rb",
+   "full_name": "Braelon Allen"
+  },
+  {
+   "id": 277293,
+   "abbr": "T.Tracy",
+   "image": "https://assets.actionnetwork.com/200x200/fb66e6983ae04bd6b512a1abf3359396.png",
+   "team_id": 144,
+   "url_slug": "tyrone-tracy-277293-rb",
+   "full_name": "Tyrone Tracy"
+  },
+  {
+   "id": 304952,
+   "abbr": "A.Jeanty",
+   "image": "https://assets.actionnetwork.com/200x200/1c61f9d1d14c4d0eae4ca7298601c8c8.png",
+   "team_id": 2045,
+   "url_slug": "ashton-jeanty-304952-rb",
+   "full_name": "Ashton Jeanty"
+  },
+  {
+   "id": 304968,
+   "abbr": "O.Hampton",
+   "image": "https://assets.actionnetwork.com/200x200/fd2b8533cafc45fcabb03986653c9c27.png",
+   "team_id": 1325,
+   "url_slug": "omarion-hampton-304968-rb",
+   "full_name": "Omarion Hampton"
+  },
+  {
+   "id": 304971,
+   "abbr": "J.Dart",
+   "image": "https://assets.actionnetwork.com/200x200/3064da7df25141b39b8c19a97196e9d2.png",
+   "team_id": 144,
+   "url_slug": "jaxson-dart-304971-qb",
+   "full_name": "Jaxson Dart"
+  },
+  {
+   "id": 305014,
+   "abbr": "Q.Judkins",
+   "image": "https://assets.actionnetwork.com/200x200/608c45da8aa54561bffbac17d68eaae7.png",
+   "team_id": 130,
+   "url_slug": "quinshon-judkins-305014-rb",
+   "full_name": "Quinshon Judkins"
+  },
+  {
+   "id": 305016,
+   "abbr": "T.Henderson",
+   "image": "https://assets.actionnetwork.com/200x200/4cdc7546b4144942b0854fee5a5bb8f1.png",
+   "team_id": 129,
+   "url_slug": "treveyon-henderson-305016-rb",
+   "full_name": "TreVeyon Henderson"
+  },
+  {
+   "id": 305038,
+   "abbr": "R.Harvey",
+   "image": "https://assets.actionnetwork.com/200x200/64f3825556344e1493b401b6cfbf22e5.png",
+   "team_id": 136,
+   "url_slug": "rj-harvey-305038-rb",
+   "full_name": "RJ Harvey"
+  },
+  {
+   "id": 305103,
+   "abbr": "B.Tuten",
+   "image": "https://assets.actionnetwork.com/200x200/7e996107b93e48589a7367ee783b9f6e.png",
+   "team_id": 134,
+   "url_slug": "bhayshul-tuten-305103-rb",
+   "full_name": "Bhayshul Tuten"
+  },
+  {
+   "id": 305104,
+   "abbr": "C.Skattebo",
+   "image": "https://assets.actionnetwork.com/200x200/330682aa6bfe4959867c24acfeffc525.png",
+   "team_id": 144,
+   "url_slug": "cam-skattebo-305104-rb",
+   "full_name": "Cam Skattebo"
+  },
+  {
+   "id": 305115,
+   "abbr": "W.Marks",
+   "image": "https://assets.actionnetwork.com/200x200/6e7197e4769f49e5a58984747441ebb0.png",
+   "team_id": 137,
+   "url_slug": "woody-marks-305115-rb",
+   "full_name": "Woody Marks"
+  },
+  {
+   "id": 305125,
+   "abbr": "D.Sampson",
+   "image": "https://assets.actionnetwork.com/200x200/0b22394a55c24508b044d63a564734e8.png",
+   "team_id": 130,
+   "url_slug": "dylan-sampson-305125-rb",
+   "full_name": "Dylan Sampson"
+  },
+  {
+   "id": 305232,
+   "abbr": "K.Monangai",
+   "image": "https://assets.actionnetwork.com/200x200/0e5af9e099db494a8e5a06459ab209c3.png",
+   "team_id": 143,
+   "url_slug": "kyle-monangai-305232-rb",
+   "full_name": "Kyle Monangai"
+  },
+  {
+   "id": 305244,
+   "abbr": "J.Croskey-Merritt",
+   "image": "https://assets.actionnetwork.com/200x200/f7f24627e34d47ec8e21bb66953cd43c.png",
+   "team_id": 145,
+   "url_slug": "jacory-croskey-merritt-305244-rb",
+   "full_name": "Jacory Croskey-Merritt"
+  },
+  {
+   "id": 333932,
+   "abbr": "J.Love",
+   "image": "https://assets.actionnetwork.com/200x200/81feb172fa564909bd2101ab4ccc9ac5.png",
+   "team_id": 153,
+   "url_slug": null,
+   "full_name": "Jeremiyah Love"
+  },
+  {
+   "id": 333961,
+   "abbr": "J.Price",
+   "image": "https://assets.actionnetwork.com/200x200/2206caa7d4e842ad81af3a9eaf565b0d.png",
+   "team_id": 156,
+   "url_slug": null,
+   "full_name": "Jadarian Price"
+  }
+ ]
+}
