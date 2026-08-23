@@ -289,9 +289,52 @@ console.log(
   `bettingpros: ${bpSaved}/${bpMarkets.length} season markets saved, filled ${bpCells} player-market gaps, added ${bpPlayers} new players`,
 );
 
+// --- FantasyPros: RB receiving backfill only ---
+// No market anywhere hangs season receiving yardage on committee backs
+// (verified across AN, BettingPros, Underdog, and Bovada), so those cells
+// cannot come from Vegas. FantasyPros' consensus projections fill
+// receptions / receiving yards / receiving TDs for RBs missing them —
+// analyst estimates, not market lines, so each filled market carries
+// source: 'fantasypros' and an empty books map.
+try {
+  // The projections page only server-renders ten rows; the JSON API behind it
+  // returns the full table. The x-api-key is the site's own public web key.
+  const fp = await fetchJson(`https://api.fantasypros.com/v2/json/nfl/${season}/projections?position=RB&week=0`, {
+    headers: { 'x-api-key': 'zjxN52G3lP4fORpHRftGI2mTU8cTwxVNvkjByM3j' },
+  });
+  const parsed = (fp.players ?? [])
+    .filter((p) => p?.name && p.stats)
+    .map((p) => ({
+      name: p.name,
+      receptions: p.stats.rec_rec,
+      receiving_yards: p.stats.rec_yds,
+      receiving_tds: p.stats.rec_tds,
+    }));
+  if (!parsed.length) throw new Error('no players returned — API shape changed');
+  await writeFile(
+    new URL('fantasypros_rb_receiving.json', OUT),
+    JSON.stringify({ season, source: 'fantasypros consensus draft projections', players: parsed }, null, 1),
+  );
+  let filled = 0;
+  for (const fp of parsed) {
+    const entry = entryByName.get(normalize(fp.name));
+    if (!entry || !entry.markets.rushing_yards || entry.markets.receiving_yards) continue;
+    for (const stat of ['receiving_yards', 'receiving_tds', 'receptions']) {
+      if (entry.markets[stat] || !fp[stat]) continue;
+      entry.markets[stat] = { line: Math.round(fp[stat] * 10) / 10, books: {}, source: 'fantasypros' };
+      filled++;
+    }
+  }
+  console.log(`fantasypros: ${parsed.length} RB rows, backfilled ${filled} receiving cells`);
+} catch (err) {
+  console.error(`fantasypros backfill failed — ${err.message ?? err}`);
+}
+
 let matched = 0;
 for (const entry of Object.values(byPlayer)) {
   for (const m of Object.values(entry.markets)) {
+    // FantasyPros-backfilled markets have no books — keep their line as-is.
+    if (!Object.keys(m.books).length) continue;
     m.line =
       m.books.consensus?.line ??
       median(Object.values(m.books).map((b) => b.line).filter((v) => v != null));
