@@ -1,0 +1,4741 @@
+{
+ "market_id": 50,
+ "market": "most_passing_yards",
+ "slug": "most-passing-yards",
+ "season": 2026,
+ "offers": [
+  {
+   "id": "4e8d06201e3af3a636a56943adecb598",
+   "market_id": 50,
+   "event_id": null,
+   "player_id": null,
+   "team_id": null,
+   "opponent_id": null,
+   "link": "",
+   "active": true,
+   "participants": [
+    {
+     "id": "9001",
+     "name": "Aaron Rodgers",
+     "link": "/nfl/props/aaron-rodgers/",
+     "player": {
+      "short_name": "A. Rodgers",
+      "first_name": "Aaron",
+      "last_name": "Rodgers",
+      "image": "https://images.fantasypros.com/images/players/nfl/9001/headshot/210x210.webp",
+      "position": "QB",
+      "team": "PIT",
+      "slug": "aaron-rodgers",
+      "jersey_number": 8
+     }
+    },
+    {
+     "id": "23499",
+     "name": "Malik Willis",
+     "link": "/nfl/props/malik-willis/",
+     "player": {
+      "short_name": "M. Willis",
+      "first_name": "Malik",
+      "last_name": "Willis",
+      "image": "https://images.fantasypros.com/images/players/nfl/23499/headshot/210x210.webp",
+      "position": "QB",
+      "team": "MIA",
+      "slug": "malik-willis",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "17237",
+     "name": "Baker Mayfield",
+     "link": "/nfl/props/baker-mayfield/",
+     "player": {
+      "short_name": "B. Mayfield",
+      "first_name": "Baker",
+      "last_name": "Mayfield",
+      "image": "https://images.fantasypros.com/images/players/nfl/17237/headshot/210x210.webp",
+      "position": "QB",
+      "team": "TB",
+      "slug": "baker-mayfield",
+      "jersey_number": 6
+     }
+    },
+    {
+     "id": "23096",
+     "name": "Tyler Shough",
+     "link": "/nfl/props/tyler-shough/",
+     "player": {
+      "short_name": "T. Shough",
+      "first_name": "Tyler",
+      "last_name": "Shough",
+      "image": "https://images.fantasypros.com/images/players/nfl/23096/headshot/210x210.webp",
+      "position": "QB",
+      "team": "NO",
+      "slug": "tyler-shough",
+      "jersey_number": 6
+     }
+    },
+    {
+     "id": "17233",
+     "name": "Lamar Jackson",
+     "link": "/nfl/props/lamar-jackson/",
+     "player": {
+      "short_name": "L. Jackson",
+      "first_name": "Lamar",
+      "last_name": "Jackson",
+      "image": "https://images.fantasypros.com/images/players/nfl/17233/headshot/210x210.webp",
+      "position": "QB",
+      "team": "BAL",
+      "slug": "lamar-jackson",
+      "jersey_number": 8
+     }
+    },
+    {
+     "id": "9300",
+     "name": "Joe Flacco",
+     "link": "/nfl/props/joe-flacco/",
+     "player": {
+      "short_name": "J. Flacco",
+      "first_name": "Joe",
+      "last_name": "Flacco",
+      "image": "https://images.fantasypros.com/images/players/nfl/9300/headshot/210x210.webp",
+      "position": "QB",
+      "team": "CIN",
+      "slug": "joe-flacco",
+      "jersey_number": 16
+     }
+    },
+    {
+     "id": "23084",
+     "name": "Caleb Williams",
+     "link": "/nfl/props/caleb-williams/",
+     "player": {
+      "short_name": "C. Williams",
+      "first_name": "Caleb",
+      "last_name": "Williams",
+      "image": "https://images.fantasypros.com/images/players/nfl/23084/headshot/210x210.webp",
+      "position": "QB",
+      "team": "CHI",
+      "slug": "caleb-williams",
+      "jersey_number": 18
+     }
+    },
+    {
+     "id": "18600",
+     "name": "Kyler Murray",
+     "link": "/nfl/props/kyler-murray/",
+     "player": {
+      "short_name": "K. Murray",
+      "first_name": "Kyler",
+      "last_name": "Murray",
+      "image": "https://images.fantasypros.com/images/players/nfl/18600/headshot/210x210.webp",
+      "position": "QB",
+      "team": "MIN",
+      "slug": "kyler-murray",
+      "jersey_number": 1
+     }
+    },
+    {
+     "id": "24361",
+     "name": "Cade Klubnik",
+     "link": "/nfl/props/cade-klubnik/",
+     "player": {
+      "short_name": "C. Klubnik",
+      "first_name": "Cade",
+      "last_name": "Klubnik",
+      "image": "https://images.fantasypros.com/images/players/nfl/24361/headshot/210x210.webp",
+      "position": "QB",
+      "team": "NYJ",
+      "slug": "cade-klubnik",
+      "jersey_number": 10
+     }
+    },
+    {
+     "id": "15642",
+     "name": "Jacoby Brissett",
+     "link": "/nfl/props/jacoby-brissett/",
+     "player": {
+      "short_name": "J. Brissett",
+      "first_name": "Jacoby",
+      "last_name": "Brissett",
+      "image": "https://images.fantasypros.com/images/players/nfl/15642/headshot/210x210.webp",
+      "position": "QB",
+      "team": "ARI",
+      "slug": "jacoby-brissett",
+      "jersey_number": 7
+     }
+    },
+    {
+     "id": "19196",
+     "name": "Joe Burrow",
+     "link": "/nfl/props/joe-burrow/",
+     "player": {
+      "short_name": "J. Burrow",
+      "first_name": "Joe",
+      "last_name": "Burrow",
+      "image": "https://images.fantasypros.com/images/players/nfl/19196/headshot/210x210.webp",
+      "position": "QB",
+      "team": "CIN",
+      "slug": "joe-burrow",
+      "jersey_number": 9
+     }
+    },
+    {
+     "id": "19780",
+     "name": "Trevor Lawrence",
+     "link": "/nfl/props/trevor-lawrence/",
+     "player": {
+      "short_name": "T. Lawrence",
+      "first_name": "Trevor",
+      "last_name": "Lawrence",
+      "image": "https://images.fantasypros.com/images/players/nfl/19780/headshot/210x210.webp",
+      "position": "QB",
+      "team": "JAC",
+      "slug": "trevor-lawrence",
+      "jersey_number": 16
+     }
+    },
+    {
+     "id": "25968",
+     "name": "Shedeur Sanders",
+     "link": "/nfl/props/shedeur-sanders/",
+     "player": {
+      "short_name": "S. Sanders",
+      "first_name": "Shedeur",
+      "last_name": "Sanders",
+      "image": "https://images.fantasypros.com/images/players/nfl/25968/headshot/210x210.webp",
+      "position": "QB",
+      "team": "CLE",
+      "slug": "shedeur-sanders",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "19781",
+     "name": "Justin Fields",
+     "link": "/nfl/props/justin-fields/",
+     "player": {
+      "short_name": "J. Fields",
+      "first_name": "Justin",
+      "last_name": "Fields",
+      "image": "https://images.fantasypros.com/images/players/nfl/19781/headshot/210x210.webp",
+      "position": "QB",
+      "team": "KC",
+      "slug": "justin-fields",
+      "jersey_number": 6
+     }
+    },
+    {
+     "id": "18635",
+     "name": "Justin Herbert",
+     "link": "/nfl/props/justin-herbert/",
+     "player": {
+      "short_name": "J. Herbert",
+      "first_name": "Justin",
+      "last_name": "Herbert",
+      "image": "https://images.fantasypros.com/images/players/nfl/18635/headshot/210x210.webp",
+      "position": "QB",
+      "team": "LAC",
+      "slug": "justin-herbert",
+      "jersey_number": 10
+     }
+    },
+    {
+     "id": "24755",
+     "name": "Cam Ward",
+     "link": "/nfl/props/cam-ward/",
+     "player": {
+      "short_name": "C. Ward",
+      "first_name": "Cam",
+      "last_name": "Ward",
+      "image": "https://images.fantasypros.com/images/players/nfl/24755/headshot/210x210.webp",
+      "position": "QB",
+      "team": "TEN",
+      "slug": "cam-ward",
+      "jersey_number": 1
+     }
+    },
+    {
+     "id": "19275",
+     "name": "Jalen Hurts",
+     "link": "/nfl/props/jalen-hurts/",
+     "player": {
+      "short_name": "J. Hurts",
+      "first_name": "Jalen",
+      "last_name": "Hurts",
+      "image": "https://images.fantasypros.com/images/players/nfl/19275/headshot/210x210.webp",
+      "position": "QB",
+      "team": "PHI",
+      "slug": "jalen-hurts",
+      "jersey_number": 1
+     }
+    },
+    {
+     "id": "22902",
+     "name": "Jayden Daniels",
+     "link": "/nfl/props/jayden-daniels/",
+     "player": {
+      "short_name": "J. Daniels",
+      "first_name": "Jayden",
+      "last_name": "Daniels",
+      "image": "https://images.fantasypros.com/images/players/nfl/22902/headshot/210x210.webp",
+      "position": "QB",
+      "team": "WAS",
+      "slug": "jayden-daniels",
+      "jersey_number": 5
+     }
+    },
+    {
+     "id": "23018",
+     "name": "J.J. McCarthy",
+     "link": "/nfl/props/jj-mccarthy/",
+     "player": {
+      "short_name": "J.J. McCarthy",
+      "first_name": "J.J.",
+      "last_name": "McCarthy",
+      "image": "https://images.fantasypros.com/images/players/nfl/23018/headshot/210x210.webp",
+      "position": "QB",
+      "team": "MIN",
+      "slug": "jj-mccarthy",
+      "jersey_number": 9
+     }
+    },
+    {
+     "id": "23071",
+     "name": "C.J. Stroud",
+     "link": "/nfl/props/cj-stroud/",
+     "player": {
+      "short_name": "C.J. Stroud",
+      "first_name": "C.J.",
+      "last_name": "Stroud",
+      "image": "https://images.fantasypros.com/images/players/nfl/23071/headshot/210x210.webp",
+      "position": "QB",
+      "team": "HOU",
+      "slug": "cj-stroud",
+      "jersey_number": 7
+     }
+    },
+    {
+     "id": "22910",
+     "name": "Bo Nix",
+     "link": "/nfl/props/bo-nix/",
+     "player": {
+      "short_name": "Bo Nix",
+      "first_name": "Bo",
+      "last_name": "Nix",
+      "image": "https://images.fantasypros.com/images/players/nfl/22910/headshot/210x210.webp",
+      "position": "QB",
+      "team": "DEN",
+      "slug": "bo-nix",
+      "jersey_number": 10
+     }
+    },
+    {
+     "id": "11177",
+     "name": "Kirk Cousins",
+     "link": "/nfl/props/kirk-cousins/",
+     "player": {
+      "short_name": "K. Cousins",
+      "first_name": "Kirk",
+      "last_name": "Cousins",
+      "image": "https://images.fantasypros.com/images/players/nfl/11177/headshot/210x210.webp",
+      "position": "QB",
+      "team": "LV",
+      "slug": "kirk-cousins",
+      "jersey_number": 8
+     }
+    },
+    {
+     "id": "16413",
+     "name": "Patrick Mahomes II",
+     "link": "/nfl/props/patrick-mahomes/",
+     "player": {
+      "short_name": "P. Mahomes II",
+      "first_name": "Patrick",
+      "last_name": "Mahomes",
+      "image": "https://images.fantasypros.com/images/players/nfl/16413/headshot/210x210.webp",
+      "position": "QB",
+      "team": "KC",
+      "slug": "patrick-mahomes",
+      "jersey_number": 15
+     }
+    },
+    {
+     "id": "22900",
+     "name": "Bryce Young",
+     "link": "/nfl/props/bryce-young/",
+     "player": {
+      "short_name": "B. Young",
+      "first_name": "Bryce",
+      "last_name": "Young",
+      "image": "https://images.fantasypros.com/images/players/nfl/22900/headshot/210x210.webp",
+      "position": "QB",
+      "team": "CAR",
+      "slug": "bryce-young",
+      "jersey_number": 9
+     }
+    },
+    {
+     "id": "19246",
+     "name": "Jordan Love",
+     "link": "/nfl/props/jordan-love/",
+     "player": {
+      "short_name": "J. Love",
+      "first_name": "Jordan",
+      "last_name": "Love",
+      "image": "https://images.fantasypros.com/images/players/nfl/19246/headshot/210x210.webp",
+      "position": "QB",
+      "team": "GB",
+      "slug": "jordan-love",
+      "jersey_number": 10
+     }
+    },
+    {
+     "id": "22973",
+     "name": "Michael Penix Jr.",
+     "link": "/nfl/props/michael-penix-jr/",
+     "player": {
+      "short_name": "M. Penix Jr.",
+      "first_name": "Michael",
+      "last_name": "Penix",
+      "image": "https://images.fantasypros.com/images/players/nfl/22973/headshot/210x210.webp",
+      "position": "QB",
+      "team": "ATL",
+      "slug": "michael-penix-jr",
+      "jersey_number": 9
+     }
+    },
+    {
+     "id": "16398",
+     "name": "Deshaun Watson",
+     "link": "/nfl/props/deshaun-watson/",
+     "player": {
+      "short_name": "D. Watson",
+      "first_name": "Deshaun",
+      "last_name": "Watson",
+      "image": "https://images.fantasypros.com/images/players/nfl/16398/headshot/210x210.webp",
+      "position": "QB",
+      "team": "CLE",
+      "slug": "deshaun-watson",
+      "jersey_number": 4
+     }
+    },
+    {
+     "id": "19797",
+     "name": "Brock Purdy",
+     "link": "/nfl/props/brock-purdy/",
+     "player": {
+      "short_name": "B. Purdy",
+      "first_name": "Brock",
+      "last_name": "Purdy",
+      "image": "https://images.fantasypros.com/images/players/nfl/19797/headshot/210x210.webp",
+      "position": "QB",
+      "team": "SF",
+      "slug": "brock-purdy",
+      "jersey_number": 13
+     }
+    },
+    {
+     "id": "23160",
+     "name": "Jaxson Dart",
+     "link": "/nfl/props/jaxson-dart/",
+     "player": {
+      "short_name": "J. Dart",
+      "first_name": "Jaxson",
+      "last_name": "Dart",
+      "image": "https://images.fantasypros.com/images/players/nfl/23160/headshot/210x210.webp",
+      "position": "QB",
+      "team": "NYG",
+      "slug": "jaxson-dart",
+      "jersey_number": 6
+     }
+    },
+    {
+     "id": "15501",
+     "name": "Jared Goff",
+     "link": "/nfl/props/jared-goff/",
+     "player": {
+      "short_name": "J. Goff",
+      "first_name": "Jared",
+      "last_name": "Goff",
+      "image": "https://images.fantasypros.com/images/players/nfl/15501/headshot/210x210.webp",
+      "position": "QB",
+      "team": "DET",
+      "slug": "jared-goff",
+      "jersey_number": 16
+     }
+    },
+    {
+     "id": "18232",
+     "name": "Daniel Jones",
+     "link": "/nfl/props/daniel-jones/",
+     "player": {
+      "short_name": "D. Jones",
+      "first_name": "Daniel",
+      "last_name": "Jones",
+      "image": "https://images.fantasypros.com/images/players/nfl/18232/headshot/210x210.webp",
+      "position": "QB",
+      "team": "IND",
+      "slug": "daniel-jones",
+      "jersey_number": 17
+     }
+    },
+    {
+     "id": "17236",
+     "name": "Sam Darnold",
+     "link": "/nfl/props/sam-darnold/",
+     "player": {
+      "short_name": "S. Darnold",
+      "first_name": "Sam",
+      "last_name": "Darnold",
+      "image": "https://images.fantasypros.com/images/players/nfl/17236/headshot/210x210.webp",
+      "position": "QB",
+      "team": "SEA",
+      "slug": "sam-darnold",
+      "jersey_number": 14
+     }
+    },
+    {
+     "id": "9451",
+     "name": "Matthew Stafford",
+     "link": "/nfl/props/matthew-stafford/",
+     "player": {
+      "short_name": "M. Stafford",
+      "first_name": "Matthew",
+      "last_name": "Stafford",
+      "image": "https://images.fantasypros.com/images/players/nfl/9451/headshot/210x210.webp",
+      "position": "QB",
+      "team": "LAR",
+      "slug": "matthew-stafford",
+      "jersey_number": 9
+     }
+    },
+    {
+     "id": "23046",
+     "name": "Drake Maye",
+     "link": "/nfl/props/drake-maye/",
+     "player": {
+      "short_name": "D. Maye",
+      "first_name": "Drake",
+      "last_name": "Maye",
+      "image": "https://images.fantasypros.com/images/players/nfl/23046/headshot/210x210.webp",
+      "position": "QB",
+      "team": "NE",
+      "slug": "drake-maye",
+      "jersey_number": 10
+     }
+    },
+    {
+     "id": "19198",
+     "name": "Tua Tagovailoa",
+     "link": "/nfl/props/tua-tagovailoa/",
+     "player": {
+      "short_name": "T. Tagovailoa",
+      "first_name": "Tua",
+      "last_name": "Tagovailoa",
+      "image": "https://images.fantasypros.com/images/players/nfl/19198/headshot/210x210.webp",
+      "position": "QB",
+      "team": "ATL",
+      "slug": "tua-tagovailoa",
+      "jersey_number": 1
+     }
+    },
+    {
+     "id": "22953",
+     "name": "Carson Beck",
+     "link": "/nfl/props/carson-beck/",
+     "player": {
+      "short_name": "C. Beck",
+      "first_name": "Carson",
+      "last_name": "Beck",
+      "image": "https://images.fantasypros.com/images/players/nfl/22953/headshot/210x210.webp",
+      "position": "QB",
+      "team": "ARI",
+      "slug": "carson-beck",
+      "jersey_number": 19
+     }
+    },
+    {
+     "id": "17298",
+     "name": "Josh Allen",
+     "link": "/nfl/props/josh-allen-qb/",
+     "player": {
+      "short_name": "J. Allen",
+      "first_name": "Josh",
+      "last_name": "Allen",
+      "image": "https://images.fantasypros.com/images/players/nfl/17298/headshot/210x210.webp",
+      "position": "QB",
+      "team": "BUF",
+      "slug": "josh-allen-qb",
+      "jersey_number": 17
+     }
+    },
+    {
+     "id": "28013",
+     "name": "Fernando Mendoza",
+     "link": "/nfl/props/fernando-mendoza/",
+     "player": {
+      "short_name": "F. Mendoza",
+      "first_name": "Fernando",
+      "last_name": "Mendoza",
+      "image": "https://images.fantasypros.com/images/players/nfl/28013/headshot/210x210.webp",
+      "position": "QB",
+      "team": "LV",
+      "slug": "fernando-mendoza",
+      "jersey_number": 15
+     }
+    },
+    {
+     "id": "11687",
+     "name": "Geno Smith",
+     "link": "/nfl/props/geno-smith/",
+     "player": {
+      "short_name": "G. Smith",
+      "first_name": "Geno",
+      "last_name": "Smith",
+      "image": "https://images.fantasypros.com/images/players/nfl/11687/headshot/210x210.webp",
+      "position": "QB",
+      "team": "NYJ",
+      "slug": "geno-smith",
+      "jersey_number": 7
+     }
+    },
+    {
+     "id": "15600",
+     "name": "Dak Prescott",
+     "link": "/nfl/props/dak-prescott/",
+     "player": {
+      "short_name": "D. Prescott",
+      "first_name": "Dak",
+      "last_name": "Prescott",
+      "image": "https://images.fantasypros.com/images/players/nfl/15600/headshot/210x210.webp",
+      "position": "QB",
+      "team": "DAL",
+      "slug": "dak-prescott",
+      "jersey_number": 4
+     }
+    }
+   ],
+   "selections": [
+    {
+     "participant": "9001",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Aaron Rodgers",
+     "short_label": "A. Rodgers",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": {
+          "pm_win_pct": 2.5
+         }
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_09d9a8a17f8f36bc3a7636f36005b561",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554461_13L88808Q1800075Q2-1",
+         "metrics": {
+          "pm_win_pct": 2.5
+         }
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_09d9a8a17f8f36bc3a7636f36005b561",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=9311da55-598e-35b1-8e1c-2dc1ed9d999c",
+         "metrics": {
+          "pm_win_pct": 2.5
+         }
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_09d9a8a17f8f36bc3a7636f36005b561",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517427",
+         "metrics": {
+          "pm_win_pct": 2.5
+         }
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_09d9a8a17f8f36bc3a7636f36005b561",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000030|0|append",
+         "metrics": {
+          "pm_win_pct": 2.5
+         }
+        }
+       ]
+      }
+     ],
+     "id": "09d9a8a17f8f36bc3a7636f36005b561"
+    },
+    {
+     "participant": "23499",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 6000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Malik Willis",
+     "short_label": "M. Willis",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": {
+          "pm_win_pct": 1
+         }
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_11b26d69ddb93d8329cf68c5c8953ebd",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554432_13L88808Q11079510Q2-1",
+         "metrics": {
+          "pm_win_pct": 1
+         }
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_11b26d69ddb93d8329cf68c5c8953ebd",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=c296462e-03c8-3aad-9c16-e751102f1828",
+         "metrics": {
+          "pm_win_pct": 1
+         }
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_11b26d69ddb93d8329cf68c5c8953ebd",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517428",
+         "metrics": {
+          "pm_win_pct": 1
+         }
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_11b26d69ddb93d8329cf68c5c8953ebd",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000057|0|append",
+         "metrics": {
+          "pm_win_pct": 1
+         }
+        }
+       ]
+      }
+     ],
+     "id": "11b26d69ddb93d8329cf68c5c8953ebd"
+    },
+    {
+     "participant": "17237",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Baker Mayfield",
+     "short_label": "B. Mayfield",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_16a4cb4cf42b39b877b482374dc6519e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554460_13L88808Q1800085Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_16a4cb4cf42b39b877b482374dc6519e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=bd6830e1-aff2-31ad-9658-389bb599e394",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_16a4cb4cf42b39b877b482374dc6519e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517417",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_16a4cb4cf42b39b877b482374dc6519e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000031|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "16a4cb4cf42b39b877b482374dc6519e"
+    },
+    {
+     "participant": "23096",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Tyler Shough",
+     "short_label": "T. Shough",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_17248735a3b6bb0a5ed744ea9d527456",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554424_13L88808Q12197807Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_17248735a3b6bb0a5ed744ea9d527456",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=e6808486-3b2f-3785-a9e3-b1d6b3f36b8e",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_17248735a3b6bb0a5ed744ea9d527456",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517410",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_17248735a3b6bb0a5ed744ea9d527456",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000065|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "17248735a3b6bb0a5ed744ea9d527456"
+    },
+    {
+     "participant": "17233",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4500,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Lamar Jackson",
+     "short_label": "L. Jackson",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_1edb1aa9ea8d61379e5a385513ae1a99",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554433_13L88808Q1800064Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_1edb1aa9ea8d61379e5a385513ae1a99",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 4500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=f3c2d059-f15a-3a8f-8d31-8c29dbbb784c",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_1edb1aa9ea8d61379e5a385513ae1a99",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517420",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_1edb1aa9ea8d61379e5a385513ae1a99",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000056|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "1edb1aa9ea8d61379e5a385513ae1a99"
+    },
+    {
+     "participant": "9300",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 13,
+      "created": "2026-05-17 20:00:27"
+     },
+     "label": "Joe Flacco",
+     "short_label": "J. Flacco",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_1fe1aa33dbca848c7693007ca70e517d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=8ea797b1-da69-480f-8075-f39447246978"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_1fe1aa33dbca848c7693007ca70e517d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517441"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_1fe1aa33dbca848c7693007ca70e517d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189033230|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "1fe1aa33dbca848c7693007ca70e517d"
+    },
+    {
+     "participant": "23084",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Caleb Williams",
+     "short_label": "C. Williams",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_2a7b17fbd8dcf7a58fc71b68fd322a5f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554455_13L88808Q11353396Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_2a7b17fbd8dcf7a58fc71b68fd322a5f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 1200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=cda374c1-460d-347b-98f7-f637f7a7e12c",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_2a7b17fbd8dcf7a58fc71b68fd322a5f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517412",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_2a7b17fbd8dcf7a58fc71b68fd322a5f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000036|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "2a7b17fbd8dcf7a58fc71b68fd322a5f"
+    },
+    {
+     "participant": "18600",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Kyler Murray",
+     "short_label": "K. Murray",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_3c5155bf003c90f28aecbb8b887c5823",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554434_13L88808Q1629986Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_3c5155bf003c90f28aecbb8b887c5823",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=5f026a94-13ce-3d14-84db-75b0bf542220"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_3c5155bf003c90f28aecbb8b887c5823",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517421"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_3c5155bf003c90f28aecbb8b887c5823",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000055|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "3c5155bf003c90f28aecbb8b887c5823"
+    },
+    {
+     "participant": "24361",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 19,
+      "created": "2026-07-29 17:22:32"
+     },
+     "label": "Cade Klubnik",
+     "short_label": "C. Klubnik",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_456c1d22e7d3ae5f202c618cd3b72c19",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517440"
+        }
+       ]
+      }
+     ],
+     "id": "456c1d22e7d3ae5f202c618cd3b72c19"
+    },
+    {
+     "participant": "15642",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Jacoby Brissett",
+     "short_label": "J. Brissett",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_4b35effb7db5c58b7ac7629122bbe935",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554446_13L88808Q1800106Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_4b35effb7db5c58b7ac7629122bbe935",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=3f32842d-d869-3517-9e2b-79d983ead756",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_4b35effb7db5c58b7ac7629122bbe935",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517425",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_4b35effb7db5c58b7ac7629122bbe935",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000045|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "4b35effb7db5c58b7ac7629122bbe935"
+    },
+    {
+     "participant": "19196",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Joe Burrow",
+     "short_label": "J. Burrow",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_592d1792f10a7ba6f057d323aecbcfb7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554440_13L88808Q1788201Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_592d1792f10a7ba6f057d323aecbcfb7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=9aafea61-7052-3284-9a13-b92a0d70c438",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_592d1792f10a7ba6f057d323aecbcfb7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 700,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517403",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_592d1792f10a7ba6f057d323aecbcfb7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000050|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "592d1792f10a7ba6f057d323aecbcfb7"
+    },
+    {
+     "participant": "19780",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Trevor Lawrence",
+     "short_label": "T. Lawrence",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_5d33ff7b9bf8e93bed6248df76c81bc7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 1800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554426_13L88808Q1789968Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_5d33ff7b9bf8e93bed6248df76c81bc7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 1400,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=6e626ead-deb1-38e0-93da-e33b5cdaa8e0",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_5d33ff7b9bf8e93bed6248df76c81bc7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517411",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_5d33ff7b9bf8e93bed6248df76c81bc7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000063|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "5d33ff7b9bf8e93bed6248df76c81bc7"
+    },
+    {
+     "participant": "25968",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Shedeur Sanders",
+     "short_label": "S. Sanders",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_61df2f1c631ed227363d6189043e95b7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554427_13L88808Q12197814Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_61df2f1c631ed227363d6189043e95b7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=adea7791-f152-3d65-8f5e-ed111379fd1c",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_61df2f1c631ed227363d6189043e95b7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517437",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_61df2f1c631ed227363d6189043e95b7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000062|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "61df2f1c631ed227363d6189043e95b7"
+    },
+    {
+     "participant": "19781",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 13,
+      "created": "2026-05-17 20:00:27"
+     },
+     "label": "Justin Fields",
+     "short_label": "J. Fields",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_63d251bb369d7fc043e080fb9c189278",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554437_13L88808Q1788355Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_63d251bb369d7fc043e080fb9c189278",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=7094449e-5cbe-4174-a5ba-9faa55e30eff"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_63d251bb369d7fc043e080fb9c189278",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517438"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_63d251bb369d7fc043e080fb9c189278",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189033231|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "63d251bb369d7fc043e080fb9c189278"
+    },
+    {
+     "participant": "18635",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2200,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Justin Herbert",
+     "short_label": "J. Herbert",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_777cc71095a9fb162ef77ff80ab607af",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554436_13L88808Q1788356Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_777cc71095a9fb162ef77ff80ab607af",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=facdf52a-46a1-328d-b271-ee4c8a882fc5",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_777cc71095a9fb162ef77ff80ab607af",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517415",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_777cc71095a9fb162ef77ff80ab607af",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000053|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "777cc71095a9fb162ef77ff80ab607af"
+    },
+    {
+     "participant": "24755",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Cam Ward",
+     "short_label": "C. Ward",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_77e1631892f1fb35ae899ecbc6acac45",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554454_13L88808Q12279890Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_77e1631892f1fb35ae899ecbc6acac45",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=3140d640-124b-4ef6-b161-60a42ec2b506",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_77e1631892f1fb35ae899ecbc6acac45",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517423",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_77e1631892f1fb35ae899ecbc6acac45",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000037|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "77e1631892f1fb35ae899ecbc6acac45"
+    },
+    {
+     "participant": "19275",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4500,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Jalen Hurts",
+     "short_label": "J. Hurts",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_78c39d7ec8ee80faafed6a1aac18dc05",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554445_13L88808Q1788076Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_78c39d7ec8ee80faafed6a1aac18dc05",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 4500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=f180b983-cd55-3376-ab79-352b6f4aed74",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_78c39d7ec8ee80faafed6a1aac18dc05",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517424",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_78c39d7ec8ee80faafed6a1aac18dc05",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000046|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "78c39d7ec8ee80faafed6a1aac18dc05"
+    },
+    {
+     "participant": "22902",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Jayden Daniels",
+     "short_label": "J. Daniels",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_7f90a58b0868ff182aa2801ba5f586fb",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554442_13L88808Q1788145Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_7f90a58b0868ff182aa2801ba5f586fb",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=7aa28210-1d1e-3dea-9c02-76d85aaffea4",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_7f90a58b0868ff182aa2801ba5f586fb",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517422",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_7f90a58b0868ff182aa2801ba5f586fb",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000049|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "7f90a58b0868ff182aa2801ba5f586fb"
+    },
+    {
+     "participant": "23018",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 13,
+      "created": "2026-05-17 20:00:27"
+     },
+     "label": "J.J. McCarthy",
+     "short_label": "J.J. McCarthy",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_93fd68903ed6014dab757761fc4e7314",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554441_13L88808Q12214792Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_93fd68903ed6014dab757761fc4e7314",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=4904ee1d-c245-4389-88e1-093dd9c0308f"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_93fd68903ed6014dab757761fc4e7314",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517436"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_93fd68903ed6014dab757761fc4e7314",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189033229|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "93fd68903ed6014dab757761fc4e7314"
+    },
+    {
+     "participant": "23071",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "C.J. Stroud",
+     "short_label": "C.J. Stroud",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 3500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_94804a33002b0d4231287538975f1974",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 3500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554456_13L88808Q11948192Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_94804a33002b0d4231287538975f1974",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=773ea398-b02a-3c22-a62e-ca3f95d29ee2",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_94804a33002b0d4231287538975f1974",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 3000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517419",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_94804a33002b0d4231287538975f1974",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 3500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000035|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "94804a33002b0d4231287538975f1974"
+    },
+    {
+     "participant": "22910",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Bo Nix",
+     "short_label": "Bo Nix",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_9ef2612f56b681938b3aadc6499a7994",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554459_13L88808Q1787159Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_9ef2612f56b681938b3aadc6499a7994",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 3000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=36e1b9e4-540f-3fc0-9686-c99c13863a51",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_9ef2612f56b681938b3aadc6499a7994",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517416",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_9ef2612f56b681938b3aadc6499a7994",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000032|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "9ef2612f56b681938b3aadc6499a7994"
+    },
+    {
+     "participant": "11177",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 12500,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Kirk Cousins",
+     "short_label": "K. Cousins",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_a02049466e658190fe947477b7f0d1a3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554435_13L88808Q1800086Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_a02049466e658190fe947477b7f0d1a3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=7044d574-6d5d-3fb3-8e7e-0bf3aa3f73b0"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_a02049466e658190fe947477b7f0d1a3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517433"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_a02049466e658190fe947477b7f0d1a3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000054|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "a02049466e658190fe947477b7f0d1a3"
+    },
+    {
+     "participant": "16413",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1800,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Patrick Mahomes II",
+     "short_label": "P. Mahomes II",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_a83b30f93c0195f35de931625c7f1fb6",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 1400,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554429_13L88808Q1688337Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_a83b30f93c0195f35de931625c7f1fb6",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 1800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=dee6b71b-7179-36d7-aff9-927de124a676",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_a83b30f93c0195f35de931625c7f1fb6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 1200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517407",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_a83b30f93c0195f35de931625c7f1fb6",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000060|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "a83b30f93c0195f35de931625c7f1fb6"
+    },
+    {
+     "participant": "22900",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Bryce Young",
+     "short_label": "B. Young",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_abbe1306aa615ee011d7f34a67a47332",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554457_13L88808Q1787216Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_abbe1306aa615ee011d7f34a67a47332",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=fd08fdbb-8fce-32a8-93db-75bcacf8914f",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_abbe1306aa615ee011d7f34a67a47332",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000034|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "abbe1306aa615ee011d7f34a67a47332"
+    },
+    {
+     "participant": "19246",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2200,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Jordan Love",
+     "short_label": "J. Love",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_b8c458e4f877b381d022c9c1feb6c8ab",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 2200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554439_13L88808Q1788285Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_b8c458e4f877b381d022c9c1feb6c8ab",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=ce98cf86-956f-309b-9617-d2af14dbad06",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_b8c458e4f877b381d022c9c1feb6c8ab",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517413",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_b8c458e4f877b381d022c9c1feb6c8ab",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000051|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "b8c458e4f877b381d022c9c1feb6c8ab"
+    },
+    {
+     "participant": "22973",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 12500,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Michael Penix Jr.",
+     "short_label": "M. Penix Jr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c097809d8ab44e01271fc5ac568feda6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554430_13L88808Q1788880Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_c097809d8ab44e01271fc5ac568feda6",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 12500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=39140dbc-f06a-3943-b83a-d1495d479f15"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_c097809d8ab44e01271fc5ac568feda6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517431"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_c097809d8ab44e01271fc5ac568feda6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000059|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "c097809d8ab44e01271fc5ac568feda6"
+    },
+    {
+     "participant": "16398",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Deshaun Watson",
+     "short_label": "D. Watson",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c0b4f93092af2eda4b536289ce941ef3",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554450_13L88808Q1800068Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_c0b4f93092af2eda4b536289ce941ef3",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=c748ace4-0195-3cd4-a161-23f2f25aedc6"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_c0b4f93092af2eda4b536289ce941ef3",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517435"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_c0b4f93092af2eda4b536289ce941ef3",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000041|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "c0b4f93092af2eda4b536289ce941ef3"
+    },
+    {
+     "participant": "19797",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Brock Purdy",
+     "short_label": "B. Purdy",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c380fe38a8398ae7626633e4da018d83",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554458_13L88808Q1787211Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_c380fe38a8398ae7626633e4da018d83",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 1600,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=f916cbc2-5540-3269-99e7-f517801cc184",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_c380fe38a8398ae7626633e4da018d83",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517409",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_c380fe38a8398ae7626633e4da018d83",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000033|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "c380fe38a8398ae7626633e4da018d83"
+    },
+    {
+     "participant": "23160",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-05-18 19:20:51"
+     },
+     "label": "Jaxson Dart",
+     "short_label": "J. Dart",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c637c57dd6e430c35d7dc7eb5860662f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554443_13L88808Q12197842Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_c637c57dd6e430c35d7dc7eb5860662f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=8233a7fa-49e8-4520-beb5-4f223db6b686"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_c637c57dd6e430c35d7dc7eb5860662f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517429"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_c637c57dd6e430c35d7dc7eb5860662f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000048|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "c637c57dd6e430c35d7dc7eb5860662f"
+    },
+    {
+     "participant": "15501",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 750,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Jared Goff",
+     "short_label": "J. Goff",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c6b26d68647da5fb48aa89ec795ca666",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554444_13L88808Q1605251Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_c6b26d68647da5fb48aa89ec795ca666",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=d047a8cb-46f7-374d-91fa-a862c345263e",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_c6b26d68647da5fb48aa89ec795ca666",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517405",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_c6b26d68647da5fb48aa89ec795ca666",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000047|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "c6b26d68647da5fb48aa89ec795ca666"
+    },
+    {
+     "participant": "18232",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Daniel Jones",
+     "short_label": "D. Jones",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c8a75b6017bf935d06d6fb5d24cbe3e2",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554451_13L88808Q1800092Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_c8a75b6017bf935d06d6fb5d24cbe3e2",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=d0d2edaa-0fe9-3fd6-aad2-e5e4c7633d46",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_c8a75b6017bf935d06d6fb5d24cbe3e2",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517426",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_c8a75b6017bf935d06d6fb5d24cbe3e2",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000040|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "c8a75b6017bf935d06d6fb5d24cbe3e2"
+    },
+    {
+     "participant": "17236",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Sam Darnold",
+     "short_label": "S. Darnold",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_cdebd3b4caab66c3aef233302a8ae8da",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 2800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554428_13L88808Q1800102Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_cdebd3b4caab66c3aef233302a8ae8da",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 2200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=b0f10a42-6362-3864-9f05-fbb13eff0d22",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_cdebd3b4caab66c3aef233302a8ae8da",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517414",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_cdebd3b4caab66c3aef233302a8ae8da",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000061|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "cdebd3b4caab66c3aef233302a8ae8da"
+    },
+    {
+     "participant": "9451",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 900,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Matthew Stafford",
+     "short_label": "M. Stafford",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 900,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_dc4844611bff704f361fa6c7376849d7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 900,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554431_13L88808Q1800088Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_dc4844611bff704f361fa6c7376849d7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 850,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=c2ec48a1-0087-3e97-814a-5419f2cdbba0",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_dc4844611bff704f361fa6c7376849d7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517406",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_dc4844611bff704f361fa6c7376849d7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 900,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000058|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "dc4844611bff704f361fa6c7376849d7"
+    },
+    {
+     "participant": "23046",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Drake Maye",
+     "short_label": "D. Maye",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e0679bb76f54de0b6836adfc0975ccf1",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 1200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554449_13L88808Q11697336Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_e0679bb76f54de0b6836adfc0975ccf1",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=432446f9-284c-3113-9bee-bb8003d933d7",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_e0679bb76f54de0b6836adfc0975ccf1",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517408",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_e0679bb76f54de0b6836adfc0975ccf1",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000042|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "e0679bb76f54de0b6836adfc0975ccf1"
+    },
+    {
+     "participant": "19198",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Tua Tagovailoa",
+     "short_label": "T. Tagovailoa",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e4319e1c12762cd7fa75889c9195c60c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554425_13L88808Q1789976Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_e4319e1c12762cd7fa75889c9195c60c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=27086a8f-4dd9-3c57-8f09-0355458962e1"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_e4319e1c12762cd7fa75889c9195c60c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517430"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_e4319e1c12762cd7fa75889c9195c60c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000064|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "e4319e1c12762cd7fa75889c9195c60c"
+    },
+    {
+     "participant": "22953",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:50"
+     },
+     "label": "Carson Beck",
+     "short_label": "C. Beck",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e9adb1bb2e91cbf7dcc6ce26db5c0a6a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554453_13L88808Q12197865Q2-1"
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_e9adb1bb2e91cbf7dcc6ce26db5c0a6a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=f5b67811-a8c3-31cc-a412-8083ea2032c5"
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_e9adb1bb2e91cbf7dcc6ce26db5c0a6a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517439"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_e9adb1bb2e91cbf7dcc6ce26db5c0a6a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000038|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "e9adb1bb2e91cbf7dcc6ce26db5c0a6a"
+    },
+    {
+     "participant": "17298",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Josh Allen",
+     "short_label": "J. Allen",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_ec9ce566f42258f27f98fb17e0dee94b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 2200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554438_13L88808Q1629988Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_ec9ce566f42258f27f98fb17e0dee94b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=b54d4abd-3c84-3159-a636-edf6658836ec",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_ec9ce566f42258f27f98fb17e0dee94b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517418",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_ec9ce566f42258f27f98fb17e0dee94b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000052|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "ec9ce566f42258f27f98fb17e0dee94b"
+    },
+    {
+     "participant": "28013",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Fernando Mendoza",
+     "short_label": "F. Mendoza",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_ee40acc1d6d2afd5039ca278b15cd5e0",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554448_13L88808Q12401648Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_ee40acc1d6d2afd5039ca278b15cd5e0",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=91cb55dc-7ead-3476-81e9-f62800c6d827",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_ee40acc1d6d2afd5039ca278b15cd5e0",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517434",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_ee40acc1d6d2afd5039ca278b15cd5e0",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000043|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "ee40acc1d6d2afd5039ca278b15cd5e0"
+    },
+    {
+     "participant": "11687",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Geno Smith",
+     "short_label": "G. Smith",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_ef69a6742307e58ada825289dbe1506b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554447_13L88808Q11330947Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_ef69a6742307e58ada825289dbe1506b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=eb0ecfc7-5b6f-3ebd-8f76-bdfee7180e5e",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_ef69a6742307e58ada825289dbe1506b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:51",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517432",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_ef69a6742307e58ada825289dbe1506b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000044|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "ef69a6742307e58ada825289dbe1506b"
+    },
+    {
+     "participant": "15600",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 750,
+      "book_id": 13,
+      "created": "2026-05-17 19:05:51"
+     },
+     "label": "Dak Prescott",
+     "short_label": "D. Prescott",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_f889bc55b22d76464a4d6ff0d97e5b5f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:12",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.draftkings.com/event/75524381-60bf-4b8f-1c52-08debc0b8e43?outcomes=0QA341864659%232178554452_13L88808Q1800081Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 13,
+       "lines": [
+        {
+         "id": "13_f889bc55b22d76464a4d6ff0d97e5b5f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:00:35",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sportsbook.caesars.com/us/nj/bet/betslip?selectionIds=29d77bd7-1731-3830-9772-4bc673141eda",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 19,
+       "lines": [
+        {
+         "id": "19_f889bc55b22d76464a4d6ff0d97e5b5f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:08:50",
+         "cost": 800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://sports.betmgm.com/en/sports?wm=7133260&options=19760712-1539144930-2242517404",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_f889bc55b22d76464a4d6ff0d97e5b5f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:42",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4189000039|0|append",
+         "metrics": null
+        }
+       ]
+      }
+     ],
+     "id": "f889bc55b22d76464a4d6ff0d97e5b5f"
+    }
+   ]
+  }
+ ]
+}

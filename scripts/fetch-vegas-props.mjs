@@ -170,15 +170,18 @@ for (const { slug, data } of markets) {
 // The x-api-key is the one bettingpros.com itself sends for anonymous
 // visitors, captured from the site's own requests.
 const BP_KEY = 'CHi8Hy5CEE4khd46XNYL23dCFX96oUdw6qOt1Dnh';
-const BP_MARKETS = {
-  300: 'passing_yards',
-  301: 'rushing_yards',
-  302: 'receiving_yards',
-  303: 'interceptions',
-  304: 'passing_tds',
-  305: 'rushing_tds',
-  306: 'receiving_tds',
-  330: 'receptions',
+// The per-player over/under totals get merged into the normalized file;
+// every other season market (awards, most-X leaders, team futures) is
+// snapshotted raw only.
+const BP_TOTALS = {
+  'total-passing-yards': 'passing_yards',
+  'total-rushing-yards': 'rushing_yards',
+  'total-receiving-yards': 'receiving_yards',
+  'total-interceptions': 'interceptions',
+  'total-passing-touchdowns': 'passing_tds',
+  'total-rushing-touchdowns': 'rushing_tds',
+  'total-rec-touchdowns': 'receiving_tds',
+  'total-receptions': 'receptions',
 };
 const BP_BRANDS = {
   0: 'consensus',
@@ -193,12 +196,25 @@ const BP_BRANDS = {
 const entryByName = new Map(Object.values(byPlayer).map((e) => [normalize(e.name), e]));
 let bpCells = 0;
 let bpPlayers = 0;
-for (const [marketId, market] of Object.entries(BP_MARKETS)) {
+let bpSaved = 0;
+const bpMarkets = [];
+for (const cat of ['player-futures', 'team-futures']) {
+  try {
+    const d = await fetchJson(`https://api.bettingpros.com/v3/markets?sport=NFL&market_category=${cat}`, {
+      headers: { 'x-api-key': BP_KEY },
+    });
+    bpMarkets.push(...(d.markets ?? []).filter((m) => m.period === 'season' && m.active));
+  } catch (err) {
+    console.error(`bettingpros ${cat} market list failed — ${err.message ?? err}`);
+  }
+}
+for (const bpm of bpMarkets) {
+  const market = BP_TOTALS[bpm.slug] ?? bpm.slug.replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
   const offers = [];
   try {
     for (let page = 1, pages = 1; page <= pages; page++) {
       const d = await fetchJson(
-        `https://api.bettingpros.com/v3/offers?sport=NFL&market_id=${marketId}&season=${season}&limit=10&page=${page}`,
+        `https://api.bettingpros.com/v3/offers?sport=NFL&market_id=${bpm.id}&season=${season}&limit=10&page=${page}`,
         { headers: { 'x-api-key': BP_KEY } },
       );
       pages = d._pagination?.total_pages ?? 1;
@@ -209,10 +225,22 @@ for (const [marketId, market] of Object.entries(BP_MARKETS)) {
     console.error(`bettingpros ${market}: request failed — ${err.message ?? err}`);
     continue;
   }
+  // Same book-trim as the Action Network files: keep the consensus and the
+  // majors, drop pick'em apps and regional duplicates.
+  const keep = new Set([0, 12, 10, 19, 13, 18, 2, 24]);
+  const trimmed = offers.map((o) => ({
+    ...o,
+    selections: (o.selections ?? []).map((s) => ({
+      ...s,
+      books: (s.books ?? []).filter((b) => keep.has(b.id)),
+    })),
+  }));
   await writeFile(
     new URL(`bettingpros_${market}.json`, OUT),
-    JSON.stringify({ market_id: Number(marketId), market, season, offers }, null, 1),
+    JSON.stringify({ market_id: bpm.id, market, slug: bpm.slug, season, offers: trimmed }, null, 1),
   );
+  bpSaved++;
+  if (!BP_TOTALS[bpm.slug]) continue; // awards/leaders/team markets: raw snapshot only
   for (const offer of offers) {
     const part = offer.participants?.[0];
     if (!part?.name) continue;
@@ -257,7 +285,9 @@ for (const [marketId, market] of Object.entries(BP_MARKETS)) {
     bpCells++;
   }
 }
-console.log(`bettingpros filled ${bpCells} player-market gaps, added ${bpPlayers} new players`);
+console.log(
+  `bettingpros: ${bpSaved}/${bpMarkets.length} season markets saved, filled ${bpCells} player-market gaps, added ${bpPlayers} new players`,
+);
 
 let matched = 0;
 for (const entry of Object.values(byPlayer)) {

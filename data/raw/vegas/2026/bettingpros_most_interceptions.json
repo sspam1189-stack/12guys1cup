@@ -1,0 +1,5092 @@
+{
+ "market_id": 47,
+ "market": "most_interceptions",
+ "slug": "most-interceptions",
+ "season": 2026,
+ "offers": [
+  {
+   "id": "7d973cde0fe704c4543a62e6e270d3e5",
+   "market_id": 47,
+   "event_id": null,
+   "player_id": null,
+   "team_id": null,
+   "opponent_id": null,
+   "link": "",
+   "active": true,
+   "participants": [
+    {
+     "id": "25509",
+     "name": "Chamarri Conner",
+     "link": "/nfl/props/chamarri-conner/",
+     "player": {
+      "short_name": "C. Conner",
+      "first_name": "Chamarri",
+      "last_name": "Conner",
+      "image": "https://images.fantasypros.com/images/players/nfl/25509/headshot/210x210.webp",
+      "position": "S",
+      "team": "KC",
+      "slug": "chamarri-conner",
+      "jersey_number": 27
+     }
+    },
+    {
+     "id": "24705",
+     "name": "Joey Porter Jr.",
+     "link": "/nfl/props/joey-porter-jr/",
+     "player": {
+      "short_name": "J. Porter Jr.",
+      "first_name": "Joey",
+      "last_name": "Porter",
+      "image": "https://images.fantasypros.com/images/players/nfl/24705/headshot/210x210.webp",
+      "position": "CB",
+      "team": "PIT",
+      "slug": "joey-porter-jr",
+      "jersey_number": 24
+     }
+    },
+    {
+     "id": "23939",
+     "name": "Isaiah Pola-Mao",
+     "link": "/nfl/props/isaiah-pola-mao/",
+     "player": {
+      "short_name": "I. Pola-Mao",
+      "first_name": "Isaiah",
+      "last_name": "Pola-Mao",
+      "image": "https://images.fantasypros.com/images/players/nfl/23939/headshot/210x210.webp",
+      "position": "S",
+      "team": "LV",
+      "slug": "isaiah-pola-mao",
+      "jersey_number": 20
+     }
+    },
+    {
+     "id": "17544",
+     "name": "Jessie Bates III",
+     "link": "/nfl/props/jessie-bates-iii/",
+     "player": {
+      "short_name": "J. Bates III",
+      "first_name": "Jessie",
+      "last_name": "Bates",
+      "image": "https://images.fantasypros.com/images/players/nfl/17544/headshot/210x210.webp",
+      "position": "S",
+      "team": "ATL",
+      "slug": "jessie-bates-iii",
+      "jersey_number": 3
+     }
+    },
+    {
+     "id": "19254",
+     "name": "Jaylon Johnson",
+     "link": "/nfl/props/jaylon-johnson/",
+     "player": {
+      "short_name": "J. Johnson",
+      "first_name": "Jaylon",
+      "last_name": "Johnson",
+      "image": "https://images.fantasypros.com/images/players/nfl/19254/headshot/210x210.webp",
+      "position": "CB",
+      "team": "CHI",
+      "slug": "jaylon-johnson",
+      "jersey_number": 1
+     }
+    },
+    {
+     "id": "23243",
+     "name": "Nahshon Wright",
+     "link": "/nfl/props/nahshon-wright/",
+     "player": {
+      "short_name": "N. Wright",
+      "first_name": "Nahshon",
+      "last_name": "Wright",
+      "image": "https://images.fantasypros.com/images/players/nfl/23243/headshot/210x210.webp",
+      "position": "CB",
+      "team": "NYJ",
+      "slug": "nahshon-wright",
+      "jersey_number": 26
+     }
+    },
+    {
+     "id": "23245",
+     "name": "Ernest Jones IV",
+     "link": "/nfl/props/ernest-jones/",
+     "player": {
+      "short_name": "E. Jones IV",
+      "first_name": "Ernest",
+      "last_name": "Jones",
+      "image": "https://images.fantasypros.com/images/players/nfl/23245/headshot/210x210.webp",
+      "position": "LB",
+      "team": "SEA",
+      "slug": "ernest-jones",
+      "jersey_number": 13
+     }
+    },
+    {
+     "id": "26126",
+     "name": "Mike Sainristil",
+     "link": "/nfl/props/mike-sainristil/",
+     "player": {
+      "short_name": "M. Sainristil",
+      "first_name": "Mike",
+      "last_name": "Sainristil",
+      "image": "https://images.fantasypros.com/images/players/nfl/26126/headshot/210x210.webp",
+      "position": "CB",
+      "team": "WAS",
+      "slug": "mike-sainristil",
+      "jersey_number": 0
+     }
+    },
+    {
+     "id": "26229",
+     "name": "Cole Bishop",
+     "link": "/nfl/props/cole-bishop/",
+     "player": {
+      "short_name": "C. Bishop",
+      "first_name": "Cole",
+      "last_name": "Bishop",
+      "image": "https://images.fantasypros.com/images/players/nfl/26229/headshot/210x210.webp",
+      "position": "S",
+      "team": "BUF",
+      "slug": "cole-bishop",
+      "jersey_number": 24
+     }
+    },
+    {
+     "id": "27047",
+     "name": "Mansoor Delane",
+     "link": "/nfl/props/mansoor-delane/",
+     "player": {
+      "short_name": "M. Delane",
+      "first_name": "Mansoor",
+      "last_name": "Delane",
+      "image": "https://images.fantasypros.com/images/players/nfl/27047/headshot/210x210.webp",
+      "position": "CB",
+      "team": "KC",
+      "slug": "mansoor-delane",
+      "jersey_number": 5
+     }
+    },
+    {
+     "id": "26098",
+     "name": "Kool-Aid McKinstry",
+     "link": "/nfl/props/kool-aid-mckinstry/",
+     "player": {
+      "short_name": "K. McKinstry",
+      "first_name": "Kool-Aid",
+      "last_name": "McKinstry",
+      "image": "https://images.fantasypros.com/images/players/nfl/26098/headshot/210x210.webp",
+      "position": "CB",
+      "team": "NO",
+      "slug": "kool-aid-mckinstry",
+      "jersey_number": 1
+     }
+    },
+    {
+     "id": "27081",
+     "name": "Andrew Mukuba",
+     "link": "/nfl/props/andrew-mukuba/",
+     "player": {
+      "short_name": "A. Mukuba",
+      "first_name": "Andrew",
+      "last_name": "Mukuba",
+      "image": "https://images.fantasypros.com/images/players/nfl/27081/headshot/210x210.webp",
+      "position": "S",
+      "team": "PHI",
+      "slug": "andrew-mukuba",
+      "jersey_number": 24
+     }
+    },
+    {
+     "id": "18220",
+     "name": "Byron Murphy Jr.",
+     "link": "/nfl/props/byron-murphy/",
+     "player": {
+      "short_name": "B. Murphy Jr.",
+      "first_name": "Byron",
+      "last_name": "Murphy",
+      "image": "https://images.fantasypros.com/images/players/nfl/18220/headshot/210x210.webp",
+      "position": "CB",
+      "team": "MIN",
+      "slug": "byron-murphy",
+      "jersey_number": 7
+     }
+    },
+    {
+     "id": "22701",
+     "name": "Jaycee Horn",
+     "link": "/nfl/props/jaycee-horn/",
+     "player": {
+      "short_name": "J. Horn",
+      "first_name": "Jaycee",
+      "last_name": "Horn",
+      "image": "https://images.fantasypros.com/images/players/nfl/22701/headshot/210x210.webp",
+      "position": "CB",
+      "team": "CAR",
+      "slug": "jaycee-horn",
+      "jersey_number": 8
+     }
+    },
+    {
+     "id": "16390",
+     "name": "Marlon Humphrey",
+     "link": "/nfl/props/marlon-humphrey/",
+     "player": {
+      "short_name": "M. Humphrey",
+      "first_name": "Marlon",
+      "last_name": "Humphrey",
+      "image": "https://images.fantasypros.com/images/players/nfl/16390/headshot/210x210.webp",
+      "position": "CB",
+      "team": "BAL",
+      "slug": "marlon-humphrey",
+      "jersey_number": 44
+     }
+    },
+    {
+     "id": "17375",
+     "name": "D.J. Reed Jr.",
+     "link": "/nfl/props/dj-reed/",
+     "player": {
+      "short_name": "D.J. Reed Jr.",
+      "first_name": "D.J.",
+      "last_name": "Reed",
+      "image": "https://images.fantasypros.com/images/players/nfl/17375/headshot/210x210.webp",
+      "position": "CB",
+      "team": "DET",
+      "slug": "dj-reed",
+      "jersey_number": 4
+     }
+    },
+    {
+     "id": "23498",
+     "name": "Derek Stingley Jr.",
+     "link": "/nfl/props/derek-stingley-jr/",
+     "player": {
+      "short_name": "D. Stingley Jr.",
+      "first_name": "Derek",
+      "last_name": "Stingley",
+      "image": "https://images.fantasypros.com/images/players/nfl/23498/headshot/210x210.webp",
+      "position": "CB",
+      "team": "HOU",
+      "slug": "derek-stingley-jr",
+      "jersey_number": 24
+     }
+    },
+    {
+     "id": "23492",
+     "name": "Trent McDuffie",
+     "link": "/nfl/props/trent-mcduffie/",
+     "player": {
+      "short_name": "T. McDuffie",
+      "first_name": "Trent",
+      "last_name": "McDuffie",
+      "image": "https://images.fantasypros.com/images/players/nfl/23492/headshot/210x210.webp",
+      "position": "CB",
+      "team": "LAR",
+      "slug": "trent-mcduffie",
+      "jersey_number": 22
+     }
+    },
+    {
+     "id": "23800",
+     "name": "Kerby Joseph",
+     "link": "/nfl/props/kerby-joseph/",
+     "player": {
+      "short_name": "K. Joseph",
+      "first_name": "Kerby",
+      "last_name": "Joseph",
+      "image": "https://images.fantasypros.com/images/players/nfl/23800/headshot/210x210.webp",
+      "position": "S",
+      "team": "DET",
+      "slug": "kerby-joseph",
+      "jersey_number": 31
+     }
+    },
+    {
+     "id": "19216",
+     "name": "Xavier McKinney",
+     "link": "/nfl/props/xavier-mckinney/",
+     "player": {
+      "short_name": "X. McKinney",
+      "first_name": "Xavier",
+      "last_name": "McKinney",
+      "image": "https://images.fantasypros.com/images/players/nfl/19216/headshot/210x210.webp",
+      "position": "S",
+      "team": "GB",
+      "slug": "xavier-mckinney",
+      "jersey_number": 29
+     }
+    },
+    {
+     "id": "27067",
+     "name": "Xavier Watts",
+     "link": "/nfl/props/xavier-watts/",
+     "player": {
+      "short_name": "X. Watts",
+      "first_name": "Xavier",
+      "last_name": "Watts",
+      "image": "https://images.fantasypros.com/images/players/nfl/27067/headshot/210x210.webp",
+      "position": "S",
+      "team": "ATL",
+      "slug": "xavier-watts",
+      "jersey_number": 31
+     }
+    },
+    {
+     "id": "25235",
+     "name": "Brian Branch",
+     "link": "/nfl/props/brian-branch/",
+     "player": {
+      "short_name": "B. Branch",
+      "first_name": "Brian",
+      "last_name": "Branch",
+      "image": "https://images.fantasypros.com/images/players/nfl/25235/headshot/210x210.webp",
+      "position": "S",
+      "team": "DET",
+      "slug": "brian-branch",
+      "jersey_number": 32
+     }
+    },
+    {
+     "id": "23881",
+     "name": "Riq Woolen",
+     "link": "/nfl/props/tariq-woolen/",
+     "player": {
+      "short_name": "R. Woolen",
+      "first_name": "Riq",
+      "last_name": "Woolen",
+      "image": "https://images.fantasypros.com/images/players/nfl/23881/headshot/210x210.webp",
+      "position": "CB",
+      "team": "PHI",
+      "slug": "tariq-woolen",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "26111",
+     "name": "Calen Bullock",
+     "link": "/nfl/props/calen-bullock/",
+     "player": {
+      "short_name": "C. Bullock",
+      "first_name": "Calen",
+      "last_name": "Bullock",
+      "image": "https://images.fantasypros.com/images/players/nfl/26111/headshot/210x210.webp",
+      "position": "S",
+      "team": "HOU",
+      "slug": "calen-bullock",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "18637",
+     "name": "Mike Jackson Sr.",
+     "link": "/nfl/props/michael-jackson-cb/",
+     "player": {
+      "short_name": "M. Jackson Sr.",
+      "first_name": "Mike",
+      "last_name": "Jackson",
+      "image": "https://images.fantasypros.com/images/players/nfl/18637/headshot/210x210.webp",
+      "position": "CB",
+      "team": "CAR",
+      "slug": "michael-jackson-cb",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "17310",
+     "name": "Derwin James Jr.",
+     "link": "/nfl/props/derwin-james/",
+     "player": {
+      "short_name": "D. James Jr.",
+      "first_name": "Derwin",
+      "last_name": "James",
+      "image": "https://images.fantasypros.com/images/players/nfl/17310/headshot/210x210.webp",
+      "position": "S",
+      "team": "LAC",
+      "slug": "derwin-james",
+      "jersey_number": 3
+     }
+    },
+    {
+     "id": "17314",
+     "name": "Denzel Ward",
+     "link": "/nfl/props/denzel-ward/",
+     "player": {
+      "short_name": "D. Ward",
+      "first_name": "Denzel",
+      "last_name": "Ward",
+      "image": "https://images.fantasypros.com/images/players/nfl/17314/headshot/210x210.webp",
+      "position": "CB",
+      "team": "CLE",
+      "slug": "denzel-ward",
+      "jersey_number": 21
+     }
+    },
+    {
+     "id": "24819",
+     "name": "Ja'Quan McMillian",
+     "link": "/nfl/props/jaquan-mcmillian/",
+     "player": {
+      "short_name": "J. McMillian",
+      "first_name": "Ja'Quan",
+      "last_name": "McMillian",
+      "image": "https://images.fantasypros.com/images/players/nfl/24819/headshot/210x210.webp",
+      "position": "CB",
+      "team": "DEN",
+      "slug": "jaquan-mcmillian",
+      "jersey_number": 29
+     }
+    },
+    {
+     "id": "23472",
+     "name": "Sauce Gardner",
+     "link": "/nfl/props/ahmad-gardner/",
+     "player": {
+      "short_name": "S. Gardner",
+      "first_name": "Sauce",
+      "last_name": "Gardner",
+      "image": "https://images.fantasypros.com/images/players/nfl/23472/headshot/210x210.webp",
+      "position": "CB",
+      "team": "IND",
+      "slug": "ahmad-gardner",
+      "jersey_number": 1
+     }
+    },
+    {
+     "id": "19248",
+     "name": "Brandon Jones",
+     "link": "/nfl/props/brandon-jones-s/",
+     "player": {
+      "short_name": "B. Jones",
+      "first_name": "Brandon",
+      "last_name": "Jones",
+      "image": "https://images.fantasypros.com/images/players/nfl/19248/headshot/210x210.webp",
+      "position": "S",
+      "team": "DEN",
+      "slug": "brandon-jones-s",
+      "jersey_number": 22
+     }
+    },
+    {
+     "id": "27967",
+     "name": "Dillon Thieneman",
+     "link": "/nfl/props/dillon-thieneman/",
+     "player": {
+      "short_name": "D. Thieneman",
+      "first_name": "Dillon",
+      "last_name": "Thieneman",
+      "image": "https://images.fantasypros.com/images/players/nfl/27967/headshot/210x210.webp",
+      "position": "S",
+      "team": "CHI",
+      "slug": "dillon-thieneman",
+      "jersey_number": 31
+     }
+    },
+    {
+     "id": "17342",
+     "name": "Tremaine Edmunds",
+     "link": "/nfl/props/tremaine-edmunds/",
+     "player": {
+      "short_name": "T. Edmunds",
+      "first_name": "Tremaine",
+      "last_name": "Edmunds",
+      "image": "https://images.fantasypros.com/images/players/nfl/17342/headshot/210x210.webp",
+      "position": "LB",
+      "team": "NYG",
+      "slug": "tremaine-edmunds",
+      "jersey_number": 49
+     }
+    },
+    {
+     "id": "25238",
+     "name": "Christian Gonzalez",
+     "link": "/nfl/props/christian-gonzalez/",
+     "player": {
+      "short_name": "C. Gonzalez",
+      "first_name": "Christian",
+      "last_name": "Gonzalez",
+      "image": "https://images.fantasypros.com/images/players/nfl/25238/headshot/210x210.webp",
+      "position": "CB",
+      "team": "NE",
+      "slug": "christian-gonzalez",
+      "jersey_number": 0
+     }
+    },
+    {
+     "id": "24197",
+     "name": "Dax Hill",
+     "link": "/nfl/props/daxton-hill/",
+     "player": {
+      "short_name": "D. Hill",
+      "first_name": "Dax",
+      "last_name": "Hill",
+      "image": "https://images.fantasypros.com/images/players/nfl/24197/headshot/210x210.webp",
+      "position": "S",
+      "team": "CIN",
+      "slug": "daxton-hill",
+      "jersey_number": 23
+     }
+    },
+    {
+     "id": "26106",
+     "name": "Quinyon Mitchell",
+     "link": "/nfl/props/quinyon-mitchell/",
+     "player": {
+      "short_name": "Q. Mitchell",
+      "first_name": "Quinyon",
+      "last_name": "Mitchell",
+      "image": "https://images.fantasypros.com/images/players/nfl/26106/headshot/210x210.webp",
+      "position": "CB",
+      "team": "PHI",
+      "slug": "quinyon-mitchell",
+      "jersey_number": 27
+     }
+    },
+    {
+     "id": "22817",
+     "name": "Talanoa Hufanga",
+     "link": "/nfl/props/talanoa-hufanga/",
+     "player": {
+      "short_name": "T. Hufanga",
+      "first_name": "Talanoa",
+      "last_name": "Hufanga",
+      "image": "https://images.fantasypros.com/images/players/nfl/22817/headshot/210x210.webp",
+      "position": "S",
+      "team": "DEN",
+      "slug": "talanoa-hufanga",
+      "jersey_number": 9
+     }
+    },
+    {
+     "id": "24551",
+     "name": "DaRon Bland",
+     "link": "/nfl/props/daron-bland/",
+     "player": {
+      "short_name": "D. Bland",
+      "first_name": "DaRon",
+      "last_name": "Bland",
+      "image": "https://images.fantasypros.com/images/players/nfl/24551/headshot/210x210.webp",
+      "position": "CB",
+      "team": "DAL",
+      "slug": "daron-bland",
+      "jersey_number": 26
+     }
+    },
+    {
+     "id": "26107",
+     "name": "Denzel Burke",
+     "link": "/nfl/props/denzel-burke/",
+     "player": {
+      "short_name": "D. Burke",
+      "first_name": "Denzel",
+      "last_name": "Burke",
+      "image": "https://images.fantasypros.com/images/players/nfl/26107/headshot/210x210.webp",
+      "position": "CB",
+      "team": "ARI",
+      "slug": "denzel-burke",
+      "jersey_number": 29
+     }
+    },
+    {
+     "id": "17344",
+     "name": "DeShon Elliott",
+     "link": "/nfl/props/deshon-elliott/",
+     "player": {
+      "short_name": "D. Elliott",
+      "first_name": "DeShon",
+      "last_name": "Elliott",
+      "image": "https://images.fantasypros.com/images/players/nfl/17344/headshot/210x210.webp",
+      "position": "S",
+      "team": "PIT",
+      "slug": "deshon-elliott",
+      "jersey_number": 25
+     }
+    },
+    {
+     "id": "23471",
+     "name": "Jordan Battle",
+     "link": "/nfl/props/jordan-battle/",
+     "player": {
+      "short_name": "J. Battle",
+      "first_name": "Jordan",
+      "last_name": "Battle",
+      "image": "https://images.fantasypros.com/images/players/nfl/23471/headshot/210x210.webp",
+      "position": "S",
+      "team": "CIN",
+      "slug": "jordan-battle",
+      "jersey_number": 27
+     }
+    },
+    {
+     "id": "18583",
+     "name": "Jamel Dean",
+     "link": "/nfl/props/jamel-dean/",
+     "player": {
+      "short_name": "J. Dean",
+      "first_name": "Jamel",
+      "last_name": "Dean",
+      "image": "https://images.fantasypros.com/images/players/nfl/18583/headshot/210x210.webp",
+      "position": "CB",
+      "team": "PIT",
+      "slug": "jamel-dean",
+      "jersey_number": 35
+     }
+    },
+    {
+     "id": "28065",
+     "name": "Chris Johnson",
+     "link": "/nfl/props/chris-johnson-cb-2/",
+     "player": {
+      "short_name": "C. Johnson",
+      "first_name": "Chris",
+      "last_name": "Johnson",
+      "image": "https://images.fantasypros.com/images/players/nfl/28065/headshot/210x210.webp",
+      "position": "CB",
+      "team": "MIA",
+      "slug": "chris-johnson-cb-2",
+      "jersey_number": 3
+     }
+    },
+    {
+     "id": "22742",
+     "name": "Elijah Molden",
+     "link": "/nfl/props/elijah-molden/",
+     "player": {
+      "short_name": "E. Molden",
+      "first_name": "Elijah",
+      "last_name": "Molden",
+      "image": "https://images.fantasypros.com/images/players/nfl/22742/headshot/210x210.webp",
+      "position": "CB",
+      "team": "LAC",
+      "slug": "elijah-molden",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "27017",
+     "name": "Malaki Starks",
+     "link": "/nfl/props/malaki-starks/",
+     "player": {
+      "short_name": "M. Starks",
+      "first_name": "Malaki",
+      "last_name": "Starks",
+      "image": "https://images.fantasypros.com/images/players/nfl/27017/headshot/210x210.webp",
+      "position": "S",
+      "team": "BAL",
+      "slug": "malaki-starks",
+      "jersey_number": 24
+     }
+    },
+    {
+     "id": "25258",
+     "name": "Ji'Ayir Brown",
+     "link": "/nfl/props/jiayir-brown/",
+     "player": {
+      "short_name": "J. Brown",
+      "first_name": "Ji'Ayir",
+      "last_name": "Brown",
+      "image": "https://images.fantasypros.com/images/players/nfl/25258/headshot/210x210.webp",
+      "position": "S",
+      "team": "SF",
+      "slug": "jiayir-brown",
+      "jersey_number": 27
+     }
+    },
+    {
+     "id": "22757",
+     "name": "Cam Bynum",
+     "link": "/nfl/props/camryn-bynum/",
+     "player": {
+      "short_name": "C. Bynum",
+      "first_name": "Cam",
+      "last_name": "Bynum",
+      "image": "https://images.fantasypros.com/images/players/nfl/22757/headshot/210x210.webp",
+      "position": "S",
+      "team": "IND",
+      "slug": "camryn-bynum",
+      "jersey_number": 0
+     }
+    },
+    {
+     "id": "23890",
+     "name": "Marcus Jones",
+     "link": "/nfl/props/marcus-jones/",
+     "player": {
+      "short_name": "M. Jones",
+      "first_name": "Marcus",
+      "last_name": "Jones",
+      "image": "https://images.fantasypros.com/images/players/nfl/23890/headshot/210x210.webp",
+      "position": "CB",
+      "team": "NE",
+      "slug": "marcus-jones",
+      "jersey_number": 25
+     }
+    },
+    {
+     "id": "18243",
+     "name": "Julian Love",
+     "link": "/nfl/props/julian-love/",
+     "player": {
+      "short_name": "J. Love",
+      "first_name": "Julian",
+      "last_name": "Love",
+      "image": "https://images.fantasypros.com/images/players/nfl/18243/headshot/210x210.webp",
+      "position": "S",
+      "team": "SEA",
+      "slug": "julian-love",
+      "jersey_number": 20
+     }
+    },
+    {
+     "id": "19266",
+     "name": "Antoine Winfield Jr.",
+     "link": "/nfl/props/antoine-winfield-s/",
+     "player": {
+      "short_name": "A. Winfield Jr.",
+      "first_name": "Antoine",
+      "last_name": "Winfield",
+      "image": "https://images.fantasypros.com/images/players/nfl/19266/headshot/210x210.webp",
+      "position": "S",
+      "team": "TB",
+      "slug": "antoine-winfield-s",
+      "jersey_number": 31
+     }
+    },
+    {
+     "id": "23719",
+     "name": "Jaquan Brisker",
+     "link": "/nfl/props/jaquan-brisker/",
+     "player": {
+      "short_name": "J. Brisker",
+      "first_name": "Jaquan",
+      "last_name": "Brisker",
+      "image": "https://images.fantasypros.com/images/players/nfl/23719/headshot/210x210.webp",
+      "position": "S",
+      "team": "PIT",
+      "slug": "jaquan-brisker",
+      "jersey_number": 3
+     }
+    },
+    {
+     "id": "15635",
+     "name": "Kevin Byard III",
+     "link": "/nfl/props/kevin-byard/",
+     "player": {
+      "short_name": "K. Byard III",
+      "first_name": "Kevin",
+      "last_name": "Byard",
+      "image": "https://images.fantasypros.com/images/players/nfl/15635/headshot/210x210.webp",
+      "position": "S",
+      "team": "NE",
+      "slug": "kevin-byard",
+      "jersey_number": 31
+     }
+    },
+    {
+     "id": "18589",
+     "name": "Amani Hooker",
+     "link": "/nfl/props/amani-hooker/",
+     "player": {
+      "short_name": "A. Hooker",
+      "first_name": "Amani",
+      "last_name": "Hooker",
+      "image": "https://images.fantasypros.com/images/players/nfl/18589/headshot/210x210.webp",
+      "position": "S",
+      "team": "TEN",
+      "slug": "amani-hooker",
+      "jersey_number": 37
+     }
+    },
+    {
+     "id": "27950",
+     "name": "Caleb Downs",
+     "link": "/nfl/props/caleb-downs/",
+     "player": {
+      "short_name": "C. Downs",
+      "first_name": "Caleb",
+      "last_name": "Downs",
+      "image": "https://images.fantasypros.com/images/players/nfl/27950/headshot/210x210.webp",
+      "position": "S",
+      "team": "DAL",
+      "slug": "caleb-downs",
+      "jersey_number": 13
+     }
+    },
+    {
+     "id": "19459",
+     "name": "Kam Curl",
+     "link": "/nfl/props/kamren-curl/",
+     "player": {
+      "short_name": "K. Curl",
+      "first_name": "Kam",
+      "last_name": "Curl",
+      "image": "https://images.fantasypros.com/images/players/nfl/19459/headshot/210x210.webp",
+      "position": "S",
+      "team": "LAR",
+      "slug": "kamren-curl",
+      "jersey_number": 3
+     }
+    },
+    {
+     "id": "27053",
+     "name": "Nick Emmanwori",
+     "link": "/nfl/props/nick-emmanwori/",
+     "player": {
+      "short_name": "N. Emmanwori",
+      "first_name": "Nick",
+      "last_name": "Emmanwori",
+      "image": "https://images.fantasypros.com/images/players/nfl/27053/headshot/210x210.webp",
+      "position": "S",
+      "team": "SEA",
+      "slug": "nick-emmanwori",
+      "jersey_number": 3
+     }
+    },
+    {
+     "id": "22706",
+     "name": "Tyson Campbell",
+     "link": "/nfl/props/tyson-campbell/",
+     "player": {
+      "short_name": "T. Campbell",
+      "first_name": "Tyson",
+      "last_name": "Campbell",
+      "image": "https://images.fantasypros.com/images/players/nfl/22706/headshot/210x210.webp",
+      "position": "CB",
+      "team": "CLE",
+      "slug": "tyson-campbell",
+      "jersey_number": 7
+     }
+    },
+    {
+     "id": "26118",
+     "name": "Kamari Lassiter",
+     "link": "/nfl/props/kamari-lassiter/",
+     "player": {
+      "short_name": "K. Lassiter",
+      "first_name": "Kamari",
+      "last_name": "Lassiter",
+      "image": "https://images.fantasypros.com/images/players/nfl/26118/headshot/210x210.webp",
+      "position": "CB",
+      "team": "HOU",
+      "slug": "kamari-lassiter",
+      "jersey_number": 3
+     }
+    },
+    {
+     "id": "23609",
+     "name": "Pat Surtain II",
+     "link": "/nfl/props/patrick-surtain-ii/",
+     "player": {
+      "short_name": "P. Surtain II",
+      "first_name": "Pat",
+      "last_name": "Surtain",
+      "image": "https://images.fantasypros.com/images/players/nfl/23609/headshot/210x210.webp",
+      "position": "CB",
+      "team": "DEN",
+      "slug": "patrick-surtain-ii",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "22754",
+     "name": "Reed Blankenship",
+     "link": "/nfl/props/reed-blankenship/",
+     "player": {
+      "short_name": "R. Blankenship",
+      "first_name": "Reed",
+      "last_name": "Blankenship",
+      "image": "https://images.fantasypros.com/images/players/nfl/22754/headshot/210x210.webp",
+      "position": "S",
+      "team": "HOU",
+      "slug": "reed-blankenship",
+      "jersey_number": 6
+     }
+    },
+    {
+     "id": "25263",
+     "name": "Tyrique Stevenson",
+     "link": "/nfl/props/tyrique-stevenson/",
+     "player": {
+      "short_name": "T. Stevenson",
+      "first_name": "Tyrique",
+      "last_name": "Stevenson",
+      "image": "https://images.fantasypros.com/images/players/nfl/25263/headshot/210x210.webp",
+      "position": "CB",
+      "team": "CHI",
+      "slug": "tyrique-stevenson",
+      "jersey_number": 29
+     }
+    },
+    {
+     "id": "22690",
+     "name": "Jevon Holland",
+     "link": "/nfl/props/jevon-holland/",
+     "player": {
+      "short_name": "J. Holland",
+      "first_name": "Jevon",
+      "last_name": "Holland",
+      "image": "https://images.fantasypros.com/images/players/nfl/22690/headshot/210x210.webp",
+      "position": "S",
+      "team": "NYG",
+      "slug": "jevon-holland",
+      "jersey_number": 8
+     }
+    },
+    {
+     "id": "23721",
+     "name": "Jalen Pitre",
+     "link": "/nfl/props/jalen-pitre/",
+     "player": {
+      "short_name": "J. Pitre",
+      "first_name": "Jalen",
+      "last_name": "Pitre",
+      "image": "https://images.fantasypros.com/images/players/nfl/23721/headshot/210x210.webp",
+      "position": "S",
+      "team": "HOU",
+      "slug": "jalen-pitre",
+      "jersey_number": 5
+     }
+    },
+    {
+     "id": "19282",
+     "name": "Deommodore Lenoir",
+     "link": "/nfl/props/deommodore-lenoir/",
+     "player": {
+      "short_name": "D. Lenoir",
+      "first_name": "Deommodore",
+      "last_name": "Lenoir",
+      "image": "https://images.fantasypros.com/images/players/nfl/19282/headshot/210x210.webp",
+      "position": "CB",
+      "team": "SF",
+      "slug": "deommodore-lenoir",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "26100",
+     "name": "Nate Wiggins",
+     "link": "/nfl/props/nate-wiggins/",
+     "player": {
+      "short_name": "N. Wiggins",
+      "first_name": "Nate",
+      "last_name": "Wiggins",
+      "image": "https://images.fantasypros.com/images/players/nfl/26100/headshot/210x210.webp",
+      "position": "CB",
+      "team": "BAL",
+      "slug": "nate-wiggins",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "26109",
+     "name": "Kamren Kinchens",
+     "link": "/nfl/props/kamren-kinchens/",
+     "player": {
+      "short_name": "K. Kinchens",
+      "first_name": "Kamren",
+      "last_name": "Kinchens",
+      "image": "https://images.fantasypros.com/images/players/nfl/26109/headshot/210x210.webp",
+      "position": "S",
+      "team": "LAR",
+      "slug": "kamren-kinchens",
+      "jersey_number": 5
+     }
+    },
+    {
+     "id": "26131",
+     "name": "Evan Williams",
+     "link": "/nfl/props/evan-williams/",
+     "player": {
+      "short_name": "E. Williams",
+      "first_name": "Evan",
+      "last_name": "Williams",
+      "image": "https://images.fantasypros.com/images/players/nfl/26131/headshot/210x210.webp",
+      "position": "S",
+      "team": "GB",
+      "slug": "evan-williams",
+      "jersey_number": 33
+     }
+    },
+    {
+     "id": "16632",
+     "name": "Jourdan Lewis",
+     "link": "/nfl/props/jourdan-lewis/",
+     "player": {
+      "short_name": "J. Lewis",
+      "first_name": "Jourdan",
+      "last_name": "Lewis",
+      "image": "https://images.fantasypros.com/images/players/nfl/16632/headshot/210x210.webp",
+      "position": "CB",
+      "team": "JAC",
+      "slug": "jourdan-lewis",
+      "jersey_number": 2
+     }
+    },
+    {
+     "id": "24302",
+     "name": "Quentin Lake",
+     "link": "/nfl/props/quentin-lake/",
+     "player": {
+      "short_name": "Q. Lake",
+      "first_name": "Quentin",
+      "last_name": "Lake",
+      "image": "https://images.fantasypros.com/images/players/nfl/24302/headshot/210x210.webp",
+      "position": "S",
+      "team": "LAR",
+      "slug": "quentin-lake",
+      "jersey_number": 37
+     }
+    },
+    {
+     "id": "23494",
+     "name": "Kyle Hamilton",
+     "link": "/nfl/props/kyle-hamilton/",
+     "player": {
+      "short_name": "K. Hamilton",
+      "first_name": "Kyle",
+      "last_name": "Hamilton",
+      "image": "https://images.fantasypros.com/images/players/nfl/23494/headshot/210x210.webp",
+      "position": "S",
+      "team": "BAL",
+      "slug": "kyle-hamilton",
+      "jersey_number": 14
+     }
+    },
+    {
+     "id": "24198",
+     "name": "Nick Cross",
+     "link": "/nfl/props/nick-cross/",
+     "player": {
+      "short_name": "N. Cross",
+      "first_name": "Nick",
+      "last_name": "Cross",
+      "image": "https://images.fantasypros.com/images/players/nfl/24198/headshot/210x210.webp",
+      "position": "S",
+      "team": "WAS",
+      "slug": "nick-cross",
+      "jersey_number": 25
+     }
+    },
+    {
+     "id": "24719",
+     "name": "Antonio Johnson",
+     "link": "/nfl/props/antonio-johnson-cb/",
+     "player": {
+      "short_name": "A. Johnson",
+      "first_name": "Antonio",
+      "last_name": "Johnson",
+      "image": "https://images.fantasypros.com/images/players/nfl/24719/headshot/210x210.webp",
+      "position": "S",
+      "team": "JAC",
+      "slug": "antonio-johnson-cb",
+      "jersey_number": 6
+     }
+    },
+    {
+     "id": "27070",
+     "name": "Maxwell Hairston",
+     "link": "/nfl/props/maxwell-hairston/",
+     "player": {
+      "short_name": "M. Hairston",
+      "first_name": "Maxwell",
+      "last_name": "Hairston",
+      "image": "https://images.fantasypros.com/images/players/nfl/27070/headshot/210x210.webp",
+      "position": "CB",
+      "team": "BUF",
+      "slug": "maxwell-hairston",
+      "jersey_number": 31
+     }
+    },
+    {
+     "id": "17526",
+     "name": "Fred Warner",
+     "link": "/nfl/props/fred-warner/",
+     "player": {
+      "short_name": "F. Warner",
+      "first_name": "Fred",
+      "last_name": "Warner",
+      "image": "https://images.fantasypros.com/images/players/nfl/17526/headshot/210x210.webp",
+      "position": "LB",
+      "team": "SF",
+      "slug": "fred-warner",
+      "jersey_number": 54
+     }
+    },
+    {
+     "id": "23713",
+     "name": "Roger McCreary",
+     "link": "/nfl/props/roger-mccreary/",
+     "player": {
+      "short_name": "R. McCreary",
+      "first_name": "Roger",
+      "last_name": "McCreary",
+      "image": "https://images.fantasypros.com/images/players/nfl/23713/headshot/210x210.webp",
+      "position": "CB",
+      "team": "DET",
+      "slug": "roger-mccreary",
+      "jersey_number": 21
+     }
+    },
+    {
+     "id": "11769",
+     "name": "Tony Jefferson II",
+     "link": "/nfl/props/tony-jefferson/",
+     "player": {
+      "short_name": "T. Jefferson II",
+      "first_name": "Tony",
+      "last_name": "Jefferson",
+      "image": "https://images.fantasypros.com/images/players/nfl/11769/headshot/210x210.webp",
+      "position": "S",
+      "team": "LAC",
+      "slug": "tony-jefferson",
+      "jersey_number": 23
+     }
+    },
+    {
+     "id": "19237",
+     "name": "Paulson Adebo",
+     "link": "/nfl/props/paulson-adebo/",
+     "player": {
+      "short_name": "P. Adebo",
+      "first_name": "Paulson",
+      "last_name": "Adebo",
+      "image": "https://images.fantasypros.com/images/players/nfl/19237/headshot/210x210.webp",
+      "position": "CB",
+      "team": "NYG",
+      "slug": "paulson-adebo",
+      "jersey_number": 21
+     }
+    },
+    {
+     "id": "17278",
+     "name": "Minkah Fitzpatrick",
+     "link": "/nfl/props/minkah-fitzpatrick/",
+     "player": {
+      "short_name": "M. Fitzpatrick",
+      "first_name": "Minkah",
+      "last_name": "Fitzpatrick",
+      "image": "https://images.fantasypros.com/images/players/nfl/17278/headshot/210x210.webp",
+      "position": "S",
+      "team": "NYJ",
+      "slug": "minkah-fitzpatrick",
+      "jersey_number": 29
+     }
+    },
+    {
+     "id": "26103",
+     "name": "Cooper DeJean",
+     "link": "/nfl/props/cooper-dejean/",
+     "player": {
+      "short_name": "C. DeJean",
+      "first_name": "Cooper",
+      "last_name": "DeJean",
+      "image": "https://images.fantasypros.com/images/players/nfl/26103/headshot/210x210.webp",
+      "position": "CB",
+      "team": "PHI",
+      "slug": "cooper-dejean",
+      "jersey_number": 33
+     }
+    }
+   ],
+   "selections": [
+    {
+     "participant": "25509",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Chamarri Conner",
+     "short_label": "C. Conner",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_001113d9893a580fcb49ef927336bcc0",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113335|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "001113d9893a580fcb49ef927336bcc0"
+    },
+    {
+     "participant": "24705",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Joey Porter Jr.",
+     "short_label": "J. Porter Jr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_014b0b99b4812df35b342d4ae63c1582",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113375|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "014b0b99b4812df35b342d4ae63c1582"
+    },
+    {
+     "participant": "23939",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Isaiah Pola-Mao",
+     "short_label": "I. Pola-Mao",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_02d8a58dbd52d43fcc7bbd1bf18bc4ae",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113364|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "02d8a58dbd52d43fcc7bbd1bf18bc4ae"
+    },
+    {
+     "participant": "17544",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jessie Bates III",
+     "short_label": "J. Bates III",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 3000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_0527d8395857781363788e7e8aaeb104",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 3000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113372|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "0527d8395857781363788e7e8aaeb104"
+    },
+    {
+     "participant": "19254",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jaylon Johnson",
+     "short_label": "J. Johnson",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_0a013244a46ba7183df6ef0b4615ba0b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113371|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "0a013244a46ba7183df6ef0b4615ba0b"
+    },
+    {
+     "participant": "23243",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Nahshon Wright",
+     "short_label": "N. Wright",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_0e5d0361b1b318ce19b5e30e5d301eed",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113400|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "0e5d0361b1b318ce19b5e30e5d301eed"
+    },
+    {
+     "participant": "23245",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Ernest Jones IV",
+     "short_label": "E. Jones IV",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_13b9de8451d47ed559fcb93caedc9dd5",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113358|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "13b9de8451d47ed559fcb93caedc9dd5"
+    },
+    {
+     "participant": "26126",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Mike Sainristil",
+     "short_label": "M. Sainristil",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_13d0cb08443fd9997ed7159f9395e0a9",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113397|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "13d0cb08443fd9997ed7159f9395e0a9"
+    },
+    {
+     "participant": "26229",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Cole Bishop",
+     "short_label": "C. Bishop",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_17e976eceff267ffe9b3bae1d82b556a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113341|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "17e976eceff267ffe9b3bae1d82b556a"
+    },
+    {
+     "participant": "27047",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Mansoor Delane",
+     "short_label": "M. Delane",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_1d259cb7db9ef9998e12615c625c5673",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113391|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "1d259cb7db9ef9998e12615c625c5673"
+    },
+    {
+     "participant": "26098",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Kool-Aid McKinstry",
+     "short_label": "K. McKinstry",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_2335dac40c1f8e2646ea2265efc60919",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113385|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "2335dac40c1f8e2646ea2265efc60919"
+    },
+    {
+     "participant": "27081",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 6000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Andrew Mukuba",
+     "short_label": "A. Mukuba",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_27cd6106674f35709674a7de1e7fcb9b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113321|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "27cd6106674f35709674a7de1e7fcb9b"
+    },
+    {
+     "participant": "18220",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1500,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Byron Murphy Jr.",
+     "short_label": "B. Murphy Jr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_2a6ef83d1deb4a63ac24c8a8cd5574dd",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113330|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "2a6ef83d1deb4a63ac24c8a8cd5574dd"
+    },
+    {
+     "participant": "22701",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jaycee Horn",
+     "short_label": "J. Horn",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_2aa56a01cb31d636963c6e7f0ccb134e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113370|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "2aa56a01cb31d636963c6e7f0ccb134e"
+    },
+    {
+     "participant": "16390",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 800,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Marlon Humphrey",
+     "short_label": "M. Humphrey",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_2e2dbe16d555f34bcf850c27896ed456",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 800,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113393|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "2e2dbe16d555f34bcf850c27896ed456"
+    },
+    {
+     "participant": "17375",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "D.J. Reed Jr.",
+     "short_label": "D.J. Reed Jr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_3277e1d941e406e5028933eb2f05892f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113343|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "3277e1d941e406e5028933eb2f05892f"
+    },
+    {
+     "participant": "23498",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Derek Stingley Jr.",
+     "short_label": "D. Stingley Jr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 1000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_3421f0c78b7872df8147f10c1fc52e12",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 1000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113353|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "3421f0c78b7872df8147f10c1fc52e12"
+    },
+    {
+     "participant": "23492",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Trent McDuffie",
+     "short_label": "T. McDuffie",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_38016e215ef19acc9824cac5ae4ff648",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113425|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "38016e215ef19acc9824cac5ae4ff648"
+    },
+    {
+     "participant": "23800",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1500,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Kerby Joseph",
+     "short_label": "K. Joseph",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_3b8835da3138db6347568fbcef5a27c3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113383|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "3b8835da3138db6347568fbcef5a27c3"
+    },
+    {
+     "participant": "19216",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 750,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Xavier McKinney",
+     "short_label": "X. McKinney",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_41ac2edaafbef5c64cbf63c1866f6445",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 750,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113429|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "41ac2edaafbef5c64cbf63c1866f6445"
+    },
+    {
+     "participant": "27067",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Xavier Watts",
+     "short_label": "X. Watts",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_46c42beb1570baa2bb4aa582715446b6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113430|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "46c42beb1570baa2bb4aa582715446b6"
+    },
+    {
+     "participant": "25235",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Brian Branch",
+     "short_label": "B. Branch",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_4848113a61d1af4d742b95f1a8d18e5f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113328|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "4848113a61d1af4d742b95f1a8d18e5f"
+    },
+    {
+     "participant": "23881",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Riq Woolen",
+     "short_label": "R. Woolen",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_48d5c4d68f0c3bc0bd13fd9585fcf632",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113421|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "48d5c4d68f0c3bc0bd13fd9585fcf632"
+    },
+    {
+     "participant": "26111",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Calen Bullock",
+     "short_label": "C. Bullock",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_491b9dd416be3a63f29ca01f7305c11b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113332|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "491b9dd416be3a63f29ca01f7305c11b"
+    },
+    {
+     "participant": "18637",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Mike Jackson Sr.",
+     "short_label": "M. Jackson Sr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_4b076064f104dd45f1b476248825227c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113396|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "4b076064f104dd45f1b476248825227c"
+    },
+    {
+     "participant": "17310",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Derwin James Jr.",
+     "short_label": "D. James Jr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_4fb07885c0a6390e027380a31ead0ba8",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113354|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "4fb07885c0a6390e027380a31ead0ba8"
+    },
+    {
+     "participant": "17314",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Denzel Ward",
+     "short_label": "D. Ward",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_50cf2a36552817e1e23ee22222ff3ad9",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113351|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "50cf2a36552817e1e23ee22222ff3ad9"
+    },
+    {
+     "participant": "24819",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Ja'Quan McMillian",
+     "short_label": "J. McMillian",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_516a8e1e3cdcd9f328931caf2eb8741a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113365|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "516a8e1e3cdcd9f328931caf2eb8741a"
+    },
+    {
+     "participant": "23472",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Sauce Gardner",
+     "short_label": "S. Gardner",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_527b98f7b066fe1764525c868f6de564",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113417|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "527b98f7b066fe1764525c868f6de564"
+    },
+    {
+     "participant": "19248",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 6000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Brandon Jones",
+     "short_label": "B. Jones",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_5304d3833d376fa3feef7718a8ced8fe",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113327|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "5304d3833d376fa3feef7718a8ced8fe"
+    },
+    {
+     "participant": "27967",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Dillon Thieneman",
+     "short_label": "D. Thieneman",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_54f5a2bded4cd056952dd7eba0e20511",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113356|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "54f5a2bded4cd056952dd7eba0e20511"
+    },
+    {
+     "participant": "17342",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Tremaine Edmunds",
+     "short_label": "T. Edmunds",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_560a8e381dfcf027e571f96de358c8aa",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113424|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "560a8e381dfcf027e571f96de358c8aa"
+    },
+    {
+     "participant": "25238",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Christian Gonzalez",
+     "short_label": "C. Gonzalez",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_580845873b3ec03b3077d5fef1f31d4a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113338|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "580845873b3ec03b3077d5fef1f31d4a"
+    },
+    {
+     "participant": "24197",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Dax Hill",
+     "short_label": "D. Hill",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_5f19bc249bff013a06ef724d6aaea020",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113346|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "5f19bc249bff013a06ef724d6aaea020"
+    },
+    {
+     "participant": "26106",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Quinyon Mitchell",
+     "short_label": "Q. Mitchell",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_675f7c827ec245a2d0bafd57c77e4985",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113413|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "675f7c827ec245a2d0bafd57c77e4985"
+    },
+    {
+     "participant": "22817",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Talanoa Hufanga",
+     "short_label": "T. Hufanga",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_6dfe925007cfe1ff16ca2da65f287e13",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113419|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "6dfe925007cfe1ff16ca2da65f287e13"
+    },
+    {
+     "participant": "24551",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "DaRon Bland",
+     "short_label": "D. Bland",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_70c0f81abc316e763969e10c19a1d3c0",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113344|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "70c0f81abc316e763969e10c19a1d3c0"
+    },
+    {
+     "participant": "26107",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Denzel Burke",
+     "short_label": "D. Burke",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_71aad3393ab0c362ce126502653cd0e9",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113350|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "71aad3393ab0c362ce126502653cd0e9"
+    },
+    {
+     "participant": "17344",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "DeShon Elliott",
+     "short_label": "D. Elliott",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_73ff8356c7a37b1a2ea7bf680abb94ff",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113347|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "73ff8356c7a37b1a2ea7bf680abb94ff"
+    },
+    {
+     "participant": "23471",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jordan Battle",
+     "short_label": "J. Battle",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_7489fed60ce8e308b49e4212bab63301",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113376|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "7489fed60ce8e308b49e4212bab63301"
+    },
+    {
+     "participant": "18583",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jamel Dean",
+     "short_label": "J. Dean",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_75be691cf5fb7fbc20182a421fc4e7b3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113368|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "75be691cf5fb7fbc20182a421fc4e7b3"
+    },
+    {
+     "participant": "28065",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Chris Johnson",
+     "short_label": "C. Johnson",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_76dc986467e9cfa60f8731afb0c0b567",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113337|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "76dc986467e9cfa60f8731afb0c0b567"
+    },
+    {
+     "participant": "22742",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 6000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Elijah Molden",
+     "short_label": "E. Molden",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_8036f6fe7afc1ed5eab2a17476c9c508",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113357|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "8036f6fe7afc1ed5eab2a17476c9c508"
+    },
+    {
+     "participant": "27017",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Malaki Starks",
+     "short_label": "M. Starks",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_80bc224a19b1da143f510f6c83f43d6a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113390|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "80bc224a19b1da143f510f6c83f43d6a"
+    },
+    {
+     "participant": "25258",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Ji'Ayir Brown",
+     "short_label": "J. Brown",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_852eceefd71d39cbd1098bb4b4f45194",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113374|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "852eceefd71d39cbd1098bb4b4f45194"
+    },
+    {
+     "participant": "22757",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Cam Bynum",
+     "short_label": "C. Bynum",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_873788fe0ef5b779724a74e7b2090c79",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113333|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "873788fe0ef5b779724a74e7b2090c79"
+    },
+    {
+     "participant": "23890",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Marcus Jones",
+     "short_label": "M. Jones",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_884243e017bf560aef2dd5095c8e69b6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113392|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "884243e017bf560aef2dd5095c8e69b6"
+    },
+    {
+     "participant": "18243",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Julian Love",
+     "short_label": "J. Love",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 3000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_8df541a0324f4f8b9e3a3ec66df95dd7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 3000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113378|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "8df541a0324f4f8b9e3a3ec66df95dd7"
+    },
+    {
+     "participant": "19266",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Antoine Winfield Jr.",
+     "short_label": "A. Winfield Jr.",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_94971da7aaf03e836e87fc9064288a82",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113322|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "94971da7aaf03e836e87fc9064288a82"
+    },
+    {
+     "participant": "23719",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jaquan Brisker",
+     "short_label": "J. Brisker",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_94facbd6bde84be1a143059b1a567e6d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113369|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "94facbd6bde84be1a143059b1a567e6d"
+    },
+    {
+     "participant": "15635",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 900,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Kevin Byard III",
+     "short_label": "K. Byard III",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 900,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_9c964601e42316220890bb933d6dbd56",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 900,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113384|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "9c964601e42316220890bb933d6dbd56"
+    },
+    {
+     "participant": "18589",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Amani Hooker",
+     "short_label": "A. Hooker",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_9dc21b0f39eaf982a551b674bbaff253",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113320|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "9dc21b0f39eaf982a551b674bbaff253"
+    },
+    {
+     "participant": "27950",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Caleb Downs",
+     "short_label": "C. Downs",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_a1e5cbb3f2cd5667c4f85841180a0312",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113331|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "a1e5cbb3f2cd5667c4f85841180a0312"
+    },
+    {
+     "participant": "19459",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Kam Curl",
+     "short_label": "K. Curl",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_a550d63e442e6eb16f11502324b4002b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113380|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "a550d63e442e6eb16f11502324b4002b"
+    },
+    {
+     "participant": "27053",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Nick Emmanwori",
+     "short_label": "N. Emmanwori",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_a55925ed3561a2e3444f50ac6ba3516b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113407|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "a55925ed3561a2e3444f50ac6ba3516b"
+    },
+    {
+     "participant": "22706",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Tyson Campbell",
+     "short_label": "T. Campbell",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_ad40d31b9316321b1e586de6843ff570",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113427|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "ad40d31b9316321b1e586de6843ff570"
+    },
+    {
+     "participant": "26118",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Kamari Lassiter",
+     "short_label": "K. Lassiter",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_b3a301690ffda0db3364bd22647375bb",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113379|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "b3a301690ffda0db3364bd22647375bb"
+    },
+    {
+     "participant": "23609",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Pat Surtain II",
+     "short_label": "P. Surtain II",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_b9e418c25abb976da5a0d52a2a4c0dd5",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113408|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "b9e418c25abb976da5a0d52a2a4c0dd5"
+    },
+    {
+     "participant": "22754",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Reed Blankenship",
+     "short_label": "R. Blankenship",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_bd1507eb22ddec12f74b08002323798f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113414|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "bd1507eb22ddec12f74b08002323798f"
+    },
+    {
+     "participant": "25263",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 6000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Tyrique Stevenson",
+     "short_label": "T. Stevenson",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_bf4e8cc5db4af8338b08f8ba56c35578",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113426|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "bf4e8cc5db4af8338b08f8ba56c35578"
+    },
+    {
+     "participant": "22690",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jevon Holland",
+     "short_label": "J. Holland",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_cad0e66d5f2bd2597c154d26db881457",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113373|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "cad0e66d5f2bd2597c154d26db881457"
+    },
+    {
+     "participant": "23721",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jalen Pitre",
+     "short_label": "J. Pitre",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_cb7fbb11b6413c4ed048ce4d2702296f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113367|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "cb7fbb11b6413c4ed048ce4d2702296f"
+    },
+    {
+     "participant": "19282",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Deommodore Lenoir",
+     "short_label": "D. Lenoir",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_cbfb8908a12fc93f4939447c31552cd5",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113352|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "cbfb8908a12fc93f4939447c31552cd5"
+    },
+    {
+     "participant": "26100",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 8000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Nate Wiggins",
+     "short_label": "N. Wiggins",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_cd44969448c4301ee566170c9f0f6980",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113401|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "cd44969448c4301ee566170c9f0f6980"
+    },
+    {
+     "participant": "26109",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Kamren Kinchens",
+     "short_label": "K. Kinchens",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_d0e97f93fe5cf3304d539a6e03c926d7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113381|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "d0e97f93fe5cf3304d539a6e03c926d7"
+    },
+    {
+     "participant": "26131",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Evan Williams",
+     "short_label": "E. Williams",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_d3ea299803fbf4a1f06a659eae3f16e4",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113359|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "d3ea299803fbf4a1f06a659eae3f16e4"
+    },
+    {
+     "participant": "16632",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Jourdan Lewis",
+     "short_label": "J. Lewis",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_d5cc87e8c5369318b3203aed23f25b5d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113377|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "d5cc87e8c5369318b3203aed23f25b5d"
+    },
+    {
+     "participant": "24302",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Quentin Lake",
+     "short_label": "Q. Lake",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_d76a80ac9093af2d671e3e9ae3fccf46",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113412|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "d76a80ac9093af2d671e3e9ae3fccf46"
+    },
+    {
+     "participant": "23494",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Kyle Hamilton",
+     "short_label": "K. Hamilton",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_d7e6e7f0f0b8cb13d2b103aebbe0bc4d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113386|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "d7e6e7f0f0b8cb13d2b103aebbe0bc4d"
+    },
+    {
+     "participant": "24198",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Nick Cross",
+     "short_label": "N. Cross",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_e1417c18d1f66553d176ce3ac9a86e4c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113406|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "e1417c18d1f66553d176ce3ac9a86e4c"
+    },
+    {
+     "participant": "24719",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 6000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Antonio Johnson",
+     "short_label": "A. Johnson",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_e198ca7aa89d5f5107778a4819dd930f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113323|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "e198ca7aa89d5f5107778a4819dd930f"
+    },
+    {
+     "participant": "27070",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Maxwell Hairston",
+     "short_label": "M. Hairston",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_e72f0e6e9037df6000599ddcbd4080e0",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113394|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "e72f0e6e9037df6000599ddcbd4080e0"
+    },
+    {
+     "participant": "17526",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 20000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Fred Warner",
+     "short_label": "F. Warner",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_e9d48cc4400c240ccff0818f5e31a7da",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113360|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "e9d48cc4400c240ccff0818f5e31a7da"
+    },
+    {
+     "participant": "23713",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 25000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Roger McCreary",
+     "short_label": "R. McCreary",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_ea60912b100718eb6bad939aa61e284a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113415|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "ea60912b100718eb6bad939aa61e284a"
+    },
+    {
+     "participant": "11769",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Tony Jefferson II",
+     "short_label": "T. Jefferson II",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_ed8895a6b4121c3fcea5dccabd467c2f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113423|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "ed8895a6b4121c3fcea5dccabd467c2f"
+    },
+    {
+     "participant": "19237",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Paulson Adebo",
+     "short_label": "P. Adebo",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_f11c2bc6771af71345bd569e83492b9e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113409|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "f11c2bc6771af71345bd569e83492b9e"
+    },
+    {
+     "participant": "17278",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Minkah Fitzpatrick",
+     "short_label": "M. Fitzpatrick",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_f593f6fb1571e34dc39aa9e02c7f9d4c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113398|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "f593f6fb1571e34dc39aa9e02c7f9d4c"
+    },
+    {
+     "participant": "26103",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 15000,
+      "book_id": 18,
+      "created": "2026-08-19 21:47:16"
+     },
+     "label": "Cooper DeJean",
+     "short_label": "C. DeJean",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 18,
+       "lines": [
+        {
+         "id": "18_fcb4019cc3518bd08bb67062587d8030",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-23 07:12:45",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://pa.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4304113342|0|append"
+        }
+       ]
+      }
+     ],
+     "id": "fcb4019cc3518bd08bb67062587d8030"
+    }
+   ]
+  }
+ ]
+}

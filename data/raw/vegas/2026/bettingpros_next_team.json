@@ -1,0 +1,8066 @@
+{
+ "market_id": 125,
+ "market": "next_team",
+ "slug": "next-team",
+ "season": 2026,
+ "offers": [
+  {
+   "id": "4e9886cb4f31d0787cab857d7704bf2f",
+   "market_id": 125,
+   "event_id": null,
+   "player_id": 18702,
+   "team_id": null,
+   "opponent_id": null,
+   "link": "",
+   "active": true,
+   "participants": [
+    {
+     "id": "WAS",
+     "name": "Commanders",
+     "link": "/nfl/teams/washington-commanders/",
+     "team": {
+      "city": "Washington",
+      "abbreviation": "WAS",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "washington-commanders"
+     }
+    },
+    {
+     "id": "BAL",
+     "name": "Ravens",
+     "link": "/nfl/teams/baltimore-ravens/",
+     "team": {
+      "city": "Baltimore",
+      "abbreviation": "BAL",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "baltimore-ravens"
+     }
+    },
+    {
+     "id": "NO",
+     "name": "Saints",
+     "link": "/nfl/teams/new-orleans-saints/",
+     "team": {
+      "city": "New Orleans",
+      "abbreviation": "NO",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "new-orleans-saints"
+     }
+    },
+    {
+     "id": "NYG",
+     "name": "Giants",
+     "link": "/nfl/teams/new-york-giants/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYG",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "new-york-giants"
+     }
+    },
+    {
+     "id": "CAR",
+     "name": "Panthers",
+     "link": "/nfl/teams/carolina-panthers/",
+     "team": {
+      "city": "Carolina",
+      "abbreviation": "CAR",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "carolina-panthers"
+     }
+    },
+    {
+     "id": "JAC",
+     "name": "Jaguars",
+     "link": "/nfl/teams/jacksonville-jaguars/",
+     "team": {
+      "city": "Jacksonville",
+      "abbreviation": "JAC",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "jacksonville-jaguars"
+     }
+    },
+    {
+     "id": "PIT",
+     "name": "Steelers",
+     "link": "/nfl/teams/pittsburgh-steelers/",
+     "team": {
+      "city": "Pittsburgh",
+      "abbreviation": "PIT",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "pittsburgh-steelers"
+     }
+    },
+    {
+     "id": "HOU",
+     "name": "Texans",
+     "link": "/nfl/teams/houston-texans/",
+     "team": {
+      "city": "Houston",
+      "abbreviation": "HOU",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "houston-texans"
+     }
+    },
+    {
+     "id": "ARI",
+     "name": "Cardinals",
+     "link": "/nfl/teams/arizona-cardinals/",
+     "team": {
+      "city": "Arizona",
+      "abbreviation": "ARI",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "arizona-cardinals"
+     }
+    },
+    {
+     "id": "IND",
+     "name": "Colts",
+     "link": "/nfl/teams/indianapolis-colts/",
+     "team": {
+      "city": "Indianapolis",
+      "abbreviation": "IND",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "indianapolis-colts"
+     }
+    },
+    {
+     "id": "CIN",
+     "name": "Bengals",
+     "link": "/nfl/teams/cincinnati-bengals/",
+     "team": {
+      "city": "Cincinnati",
+      "abbreviation": "CIN",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cincinnati-bengals"
+     }
+    },
+    {
+     "id": "SF",
+     "name": "49ers",
+     "link": "/nfl/teams/san-francisco-49ers/",
+     "team": {
+      "city": "San Francisco",
+      "abbreviation": "SF",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "san-francisco-49ers"
+     }
+    },
+    {
+     "id": "TEN",
+     "name": "Titans",
+     "link": "/nfl/teams/tennessee-titans/",
+     "team": {
+      "city": "Tennessee",
+      "abbreviation": "TEN",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "tennessee-titans"
+     }
+    },
+    {
+     "id": "SEA",
+     "name": "Seahawks",
+     "link": "/nfl/teams/seattle-seahawks/",
+     "team": {
+      "city": "Seattle",
+      "abbreviation": "SEA",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "seattle-seahawks"
+     }
+    },
+    {
+     "id": "NE",
+     "name": "Patriots",
+     "link": "/nfl/teams/new-england-patriots/",
+     "team": {
+      "city": "New England",
+      "abbreviation": "NE",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-england-patriots"
+     }
+    },
+    {
+     "id": "PHI",
+     "name": "Eagles",
+     "link": "/nfl/teams/philadelphia-eagles/",
+     "team": {
+      "city": "Philadelphia",
+      "abbreviation": "PHI",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "philadelphia-eagles"
+     }
+    },
+    {
+     "id": "CLE",
+     "name": "Browns",
+     "link": "/nfl/teams/cleveland-browns/",
+     "team": {
+      "city": "Cleveland",
+      "abbreviation": "CLE",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cleveland-browns"
+     }
+    },
+    {
+     "id": "TB",
+     "name": "Buccaneers",
+     "link": "/nfl/teams/tampa-bay-buccaneers/",
+     "team": {
+      "city": "Tampa Bay",
+      "abbreviation": "TB",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "tampa-bay-buccaneers"
+     }
+    },
+    {
+     "id": "LAR",
+     "name": "Rams",
+     "link": "/nfl/teams/los-angeles-rams/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAR",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "los-angeles-rams"
+     }
+    },
+    {
+     "id": "MIN",
+     "name": "Vikings",
+     "link": "/nfl/teams/minnesota-vikings/",
+     "team": {
+      "city": "Minnesota",
+      "abbreviation": "MIN",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "minnesota-vikings"
+     }
+    },
+    {
+     "id": "NYJ",
+     "name": "Jets",
+     "link": "/nfl/teams/new-york-jets/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYJ",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-york-jets"
+     }
+    },
+    {
+     "id": "CHI",
+     "name": "Bears",
+     "link": "/nfl/teams/chicago-bears/",
+     "team": {
+      "city": "Chicago",
+      "abbreviation": "CHI",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "chicago-bears"
+     }
+    },
+    {
+     "id": "LV",
+     "name": "Raiders",
+     "link": "/nfl/teams/las-vegas-raiders/",
+     "team": {
+      "city": "Las Vegas",
+      "abbreviation": "LV",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "las-vegas-raiders"
+     }
+    },
+    {
+     "id": "KC",
+     "name": "Chiefs",
+     "link": "/nfl/teams/kansas-city-chiefs/",
+     "team": {
+      "city": "Kansas City",
+      "abbreviation": "KC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "kansas-city-chiefs"
+     }
+    },
+    {
+     "id": "LAC",
+     "name": "Chargers",
+     "link": "/nfl/teams/los-angeles-chargers/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "los-angeles-chargers"
+     }
+    },
+    {
+     "id": "ATL",
+     "name": "Falcons",
+     "link": "/nfl/teams/atlanta-falcons/",
+     "team": {
+      "city": "Atlanta",
+      "abbreviation": "ATL",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "atlanta-falcons"
+     }
+    },
+    {
+     "id": "MIA",
+     "name": "Dolphins",
+     "link": "/nfl/teams/miami-dolphins/",
+     "team": {
+      "city": "Miami",
+      "abbreviation": "MIA",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "miami-dolphins"
+     }
+    },
+    {
+     "id": "DEN",
+     "name": "Broncos",
+     "link": "/nfl/teams/denver-broncos/",
+     "team": {
+      "city": "Denver",
+      "abbreviation": "DEN",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "denver-broncos"
+     }
+    },
+    {
+     "id": "GB",
+     "name": "Packers",
+     "link": "/nfl/teams/green-bay-packers/",
+     "team": {
+      "city": "Green Bay",
+      "abbreviation": "GB",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "green-bay-packers"
+     }
+    },
+    {
+     "id": "BUF",
+     "name": "Bills",
+     "link": "/nfl/teams/buffalo-bills/",
+     "team": {
+      "city": "Buffalo",
+      "abbreviation": "BUF",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "buffalo-bills"
+     }
+    },
+    {
+     "id": "DET",
+     "name": "Lions",
+     "link": "/nfl/teams/detroit-lions/",
+     "team": {
+      "city": "Detroit",
+      "abbreviation": "DET",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "detroit-lions"
+     }
+    },
+    {
+     "id": "DAL",
+     "name": "Cowboys",
+     "link": "/nfl/teams/dallas-cowboys/",
+     "team": {
+      "city": "Dallas",
+      "abbreviation": "DAL",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "dallas-cowboys"
+     }
+    },
+    {
+     "id": "18702",
+     "name": "Maxx Crosby",
+     "link": "/nfl/props/maxx-crosby/",
+     "player": {
+      "short_name": "M. Crosby",
+      "first_name": "Maxx",
+      "last_name": "Crosby",
+      "image": "https://images.fantasypros.com/images/players/nfl/18702/headshot/210x210.webp",
+      "position": "DE",
+      "team": "LV",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "maxx-crosby",
+      "jersey_number": 98
+     }
+    }
+   ],
+   "selections": [
+    {
+     "participant": "WAS",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Commanders",
+     "short_label": "WAS",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 10:45:11",
+         "cost": 1500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_02c056b924ad1677497e0bba0175ee88",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 10:45:11",
+         "cost": 1500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "02c056b924ad1677497e0bba0175ee88"
+    },
+    {
+     "participant": "BAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 550,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Ravens",
+     "short_label": "BAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 700,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_06d9c32e8c68dc9e2d6390e85e4d1c11",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 700,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "06d9c32e8c68dc9e2d6390e85e4d1c11"
+    },
+    {
+     "participant": "NO",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Saints",
+     "short_label": "NO",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 15:26:46",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_19f6257458c10d4ec70e89db987535ef",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 15:26:46",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "19f6257458c10d4ec70e89db987535ef"
+    },
+    {
+     "participant": "NYG",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Giants",
+     "short_label": "NYG",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 19:31:35",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_1fb75bb5c567cfc0fafc5a0a01657975",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 19:31:35",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "1fb75bb5c567cfc0fafc5a0a01657975"
+    },
+    {
+     "participant": "CAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Panthers",
+     "short_label": "CAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_28866fdfe8722640d19f01ed91675db0",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "28866fdfe8722640d19f01ed91675db0"
+    },
+    {
+     "participant": "JAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Jaguars",
+     "short_label": "JAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 13:29:48",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_40223d71ba530f065e438894ef26fd0b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 13:29:48",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "40223d71ba530f065e438894ef26fd0b"
+    },
+    {
+     "participant": "PIT",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Steelers",
+     "short_label": "PIT",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_4444e05826ade0fb7eecb579c55b6c43",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "4444e05826ade0fb7eecb579c55b6c43"
+    },
+    {
+     "participant": "HOU",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Texans",
+     "short_label": "HOU",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:41:16",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_463110bc63801fac818cf2e563038f41",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:41:16",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "463110bc63801fac818cf2e563038f41"
+    },
+    {
+     "participant": "ARI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Cardinals",
+     "short_label": "ARI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 11:47:21",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_4a7f7e76491d1478a877b5c29388b4ca",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 11:47:21",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "4a7f7e76491d1478a877b5c29388b4ca"
+    },
+    {
+     "participant": "IND",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Colts",
+     "short_label": "IND",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 17:42:02",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_52c2f79856f2bd4d6b981e2cd85b6dda",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 17:42:02",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "52c2f79856f2bd4d6b981e2cd85b6dda"
+    },
+    {
+     "participant": "CIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2200,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Bengals",
+     "short_label": "CIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 10:15:51",
+         "cost": 2200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_7e36ae1ae4b037740be017f12fc45ce8",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 10:15:51",
+         "cost": 2200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "7e36ae1ae4b037740be017f12fc45ce8"
+    },
+    {
+     "participant": "SF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1800,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "49ers",
+     "short_label": "SF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:50:10",
+         "cost": 1800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_80b68856025483e33720c5e50a8db659",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:50:10",
+         "cost": 1800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "80b68856025483e33720c5e50a8db659"
+    },
+    {
+     "participant": "TEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Titans",
+     "short_label": "TEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_8689d2932159930d86ef18c398882e69",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "8689d2932159930d86ef18c398882e69"
+    },
+    {
+     "participant": "SEA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Seahawks",
+     "short_label": "SEA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_87af52e1a448021698a7cf602ef2ad51",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "87af52e1a448021698a7cf602ef2ad51"
+    },
+    {
+     "participant": "NE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Patriots",
+     "short_label": "NE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 11:24:04",
+         "cost": 500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_8ada62b2b891dc706ebb06f29eecca75",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 11:24:04",
+         "cost": 500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "8ada62b2b891dc706ebb06f29eecca75"
+    },
+    {
+     "participant": "PHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Eagles",
+     "short_label": "PHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 12:40:46",
+         "cost": 500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_8e3f2348a46760597ed47e11ece10c44",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 12:40:46",
+         "cost": 500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "8e3f2348a46760597ed47e11ece10c44"
+    },
+    {
+     "participant": "CLE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Browns",
+     "short_label": "CLE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 14:52:18",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_94a1d6b137944d515db8322534764715",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 14:52:18",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "94a1d6b137944d515db8322534764715"
+    },
+    {
+     "participant": "TB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Buccaneers",
+     "short_label": "TB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 05:44:12",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_957d5f4a3dd2ed16fcb7112e132ed982",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 05:44:12",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "957d5f4a3dd2ed16fcb7112e132ed982"
+    },
+    {
+     "participant": "LAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Rams",
+     "short_label": "LAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 15:24:58",
+         "cost": 500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_9d644987dc42800f9e767656e31b44fb",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 15:24:58",
+         "cost": 500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "9d644987dc42800f9e767656e31b44fb"
+    },
+    {
+     "participant": "MIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Vikings",
+     "short_label": "MIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 09:23:14",
+         "cost": 3000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_a7dad36d9fa4a2607677981fcc79b182",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 09:23:14",
+         "cost": 3000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "a7dad36d9fa4a2607677981fcc79b182"
+    },
+    {
+     "participant": "NYJ",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Jets",
+     "short_label": "NYJ",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 11:55:44",
+         "cost": 3000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_ac05dd7795c40f3c8f013f96265af05f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 11:55:44",
+         "cost": 3000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "ac05dd7795c40f3c8f013f96265af05f"
+    },
+    {
+     "participant": "CHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 650,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Bears",
+     "short_label": "CHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 17:29:11",
+         "cost": 650,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_b840bf79f3c0609adf89d4d4a916f0ff",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 17:29:11",
+         "cost": 650,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "b840bf79f3c0609adf89d4d4a916f0ff"
+    },
+    {
+     "participant": "LV",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 450,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Raiders",
+     "short_label": "LV",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 17:03:41",
+         "cost": 450,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_bb78e0b30628eae748b628b8d7cf7761",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 17:03:41",
+         "cost": 450,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "bb78e0b30628eae748b628b8d7cf7761"
+    },
+    {
+     "participant": "KC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Chiefs",
+     "short_label": "KC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-07-28 09:31:20",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_bcc86ff77f272cad5dea0f9dffd02aa4",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-07-28 09:31:20",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "bcc86ff77f272cad5dea0f9dffd02aa4"
+    },
+    {
+     "participant": "LAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Chargers",
+     "short_label": "LAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 20:01:26",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_bd428525709ba5a7bc0763cc504cf0d2",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 20:01:26",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "bd428525709ba5a7bc0763cc504cf0d2"
+    },
+    {
+     "participant": "ATL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 5000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Falcons",
+     "short_label": "ATL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 11:32:04",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_bee7974d7f70cfcf1f32b8354f0e0d33",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 11:32:04",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "bee7974d7f70cfcf1f32b8354f0e0d33"
+    },
+    {
+     "participant": "MIA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Dolphins",
+     "short_label": "MIA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-07-28 02:21:11",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_d8f43b369e4eb512d5173a6295eda697",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-07-28 02:21:11",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "d8f43b369e4eb512d5173a6295eda697"
+    },
+    {
+     "participant": "DEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Broncos",
+     "short_label": "DEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:50:10",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_d9251a51863e76f057d2e948eefe53aa",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:50:10",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "d9251a51863e76f057d2e948eefe53aa"
+    },
+    {
+     "participant": "GB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Packers",
+     "short_label": "GB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e151cc050c2336c47154a457c2da0cdc",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "e151cc050c2336c47154a457c2da0cdc"
+    },
+    {
+     "participant": "BUF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 650,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Bills",
+     "short_label": "BUF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 18:36:34",
+         "cost": 650,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e5c9109c149e2d55d851910dcbea828a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 18:36:34",
+         "cost": 650,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "e5c9109c149e2d55d851910dcbea828a"
+    },
+    {
+     "participant": "DET",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Lions",
+     "short_label": "DET",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 14:52:18",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e709ae092e9f78620d7667240290acf5",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 14:52:18",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "e709ae092e9f78620d7667240290acf5"
+    },
+    {
+     "participant": "DAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 500,
+      "book_id": 12,
+      "created": "2026-03-02 20:37:13"
+     },
+     "label": "Cowboys",
+     "short_label": "DAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 350,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_f26ce16575c1941bd9a33dd304ddc049",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-07 02:23:51",
+         "cost": 350,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "f26ce16575c1941bd9a33dd304ddc049"
+    }
+   ]
+  },
+  {
+   "id": "7a4382a32d24c49eb54a409645b1b990",
+   "market_id": 125,
+   "event_id": null,
+   "player_id": 15802,
+   "team_id": null,
+   "opponent_id": null,
+   "link": "",
+   "active": true,
+   "participants": [
+    {
+     "id": "LV",
+     "name": "Raiders",
+     "link": "/nfl/teams/las-vegas-raiders/",
+     "team": {
+      "city": "Las Vegas",
+      "abbreviation": "LV",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "las-vegas-raiders"
+     }
+    },
+    {
+     "id": "KC",
+     "name": "Chiefs",
+     "link": "/nfl/teams/kansas-city-chiefs/",
+     "team": {
+      "city": "Kansas City",
+      "abbreviation": "KC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "kansas-city-chiefs"
+     }
+    },
+    {
+     "id": "WAS",
+     "name": "Commanders",
+     "link": "/nfl/teams/washington-commanders/",
+     "team": {
+      "city": "Washington",
+      "abbreviation": "WAS",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "washington-commanders"
+     }
+    },
+    {
+     "id": "BUF",
+     "name": "Bills",
+     "link": "/nfl/teams/buffalo-bills/",
+     "team": {
+      "city": "Buffalo",
+      "abbreviation": "BUF",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "buffalo-bills"
+     }
+    },
+    {
+     "id": "NYG",
+     "name": "Giants",
+     "link": "/nfl/teams/new-york-giants/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYG",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "new-york-giants"
+     }
+    },
+    {
+     "id": "TEN",
+     "name": "Titans",
+     "link": "/nfl/teams/tennessee-titans/",
+     "team": {
+      "city": "Tennessee",
+      "abbreviation": "TEN",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "tennessee-titans"
+     }
+    },
+    {
+     "id": "DAL",
+     "name": "Cowboys",
+     "link": "/nfl/teams/dallas-cowboys/",
+     "team": {
+      "city": "Dallas",
+      "abbreviation": "DAL",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "dallas-cowboys"
+     }
+    },
+    {
+     "id": "GB",
+     "name": "Packers",
+     "link": "/nfl/teams/green-bay-packers/",
+     "team": {
+      "city": "Green Bay",
+      "abbreviation": "GB",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "green-bay-packers"
+     }
+    },
+    {
+     "id": "SF",
+     "name": "49ers",
+     "link": "/nfl/teams/san-francisco-49ers/",
+     "team": {
+      "city": "San Francisco",
+      "abbreviation": "SF",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "san-francisco-49ers"
+     }
+    },
+    {
+     "id": "IND",
+     "name": "Colts",
+     "link": "/nfl/teams/indianapolis-colts/",
+     "team": {
+      "city": "Indianapolis",
+      "abbreviation": "IND",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "indianapolis-colts"
+     }
+    },
+    {
+     "id": "CLE",
+     "name": "Browns",
+     "link": "/nfl/teams/cleveland-browns/",
+     "team": {
+      "city": "Cleveland",
+      "abbreviation": "CLE",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cleveland-browns"
+     }
+    },
+    {
+     "id": "JAC",
+     "name": "Jaguars",
+     "link": "/nfl/teams/jacksonville-jaguars/",
+     "team": {
+      "city": "Jacksonville",
+      "abbreviation": "JAC",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "jacksonville-jaguars"
+     }
+    },
+    {
+     "id": "CHI",
+     "name": "Bears",
+     "link": "/nfl/teams/chicago-bears/",
+     "team": {
+      "city": "Chicago",
+      "abbreviation": "CHI",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "chicago-bears"
+     }
+    },
+    {
+     "id": "DET",
+     "name": "Lions",
+     "link": "/nfl/teams/detroit-lions/",
+     "team": {
+      "city": "Detroit",
+      "abbreviation": "DET",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "detroit-lions"
+     }
+    },
+    {
+     "id": "LAC",
+     "name": "Chargers",
+     "link": "/nfl/teams/los-angeles-chargers/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "los-angeles-chargers"
+     }
+    },
+    {
+     "id": "HOU",
+     "name": "Texans",
+     "link": "/nfl/teams/houston-texans/",
+     "team": {
+      "city": "Houston",
+      "abbreviation": "HOU",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "houston-texans"
+     }
+    },
+    {
+     "id": "NO",
+     "name": "Saints",
+     "link": "/nfl/teams/new-orleans-saints/",
+     "team": {
+      "city": "New Orleans",
+      "abbreviation": "NO",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "new-orleans-saints"
+     }
+    },
+    {
+     "id": "ATL",
+     "name": "Falcons",
+     "link": "/nfl/teams/atlanta-falcons/",
+     "team": {
+      "city": "Atlanta",
+      "abbreviation": "ATL",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "atlanta-falcons"
+     }
+    },
+    {
+     "id": "PIT",
+     "name": "Steelers",
+     "link": "/nfl/teams/pittsburgh-steelers/",
+     "team": {
+      "city": "Pittsburgh",
+      "abbreviation": "PIT",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "pittsburgh-steelers"
+     }
+    },
+    {
+     "id": "TB",
+     "name": "Buccaneers",
+     "link": "/nfl/teams/tampa-bay-buccaneers/",
+     "team": {
+      "city": "Tampa Bay",
+      "abbreviation": "TB",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "tampa-bay-buccaneers"
+     }
+    },
+    {
+     "id": "BAL",
+     "name": "Ravens",
+     "link": "/nfl/teams/baltimore-ravens/",
+     "team": {
+      "city": "Baltimore",
+      "abbreviation": "BAL",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "baltimore-ravens"
+     }
+    },
+    {
+     "id": "PHI",
+     "name": "Eagles",
+     "link": "/nfl/teams/philadelphia-eagles/",
+     "team": {
+      "city": "Philadelphia",
+      "abbreviation": "PHI",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "philadelphia-eagles"
+     }
+    },
+    {
+     "id": "CIN",
+     "name": "Bengals",
+     "link": "/nfl/teams/cincinnati-bengals/",
+     "team": {
+      "city": "Cincinnati",
+      "abbreviation": "CIN",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cincinnati-bengals"
+     }
+    },
+    {
+     "id": "CAR",
+     "name": "Panthers",
+     "link": "/nfl/teams/carolina-panthers/",
+     "team": {
+      "city": "Carolina",
+      "abbreviation": "CAR",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "carolina-panthers"
+     }
+    },
+    {
+     "id": "LAR",
+     "name": "Rams",
+     "link": "/nfl/teams/los-angeles-rams/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAR",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "los-angeles-rams"
+     }
+    },
+    {
+     "id": "MIA",
+     "name": "Dolphins",
+     "link": "/nfl/teams/miami-dolphins/",
+     "team": {
+      "city": "Miami",
+      "abbreviation": "MIA",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "miami-dolphins"
+     }
+    },
+    {
+     "id": "DEN",
+     "name": "Broncos",
+     "link": "/nfl/teams/denver-broncos/",
+     "team": {
+      "city": "Denver",
+      "abbreviation": "DEN",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "denver-broncos"
+     }
+    },
+    {
+     "id": "MIN",
+     "name": "Vikings",
+     "link": "/nfl/teams/minnesota-vikings/",
+     "team": {
+      "city": "Minnesota",
+      "abbreviation": "MIN",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "minnesota-vikings"
+     }
+    },
+    {
+     "id": "ARI",
+     "name": "Cardinals",
+     "link": "/nfl/teams/arizona-cardinals/",
+     "team": {
+      "city": "Arizona",
+      "abbreviation": "ARI",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "arizona-cardinals"
+     }
+    },
+    {
+     "id": "NYJ",
+     "name": "Jets",
+     "link": "/nfl/teams/new-york-jets/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYJ",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-york-jets"
+     }
+    },
+    {
+     "id": "NE",
+     "name": "Patriots",
+     "link": "/nfl/teams/new-england-patriots/",
+     "team": {
+      "city": "New England",
+      "abbreviation": "NE",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-england-patriots"
+     }
+    },
+    {
+     "id": "SEA",
+     "name": "Seahawks",
+     "link": "/nfl/teams/seattle-seahawks/",
+     "team": {
+      "city": "Seattle",
+      "abbreviation": "SEA",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "seattle-seahawks"
+     }
+    },
+    {
+     "id": "15802",
+     "name": "Tyreek Hill",
+     "link": "/nfl/props/tyreek-hill/",
+     "player": {
+      "short_name": "T. Hill",
+      "first_name": "Tyreek",
+      "last_name": "Hill",
+      "image": "https://images.fantasypros.com/images/players/nfl/15802/headshot/210x210.webp",
+      "position": "WR",
+      "team": "FA",
+      "slug": "tyreek-hill",
+      "jersey_number": 0
+     }
+    }
+   ],
+   "selections": [
+    {
+     "participant": "LV",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 800,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Raiders",
+     "short_label": "LV",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 20:01:44",
+         "cost": 800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_076a3930d073b38e5943dbe650108d7e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 20:01:44",
+         "cost": 800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "076a3930d073b38e5943dbe650108d7e"
+    },
+    {
+     "participant": "KC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 300,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Chiefs",
+     "short_label": "KC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 11:56:52",
+         "cost": 300,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_07e70343c398a8ada7dce787d9fad31a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 11:56:52",
+         "cost": 300,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "07e70343c398a8ada7dce787d9fad31a"
+    },
+    {
+     "participant": "WAS",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1400,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Commanders",
+     "short_label": "WAS",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 21:52:18",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_173c76ab3d59c0fa37ce97f714c19f35",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 21:52:18",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "173c76ab3d59c0fa37ce97f714c19f35"
+    },
+    {
+     "participant": "BUF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 600,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Bills",
+     "short_label": "BUF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_3196ecb2ca581ae2c23d863811df4371",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "3196ecb2ca581ae2c23d863811df4371"
+    },
+    {
+     "participant": "NYG",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1400,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Giants",
+     "short_label": "NYG",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:50:10",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_33b70a36e7fcff2d7029b4788ec5e4b6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:50:10",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "33b70a36e7fcff2d7029b4788ec5e4b6"
+    },
+    {
+     "participant": "TEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Titans",
+     "short_label": "TEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 19:54:33",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_387103dc344d4ecb93bcc989aeb9cd0b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 19:54:33",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "387103dc344d4ecb93bcc989aeb9cd0b"
+    },
+    {
+     "participant": "DAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Cowboys",
+     "short_label": "DAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-07-28 06:01:01",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_3e42a3dd2648f2d6817e5bce31137cba",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-07-28 06:01:01",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "3e42a3dd2648f2d6817e5bce31137cba"
+    },
+    {
+     "participant": "GB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Packers",
+     "short_label": "GB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 13:51:55",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_48745b589b100946c1c8a4fef13d1943",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 13:51:55",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "48745b589b100946c1c8a4fef13d1943"
+    },
+    {
+     "participant": "SF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "49ers",
+     "short_label": "SF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 11:24:04",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_48ce3fad635c77e5739ca29122f2d5d9",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 11:24:04",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "48ce3fad635c77e5739ca29122f2d5d9"
+    },
+    {
+     "participant": "IND",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Colts",
+     "short_label": "IND",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_5962be573419eba6feee7eb1f128c3e6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "5962be573419eba6feee7eb1f128c3e6"
+    },
+    {
+     "participant": "CLE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Browns",
+     "short_label": "CLE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 12:48:43",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_64f66fdbb02b0a2327c9b178aa82230d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 12:48:43",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "64f66fdbb02b0a2327c9b178aa82230d"
+    },
+    {
+     "participant": "JAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Jaguars",
+     "short_label": "JAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_67d4e3ffaa2eabe9af845982b4e68e5b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "67d4e3ffaa2eabe9af845982b4e68e5b"
+    },
+    {
+     "participant": "CHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Bears",
+     "short_label": "CHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 15:08:32",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_74763baf6da85b1aa17a1d6183cabae5",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 15:08:32",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "74763baf6da85b1aa17a1d6183cabae5"
+    },
+    {
+     "participant": "DET",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Lions",
+     "short_label": "DET",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 15:35:17",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_758b8f302a71130fdafd6e1cf046bd02",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 15:35:17",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "758b8f302a71130fdafd6e1cf046bd02"
+    },
+    {
+     "participant": "LAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Chargers",
+     "short_label": "LAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 19:54:29",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_7ca0d550bb53470e1c03dbd7ca25aaab",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 19:54:29",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "7ca0d550bb53470e1c03dbd7ca25aaab"
+    },
+    {
+     "participant": "HOU",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Texans",
+     "short_label": "HOU",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 17:03:41",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_7cf8844f99fa0d1a76191c588c03154f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 17:03:41",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "7cf8844f99fa0d1a76191c588c03154f"
+    },
+    {
+     "participant": "NO",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Saints",
+     "short_label": "NO",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 20:10:57",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_7fad1aac479c304c99ccab8852d2be62",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 20:10:57",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "7fad1aac479c304c99ccab8852d2be62"
+    },
+    {
+     "participant": "ATL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Falcons",
+     "short_label": "ATL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 08:30:48",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_828a3d9de4b228ecb60bdb11a2416c2f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 08:30:48",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "828a3d9de4b228ecb60bdb11a2416c2f"
+    },
+    {
+     "participant": "PIT",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1400,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Steelers",
+     "short_label": "PIT",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_88f8486fb5d5cbde0a32dadf8e87a287",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "88f8486fb5d5cbde0a32dadf8e87a287"
+    },
+    {
+     "participant": "TB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Buccaneers",
+     "short_label": "TB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 17:16:31",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_9110c7c7d94cf2a1ba75f16d43ff7466",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 17:16:31",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "9110c7c7d94cf2a1ba75f16d43ff7466"
+    },
+    {
+     "participant": "BAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 800,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Ravens",
+     "short_label": "BAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 12:40:46",
+         "cost": 800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_9d1d2a2947814e73cbb1faf161f70f4e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 12:40:46",
+         "cost": 800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "9d1d2a2947814e73cbb1faf161f70f4e"
+    },
+    {
+     "participant": "PHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Eagles",
+     "short_label": "PHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_accef73cff298b2bdc3a6248da576f3c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "accef73cff298b2bdc3a6248da576f3c"
+    },
+    {
+     "participant": "CIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Bengals",
+     "short_label": "CIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_b6096a90d17e8b010105d4e5d08cf7c7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "b6096a90d17e8b010105d4e5d08cf7c7"
+    },
+    {
+     "participant": "CAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Panthers",
+     "short_label": "CAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 15:26:46",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_b63906816921f052978be0c7ec2eda96",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 15:26:46",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "b63906816921f052978be0c7ec2eda96"
+    },
+    {
+     "participant": "LAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Rams",
+     "short_label": "LAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 08:22:25",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c1bac1807723f233f0c410d83cbed524",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 08:22:25",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "c1bac1807723f233f0c410d83cbed524"
+    },
+    {
+     "participant": "MIA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Dolphins",
+     "short_label": "MIA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 09:05:10",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c69e7d4144e9e51674499b14f8acd430",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 09:05:10",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "c69e7d4144e9e51674499b14f8acd430"
+    },
+    {
+     "participant": "DEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Broncos",
+     "short_label": "DEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_cb42c6e26d11da13facf84af929aa63a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "cb42c6e26d11da13facf84af929aa63a"
+    },
+    {
+     "participant": "MIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 4000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Vikings",
+     "short_label": "MIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_d6bfd30fb8dfd895c9b9abdea9a07a45",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "d6bfd30fb8dfd895c9b9abdea9a07a45"
+    },
+    {
+     "participant": "ARI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:13"
+     },
+     "label": "Cardinals",
+     "short_label": "ARI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 17:37:40",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_dfdf0ec75414ef2bf2c0ad6cbd911eb8",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 17:37:40",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "dfdf0ec75414ef2bf2c0ad6cbd911eb8"
+    },
+    {
+     "participant": "NYJ",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Jets",
+     "short_label": "NYJ",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e2e7e22d6c9a7ea911bf30c5394f9245",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2800,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "e2e7e22d6c9a7ea911bf30c5394f9245"
+    },
+    {
+     "participant": "NE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Patriots",
+     "short_label": "NE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_eeed763d1593e043f09f0368cd8052ba",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "eeed763d1593e043f09f0368cd8052ba"
+    },
+    {
+     "participant": "SEA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2000,
+      "book_id": 12,
+      "created": "2026-02-17 14:05:12"
+     },
+     "label": "Seahawks",
+     "short_label": "SEA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 21:05:21",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_f72ac1fbd32059f49788afd795d7a6c7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 21:05:21",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "f72ac1fbd32059f49788afd795d7a6c7"
+    }
+   ]
+  },
+  {
+   "id": "7be018d39357004a100326f7fa1c594e",
+   "market_id": 125,
+   "event_id": null,
+   "player_id": 18600,
+   "team_id": null,
+   "opponent_id": null,
+   "link": "",
+   "active": true,
+   "participants": [
+    {
+     "id": "DAL",
+     "name": "Cowboys",
+     "link": "/nfl/teams/dallas-cowboys/",
+     "team": {
+      "city": "Dallas",
+      "abbreviation": "DAL",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "dallas-cowboys"
+     }
+    },
+    {
+     "id": "TEN",
+     "name": "Titans",
+     "link": "/nfl/teams/tennessee-titans/",
+     "team": {
+      "city": "Tennessee",
+      "abbreviation": "TEN",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "tennessee-titans"
+     }
+    },
+    {
+     "id": "SEA",
+     "name": "Seahawks",
+     "link": "/nfl/teams/seattle-seahawks/",
+     "team": {
+      "city": "Seattle",
+      "abbreviation": "SEA",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "seattle-seahawks"
+     }
+    },
+    {
+     "id": "DEN",
+     "name": "Broncos",
+     "link": "/nfl/teams/denver-broncos/",
+     "team": {
+      "city": "Denver",
+      "abbreviation": "DEN",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "denver-broncos"
+     }
+    },
+    {
+     "id": "NO",
+     "name": "Saints",
+     "link": "/nfl/teams/new-orleans-saints/",
+     "team": {
+      "city": "New Orleans",
+      "abbreviation": "NO",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "new-orleans-saints"
+     }
+    },
+    {
+     "id": "LV",
+     "name": "Raiders",
+     "link": "/nfl/teams/las-vegas-raiders/",
+     "team": {
+      "city": "Las Vegas",
+      "abbreviation": "LV",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "las-vegas-raiders"
+     }
+    },
+    {
+     "id": "PHI",
+     "name": "Eagles",
+     "link": "/nfl/teams/philadelphia-eagles/",
+     "team": {
+      "city": "Philadelphia",
+      "abbreviation": "PHI",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "philadelphia-eagles"
+     }
+    },
+    {
+     "id": "NE",
+     "name": "Patriots",
+     "link": "/nfl/teams/new-england-patriots/",
+     "team": {
+      "city": "New England",
+      "abbreviation": "NE",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-england-patriots"
+     }
+    },
+    {
+     "id": "LAR",
+     "name": "Rams",
+     "link": "/nfl/teams/los-angeles-rams/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAR",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "los-angeles-rams"
+     }
+    },
+    {
+     "id": "CIN",
+     "name": "Bengals",
+     "link": "/nfl/teams/cincinnati-bengals/",
+     "team": {
+      "city": "Cincinnati",
+      "abbreviation": "CIN",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cincinnati-bengals"
+     }
+    },
+    {
+     "id": "GB",
+     "name": "Packers",
+     "link": "/nfl/teams/green-bay-packers/",
+     "team": {
+      "city": "Green Bay",
+      "abbreviation": "GB",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "green-bay-packers"
+     }
+    },
+    {
+     "id": "KC",
+     "name": "Chiefs",
+     "link": "/nfl/teams/kansas-city-chiefs/",
+     "team": {
+      "city": "Kansas City",
+      "abbreviation": "KC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "kansas-city-chiefs"
+     }
+    },
+    {
+     "id": "MIN",
+     "name": "Vikings",
+     "link": "/nfl/teams/minnesota-vikings/",
+     "team": {
+      "city": "Minnesota",
+      "abbreviation": "MIN",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "minnesota-vikings"
+     }
+    },
+    {
+     "id": "JAC",
+     "name": "Jaguars",
+     "link": "/nfl/teams/jacksonville-jaguars/",
+     "team": {
+      "city": "Jacksonville",
+      "abbreviation": "JAC",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "jacksonville-jaguars"
+     }
+    },
+    {
+     "id": "TB",
+     "name": "Buccaneers",
+     "link": "/nfl/teams/tampa-bay-buccaneers/",
+     "team": {
+      "city": "Tampa Bay",
+      "abbreviation": "TB",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "tampa-bay-buccaneers"
+     }
+    },
+    {
+     "id": "NYG",
+     "name": "Giants",
+     "link": "/nfl/teams/new-york-giants/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYG",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "new-york-giants"
+     }
+    },
+    {
+     "id": "BAL",
+     "name": "Ravens",
+     "link": "/nfl/teams/baltimore-ravens/",
+     "team": {
+      "city": "Baltimore",
+      "abbreviation": "BAL",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "baltimore-ravens"
+     }
+    },
+    {
+     "id": "DET",
+     "name": "Lions",
+     "link": "/nfl/teams/detroit-lions/",
+     "team": {
+      "city": "Detroit",
+      "abbreviation": "DET",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "detroit-lions"
+     }
+    },
+    {
+     "id": "BUF",
+     "name": "Bills",
+     "link": "/nfl/teams/buffalo-bills/",
+     "team": {
+      "city": "Buffalo",
+      "abbreviation": "BUF",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "buffalo-bills"
+     }
+    },
+    {
+     "id": "CAR",
+     "name": "Panthers",
+     "link": "/nfl/teams/carolina-panthers/",
+     "team": {
+      "city": "Carolina",
+      "abbreviation": "CAR",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "carolina-panthers"
+     }
+    },
+    {
+     "id": "ARI",
+     "name": "Cardinals",
+     "link": "/nfl/teams/arizona-cardinals/",
+     "team": {
+      "city": "Arizona",
+      "abbreviation": "ARI",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "arizona-cardinals"
+     }
+    },
+    {
+     "id": "CHI",
+     "name": "Bears",
+     "link": "/nfl/teams/chicago-bears/",
+     "team": {
+      "city": "Chicago",
+      "abbreviation": "CHI",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "chicago-bears"
+     }
+    },
+    {
+     "id": "WAS",
+     "name": "Commanders",
+     "link": "/nfl/teams/washington-commanders/",
+     "team": {
+      "city": "Washington",
+      "abbreviation": "WAS",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "washington-commanders"
+     }
+    },
+    {
+     "id": "CLE",
+     "name": "Browns",
+     "link": "/nfl/teams/cleveland-browns/",
+     "team": {
+      "city": "Cleveland",
+      "abbreviation": "CLE",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cleveland-browns"
+     }
+    },
+    {
+     "id": "LAC",
+     "name": "Chargers",
+     "link": "/nfl/teams/los-angeles-chargers/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "los-angeles-chargers"
+     }
+    },
+    {
+     "id": "ATL",
+     "name": "Falcons",
+     "link": "/nfl/teams/atlanta-falcons/",
+     "team": {
+      "city": "Atlanta",
+      "abbreviation": "ATL",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "atlanta-falcons"
+     }
+    },
+    {
+     "id": "NYJ",
+     "name": "Jets",
+     "link": "/nfl/teams/new-york-jets/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYJ",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-york-jets"
+     }
+    },
+    {
+     "id": "MIA",
+     "name": "Dolphins",
+     "link": "/nfl/teams/miami-dolphins/",
+     "team": {
+      "city": "Miami",
+      "abbreviation": "MIA",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "miami-dolphins"
+     }
+    },
+    {
+     "id": "PIT",
+     "name": "Steelers",
+     "link": "/nfl/teams/pittsburgh-steelers/",
+     "team": {
+      "city": "Pittsburgh",
+      "abbreviation": "PIT",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "pittsburgh-steelers"
+     }
+    },
+    {
+     "id": "SF",
+     "name": "49ers",
+     "link": "/nfl/teams/san-francisco-49ers/",
+     "team": {
+      "city": "San Francisco",
+      "abbreviation": "SF",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "san-francisco-49ers"
+     }
+    },
+    {
+     "id": "IND",
+     "name": "Colts",
+     "link": "/nfl/teams/indianapolis-colts/",
+     "team": {
+      "city": "Indianapolis",
+      "abbreviation": "IND",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "indianapolis-colts"
+     }
+    },
+    {
+     "id": "HOU",
+     "name": "Texans",
+     "link": "/nfl/teams/houston-texans/",
+     "team": {
+      "city": "Houston",
+      "abbreviation": "HOU",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "houston-texans"
+     }
+    },
+    {
+     "id": "18600",
+     "name": "Kyler Murray",
+     "link": "/nfl/props/kyler-murray/",
+     "player": {
+      "short_name": "K. Murray",
+      "first_name": "Kyler",
+      "last_name": "Murray",
+      "image": "https://images.fantasypros.com/images/players/nfl/18600/headshot/210x210.webp",
+      "position": "QB",
+      "team": "MIN",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "kyler-murray",
+      "jersey_number": 1
+     }
+    }
+   ],
+   "selections": [
+    {
+     "participant": "DAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Cowboys",
+     "short_label": "DAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 17:16:32",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_01a0cd15fa7fe19c7bd243233923f231",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 17:16:32",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "01a0cd15fa7fe19c7bd243233923f231"
+    },
+    {
+     "participant": "TEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Titans",
+     "short_label": "TEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 17:03:41",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_13cb82db468a8c7ab047e56d0a8ecf27",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 17:03:41",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "13cb82db468a8c7ab047e56d0a8ecf27"
+    },
+    {
+     "participant": "SEA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Seahawks",
+     "short_label": "SEA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 20:11:16",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_1c449dcc8a9d08030bd1bbd880db02fe",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 20:11:16",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "1c449dcc8a9d08030bd1bbd880db02fe"
+    },
+    {
+     "participant": "DEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Broncos",
+     "short_label": "DEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 14:01:26",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_2027955364947728b1ad9d5c1eac623d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 14:01:26",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "2027955364947728b1ad9d5c1eac623d"
+    },
+    {
+     "participant": "NO",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Saints",
+     "short_label": "NO",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_316853bfa02471ed765f2c476edfa5a8",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "316853bfa02471ed765f2c476edfa5a8"
+    },
+    {
+     "participant": "LV",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Raiders",
+     "short_label": "LV",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_396a14b96261e37bf8c246683f042643",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "396a14b96261e37bf8c246683f042643"
+    },
+    {
+     "participant": "PHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Eagles",
+     "short_label": "PHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 11:05:23",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_3fae277c34f4b45d02e1479b34da9779",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 11:05:23",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "3fae277c34f4b45d02e1479b34da9779"
+    },
+    {
+     "participant": "NE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Patriots",
+     "short_label": "NE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_469003631961397f243ddcfd2671e3cb",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "469003631961397f243ddcfd2671e3cb"
+    },
+    {
+     "participant": "LAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Rams",
+     "short_label": "LAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_55a151f06cf57a943ea8f53db938199b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "55a151f06cf57a943ea8f53db938199b"
+    },
+    {
+     "participant": "CIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Bengals",
+     "short_label": "CIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_571a47e170004bc76cdbf0d8f0aee44b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "571a47e170004bc76cdbf0d8f0aee44b"
+    },
+    {
+     "participant": "GB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Packers",
+     "short_label": "GB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 11:55:44",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_59dc8e2094636c2c590937def1484c0e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 11:55:44",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "59dc8e2094636c2c590937def1484c0e"
+    },
+    {
+     "participant": "KC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Chiefs",
+     "short_label": "KC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_6f71b58e3c405ccb1536cc677e0011ac",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "6f71b58e3c405ccb1536cc677e0011ac"
+    },
+    {
+     "participant": "MIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 250,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Vikings",
+     "short_label": "MIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-07-28 11:24:46",
+         "cost": 250,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_744fbcb0551d54ea5854287e169faf0d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-07-28 11:24:46",
+         "cost": 250,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "744fbcb0551d54ea5854287e169faf0d"
+    },
+    {
+     "participant": "JAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Jaguars",
+     "short_label": "JAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 19:16:28",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_83a2bfe7cee524200681421be979537e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 19:16:28",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "83a2bfe7cee524200681421be979537e"
+    },
+    {
+     "participant": "TB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Buccaneers",
+     "short_label": "TB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 12:42:43",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_8d193cb2ba225e2f05d68ff2231ca092",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 12:42:43",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "8d193cb2ba225e2f05d68ff2231ca092"
+    },
+    {
+     "participant": "NYG",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Giants",
+     "short_label": "NYG",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 08:39:13",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_8de6cfabda064dc5707e5f68b0dd65b9",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 08:39:13",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "8de6cfabda064dc5707e5f68b0dd65b9"
+    },
+    {
+     "participant": "BAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Ravens",
+     "short_label": "BAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 10:23:04",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_912d5fa1d230cb1d7a83980f3b8b1908",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 10:23:04",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "912d5fa1d230cb1d7a83980f3b8b1908"
+    },
+    {
+     "participant": "DET",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Lions",
+     "short_label": "DET",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 19:24:16",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_9b39958d6194394be2be2b9aaec90f84",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 19:24:16",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "9b39958d6194394be2be2b9aaec90f84"
+    },
+    {
+     "participant": "BUF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Bills",
+     "short_label": "BUF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 09:23:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_9b5cc7e43862ce9cd206c78c4856b8b9",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 09:23:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "9b5cc7e43862ce9cd206c78c4856b8b9"
+    },
+    {
+     "participant": "CAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 3500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Panthers",
+     "short_label": "CAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_9d26c1dfca6bcca881ba075ff5fad9af",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 3500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "9d26c1dfca6bcca881ba075ff5fad9af"
+    },
+    {
+     "participant": "ARI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 750,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Cardinals",
+     "short_label": "ARI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 06:14:15",
+         "cost": 750,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_a0608316daad14646a0adc02b0723ed3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 06:14:15",
+         "cost": 750,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "a0608316daad14646a0adc02b0723ed3"
+    },
+    {
+     "participant": "CHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Bears",
+     "short_label": "CHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 10:12:05",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_a52e9d1a94ff50fdf266bfee597367d5",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 10:12:05",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "a52e9d1a94ff50fdf266bfee597367d5"
+    },
+    {
+     "participant": "WAS",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 7500,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Commanders",
+     "short_label": "WAS",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 19:24:16",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_a8a97837867fcfae29eac20d818613ab",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 19:24:16",
+         "cost": 7500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "a8a97837867fcfae29eac20d818613ab"
+    },
+    {
+     "participant": "CLE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 475,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Browns",
+     "short_label": "CLE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 09:57:34",
+         "cost": 475,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_ada9ea559ae2402af966c9104b6a3d9e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 09:57:34",
+         "cost": 475,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "ada9ea559ae2402af966c9104b6a3d9e"
+    },
+    {
+     "participant": "LAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Chargers",
+     "short_label": "LAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 13:36:50",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_b23f88627e67e32a417cde77beb29cfa",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 13:36:50",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "b23f88627e67e32a417cde77beb29cfa"
+    },
+    {
+     "participant": "ATL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 475,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Falcons",
+     "short_label": "ATL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 17:37:40",
+         "cost": 475,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_b8e059429fbb57e0ea4603e76324b6c9",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 17:37:40",
+         "cost": 475,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "b8e059429fbb57e0ea4603e76324b6c9"
+    },
+    {
+     "participant": "NYJ",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 100,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Jets",
+     "short_label": "NYJ",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 320,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_cdefa368f8af5856cef149ff10d1a146",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 320,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "cdefa368f8af5856cef149ff10d1a146"
+    },
+    {
+     "participant": "MIA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 350,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Dolphins",
+     "short_label": "MIA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 08:30:30",
+         "cost": 350,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e93f633d68d57b8972845d18c8952107",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 08:30:30",
+         "cost": 350,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "e93f633d68d57b8972845d18c8952107"
+    },
+    {
+     "participant": "PIT",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Steelers",
+     "short_label": "PIT",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 19:54:33",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_f122b2eccc8c747276ec69185bff4b08",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 19:54:33",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "f122b2eccc8c747276ec69185bff4b08"
+    },
+    {
+     "participant": "SF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "49ers",
+     "short_label": "SF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_f622ca94210dff24f27c35d375b7395a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-08 17:09:15",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "f622ca94210dff24f27c35d375b7395a"
+    },
+    {
+     "participant": "IND",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 750,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Colts",
+     "short_label": "IND",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-07-28 11:30:52",
+         "cost": 750,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_fb5dda86aecbc4805c7c8b1d493396a2",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-07-28 11:30:52",
+         "cost": 750,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "fb5dda86aecbc4805c7c8b1d493396a2"
+    },
+    {
+     "participant": "HOU",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 10000,
+      "book_id": 12,
+      "created": "2026-03-03 20:10:25"
+     },
+     "label": "Texans",
+     "short_label": "HOU",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 20:01:26",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_fdf535e875fced7b0837efce10b6f027",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 20:01:26",
+         "cost": 10000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "fdf535e875fced7b0837efce10b6f027"
+    }
+   ]
+  },
+  {
+   "id": "b78702da0a0cb3cac5b475e4e6e51bb5",
+   "market_id": 125,
+   "event_id": null,
+   "player_id": 18218,
+   "team_id": null,
+   "opponent_id": null,
+   "link": "",
+   "active": true,
+   "participants": [
+    {
+     "id": "PHI",
+     "name": "Eagles",
+     "link": "/nfl/teams/philadelphia-eagles/",
+     "team": {
+      "city": "Philadelphia",
+      "abbreviation": "PHI",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "philadelphia-eagles"
+     }
+    },
+    {
+     "id": "GB",
+     "name": "Packers",
+     "link": "/nfl/teams/green-bay-packers/",
+     "team": {
+      "city": "Green Bay",
+      "abbreviation": "GB",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "green-bay-packers"
+     }
+    },
+    {
+     "id": "BAL",
+     "name": "Ravens",
+     "link": "/nfl/teams/baltimore-ravens/",
+     "team": {
+      "city": "Baltimore",
+      "abbreviation": "BAL",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "baltimore-ravens"
+     }
+    },
+    {
+     "id": "DAL",
+     "name": "Cowboys",
+     "link": "/nfl/teams/dallas-cowboys/",
+     "team": {
+      "city": "Dallas",
+      "abbreviation": "DAL",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "dallas-cowboys"
+     }
+    },
+    {
+     "id": "DET",
+     "name": "Lions",
+     "link": "/nfl/teams/detroit-lions/",
+     "team": {
+      "city": "Detroit",
+      "abbreviation": "DET",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "detroit-lions"
+     }
+    },
+    {
+     "id": "JAC",
+     "name": "Jaguars",
+     "link": "/nfl/teams/jacksonville-jaguars/",
+     "team": {
+      "city": "Jacksonville",
+      "abbreviation": "JAC",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "jacksonville-jaguars"
+     }
+    },
+    {
+     "id": "SEA",
+     "name": "Seahawks",
+     "link": "/nfl/teams/seattle-seahawks/",
+     "team": {
+      "city": "Seattle",
+      "abbreviation": "SEA",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "seattle-seahawks"
+     }
+    },
+    {
+     "id": "SF",
+     "name": "49ers",
+     "link": "/nfl/teams/san-francisco-49ers/",
+     "team": {
+      "city": "San Francisco",
+      "abbreviation": "SF",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "san-francisco-49ers"
+     }
+    },
+    {
+     "id": "HOU",
+     "name": "Texans",
+     "link": "/nfl/teams/houston-texans/",
+     "team": {
+      "city": "Houston",
+      "abbreviation": "HOU",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "houston-texans"
+     }
+    },
+    {
+     "id": "NO",
+     "name": "Saints",
+     "link": "/nfl/teams/new-orleans-saints/",
+     "team": {
+      "city": "New Orleans",
+      "abbreviation": "NO",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "new-orleans-saints"
+     }
+    },
+    {
+     "id": "ATL",
+     "name": "Falcons",
+     "link": "/nfl/teams/atlanta-falcons/",
+     "team": {
+      "city": "Atlanta",
+      "abbreviation": "ATL",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "atlanta-falcons"
+     }
+    },
+    {
+     "id": "ARI",
+     "name": "Cardinals",
+     "link": "/nfl/teams/arizona-cardinals/",
+     "team": {
+      "city": "Arizona",
+      "abbreviation": "ARI",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "arizona-cardinals"
+     }
+    },
+    {
+     "id": "DEN",
+     "name": "Broncos",
+     "link": "/nfl/teams/denver-broncos/",
+     "team": {
+      "city": "Denver",
+      "abbreviation": "DEN",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "denver-broncos"
+     }
+    },
+    {
+     "id": "IND",
+     "name": "Colts",
+     "link": "/nfl/teams/indianapolis-colts/",
+     "team": {
+      "city": "Indianapolis",
+      "abbreviation": "IND",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "indianapolis-colts"
+     }
+    },
+    {
+     "id": "LV",
+     "name": "Raiders",
+     "link": "/nfl/teams/las-vegas-raiders/",
+     "team": {
+      "city": "Las Vegas",
+      "abbreviation": "LV",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "las-vegas-raiders"
+     }
+    },
+    {
+     "id": "CAR",
+     "name": "Panthers",
+     "link": "/nfl/teams/carolina-panthers/",
+     "team": {
+      "city": "Carolina",
+      "abbreviation": "CAR",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "carolina-panthers"
+     }
+    },
+    {
+     "id": "BUF",
+     "name": "Bills",
+     "link": "/nfl/teams/buffalo-bills/",
+     "team": {
+      "city": "Buffalo",
+      "abbreviation": "BUF",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "buffalo-bills"
+     }
+    },
+    {
+     "id": "TEN",
+     "name": "Titans",
+     "link": "/nfl/teams/tennessee-titans/",
+     "team": {
+      "city": "Tennessee",
+      "abbreviation": "TEN",
+      "conference": "AFC",
+      "division": "South",
+      "slug": "tennessee-titans"
+     }
+    },
+    {
+     "id": "NE",
+     "name": "Patriots",
+     "link": "/nfl/teams/new-england-patriots/",
+     "team": {
+      "city": "New England",
+      "abbreviation": "NE",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-england-patriots"
+     }
+    },
+    {
+     "id": "CLE",
+     "name": "Browns",
+     "link": "/nfl/teams/cleveland-browns/",
+     "team": {
+      "city": "Cleveland",
+      "abbreviation": "CLE",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cleveland-browns"
+     }
+    },
+    {
+     "id": "NYG",
+     "name": "Giants",
+     "link": "/nfl/teams/new-york-giants/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYG",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "new-york-giants"
+     }
+    },
+    {
+     "id": "NYJ",
+     "name": "Jets",
+     "link": "/nfl/teams/new-york-jets/",
+     "team": {
+      "city": "New York",
+      "abbreviation": "NYJ",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "new-york-jets"
+     }
+    },
+    {
+     "id": "CHI",
+     "name": "Bears",
+     "link": "/nfl/teams/chicago-bears/",
+     "team": {
+      "city": "Chicago",
+      "abbreviation": "CHI",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "chicago-bears"
+     }
+    },
+    {
+     "id": "KC",
+     "name": "Chiefs",
+     "link": "/nfl/teams/kansas-city-chiefs/",
+     "team": {
+      "city": "Kansas City",
+      "abbreviation": "KC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "kansas-city-chiefs"
+     }
+    },
+    {
+     "id": "LAC",
+     "name": "Chargers",
+     "link": "/nfl/teams/los-angeles-chargers/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAC",
+      "conference": "AFC",
+      "division": "West",
+      "slug": "los-angeles-chargers"
+     }
+    },
+    {
+     "id": "TB",
+     "name": "Buccaneers",
+     "link": "/nfl/teams/tampa-bay-buccaneers/",
+     "team": {
+      "city": "Tampa Bay",
+      "abbreviation": "TB",
+      "conference": "NFC",
+      "division": "South",
+      "slug": "tampa-bay-buccaneers"
+     }
+    },
+    {
+     "id": "PIT",
+     "name": "Steelers",
+     "link": "/nfl/teams/pittsburgh-steelers/",
+     "team": {
+      "city": "Pittsburgh",
+      "abbreviation": "PIT",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "pittsburgh-steelers"
+     }
+    },
+    {
+     "id": "CIN",
+     "name": "Bengals",
+     "link": "/nfl/teams/cincinnati-bengals/",
+     "team": {
+      "city": "Cincinnati",
+      "abbreviation": "CIN",
+      "conference": "AFC",
+      "division": "North",
+      "slug": "cincinnati-bengals"
+     }
+    },
+    {
+     "id": "WAS",
+     "name": "Commanders",
+     "link": "/nfl/teams/washington-commanders/",
+     "team": {
+      "city": "Washington",
+      "abbreviation": "WAS",
+      "conference": "NFC",
+      "division": "East",
+      "slug": "washington-commanders"
+     }
+    },
+    {
+     "id": "MIA",
+     "name": "Dolphins",
+     "link": "/nfl/teams/miami-dolphins/",
+     "team": {
+      "city": "Miami",
+      "abbreviation": "MIA",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "miami-dolphins"
+     }
+    },
+    {
+     "id": "LAR",
+     "name": "Rams",
+     "link": "/nfl/teams/los-angeles-rams/",
+     "team": {
+      "city": "Los Angeles",
+      "abbreviation": "LAR",
+      "conference": "NFC",
+      "division": "West",
+      "slug": "los-angeles-rams"
+     }
+    },
+    {
+     "id": "MIN",
+     "name": "Vikings",
+     "link": "/nfl/teams/minnesota-vikings/",
+     "team": {
+      "city": "Minnesota",
+      "abbreviation": "MIN",
+      "conference": "NFC",
+      "division": "North",
+      "slug": "minnesota-vikings"
+     }
+    },
+    {
+     "id": "18218",
+     "name": "A.J. Brown",
+     "link": "/nfl/props/aj-brown/",
+     "player": {
+      "short_name": "A.J. Brown",
+      "first_name": "A.J.",
+      "last_name": "Brown",
+      "image": "https://images.fantasypros.com/images/players/nfl/18218/headshot/210x210.webp",
+      "position": "WR",
+      "team": "NE",
+      "conference": "AFC",
+      "division": "East",
+      "slug": "aj-brown",
+      "jersey_number": 11
+     }
+    }
+   ],
+   "selections": [
+    {
+     "participant": "PHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": -150,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Eagles",
+     "short_label": "PHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": -125,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_01b8dd706926e9390f058fec75fcf1c0",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": -125,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "01b8dd706926e9390f058fec75fcf1c0"
+    },
+    {
+     "participant": "GB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Packers",
+     "short_label": "GB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 17:37:40",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_031d4c16d448ac342a6296da0d88dcb1",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 17:37:40",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "031d4c16d448ac342a6296da0d88dcb1"
+    },
+    {
+     "participant": "BAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Ravens",
+     "short_label": "BAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_036ca36b878fe4762a6517ad1a51b2d6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "036ca36b878fe4762a6517ad1a51b2d6"
+    },
+    {
+     "participant": "DAL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Cowboys",
+     "short_label": "DAL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_03af29c26ed0448977e9c20cad100cae",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 5000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "03af29c26ed0448977e9c20cad100cae"
+    },
+    {
+     "participant": "DET",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Lions",
+     "short_label": "DET",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_105bc40600f62e604434c41690f24f85",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 09:59:00",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "105bc40600f62e604434c41690f24f85"
+    },
+    {
+     "participant": "JAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Jaguars",
+     "short_label": "JAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_1668f7499008a6ad6710fec68f2c0ab2",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "1668f7499008a6ad6710fec68f2c0ab2"
+    },
+    {
+     "participant": "SEA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Seahawks",
+     "short_label": "SEA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-07-28 09:43:08",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_1c211cea079d07cfdfe858c7321caaf2",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-07-28 09:43:08",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "1c211cea079d07cfdfe858c7321caaf2"
+    },
+    {
+     "participant": "SF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1200,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "49ers",
+     "short_label": "SF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_2c97d06e751bb67c5902c2fa653f42ee",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "2c97d06e751bb67c5902c2fa653f42ee"
+    },
+    {
+     "participant": "HOU",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Texans",
+     "short_label": "HOU",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 17:12:57",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_340ae07303a7554de5aeb3d2c174002a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 17:12:57",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "340ae07303a7554de5aeb3d2c174002a"
+    },
+    {
+     "participant": "NO",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Saints",
+     "short_label": "NO",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 14:01:25",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_357f5e61d426294d55e0f7a9c0f3d5a5",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 14:01:25",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "357f5e61d426294d55e0f7a9c0f3d5a5"
+    },
+    {
+     "participant": "ATL",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Falcons",
+     "short_label": "ATL",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 22:01:33",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_49866fe336651adb05023c258fe26457",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 22:01:33",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "49866fe336651adb05023c258fe26457"
+    },
+    {
+     "participant": "ARI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Cardinals",
+     "short_label": "ARI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 08:56:24",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_4ff17d3a7e0f2f0298d6a780575b2a88",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 08:56:24",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "4ff17d3a7e0f2f0298d6a780575b2a88"
+    },
+    {
+     "participant": "DEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1400,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Broncos",
+     "short_label": "DEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 11:32:04",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_5335919c9247d45c234ee3515085f5ab",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 11:32:04",
+         "cost": 1400,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "5335919c9247d45c234ee3515085f5ab"
+    },
+    {
+     "participant": "IND",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Colts",
+     "short_label": "IND",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 13:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_614800a457dd67d43388b2b96b3221ff",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 13:12:42",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "614800a457dd67d43388b2b96b3221ff"
+    },
+    {
+     "participant": "LV",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1400,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Raiders",
+     "short_label": "LV",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_6194da2aef4bb303e2a4c13086abdf5e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1200,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "6194da2aef4bb303e2a4c13086abdf5e"
+    },
+    {
+     "participant": "CAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Panthers",
+     "short_label": "CAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_62fb8d703d6f5eadbf2dfa72bc9b8839",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "62fb8d703d6f5eadbf2dfa72bc9b8839"
+    },
+    {
+     "participant": "BUF",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 800,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Bills",
+     "short_label": "BUF",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_64af03d8f252dbc9ed6c68eff3144bff",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "64af03d8f252dbc9ed6c68eff3144bff"
+    },
+    {
+     "participant": "TEN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1000,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Titans",
+     "short_label": "TEN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 19:16:27",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_699fb4631eb728c192cee33dda3e18fe",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 19:16:27",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "699fb4631eb728c192cee33dda3e18fe"
+    },
+    {
+     "participant": "NE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 175,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Patriots",
+     "short_label": "NE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 150,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_7fe15260da684934e41d7266090b4b92",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 150,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "7fe15260da684934e41d7266090b4b92"
+    },
+    {
+     "participant": "CLE",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2000,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Browns",
+     "short_label": "CLE",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 12:24:57",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_812195e4c203548fb754403239a7a20a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 12:24:57",
+         "cost": 2000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "812195e4c203548fb754403239a7a20a"
+    },
+    {
+     "participant": "NYG",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Giants",
+     "short_label": "NYG",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_8402e82a5f0c068f1dde6503dabf61fa",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "8402e82a5f0c068f1dde6503dabf61fa"
+    },
+    {
+     "participant": "NYJ",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Jets",
+     "short_label": "NYJ",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_85a12c20e5fa6f4aca561b8f81e6a317",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "85a12c20e5fa6f4aca561b8f81e6a317"
+    },
+    {
+     "participant": "CHI",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Bears",
+     "short_label": "CHI",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 10:15:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_8a1a4960f26f59e2cc706beeaee1500d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 10:15:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "8a1a4960f26f59e2cc706beeaee1500d"
+    },
+    {
+     "participant": "KC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1600,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Chiefs",
+     "short_label": "KC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_a3d26c17f3070409d96d15a3e1f0202f",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "a3d26c17f3070409d96d15a3e1f0202f"
+    },
+    {
+     "participant": "LAC",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2000,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Chargers",
+     "short_label": "LAC",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_aa59d62dea56c4223d757dc39bae282b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "aa59d62dea56c4223d757dc39bae282b"
+    },
+    {
+     "participant": "TB",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Buccaneers",
+     "short_label": "TB",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-20 09:48:44",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_b46911733b116d128fa03791724f2056",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-20 09:48:44",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "b46911733b116d128fa03791724f2056"
+    },
+    {
+     "participant": "PIT",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Steelers",
+     "short_label": "PIT",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_bff66b1a1923bc0f4ff1ad3146ec2cfd",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 4000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "bff66b1a1923bc0f4ff1ad3146ec2cfd"
+    },
+    {
+     "participant": "CIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Bengals",
+     "short_label": "CIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 10:15:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_c0d1697f55c2170b09c5282b53cb99f3",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 10:15:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "c0d1697f55c2170b09c5282b53cb99f3"
+    },
+    {
+     "participant": "WAS",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Commanders",
+     "short_label": "WAS",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e3a794da363b9f7759667209f444d3ab",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-03-09 15:17:20",
+         "cost": 1600,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "e3a794da363b9f7759667209f444d3ab"
+    },
+    {
+     "participant": "MIA",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 1000,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Dolphins",
+     "short_label": "MIA",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-21 19:12:22",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_e5395881be681ddf573e563ac5ee204a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-21 19:12:22",
+         "cost": 1000,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "e5395881be681ddf573e563ac5ee204a"
+    },
+    {
+     "participant": "LAR",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Rams",
+     "short_label": "LAR",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-19 10:15:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_eae8b8ba4d709f06ded039d1227c559e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-19 10:15:50",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "eae8b8ba4d709f06ded039d1227c559e"
+    },
+    {
+     "participant": "MIN",
+     "selection": "",
+     "active": true,
+     "opening_line": {
+      "line": 1,
+      "cost": 2500,
+      "book_id": 12,
+      "created": "2026-02-23 13:27:40"
+     },
+     "label": "Vikings",
+     "short_label": "MIN",
+     "books": [
+      {
+       "id": 0,
+       "lines": [
+        {
+         "id": null,
+         "from_scout": false,
+         "main": true,
+         "best": false,
+         "updated": "2026-08-18 19:39:17",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 12,
+       "lines": [
+        {
+         "id": "12_f93baae4fb66fdfc97f472a1fe323814",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-08-18 19:39:17",
+         "cost": 2500,
+         "line": 1,
+         "is_off": true,
+         "active": true,
+         "link": "https://btng.pro/FMwkO6"
+        }
+       ]
+      }
+     ],
+     "id": "f93baae4fb66fdfc97f472a1fe323814"
+    }
+   ]
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-08-22",
+ "fetched": "2026-08-23",
  "players": {
   "1226": {
    "name": "Travis Kelce",
@@ -2315,15 +2315,15 @@
      }
     },
     "receiving_yards": {
-     "line": 300.5,
+     "line": 325.5,
      "books": {
       "consensus": {
-       "line": 300.5,
+       "line": 325.5,
        "over": -140,
        "under": 110
       },
       "caesars": {
-       "line": 300.5,
+       "line": 325.5,
        "over": -140,
        "under": 110
       }
@@ -2536,18 +2536,13 @@
    "sleeper_id": "4981",
    "markets": {
     "receiving_yards": {
-     "line": 550.5,
+     "line": null,
      "books": {
       "consensus": {
        "line": null
       },
       "draftkings": {
        "line": null
-      },
-      "betrivers": {
-       "line": 550.5,
-       "over": -110,
-       "under": -110
       }
      }
     },
@@ -3320,12 +3315,12 @@
    "sleeper_id": "5947",
    "markets": {
     "receiving_yards": {
-     "line": 650.5,
+     "line": 638,
      "books": {
       "consensus": {
-       "line": 650.5,
-       "over": -110,
-       "under": -110
+       "line": 638,
+       "over": -112,
+       "under": -112
       },
       "draftkings": {
        "line": null
@@ -3339,28 +3334,31 @@
        "line": 650.5,
        "over": -110,
        "under": -110
-      },
-      "caesars": {
-       "line": 650.5,
-       "over": -115,
-       "under": -115
       }
      }
     },
     "receiving_tds": {
-     "line": 5.5,
+     "line": 4.5,
      "books": {
       "consensus": {
-       "line": 5.5,
-       "over": 125,
-       "under": -155
+       "line": 4.5,
+       "over": -118,
+       "under": -118
       },
       "caesars": {
        "line": 5.5,
        "over": 125,
+       "off": true,
        "under": -155
+      },
+      "betmgm": {
+       "line": 5.5,
+       "over": 135,
+       "off": true,
+       "under": -160
       }
-     }
+     },
+     "source": "bettingpros"
     },
     "receptions": {
      "line": 58.5,
@@ -3666,7 +3664,7 @@
      "books": {
       "consensus": {
        "line": 5.5,
-       "over": 186,
+       "over": 194,
        "under": -614
       }
      },
@@ -6826,7 +6824,7 @@
      "books": {
       "consensus": {
        "line": 74.5,
-       "over": -113,
+       "over": -108,
        "under": -245
       }
      },
@@ -7341,8 +7339,8 @@
      "books": {
       "consensus": {
        "line": 2925.5,
-       "over": -112,
-       "under": -112
+       "over": -104,
+       "under": -122
       },
       "draftkings": {
        "line": 2949.5,
@@ -7361,8 +7359,8 @@
       },
       "betmgm": {
        "line": 2925.5,
-       "over": -110,
-       "under": -110
+       "over": 105,
+       "under": -130
       },
       "caesars": {
        "line": 2850.5,
@@ -7813,10 +7811,10 @@
    "sleeper_id": "8150",
    "markets": {
     "rushing_yards": {
-     "line": 950,
+     "line": 950.5,
      "books": {
       "consensus": {
-       "line": 950,
+       "line": 950.5,
        "over": -110,
        "under": -110
       },
@@ -8712,12 +8710,12 @@
      }
     },
     "receptions": {
-     "line": 62,
+     "line": 49.5,
      "books": {
       "consensus": {
-       "line": 62,
+       "line": 49.5,
        "over": -118,
-       "under": -733
+       "under": -118
       }
      },
      "source": "bettingpros"
@@ -9363,7 +9361,7 @@
      "books": {
       "consensus": {
        "line": 5.5,
-       "over": 124,
+       "over": 120,
        "under": -152
       },
       "draftkings": {
@@ -9373,8 +9371,8 @@
       },
       "fanduel": {
        "line": 5.5,
-       "over": 128,
-       "under": -172
+       "over": 116,
+       "under": -160
       },
       "betrivers": {
        "line": 5.5,
@@ -9767,7 +9765,7 @@
      "books": {
       "consensus": {
        "line": 99.5,
-       "over": 156,
+       "over": 163,
        "under": -9901
       }
      },
@@ -10711,7 +10709,7 @@
       "consensus": {
        "line": 66,
        "over": -118,
-       "under": -3236
+       "under": -1330
       }
      },
      "source": "bettingpros"
@@ -12220,7 +12218,7 @@
       "consensus": {
        "line": 72.5,
        "over": -118,
-       "under": -355
+       "under": -285
       },
       "draftkings": {
        "line": 70.5,
@@ -12363,8 +12361,8 @@
      "books": {
       "consensus": {
        "line": 74.5,
-       "over": 178,
-       "under": -3236
+       "over": 186,
+       "under": -1330
       }
      },
      "source": "bettingpros"
@@ -12487,8 +12485,8 @@
      "books": {
       "consensus": {
        "line": 5.5,
-       "over": -145,
-       "under": 117
+       "over": -150,
+       "under": 122
       },
       "draftkings": {
        "line": 5.5,
@@ -12507,8 +12505,8 @@
       },
       "betmgm": {
        "line": 5.5,
-       "over": -145,
-       "under": 120
+       "over": -155,
+       "under": 130
       },
       "caesars": {
        "line": 6.5,
@@ -12569,12 +12567,12 @@
    "sleeper_id": "12512",
    "markets": {
     "rushing_yards": {
-     "line": 874.5,
+     "line": 850.5,
      "books": {
       "consensus": {
-       "line": 874.5,
-       "over": -110,
-       "under": -110
+       "line": 850.5,
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
        "line": 874.5,
@@ -12582,7 +12580,7 @@
        "under": -110
       },
       "fanduel": {
-       "line": 875.5,
+       "line": 850.5,
        "over": -114,
        "under": -114
       },
@@ -12995,12 +12993,12 @@
    "sleeper_id": "12490",
    "markets": {
     "rushing_yards": {
-     "line": 724.5,
+     "line": 725,
      "books": {
       "consensus": {
-       "line": 724.5,
-       "over": -110,
-       "under": -110
+       "line": 725,
+       "over": -112,
+       "under": -112
       },
       "draftkings": {
        "line": 724.5,
@@ -13023,7 +13021,7 @@
        "under": -110
       },
       "caesars": {
-       "line": 675.5,
+       "line": 725.5,
        "over": -115,
        "under": -115
       }
@@ -13266,7 +13264,6 @@
       "consensus": {
        "line": 5.5,
        "over": -117,
-       "off": true,
        "under": -614
       }
      },
@@ -13281,10 +13278,10 @@
    "sleeper_id": "13269",
    "markets": {
     "passing_yards": {
-     "line": 2100.5,
+     "line": 2050.5,
      "books": {
       "consensus": {
-       "line": 2100.5,
+       "line": 2050.5,
        "over": -102,
        "under": -126
       },
@@ -13292,7 +13289,7 @@
        "line": null
       },
       "fanduel": {
-       "line": 2100.5,
+       "line": 2000.5,
        "over": -114,
        "under": -114
       },
@@ -13992,8 +13989,8 @@
      "books": {
       "consensus": {
        "line": 74.5,
-       "over": 285,
-       "under": -1330
+       "over": 270,
+       "under": -1149
       }
      },
      "source": "bettingpros"
@@ -14155,7 +14152,7 @@
      "books": {
       "consensus": {
        "line": 2999.5,
-       "over": 488,
+       "over": 426,
        "under": -669
       }
      },
@@ -14174,7 +14171,7 @@
      "books": {
       "consensus": {
        "line": 749.5,
-       "over": 223,
+       "over": 233,
        "under": -614
       }
      },
@@ -14205,8 +14202,8 @@
      "books": {
       "consensus": {
        "line": 5.5,
-       "over": 163,
-       "under": -4902
+       "over": 170,
+       "under": -9901
       }
      },
      "source": "bettingpros"
@@ -14224,7 +14221,7 @@
      "books": {
       "consensus": {
        "line": 749.5,
-       "over": 170,
+       "over": 178,
        "under": -355
       }
      },
@@ -14367,7 +14364,7 @@
      "books": {
       "consensus": {
        "line": 7.5,
-       "over": 163,
+       "over": 170,
        "under": -9901
       }
      },
@@ -14398,7 +14395,7 @@
      "books": {
       "consensus": {
        "line": 5.5,
-       "over": 163,
+       "over": 170,
        "under": -4902
       }
      },
@@ -14442,7 +14439,7 @@
      "books": {
       "consensus": {
        "line": 749.5,
-       "over": 233,
+       "over": 245,
        "under": -488
       }
      },
