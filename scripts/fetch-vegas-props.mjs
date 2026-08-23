@@ -31,10 +31,10 @@ const BRANDS = {
   71: 'betrivers',
 };
 
-async function fetchJson(url, { retries = 3, delayMs = 1000 } = {}) {
+async function fetchJson(url, { retries = 3, delayMs = 1000, headers = {} } = {}) {
   for (let attempt = 0; ; attempt++) {
     try {
-      const res = await fetch(url, { headers: { 'user-agent': UA } });
+      const res = await fetch(url, { headers: { 'user-agent': UA, ...headers } });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
     } catch (err) {
@@ -163,6 +163,101 @@ for (const { slug, data } of markets) {
     }
   }
 }
+
+// --- BettingPros: second aggregator, deeper per-player coverage ---
+// Fills markets Action Network doesn't post (RB receiving lines, receptions
+// for mid-tier players, QB interceptions) and players it misses entirely.
+// The x-api-key is the one bettingpros.com itself sends for anonymous
+// visitors, captured from the site's own requests.
+const BP_KEY = 'CHi8Hy5CEE4khd46XNYL23dCFX96oUdw6qOt1Dnh';
+const BP_MARKETS = {
+  300: 'passing_yards',
+  301: 'rushing_yards',
+  302: 'receiving_yards',
+  303: 'interceptions',
+  304: 'passing_tds',
+  305: 'rushing_tds',
+  306: 'receiving_tds',
+  330: 'receptions',
+};
+const BP_BRANDS = {
+  0: 'consensus',
+  12: 'draftkings',
+  10: 'fanduel',
+  19: 'betmgm',
+  13: 'caesars',
+  18: 'betrivers',
+  2: 'pinnacle',
+  24: 'bet365',
+};
+const entryByName = new Map(Object.values(byPlayer).map((e) => [normalize(e.name), e]));
+let bpCells = 0;
+let bpPlayers = 0;
+for (const [marketId, market] of Object.entries(BP_MARKETS)) {
+  const offers = [];
+  try {
+    for (let page = 1, pages = 1; page <= pages; page++) {
+      const d = await fetchJson(
+        `https://api.bettingpros.com/v3/offers?sport=NFL&market_id=${marketId}&season=${season}&limit=10&page=${page}`,
+        { headers: { 'x-api-key': BP_KEY } },
+      );
+      pages = d._pagination?.total_pages ?? 1;
+      offers.push(...(d.offers ?? []));
+      await new Promise((r) => setTimeout(r, 250));
+    }
+  } catch (err) {
+    console.error(`bettingpros ${market}: request failed — ${err.message ?? err}`);
+    continue;
+  }
+  await writeFile(
+    new URL(`bettingpros_${market}.json`, OUT),
+    JSON.stringify({ market_id: Number(marketId), market, season, offers }, null, 1),
+  );
+  for (const offer of offers) {
+    const part = offer.participants?.[0];
+    if (!part?.name) continue;
+    const key = normalize(part.name);
+    let entry = entryByName.get(key);
+    if (!entry) {
+      entry = {
+        name: part.name,
+        team: part.player?.team ?? null,
+        position: part.player?.position ?? null,
+        sleeper_id: null,
+        markets: {},
+      };
+      byPlayer[`bp_${offer.player_id}`] = entry;
+      entryByName.set(key, entry);
+      bpPlayers++;
+    }
+    entry.position ??= part.player?.position ?? null;
+    entry.team ??= part.player?.team ?? null;
+    if (entry.markets[market]) continue; // Action Network is the primary source
+    const books = {};
+    for (const sel of offer.selections ?? []) {
+      const side = sel.selection === 'over' ? 'over' : sel.selection === 'under' ? 'under' : null;
+      if (!side) continue;
+      for (const book of sel.books ?? []) {
+        const brand = BP_BRANDS[book.id];
+        if (!brand) continue;
+        // A suspended (is_off) line is still the book's last posted number —
+        // keep it as a fallback but flag it, so a whole player isn't dropped
+        // just because books paused the market on news.
+        const mains = (book.lines ?? []).filter((l) => l.main && l.active);
+        const line = mains.find((l) => !l.is_off) ?? mains[0];
+        if (!line) continue;
+        const b = (books[brand] ??= {});
+        b.line = line.line ?? b.line ?? null;
+        b[side] = line.cost;
+        if (line.is_off) b.off = true;
+      }
+    }
+    if (!Object.keys(books).length) continue;
+    entry.markets[market] = { line: null, books, source: 'bettingpros' };
+    bpCells++;
+  }
+}
+console.log(`bettingpros filled ${bpCells} player-market gaps, added ${bpPlayers} new players`);
 
 let matched = 0;
 for (const entry of Object.values(byPlayer)) {

@@ -25,6 +25,14 @@
    "book_id": 15,
    "odds": [
     {
+     "money": -105,
+     "value": 59,
+     "team_id": 136,
+     "player_id": 84234,
+     "outcome_id": 2823503256,
+     "option_type_id": 170
+    },
+    {
      "money": -122,
      "value": 92,
      "team_id": 148,
@@ -169,14 +177,6 @@
      "option_type_id": 170
     },
     {
-     "money": -110,
-     "value": 64.5,
-     "team_id": 134,
-     "player_id": 111833,
-     "outcome_id": 2823503261,
-     "option_type_id": 170
-    },
-    {
      "money": -114,
      "value": 77.5,
      "team_id": 137,
@@ -313,14 +313,6 @@
      "option_type_id": 170
     },
     {
-     "money": 100,
-     "value": 59.5,
-     "team_id": 136,
-     "player_id": 84234,
-     "outcome_id": 2823503256,
-     "option_type_id": 170
-    },
-    {
      "money": -105,
      "value": 49.5,
      "team_id": 130,
@@ -415,6 +407,22 @@
      "player_id": 166293,
      "outcome_id": 2484748506,
      "option_type_id": 170
+    },
+    {
+     "money": -117,
+     "value": 59,
+     "team_id": 136,
+     "player_id": 84234,
+     "outcome_id": 2823503259,
+     "option_type_id": 171
+    },
+    {
+     "money": -107,
+     "value": 61,
+     "team_id": 154,
+     "player_id": 1750,
+     "outcome_id": 2484748509,
+     "option_type_id": 171
     },
     {
      "money": -105,
@@ -569,14 +577,6 @@
      "option_type_id": 171
     },
     {
-     "money": -115,
-     "value": 64.5,
-     "team_id": 134,
-     "player_id": 111833,
-     "outcome_id": 2823503262,
-     "option_type_id": 171
-    },
-    {
      "money": -112,
      "value": 77.5,
      "team_id": 137,
@@ -614,14 +614,6 @@
      "team_id": 151,
      "player_id": 241851,
      "outcome_id": 2785241084,
-     "option_type_id": 171
-    },
-    {
-     "money": -107,
-     "value": 61,
-     "team_id": 154,
-     "player_id": 1750,
-     "outcome_id": 2484748509,
      "option_type_id": 171
     },
     {
@@ -721,14 +713,6 @@
      "option_type_id": 171
     },
     {
-     "money": -125,
-     "value": 59.5,
-     "team_id": 136,
-     "player_id": 84234,
-     "outcome_id": 2823503259,
-     "option_type_id": 171
-    },
-    {
      "money": -120,
      "value": 49.5,
      "team_id": 130,
@@ -813,6 +797,14 @@
   {
    "book_id": 68,
    "odds": [
+    {
+     "money": -115,
+     "value": 59.5,
+     "team_id": 154,
+     "player_id": 1750,
+     "outcome_id": 2785244184,
+     "option_type_id": 170
+    },
     {
      "money": -110,
      "value": 63.5,
@@ -1046,14 +1038,6 @@
      "option_type_id": 170
     },
     {
-     "money": -110,
-     "value": 64.5,
-     "team_id": 134,
-     "player_id": 111833,
-     "outcome_id": 2823476958,
-     "option_type_id": 170
-    },
-    {
      "money": -115,
      "value": 77.5,
      "team_id": 137,
@@ -1119,14 +1103,6 @@
     },
     {
      "money": -115,
-     "value": 59.5,
-     "team_id": 154,
-     "player_id": 1750,
-     "outcome_id": 2785244184,
-     "option_type_id": 170
-    },
-    {
-     "money": -115,
      "value": 75.5,
      "team_id": 140,
      "player_id": 195054,
@@ -1164,6 +1140,14 @@
      "player_id": 84234,
      "outcome_id": 2823476964,
      "option_type_id": 170
+    },
+    {
+     "money": -110,
+     "value": 59.5,
+     "team_id": 154,
+     "player_id": 1750,
+     "outcome_id": 2785244183,
+     "option_type_id": 171
     },
     {
      "money": -110,
@@ -1398,14 +1382,6 @@
      "option_type_id": 171
     },
     {
-     "money": -115,
-     "value": 64.5,
-     "team_id": 134,
-     "player_id": 111833,
-     "outcome_id": 2823476957,
-     "option_type_id": 171
-    },
-    {
      "money": -110,
      "value": 77.5,
      "team_id": 137,
@@ -1467,14 +1443,6 @@
      "team_id": 147,
      "player_id": 195062,
      "outcome_id": 2785240610,
-     "option_type_id": 171
-    },
-    {
-     "money": -110,
-     "value": 59.5,
-     "team_id": 154,
-     "player_id": 1750,
-     "outcome_id": 2785244183,
      "option_type_id": 171
     },
     {
@@ -2667,14 +2635,6 @@
    "team_id": 154,
    "url_slug": "deebo-samuel-110810-2",
    "full_name": "Deebo Samuel"
-  },
-  {
-   "id": 111833,
-   "abbr": "J.Meyers",
-   "image": "https://assets.actionnetwork.com/200x200/e3454a82652e47c3b1c2f65eb065998c.png",
-   "team_id": 134,
-   "url_slug": "jakobi-meyers-111833-2",
-   "full_name": "Jakobi Meyers"
   },
   {
    "id": 111836,
