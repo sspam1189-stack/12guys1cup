@@ -280,6 +280,22 @@ for (const bpm of bpMarkets) {
         if (line.is_off) b.off = true;
       }
     }
+    // BettingPros mixes milestone specials ("750+ rushing yards" yes/no bets)
+    // into the same feed as real over/unders. A genuine total runs about
+    // -105/-115 both ways; a special betrays itself with a huge favorite on
+    // one side or combined implied probability far above any real vig.
+    // Treating the special's threshold as a median inflates projections, so
+    // those book lines are dropped rather than merged.
+    const impliedP = (m) => (m < 0 ? -m / (-m + 100) : 100 / (m + 100));
+    for (const [brand, b] of Object.entries(books)) {
+      const special =
+        (b.over != null &&
+          b.under != null &&
+          (Math.min(b.over, b.under) <= -240 || impliedP(b.over) + impliedP(b.under) > 1.15)) ||
+        (b.over != null && b.under == null && b.over >= 150) ||
+        (b.under != null && b.over == null && b.under <= -240);
+      if (special) delete books[brand];
+    }
     if (!Object.keys(books).length) continue;
     entry.markets[market] = { line: null, books, source: 'bettingpros' };
     bpCells++;
@@ -306,6 +322,8 @@ try {
     .filter((p) => p?.name && p.stats)
     .map((p) => ({
       name: p.name,
+      rushing_yards: p.stats.rush_yds,
+      rushing_tds: p.stats.rush_tds,
       receptions: p.stats.rec_rec,
       receiving_yards: p.stats.rec_yds,
       receiving_tds: p.stats.rec_tds,
@@ -318,8 +336,9 @@ try {
   let filled = 0;
   for (const fp of parsed) {
     const entry = entryByName.get(normalize(fp.name));
-    if (!entry || !entry.markets.rushing_yards || entry.markets.receiving_yards) continue;
-    for (const stat of ['receiving_yards', 'receiving_tds', 'receptions']) {
+    // The endpoint is RB-only; the position guard just blocks name collisions.
+    if (!entry || (entry.position && entry.position !== 'RB')) continue;
+    for (const stat of ['rushing_yards', 'rushing_tds', 'receiving_yards', 'receiving_tds', 'receptions']) {
       if (entry.markets[stat] || !fp[stat]) continue;
       entry.markets[stat] = { line: Math.round(fp[stat] * 10) / 10, books: {}, source: 'fantasypros' };
       filled++;

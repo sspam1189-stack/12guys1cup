@@ -25,6 +25,14 @@
    "book_id": 15,
    "odds": [
     {
+     "money": -120,
+     "value": 108,
+     "team_id": 128,
+     "player_id": 166304,
+     "outcome_id": 2729932289,
+     "option_type_id": 170
+    },
+    {
      "money": -105,
      "value": 59,
      "team_id": 136,
@@ -46,14 +54,6 @@
      "team_id": 151,
      "player_id": 166275,
      "outcome_id": 2785241113,
-     "option_type_id": 170
-    },
-    {
-     "money": -117,
-     "value": 108,
-     "team_id": 128,
-     "player_id": 166304,
-     "outcome_id": 2729932289,
      "option_type_id": 170
     },
     {
@@ -409,6 +409,14 @@
      "option_type_id": 170
     },
     {
+     "money": -107,
+     "value": 108,
+     "team_id": 128,
+     "player_id": 166304,
+     "outcome_id": 2729932290,
+     "option_type_id": 171
+    },
+    {
      "money": -117,
      "value": 59,
      "team_id": 136,
@@ -518,14 +526,6 @@
      "team_id": 139,
      "player_id": 1226,
      "outcome_id": 2484748503,
-     "option_type_id": 171
-    },
-    {
-     "money": -110,
-     "value": 107.5,
-     "team_id": 128,
-     "player_id": 166304,
-     "outcome_id": 2729932290,
      "option_type_id": 171
     },
     {
@@ -797,6 +797,14 @@
   {
    "book_id": 68,
    "odds": [
+    {
+     "money": 100,
+     "value": 59.5,
+     "team_id": 136,
+     "player_id": 84234,
+     "outcome_id": 2823476964,
+     "option_type_id": 170
+    },
     {
      "money": -115,
      "value": 59.5,
@@ -1134,12 +1142,12 @@
      "option_type_id": 170
     },
     {
-     "money": 100,
+     "money": -125,
      "value": 59.5,
      "team_id": 136,
      "player_id": 84234,
-     "outcome_id": 2823476964,
-     "option_type_id": 170
+     "outcome_id": 2823476963,
+     "option_type_id": 171
     },
     {
      "money": -110,
@@ -1475,14 +1483,6 @@
      "team_id": 127,
      "player_id": 195004,
      "outcome_id": 2785240574,
-     "option_type_id": 171
-    },
-    {
-     "money": -125,
-     "value": 59.5,
-     "team_id": 136,
-     "player_id": 84234,
-     "outcome_id": 2823476963,
      "option_type_id": 171
     }
    ]
@@ -1880,11 +1880,11 @@
    "book_id": 71,
    "odds": [
     {
-     "money": -115,
-     "value": 70.5,
-     "team_id": 137,
-     "player_id": 166419,
-     "outcome_id": 2823421500,
+     "money": -110,
+     "value": 75.5,
+     "team_id": 133,
+     "player_id": 304960,
+     "outcome_id": 2823421556,
      "option_type_id": 170
     },
     {
@@ -2064,11 +2064,11 @@
      "option_type_id": 170
     },
     {
-     "money": -106,
-     "value": 70.5,
-     "team_id": 137,
-     "player_id": 166419,
-     "outcome_id": 2823421501,
+     "money": -110,
+     "value": 75.5,
+     "team_id": 133,
+     "player_id": 304960,
+     "outcome_id": 2823421558,
      "option_type_id": 171
     },
     {
@@ -2253,7 +2253,7 @@
    "book_id": 123,
    "odds": [
     {
-     "money": -120,
+     "money": -125,
      "value": 107.5,
      "team_id": 128,
      "player_id": 166304,
@@ -2301,7 +2301,7 @@
      "option_type_id": 170
     },
     {
-     "money": -110,
+     "money": -105,
      "value": 107.5,
      "team_id": 128,
      "player_id": 166304,

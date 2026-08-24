@@ -54,7 +54,7 @@
      "option_type_id": null
     },
     {
-     "money": 2096,
+     "money": 2196,
      "value": null,
      "team_id": 154,
      "player_id": 110812,
@@ -110,7 +110,15 @@
      "option_type_id": null
     },
     {
-     "money": 3231,
+     "money": 3000,
+     "value": null,
+     "team_id": null,
+     "player_id": 2062,
+     "outcome_id": 2781455542,
+     "option_type_id": null
+    },
+    {
+     "money": 3500,
      "value": null,
      "team_id": 144,
      "player_id": 304949,
@@ -123,14 +131,6 @@
      "team_id": 154,
      "player_id": 87505,
      "outcome_id": 2433563576,
-     "option_type_id": null
-    },
-    {
-     "money": 4216,
-     "value": null,
-     "team_id": null,
-     "player_id": 2062,
-     "outcome_id": 2781455542,
      "option_type_id": null
     },
     {
@@ -198,7 +198,7 @@
      "option_type_id": null
     },
     {
-     "money": 5455,
+     "money": 5739,
      "value": null,
      "team_id": 142,
      "player_id": 277094,
@@ -307,6 +307,14 @@
      "team_id": 148,
      "player_id": 108214,
      "outcome_id": 2433563604,
+     "option_type_id": null
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 156,
+     "player_id": 277052,
+     "outcome_id": 2688995048,
      "option_type_id": null
     },
     {
@@ -792,6 +800,14 @@
     {
      "money": 25000,
      "value": null,
+     "team_id": 125,
+     "player_id": 305108,
+     "outcome_id": 2847369595,
+     "option_type_id": null
+    },
+    {
+     "money": 25000,
+     "value": null,
      "team_id": 1325,
      "player_id": 333951,
      "outcome_id": 2715634958,
@@ -846,15 +862,7 @@
      "option_type_id": null
     },
     {
-     "money": 33344,
-     "value": null,
-     "team_id": 125,
-     "player_id": 305108,
-     "outcome_id": 2847369595,
-     "option_type_id": null
-    },
-    {
-     "money": 34288,
+     "money": 32308,
      "value": null,
      "team_id": 149,
      "player_id": 84346,
@@ -4566,6 +4574,14 @@
    "team_id": 133,
    "url_slug": "laiatu-latu-277051-de",
    "full_name": "Laiatu Latu"
+  },
+  {
+   "id": 277052,
+   "abbr": "B.Murphy",
+   "image": "https://assets.actionnetwork.com/200x200/8e60d7790a714c84bae897cd456dc9d2.png",
+   "team_id": 156,
+   "url_slug": "byron-murphy-277052-dt",
+   "full_name": "Byron Murphy"
   },
   {
    "id": 277053,
