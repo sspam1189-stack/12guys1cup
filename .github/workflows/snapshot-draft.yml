@@ -1,0 +1,50 @@
+# Snapshots Sleeper data onto the branch it ran from. Sleeper's API is
+# unreachable from some analysis environments, so the runner does the fetching.
+# Two ways in: dispatch it with a draft id (works once this file is on the
+# default branch), or commit a request to data/raw/drafts/request — the push
+# path exists because dispatch cannot see a workflow that only lives on a
+# feature branch. Request forms:
+#   <draft id>     snapshot that draft into data/raw/drafts/<id>/
+#   proj <season>  snapshot Sleeper's season stat projections (the numbers
+#                  behind its ADP pool) into data/raw/projections/<season>.json
+name: Snapshot draft
+on:
+  workflow_dispatch:
+    inputs:
+      draft_id:
+        description: Sleeper draft id to snapshot
+        required: true
+  push:
+    paths: ['data/raw/drafts/request']
+permissions:
+  contents: write
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch what the request asks for
+        env:
+          INPUT_ID: ${{ inputs.draft_id }}
+        run: |
+          REQ="${INPUT_ID:-$(cat data/raw/drafts/request)}"
+          if [[ "$REQ" =~ ^proj[[:space:]]+([0-9]{4})$ ]]; then
+            SEASON="${BASH_REMATCH[1]}"
+            mkdir -p data/raw/projections
+            curl -fsS "https://api.sleeper.com/projections/nfl/$SEASON?season_type=regular&position%5B%5D=QB&position%5B%5D=RB&position%5B%5D=WR&position%5B%5D=TE&order_by=adp_half_ppr" \
+              -o "data/raw/projections/$SEASON.json"
+            echo "MSG=data: snapshot sleeper projections $SEASON" >> "$GITHUB_ENV"
+          else
+            DRAFT_ID="$(tr -cd '0-9' <<< "$REQ")"
+            [[ "$DRAFT_ID" =~ ^[0-9]+$ ]] || { echo "request must be a draft id or 'proj <season>'"; exit 1; }
+            mkdir -p "data/raw/drafts/$DRAFT_ID"
+            curl -fsS "https://api.sleeper.app/v1/draft/$DRAFT_ID" -o "data/raw/drafts/$DRAFT_ID/draft.json"
+            curl -fsS "https://api.sleeper.app/v1/draft/$DRAFT_ID/picks" -o "data/raw/drafts/$DRAFT_ID/picks.json"
+            echo "MSG=data: snapshot draft $DRAFT_ID" >> "$GITHUB_ENV"
+          fi
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/raw/drafts data/raw/projections
+          git diff --cached --quiet || { git commit -m "$MSG"; git push; }
