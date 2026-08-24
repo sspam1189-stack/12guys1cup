@@ -61,7 +61,8 @@ const board = Object.entries(adp)
   .slice(0, TOP)
   .map((p, i) => {
     const entry = bySleeper.get(p.id) ?? byName.get(normalize(p.name));
-    const result = entry ? impliedPoints(entry.markets, scoring, p.position) : null;
+    const result = entry ? impliedPoints(entry.markets, scoring, p.position, { devig: true }) : null;
+    const posted = entry ? impliedPoints(entry.markets, scoring, p.position) : null;
     // FantasyPros-backfilled cells are analyst projections, not market lines —
     // worth a flag so nobody reads them as Vegas.
     const projected =
@@ -76,6 +77,7 @@ const board = Object.entries(adp)
       team: p.team || entry?.team || '',
       adp: p.adp,
       points: result && Object.keys(result.lines).length ? result.points : null,
+      juice: result && posted && Object.keys(result.lines).length ? result.points - posted.points : null,
       lines: result?.lines ?? {},
       missing: result?.missing ?? [],
       projected,
@@ -101,10 +103,16 @@ out.push(
 );
 out.push('');
 out.push(
-  'Each season over/under is the market\'s median projection for that stat. Scored under',
-  `league settings — ${rate('pass_yd')}/pass yd, ${rate('pass_td')} per pass TD, ${rate('rush_yd')}/rush yd,`,
+  'Each season over/under approximates the market\'s median projection for that stat — but only',
+  'when the juice is balanced, so every line here is de-vigged first: the two-way prices are',
+  'normalized into a probability and the line is shifted to the mean that tail implies (normal',
+  'for yardage-scale stats, Poisson for TD counts, median across books). A stale suspended',
+  'number priced -4900 to the under stops counting at face value. Scored under league settings —',
+  `${rate('pass_yd')}/pass yd, ${rate('pass_td')} per pass TD, ${rate('rush_yd')}/rush yd,`,
   `${rate('rec_yd')}/rec yd, ${rate('rush_td')} per rush/rec TD, ${rate('rec')} per reception — the lines become`,
-  'the points total Vegas is quoting on every player at the top of the draft board.',
+  'the points total Vegas is quoting on every player at the top of the draft board. The Juice',
+  'column is the shift the odds forced versus scoring the posted lines as-is: a big negative',
+  'number marks a stale or under-juiced market, a positive one a line the books fear going over.',
 );
 out.push('');
 out.push('What the totals leave out:');
@@ -125,9 +133,9 @@ out.push(
 );
 out.push('');
 out.push(
-  '| # | Player | Pos | Team | ADP | Pass yds | Pass TD | Rush yds | Rush TD | Rec | Rec yds | Rec TD | Implied | /gm | Pos: ADP → pts |',
+  '| # | Player | Pos | Team | ADP | Pass yds | Pass TD | Rush yds | Rush TD | Rec | Rec yds | Rec TD | Implied | /gm | Juice | Pos: ADP → pts |',
 );
-out.push('|--:|---|---|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|---|');
+out.push('|--:|---|---|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|---|');
 for (const p of board) {
   const flags = `${p.missing.length ? '†' : ''}${p.projected ? '°' : ''}`;
   // A lump rush+receive line with no splits (rare) renders in the rush column.
@@ -150,6 +158,7 @@ for (const p of board) {
     fmt(p.lines.receiving_tds),
     p.points == null ? '—' : p.points.toFixed(1),
     p.points == null ? '—' : (p.points / GAMES).toFixed(1),
+    p.juice == null || Math.abs(p.juice) < 0.05 ? '' : (p.juice > 0 ? '+' : '') + p.juice.toFixed(1),
     p.points == null ? '—' : `${p.position}${p.adpPosRank} → ${p.position}${p.ptsPosRank}`,
   ];
   out.push(`| ${cells.join(' | ')} |`);
