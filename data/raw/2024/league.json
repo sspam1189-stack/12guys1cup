@@ -61,10 +61,7 @@
   "daily_waivers_last_ran": 29
  },
  "avatar": "85191aaca12ef4baf9310df437b6ec34",
- "shard": 703,
- "season": "2024",
- "season_type": "regular",
- "sport": "nfl",
+ "company_id": null,
  "scoring_settings": {
   "sack": 1,
   "fgm_40_49": 0,
@@ -131,7 +128,10 @@
   "pts_allow_7_13": 13,
   "st_ff": 1
  },
- "company_id": null,
+ "season": "2024",
+ "season_type": "regular",
+ "sport": "nfl",
+ "shard": 703,
  "last_message_id": "1180086376436072448",
  "last_author_avatar": null,
  "last_author_display_name": "sys",
@@ -145,11 +145,6 @@
  "last_read_id": null,
  "league_id": "1100632640849383424",
  "previous_league_id": "916398981893251072",
- "bracket_id": 1172491291112505300,
- "bracket_overrides_id": null,
- "group_id": null,
- "loser_bracket_id": 1172491291133476900,
- "loser_bracket_overrides_id": null,
  "roster_positions": [
   "QB",
   "RB",
@@ -167,5 +162,10 @@
   "BN",
   "BN"
  ],
+ "group_id": null,
+ "bracket_id": 1172491291112505300,
+ "bracket_overrides_id": null,
+ "loser_bracket_id": 1172491291133476900,
+ "loser_bracket_overrides_id": null,
  "total_rosters": 12
 }
