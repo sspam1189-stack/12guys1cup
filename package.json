@@ -12,7 +12,8 @@
     "test": "vitest run",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "lock:war-room": "node scripts/lock-war-room.mjs"
   },
   "dependencies": {
     "astro": "^7.2.0",

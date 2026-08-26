@@ -2,3 +2,7 @@ node_modules/
 dist/
 .astro/
 .superpowers/
+
+# War room: the plaintext app and its build stay local. Publishing them would
+# defeat the password on public/war-room/index.html, which is the encrypted build.
+tools/draft-war-room/
