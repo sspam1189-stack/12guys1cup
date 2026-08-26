@@ -6,6 +6,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const links = [
   ['/power/', 'ELO'], ['/standings/', 'All-Time'], ['/h2h/', 'Head-to-Head'], ['/records/', 'Records'],
   ['/punishments/', 'Punishments'], ['/rules/', 'Rules'],
+  ['/war-room/', 'War Room'],
 ];
 const seasonLinks = [...seasons].sort((a, b) => b.season.localeCompare(a.season));
 const currentPath = Astro.url.pathname;
