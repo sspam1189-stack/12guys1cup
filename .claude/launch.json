@@ -4,8 +4,23 @@
     {
       "name": "preview",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "preview"],
+      "runtimeArgs": [
+        "run",
+        "preview"
+      ],
       "port": 4321
+    },
+    {
+      "name": "war-room-dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "http-server",
+        "tools/draft-war-room",
+        "-p",
+        "8317",
+        "-c-1"
+      ],
+      "port": 8317
     }
   ]
 }
