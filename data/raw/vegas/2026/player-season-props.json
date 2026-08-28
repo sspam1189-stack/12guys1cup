@@ -3018,7 +3018,7 @@
      }
     },
     "receiving_yards": {
-     "line": 228.3,
+     "line": 228.2,
      "books": {},
      "source": "fantasypros"
     },
@@ -3028,7 +3028,7 @@
      "source": "fantasypros"
     },
     "receptions": {
-     "line": 30.9,
+     "line": 30.8,
      "books": {},
      "source": "fantasypros"
     }
@@ -4151,8 +4151,8 @@
       },
       "betrivers": {
        "line": 550.5,
-       "over": -103,
-       "under": -118
+       "over": -106,
+       "under": -115
       },
       "caesars": {
        "line": 500.5,
@@ -4563,12 +4563,12 @@
      }
     },
     "rushing_yards": {
-     "line": 400.5,
+     "line": 412.5,
      "books": {
       "consensus": {
-       "line": 400.5,
-       "over": -114,
-       "under": -114
+       "line": 412.5,
+       "over": -112,
+       "under": -112
       },
       "draftkings": {
        "line": 424.5,
@@ -4576,14 +4576,9 @@
        "under": -110
       },
       "fanduel": {
-       "line": 400.5,
+       "line": 425.5,
        "over": -114,
        "under": -114
-      },
-      "betrivers": {
-       "line": 400.5,
-       "over": -110,
-       "under": -110
       },
       "betmgm": {
        "line": 400.5,
@@ -5491,14 +5486,26 @@
      }
     },
     "receiving_yards": {
-     "line": 356.8,
-     "books": {},
-     "source": "fantasypros"
+     "line": 325.5,
+     "books": {
+      "consensus": {
+       "line": 325.5,
+       "over": -118,
+       "under": -118
+      }
+     },
+     "source": "bettingpros"
     },
     "receiving_tds": {
-     "line": 3,
-     "books": {},
-     "source": "fantasypros"
+     "line": 2.5,
+     "books": {
+      "consensus": {
+       "line": 2.5,
+       "over": -118,
+       "under": -118
+      }
+     },
+     "source": "bettingpros"
     }
    }
   },
@@ -6064,6 +6071,11 @@
        "over": -105,
        "under": -115
       },
+      "betrivers": {
+       "line": 625.5,
+       "over": -106,
+       "under": -115
+      },
       "betmgm": {
        "line": 600.5,
        "over": -105,
@@ -6089,6 +6101,11 @@
        "over": -145,
        "under": 120
       },
+      "betrivers": {
+       "line": 5.5,
+       "over": -139,
+       "under": 115
+      },
       "betmgm": {
        "line": 5.5,
        "over": -145,
@@ -6102,7 +6119,7 @@
      }
     },
     "receiving_yards": {
-     "line": 327.9,
+     "line": 328,
      "books": {},
      "source": "fantasypros"
     },
@@ -6270,8 +6287,8 @@
       },
       "betrivers": {
        "line": 1050.5,
-       "over": 100,
-       "under": -121
+       "over": -106,
+       "under": -115
       },
       "betmgm": {
        "line": 1025.5,
@@ -6632,8 +6649,8 @@
       },
       "betrivers": {
        "line": 4.5,
-       "over": -125,
-       "under": 104
+       "over": -139,
+       "under": 115
       },
       "betmgm": {
        "line": 4.5,
@@ -6965,6 +6982,17 @@
       }
      },
      "source": "bettingpros"
+    },
+    "receptions": {
+     "line": 71,
+     "books": {
+      "consensus": {
+       "line": 71,
+       "over": -138,
+       "under": -118
+      }
+     },
+     "source": "bettingpros"
     }
    }
   },
@@ -7175,8 +7203,8 @@
      "books": {
       "consensus": {
        "line": 11.5,
-       "over": 115,
-       "under": -142
+       "over": 110,
+       "under": -137
       },
       "draftkings": {
        "line": 11.75,
@@ -7190,8 +7218,8 @@
       },
       "caesars": {
        "line": 11.5,
-       "over": 120,
-       "under": -150
+       "over": 110,
+       "under": -140
       }
      }
     }
@@ -9697,18 +9725,13 @@
    "sleeper_id": "9500",
    "markets": {
     "receiving_yards": {
-     "line": 750.5,
+     "line": null,
      "books": {
       "consensus": {
        "line": null
       },
       "draftkings": {
        "line": null
-      },
-      "betrivers": {
-       "line": 750.5,
-       "over": -110,
-       "under": -110
       }
      }
     },
@@ -10322,6 +10345,11 @@
        "over": -114,
        "under": -114
       },
+      "betrivers": {
+       "line": 1325.5,
+       "over": -110,
+       "under": -110
+      },
       "betmgm": {
        "line": 1350.5,
        "over": 100,
@@ -10344,6 +10372,11 @@
       },
       "draftkings": {
        "line": null
+      },
+      "betrivers": {
+       "line": 8.5,
+       "over": 115,
+       "under": -139
       },
       "betmgm": {
        "line": 8.5,
@@ -10369,6 +10402,11 @@
        "line": 107.5,
        "over": -114,
        "under": -114
+      },
+      "betrivers": {
+       "line": 107.5,
+       "over": -110,
+       "under": -110
       },
       "caesars": {
        "line": 106.5,
@@ -12916,7 +12954,7 @@
      }
     },
     "receiving_yards": {
-     "line": 218.8,
+     "line": 219.3,
      "books": {},
      "source": "fantasypros"
     },
@@ -12926,7 +12964,7 @@
      "source": "fantasypros"
     },
     "receptions": {
-     "line": 31.9,
+     "line": 32,
      "books": {},
      "source": "fantasypros"
     }
@@ -12975,17 +13013,17 @@
      }
     },
     "receiving_yards": {
-     "line": 244.1,
+     "line": 244.2,
      "books": {},
      "source": "fantasypros"
     },
     "receiving_tds": {
-     "line": 1.1,
+     "line": 1.2,
      "books": {},
      "source": "fantasypros"
     },
     "receptions": {
-     "line": 35.3,
+     "line": 35.2,
      "books": {},
      "source": "fantasypros"
     }
@@ -13811,8 +13849,8 @@
      "books": {
       "consensus": {
        "line": 4.5,
-       "over": 120,
-       "under": -145
+       "over": 125,
+       "under": -150
       },
       "draftkings": {
        "line": 4.5,
@@ -13831,8 +13869,8 @@
       },
       "betmgm": {
        "line": 4.5,
-       "over": 120,
-       "under": -145
+       "over": 130,
+       "under": -155
       },
       "caesars": {
        "line": 4.5,
@@ -14701,7 +14739,7 @@
      "source": "fantasypros"
     },
     "receiving_yards": {
-     "line": 197.1,
+     "line": 197,
      "books": {},
      "source": "fantasypros"
     },
@@ -14888,7 +14926,7 @@
    "sleeper_id": "4035",
    "markets": {
     "rushing_yards": {
-     "line": 459.7,
+     "line": 440.1,
      "books": {},
      "source": "fantasypros"
     },
@@ -14898,7 +14936,7 @@
      "source": "fantasypros"
     },
     "receiving_yards": {
-     "line": 233.6,
+     "line": 228.3,
      "books": {},
      "source": "fantasypros"
     },
@@ -14908,7 +14946,7 @@
      "source": "fantasypros"
     },
     "receptions": {
-     "line": 33.6,
+     "line": 32.6,
      "books": {},
      "source": "fantasypros"
     }
