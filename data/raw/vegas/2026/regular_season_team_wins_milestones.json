@@ -102,6 +102,14 @@
     {
      "money": -20000,
      "value": null,
+     "team_id": 145,
+     "player_id": null,
+     "outcome_id": 2773977897,
+     "option_type_id": 12083
+    },
+    {
+     "money": -20000,
+     "value": null,
      "team_id": 131,
      "player_id": null,
      "outcome_id": 2779770922,
@@ -142,18 +150,18 @@
     {
      "money": -7000,
      "value": null,
-     "team_id": 142,
-     "player_id": null,
-     "outcome_id": 2773977935,
-     "option_type_id": 12085
-    },
-    {
-     "money": -7000,
-     "value": null,
      "team_id": 152,
      "player_id": null,
      "outcome_id": 2773977891,
      "option_type_id": 12083
+    },
+    {
+     "money": -7000,
+     "value": null,
+     "team_id": 142,
+     "player_id": null,
+     "outcome_id": 2773977935,
+     "option_type_id": 12085
     },
     {
      "money": -7000,
@@ -178,14 +186,6 @@
      "player_id": null,
      "outcome_id": 2773977943,
      "option_type_id": 12085
-    },
-    {
-     "money": -7000,
-     "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773977897,
-     "option_type_id": 12083
     },
     {
      "money": -7000,
@@ -238,6 +238,14 @@
     {
      "money": -6000,
      "value": null,
+     "team_id": 131,
+     "player_id": null,
+     "outcome_id": 2773977562,
+     "option_type_id": 12087
+    },
+    {
+     "money": -6000,
+     "value": null,
      "team_id": 146,
      "player_id": null,
      "outcome_id": 2773977559,
@@ -258,14 +266,6 @@
      "player_id": null,
      "outcome_id": 2773977879,
      "option_type_id": 12083
-    },
-    {
-     "money": -4500,
-     "value": null,
-     "team_id": 134,
-     "player_id": null,
-     "outcome_id": 2773977920,
-     "option_type_id": 12085
     },
     {
      "money": -4500,
@@ -294,10 +294,10 @@
     {
      "money": -3500,
      "value": null,
-     "team_id": 131,
+     "team_id": 134,
      "player_id": null,
-     "outcome_id": 2773977562,
-     "option_type_id": 12087
+     "outcome_id": 2773977920,
+     "option_type_id": 12085
     },
     {
      "money": -3500,
@@ -334,14 +334,6 @@
     {
      "money": -2200,
      "value": null,
-     "team_id": 128,
-     "player_id": null,
-     "outcome_id": 2773977545,
-     "option_type_id": 12087
-    },
-    {
-     "money": -2200,
-     "value": null,
      "team_id": 133,
      "player_id": null,
      "outcome_id": 2773977904,
@@ -358,17 +350,9 @@
     {
      "money": -2000,
      "value": null,
-     "team_id": 129,
+     "team_id": 128,
      "player_id": null,
-     "outcome_id": 2773977554,
-     "option_type_id": 12087
-    },
-    {
-     "money": -1900,
-     "value": null,
-     "team_id": 142,
-     "player_id": null,
-     "outcome_id": 2773977547,
+     "outcome_id": 2773977545,
      "option_type_id": 12087
     },
     {
@@ -378,6 +362,22 @@
      "player_id": null,
      "outcome_id": 2773977456,
      "option_type_id": 12089
+    },
+    {
+     "money": -1900,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2773977554,
+     "option_type_id": 12087
+    },
+    {
+     "money": -1600,
+     "value": null,
+     "team_id": 142,
+     "player_id": null,
+     "outcome_id": 2773977547,
+     "option_type_id": 12087
     },
     {
      "money": -1600,
@@ -406,9 +406,9 @@
     {
      "money": -1400,
      "value": null,
-     "team_id": 137,
+     "team_id": 136,
      "player_id": null,
-     "outcome_id": 2773977540,
+     "outcome_id": 2773977543,
      "option_type_id": 12087
     },
     {
@@ -420,6 +420,14 @@
      "option_type_id": 12085
     },
     {
+     "money": -1300,
+     "value": null,
+     "team_id": 137,
+     "player_id": null,
+     "outcome_id": 2773977540,
+     "option_type_id": 12087
+    },
+    {
      "money": -1250,
      "value": null,
      "team_id": 147,
@@ -428,12 +436,12 @@
      "option_type_id": 12087
     },
     {
-     "money": -1250,
+     "money": -1150,
      "value": null,
-     "team_id": 136,
+     "team_id": 145,
      "player_id": null,
-     "outcome_id": 2773977543,
-     "option_type_id": 12087
+     "outcome_id": 2773977906,
+     "option_type_id": 12085
     },
     {
      "money": -1150,
@@ -449,14 +457,6 @@
      "team_id": 152,
      "player_id": null,
      "outcome_id": 2773977905,
-     "option_type_id": 12085
-    },
-    {
-     "money": -1050,
-     "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773977906,
      "option_type_id": 12085
     },
     {
@@ -494,6 +494,14 @@
     {
      "money": -750,
      "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2773977875,
+     "option_type_id": 12083
+    },
+    {
+     "money": -750,
+     "value": null,
      "team_id": 131,
      "player_id": null,
      "outcome_id": 2773977453,
@@ -518,14 +526,6 @@
     {
      "money": -750,
      "value": null,
-     "team_id": 126,
-     "player_id": null,
-     "outcome_id": 2773977875,
-     "option_type_id": 12083
-    },
-    {
-     "money": -750,
-     "value": null,
      "team_id": 125,
      "player_id": null,
      "outcome_id": 2773977446,
@@ -546,6 +546,14 @@
      "player_id": null,
      "outcome_id": 2773977451,
      "option_type_id": 12089
+    },
+    {
+     "money": -550,
+     "value": null,
+     "team_id": 251,
+     "player_id": null,
+     "outcome_id": 2773977672,
+     "option_type_id": 12091
     },
     {
      "money": -550,
@@ -582,29 +590,21 @@
     {
      "money": -490,
      "value": null,
+     "team_id": 133,
+     "player_id": null,
+     "outcome_id": 2773977507,
+     "option_type_id": 12087
+    },
+    {
+     "money": -490,
+     "value": null,
      "team_id": 149,
      "player_id": null,
      "outcome_id": 2773977526,
      "option_type_id": 12087
     },
     {
-     "money": -490,
-     "value": null,
-     "team_id": 129,
-     "player_id": null,
-     "outcome_id": 2773978014,
-     "option_type_id": 12089
-    },
-    {
-     "money": -460,
-     "value": null,
-     "team_id": 251,
-     "player_id": null,
-     "outcome_id": 2773977672,
-     "option_type_id": 12091
-    },
-    {
-     "money": -460,
+     "money": -450,
      "value": null,
      "team_id": 142,
      "player_id": null,
@@ -612,12 +612,12 @@
      "option_type_id": 12089
     },
     {
-     "money": -460,
+     "money": -450,
      "value": null,
-     "team_id": 133,
+     "team_id": 129,
      "player_id": null,
-     "outcome_id": 2773977507,
-     "option_type_id": 12087
+     "outcome_id": 2773978014,
+     "option_type_id": 12089
     },
     {
      "money": -430,
@@ -634,6 +634,14 @@
      "player_id": null,
      "outcome_id": 2773978146,
      "option_type_id": 12085
+    },
+    {
+     "money": -400,
+     "value": null,
+     "team_id": 136,
+     "player_id": null,
+     "outcome_id": 2773977984,
+     "option_type_id": 12089
     },
     {
      "money": -400,
@@ -668,15 +676,7 @@
      "option_type_id": 12089
     },
     {
-     "money": -360,
-     "value": null,
-     "team_id": 136,
-     "player_id": null,
-     "outcome_id": 2773977984,
-     "option_type_id": 12089
-    },
-    {
-     "money": -330,
+     "money": -320,
      "value": null,
      "team_id": 147,
      "player_id": null,
@@ -684,20 +684,20 @@
      "option_type_id": 12089
     },
     {
-     "money": -320,
-     "value": null,
-     "team_id": 140,
-     "player_id": null,
-     "outcome_id": 2773977975,
-     "option_type_id": 12089
-    },
-    {
-     "money": -320,
+     "money": -310,
      "value": null,
      "team_id": 144,
      "player_id": null,
      "outcome_id": 2773977496,
      "option_type_id": 12087
+    },
+    {
+     "money": -310,
+     "value": null,
+     "team_id": 140,
+     "player_id": null,
+     "outcome_id": 2773977975,
+     "option_type_id": 12089
     },
     {
      "money": -290,
@@ -708,7 +708,7 @@
      "option_type_id": 12087
     },
     {
-     "money": -250,
+     "money": -280,
      "value": null,
      "team_id": 145,
      "player_id": null,
@@ -724,7 +724,7 @@
      "option_type_id": 12089
     },
     {
-     "money": -240,
+     "money": -230,
      "value": null,
      "team_id": 131,
      "player_id": null,
@@ -742,18 +742,18 @@
     {
      "money": -230,
      "value": null,
-     "team_id": 150,
-     "player_id": null,
-     "outcome_id": 2773977490,
-     "option_type_id": 12087
-    },
-    {
-     "money": -230,
-     "value": null,
      "team_id": 134,
      "player_id": null,
      "outcome_id": 2773977973,
      "option_type_id": 12089
+    },
+    {
+     "money": -220,
+     "value": null,
+     "team_id": 150,
+     "player_id": null,
+     "outcome_id": 2773977490,
+     "option_type_id": 12087
     },
     {
      "money": -210,
@@ -774,18 +774,18 @@
     {
      "money": -200,
      "value": null,
-     "team_id": 156,
-     "player_id": null,
-     "outcome_id": 2773977660,
-     "option_type_id": 12091
-    },
-    {
-     "money": -200,
-     "value": null,
      "team_id": 148,
      "player_id": null,
      "outcome_id": 2773977967,
      "option_type_id": 12089
+    },
+    {
+     "money": -195,
+     "value": null,
+     "team_id": 156,
+     "player_id": null,
+     "outcome_id": 2773977660,
+     "option_type_id": 12091
     },
     {
      "money": -170,
@@ -794,6 +794,14 @@
      "player_id": null,
      "outcome_id": 2773977630,
      "option_type_id": 12091
+    },
+    {
+     "money": -160,
+     "value": null,
+     "team_id": 251,
+     "player_id": null,
+     "outcome_id": 2773977780,
+     "option_type_id": 12093
     },
     {
      "money": -150,
@@ -814,34 +822,10 @@
     {
      "money": -145,
      "value": null,
-     "team_id": 153,
-     "player_id": null,
-     "outcome_id": 2773978138,
-     "option_type_id": 12085
-    },
-    {
-     "money": -145,
-     "value": null,
-     "team_id": 129,
-     "player_id": null,
-     "outcome_id": 2773977650,
-     "option_type_id": 12091
-    },
-    {
-     "money": -145,
-     "value": null,
      "team_id": 142,
      "player_id": null,
      "outcome_id": 2773977644,
      "option_type_id": 12091
-    },
-    {
-     "money": -145,
-     "value": null,
-     "team_id": 251,
-     "player_id": null,
-     "outcome_id": 2773977780,
-     "option_type_id": 12093
     },
     {
      "money": -145,
@@ -854,9 +838,41 @@
     {
      "money": -140,
      "value": null,
+     "team_id": 153,
+     "player_id": null,
+     "outcome_id": 2773978138,
+     "option_type_id": 12085
+    },
+    {
+     "money": -140,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2773977650,
+     "option_type_id": 12091
+    },
+    {
+     "money": -140,
+     "value": null,
+     "team_id": 135,
+     "player_id": null,
+     "outcome_id": 2773977484,
+     "option_type_id": 12087
+    },
+    {
+     "money": -140,
+     "value": null,
      "team_id": 139,
      "player_id": null,
      "outcome_id": 2773977648,
+     "option_type_id": 12091
+    },
+    {
+     "money": -135,
+     "value": null,
+     "team_id": 137,
+     "player_id": null,
+     "outcome_id": 2773977627,
      "option_type_id": 12091
     },
     {
@@ -870,49 +886,33 @@
     {
      "money": -135,
      "value": null,
-     "team_id": 154,
-     "player_id": null,
-     "outcome_id": 2773977651,
-     "option_type_id": 12091
-    },
-    {
-     "money": -135,
-     "value": null,
      "team_id": 126,
      "player_id": null,
      "outcome_id": 2773978142,
      "option_type_id": 12085
     },
     {
-     "money": -135,
+     "money": -130,
      "value": null,
-     "team_id": 135,
+     "team_id": 154,
      "player_id": null,
-     "outcome_id": 2773977484,
-     "option_type_id": 12087
-    },
-    {
-     "money": -135,
-     "value": null,
-     "team_id": 137,
-     "player_id": null,
-     "outcome_id": 2773977627,
+     "outcome_id": 2773977651,
      "option_type_id": 12091
     },
     {
      "money": -125,
      "value": null,
-     "team_id": 1325,
+     "team_id": 136,
      "player_id": null,
-     "outcome_id": 2773977633,
+     "outcome_id": 2773977626,
      "option_type_id": 12091
     },
     {
      "money": -120,
      "value": null,
-     "team_id": 136,
+     "team_id": 1325,
      "player_id": null,
-     "outcome_id": 2773977626,
+     "outcome_id": 2773977633,
      "option_type_id": 12091
     },
     {
@@ -958,6 +958,14 @@
     {
      "money": 105,
      "value": null,
+     "team_id": 145,
+     "player_id": null,
+     "outcome_id": 2773977961,
+     "option_type_id": 12089
+    },
+    {
+     "money": 105,
+     "value": null,
      "team_id": 152,
      "player_id": null,
      "outcome_id": 2773977959,
@@ -972,15 +980,7 @@
      "option_type_id": 12091
     },
     {
-     "money": 115,
-     "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773977961,
-     "option_type_id": 12089
-    },
-    {
-     "money": 120,
+     "money": 125,
      "value": null,
      "team_id": 134,
      "player_id": null,
@@ -996,14 +996,6 @@
      "option_type_id": 12089
     },
     {
-     "money": 125,
-     "value": null,
-     "team_id": 131,
-     "player_id": null,
-     "outcome_id": 2773977778,
-     "option_type_id": 12093
-    },
-    {
      "money": 135,
      "value": null,
      "team_id": 150,
@@ -1012,12 +1004,12 @@
      "option_type_id": 12089
     },
     {
-     "money": 140,
+     "money": 135,
      "value": null,
-     "team_id": 148,
+     "team_id": 131,
      "player_id": null,
-     "outcome_id": 2773977610,
-     "option_type_id": 12091
+     "outcome_id": 2773977778,
+     "option_type_id": 12093
     },
     {
      "money": 140,
@@ -1028,6 +1020,14 @@
      "option_type_id": 12093
     },
     {
+     "money": 140,
+     "value": null,
+     "team_id": 148,
+     "player_id": null,
+     "outcome_id": 2773977610,
+     "option_type_id": 12091
+    },
+    {
      "money": 145,
      "value": null,
      "team_id": 146,
@@ -1036,7 +1036,7 @@
      "option_type_id": 12093
     },
     {
-     "money": 150,
+     "money": 155,
      "value": null,
      "team_id": 156,
      "player_id": null,
@@ -1052,7 +1052,7 @@
      "option_type_id": 12093
     },
     {
-     "money": 175,
+     "money": 180,
      "value": null,
      "team_id": 133,
      "player_id": null,
@@ -1086,18 +1086,18 @@
     {
      "money": 210,
      "value": null,
-     "team_id": 129,
+     "team_id": 251,
      "player_id": null,
-     "outcome_id": 2773977764,
-     "option_type_id": 12093
+     "outcome_id": 2773977865,
+     "option_type_id": 12095
     },
     {
-     "money": 220,
+     "money": 210,
      "value": null,
-     "team_id": 139,
+     "team_id": 135,
      "player_id": null,
-     "outcome_id": 2773977755,
-     "option_type_id": 12093
+     "outcome_id": 2773977950,
+     "option_type_id": 12089
     },
     {
      "money": 220,
@@ -1108,15 +1108,7 @@
      "option_type_id": 12089
     },
     {
-     "money": 220,
-     "value": null,
-     "team_id": 135,
-     "player_id": null,
-     "outcome_id": 2773977950,
-     "option_type_id": 12089
-    },
-    {
-     "money": 220,
+     "money": 230,
      "value": null,
      "team_id": 137,
      "player_id": null,
@@ -1126,18 +1118,42 @@
     {
      "money": 230,
      "value": null,
-     "team_id": 251,
+     "team_id": 129,
      "player_id": null,
-     "outcome_id": 2773977865,
-     "option_type_id": 12095
+     "outcome_id": 2773977764,
+     "option_type_id": 12093
     },
     {
      "money": 230,
+     "value": null,
+     "team_id": 139,
+     "player_id": null,
+     "outcome_id": 2773977755,
+     "option_type_id": 12093
+    },
+    {
+     "money": 240,
      "value": null,
      "team_id": 154,
      "player_id": null,
      "outcome_id": 2773977767,
      "option_type_id": 12093
+    },
+    {
+     "money": 240,
+     "value": null,
+     "team_id": 136,
+     "player_id": null,
+     "outcome_id": 2773977725,
+     "option_type_id": 12093
+    },
+    {
+     "money": 250,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2773977463,
+     "option_type_id": 12087
     },
     {
      "money": 250,
@@ -1146,14 +1162,6 @@
      "player_id": null,
      "outcome_id": 2773977433,
      "option_type_id": 12089
-    },
-    {
-     "money": 250,
-     "value": null,
-     "team_id": 136,
-     "player_id": null,
-     "outcome_id": 2773977725,
-     "option_type_id": 12093
     },
     {
      "money": 250,
@@ -1172,14 +1180,6 @@
      "option_type_id": 12087
     },
     {
-     "money": 260,
-     "value": null,
-     "team_id": 126,
-     "player_id": null,
-     "outcome_id": 2773977463,
-     "option_type_id": 12087
-    },
-    {
      "money": 270,
      "value": null,
      "team_id": 140,
@@ -1188,20 +1188,12 @@
      "option_type_id": 12093
     },
     {
-     "money": 270,
+     "money": 280,
      "value": null,
      "team_id": 147,
      "player_id": null,
      "outcome_id": 2773977748,
      "option_type_id": 12093
-    },
-    {
-     "money": 290,
-     "value": null,
-     "team_id": 152,
-     "player_id": null,
-     "outcome_id": 2773977600,
-     "option_type_id": 12091
     },
     {
      "money": 290,
@@ -1212,20 +1204,28 @@
      "option_type_id": 12091
     },
     {
+     "money": 290,
+     "value": null,
+     "team_id": 152,
+     "player_id": null,
+     "outcome_id": 2773977600,
+     "option_type_id": 12091
+    },
+    {
+     "money": 300,
+     "value": null,
+     "team_id": 145,
+     "player_id": null,
+     "outcome_id": 2773977602,
+     "option_type_id": 12091
+    },
+    {
      "money": 300,
      "value": null,
      "team_id": 127,
      "player_id": null,
      "outcome_id": 2773977430,
      "option_type_id": 12089
-    },
-    {
-     "money": 320,
-     "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773977602,
-     "option_type_id": 12091
     },
     {
      "money": 320,
@@ -1268,7 +1268,7 @@
      "option_type_id": 12093
     },
     {
-     "money": 440,
+     "money": 450,
      "value": null,
      "team_id": 131,
      "player_id": null,
@@ -1286,18 +1286,26 @@
     {
      "money": 500,
      "value": null,
+     "team_id": 146,
+     "player_id": null,
+     "outcome_id": 2773977862,
+     "option_type_id": 12095
+    },
+    {
+     "money": 550,
+     "value": null,
      "team_id": 156,
      "player_id": null,
      "outcome_id": 2773977863,
      "option_type_id": 12095
     },
     {
-     "money": 500,
+     "money": 550,
      "value": null,
-     "team_id": 146,
+     "team_id": 135,
      "player_id": null,
-     "outcome_id": 2773977862,
-     "option_type_id": 12095
+     "outcome_id": 2773977579,
+     "option_type_id": 12091
     },
     {
      "money": 550,
@@ -1334,34 +1342,10 @@
     {
      "money": 600,
      "value": null,
-     "team_id": 135,
-     "player_id": null,
-     "outcome_id": 2773977579,
-     "option_type_id": 12091
-    },
-    {
-     "money": 600,
-     "value": null,
      "team_id": 2045,
      "player_id": null,
      "outcome_id": 2773977577,
      "option_type_id": 12091
-    },
-    {
-     "money": 650,
-     "value": null,
-     "team_id": 142,
-     "player_id": null,
-     "outcome_id": 2773977846,
-     "option_type_id": 12095
-    },
-    {
-     "money": 650,
-     "value": null,
-     "team_id": 129,
-     "player_id": null,
-     "outcome_id": 2773977851,
-     "option_type_id": 12095
     },
     {
      "money": 650,
@@ -1372,12 +1356,20 @@
      "option_type_id": 12095
     },
     {
-     "money": 650,
+     "money": 700,
      "value": null,
      "team_id": 130,
      "player_id": null,
      "outcome_id": 2773977578,
      "option_type_id": 12091
+    },
+    {
+     "money": 700,
+     "value": null,
+     "team_id": 142,
+     "player_id": null,
+     "outcome_id": 2773977846,
+     "option_type_id": 12095
     },
     {
      "money": 700,
@@ -1406,26 +1398,10 @@
     {
      "money": 750,
      "value": null,
-     "team_id": 152,
+     "team_id": 129,
      "player_id": null,
-     "outcome_id": 2773977700,
-     "option_type_id": 12093
-    },
-    {
-     "money": 750,
-     "value": null,
-     "team_id": 147,
-     "player_id": null,
-     "outcome_id": 2773977839,
+     "outcome_id": 2773977851,
      "option_type_id": 12095
-    },
-    {
-     "money": 750,
-     "value": null,
-     "team_id": 144,
-     "player_id": null,
-     "outcome_id": 2773977693,
-     "option_type_id": 12093
     },
     {
      "money": 750,
@@ -1436,7 +1412,15 @@
      "option_type_id": 12095
     },
     {
-     "money": 800,
+     "money": 750,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2773977576,
+     "option_type_id": 12091
+    },
+    {
+     "money": 750,
      "value": null,
      "team_id": 140,
      "player_id": null,
@@ -1444,11 +1428,43 @@
      "option_type_id": 12095
     },
     {
-     "money": 800,
+     "money": 750,
      "value": null,
      "team_id": 145,
      "player_id": null,
      "outcome_id": 2773977707,
+     "option_type_id": 12093
+    },
+    {
+     "money": 750,
+     "value": null,
+     "team_id": 136,
+     "player_id": null,
+     "outcome_id": 2773977838,
+     "option_type_id": 12095
+    },
+    {
+     "money": 750,
+     "value": null,
+     "team_id": 152,
+     "player_id": null,
+     "outcome_id": 2773977700,
+     "option_type_id": 12093
+    },
+    {
+     "money": 800,
+     "value": null,
+     "team_id": 147,
+     "player_id": null,
+     "outcome_id": 2773977839,
+     "option_type_id": 12095
+    },
+    {
+     "money": 800,
+     "value": null,
+     "team_id": 144,
+     "player_id": null,
+     "outcome_id": 2773977693,
      "option_type_id": 12093
     },
     {
@@ -1468,20 +1484,12 @@
      "option_type_id": 12095
     },
     {
-     "money": 800,
+     "money": 850,
      "value": null,
-     "team_id": 136,
+     "team_id": 251,
      "player_id": null,
-     "outcome_id": 2773977838,
-     "option_type_id": 12095
-    },
-    {
-     "money": 800,
-     "value": null,
-     "team_id": 127,
-     "player_id": null,
-     "outcome_id": 2773977576,
-     "option_type_id": 12091
+     "outcome_id": 2773978135,
+     "option_type_id": 12097
     },
     {
      "money": 850,
@@ -1500,14 +1508,6 @@
      "option_type_id": 12093
     },
     {
-     "money": 900,
-     "value": null,
-     "team_id": 251,
-     "player_id": null,
-     "outcome_id": 2773978135,
-     "option_type_id": 12097
-    },
-    {
      "money": 1000,
      "value": null,
      "team_id": 134,
@@ -1524,15 +1524,7 @@
      "option_type_id": 12095
     },
     {
-     "money": 1700,
-     "value": null,
-     "team_id": 133,
-     "player_id": null,
-     "outcome_id": 2773977820,
-     "option_type_id": 12095
-    },
-    {
-     "money": 1700,
+     "money": 1500,
      "value": null,
      "team_id": 135,
      "player_id": null,
@@ -1548,12 +1540,20 @@
      "option_type_id": 12093
     },
     {
+     "money": 1800,
+     "value": null,
+     "team_id": 133,
+     "player_id": null,
+     "outcome_id": 2773977820,
+     "option_type_id": 12095
+    },
+    {
      "money": 2000,
      "value": null,
-     "team_id": 131,
+     "team_id": 132,
      "player_id": null,
-     "outcome_id": 2773978132,
-     "option_type_id": 12097
+     "outcome_id": 2773977816,
+     "option_type_id": 12095
     },
     {
      "money": 2000,
@@ -1566,10 +1566,18 @@
     {
      "money": 2100,
      "value": null,
-     "team_id": 132,
+     "team_id": 131,
      "player_id": null,
-     "outcome_id": 2773977816,
-     "option_type_id": 12095
+     "outcome_id": 2773978132,
+     "option_type_id": 12097
+    },
+    {
+     "money": 2200,
+     "value": null,
+     "team_id": 130,
+     "player_id": null,
+     "outcome_id": 2773977687,
+     "option_type_id": 12093
     },
     {
      "money": 2300,
@@ -1588,15 +1596,7 @@
      "option_type_id": 12091
     },
     {
-     "money": 2300,
-     "value": null,
-     "team_id": 130,
-     "player_id": null,
-     "outcome_id": 2773977687,
-     "option_type_id": 12093
-    },
-    {
-     "money": 2500,
+     "money": 2400,
      "value": null,
      "team_id": 146,
      "player_id": null,
@@ -1630,6 +1630,14 @@
     {
      "money": 3700,
      "value": null,
+     "team_id": 152,
+     "player_id": null,
+     "outcome_id": 2773977817,
+     "option_type_id": 12095
+    },
+    {
+     "money": 3700,
+     "value": null,
      "team_id": 128,
      "player_id": null,
      "outcome_id": 2773978119,
@@ -1638,26 +1646,26 @@
     {
      "money": 3800,
      "value": null,
-     "team_id": 152,
-     "player_id": null,
-     "outcome_id": 2773977817,
-     "option_type_id": 12095
-    },
-    {
-     "money": 4000,
-     "value": null,
      "team_id": 145,
      "player_id": null,
      "outcome_id": 2773977818,
      "option_type_id": 12095
     },
     {
-     "money": 4300,
+     "money": 4000,
      "value": null,
      "team_id": 144,
      "player_id": null,
      "outcome_id": 2773977807,
      "option_type_id": 12095
+    },
+    {
+     "money": 4500,
+     "value": null,
+     "team_id": 251,
+     "player_id": null,
+     "outcome_id": 2774007116,
+     "option_type_id": 12358
     },
     {
      "money": 4800,
@@ -1670,33 +1678,17 @@
     {
      "money": 4800,
      "value": null,
-     "team_id": 142,
-     "player_id": null,
-     "outcome_id": 2773978113,
-     "option_type_id": 12097
-    },
-    {
-     "money": 5000,
-     "value": null,
-     "team_id": 251,
-     "player_id": null,
-     "outcome_id": 2774007116,
-     "option_type_id": 12358
-    },
-    {
-     "money": 5000,
-     "value": null,
      "team_id": 137,
      "player_id": null,
      "outcome_id": 2773978101,
      "option_type_id": 12097
     },
     {
-     "money": 5500,
+     "money": 4800,
      "value": null,
-     "team_id": 129,
+     "team_id": 142,
      "player_id": null,
-     "outcome_id": 2773978112,
+     "outcome_id": 2773978113,
      "option_type_id": 12097
     },
     {
@@ -1708,11 +1700,27 @@
      "option_type_id": 12095
     },
     {
+     "money": 6000,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2773978112,
+     "option_type_id": 12097
+    },
+    {
      "money": 6500,
      "value": null,
      "team_id": 154,
      "player_id": null,
      "outcome_id": 2773978116,
+     "option_type_id": 12097
+    },
+    {
+     "money": 6500,
+     "value": null,
+     "team_id": 136,
+     "player_id": null,
+     "outcome_id": 2773978098,
      "option_type_id": 12097
     },
     {
@@ -1732,14 +1740,6 @@
      "option_type_id": 12097
     },
     {
-     "money": 7500,
-     "value": null,
-     "team_id": 136,
-     "player_id": null,
-     "outcome_id": 2773978098,
-     "option_type_id": 12097
-    },
-    {
      "money": 8000,
      "value": null,
      "team_id": 140,
@@ -1748,7 +1748,7 @@
      "option_type_id": 12097
     },
     {
-     "money": 8000,
+     "money": 9000,
      "value": null,
      "team_id": 147,
      "player_id": null,
@@ -1756,7 +1756,15 @@
      "option_type_id": 12097
     },
     {
-     "money": 9000,
+     "money": 10000,
+     "value": null,
+     "team_id": 135,
+     "player_id": null,
+     "outcome_id": 2773977803,
+     "option_type_id": 12095
+    },
+    {
+     "money": 10000,
      "value": null,
      "team_id": 143,
      "player_id": null,
@@ -1764,15 +1772,7 @@
      "option_type_id": 12097
     },
     {
-     "money": 11000,
-     "value": null,
-     "team_id": 2045,
-     "player_id": null,
-     "outcome_id": 2773977800,
-     "option_type_id": 12095
-    },
-    {
-     "money": 11000,
+     "money": 10000,
      "value": null,
      "team_id": 134,
      "player_id": null,
@@ -1782,10 +1782,10 @@
     {
      "money": 11000,
      "value": null,
-     "team_id": 135,
+     "team_id": 126,
      "player_id": null,
-     "outcome_id": 2773977803,
-     "option_type_id": 12095
+     "outcome_id": 2773977680,
+     "option_type_id": 12093
     },
     {
      "money": 11000,
@@ -1796,12 +1796,12 @@
      "option_type_id": 12097
     },
     {
-     "money": 11000,
+     "money": 13000,
      "value": null,
-     "team_id": 131,
+     "team_id": 149,
      "player_id": null,
-     "outcome_id": 2774007114,
-     "option_type_id": 12358
+     "outcome_id": 2773978065,
+     "option_type_id": 12097
     },
     {
      "money": 13000,
@@ -1836,20 +1836,28 @@
      "option_type_id": 12358
     },
     {
-     "money": 13000,
+     "money": 14000,
      "value": null,
-     "team_id": 125,
+     "team_id": 131,
      "player_id": null,
-     "outcome_id": 2774007109,
+     "outcome_id": 2774007114,
      "option_type_id": 12358
     },
     {
      "money": 14000,
      "value": null,
-     "team_id": 126,
+     "team_id": 2045,
      "player_id": null,
-     "outcome_id": 2773977680,
-     "option_type_id": 12093
+     "outcome_id": 2773977800,
+     "option_type_id": 12095
+    },
+    {
+     "money": 14000,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2774007109,
+     "option_type_id": 12358
     },
     {
      "money": 19000,
@@ -1874,14 +1882,6 @@
      "player_id": null,
      "outcome_id": 2774007112,
      "option_type_id": 12358
-    },
-    {
-     "money": 19000,
-     "value": null,
-     "team_id": 149,
-     "player_id": null,
-     "outcome_id": 2773978065,
-     "option_type_id": 12097
     },
     {
      "money": 26000,
@@ -2083,6 +2083,14 @@
     {
      "money": -20000,
      "value": null,
+     "team_id": 145,
+     "player_id": null,
+     "outcome_id": 2773968435,
+     "option_type_id": 12083
+    },
+    {
+     "money": -20000,
+     "value": null,
      "team_id": 131,
      "player_id": null,
      "outcome_id": 2779770026,
@@ -2123,9 +2131,9 @@
     {
      "money": -7000,
      "value": null,
-     "team_id": 145,
+     "team_id": 152,
      "player_id": null,
-     "outcome_id": 2773968435,
+     "outcome_id": 2773968436,
      "option_type_id": 12083
     },
     {
@@ -2135,14 +2143,6 @@
      "player_id": null,
      "outcome_id": 2773968382,
      "option_type_id": 12085
-    },
-    {
-     "money": -7000,
-     "value": null,
-     "team_id": 152,
-     "player_id": null,
-     "outcome_id": 2773968436,
-     "option_type_id": 12083
     },
     {
      "money": -7000,
@@ -2219,6 +2219,22 @@
     {
      "money": -6000,
      "value": null,
+     "team_id": 131,
+     "player_id": null,
+     "outcome_id": 2773968545,
+     "option_type_id": 12087
+    },
+    {
+     "money": -6000,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2773968444,
+     "option_type_id": 12083
+    },
+    {
+     "money": -6000,
+     "value": null,
      "team_id": 146,
      "player_id": null,
      "outcome_id": 2773968547,
@@ -2231,22 +2247,6 @@
      "player_id": null,
      "outcome_id": 2773968546,
      "option_type_id": 12087
-    },
-    {
-     "money": -6000,
-     "value": null,
-     "team_id": 127,
-     "player_id": null,
-     "outcome_id": 2773968444,
-     "option_type_id": 12083
-    },
-    {
-     "money": -4500,
-     "value": null,
-     "team_id": 134,
-     "player_id": null,
-     "outcome_id": 2773968388,
-     "option_type_id": 12085
     },
     {
      "money": -4500,
@@ -2275,10 +2275,10 @@
     {
      "money": -3500,
      "value": null,
-     "team_id": 131,
+     "team_id": 134,
      "player_id": null,
-     "outcome_id": 2773968545,
-     "option_type_id": 12087
+     "outcome_id": 2773968388,
+     "option_type_id": 12085
     },
     {
      "money": -3500,
@@ -2315,14 +2315,6 @@
     {
      "money": -2200,
      "value": null,
-     "team_id": 128,
-     "player_id": null,
-     "outcome_id": 2773968554,
-     "option_type_id": 12087
-    },
-    {
-     "money": -2200,
-     "value": null,
      "team_id": 133,
      "player_id": null,
      "outcome_id": 2773968394,
@@ -2339,17 +2331,9 @@
     {
      "money": -2000,
      "value": null,
-     "team_id": 129,
+     "team_id": 128,
      "player_id": null,
-     "outcome_id": 2773968549,
-     "option_type_id": 12087
-    },
-    {
-     "money": -1900,
-     "value": null,
-     "team_id": 142,
-     "player_id": null,
-     "outcome_id": 2773968552,
+     "outcome_id": 2773968554,
      "option_type_id": 12087
     },
     {
@@ -2359,6 +2343,22 @@
      "player_id": null,
      "outcome_id": 2773968575,
      "option_type_id": 12089
+    },
+    {
+     "money": -1900,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2773968549,
+     "option_type_id": 12087
+    },
+    {
+     "money": -1600,
+     "value": null,
+     "team_id": 142,
+     "player_id": null,
+     "outcome_id": 2773968552,
+     "option_type_id": 12087
     },
     {
      "money": -1600,
@@ -2387,9 +2387,9 @@
     {
      "money": -1400,
      "value": null,
-     "team_id": 137,
+     "team_id": 136,
      "player_id": null,
-     "outcome_id": 2773968556,
+     "outcome_id": 2773968555,
      "option_type_id": 12087
     },
     {
@@ -2401,6 +2401,14 @@
      "option_type_id": 12085
     },
     {
+     "money": -1300,
+     "value": null,
+     "team_id": 137,
+     "player_id": null,
+     "outcome_id": 2773968556,
+     "option_type_id": 12087
+    },
+    {
      "money": -1250,
      "value": null,
      "team_id": 147,
@@ -2409,12 +2417,12 @@
      "option_type_id": 12087
     },
     {
-     "money": -1250,
+     "money": -1150,
      "value": null,
-     "team_id": 136,
+     "team_id": 145,
      "player_id": null,
-     "outcome_id": 2773968555,
-     "option_type_id": 12087
+     "outcome_id": 2773968392,
+     "option_type_id": 12085
     },
     {
      "money": -1150,
@@ -2431,14 +2439,6 @@
      "player_id": null,
      "outcome_id": 2773968558,
      "option_type_id": 12087
-    },
-    {
-     "money": -1050,
-     "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773968392,
-     "option_type_id": 12085
     },
     {
      "money": -950,
@@ -2475,6 +2475,14 @@
     {
      "money": -750,
      "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2773968446,
+     "option_type_id": 12083
+    },
+    {
+     "money": -750,
+     "value": null,
      "team_id": 131,
      "player_id": null,
      "outcome_id": 2773968576,
@@ -2495,14 +2503,6 @@
      "player_id": null,
      "outcome_id": 2773968559,
      "option_type_id": 12087
-    },
-    {
-     "money": -750,
-     "value": null,
-     "team_id": 126,
-     "player_id": null,
-     "outcome_id": 2773968446,
-     "option_type_id": 12083
     },
     {
      "money": -750,
@@ -2531,10 +2531,10 @@
     {
      "money": -550,
      "value": null,
-     "team_id": 2045,
+     "team_id": 251,
      "player_id": null,
-     "outcome_id": 2773968399,
-     "option_type_id": 12085
+     "outcome_id": 2773968511,
+     "option_type_id": 12091
     },
     {
      "money": -550,
@@ -2542,6 +2542,14 @@
      "team_id": 135,
      "player_id": null,
      "outcome_id": 2773968398,
+     "option_type_id": 12085
+    },
+    {
+     "money": -550,
+     "value": null,
+     "team_id": 2045,
+     "player_id": null,
+     "outcome_id": 2773968399,
      "option_type_id": 12085
     },
     {
@@ -2563,41 +2571,33 @@
     {
      "money": -490,
      "value": null,
-     "team_id": 149,
-     "player_id": null,
-     "outcome_id": 2773968560,
-     "option_type_id": 12087
-    },
-    {
-     "money": -490,
-     "value": null,
-     "team_id": 129,
-     "player_id": null,
-     "outcome_id": 2773968581,
-     "option_type_id": 12089
-    },
-    {
-     "money": -460,
-     "value": null,
      "team_id": 133,
      "player_id": null,
      "outcome_id": 2773968564,
      "option_type_id": 12087
     },
     {
-     "money": -460,
+     "money": -490,
      "value": null,
-     "team_id": 251,
+     "team_id": 149,
      "player_id": null,
-     "outcome_id": 2773968511,
-     "option_type_id": 12091
+     "outcome_id": 2773968560,
+     "option_type_id": 12087
     },
     {
-     "money": -460,
+     "money": -450,
      "value": null,
      "team_id": 142,
      "player_id": null,
      "outcome_id": 2773968583,
+     "option_type_id": 12089
+    },
+    {
+     "money": -450,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2773968581,
      "option_type_id": 12089
     },
     {
@@ -2615,6 +2615,14 @@
      "player_id": null,
      "outcome_id": 2773968400,
      "option_type_id": 12085
+    },
+    {
+     "money": -400,
+     "value": null,
+     "team_id": 136,
+     "player_id": null,
+     "outcome_id": 2773968587,
+     "option_type_id": 12089
     },
     {
      "money": -400,
@@ -2649,15 +2657,7 @@
      "option_type_id": 12089
     },
     {
-     "money": -360,
-     "value": null,
-     "team_id": 136,
-     "player_id": null,
-     "outcome_id": 2773968587,
-     "option_type_id": 12089
-    },
-    {
-     "money": -330,
+     "money": -320,
      "value": null,
      "team_id": 147,
      "player_id": null,
@@ -2665,15 +2665,7 @@
      "option_type_id": 12089
     },
     {
-     "money": -320,
-     "value": null,
-     "team_id": 140,
-     "player_id": null,
-     "outcome_id": 2773968590,
-     "option_type_id": 12089
-    },
-    {
-     "money": -320,
+     "money": -310,
      "value": null,
      "team_id": 144,
      "player_id": null,
@@ -2681,11 +2673,27 @@
      "option_type_id": 12087
     },
     {
+     "money": -310,
+     "value": null,
+     "team_id": 140,
+     "player_id": null,
+     "outcome_id": 2773968590,
+     "option_type_id": 12089
+    },
+    {
      "money": -290,
      "value": null,
      "team_id": 152,
      "player_id": null,
      "outcome_id": 2773968565,
+     "option_type_id": 12087
+    },
+    {
+     "money": -280,
+     "value": null,
+     "team_id": 145,
+     "player_id": null,
+     "outcome_id": 2773968563,
      "option_type_id": 12087
     },
     {
@@ -2697,15 +2705,7 @@
      "option_type_id": 12089
     },
     {
-     "money": -250,
-     "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773968563,
-     "option_type_id": 12087
-    },
-    {
-     "money": -240,
+     "money": -230,
      "value": null,
      "team_id": 131,
      "player_id": null,
@@ -2723,17 +2723,17 @@
     {
      "money": -230,
      "value": null,
-     "team_id": 150,
-     "player_id": null,
-     "outcome_id": 2773968567,
-     "option_type_id": 12087
-    },
-    {
-     "money": -230,
-     "value": null,
      "team_id": 151,
      "player_id": null,
      "outcome_id": 2773968568,
+     "option_type_id": 12087
+    },
+    {
+     "money": -220,
+     "value": null,
+     "team_id": 150,
+     "player_id": null,
+     "outcome_id": 2773968567,
      "option_type_id": 12087
     },
     {
@@ -2755,18 +2755,18 @@
     {
      "money": -200,
      "value": null,
-     "team_id": 156,
-     "player_id": null,
-     "outcome_id": 2773968513,
-     "option_type_id": 12091
-    },
-    {
-     "money": -200,
-     "value": null,
      "team_id": 148,
      "player_id": null,
      "outcome_id": 2773968593,
      "option_type_id": 12089
+    },
+    {
+     "money": -195,
+     "value": null,
+     "team_id": 156,
+     "player_id": null,
+     "outcome_id": 2773968513,
+     "option_type_id": 12091
     },
     {
      "money": -170,
@@ -2775,6 +2775,14 @@
      "player_id": null,
      "outcome_id": 2773968522,
      "option_type_id": 12091
+    },
+    {
+     "money": -160,
+     "value": null,
+     "team_id": 251,
+     "player_id": null,
+     "outcome_id": 2773968479,
+     "option_type_id": 12093
     },
     {
      "money": -150,
@@ -2803,21 +2811,21 @@
     {
      "money": -145,
      "value": null,
-     "team_id": 153,
-     "player_id": null,
-     "outcome_id": 2773968403,
-     "option_type_id": 12085
-    },
-    {
-     "money": -145,
-     "value": null,
      "team_id": 142,
      "player_id": null,
      "outcome_id": 2773968519,
      "option_type_id": 12091
     },
     {
-     "money": -145,
+     "money": -140,
+     "value": null,
+     "team_id": 153,
+     "player_id": null,
+     "outcome_id": 2773968403,
+     "option_type_id": 12085
+    },
+    {
+     "money": -140,
      "value": null,
      "team_id": 129,
      "player_id": null,
@@ -2825,12 +2833,12 @@
      "option_type_id": 12091
     },
     {
-     "money": -145,
+     "money": -140,
      "value": null,
-     "team_id": 251,
+     "team_id": 135,
      "player_id": null,
-     "outcome_id": 2773968479,
-     "option_type_id": 12093
+     "outcome_id": 2773968569,
+     "option_type_id": 12087
     },
     {
      "money": -140,
@@ -2838,22 +2846,6 @@
      "team_id": 139,
      "player_id": null,
      "outcome_id": 2773968518,
-     "option_type_id": 12091
-    },
-    {
-     "money": -135,
-     "value": null,
-     "team_id": 2045,
-     "player_id": null,
-     "outcome_id": 2773968571,
-     "option_type_id": 12087
-    },
-    {
-     "money": -135,
-     "value": null,
-     "team_id": 154,
-     "player_id": null,
-     "outcome_id": 2773968516,
      "option_type_id": 12091
     },
     {
@@ -2867,33 +2859,41 @@
     {
      "money": -135,
      "value": null,
+     "team_id": 2045,
+     "player_id": null,
+     "outcome_id": 2773968571,
+     "option_type_id": 12087
+    },
+    {
+     "money": -135,
+     "value": null,
      "team_id": 126,
      "player_id": null,
      "outcome_id": 2773968402,
      "option_type_id": 12085
     },
     {
-     "money": -135,
+     "money": -130,
      "value": null,
-     "team_id": 135,
+     "team_id": 154,
      "player_id": null,
-     "outcome_id": 2773968569,
-     "option_type_id": 12087
+     "outcome_id": 2773968516,
+     "option_type_id": 12091
     },
     {
      "money": -125,
      "value": null,
-     "team_id": 1325,
+     "team_id": 136,
      "player_id": null,
-     "outcome_id": 2773968521,
+     "outcome_id": 2773968524,
      "option_type_id": 12091
     },
     {
      "money": -120,
      "value": null,
-     "team_id": 136,
+     "team_id": 1325,
      "player_id": null,
-     "outcome_id": 2773968524,
+     "outcome_id": 2773968521,
      "option_type_id": 12091
     },
     {
@@ -2939,6 +2939,14 @@
     {
      "money": 105,
      "value": null,
+     "team_id": 145,
+     "player_id": null,
+     "outcome_id": 2773968596,
+     "option_type_id": 12089
+    },
+    {
+     "money": 105,
+     "value": null,
      "team_id": 152,
      "player_id": null,
      "outcome_id": 2773968597,
@@ -2953,15 +2961,7 @@
      "option_type_id": 12091
     },
     {
-     "money": 115,
-     "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773968596,
-     "option_type_id": 12089
-    },
-    {
-     "money": 120,
+     "money": 125,
      "value": null,
      "team_id": 134,
      "player_id": null,
@@ -2977,7 +2977,7 @@
      "option_type_id": 12089
     },
     {
-     "money": 125,
+     "money": 135,
      "value": null,
      "team_id": 131,
      "player_id": null,
@@ -3017,7 +3017,7 @@
      "option_type_id": 12093
     },
     {
-     "money": 150,
+     "money": 155,
      "value": null,
      "team_id": 156,
      "player_id": null,
@@ -3033,7 +3033,7 @@
      "option_type_id": 12093
     },
     {
-     "money": 175,
+     "money": 180,
      "value": null,
      "team_id": 133,
      "player_id": null,
@@ -3067,18 +3067,18 @@
     {
      "money": 210,
      "value": null,
-     "team_id": 129,
+     "team_id": 135,
      "player_id": null,
-     "outcome_id": 2773968485,
-     "option_type_id": 12093
+     "outcome_id": 2773968601,
+     "option_type_id": 12089
     },
     {
-     "money": 220,
+     "money": 210,
      "value": null,
-     "team_id": 139,
+     "team_id": 251,
      "player_id": null,
-     "outcome_id": 2773968487,
-     "option_type_id": 12093
+     "outcome_id": 2773968447,
+     "option_type_id": 12095
     },
     {
      "money": 220,
@@ -3089,15 +3089,7 @@
      "option_type_id": 12089
     },
     {
-     "money": 220,
-     "value": null,
-     "team_id": 135,
-     "player_id": null,
-     "outcome_id": 2773968601,
-     "option_type_id": 12089
-    },
-    {
-     "money": 220,
+     "money": 230,
      "value": null,
      "team_id": 137,
      "player_id": null,
@@ -3107,18 +3099,42 @@
     {
      "money": 230,
      "value": null,
-     "team_id": 251,
+     "team_id": 139,
      "player_id": null,
-     "outcome_id": 2773968447,
-     "option_type_id": 12095
+     "outcome_id": 2773968487,
+     "option_type_id": 12093
     },
     {
      "money": 230,
+     "value": null,
+     "team_id": 129,
+     "player_id": null,
+     "outcome_id": 2773968485,
+     "option_type_id": 12093
+    },
+    {
+     "money": 240,
      "value": null,
      "team_id": 154,
      "player_id": null,
      "outcome_id": 2773968484,
      "option_type_id": 12093
+    },
+    {
+     "money": 240,
+     "value": null,
+     "team_id": 136,
+     "player_id": null,
+     "outcome_id": 2773968492,
+     "option_type_id": 12093
+    },
+    {
+     "money": 250,
+     "value": null,
+     "team_id": 126,
+     "player_id": null,
+     "outcome_id": 2773968573,
+     "option_type_id": 12087
     },
     {
      "money": 250,
@@ -3139,33 +3155,9 @@
     {
      "money": 250,
      "value": null,
-     "team_id": 136,
-     "player_id": null,
-     "outcome_id": 2773968492,
-     "option_type_id": 12093
-    },
-    {
-     "money": 250,
-     "value": null,
      "team_id": 1325,
      "player_id": null,
      "outcome_id": 2773968489,
-     "option_type_id": 12093
-    },
-    {
-     "money": 260,
-     "value": null,
-     "team_id": 126,
-     "player_id": null,
-     "outcome_id": 2773968573,
-     "option_type_id": 12087
-    },
-    {
-     "money": 270,
-     "value": null,
-     "team_id": 147,
-     "player_id": null,
-     "outcome_id": 2773968488,
      "option_type_id": 12093
     },
     {
@@ -3174,6 +3166,14 @@
      "team_id": 140,
      "player_id": null,
      "outcome_id": 2773968494,
+     "option_type_id": 12093
+    },
+    {
+     "money": 280,
+     "value": null,
+     "team_id": 147,
+     "player_id": null,
+     "outcome_id": 2773968488,
      "option_type_id": 12093
     },
     {
@@ -3195,18 +3195,18 @@
     {
      "money": 300,
      "value": null,
-     "team_id": 127,
-     "player_id": null,
-     "outcome_id": 2773968604,
-     "option_type_id": 12089
-    },
-    {
-     "money": 320,
-     "value": null,
      "team_id": 145,
      "player_id": null,
      "outcome_id": 2773968531,
      "option_type_id": 12091
+    },
+    {
+     "money": 300,
+     "value": null,
+     "team_id": 127,
+     "player_id": null,
+     "outcome_id": 2773968604,
+     "option_type_id": 12089
     },
     {
      "money": 320,
@@ -3249,7 +3249,7 @@
      "option_type_id": 12093
     },
     {
-     "money": 440,
+     "money": 450,
      "value": null,
      "team_id": 131,
      "player_id": null,
@@ -3267,18 +3267,26 @@
     {
      "money": 500,
      "value": null,
+     "team_id": 146,
+     "player_id": null,
+     "outcome_id": 2773968450,
+     "option_type_id": 12095
+    },
+    {
+     "money": 550,
+     "value": null,
      "team_id": 156,
      "player_id": null,
      "outcome_id": 2773968449,
      "option_type_id": 12095
     },
     {
-     "money": 500,
+     "money": 550,
      "value": null,
-     "team_id": 146,
+     "team_id": 135,
      "player_id": null,
-     "outcome_id": 2773968450,
-     "option_type_id": 12095
+     "outcome_id": 2773968537,
+     "option_type_id": 12091
     },
     {
      "money": 550,
@@ -3315,14 +3323,6 @@
     {
      "money": 600,
      "value": null,
-     "team_id": 135,
-     "player_id": null,
-     "outcome_id": 2773968537,
-     "option_type_id": 12091
-    },
-    {
-     "money": 600,
-     "value": null,
      "team_id": 2045,
      "player_id": null,
      "outcome_id": 2773968539,
@@ -3331,13 +3331,13 @@
     {
      "money": 650,
      "value": null,
-     "team_id": 142,
+     "team_id": 137,
      "player_id": null,
-     "outcome_id": 2773968455,
+     "outcome_id": 2773968458,
      "option_type_id": 12095
     },
     {
-     "money": 650,
+     "money": 700,
      "value": null,
      "team_id": 130,
      "player_id": null,
@@ -3345,19 +3345,11 @@
      "option_type_id": 12091
     },
     {
-     "money": 650,
+     "money": 700,
      "value": null,
-     "team_id": 129,
+     "team_id": 142,
      "player_id": null,
-     "outcome_id": 2773968454,
-     "option_type_id": 12095
-    },
-    {
-     "money": 650,
-     "value": null,
-     "team_id": 137,
-     "player_id": null,
-     "outcome_id": 2773968458,
+     "outcome_id": 2773968455,
      "option_type_id": 12095
     },
     {
@@ -3387,10 +3379,10 @@
     {
      "money": 750,
      "value": null,
-     "team_id": 152,
+     "team_id": 127,
      "player_id": null,
-     "outcome_id": 2773968501,
-     "option_type_id": 12093
+     "outcome_id": 2773968540,
+     "option_type_id": 12091
     },
     {
      "money": 750,
@@ -3403,21 +3395,21 @@
     {
      "money": 750,
      "value": null,
-     "team_id": 147,
+     "team_id": 129,
      "player_id": null,
-     "outcome_id": 2773968459,
+     "outcome_id": 2773968454,
      "option_type_id": 12095
     },
     {
      "money": 750,
      "value": null,
-     "team_id": 144,
+     "team_id": 145,
      "player_id": null,
-     "outcome_id": 2773968504,
+     "outcome_id": 2773968499,
      "option_type_id": 12093
     },
     {
-     "money": 800,
+     "money": 750,
      "value": null,
      "team_id": 140,
      "player_id": null,
@@ -3425,20 +3417,36 @@
      "option_type_id": 12095
     },
     {
-     "money": 800,
-     "value": null,
-     "team_id": 127,
-     "player_id": null,
-     "outcome_id": 2773968540,
-     "option_type_id": 12091
-    },
-    {
-     "money": 800,
+     "money": 750,
      "value": null,
      "team_id": 136,
      "player_id": null,
      "outcome_id": 2773968460,
      "option_type_id": 12095
+    },
+    {
+     "money": 750,
+     "value": null,
+     "team_id": 152,
+     "player_id": null,
+     "outcome_id": 2773968501,
+     "option_type_id": 12093
+    },
+    {
+     "money": 800,
+     "value": null,
+     "team_id": 147,
+     "player_id": null,
+     "outcome_id": 2773968459,
+     "option_type_id": 12095
+    },
+    {
+     "money": 800,
+     "value": null,
+     "team_id": 144,
+     "player_id": null,
+     "outcome_id": 2773968504,
+     "option_type_id": 12093
     },
     {
      "money": 800,
@@ -3451,18 +3459,18 @@
     {
      "money": 800,
      "value": null,
-     "team_id": 145,
-     "player_id": null,
-     "outcome_id": 2773968499,
-     "option_type_id": 12093
-    },
-    {
-     "money": 800,
-     "value": null,
      "team_id": 151,
      "player_id": null,
      "outcome_id": 2773968503,
      "option_type_id": 12093
+    },
+    {
+     "money": 850,
+     "value": null,
+     "team_id": 251,
+     "player_id": null,
+     "outcome_id": 2773968404,
+     "option_type_id": 12097
     },
     {
      "money": 850,
@@ -3481,14 +3489,6 @@
      "option_type_id": 12093
     },
     {
-     "money": 900,
-     "value": null,
-     "team_id": 251,
-     "player_id": null,
-     "outcome_id": 2773968404,
-     "option_type_id": 12097
-    },
-    {
      "money": 1000,
      "value": null,
      "team_id": 134,
@@ -3505,15 +3505,7 @@
      "option_type_id": 12095
     },
     {
-     "money": 1700,
-     "value": null,
-     "team_id": 133,
-     "player_id": null,
-     "outcome_id": 2773968465,
-     "option_type_id": 12095
-    },
-    {
-     "money": 1700,
+     "money": 1500,
      "value": null,
      "team_id": 135,
      "player_id": null,
@@ -3529,6 +3521,22 @@
      "option_type_id": 12093
     },
     {
+     "money": 1800,
+     "value": null,
+     "team_id": 133,
+     "player_id": null,
+     "outcome_id": 2773968465,
+     "option_type_id": 12095
+    },
+    {
+     "money": 2000,
+     "value": null,
+     "team_id": 132,
+     "player_id": null,
+     "outcome_id": 2773968469,
+     "option_type_id": 12095
+    },
+    {
      "money": 2000,
      "value": null,
      "team_id": 149,
@@ -3537,7 +3545,7 @@
      "option_type_id": 12095
     },
     {
-     "money": 2000,
+     "money": 2100,
      "value": null,
      "team_id": 131,
      "player_id": null,
@@ -3545,15 +3553,7 @@
      "option_type_id": 12097
     },
     {
-     "money": 2100,
-     "value": null,
-     "team_id": 132,
-     "player_id": null,
-     "outcome_id": 2773968469,
-     "option_type_id": 12095
-    },
-    {
-     "money": 2300,
+     "money": 2200,
      "value": null,
      "team_id": 130,
      "player_id": null,
@@ -3577,7 +3577,7 @@
      "option_type_id": 12091
     },
     {
-     "money": 2500,
+     "money": 2400,
      "value": null,
      "team_id": 146,
      "player_id": null,
@@ -3611,6 +3611,14 @@
     {
      "money": 3700,
      "value": null,
+     "team_id": 152,
+     "player_id": null,
+     "outcome_id": 2773968468,
+     "option_type_id": 12095
+    },
+    {
+     "money": 3700,
+     "value": null,
      "team_id": 128,
      "player_id": null,
      "outcome_id": 2773968409,
@@ -3619,26 +3627,26 @@
     {
      "money": 3800,
      "value": null,
-     "team_id": 152,
-     "player_id": null,
-     "outcome_id": 2773968468,
-     "option_type_id": 12095
-    },
-    {
-     "money": 4000,
-     "value": null,
      "team_id": 145,
      "player_id": null,
      "outcome_id": 2773968467,
      "option_type_id": 12095
     },
     {
-     "money": 4300,
+     "money": 4000,
      "value": null,
      "team_id": 144,
      "player_id": null,
      "outcome_id": 2773968472,
      "option_type_id": 12095
+    },
+    {
+     "money": 4500,
+     "value": null,
+     "team_id": 251,
+     "player_id": null,
+     "outcome_id": 2773989005,
+     "option_type_id": 12358
     },
     {
      "money": 4800,
@@ -3651,25 +3659,17 @@
     {
      "money": 4800,
      "value": null,
-     "team_id": 142,
-     "player_id": null,
-     "outcome_id": 2773968411,
-     "option_type_id": 12097
-    },
-    {
-     "money": 5000,
-     "value": null,
-     "team_id": 251,
-     "player_id": null,
-     "outcome_id": 2773989005,
-     "option_type_id": 12358
-    },
-    {
-     "money": 5000,
-     "value": null,
      "team_id": 137,
      "player_id": null,
      "outcome_id": 2773968415,
+     "option_type_id": 12097
+    },
+    {
+     "money": 4800,
+     "value": null,
+     "team_id": 142,
+     "player_id": null,
+     "outcome_id": 2773968411,
      "option_type_id": 12097
     },
     {
@@ -3681,7 +3681,7 @@
      "option_type_id": 12095
     },
     {
-     "money": 5500,
+     "money": 6000,
      "value": null,
      "team_id": 129,
      "player_id": null,
@@ -3694,6 +3694,14 @@
      "team_id": 154,
      "player_id": null,
      "outcome_id": 2773968410,
+     "option_type_id": 12097
+    },
+    {
+     "money": 6500,
+     "value": null,
+     "team_id": 136,
+     "player_id": null,
+     "outcome_id": 2773968416,
      "option_type_id": 12097
     },
     {
@@ -3713,22 +3721,6 @@
      "option_type_id": 12097
     },
     {
-     "money": 7500,
-     "value": null,
-     "team_id": 136,
-     "player_id": null,
-     "outcome_id": 2773968416,
-     "option_type_id": 12097
-    },
-    {
-     "money": 8000,
-     "value": null,
-     "team_id": 147,
-     "player_id": null,
-     "outcome_id": 2773968417,
-     "option_type_id": 12097
-    },
-    {
      "money": 8000,
      "value": null,
      "team_id": 140,
@@ -3739,6 +3731,30 @@
     {
      "money": 9000,
      "value": null,
+     "team_id": 147,
+     "player_id": null,
+     "outcome_id": 2773968417,
+     "option_type_id": 12097
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 134,
+     "player_id": null,
+     "outcome_id": 2773968420,
+     "option_type_id": 12097
+    },
+    {
+     "money": 10000,
+     "value": null,
+     "team_id": 135,
+     "player_id": null,
+     "outcome_id": 2773968473,
+     "option_type_id": 12095
+    },
+    {
+     "money": 10000,
+     "value": null,
      "team_id": 143,
      "player_id": null,
      "outcome_id": 2773968419,
@@ -3747,26 +3763,10 @@
     {
      "money": 11000,
      "value": null,
-     "team_id": 134,
+     "team_id": 126,
      "player_id": null,
-     "outcome_id": 2773968420,
-     "option_type_id": 12097
-    },
-    {
-     "money": 11000,
-     "value": null,
-     "team_id": 2045,
-     "player_id": null,
-     "outcome_id": 2773968474,
-     "option_type_id": 12095
-    },
-    {
-     "money": 11000,
-     "value": null,
-     "team_id": 135,
-     "player_id": null,
-     "outcome_id": 2773968473,
-     "option_type_id": 12095
+     "outcome_id": 2773968509,
+     "option_type_id": 12093
     },
     {
      "money": 11000,
@@ -3777,12 +3777,12 @@
      "option_type_id": 12097
     },
     {
-     "money": 11000,
+     "money": 13000,
      "value": null,
-     "team_id": 131,
+     "team_id": 149,
      "player_id": null,
-     "outcome_id": 2773989006,
-     "option_type_id": 12358
+     "outcome_id": 2773968424,
+     "option_type_id": 12097
     },
     {
      "money": 13000,
@@ -3791,14 +3791,6 @@
      "player_id": null,
      "outcome_id": 2773968475,
      "option_type_id": 12095
-    },
-    {
-     "money": 13000,
-     "value": null,
-     "team_id": 125,
-     "player_id": null,
-     "outcome_id": 2773989008,
-     "option_type_id": 12358
     },
     {
      "money": 13000,
@@ -3827,10 +3819,26 @@
     {
      "money": 14000,
      "value": null,
-     "team_id": 126,
+     "team_id": 2045,
      "player_id": null,
-     "outcome_id": 2773968509,
-     "option_type_id": 12093
+     "outcome_id": 2773968474,
+     "option_type_id": 12095
+    },
+    {
+     "money": 14000,
+     "value": null,
+     "team_id": 131,
+     "player_id": null,
+     "outcome_id": 2773989006,
+     "option_type_id": 12358
+    },
+    {
+     "money": 14000,
+     "value": null,
+     "team_id": 125,
+     "player_id": null,
+     "outcome_id": 2773989008,
+     "option_type_id": 12358
     },
     {
      "money": 19000,
@@ -3847,14 +3855,6 @@
      "player_id": null,
      "outcome_id": 2773968476,
      "option_type_id": 12095
-    },
-    {
-     "money": 19000,
-     "value": null,
-     "team_id": 149,
-     "player_id": null,
-     "outcome_id": 2773968424,
-     "option_type_id": 12097
     },
     {
      "money": 19000,
