@@ -130,8 +130,8 @@
  },
  "season": "2024",
  "season_type": "regular",
- "sport": "nfl",
  "shard": 703,
+ "sport": "nfl",
  "last_message_id": "1180086376436072448",
  "last_author_avatar": null,
  "last_author_display_name": "sys",
@@ -141,10 +141,15 @@
  "last_message_text_map": null,
  "last_message_time": 1735717026390,
  "last_pinned_message_id": "1174805281887907840",
- "draft_id": "1100632640849383425",
  "last_read_id": null,
+ "draft_id": "1100632640849383425",
  "league_id": "1100632640849383424",
  "previous_league_id": "916398981893251072",
+ "group_id": null,
+ "bracket_id": 1172491291112505300,
+ "bracket_overrides_id": null,
+ "loser_bracket_id": 1172491291133476900,
+ "loser_bracket_overrides_id": null,
  "roster_positions": [
   "QB",
   "RB",
@@ -162,10 +167,5 @@
   "BN",
   "BN"
  ],
- "group_id": null,
- "bracket_id": 1172491291112505300,
- "bracket_overrides_id": null,
- "loser_bracket_id": 1172491291133476900,
- "loser_bracket_overrides_id": null,
  "total_rosters": 12
 }
