@@ -41,7 +41,7 @@
       "position": "WR",
       "team": "NYG",
       "slug": "malachi-fields",
-      "jersey_number": 0
+      "jersey_number": 88
      }
     },
     {
@@ -116,7 +116,7 @@
       "position": "TE",
       "team": "DAL",
       "slug": "michael-trigg",
-      "jersey_number": 46
+      "jersey_number": 0
      }
     },
     {
@@ -506,7 +506,7 @@
       "position": "TE",
       "team": "NO",
       "slug": "oscar-delp",
-      "jersey_number": 88
+      "jersey_number": 4
      }
     },
     {
@@ -536,7 +536,7 @@
       "position": "RB",
       "team": "KC",
       "slug": "jaydn-ott",
-      "jersey_number": 42
+      "jersey_number": 0
      }
     },
     {
@@ -626,7 +626,7 @@
       "position": "TE",
       "team": "JAC",
       "slug": "tanner-koziol",
-      "jersey_number": 89
+      "jersey_number": 88
      }
     },
     {
@@ -671,7 +671,7 @@
       "position": "QB",
       "team": "PHI",
       "slug": "cole-payton",
-      "jersey_number": 10
+      "jersey_number": 18
      }
     },
     {
@@ -1001,7 +1001,7 @@
       "position": "RB",
       "team": "JAC",
       "slug": "jmari-taylor",
-      "jersey_number": 30
+      "jersey_number": 0
      }
     },
     {
@@ -1136,7 +1136,7 @@
       "position": "WR",
       "team": "TEN",
       "slug": "tyren-montgomery",
-      "jersey_number": 19
+      "jersey_number": 0
      }
     },
     {
@@ -1391,7 +1391,7 @@
       "position": "WR",
       "team": "ARI",
       "slug": "harrison-wallace-iii",
-      "jersey_number": 30
+      "jersey_number": 0
      }
     },
     {
@@ -1582,12 +1582,32 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": {
+          "pm_win_pct": 0.4
+         }
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_0244e297fd6f21a7015d4456ca77f8cf",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394746",
          "metrics": {
           "pm_win_pct": 0.4
          }
@@ -1602,7 +1622,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -1622,7 +1642,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -1658,7 +1678,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -1678,12 +1698,32 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 8000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578496735_13L88808Q12442754Q2-1",
+         "metrics": {
+          "pm_win_pct": 1
+         }
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_02da146bc406c18aab7736ce8b62200d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 6500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=50050430",
          "metrics": {
           "pm_win_pct": 1
          }
@@ -1698,7 +1738,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -1718,8 +1758,8 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
-         "cost": 10000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 8000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -1738,7 +1778,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -1757,8 +1797,8 @@
          "id": "24_02da146bc406c18aab7736ce8b62200d",
          "from_scout": true,
          "main": true,
-         "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "best": false,
+         "updated": "2026-09-02 14:09:58",
          "cost": 7500,
          "line": 0,
          "is_off": false,
@@ -1794,7 +1834,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 25000,
          "line": 1,
          "is_off": false,
@@ -1848,7 +1888,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 25000,
          "line": 1,
          "is_off": false,
@@ -1900,7 +1940,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -1918,12 +1958,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590658587_13L88808Q12452422Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_0588a3bd471811219e79453de9140e2f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 12500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=51122068",
          "metrics": null
         }
        ]
@@ -1936,7 +1994,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -1954,7 +2012,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -1972,7 +2030,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -1990,7 +2048,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 12500,
          "line": 0,
          "is_off": false,
@@ -2024,12 +2082,29 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_06403af141094872417f1806bde5b07a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=96740771"
         }
        ]
       },
@@ -2041,7 +2116,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 50000,
          "line": 1,
          "is_off": false,
@@ -2058,7 +2133,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -2091,12 +2166,29 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_07a9c20689108970894a86d721e7d022",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394741"
         }
        ]
       },
@@ -2108,7 +2200,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -2125,7 +2217,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -2158,12 +2250,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_07e2e93dc3d6723c533b57090d0e9441",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48514525",
          "metrics": null
         }
        ]
@@ -2176,7 +2286,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -2194,7 +2304,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2212,7 +2322,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -2246,12 +2356,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_09e76929b91fb8858754a1c791ecd367",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=82342254",
          "metrics": null
         }
        ]
@@ -2264,7 +2392,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -2298,12 +2426,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 20000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_0a14b1662318289df5f0fff036e50741",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394226",
          "metrics": null
         }
        ]
@@ -2316,7 +2462,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -2334,7 +2480,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -2368,8 +2514,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
-         "cost": 5000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 4000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -2386,12 +2532,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 4000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23579084792_13L88808Q12412886Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_0f2acbc2948fe83a6b4b2690a64b2876",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 4000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394194",
          "metrics": null
         }
        ]
@@ -2404,7 +2568,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 2500,
          "line": 1,
          "is_off": false,
@@ -2422,7 +2586,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -2440,8 +2604,8 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
-         "cost": 5000,
+         "updated": "2026-09-02 14:10:55",
+         "cost": 4000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -2458,7 +2622,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 3000,
          "line": 0,
          "is_off": false,
@@ -2492,12 +2656,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_1283857fc4df89d0680ba2d1518b2bdc",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=60315430",
          "metrics": null
         }
        ]
@@ -2510,7 +2692,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -2528,7 +2710,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -2562,7 +2744,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2596,7 +2778,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2630,7 +2812,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2680,8 +2862,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 5500,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 6000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -2698,12 +2880,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 5000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%232233928938_13L88808Q12466872Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_165106bc9e13c2b8c4335cd3cf5c7f12",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=49786792",
          "metrics": null
         }
        ]
@@ -2716,7 +2916,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6600,
          "line": 1,
          "is_off": false,
@@ -2734,7 +2934,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -2752,7 +2952,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -2770,7 +2970,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 5500,
          "line": 0,
          "is_off": false,
@@ -2804,7 +3004,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2822,12 +3022,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578465336_13L88808Q12450695Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_17406c823910587dba36e25e42780761",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=59928483",
          "metrics": null
         }
        ]
@@ -2840,7 +3058,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2858,7 +3076,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2876,7 +3094,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -2894,7 +3112,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -2928,8 +3146,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 9000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 10000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -2946,12 +3164,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 7500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590658589_13L88808Q12452423Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_17f0ca97888599e1913ae3afa59e651b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=60306313",
          "metrics": null
         }
        ]
@@ -2964,7 +3200,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -2982,7 +3218,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -3000,7 +3236,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -3018,7 +3254,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 9000,
          "line": 0,
          "is_off": false,
@@ -3052,7 +3288,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -3070,12 +3306,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 600,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112633_13L88808Q12401152Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_1a83694388427785e6151bf611332f6e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 550,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=78488498",
          "metrics": null
         }
        ]
@@ -3088,7 +3342,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -3106,7 +3360,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -3124,7 +3378,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -3142,7 +3396,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 550,
          "line": 0,
          "is_off": false,
@@ -3176,7 +3430,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 12500,
          "line": 1,
          "is_off": false,
@@ -3194,12 +3448,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578478141_13L88808Q12377774Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_1abe03961cf6a5c7edc3d55550a8be0d",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 12500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=60011346",
          "metrics": null
         }
        ]
@@ -3212,7 +3484,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -3230,7 +3502,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3248,7 +3520,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -3266,7 +3538,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 12500,
          "line": 0,
          "is_off": false,
@@ -3300,7 +3572,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:18:34",
+         "updated": "2026-09-02 14:00:11",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -3333,12 +3605,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 15000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_1f705563246bb999e12bb8ffee690893",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=72056131",
          "metrics": null
         }
        ]
@@ -3351,7 +3641,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -3369,7 +3659,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3387,7 +3677,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -3421,7 +3711,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -3439,12 +3729,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590598434_13L88808Q12448865Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_1fa2389611b80c4baffc098e7772c4eb",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48301561",
          "metrics": null
         }
        ]
@@ -3457,7 +3765,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -3475,7 +3783,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -3493,7 +3801,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -3511,7 +3819,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 12500,
          "line": 0,
          "is_off": false,
@@ -3545,7 +3853,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 25000,
          "line": 1,
          "is_off": false,
@@ -3563,12 +3871,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 25000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578488003_13L88808Q12445589Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_2cad3cfb4d5c60fa853ae14e1fceb8bc",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 25000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48333013",
          "metrics": null
         }
        ]
@@ -3581,7 +3907,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -3599,7 +3925,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3617,7 +3943,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3635,7 +3961,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 25000,
          "line": 0,
          "is_off": false,
@@ -3669,12 +3995,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_2e0e36758fd35581c50bc0a86ca65a59",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=49579031",
          "metrics": null
         }
        ]
@@ -3687,7 +4031,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3705,7 +4049,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -3739,7 +4083,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:18:34",
+         "updated": "2026-09-02 14:00:11",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3791,12 +4135,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_40252ce6a6fde754fa43ec0796f2917b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=96759332",
          "metrics": null
         }
        ]
@@ -3809,7 +4171,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -3827,7 +4189,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -3861,12 +4223,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_42e16260046b1d6a9e359cd36559e051",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=82342251",
          "metrics": null
         }
        ]
@@ -3879,7 +4259,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -3897,7 +4277,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -3931,7 +4311,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3949,12 +4329,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578539651_13L88808Q12450752Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_440a2a41a460d885294d4c5d65ab8002",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394736",
          "metrics": null
         }
        ]
@@ -3967,7 +4365,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -3985,7 +4383,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -4003,7 +4401,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -4021,7 +4419,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 15000,
          "line": 0,
          "is_off": false,
@@ -4055,7 +4453,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -4073,12 +4471,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 8000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590571524_13L88808Q12449862Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_44d462ff2d40427668ab715bc1440d1d",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48068918",
          "metrics": null
         }
        ]
@@ -4091,7 +4507,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -4109,7 +4525,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -4127,7 +4543,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -4145,7 +4561,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 8000,
          "line": 0,
          "is_off": false,
@@ -4179,12 +4595,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_45e97377b5fd35cf659b87ff984208e7",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=82342248",
          "metrics": null
         }
        ]
@@ -4197,7 +4631,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -4215,7 +4649,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -4249,12 +4683,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 18000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_49913da763f666d9b3879e05f4ce415c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394743",
          "metrics": null
         }
        ]
@@ -4267,7 +4719,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -4285,7 +4737,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -4319,7 +4771,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:34:27",
+         "updated": "2026-09-02 14:07:56",
          "cost": 9900,
          "line": 1,
          "is_off": false,
@@ -4443,7 +4895,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 2000,
          "line": 1,
          "is_off": false,
@@ -4461,12 +4913,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 1500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578505876_13L88808Q12448869Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_4d27bd33840918fec1472e73a28f43be",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 2200,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394228",
          "metrics": null
         }
        ]
@@ -4479,7 +4949,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 1500,
          "line": 1,
          "is_off": false,
@@ -4497,7 +4967,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 1400,
          "line": 1,
          "is_off": false,
@@ -4515,7 +4985,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 2000,
          "line": 1,
          "is_off": false,
@@ -4533,7 +5003,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 2000,
          "line": 0,
          "is_off": false,
@@ -4567,8 +5037,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
-         "cost": 8000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 7500,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -4585,12 +5055,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 7500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578498524_13L88808Q12197854Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_4e71ee071f229813a5e937472ec74d6f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48417316",
          "metrics": null
         }
        ]
@@ -4603,7 +5091,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -4621,7 +5109,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -4639,7 +5127,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -4657,7 +5145,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 7000,
          "line": 0,
          "is_off": false,
@@ -4691,7 +5179,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -4709,12 +5197,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 10000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578495579_13L88808Q12059903Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_4f31f158060411c4cf41971a33a372ba",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 12500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=61447473",
          "metrics": null
         }
        ]
@@ -4727,7 +5233,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -4745,7 +5251,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -4763,7 +5269,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -4781,7 +5287,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 10000,
          "line": 0,
          "is_off": false,
@@ -4815,12 +5321,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_5135d29cc4f4a568c380db128fcaa68c",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95523775",
          "metrics": null
         }
        ]
@@ -4833,7 +5357,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -4851,7 +5375,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -4885,12 +5409,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 15000,
+         "updated": "2026-09-02 14:10:55",
+         "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_5d2913dcbd4898259834ace3a309533b",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=58495723",
          "metrics": null
         }
        ]
@@ -4903,7 +5445,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -4921,7 +5463,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -4955,12 +5497,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 18000,
+         "updated": "2026-09-02 14:09:58",
+         "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_5e330c0bd8774ba9e15a0b5a121de8dc",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394229",
          "metrics": null
         }
        ]
@@ -4973,7 +5533,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -5007,7 +5567,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -5024,7 +5584,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -5057,7 +5617,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 1000,
          "line": 1,
          "is_off": false,
@@ -5075,12 +5635,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 1100,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578414563_13L88808Q12450692Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_63557bc8212552f13c7bedd00645622e",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 1000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48301569",
          "metrics": null
         }
        ]
@@ -5093,7 +5671,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 900,
          "line": 1,
          "is_off": false,
@@ -5111,7 +5689,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 750,
          "line": 1,
          "is_off": false,
@@ -5129,7 +5707,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 1000,
          "line": 1,
          "is_off": false,
@@ -5147,7 +5725,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 1000,
          "line": 0,
          "is_off": false,
@@ -5181,7 +5759,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 1500,
          "line": 1,
          "is_off": false,
@@ -5199,12 +5777,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 1500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112594_13L88808Q12401803Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_64f838421f178479d53c2cef8efcc874",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 1500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=82342249",
          "metrics": null
         }
        ]
@@ -5217,7 +5813,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 1800,
          "line": 1,
          "is_off": false,
@@ -5235,7 +5831,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 1800,
          "line": 1,
          "is_off": false,
@@ -5253,7 +5849,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 1500,
          "line": 1,
          "is_off": false,
@@ -5271,7 +5867,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 1500,
          "line": 0,
          "is_off": false,
@@ -5305,12 +5901,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_6794f2cf65017cb1fc3daa7ac4a3f4c7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48280179",
          "metrics": null
         }
        ]
@@ -5323,7 +5937,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -5341,7 +5955,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -5375,12 +5989,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 18000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_6a4c3ae84711206e6705fb6eac5dd252",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=49913940",
          "metrics": null
         }
        ]
@@ -5393,7 +6025,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -5411,7 +6043,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -5445,7 +6077,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -5463,12 +6095,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 7500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578504854_13L88808Q12197803Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_6b0daea81c0c58cf59db70feccd4476f",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=59869541",
          "metrics": null
         }
        ]
@@ -5481,7 +6131,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -5498,8 +6148,8 @@
          "id": "19_6b0daea81c0c58cf59db70feccd4476f",
          "from_scout": true,
          "main": true,
-         "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "best": true,
+         "updated": "2026-09-02 14:11:55",
          "cost": 6600,
          "line": 1,
          "is_off": false,
@@ -5517,7 +6167,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -5535,7 +6185,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 7500,
          "line": 0,
          "is_off": false,
@@ -5569,12 +6219,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 15000,
+         "updated": "2026-09-02 14:10:55",
+         "cost": 12500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_6b971f5d60d66a34d55089490f56625c",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 12500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394224",
          "metrics": null
         }
        ]
@@ -5587,7 +6255,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -5605,7 +6273,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -5623,7 +6291,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 12500,
          "line": 0,
          "is_off": false,
@@ -5657,7 +6325,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -5675,12 +6343,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 25000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590599449_13L88808Q12450054Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_6d1f4994b28bd664f6f09ebbb34823fb",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 22500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=96759329",
          "metrics": null
         }
        ]
@@ -5693,7 +6379,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -5711,7 +6397,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -5729,7 +6415,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -5747,7 +6433,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 25000,
          "line": 0,
          "is_off": false,
@@ -5781,12 +6467,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 20000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_70f55908920977e940894a2e46f0a15e",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394230",
          "metrics": null
         }
        ]
@@ -5799,7 +6503,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -5817,7 +6521,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -5851,7 +6555,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 2000,
          "line": 1,
          "is_off": false,
@@ -5869,12 +6573,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 1800,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112600_13L88808Q12442751Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_71d1fa2cad484da5e5b1674f145b9b19",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 2000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394221",
          "metrics": null
         }
        ]
@@ -5887,7 +6609,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 2000,
          "line": 1,
          "is_off": false,
@@ -5905,7 +6627,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 2000,
          "line": 1,
          "is_off": false,
@@ -5923,7 +6645,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 2000,
          "line": 1,
          "is_off": false,
@@ -5941,7 +6663,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 1800,
          "line": 0,
          "is_off": false,
@@ -5975,8 +6697,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
-         "cost": 6600,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 6000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -5993,12 +6715,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 7500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578503350_13L88808Q12450698Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_7b03e602dc9dea0695a26bf7a8343a77",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 4500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=50559293",
          "metrics": null
         }
        ]
@@ -6011,7 +6751,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -6029,7 +6769,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6600,
          "line": 1,
          "is_off": false,
@@ -6047,7 +6787,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -6065,7 +6805,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 5500,
          "line": 0,
          "is_off": false,
@@ -6099,7 +6839,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 2500,
          "line": 1,
          "is_off": false,
@@ -6117,12 +6857,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 2800,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23577452825_13L88808Q12197865Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_7b45b01f91847b4fdfa90050208519bb",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=43808274",
          "metrics": null
         }
        ]
@@ -6135,7 +6893,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 2200,
          "line": 1,
          "is_off": false,
@@ -6153,7 +6911,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 2500,
          "line": 1,
          "is_off": false,
@@ -6171,7 +6929,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 2500,
          "line": 1,
          "is_off": false,
@@ -6189,7 +6947,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 2500,
          "line": 0,
          "is_off": false,
@@ -6223,7 +6981,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -6241,12 +6999,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 6000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578536061_13L88808Q12442752Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_7c63b588d079372d604769ed225196e4",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 7000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=51063684",
          "metrics": null
         }
        ]
@@ -6259,7 +7035,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 4000,
          "line": 1,
          "is_off": false,
@@ -6277,7 +7053,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -6295,7 +7071,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -6313,7 +7089,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 4000,
          "line": 0,
          "is_off": false,
@@ -6347,7 +7123,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -6365,12 +7141,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 5000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578433372_13L88808Q12401156Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_7d85e397f88fb038c87840d89d30d653",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 6500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48504787",
          "metrics": null
         }
        ]
@@ -6383,7 +7177,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -6401,7 +7195,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -6419,7 +7213,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -6437,7 +7231,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 5500,
          "line": 0,
          "is_off": false,
@@ -6471,12 +7265,29 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 3000,
+         "updated": "2026-09-02 14:09:58",
+         "cost": 9000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_7f86c9b894a800a792f7d1a3eb345be7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 12500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=102095894"
         }
        ]
       },
@@ -6488,7 +7299,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 9000,
          "line": 1,
          "is_off": false,
@@ -6505,7 +7316,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 3000,
          "line": 0,
          "is_off": false,
@@ -6538,7 +7349,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 500,
          "line": 1,
          "is_off": false,
@@ -6556,12 +7367,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 550,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112629_13L88808Q12401154Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_8881f8ee8e5c0c98534afb511cba5cc7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 470,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=60542609",
          "metrics": null
         }
        ]
@@ -6574,7 +7403,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 500,
          "line": 1,
          "is_off": false,
@@ -6592,7 +7421,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 500,
          "line": 1,
          "is_off": false,
@@ -6610,7 +7439,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 500,
          "line": 1,
          "is_off": false,
@@ -6628,7 +7457,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 475,
          "line": 0,
          "is_off": false,
@@ -6662,7 +7491,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -6680,12 +7509,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 25000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578477898_13L88808Q12450696Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_8a09b4242b3e07e0bbe4b0e21c05b900",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394740",
          "metrics": null
         }
        ]
@@ -6698,7 +7545,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -6716,7 +7563,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -6734,7 +7581,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -6768,12 +7615,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_8ae44f77203142598bdcebdd15d3230b",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=97471818",
          "metrics": null
         }
        ]
@@ -6786,7 +7651,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -6804,7 +7669,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -6838,12 +7703,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_8bf409af3b472a35e751c1027a0a8fb0",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=96759347",
          "metrics": null
         }
        ]
@@ -6856,7 +7739,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 50000,
          "line": 1,
          "is_off": false,
@@ -6874,7 +7757,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -6908,7 +7791,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -6926,12 +7809,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 4000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112628_13L88808Q12429336Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_90779fd548e0102b5b29b5d3786c468d",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48955500",
          "metrics": null
         }
        ]
@@ -6944,7 +7845,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 4000,
          "line": 1,
          "is_off": false,
@@ -6962,7 +7863,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -6980,7 +7881,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -6998,7 +7899,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 3500,
          "line": 0,
          "is_off": false,
@@ -7032,12 +7933,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 18000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_92209e30cc1f1d6d9c78221a5235346a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394744",
          "metrics": null
         }
        ]
@@ -7050,7 +7969,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -7068,7 +7987,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -7152,7 +8071,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7170,12 +8089,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 25000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590608387_13L88808Q12445808Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_9ba747b8698a542e4b8115b1d6ec6726",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 8000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394234",
          "metrics": null
         }
        ]
@@ -7188,7 +8125,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7206,7 +8143,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7224,7 +8161,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7242,7 +8179,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -7276,7 +8213,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -7294,7 +8231,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -7312,7 +8249,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -7330,7 +8267,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -7348,7 +8285,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6600,
          "line": 1,
          "is_off": false,
@@ -7366,7 +8303,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 6500,
          "line": 0,
          "is_off": false,
@@ -7400,7 +8337,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -7418,12 +8355,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 9000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590571283_13L88808Q12448870Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_a04667907c6da3403b840bc584282fb7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394227",
          "metrics": null
         }
        ]
@@ -7436,7 +8391,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -7454,7 +8409,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -7472,7 +8427,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -7490,7 +8445,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 9000,
          "line": 0,
          "is_off": false,
@@ -7524,7 +8479,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -7542,12 +8497,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 5500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23580567318_13L88808Q12448871Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_a163f881ae0fdbcb6c14eab79d667125",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 5500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48313335",
          "metrics": null
         }
        ]
@@ -7560,7 +8533,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -7578,7 +8551,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -7596,7 +8569,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 5500,
          "line": 1,
          "is_off": false,
@@ -7614,7 +8587,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 4500,
          "line": 0,
          "is_off": false,
@@ -7648,7 +8621,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 25000,
          "line": 1,
          "is_off": false,
@@ -7665,7 +8638,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 25000,
          "line": 1,
          "is_off": false,
@@ -7698,12 +8671,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_a211e2e6ac15572c907793325f08beaa",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48100888",
          "metrics": null
         }
        ]
@@ -7716,7 +8707,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -7734,7 +8725,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 15000,
          "line": 0,
          "is_off": false,
@@ -7768,7 +8759,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7786,12 +8777,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590658590_13L88808Q12452426Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_a398cc58373b1e2da3be9949a438ced8",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=51328287",
          "metrics": null
         }
        ]
@@ -7804,7 +8813,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7822,7 +8831,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -7840,7 +8849,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7858,7 +8867,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -7892,12 +8901,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 12000,
+         "updated": "2026-09-02 14:09:58",
+         "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_a4cc9731c6d5cca91196706cc4b06cce",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394196",
          "metrics": null
         }
        ]
@@ -7910,7 +8937,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -7944,12 +8971,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_a73542bc909e73070f2df72c917b67f5",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=42200553",
          "metrics": null
         }
        ]
@@ -7962,7 +9007,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7980,7 +9025,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -7998,7 +9043,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 12500,
          "line": 1,
          "is_off": false,
@@ -8016,7 +9061,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -8050,7 +9095,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -8068,12 +9113,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 8000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23580567319_13L88808Q12449861Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_ae846fb4cc0eff935b31fb67df7c0754",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394193",
          "metrics": null
         }
        ]
@@ -8086,7 +9149,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -8104,7 +9167,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -8122,7 +9185,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -8140,7 +9203,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 8000,
          "line": 0,
          "is_off": false,
@@ -8174,7 +9237,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -8192,12 +9255,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 6500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112593_13L88808Q12442711Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_b6704183a994835e84ecfdc798452d03",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 5500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394223",
          "metrics": null
         }
        ]
@@ -8210,7 +9291,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -8228,7 +9309,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -8246,7 +9327,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -8264,7 +9345,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 6000,
          "line": 0,
          "is_off": false,
@@ -8298,8 +9379,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 4000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 5000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -8316,12 +9397,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 5000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578493885_13L88808Q12401151Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_b7f58146624d4175030b80c4b86ca8b8",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 5000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=38063388",
          "metrics": null
         }
        ]
@@ -8334,7 +9433,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 4000,
          "line": 1,
          "is_off": false,
@@ -8352,7 +9451,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 5000,
          "line": 1,
          "is_off": false,
@@ -8370,7 +9469,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 4000,
          "line": 1,
          "is_off": false,
@@ -8388,7 +9487,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 4000,
          "line": 0,
          "is_off": false,
@@ -8422,8 +9521,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
-         "cost": 15000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -8440,12 +9539,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23577452824_13L88808Q12197850Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_b80d09bd86358b17a2ad5979c2896a31",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=43319633",
          "metrics": null
         }
        ]
@@ -8458,7 +9575,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -8476,7 +9593,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -8494,7 +9611,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -8512,7 +9629,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -8546,7 +9663,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -8564,12 +9681,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 600,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112630_13L88808Q12384842Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_b8c82f134562427c8de1dcc971e8c9d1",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 650,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=59685564",
          "metrics": null
         }
        ]
@@ -8582,7 +9717,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 550,
          "line": 1,
          "is_off": false,
@@ -8600,7 +9735,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -8618,7 +9753,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -8636,7 +9771,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 600,
          "line": 0,
          "is_off": false,
@@ -8670,7 +9805,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -8688,12 +9823,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 10000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590658588_13L88808Q12452424Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_b90d82a6b7a4bbd13ed86eeea9edfa7c",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 12500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=60489912",
          "metrics": null
         }
        ]
@@ -8706,7 +9859,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -8724,7 +9877,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 12500,
          "line": 1,
          "is_off": false,
@@ -8742,7 +9895,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -8760,7 +9913,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 10000,
          "line": 0,
          "is_off": false,
@@ -8794,12 +9947,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
-         "cost": 10000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_ba84d5e806f242f7d05010db589e8822",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=97471819",
          "metrics": null
         }
        ]
@@ -8812,7 +9983,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -8846,12 +10017,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:18:34",
+         "updated": "2026-09-02 14:09:14",
          "cost": 18000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_bb37cb4184ddd6638fae22edd04969a8",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=97471820",
          "metrics": null
         }
        ]
@@ -8880,12 +10069,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
-         "cost": 12500,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 10000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_bbcb46e9183c3240f4095f3587da4a72",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=60778245",
          "metrics": null
         }
        ]
@@ -8898,7 +10105,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -8916,7 +10123,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 12500,
          "line": 1,
          "is_off": false,
@@ -8934,7 +10141,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 10000,
          "line": 0,
          "is_off": false,
@@ -8968,12 +10175,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_bcec2b9598273a497dca351c464f85d8",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 20000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=49579572",
          "metrics": null
         }
        ]
@@ -8986,7 +10211,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -9004,7 +10229,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -9038,7 +10263,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -9072,7 +10297,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -9089,7 +10314,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -9139,12 +10364,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_bf7dbebdb52161b4c62855fd28bc8d04",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95523771",
          "metrics": null
         }
        ]
@@ -9157,7 +10400,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -9175,7 +10418,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -9209,7 +10452,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -9227,12 +10470,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590571736_13L88808Q12197813Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_c12938e7a1f092176d3bcc0bb83ee4e3",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 22500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48895941",
          "metrics": null
         }
        ]
@@ -9245,7 +10506,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -9263,7 +10524,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -9281,7 +10542,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -9299,7 +10560,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -9333,7 +10594,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9351,12 +10612,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 8000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578513736_13L88808Q12448864Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_c2192835a91133f39bdf6b96f5094804",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 6500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394233",
          "metrics": null
         }
        ]
@@ -9369,7 +10648,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9387,7 +10666,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9405,7 +10684,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6600,
          "line": 1,
          "is_off": false,
@@ -9423,7 +10702,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 7000,
          "line": 0,
          "is_off": false,
@@ -9457,7 +10736,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -9475,7 +10754,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -9527,8 +10806,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 8000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 7500,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -9545,12 +10824,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 7500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578539650_13L88808Q12450751Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_c76cb8a6bb7202090e6ddbeefa8def12",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=50593710",
          "metrics": null
         }
        ]
@@ -9563,7 +10860,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9581,7 +10878,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -9599,7 +10896,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9617,7 +10914,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 9000,
          "line": 0,
          "is_off": false,
@@ -9651,7 +10948,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9669,12 +10966,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 8000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23590571156_13L88808Q12442753Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_cf672e37dd63c186edc06e873cdd1373",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=72056133",
          "metrics": null
         }
        ]
@@ -9687,7 +11002,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9705,7 +11020,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -9723,7 +11038,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -9741,7 +11056,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 8000,
          "line": 0,
          "is_off": false,
@@ -9775,7 +11090,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -9792,7 +11107,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -9825,12 +11140,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 18000,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_d841dc8579498680ade8847f15130803",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48741840",
          "metrics": null
         }
        ]
@@ -9843,7 +11176,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -9861,7 +11194,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -9895,7 +11228,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -9913,12 +11246,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 4500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112599_13L88808Q12411634Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_d9b487b0904521a537126bcf931cfb57",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=78488496",
          "metrics": null
         }
        ]
@@ -9931,7 +11282,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -9949,7 +11300,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6600,
          "line": 1,
          "is_off": false,
@@ -9967,7 +11318,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -9985,7 +11336,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 5500,
          "line": 0,
          "is_off": false,
@@ -10019,7 +11370,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -10037,12 +11388,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 8000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23580566889_13L88808Q12197869Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_d9dfedee326b9acc8c34bba77f00ae7a",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 6000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=43138016",
          "metrics": null
         }
        ]
@@ -10055,7 +11424,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -10073,7 +11442,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -10091,7 +11460,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 6600,
          "line": 1,
          "is_off": false,
@@ -10109,7 +11478,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 8000,
          "line": 0,
          "is_off": false,
@@ -10143,8 +11512,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 550,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 600,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -10161,12 +11530,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 700,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112631_13L88808Q12401648Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_de1b5c7eab94330709fb390c8183c13d",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 600,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=64590470",
          "metrics": null
         }
        ]
@@ -10179,7 +11566,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 550,
          "line": 1,
          "is_off": false,
@@ -10197,7 +11584,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 550,
          "line": 1,
          "is_off": false,
@@ -10215,7 +11602,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 600,
          "line": 1,
          "is_off": false,
@@ -10233,7 +11620,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 550,
          "line": 0,
          "is_off": false,
@@ -10267,12 +11654,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_dfc93aec201776b51de13a511774ff1d",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=82342246",
          "metrics": null
         }
        ]
@@ -10285,7 +11690,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 50000,
          "line": 1,
          "is_off": false,
@@ -10303,7 +11708,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -10337,12 +11742,29 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:18:34",
+         "updated": "2026-09-02 14:09:13",
          "cost": 6500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com"
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_e80447c7afe74d51dd4a775fc37517a4",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=51454639"
         }
        ]
       }
@@ -10370,12 +11792,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 12000,
+         "updated": "2026-09-02 14:09:58",
+         "cost": 17500,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_e85aad1214d92110ebba478463f07ca2",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48068915",
          "metrics": null
         }
        ]
@@ -10388,7 +11828,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 17500,
          "line": 0,
          "is_off": false,
@@ -10422,7 +11862,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 6500,
          "line": 1,
          "is_off": false,
@@ -10439,13 +11879,31 @@
          "id": "12_eb498c6eea9ef643c8e71a1d4f32fea7",
          "from_scout": true,
          "main": true,
-         "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "best": true,
+         "updated": "2026-09-02 14:01:12",
          "cost": 6000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112592_13L88808Q12197808Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_eb498c6eea9ef643c8e71a1d4f32fea7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 7500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=51454630",
          "metrics": null
         }
        ]
@@ -10457,8 +11915,8 @@
          "id": "13_eb498c6eea9ef643c8e71a1d4f32fea7",
          "from_scout": true,
          "main": true,
-         "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "best": true,
+         "updated": "2026-09-02 14:00:17",
          "cost": 6000,
          "line": 1,
          "is_off": false,
@@ -10476,7 +11934,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -10494,7 +11952,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 7500,
          "line": 1,
          "is_off": false,
@@ -10512,7 +11970,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 6500,
          "line": 0,
          "is_off": false,
@@ -10546,7 +12004,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:18:34",
+         "updated": "2026-09-02 14:00:11",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -10598,7 +12056,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:11:55",
          "cost": 12500,
          "line": 1,
          "is_off": false,
@@ -10616,12 +12074,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578539648_13L88808Q12450750Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_eda214cebe81b8740a41c71da8efeda4",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 10000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=60265436",
          "metrics": null
         }
        ]
@@ -10634,7 +12110,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -10652,7 +12128,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 12500,
          "line": 1,
          "is_off": false,
@@ -10670,7 +12146,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -10688,7 +12164,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 12500,
          "line": 0,
          "is_off": false,
@@ -10722,8 +12198,8 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
-         "cost": 2200,
+         "updated": "2026-09-02 14:11:55",
+         "cost": 2500,
          "line": 1,
          "is_off": false,
          "active": true,
@@ -10740,12 +12216,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 2200,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23576112632_13L88808Q12401153Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_f2e9931a766c6d994b36a3cfe62d0bb2",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:13",
+         "cost": 2500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394231",
          "metrics": null
         }
        ]
@@ -10758,7 +12252,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 2500,
          "line": 1,
          "is_off": false,
@@ -10776,7 +12270,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 2500,
          "line": 1,
          "is_off": false,
@@ -10794,7 +12288,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 2500,
          "line": 1,
          "is_off": false,
@@ -10812,7 +12306,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 2200,
          "line": 0,
          "is_off": false,
@@ -10846,12 +12340,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
-         "cost": 15000,
+         "updated": "2026-09-02 14:09:58",
+         "cost": 40000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_f425ce234e975f46e7683526e8535dc7",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 40000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=48515041",
          "metrics": null
         }
        ]
@@ -10864,7 +12376,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 40000,
          "line": 0,
          "is_off": false,
@@ -10898,7 +12410,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -10916,7 +12428,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -10968,7 +12480,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -10985,7 +12497,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:10",
+         "updated": "2026-09-02 14:00:17",
          "cost": 20000,
          "line": 1,
          "is_off": false,
@@ -11018,12 +12530,30 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://www.bettingpros.com",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_f9a7e95e3032ddb282d70ccca483e4d6",
+         "from_scout": true,
+         "main": true,
+         "best": true,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 15000,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=36929268",
          "metrics": null
         }
        ]
@@ -11036,7 +12566,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -11054,7 +12584,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 15000,
          "line": 0,
          "is_off": false,
@@ -11088,7 +12618,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:18:34",
+         "updated": "2026-09-02 14:00:11",
          "cost": 40000,
          "line": 1,
          "is_off": false,
@@ -11140,7 +12670,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -11158,12 +12688,30 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 25000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578539649_13L88808Q12450749Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_ff7d8ba3560244a2f2227ebb9927ea33",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=49923122",
          "metrics": null
         }
        ]
@@ -11176,7 +12724,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:18",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -11194,7 +12742,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:09",
+         "updated": "2026-09-02 14:11:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -11212,7 +12760,7 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:37:16",
+         "updated": "2026-09-02 14:10:55",
          "cost": 15000,
          "line": 1,
          "is_off": false,
@@ -11230,7 +12778,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 20000,
          "line": 0,
          "is_off": false,
@@ -11264,7 +12812,7 @@
          "from_scout": false,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -11282,12 +12830,30 @@
          "from_scout": true,
          "main": true,
          "best": true,
-         "updated": "2026-08-30 21:33:36",
+         "updated": "2026-09-02 14:01:12",
          "cost": 7000,
          "line": 1,
          "is_off": false,
          "active": true,
          "link": "https://sportsbook.draftkings.com/event/890ba4f7-3387-4b12-0807-08de5ccb6321?outcomes=0QA328484015%23578456650_13L88808Q12377777Q2-1",
+         "metrics": null
+        }
+       ]
+      },
+      {
+       "id": 10,
+       "lines": [
+        {
+         "id": "10_ffaa5af8132cd12ab332400ce44764e3",
+         "from_scout": true,
+         "main": true,
+         "best": false,
+         "updated": "2026-09-02 14:09:14",
+         "cost": 17500,
+         "line": 1,
+         "is_off": false,
+         "active": true,
+         "link": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.570585129&selectionId=95394742",
          "metrics": null
         }
        ]
@@ -11300,7 +12866,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:39:11",
+         "updated": "2026-09-02 14:00:17",
          "cost": 8000,
          "line": 1,
          "is_off": false,
@@ -11318,7 +12884,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:08",
+         "updated": "2026-09-02 14:11:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -11336,7 +12902,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:15",
+         "updated": "2026-09-02 14:10:55",
          "cost": 10000,
          "line": 1,
          "is_off": false,
@@ -11354,7 +12920,7 @@
          "from_scout": true,
          "main": true,
          "best": false,
-         "updated": "2026-08-30 21:37:50",
+         "updated": "2026-09-02 14:09:58",
          "cost": 8000,
          "line": 0,
          "is_off": false,
