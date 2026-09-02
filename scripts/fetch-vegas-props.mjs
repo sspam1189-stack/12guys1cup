@@ -354,9 +354,26 @@ for (const entry of Object.values(byPlayer)) {
   for (const m of Object.values(entry.markets)) {
     // FantasyPros-backfilled markets have no books — keep their line as-is.
     if (!Object.keys(m.books).length) continue;
+    // A real sportsbook outranks the aggregator's consensus, which is a
+    // synthetic number that can flip between sources between pulls (and can
+    // reopen alone on a player every book still has suspended). DraftKings
+    // first, then the other majors, and consensus only as a last resort.
+    const live = (b) => b && b.line != null && !b.off;
+    const majors = ['fanduel', 'betmgm', 'caesars', 'betrivers', 'pinnacle', 'bet365'];
+    const majorLines = majors.map((k) => m.books[k]).filter(live).map((b) => b.line);
+    const anyLines = Object.values(m.books).filter(live).map((b) => b.line);
     m.line =
-      m.books.consensus?.line ??
-      median(Object.values(m.books).map((b) => b.line).filter((v) => v != null));
+      (live(m.books.draftkings) ? m.books.draftkings.line : null) ??
+      (majorLines.length ? median(majorLines) : null) ??
+      (live(m.books.consensus) ? m.books.consensus.line : null) ??
+      (anyLines.length ? median(anyLines) : null) ??
+      // everything is suspended: keep the last posted number rather than
+      // dropping the player, and mark it so downstream can tell.
+      (() => {
+        const last = Object.values(m.books).map((b) => b.line).filter((v) => v != null);
+        return last.length ? median(last) : null;
+      })();
+    if (Object.values(m.books).every((b) => b.line == null || b.off)) m.stale = true;
   }
   const candidates = sleeperByName.get(normalize(entry.name)) ?? [];
   const narrowed =
