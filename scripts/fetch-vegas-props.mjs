@@ -356,17 +356,17 @@ for (const entry of Object.values(byPlayer)) {
     if (!Object.keys(m.books).length) continue;
     // A real sportsbook outranks the aggregator's consensus, which is a
     // synthetic number that can flip between sources between pulls (and can
-    // reopen alone on a player every book still has suspended). DraftKings
-    // first, then the other majors, and consensus only as a last resort.
+    // reopen alone on a player every book still has suspended). Books are
+    // tried in a fixed order so the same book sets the line every pull —
+    // a median across books drifts whenever one of them opens or closes.
     const live = (b) => b && b.line != null && !b.off;
-    const majors = ['fanduel', 'betmgm', 'caesars', 'betrivers', 'pinnacle', 'bet365'];
-    const majorLines = majors.map((k) => m.books[k]).filter(live).map((b) => b.line);
-    const anyLines = Object.values(m.books).filter(live).map((b) => b.line);
+    const ORDER = ['draftkings', 'fanduel', 'betmgm', 'caesars', 'betrivers', 'pinnacle', 'bet365'];
+    const first = ORDER.map((k) => m.books[k]).find(live);
+    const anyBook = Object.entries(m.books).find(([k, b]) => k !== 'consensus' && live(b));
     m.line =
-      (live(m.books.draftkings) ? m.books.draftkings.line : null) ??
-      (majorLines.length ? median(majorLines) : null) ??
+      (first ? first.line : null) ??
+      (anyBook ? anyBook[1].line : null) ??
       (live(m.books.consensus) ? m.books.consensus.line : null) ??
-      (anyLines.length ? median(anyLines) : null) ??
       // everything is suspended: keep the last posted number rather than
       // dropping the player, and mark it so downstream can tell.
       (() => {
