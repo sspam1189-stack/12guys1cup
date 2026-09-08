@@ -1069,19 +1069,19 @@
    "book_id": 123,
    "odds": [
     {
+     "money": 300,
+     "value": null,
+     "team_id": 251,
+     "player_id": null,
+     "outcome_id": 2453858471,
+     "option_type_id": null
+    },
+    {
      "money": 400,
      "value": null,
      "team_id": 131,
      "player_id": null,
      "outcome_id": 2453858215,
-     "option_type_id": null
-    },
-    {
-     "money": 450,
-     "value": null,
-     "team_id": 251,
-     "player_id": null,
-     "outcome_id": 2453858471,
      "option_type_id": null
     },
     {
@@ -1093,7 +1093,7 @@
      "option_type_id": null
     },
     {
-     "money": 520,
+     "money": 575,
      "value": null,
      "team_id": 156,
      "player_id": null,
@@ -1101,7 +1101,7 @@
      "option_type_id": null
     },
     {
-     "money": 600,
+     "money": 650,
      "value": null,
      "team_id": 146,
      "player_id": null,
@@ -1119,13 +1119,21 @@
     {
      "money": 750,
      "value": null,
+     "team_id": 1325,
+     "player_id": null,
+     "outcome_id": 2453858236,
+     "option_type_id": null
+    },
+    {
+     "money": 850,
+     "value": null,
      "team_id": 147,
      "player_id": null,
      "outcome_id": 2453858459,
      "option_type_id": null
     },
     {
-     "money": 750,
+     "money": 850,
      "value": null,
      "team_id": 142,
      "player_id": null,
@@ -1133,15 +1141,15 @@
      "option_type_id": null
     },
     {
-     "money": 750,
+     "money": 900,
      "value": null,
-     "team_id": 1325,
+     "team_id": 128,
      "player_id": null,
-     "outcome_id": 2453858236,
+     "outcome_id": 2453858191,
      "option_type_id": null
     },
     {
-     "money": 800,
+     "money": 1000,
      "value": null,
      "team_id": 154,
      "player_id": null,
@@ -1154,14 +1162,6 @@
      "team_id": 137,
      "player_id": null,
      "outcome_id": 2453858248,
-     "option_type_id": null
-    },
-    {
-     "money": 1000,
-     "value": null,
-     "team_id": 128,
-     "player_id": null,
-     "outcome_id": 2453858191,
      "option_type_id": null
     },
     {
