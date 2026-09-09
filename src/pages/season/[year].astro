@@ -3,12 +3,18 @@ import Base from '../../layouts/Base.astro';
 import MemberLink from '../../components/MemberLink.astro';
 import Honors from '../../components/Honors.astro';
 import seasons from '../../../data/computed/seasons.json';
+import weekly from '../../../data/computed/week.json';
 import members from '../../../data/computed/members.json';
 
 export function getStaticPaths() {
   return seasons.map((s) => ({ params: { year: s.season }, props: { s } }));
 }
 const { s } = Astro.props;
+// Weekly projections only apply to the season and week they were built for.
+const wk = weekly.season === Number(s.season) && weekly.week === s.currentWeek ? weekly : null;
+const projByRoster = Object.fromEntries(
+  (wk?.games ?? []).flatMap((g) => [g.a, g.b]).map((t) => [t.userId, t]),
+);
 const weeks = s.notStarted ? [] : [...new Set(s.games.map((g) => g.week))].sort((a, b) => b - a);
 const winPct = (t) => {
   const games = t.wins + t.losses + t.ties;
@@ -122,21 +128,63 @@ const playoffGameLabel = (g) => g.kind === 'bye'
             {s.thisWeek.map((m) => {
               const aLead = m.a.points > m.b.points;
               const bLead = m.b.points > m.a.points;
+              const pa = projByRoster[m.a.userId];
+              const pb = projByRoster[m.b.userId];
+              const edge = pa && pb ? pa.proj - pb.proj : null;
               return (
                 <li class="mu">
-                  <div class={`mu-side ${aLead ? 'lead' : ''}`}>
-                    <span class="mu-name"><MemberLink id={m.a.userId} avatar={true} /></span>
-                    <span class="mu-pts">{m.a.points.toFixed(2)}</span>
-                  </div>
-                  <span class="mu-vs" aria-hidden="true">vs</span>
-                  <div class={`mu-side ${bLead ? 'lead' : ''}`}>
-                    <span class="mu-name"><MemberLink id={m.b.userId} avatar={true} /></span>
-                    <span class="mu-pts">{m.b.points.toFixed(2)}</span>
-                  </div>
+                  <details class="mu-item">
+                    <summary class="mu-row">
+                      <div class={`mu-side ${aLead ? 'lead' : ''}`}>
+                        <span class="mu-name"><MemberLink id={m.a.userId} avatar={true} /></span>
+                        <span class="mu-pts">{m.a.points.toFixed(2)}</span>
+                        {pa && <span class="mu-proj">proj {pa.proj.toFixed(1)}</span>}
+                      </div>
+                      <span class="mu-vs" aria-hidden="true">vs</span>
+                      <div class={`mu-side ${bLead ? 'lead' : ''}`}>
+                        <span class="mu-name"><MemberLink id={m.b.userId} avatar={true} /></span>
+                        <span class="mu-pts">{m.b.points.toFixed(2)}</span>
+                        {pb && <span class="mu-proj">proj {pb.proj.toFixed(1)}</span>}
+                      </div>
+                    </summary>
+                    {pa && pb && (
+                      <div class="mu-detail">
+                        <p class="mu-edge">
+                          {edge === 0
+                            ? 'Dead even on projection.'
+                            : `${(edge > 0 ? m.a.teamName : m.b.teamName) ?? 'Favorite'} by ${Math.abs(edge).toFixed(1)}`}
+                        </p>
+                        <div class="mu-cols">
+                          {[pa, pb].map((side) => (
+                            <ol class="mu-lineup">
+                              {side.lineup.map((pl) => (
+                                <li>
+                                  <span class="mu-pos">{pl.pos}</span>
+                                  <span class="mu-pl">{pl.name}</span>
+                                  <span class="mu-opp">{pl.opp ? `vs ${pl.opp}` : ''}</span>
+                                  <span class="mu-plpts" title={pl.mkt > 0 ? `${Math.round(pl.mkt * 100)}% of these points come from a posted Vegas line` : 'Projection only — no market for this player'}>
+                                    {pl.proj.toFixed(1)}
+                                    {pl.mkt >= 0.6 && <i class="mu-dot" aria-hidden="true"></i>}
+                                  </span>
+                                </li>
+                              ))}
+                            </ol>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </details>
                 </li>
               );
             })}
           </ul>
+          {wk && (
+            <p class="muted mu-foot">
+              Projections blend de-vigged Vegas weekly lines with Sleeper projections, scored by this
+              league's settings. <i class="mu-dot" aria-hidden="true"></i> marks a player whose points are
+              mostly market-priced. {wk.marketPlayers} players had a posted line this week.
+            </p>
+          )}
         </section>
       )}
 

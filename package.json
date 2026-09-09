@@ -13,7 +13,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "lock:war-room": "node scripts/lock-war-room.mjs"
+    "lock:war-room": "node scripts/lock-war-room.mjs",
+    "fetch:weekly": "node scripts/fetch-weekly-props.mjs",
+    "compute:weekly": "node scripts/build-weekly.mjs"
   },
   "dependencies": {
     "astro": "^7.2.0",

@@ -1480,11 +1480,8 @@ details summary {
   list-style: none;
 }
 
+/* The card is a plain block; its <details> child owns the three-column row. */
 .mu {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 0.5rem;
   padding: 0.7rem 0.85rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -1499,7 +1496,7 @@ details summary {
 }
 
 /* The right-hand team mirrors so both point totals sit against the divider. */
-.mu-side:last-of-type { align-items: flex-end; text-align: right; }
+.mu-row > .mu-side:last-of-type { align-items: flex-end; text-align: right; }
 
 .mu-name {
   display: block;
@@ -1532,3 +1529,61 @@ details summary {
   .mu-name { font-size: 0.82rem; }
   .mu-pts { font-size: 0.95rem; }
 }
+
+/* matchup detail: lineups behind a disclosure on each card */
+.mu-item { width: 100%; }
+.mu-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  gap: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+.mu-row::-webkit-details-marker { display: none; }
+.mu-proj {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+.mu-detail { margin-top: 0.7rem; border-top: 1px solid var(--border); padding-top: 0.6rem; }
+.mu-edge { margin: 0 0 0.5rem; color: var(--muted); font-size: 0.78rem; }
+.mu-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+
+.mu-lineup { margin: 0; padding: 0; list-style: none; }
+.mu-lineup li {
+  display: grid;
+  grid-template-columns: 1.9rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.3rem;
+  padding: 0.16rem 0;
+  font-size: 0.78rem;
+}
+.mu-pos { color: var(--muted); font-size: 0.62rem; font-weight: 850; letter-spacing: 0.05em; }
+.mu-pl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* The opponent is context, not data — it collapses first when space is tight. */
+.mu-opp { display: none; }
+.mu-plpts { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.mu-dot {
+  display: inline-block;
+  width: 0.34rem;
+  height: 0.34rem;
+  margin-left: 0.26rem;
+  border-radius: 50%;
+  background: var(--accent);
+  vertical-align: middle;
+}
+.mu-foot { margin-top: 0.7rem; font-size: 0.76rem; }
+
+@media (min-width: 900px) {
+  .mu-opp { display: inline; color: var(--muted); font-size: 0.68rem; }
+  .mu-lineup li { grid-template-columns: 1.9rem minmax(0, 1fr) auto auto; }
+}
+@media (max-width: 560px) {
+  .mu-cols { grid-template-columns: 1fr; gap: 0.5rem; }
+}
+
+/* An open card needs the room the lineups want, so it takes the whole row. */
+.mu-list:has(.mu-item[open]) .mu:has(.mu-item[open]) { grid-column: 1 / -1; }
