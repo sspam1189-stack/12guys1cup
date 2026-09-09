@@ -1,6 +1,6 @@
 {
  "name": "12 Guys 1 Cup",
- "status": "pre_draft",
+ "status": "in_season",
  "metadata": {
   "auto_continue": "on",
   "keeper_deadline": "0",
@@ -54,7 +54,8 @@
   "offseason_adds": 0,
   "leg": 1,
   "reserve_slots": 1,
-  "reserve_allow_cov": 1
+  "reserve_allow_cov": 1,
+  "daily_waivers_last_ran": 8
  },
  "avatar": "85191aaca12ef4baf9310df437b6ec34",
  "company_id": null,
@@ -128,21 +129,19 @@
   "pts_allow_7_13": 13,
   "st_ff": 1
  },
- "last_message_id": "1403082876794220544",
- "last_author_avatar": "d0372f985ae97aa1152f5e3279b457e3",
- "last_author_display_name": "henitals",
- "last_author_id": "469223780661587968",
- "last_author_is_bot": false,
+ "last_message_id": "1403245351414046720",
+ "last_author_avatar": null,
+ "last_author_display_name": "sys",
+ "last_author_id": "166666666666666666",
+ "last_author_is_bot": true,
  "last_message_attachment": null,
  "last_message_text_map": null,
- "last_message_time": 1788883535149,
- "last_pinned_message_id": "1395279603802603520",
- "last_read_id": null,
+ "last_message_time": 1788922272117,
+ "last_pinned_message_id": "1403231435854258177",
  "draft_id": "1382479927412015104",
+ "last_read_id": null,
  "league_id": "1382479927399419904",
  "previous_league_id": "1180086415546798080",
- "bracket_id": null,
- "bracket_overrides_id": null,
  "group_id": null,
  "roster_positions": [
   "QB",
@@ -161,6 +160,8 @@
   "BN",
   "BN"
  ],
+ "bracket_id": null,
+ "bracket_overrides_id": null,
  "loser_bracket_id": null,
  "loser_bracket_overrides_id": null,
  "total_rosters": 12

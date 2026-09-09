@@ -176,10 +176,20 @@ export function summarizeSeason(raw, overrides = {}) {
   const lastPlaceRosterId = lastMatch
     ? (scoreOutcome(lastMatch)?.worseRosterId ?? lastMatch.w)
     : null;
-  const lastPlace = lastPlaceRosterId
-    ? teams.get(lastPlaceRosterId)?.userId ?? null
-    : [...teams.values()].sort((a, b) => b.place - a.place)[0]?.userId ?? null;
-  const pfChamp = [...teams.values()].sort((a, b) => b.pf - a.pf)[0]?.userId ?? null;
+  // A league flips to in_season the moment the draft ends, before anyone has
+  // scored. Every honor below is a ranking, and ranking twelve identical zeros
+  // just hands the trophy to whoever sorts first -- so withhold them until at
+  // least one game has actually been played.
+  // Regular-season entries carry no `kind`; only bracket byes have null points.
+  const played = games.some((g) => g.a.points != null || g.b.points != null);
+  const lastPlace = !played
+    ? null
+    : lastPlaceRosterId
+      ? teams.get(lastPlaceRosterId)?.userId ?? null
+      : [...teams.values()].sort((a, b) => b.place - a.place)[0]?.userId ?? null;
+  const pfChamp = played
+    ? [...teams.values()].sort((a, b) => b.pf - a.pf)[0]?.userId ?? null
+    : null;
 
   const draft = (raw.draft_picks ?? []).map((p) => ({
     round: p.round, pickNo: p.pick_no, slot: p.draft_slot,

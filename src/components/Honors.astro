@@ -11,6 +11,11 @@ const secondary = [
   season.pfChamp && { label: 'PF champ', id: season.pfChamp, icon: '📈', kind: '' },
   season.lastPlace && { label: 'Last place', id: season.lastPlace, icon: '💩', kind: 'danger' },
 ].filter(Boolean);
+
+// A season in progress has no honors yet. Rendering the champion lead anyway
+// leaves a trophy above an empty name, so drop the whole block until there is
+// something to show.
+const hasHonors = Boolean(season.champion) || secondary.length > 0;
 ---
 {variant === 'chips' ? (
   <div class="honors-row">
@@ -23,12 +28,14 @@ const secondary = [
       </span>
     ))}
   </div>
-) : (
+) : hasHonors ? (
   <section class="season-honors" aria-label={`${season.season} season honors`}>
-    <div class="season-honor-lead">
-      <span class="season-honor-label">🏆 Champion</span>
-      <strong><MemberLink id={season.champion} avatar={true} size="lg" /></strong>
-    </div>
+    {season.champion && (
+      <div class="season-honor-lead">
+        <span class="season-honor-label">🏆 Champion</span>
+        <strong><MemberLink id={season.champion} avatar={true} size="lg" /></strong>
+      </div>
+    )}
     <div class="season-honor-grid">
       {secondary.map((h) => (
         <div class={`season-honor-item ${h.kind}`}>
@@ -38,4 +45,4 @@ const secondary = [
       ))}
     </div>
   </section>
-)}
+) : null}
