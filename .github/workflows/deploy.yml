@@ -2,6 +2,13 @@ name: Deploy site
 on:
   push:
     branches: [main]
+  # A push made with the default GITHUB_TOKEN cannot trigger another workflow,
+  # so the data refresh's own commit never reached the site -- it only went out
+  # whenever a person happened to push next. Chaining off the run itself is the
+  # documented way around that.
+  workflow_run:
+    workflows: ["Refresh data"]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,8 +20,17 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Don't publish on top of a refresh that failed part-way.
+    if: >-
+      github.event_name != 'workflow_run'
+      || github.event.workflow_run.conclusion == 'success'
     steps:
+      # workflow_run starts from the default branch by default, which is the
+      # commit we want -- but name it so a refresh that just pushed data is
+      # certain to be the tree that gets built.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -2,7 +2,13 @@ name: Refresh data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 12 * * 2'   # Tuesdays 12:00 UTC; no-ops when nothing changed
+    # Tuesdays: the full season pull, after Monday night settles the week.
+    - cron: '0 12 * * 2'
+    # Thursday afternoon and Sunday morning are the two moments weekly props
+    # matter -- lines sharpen right up to kickoff, and a Tuesday number is
+    # stale by the time anyone sets a lineup. Both run before the day's games.
+    - cron: '0 20 * * 4'   # 4pm ET, ahead of Thursday night
+    - cron: '0 14 * * 0'   # 10am ET, ahead of the Sunday early window
 permissions:
   contents: write
 jobs:
@@ -20,10 +26,21 @@ jobs:
       - run: npm run fetch:adp
         continue-on-error: true
       - run: npm run compute
+
+      # Weekly props and the matchup projections built on them. Both are
+      # allowed to fail: the props feed is undocumented, and out of season
+      # there are no games to pull, which is a no-op rather than a problem.
+      # compute:weekly needs the league and matchup files `npm run fetch`
+      # just wrote, so it stays after it.
+      - run: npm run fetch:weekly
+        continue-on-error: true
+      - run: npm run compute:weekly
+        continue-on-error: true
+
       - run: npm test
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || { git commit -m "data: weekly sleeper refresh"; git push; }
+          git diff --cached --quiet || { git commit -m "data: sleeper refresh and weekly lines"; git push; }
