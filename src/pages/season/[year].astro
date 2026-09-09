@@ -216,6 +216,8 @@ const playoffGameLabel = (g) => g.kind === 'bye'
                   </div>
                   <div class="lb-grid">
                     <div><em>PF</em><b>{t.pf.toFixed(1)}</b></div>
+                    {t.maxPf > 0 && <div><em>Max PF</em><b>{t.maxPf.toFixed(1)}</b></div>}
+                    {t.maxPf > 0 && <div><em>Eff</em><b>{((t.pf / t.maxPf) * 100).toFixed(1)}%</b></div>}
                     <div><em>PA</em><b>{t.pa.toFixed(1)}</b></div>
                     <div><em>Diff</em><b class={diff >= 0 ? 'green' : 'red'}>{diff >= 0 ? '+' : ''}{diff.toFixed(0)}</b></div>
                     <div><em>Playoffs</em><b>{playoffs ? `${t.playoffWins}-${t.playoffLosses}` : '—'}</b></div>
@@ -230,7 +232,10 @@ const playoffGameLabel = (g) => g.kind === 'bye'
 
       <div class="table-wrap season-table-wrap"><table>
         <thead><tr><th>#</th><th>Team</th><th>Member</th><th>W</th><th>L</th><th>T</th>
-          <th>PF</th><th>PA</th></tr></thead>
+          <th>PF</th><th>PA</th>
+          <th title="Points the roster would have scored with a perfect lineup every week">Max PF</th>
+          <th title="PF as a share of Max PF — how much of the roster's scoring actually got started">Eff</th>
+        </tr></thead>
         <tbody>
           {regularStandings.map((t, i) => (
             <tr>
@@ -239,6 +244,8 @@ const playoffGameLabel = (g) => g.kind === 'bye'
               <td><MemberLink id={t.userId} avatar={true} /></td>
               <td>{t.wins}</td><td>{t.losses}</td><td>{t.ties}</td>
               <td>{t.pf.toFixed(2)}</td><td>{t.pa.toFixed(2)}</td>
+              <td>{t.maxPf ? t.maxPf.toFixed(2) : '—'}</td>
+              <td class="eff">{t.maxPf ? `${((t.pf / t.maxPf) * 100).toFixed(1)}%` : '—'}</td>
             </tr>
           ))}
         </tbody>

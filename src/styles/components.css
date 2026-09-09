@@ -1587,3 +1587,6 @@ details summary {
 
 /* An open card needs the room the lineups want, so it takes the whole row. */
 .mu-list:has(.mu-item[open]) .mu:has(.mu-item[open]) { grid-column: 1 / -1; }
+
+/* Lineup efficiency reads as a secondary stat next to the raw totals. */
+td.eff { color: var(--muted); font-variant-numeric: tabular-nums; }

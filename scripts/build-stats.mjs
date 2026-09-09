@@ -38,7 +38,7 @@ const overrides = await readJson(new URL('overrides.json', DATA));
 const players = await readJson(new URL('players.json', RAW));
 
 const members = buildMembers(raws, overrides);
-const summaries = raws.map((raw) => summarizeSeason(raw, overrides[raw.season] ?? {}));
+const summaries = raws.map((raw) => summarizeSeason(raw, overrides[raw.season] ?? {}, players));
 
 // Validation: every game participant must be a known member.
 for (const s of summaries) {

@@ -20,6 +20,11 @@ for (let id = CURRENT_LEAGUE_ID; id; ) {
 }
 
 const tradedPlayerIds = new Set();
+// Every player who was ever scored in a lineup. Needed to rebuild an optimal
+// lineup after the fact -- max PF asks which bench player should have started,
+// and that question needs a position for everyone on the roster, not just the
+// ones who were traded.
+const scoredPlayerIds = new Set();
 
 for (const league of leagues) {
   const { season, league_id: lid } = league;
@@ -32,6 +37,9 @@ for (const league of leagues) {
   const transactions = {};
   for (let w = 1; w <= MAX_WEEK; w++) {
     matchups[w] = await fetchJson(`/league/${lid}/matchups/${w}`);
+    for (const e of matchups[w] ?? []) {
+      for (const pid of Object.keys(e.players_points ?? {})) scoredPlayerIds.add(pid);
+    }
     transactions[w] = await fetchJson(`/league/${lid}/transactions/${w}`);
     for (const t of transactions[w] ?? []) {
       if (t.type === 'trade' && t.status === 'complete') {
@@ -54,11 +62,12 @@ for (const league of leagues) {
   );
 }
 
-// Trim the huge players blob to just ids referenced by trades.
+// Trim the huge players blob to the ids this repo actually reads: anyone
+// traded, plus anyone who ever scored in a lineup.
 console.log('Fetching player list…');
 const allPlayers = await fetchJson('/players/nfl');
 const players = {};
-for (const pid of tradedPlayerIds) {
+for (const pid of new Set([...tradedPlayerIds, ...scoredPlayerIds])) {
   const p = allPlayers[pid];
   players[pid] = p
     ? { name: p.full_name ?? `${p.first_name} ${p.last_name}`, position: p.position ?? '' }
@@ -66,4 +75,7 @@ for (const pid of tradedPlayerIds) {
 }
 await mkdir(RAW, { recursive: true });
 await writeFile(new URL('players.json', RAW), JSON.stringify(players, null, 1));
-console.log(`Done. ${leagues.length} seasons, ${tradedPlayerIds.size} traded players.`);
+console.log(
+  `Done. ${leagues.length} seasons, ${tradedPlayerIds.size} traded players, `
+  + `${Object.keys(players).length} players kept.`,
+);

@@ -3,7 +3,7 @@ import { loadOwnerMap } from './identity.mjs';
 
 const round2 = (n) => Math.round(n * 100) / 100;
 
-export function summarizeSeason(raw, overrides = {}) {
+export function summarizeSeason(raw, overrides = {}, players = {}) {
   const { league, users, rosters, matchups } = raw;
   const season = league.season;
   if (league.status === 'pre_draft' || league.status === 'drafting') {
@@ -20,7 +20,7 @@ export function summarizeSeason(raw, overrides = {}) {
     teams.set(rosterId, {
       userId, rosterId,
       teamName: u?.metadata?.team_name || u?.display_name || 'Unnamed',
-      wins: 0, losses: 0, ties: 0, pf: 0, pa: 0,
+      wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, maxPf: 0,
       playoffWins: 0, playoffLosses: 0, place: null,
     });
   }
@@ -79,8 +79,47 @@ export function summarizeSeason(raw, overrides = {}) {
     return { betterRosterId: better.roster_id, worseRosterId: worse.roster_id };
   };
 
+  // Max PF: what the roster would have scored with perfect hindsight. Fixed
+  // slots take the best player at their position, then each flex takes the best
+  // eligible player left. Greedy is optimal for this shape -- demoting a starter
+  // to free him for a flex only lets the flex pick up the player you demoted --
+  // and it answers the question the column is really asking, which is how much
+  // was left on the bench.
+  const FLEX_ELIGIBLE = {
+    FLEX: ['RB', 'WR', 'TE'],
+    WRRB_FLEX: ['RB', 'WR'],
+    REC_FLEX: ['WR', 'TE'],
+    SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'],
+    IDP_FLEX: ['DL', 'LB', 'DB'],
+  };
+  const slots = (league.roster_positions ?? []).filter((s) => s !== 'BN' && s !== 'IR');
+  const bestLineup = (entry) => {
+    const pool = Object.entries(entry.players_points ?? {})
+      .map(([pid, pts]) => ({ pid, pts: pts ?? 0, pos: players[pid]?.position ?? '' }))
+      .sort((a, b) => b.pts - a.pts);
+    const used = new Set();
+    let total = 0;
+    const take = (eligible) => {
+      const pick = pool.find((p) => !used.has(p.pid) && eligible.includes(p.pos));
+      if (!pick) return;
+      used.add(pick.pid);
+      total += pick.pts;
+    };
+    for (const slot of slots) if (!FLEX_ELIGIBLE[slot]) take([slot]);
+    for (const slot of slots) if (FLEX_ELIGIBLE[slot]) take(FLEX_ELIGIBLE[slot]);
+    return total;
+  };
+
   // Regular season: weeks 1 .. playoff_week_start - 1.
   for (let week = 1; week < pws; week++) {
+    for (const entry of matchups[week] ?? []) {
+      const t = teams.get(entry.roster_id);
+      // Only weeks that were actually played; an unplayed week has no points
+      // anywhere and would otherwise add a 0 that reads as a real result.
+      if (!t || !Object.keys(entry.players_points ?? {}).length) continue;
+      if (!entry.points && !Object.values(entry.players_points).some((v) => v)) continue;
+      t.maxPf += bestLineup(entry);
+    }
     for (const { a, b } of pairWeek(matchups[week])) {
       if (!a.points && !b.points) continue; // unplayed (in-progress season)
       const ta = teams.get(a.roster_id);
@@ -93,7 +132,11 @@ export function summarizeSeason(raw, overrides = {}) {
       games.push(game(week, 'regular', ta, a.points, tb, b.points));
     }
   }
-  for (const t of teams.values()) { t.pf = round2(t.pf); t.pa = round2(t.pa); }
+  for (const t of teams.values()) {
+    t.pf = round2(t.pf);
+    t.pa = round2(t.pa);
+    t.maxPf = round2(t.maxPf);
+  }
 
   // Playoffs: winners-bracket games only. Round r plays in week pws + r - 1.
   // Every playoff win counts, but only a team's first playoff loss counts.
