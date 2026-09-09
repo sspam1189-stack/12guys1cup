@@ -1465,3 +1465,70 @@ details summary {
     width: 0.82rem;
   }
 }
+
+/* ---- current-week matchups (in-season season page) ---- */
+.this-week { margin: 1.4rem 0 1.8rem; }
+.this-week h2 { margin-bottom: 0.25rem; }
+.this-week > .muted { margin: 0 0 0.85rem; font-size: 0.85rem; }
+
+.mu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mu {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+
+.mu-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+/* The right-hand team mirrors so both point totals sit against the divider. */
+.mu-side:last-of-type { align-items: flex-end; text-align: right; }
+
+.mu-name {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mu-pts {
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+
+.mu-side.lead .mu-pts { color: var(--win); }
+
+.mu-vs {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .mu { padding: 0.6rem 0.7rem; }
+  .mu-name { font-size: 0.82rem; }
+  .mu-pts { font-size: 0.95rem; }
+}

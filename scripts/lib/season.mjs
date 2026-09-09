@@ -166,30 +166,32 @@ export function summarizeSeason(raw, overrides = {}) {
   }
 
   // Honors.
+  const decided = league.status === 'complete';
   const final = (raw.winners_bracket ?? []).find((m) => m.p === 1 && m.w != null);
-  const champion = final ? teams.get(final.w)?.userId ?? null : null;
-  const runnerUp = final ? teams.get(final.l)?.userId ?? null : null;
+  const champion = decided && final ? teams.get(final.w)?.userId ?? null : null;
+  const runnerUp = decided && final ? teams.get(final.l)?.userId ?? null : null;
   const thirdMatch = (raw.winners_bracket ?? []).find((m) => m.p === 3 && m.w != null);
-  const third = thirdMatch ? teams.get(thirdMatch.w)?.userId ?? null : null;
+  const third = decided && thirdMatch ? teams.get(thirdMatch.w)?.userId ?? null : null;
   const lastPlaceMatches = (raw.losers_bracket ?? []).filter((m) => m.p === 1);
   const lastMatch = lastPlaceMatches.sort((a, b) => b.r - a.r || b.m - a.m)[0];
   const lastPlaceRosterId = lastMatch
     ? (scoreOutcome(lastMatch)?.worseRosterId ?? lastMatch.w)
     : null;
-  // A league flips to in_season the moment the draft ends, before anyone has
-  // scored. Every honor below is a ranking, and ranking twelve identical zeros
-  // just hands the trophy to whoever sorts first -- so withhold them until at
-  // least one game has actually been played.
-  // Regular-season entries carry no `kind`; only bracket byes have null points.
-  const played = games.some((g) => g.a.points != null || g.b.points != null);
-  const lastPlace = !played
+  // Honors are end-of-season awards, so they only exist once the season is over.
+  // A league flips to in_season the moment the draft ends and stays there until
+  // the final is played, so mid-season these would be standings dressed up as
+  // trophies -- a week-3 points leader shown as "PF champ", or whoever happens
+  // to sit last shown as the shit-bowl loser. Withhold all of them until the
+  // league reports complete.
+  const inProgress = league.status !== 'complete';
+  const lastPlace = inProgress
     ? null
     : lastPlaceRosterId
       ? teams.get(lastPlaceRosterId)?.userId ?? null
       : [...teams.values()].sort((a, b) => b.place - a.place)[0]?.userId ?? null;
-  const pfChamp = played
-    ? [...teams.values()].sort((a, b) => b.pf - a.pf)[0]?.userId ?? null
-    : null;
+  const pfChamp = inProgress
+    ? null
+    : [...teams.values()].sort((a, b) => b.pf - a.pf)[0]?.userId ?? null;
 
   const draft = (raw.draft_picks ?? []).map((p) => ({
     round: p.round, pickNo: p.pick_no, slot: p.draft_slot,
@@ -197,6 +199,25 @@ export function summarizeSeason(raw, overrides = {}) {
     player: `${p.metadata?.first_name ?? ''} ${p.metadata?.last_name ?? ''}`.trim(),
     position: p.metadata?.position ?? '',
   }));
+  // This week's head-to-head slate, for a season still being played. Scores are
+  // whatever Sleeper has so far -- zeros before kickoff, live totals during the
+  // week -- so the page shows the pairings either way rather than waiting for
+  // final results to land in `games`.
+  const currentWeek = league.settings.leg ?? null;
+  const thisWeek =
+    inProgress && currentWeek
+      ? pairWeek(matchups[currentWeek]).map(({ a, b }) => {
+          const ta = teams.get(a.roster_id);
+          const tb = teams.get(b.roster_id);
+          return {
+            week: currentWeek,
+            type: currentWeek >= pws ? 'playoff' : 'regular',
+            a: { userId: ta?.userId ?? null, teamName: ta?.teamName ?? null, points: a.points ?? 0 },
+            b: { userId: tb?.userId ?? null, teamName: tb?.teamName ?? null, points: b.points ?? 0 },
+          };
+        })
+      : [];
+
   const placeByUserId = Object.fromEntries([...teams.values()].map((t) => [t.userId, t.place]));
   const bracketSort = (a, b) =>
     a.round - b.round
@@ -205,7 +226,8 @@ export function summarizeSeason(raw, overrides = {}) {
     || String(a.match).localeCompare(String(b.match));
 
   return {
-    season, name: league.name, playoffWeekStart: pws,
+    season, name: league.name, playoffWeekStart: pws, inProgress,
+    currentWeek, thisWeek,
     standings: [...teams.values()].sort((a, b) => a.place - b.place),
     champion, runnerUp, third, pfChamp, lastPlace, games,
     playoffBracket: playoffBracket.sort(bracketSort),

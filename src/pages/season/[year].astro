@@ -110,6 +110,36 @@ const playoffGameLabel = (g) => g.kind === 'bye'
     <>
       <Honors season={s} />
 
+      {s.thisWeek?.length > 0 && (
+        <section class="this-week" aria-label={`Week ${s.currentWeek} matchups`}>
+          <h2>Week {s.currentWeek} Matchups</h2>
+          <p class="muted">
+            {s.thisWeek.every((m) => m.a.points === 0 && m.b.points === 0)
+              ? 'Not kicked off yet — scores update as the week is played.'
+              : 'Live scores, updated as the week is played.'}
+          </p>
+          <ul class="mu-list">
+            {s.thisWeek.map((m) => {
+              const aLead = m.a.points > m.b.points;
+              const bLead = m.b.points > m.a.points;
+              return (
+                <li class="mu">
+                  <div class={`mu-side ${aLead ? 'lead' : ''}`}>
+                    <span class="mu-name"><MemberLink id={m.a.userId} avatar={true} /></span>
+                    <span class="mu-pts">{m.a.points.toFixed(2)}</span>
+                  </div>
+                  <span class="mu-vs" aria-hidden="true">vs</span>
+                  <div class={`mu-side ${bLead ? 'lead' : ''}`}>
+                    <span class="mu-name"><MemberLink id={m.b.userId} avatar={true} /></span>
+                    <span class="mu-pts">{m.b.points.toFixed(2)}</span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
       <h2>Regular Season Standings</h2>
       <p class="muted tap-hint">Tap a team for its points and playoff result.</p>
 
