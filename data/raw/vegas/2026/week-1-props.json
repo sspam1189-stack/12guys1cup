@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 1,
- "fetched_at": "2026-09-10T21:20:29.903Z",
+ "fetched_at": "2026-09-10T22:24:13.752Z",
  "games": 16,
  "players": {
   "velus jones": {
@@ -3332,31 +3332,31 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 400
+       "over": 425
       },
       "draftkings": {
        "line": 1,
-       "over": 400
+       "over": 425
       },
       "fanduel": {
        "line": 1,
-       "over": 470
+       "over": 480
       },
       "caesars": {
        "line": 1,
-       "over": 380
+       "over": 400
       },
       "betmgm": {
        "line": 1,
-       "over": 310
+       "over": 340
       },
       "bet365": {
        "line": 1,
-       "over": 390
+       "over": 425
       }
      },
-     "over": 400,
-     "p_anytime_with_vig": 0.2
+     "over": 425,
+     "p_anytime_with_vig": 0.19
     },
     "receptions": {
      "line": 2.5,
@@ -3364,47 +3364,47 @@
       "consensus": {
        "line": 2.5,
        "over": -135,
-       "under": 110
+       "under": 100
       },
       "draftkings": {
        "line": 2.5,
-       "over": -156,
-       "under": 122
+       "over": -145,
+       "under": 113
       },
       "fanduel": {
        "line": 2.5,
-       "over": -154,
-       "under": 116
+       "over": -136,
+       "under": 102
       },
       "caesars": {
        "line": 2.5,
-       "over": -160,
-       "under": 120
+       "over": -155,
+       "under": 115
       },
       "betmgm": {
        "line": 2.5,
-       "over": -150,
-       "under": 110
+       "over": -135,
+       "under": 100
       }
      },
-     "over": -156,
-     "under": 122
+     "over": -145,
+     "under": 113
     },
     "receiving_yards": {
      "line": 29.5,
      "books": {
       "consensus": {
        "line": 29.5,
-       "over": -115,
-       "under": -112
+       "over": -114,
+       "under": -113
       },
       "draftkings": {
        "line": 29.5,
-       "over": -112,
-       "under": -112
+       "over": -114,
+       "under": -110
       },
       "fanduel": {
-       "line": 28.5,
+       "line": 27.5,
        "over": -113,
        "under": -113
       },
@@ -3414,13 +3414,36 @@
        "under": -115
       },
       "betmgm": {
-       "line": 31.5,
-       "over": -115,
-       "under": -115
+       "line": 29.5,
+       "over": -120,
+       "under": -111
       }
      },
-     "over": -112,
-     "under": -112
+     "over": -114,
+     "under": -110
+    }
+   }
+  },
+  "khadarel hodge": {
+   "name": "KhaDarel Hodge",
+   "team": null,
+   "position": null,
+   "opponent": null,
+   "markets": {
+    "anytime_td": {
+     "line": 1,
+     "books": {
+      "consensus": {
+       "line": 1,
+       "over": 1200
+      },
+      "draftkings": {
+       "line": 1,
+       "over": 3500
+      }
+     },
+     "over": 3500,
+     "p_anytime_with_vig": 0.028
     }
    }
   },
@@ -3461,7 +3484,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 625
+       "over": 700
       },
       "draftkings": {
        "line": 1,
@@ -3477,7 +3500,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 625
+       "over": 650
       },
       "bet365": {
        "line": 1,
@@ -3492,7 +3515,7 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 156,
+       "over": 148,
        "under": -200
       },
       "fanduel": {
@@ -3502,8 +3525,8 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": 156,
-       "under": -200
+       "over": 142,
+       "under": -183
       },
       "caesars": {
        "line": 1.5,
@@ -3512,19 +3535,19 @@
       },
       "betmgm": {
        "line": 1.5,
-       "over": 165,
-       "under": -220
+       "over": 150,
+       "under": -225
       }
      },
-     "over": 156,
-     "under": -200
+     "over": 142,
+     "under": -183
     },
     "receiving_yards": {
      "line": 8.5,
      "books": {
       "consensus": {
        "line": 9.5,
-       "over": -112,
+       "over": -113,
        "under": -113
       },
       "fanduel": {
@@ -3534,8 +3557,8 @@
       },
       "draftkings": {
        "line": 8.5,
-       "over": -114,
-       "under": -110
+       "over": -111,
+       "under": -113
       },
       "caesars": {
        "line": 9.5,
@@ -3543,20 +3566,20 @@
        "under": -117
       },
       "betmgm": {
-       "line": 9.5,
-       "over": -110,
-       "under": -120
+       "line": 8.5,
+       "over": -120,
+       "under": -110
       }
      },
-     "over": -114,
-     "under": -110
+     "over": -111,
+     "under": -113
     }
    }
   },
   "kaelon black": {
    "name": "Kaelon Black",
-   "team": null,
-   "position": null,
+   "team": "SF",
+   "position": "RB",
    "opponent": null,
    "markets": {
     "anytime_td": {
@@ -3568,7 +3591,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 900
+       "over": 800
       },
       "fanduel": {
        "line": 1,
@@ -3576,7 +3599,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 900
+       "over": 850
       },
       "betmgm": {
        "line": 1,
@@ -3587,8 +3610,56 @@
        "over": 1000
       }
      },
-     "over": 900,
-     "p_anytime_with_vig": 0.1
+     "over": 800,
+     "p_anytime_with_vig": 0.111
+    },
+    "receptions": {
+     "line": 0.5,
+     "books": {
+      "consensus": {
+       "line": 0.5,
+       "over": 280,
+       "under": -371
+      }
+     },
+     "over": 280,
+     "under": -371
+    },
+    "receiving_yards": {
+     "line": 0.5,
+     "books": {
+      "consensus": {
+       "line": 0.5,
+       "over": 339,
+       "under": -435
+      }
+     },
+     "over": 339,
+     "under": -435
+    },
+    "rushing_yards": {
+     "line": 5.5,
+     "books": {
+      "consensus": {
+       "line": 5.5,
+       "over": -118,
+       "under": -118
+      }
+     },
+     "over": -118,
+     "under": -118
+    },
+    "rushing_receiving_yards": {
+     "line": 6.5,
+     "books": {
+      "consensus": {
+       "line": 6.5,
+       "over": -107,
+       "under": -107
+      }
+     },
+     "over": -107,
+     "under": -107
     }
    }
   },
@@ -3629,15 +3700,15 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 112
+       "over": 115
       },
       "draftkings": {
        "line": 1,
-       "over": 105
+       "over": 110
       },
       "fanduel": {
        "line": 1,
-       "over": 110
+       "over": 115
       },
       "caesars": {
        "line": 1,
@@ -3652,8 +3723,8 @@
        "over": 125
       }
      },
-     "over": 105,
-     "p_anytime_with_vig": 0.488
+     "over": 110,
+     "p_anytime_with_vig": 0.476
     },
     "receptions": {
      "line": 4.5,
@@ -3665,8 +3736,8 @@
       },
       "draftkings": {
        "line": 4.5,
-       "over": -108,
-       "under": -118
+       "over": -107,
+       "under": -119
       },
       "fanduel": {
        "line": 4.5,
@@ -3684,21 +3755,21 @@
        "under": -125
       }
      },
-     "over": -108,
-     "under": -118
+     "over": -107,
+     "under": -119
     },
     "receiving_yards": {
      "line": 52.5,
      "books": {
       "consensus": {
        "line": 52.5,
-       "over": -113,
+       "over": -111,
        "under": -115
       },
       "draftkings": {
        "line": 52.5,
-       "over": -110,
-       "under": -115
+       "over": -111,
+       "under": -113
       },
       "fanduel": {
        "line": 52.5,
@@ -3716,8 +3787,8 @@
        "under": -115
       }
      },
-     "over": -110,
-     "under": -115
+     "over": -111,
+     "under": -113
     }
    }
   },
@@ -3736,7 +3807,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 130
+       "over": 125
       },
       "fanduel": {
        "line": 1,
@@ -3755,21 +3826,21 @@
        "over": 125
       }
      },
-     "over": 130,
-     "p_anytime_with_vig": 0.435
+     "over": 125,
+     "p_anytime_with_vig": 0.444
     },
     "receptions": {
-     "line": 7.5,
+     "line": 6.5,
      "books": {
       "consensus": {
        "line": 7.5,
-       "over": 114,
-       "under": -150
+       "over": 105,
+       "under": -140
       },
       "draftkings": {
-       "line": 7.5,
-       "over": 114,
-       "under": -145
+       "line": 6.5,
+       "over": -144,
+       "under": 113
       },
       "fanduel": {
        "line": 7.5,
@@ -3787,11 +3858,11 @@
        "under": -140
       }
      },
-     "over": 114,
-     "under": -145
+     "over": -144,
+     "under": 113
     },
     "receiving_yards": {
-     "line": 91.5,
+     "line": 90.5,
      "books": {
       "consensus": {
        "line": 90.5,
@@ -3799,9 +3870,9 @@
        "under": -113
       },
       "draftkings": {
-       "line": 91.5,
-       "over": -110,
-       "under": -114
+       "line": 90.5,
+       "over": -112,
+       "under": -112
       },
       "fanduel": {
        "line": 90.5,
@@ -3819,15 +3890,15 @@
        "under": -115
       }
      },
-     "over": -110,
-     "under": -114
+     "over": -112,
+     "under": -112
     },
     "rushing_yards": {
      "line": 1.5,
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -105,
+       "over": -103,
        "under": -125
       },
       "fanduel": {
@@ -3837,8 +3908,8 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": -106,
-       "under": -118
+       "over": -103,
+       "under": -122
       },
       "caesars": {
        "line": 1.5,
@@ -3846,17 +3917,21 @@
        "under": -113
       }
      },
-     "over": -106,
-     "under": -118
+     "over": -103,
+     "under": -122
     },
     "rushing_receiving_yards": {
-     "line": 103.5,
+     "line": 95.5,
      "books": {
       "consensus": {
-       "line": 103.5,
-       "over": -140,
-       "off": true,
-       "under": -117
+       "line": 95.5,
+       "over": -114,
+       "under": -112
+      },
+      "draftkings": {
+       "line": 95.5,
+       "over": -114,
+       "under": -112
       },
       "caesars": {
        "line": 103.5,
@@ -3865,9 +3940,8 @@
        "under": -117
       }
      },
-     "stale": true,
-     "over": -140,
-     "under": -117
+     "over": -114,
+     "under": -112
     }
    }
   },
@@ -3886,11 +3960,11 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 900
+       "over": 950
       },
       "fanduel": {
        "line": 1,
-       "over": 950
+       "over": 900
       },
       "caesars": {
        "line": 1,
@@ -3906,8 +3980,8 @@
        "over": 950
       }
      },
-     "over": 900,
-     "p_anytime_with_vig": 0.1
+     "over": 950,
+     "p_anytime_with_vig": 0.095
     },
     "receptions": {
      "line": 1.5,
@@ -3946,7 +4020,7 @@
      "books": {
       "consensus": {
        "line": 9.5,
-       "over": -120,
+       "over": -118,
        "under": -110
       },
       "fanduel": {
@@ -3956,8 +4030,8 @@
       },
       "draftkings": {
        "line": 9.5,
-       "over": -116,
-       "under": -108
+       "over": -112,
+       "under": -112
       },
       "caesars": {
        "line": 9.5,
@@ -3970,8 +4044,8 @@
        "under": -115
       }
      },
-     "over": -116,
-     "under": -108
+     "over": -112,
+     "under": -112
     }
    }
   },
@@ -3986,19 +4060,19 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 170
+       "over": 165
       },
       "draftkings": {
        "line": 1,
-       "over": 165
+       "over": 175
       },
       "fanduel": {
        "line": 1,
-       "over": 185
+       "over": 180
       },
       "caesars": {
        "line": 1,
-       "over": 162
+       "over": 167
       },
       "betmgm": {
        "line": 1,
@@ -4009,16 +4083,16 @@
        "over": 170
       }
      },
-     "over": 165,
-     "p_anytime_with_vig": 0.377
+     "over": 175,
+     "p_anytime_with_vig": 0.364
     },
     "receptions": {
      "line": 0.5,
      "books": {
       "consensus": {
        "line": 0.5,
-       "over": -154,
-       "under": 118
+       "over": -148,
+       "under": 113
       },
       "fanduel": {
        "line": 0.5,
@@ -4027,22 +4101,22 @@
       },
       "draftkings": {
        "line": 0.5,
-       "over": -157,
-       "under": 122
+       "over": -148,
+       "under": 116
       },
       "caesars": {
        "line": 0.5,
-       "over": -154,
-       "under": 118
+       "over": -148,
+       "under": 113
       },
       "betmgm": {
        "line": 0.5,
-       "over": -160,
-       "under": 120
+       "over": -165,
+       "under": 125
       }
      },
-     "over": -157,
-     "under": 122
+     "over": -148,
+     "under": 116
     },
     "receiving_yards": {
      "line": 2.5,
@@ -4080,24 +4154,24 @@
      "line": 43.5,
      "books": {
       "consensus": {
-       "line": 43.5,
-       "over": -113,
+       "line": 44,
+       "over": -110,
        "under": -115
       },
       "draftkings": {
        "line": 43.5,
-       "over": -114,
-       "under": -110
+       "over": -110,
+       "under": -114
       },
       "fanduel": {
-       "line": 43.5,
+       "line": 42.5,
        "over": -113,
        "under": -113
       },
       "caesars": {
        "line": 44.5,
-       "over": -120,
-       "under": -111
+       "over": -115,
+       "under": -115
       },
       "betmgm": {
        "line": 43.5,
@@ -4105,8 +4179,8 @@
        "under": -115
       }
      },
-     "over": -114,
-     "under": -110
+     "over": -110,
+     "under": -114
     },
     "rushing_receiving_yards": {
      "line": 50.5,
@@ -4138,7 +4212,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 390
+       "over": 375
       },
       "draftkings": {
        "line": 1,
@@ -4146,15 +4220,15 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 380
+       "over": 390
       },
       "caesars": {
        "line": 1,
-       "over": 390
+       "over": 375
       },
       "betmgm": {
        "line": 1,
-       "over": 320
+       "over": 310
       },
       "bet365": {
        "line": 1,
@@ -4170,12 +4244,12 @@
       "consensus": {
        "line": 2.5,
        "over": 130,
-       "under": -172
+       "under": -175
       },
       "draftkings": {
        "line": 2.5,
-       "over": 127,
-       "under": -162
+       "over": 137,
+       "under": -175
       },
       "fanduel": {
        "line": 2.5,
@@ -4193,8 +4267,8 @@
        "under": -200
       }
      },
-     "over": 127,
-     "under": -162
+     "over": 137,
+     "under": -175
     },
     "receiving_yards": {
      "line": 18.5,
@@ -4245,11 +4319,11 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 4500
+       "over": 5000
       },
       "draftkings": {
        "line": 1,
-       "over": 2800
+       "over": 3000
       },
       "caesars": {
        "line": 1,
@@ -4264,8 +4338,8 @@
        "over": 2200
       }
      },
-     "over": 2800,
-     "p_anytime_with_vig": 0.034
+     "over": 3000,
+     "p_anytime_with_vig": 0.032
     }
    }
   },
@@ -4454,15 +4528,15 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 375
+       "over": 360
       },
       "draftkings": {
        "line": 1,
-       "over": 350
+       "over": 360
       },
       "fanduel": {
        "line": 1,
-       "over": 390
+       "over": 400
       },
       "caesars": {
        "line": 1,
@@ -4470,28 +4544,28 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 375
+       "over": 360
       },
       "bet365": {
        "line": 1,
        "over": 375
       }
      },
-     "over": 350,
-     "p_anytime_with_vig": 0.222
+     "over": 360,
+     "p_anytime_with_vig": 0.217
     },
     "receptions": {
      "line": 2.5,
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": -135,
-       "under": 100
+       "over": -136,
+       "under": 102
       },
       "draftkings": {
        "line": 2.5,
-       "over": -151,
-       "under": 119
+       "over": -156,
+       "under": 122
       },
       "fanduel": {
        "line": 2.5,
@@ -4500,17 +4574,17 @@
       },
       "caesars": {
        "line": 2.5,
-       "over": -145,
-       "under": 112
+       "over": -150,
+       "under": 115
       },
       "betmgm": {
        "line": 2.5,
-       "over": -135,
-       "under": 100
+       "over": -150,
+       "under": 110
       }
      },
-     "over": -151,
-     "under": 119
+     "over": -156,
+     "under": 122
     },
     "receiving_yards": {
      "line": 28.5,
@@ -4536,7 +4610,7 @@
        "under": -127
       },
       "betmgm": {
-       "line": 26.5,
+       "line": 27.5,
        "over": -115,
        "under": -115
       }
@@ -4559,8 +4633,8 @@
       },
       "draftkings": {
        "line": 7.5,
-       "over": -111,
-       "under": -113
+       "over": -117,
+       "under": -107
       },
       "caesars": {
        "line": 7.5,
@@ -4568,15 +4642,15 @@
        "under": -122
       }
      },
-     "over": -111,
-     "under": -113
+     "over": -117,
+     "under": -107
     },
     "rushing_receiving_yards": {
      "line": 40.5,
      "books": {
       "consensus": {
        "line": 40,
-       "over": -114,
+       "over": -113,
        "under": -118
       },
       "draftkings": {
@@ -4586,7 +4660,7 @@
       },
       "caesars": {
        "line": 39.5,
-       "over": -114,
+       "over": -113,
        "under": -118
       }
      },
@@ -4606,19 +4680,19 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 475
+       "over": 500
       },
       "draftkings": {
        "line": 1,
-       "over": 475
+       "over": 500
       },
       "fanduel": {
        "line": 1,
-       "over": 650
+       "over": 700
       }
      },
-     "over": 475,
-     "p_anytime_with_vig": 0.174
+     "over": 500,
+     "p_anytime_with_vig": 0.167
     }
    }
   },
@@ -4659,15 +4733,15 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 500
+       "over": 450
       },
       "draftkings": {
        "line": 1,
-       "over": 550
+       "over": 500
       },
       "fanduel": {
        "line": 1,
-       "over": 440
+       "over": 450
       },
       "caesars": {
        "line": 1,
@@ -4679,11 +4753,11 @@
       },
       "bet365": {
        "line": 1,
-       "over": 600
+       "over": 550
       }
      },
-     "over": 550,
-     "p_anytime_with_vig": 0.154
+     "over": 500,
+     "p_anytime_with_vig": 0.167
     },
     "interceptions": {
      "line": 0.5,
@@ -4691,17 +4765,17 @@
       "consensus": {
        "line": 0.5,
        "over": -160,
-       "under": 116
+       "under": 111
       },
       "draftkings": {
        "line": 0.5,
-       "over": -146,
-       "under": 114
+       "over": -141,
+       "under": 110
       },
       "caesars": {
        "line": 0.5,
-       "over": -152,
-       "under": 116
+       "over": -145,
+       "under": 111
       },
       "betmgm": {
        "line": 0.5,
@@ -4709,43 +4783,43 @@
        "under": 120
       }
      },
-     "over": -146,
-     "under": 114
+     "over": -141,
+     "under": 110
     },
     "passing_tds": {
      "line": 1.5,
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 101,
-       "under": -128
+       "over": 104,
+       "under": -133
       },
       "draftkings": {
        "line": 1.5,
-       "over": 101,
-       "under": -128
+       "over": 104,
+       "under": -133
       },
       "fanduel": {
        "line": 1.5,
-       "over": 108,
-       "under": -140
+       "over": 112,
+       "under": -146
       },
       "caesars": {
        "line": 1.5,
-       "over": -104,
-       "under": -125
+       "over": 101,
+       "under": -132
       },
       "betmgm": {
        "line": 1.5,
-       "over": 105,
-       "under": -145
+       "over": 110,
+       "under": -150
       }
      },
-     "over": 101,
-     "under": -128
+     "over": 104,
+     "under": -133
     },
     "passing_yards": {
-     "line": 238.5,
+     "line": 236.5,
      "books": {
       "consensus": {
        "line": 238.5,
@@ -4753,7 +4827,7 @@
        "under": -113
       },
       "draftkings": {
-       "line": 238.5,
+       "line": 236.5,
        "over": -113,
        "under": -111
       },
@@ -4768,7 +4842,7 @@
        "under": -115
       },
       "betmgm": {
-       "line": 242.5,
+       "line": 240.5,
        "over": -115,
        "under": -115
       }
@@ -4777,15 +4851,15 @@
      "under": -111
     },
     "rushing_yards": {
-     "line": 18.5,
+     "line": 19.5,
      "books": {
       "consensus": {
        "line": 18.5,
-       "over": -125,
+       "over": -120,
        "under": -108
       },
       "draftkings": {
-       "line": 18.5,
+       "line": 19.5,
        "over": -112,
        "under": -112
       },
@@ -4801,8 +4875,8 @@
       },
       "betmgm": {
        "line": 18.5,
-       "over": -135,
-       "under": 100
+       "over": -120,
+       "under": -110
       }
      },
      "over": -112,
@@ -4829,7 +4903,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 1100
+       "over": 1000
       },
       "caesars": {
        "line": 1,
@@ -4862,8 +4936,8 @@
       },
       "draftkings": {
        "line": 0.5,
-       "over": -222,
-       "under": 172
+       "over": -208,
+       "under": 161
       },
       "caesars": {
        "line": 0.5,
@@ -4876,40 +4950,40 @@
        "under": 165
       }
      },
-     "over": -222,
-     "under": 172
+     "over": -208,
+     "under": 161
     },
     "receiving_yards": {
-     "line": 7.5,
+     "line": 6.5,
      "books": {
       "consensus": {
-       "line": 6.5,
-       "over": -110,
-       "under": -118
+       "line": 5.5,
+       "over": -114,
+       "under": -113
       },
       "fanduel": {
-       "line": 6.5,
-       "over": -102,
-       "under": -125
+       "line": 5.5,
+       "over": -113,
+       "under": -113
       },
       "draftkings": {
-       "line": 7.5,
-       "over": -106,
-       "under": -118
+       "line": 6.5,
+       "over": -114,
+       "under": -110
       },
       "caesars": {
        "line": 6.5,
-       "over": -115,
-       "under": -113
+       "over": -112,
+       "under": -118
       },
       "betmgm": {
-       "line": 6.5,
-       "over": -110,
-       "under": -120
+       "line": 5.5,
+       "over": -120,
+       "under": -110
       }
      },
-     "over": -106,
-     "under": -118
+     "over": -114,
+     "under": -110
     }
    }
   },
@@ -4955,13 +5029,13 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -150,
-       "under": 112
+       "over": -155,
+       "under": 115
       },
       "draftkings": {
        "line": 1.5,
-       "over": -135,
-       "under": 106
+       "over": -146,
+       "under": 114
       },
       "fanduel": {
        "line": 1.5,
@@ -4975,25 +5049,25 @@
       },
       "betmgm": {
        "line": 1.5,
-       "over": -150,
-       "under": 110
+       "over": -155,
+       "under": 115
       }
      },
-     "over": -135,
-     "under": 106
+     "over": -146,
+     "under": 114
     },
     "receiving_yards": {
      "line": 10.5,
      "books": {
       "consensus": {
        "line": 10.5,
-       "over": -120,
+       "over": -115,
        "under": -110
       },
       "draftkings": {
        "line": 10.5,
-       "over": -111,
-       "under": -113
+       "over": -115,
+       "under": -109
       },
       "fanduel": {
        "line": 10.5,
@@ -5011,21 +5085,21 @@
        "under": -115
       }
      },
-     "over": -111,
-     "under": -113
+     "over": -115,
+     "under": -109
     },
     "rushing_yards": {
      "line": 55.5,
      "books": {
       "consensus": {
        "line": 55.5,
-       "over": -115,
-       "under": -113
+       "over": -113,
+       "under": -115
       },
       "draftkings": {
        "line": 55.5,
-       "over": -111,
-       "under": -113
+       "over": -109,
+       "under": -115
       },
       "fanduel": {
        "line": 55.5,
@@ -5033,9 +5107,9 @@
        "under": -113
       },
       "caesars": {
-       "line": 56.5,
-       "over": -112,
-       "under": -117
+       "line": 55.5,
+       "over": -117,
+       "under": -112
       },
       "betmgm": {
        "line": 54.5,
@@ -5043,16 +5117,16 @@
        "under": -115
       }
      },
-     "over": -111,
-     "under": -113
+     "over": -109,
+     "under": -115
     },
     "rushing_receiving_yards": {
      "line": 70.5,
      "books": {
       "consensus": {
-       "line": 70,
+       "line": 70.5,
        "over": -115,
-       "under": -115
+       "under": -110
       },
       "draftkings": {
        "line": 70.5,
@@ -5065,7 +5139,7 @@
        "under": -115
       },
       "betmgm": {
-       "line": 69.5,
+       "line": 70.5,
        "over": -115,
        "under": -115
       }
@@ -5090,11 +5164,11 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 300
+       "over": 310
       },
       "draftkings": {
        "line": 1,
-       "over": 290
+       "over": 285
       },
       "caesars": {
        "line": 1,
@@ -5109,16 +5183,16 @@
        "over": 280
       }
      },
-     "over": 290,
-     "p_anytime_with_vig": 0.256
+     "over": 285,
+     "p_anytime_with_vig": 0.26
     },
     "receptions": {
      "line": 3.5,
      "books": {
       "consensus": {
        "line": 3.5,
-       "over": 115,
-       "under": -160
+       "over": 113,
+       "under": -170
       },
       "fanduel": {
        "line": 3.5,
@@ -5127,30 +5201,30 @@
       },
       "draftkings": {
        "line": 3.5,
-       "over": 115,
-       "under": -147
+       "over": 112,
+       "under": -143
       },
       "caesars": {
        "line": 3.5,
-       "over": 112,
-       "under": -160
+       "over": 113,
+       "under": -170
       },
       "betmgm": {
        "line": 3.5,
-       "over": 105,
-       "under": -145
+       "over": 110,
+       "under": -150
       }
      },
-     "over": 115,
-     "under": -147
+     "over": 112,
+     "under": -143
     },
     "receiving_yards": {
      "line": 33.5,
      "books": {
       "consensus": {
        "line": 33.5,
-       "over": -115,
-       "under": -113
+       "over": -113,
+       "under": -115
       },
       "fanduel": {
        "line": 33.5,
@@ -5159,8 +5233,8 @@
       },
       "draftkings": {
        "line": 33.5,
-       "over": -113,
-       "under": -111
+       "over": -109,
+       "under": -115
       },
       "caesars": {
        "line": 33.5,
@@ -5168,13 +5242,13 @@
        "under": -113
       },
       "betmgm": {
-       "line": 34.5,
-       "over": -115,
-       "under": -115
+       "line": 33.5,
+       "over": -120,
+       "under": -111
       }
      },
-     "over": -113,
-     "under": -111
+     "over": -109,
+     "under": -115
     }
    }
   },
@@ -5224,7 +5298,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 2200
+       "over": 2500
       },
       "fanduel": {
        "line": 1,
@@ -5232,19 +5306,19 @@
       },
       "caesars": {
        "line": 1,
-       "over": 2000
+       "over": 2200
       },
       "betmgm": {
        "line": 1,
-       "over": 1600
+       "over": 1650
       },
       "bet365": {
        "line": 1,
        "over": 2200
       }
      },
-     "over": 2200,
-     "p_anytime_with_vig": 0.043
+     "over": 2500,
+     "p_anytime_with_vig": 0.038
     },
     "interceptions": {
      "line": 0.5,
@@ -5278,7 +5352,7 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -163,
+       "over": -160,
        "under": 121
       },
       "draftkings": {
@@ -5288,8 +5362,8 @@
       },
       "fanduel": {
        "line": 1.5,
-       "over": -164,
-       "under": 125
+       "over": -160,
+       "under": 122
       },
       "caesars": {
        "line": 1.5,
@@ -5309,14 +5383,14 @@
      "line": 262.5,
      "books": {
       "consensus": {
-       "line": 258.5,
+       "line": 260.5,
        "over": -115,
-       "under": -112
+       "under": -113
       },
       "draftkings": {
        "line": 262.5,
-       "over": -112,
-       "under": -112
+       "over": -111,
+       "under": -113
       },
       "fanduel": {
        "line": 258.5,
@@ -5329,13 +5403,13 @@
        "under": -114
       },
       "betmgm": {
-       "line": 259.5,
-       "over": -118,
-       "under": -111
+       "line": 260.5,
+       "over": -115,
+       "under": -115
       }
      },
-     "over": -112,
-     "under": -112
+     "over": -111,
+     "under": -113
     },
     "rushing_yards": {
      "line": 0.5,
@@ -5352,12 +5426,12 @@
       },
       "draftkings": {
        "line": 0.5,
-       "over": 137,
-       "under": -173
+       "over": 143,
+       "under": -181
       }
      },
-     "over": 137,
-     "under": -173
+     "over": 143,
+     "under": -181
     }
    }
   },
@@ -5408,19 +5482,19 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 475
+       "over": 500
       },
       "draftkings": {
        "line": 1,
-       "over": 475
+       "over": 500
       },
       "fanduel": {
        "line": 1,
-       "over": 470
+       "over": 460
       },
       "caesars": {
        "line": 1,
-       "over": 475
+       "over": 450
       },
       "betmgm": {
        "line": 1,
@@ -5431,16 +5505,16 @@
        "over": 550
       }
      },
-     "over": 475,
-     "p_anytime_with_vig": 0.174
+     "over": 500,
+     "p_anytime_with_vig": 0.167
     },
     "receptions": {
      "line": 1.5,
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -150,
-       "under": 111
+       "over": -143,
+       "under": 105
       },
       "fanduel": {
        "line": 1.5,
@@ -5449,13 +5523,13 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": -152,
-       "under": 119
+       "over": -145,
+       "under": 113
       },
       "caesars": {
        "line": 1.5,
-       "over": -150,
-       "under": 111
+       "over": -143,
+       "under": 110
       },
       "betmgm": {
        "line": 1.5,
@@ -5463,8 +5537,8 @@
        "under": 100
       }
      },
-     "over": -152,
-     "under": 119
+     "over": -145,
+     "under": 113
     },
     "receiving_yards": {
      "line": 16.5,
@@ -5481,8 +5555,8 @@
       },
       "draftkings": {
        "line": 16.5,
-       "over": -115,
-       "under": -109
+       "over": -112,
+       "under": -112
       },
       "caesars": {
        "line": 16.5,
@@ -5495,8 +5569,8 @@
        "under": -105
       }
      },
-     "over": -115,
-     "under": -109
+     "over": -112,
+     "under": -112
     }
    }
   },
@@ -5547,15 +5621,15 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": -155
+       "over": -150
       },
       "draftkings": {
        "line": 1,
-       "over": -155
+       "over": -150
       },
       "fanduel": {
        "line": 1,
-       "over": -160
+       "over": -155
       },
       "caesars": {
        "line": 1,
@@ -5570,8 +5644,8 @@
        "over": -145
       }
      },
-     "over": -155,
-     "p_anytime_with_vig": 0.608
+     "over": -150,
+     "p_anytime_with_vig": 0.6
     },
     "receptions": {
      "line": 4.5,
@@ -5583,8 +5657,8 @@
       },
       "draftkings": {
        "line": 4.5,
-       "over": -134,
-       "under": 105
+       "over": -140,
+       "under": 110
       },
       "fanduel": {
        "line": 4.5,
@@ -5593,30 +5667,30 @@
       },
       "caesars": {
        "line": 4.5,
-       "over": -145,
-       "under": 110
+       "over": -150,
+       "under": 111
       },
       "betmgm": {
        "line": 4.5,
-       "over": -125,
-       "under": -105
+       "over": -140,
+       "under": 105
       }
      },
-     "over": -134,
-     "under": 105
+     "over": -140,
+     "under": 110
     },
     "receiving_yards": {
-     "line": 39.5,
+     "line": 38.5,
      "books": {
       "consensus": {
        "line": 39.5,
-       "over": -120,
-       "under": -112
+       "over": -115,
+       "under": -113
       },
       "draftkings": {
-       "line": 39.5,
-       "over": -112,
-       "under": -112
+       "line": 38.5,
+       "over": -115,
+       "under": -109
       },
       "fanduel": {
        "line": 39.5,
@@ -5629,13 +5703,13 @@
        "under": -110
       },
       "betmgm": {
-       "line": 41.5,
+       "line": 40.5,
        "over": -115,
        "under": -115
       }
      },
-     "over": -112,
-     "under": -112
+     "over": -115,
+     "under": -109
     },
     "rushing_yards": {
      "line": 60.5,
@@ -5643,12 +5717,12 @@
       "consensus": {
        "line": 60.5,
        "over": -115,
-       "under": -113
+       "under": -114
       },
       "draftkings": {
        "line": 60.5,
-       "over": -110,
-       "under": -114
+       "over": -111,
+       "under": -113
       },
       "fanduel": {
        "line": 58.5,
@@ -5666,11 +5740,11 @@
        "under": -115
       }
      },
-     "over": -110,
-     "under": -114
+     "over": -111,
+     "under": -113
     },
     "rushing_receiving_yards": {
-     "line": 105.5,
+     "line": 104.5,
      "books": {
       "consensus": {
        "line": 105.5,
@@ -5678,7 +5752,7 @@
        "under": -115
       },
       "draftkings": {
-       "line": 105.5,
+       "line": 104.5,
        "over": -114,
        "under": -111
       },
@@ -5688,9 +5762,9 @@
        "under": -115
       },
       "betmgm": {
-       "line": 105.5,
-       "over": -115,
-       "under": -115
+       "line": 104.5,
+       "over": -120,
+       "under": -110
       }
      },
      "over": -114,
@@ -5735,11 +5809,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1500
+       "over": 1700
       },
       "draftkings": {
        "line": 1,
-       "over": 1300
+       "over": 1700
       },
       "fanduel": {
        "line": 1,
@@ -5751,15 +5825,15 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 1750
+       "over": 1800
       },
       "bet365": {
        "line": 1,
        "over": 1600
       }
      },
-     "over": 1300,
-     "p_anytime_with_vig": 0.071
+     "over": 1700,
+     "p_anytime_with_vig": 0.056
     },
     "receptions": {
      "line": 0.5,
@@ -5774,10 +5848,10 @@
      "under": -118
     },
     "receiving_yards": {
-     "line": 0.5,
+     "line": 1.5,
      "books": {
       "consensus": {
-       "line": 0.5,
+       "line": 1.5,
        "over": -118,
        "under": -118
       }
@@ -5798,11 +5872,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1300
+       "over": 1400
       },
       "fanduel": {
        "line": 1,
-       "over": 1300
+       "over": 1400
       },
       "draftkings": {
        "line": 1,
@@ -5810,7 +5884,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 1200
+       "over": 1400
       }
      },
      "over": 1900,
@@ -5829,7 +5903,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1400
+       "over": 1500
       },
       "fanduel": {
        "line": 1,
@@ -5864,7 +5938,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2200
+       "over": 2500
       },
       "fanduel": {
        "line": 1,
@@ -5872,15 +5946,15 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 2800
+       "over": 2500
       },
       "caesars": {
        "line": 1,
-       "over": 2400
+       "over": 2100
       }
      },
-     "over": 2800,
-     "p_anytime_with_vig": 0.034
+     "over": 2500,
+     "p_anytime_with_vig": 0.038
     }
    }
   },
@@ -5899,7 +5973,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 175
+       "over": 195
       },
       "fanduel": {
        "line": 1,
@@ -5907,7 +5981,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 191
+       "over": 197
       },
       "betmgm": {
        "line": 1,
@@ -5918,8 +5992,8 @@
        "over": 210
       }
      },
-     "over": 175,
-     "p_anytime_with_vig": 0.364
+     "over": 195,
+     "p_anytime_with_vig": 0.339
     },
     "receptions": {
      "line": 3.5,
@@ -5946,23 +6020,23 @@
       },
       "betmgm": {
        "line": 3.5,
-       "over": -150,
-       "under": 110
+       "over": -145,
+       "under": 105
       }
      },
      "over": -155,
      "under": 121
     },
     "receiving_yards": {
-     "line": 50.5,
+     "line": 49.5,
      "books": {
       "consensus": {
        "line": 49.5,
-       "over": -115,
-       "under": -113
+       "over": -113,
+       "under": -115
       },
       "draftkings": {
-       "line": 50.5,
+       "line": 49.5,
        "over": -113,
        "under": -111
       },
@@ -6027,7 +6101,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 420
+       "over": 430
       },
       "caesars": {
        "line": 1,
@@ -6035,7 +6109,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 360
+       "over": 340
       },
       "bet365": {
        "line": 1,
@@ -6055,8 +6129,8 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": -173,
-       "under": 135
+       "over": -160,
+       "under": 125
       },
       "fanduel": {
        "line": 1.5,
@@ -6074,8 +6148,8 @@
        "under": 125
       }
      },
-     "over": -173,
-     "under": 135
+     "over": -160,
+     "under": 125
     },
     "receiving_yards": {
      "line": 23.5,
@@ -6122,11 +6196,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1400
+       "over": 1250
       },
       "draftkings": {
        "line": 1,
-       "over": 1400
+       "over": 1600
       },
       "fanduel": {
        "line": 1,
@@ -6145,8 +6219,8 @@
        "over": 1400
       }
      },
-     "over": 1400,
-     "p_anytime_with_vig": 0.067
+     "over": 1600,
+     "p_anytime_with_vig": 0.059
     }
    }
   },
@@ -6165,7 +6239,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 1500
+       "over": 1300
       },
       "fanduel": {
        "line": 1,
@@ -6184,8 +6258,8 @@
        "over": 1200
       }
      },
-     "over": 1500,
-     "p_anytime_with_vig": 0.063
+     "over": 1300,
+     "p_anytime_with_vig": 0.071
     }
    }
   },
@@ -6262,11 +6336,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 850
+       "over": 1000
       },
       "draftkings": {
        "line": 1,
-       "over": 850
+       "over": 950
       },
       "fanduel": {
        "line": 1,
@@ -6285,16 +6359,16 @@
        "over": 1100
       }
      },
-     "over": 850,
-     "p_anytime_with_vig": 0.105
+     "over": 950,
+     "p_anytime_with_vig": 0.095
     },
     "receptions": {
      "line": 1.5,
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 156,
-       "under": -209
+       "over": 160,
+       "under": -213
       },
       "fanduel": {
        "line": 1.5,
@@ -6303,30 +6377,30 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": 162,
-       "under": -209
+       "over": 165,
+       "under": -213
       },
       "caesars": {
        "line": 1.5,
-       "over": 156,
-       "under": -209
+       "over": 162,
+       "under": -218
       },
       "betmgm": {
        "line": 0.5,
-       "over": -210,
+       "over": -200,
        "under": 150
       }
      },
-     "over": 162,
-     "under": -209
+     "over": 165,
+     "under": -213
     },
     "receiving_yards": {
      "line": 6.5,
      "books": {
       "consensus": {
        "line": 6.5,
-       "over": -110,
-       "under": -120
+       "over": -112,
+       "under": -118
       },
       "fanduel": {
        "line": 6.5,
@@ -6344,9 +6418,9 @@
        "under": -118
       },
       "betmgm": {
-       "line": 6.5,
-       "over": -110,
-       "under": -120
+       "line": 5.5,
+       "over": -120,
+       "under": -110
       }
      },
      "over": -115,
@@ -6410,11 +6484,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1000
+       "over": 850
       },
       "draftkings": {
        "line": 1,
-       "over": 1000
+       "over": 1100
       },
       "fanduel": {
        "line": 1,
@@ -6433,8 +6507,8 @@
        "over": 700
       }
      },
-     "over": 1000,
-     "p_anytime_with_vig": 0.091
+     "over": 1100,
+     "p_anytime_with_vig": 0.083
     },
     "receptions": {
      "line": 1.5,
@@ -6543,8 +6617,8 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": -150,
-       "under": 113
+       "over": -148,
+       "under": 112
       },
       "fanduel": {
        "line": 2.5,
@@ -6553,8 +6627,8 @@
       },
       "draftkings": {
        "line": 2.5,
-       "over": -145,
-       "under": 113
+       "over": -140,
+       "under": 109
       },
       "caesars": {
        "line": 2.5,
@@ -6567,16 +6641,16 @@
        "under": 110
       }
      },
-     "over": -145,
-     "under": 113
+     "over": -140,
+     "under": 109
     },
     "receiving_yards": {
-     "line": 19.5,
+     "line": 20.5,
      "books": {
       "consensus": {
-       "line": 19.5,
+       "line": 20.5,
        "over": -115,
-       "under": -115
+       "under": -114
       },
       "fanduel": {
        "line": 20.5,
@@ -6584,14 +6658,14 @@
        "under": -114
       },
       "draftkings": {
-       "line": 19.5,
-       "over": -110,
-       "under": -114
+       "line": 20.5,
+       "over": -115,
+       "under": -109
       },
       "caesars": {
-       "line": 19.5,
-       "over": -125,
-       "under": -107
+       "line": 20.5,
+       "over": -122,
+       "under": -110
       },
       "betmgm": {
        "line": 19.5,
@@ -6599,8 +6673,8 @@
        "under": -115
       }
      },
-     "over": -110,
-     "under": -114
+     "over": -115,
+     "under": -109
     },
     "rushing_yards": {
      "line": 74.5,
@@ -6635,17 +6709,17 @@
      "under": -111
     },
     "rushing_receiving_yards": {
-     "line": 98.5,
+     "line": 100.5,
      "books": {
       "consensus": {
-       "line": 98.5,
-       "over": -110,
+       "line": 97,
+       "over": -115,
        "under": -115
       },
       "draftkings": {
-       "line": 98.5,
-       "over": -113,
-       "under": -112
+       "line": 100.5,
+       "over": -111,
+       "under": -115
       },
       "caesars": {
        "line": 92.5,
@@ -6658,8 +6732,8 @@
        "under": -115
       }
      },
-     "over": -113,
-     "under": -112
+     "over": -111,
+     "under": -115
     }
    }
   },
@@ -6811,7 +6885,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 700
+       "over": 750
       },
       "fanduel": {
        "line": 1,
@@ -6830,8 +6904,8 @@
        "over": 600
       }
      },
-     "over": 700,
-     "p_anytime_with_vig": 0.125
+     "over": 750,
+     "p_anytime_with_vig": 0.118
     },
     "receptions": {
      "line": 1.5,
@@ -7291,7 +7365,7 @@
      "books": {
       "consensus": {
        "line": 3.5,
-       "over": -119,
+       "over": -124,
        "under": -107
       },
       "draftkings": {
@@ -7464,7 +7538,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1300
+       "over": 1200
       },
       "fanduel": {
        "line": 1,
@@ -7472,19 +7546,19 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 1300
+       "over": 1200
       },
       "caesars": {
        "line": 1,
-       "over": 1200
+       "over": 1000
       },
       "betmgm": {
        "line": 1,
        "over": 1250
       }
      },
-     "over": 1300,
-     "p_anytime_with_vig": 0.071
+     "over": 1200,
+     "p_anytime_with_vig": 0.077
     }
    }
   },
@@ -7584,7 +7658,7 @@
      "books": {
       "consensus": {
        "line": 218.5,
-       "over": -114,
+       "over": -115,
        "under": -114
       },
       "draftkings": {
@@ -7687,7 +7761,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 265
+       "over": 270
       },
       "fanduel": {
        "line": 1,
@@ -7706,8 +7780,8 @@
        "over": 265
       }
      },
-     "over": 265,
-     "p_anytime_with_vig": 0.274
+     "over": 270,
+     "p_anytime_with_vig": 0.27
     },
     "receptions": {
      "line": 3.5,
@@ -8072,17 +8146,17 @@
      "under": -103
     },
     "receiving_yards": {
-     "line": 35.5,
+     "line": 34.5,
      "books": {
       "consensus": {
        "line": 35.5,
-       "over": -111,
-       "under": -115
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
-       "line": 35.5,
-       "over": -109,
-       "under": -115
+       "line": 34.5,
+       "over": -115,
+       "under": -109
       },
       "fanduel": {
        "line": 36.5,
@@ -8100,8 +8174,8 @@
        "under": -118
       }
      },
-     "over": -109,
-     "under": -115
+     "over": -115,
+     "under": -109
     }
    }
   },
@@ -8182,7 +8256,7 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -115,
+       "over": -114,
        "under": -114
       },
       "fanduel": {
@@ -8273,8 +8347,8 @@
      "books": {
       "consensus": {
        "line": 42.5,
-       "over": -115,
-       "under": -115
+       "over": -116,
+       "under": -110
       },
       "draftkings": {
        "line": 43.5,
@@ -8379,8 +8453,8 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -120,
-       "under": -102
+       "over": -125,
+       "under": -105
       },
       "draftkings": {
        "line": 1.5,
@@ -8926,8 +9000,8 @@
       },
       "caesars": {
        "line": 3.5,
-       "over": -148,
-       "under": 113
+       "over": -160,
+       "under": 118
       },
       "betmgm": {
        "line": 3.5,
@@ -9396,13 +9470,13 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": -130,
-       "under": 100
+       "over": -125,
+       "under": -105
       },
       "fanduel": {
        "line": 2.5,
-       "over": -122,
-       "under": -108
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
        "line": 2.5,
@@ -9416,8 +9490,8 @@
       },
       "betmgm": {
        "line": 2.5,
-       "over": -145,
-       "under": 105
+       "over": -115,
+       "under": -115
       }
      },
      "over": -130,
@@ -9428,8 +9502,8 @@
      "books": {
       "consensus": {
        "line": 15.5,
-       "over": -114,
-       "under": -114
+       "over": -113,
+       "under": -115
       },
       "fanduel": {
        "line": 14.5,
@@ -9443,8 +9517,8 @@
       },
       "caesars": {
        "line": 15.5,
-       "over": -118,
-       "under": -112
+       "over": -113,
+       "under": -117
       },
       "betmgm": {
        "line": 17.5,
@@ -9680,7 +9754,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 300
+       "over": 333
       },
       "fanduel": {
        "line": 1,
@@ -9696,7 +9770,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 300
+       "over": 333
       },
       "bet365": {
        "line": 1,
@@ -10694,7 +10768,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 800
+       "over": 575
       },
       "fanduel": {
        "line": 1,
@@ -10702,19 +10776,19 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 800
+       "over": 600
       },
       "caesars": {
        "line": 1,
-       "over": 360
+       "over": 340
       },
       "bet365": {
        "line": 1,
        "over": 575
       }
      },
-     "over": 800,
-     "p_anytime_with_vig": 0.111
+     "over": 600,
+     "p_anytime_with_vig": 0.143
     }
    }
   },
@@ -10760,12 +10834,12 @@
      "books": {
       "consensus": {
        "line": 0.5,
-       "over": 105,
-       "under": -140
+       "over": 100,
+       "under": -135
       }
      },
-     "over": 105,
-     "under": -140
+     "over": 100,
+     "under": -135
     },
     "receiving_yards": {
      "line": 0.5,
@@ -10836,7 +10910,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2200
+       "over": 2500
       },
       "fanduel": {
        "line": 1,
@@ -10844,7 +10918,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 4500
+       "over": 4000
       },
       "caesars": {
        "line": 1,
@@ -10855,8 +10929,8 @@
        "over": 2200
       }
      },
-     "over": 4500,
-     "p_anytime_with_vig": 0.022
+     "over": 4000,
+     "p_anytime_with_vig": 0.024
     }
    }
   },
@@ -11045,7 +11119,7 @@
       "consensus": {
        "line": 2.5,
        "over": -102,
-       "under": -123
+       "under": -125
       },
       "fanduel": {
        "line": 2.5,
@@ -11186,7 +11260,7 @@
      "books": {
       "consensus": {
        "line": 4.5,
-       "over": -101,
+       "over": 100,
        "under": -130
       },
       "draftkings": {
@@ -11219,7 +11293,7 @@
       "consensus": {
        "line": 41.5,
        "over": -115,
-       "under": -109
+       "under": -114
       },
       "draftkings": {
        "line": 42.5,
@@ -11398,11 +11472,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 240
+       "over": 235
       },
       "draftkings": {
        "line": 1,
-       "over": 240
+       "over": 235
       },
       "fanduel": {
        "line": 1,
@@ -11421,8 +11495,8 @@
        "over": 240
       }
      },
-     "over": 240,
-     "p_anytime_with_vig": 0.294
+     "over": 235,
+     "p_anytime_with_vig": 0.299
     },
     "receptions": {
      "line": 2.5,
@@ -11489,12 +11563,12 @@
      "under": -112
     },
     "rushing_yards": {
-     "line": 23.5,
+     "line": 24.5,
      "books": {
       "consensus": {
-       "line": 23.5,
-       "over": -116,
-       "under": -111
+       "line": 24.5,
+       "over": -109,
+       "under": -115
       },
       "fanduel": {
        "line": 22.5,
@@ -11502,14 +11576,14 @@
        "under": -114
       },
       "draftkings": {
-       "line": 23.5,
-       "over": -116,
-       "under": -108
+       "line": 24.5,
+       "over": -109,
+       "under": -115
       },
       "caesars": {
        "line": 23.5,
-       "over": -113,
-       "under": -112
+       "over": -121,
+       "under": -110
       },
       "betmgm": {
        "line": 21.5,
@@ -11517,21 +11591,21 @@
        "under": -111
       }
      },
-     "over": -116,
-     "under": -108
+     "over": -109,
+     "under": -115
     },
     "rushing_receiving_yards": {
-     "line": 45.5,
+     "line": 46.5,
      "books": {
       "consensus": {
        "line": 43,
-       "over": -125,
-       "under": -110
+       "over": -115,
+       "under": -105
       },
       "draftkings": {
-       "line": 45.5,
-       "over": -115,
-       "under": -110
+       "line": 46.5,
+       "over": -110,
+       "under": -116
       },
       "caesars": {
        "line": 43.5,
@@ -11545,8 +11619,8 @@
        "under": -115
       }
      },
-     "over": -115,
-     "under": -110
+     "over": -110,
+     "under": -116
     }
    }
   },
@@ -11742,7 +11816,7 @@
       "consensus": {
        "line": 20.5,
        "over": -114,
-       "under": -114
+       "under": -115
       },
       "draftkings": {
        "line": 20.5,
@@ -11773,8 +11847,8 @@
      "books": {
       "consensus": {
        "line": 65.5,
-       "over": -115,
-       "under": -114
+       "over": -113,
+       "under": -115
       },
       "draftkings": {
        "line": 65.5,
@@ -11805,8 +11879,8 @@
      "books": {
       "consensus": {
        "line": 88,
-       "over": -120,
-       "under": -110
+       "over": -115,
+       "under": -113
       },
       "draftkings": {
        "line": 90.5,
@@ -11841,7 +11915,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1000
+       "over": 1050
       },
       "fanduel": {
        "line": 1,
@@ -11926,8 +12000,8 @@
       },
       "betmgm": {
        "line": 0.5,
-       "over": -105,
-       "under": -125
+       "over": -110,
+       "under": -120
       }
      },
      "over": -113,
@@ -11938,7 +12012,7 @@
      "books": {
       "consensus": {
        "line": 0.5,
-       "over": 180,
+       "over": -245,
        "under": 181
       },
       "draftkings": {
@@ -11970,8 +12044,8 @@
      "books": {
       "consensus": {
        "line": 212.5,
-       "over": -120,
-       "under": -110
+       "over": -114,
+       "under": -112
       },
       "draftkings": {
        "line": 203.5,
@@ -12073,12 +12147,12 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 145,
-       "under": -205
+       "over": 150,
+       "under": -210
       }
      },
-     "over": 145,
-     "under": -205
+     "over": 150,
+     "under": -210
     },
     "receiving_yards": {
      "line": 7.5,
@@ -12150,7 +12224,7 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -120,
+       "over": -125,
        "under": -106
       },
       "fanduel": {
@@ -12210,7 +12284,7 @@
      "under": -107
     },
     "rushing_yards": {
-     "line": 51.5,
+     "line": 52.5,
      "books": {
       "consensus": {
        "line": 54.5,
@@ -12218,9 +12292,9 @@
        "under": -115
       },
       "draftkings": {
-       "line": 51.5,
-       "over": -114,
-       "under": -110
+       "line": 52.5,
+       "over": -110,
+       "under": -114
       },
       "fanduel": {
        "line": 54.5,
@@ -12238,21 +12312,21 @@
        "under": -115
       }
      },
-     "over": -114,
-     "under": -110
+     "over": -110,
+     "under": -114
     },
     "rushing_receiving_yards": {
      "line": 65.5,
      "books": {
       "consensus": {
        "line": 65.5,
-       "over": -120,
-       "under": -114
+       "over": -114,
+       "under": -112
       },
       "draftkings": {
        "line": 65.5,
-       "over": -112,
-       "under": -114
+       "over": -114,
+       "under": -112
       },
       "caesars": {
        "line": 69.5,
@@ -12266,8 +12340,8 @@
        "under": -111
       }
      },
-     "over": -112,
-     "under": -114
+     "over": -114,
+     "under": -112
     }
    }
   },
@@ -12282,11 +12356,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1100
+       "over": 1300
       },
       "draftkings": {
        "line": 1,
-       "over": 1100
+       "over": 1600
       },
       "fanduel": {
        "line": 1,
@@ -12294,7 +12368,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 1000
+       "over": 1200
       },
       "betmgm": {
        "line": 1,
@@ -12305,8 +12379,8 @@
        "over": 850
       }
      },
-     "over": 1100,
-     "p_anytime_with_vig": 0.083
+     "over": 1600,
+     "p_anytime_with_vig": 0.059
     }
    }
   },
@@ -12383,7 +12457,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 800
+       "over": 750
       },
       "draftkings": {
        "line": 1,
@@ -12473,8 +12547,8 @@
      "books": {
       "consensus": {
        "line": 201.5,
-       "over": -114,
-       "under": -114
+       "over": -113,
+       "under": -115
       },
       "draftkings": {
        "line": 202.5,
@@ -12588,12 +12662,12 @@
      "books": {
       "consensus": {
        "line": 10.5,
-       "over": -115,
-       "under": -115
+       "over": -125,
+       "under": -105
       }
      },
-     "over": -115,
-     "under": -115
+     "over": -125,
+     "under": -105
     }
    }
   },
@@ -12639,12 +12713,12 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 100,
-       "under": -135
+       "over": 105,
+       "under": -140
       }
      },
-     "over": 100,
-     "under": -135
+     "over": 105,
+     "under": -140
     },
     "receiving_yards": {
      "line": 10.5,
@@ -12774,8 +12848,8 @@
      "books": {
       "consensus": {
        "line": 61.5,
-       "over": -113,
-       "under": -117
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
        "line": 60.5,
@@ -12930,8 +13004,8 @@
      "books": {
       "consensus": {
        "line": 30.5,
-       "over": -112,
-       "under": -115
+       "over": -105,
+       "under": -120
       },
       "fanduel": {
        "line": 32.5,
@@ -12950,8 +13024,8 @@
       },
       "betmgm": {
        "line": 35.5,
-       "over": -115,
-       "under": -115
+       "over": 110,
+       "under": -150
       }
      },
      "over": -112,
@@ -13102,7 +13176,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 275
+       "over": 280
       },
       "draftkings": {
        "line": 1,
@@ -13280,8 +13354,8 @@
       },
       "draftkings": {
        "line": 4.5,
-       "over": -125,
-       "under": -102
+       "over": -119,
+       "under": -107
       },
       "fanduel": {
        "line": 4.5,
@@ -13299,15 +13373,15 @@
        "under": -120
       }
      },
-     "over": -125,
-     "under": -102
+     "over": -119,
+     "under": -107
     },
     "receiving_yards": {
      "line": 53.5,
      "books": {
       "consensus": {
        "line": 51.5,
-       "over": -115,
+       "over": -121,
        "under": -110
       },
       "draftkings": {
@@ -13382,11 +13456,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 475
+       "over": 500
       }
      },
-     "over": 475,
-     "p_anytime_with_vig": 0.174
+     "over": 500,
+     "p_anytime_with_vig": 0.167
     }
    }
   },
@@ -13455,7 +13529,7 @@
       "consensus": {
        "line": 16.5,
        "over": -115,
-       "under": -114
+       "under": -110
       },
       "draftkings": {
        "line": 16.5,
@@ -13519,7 +13593,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 950
+       "over": 900
       },
       "draftkings": {
        "line": 1,
@@ -13535,7 +13609,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 950
+       "over": 1000
       },
       "bet365": {
        "line": 1,
@@ -13574,7 +13648,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 1300
+       "over": 1050
       }
      },
      "over": 1000,
@@ -13609,7 +13683,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 550
+       "over": 575
       },
       "bet365": {
        "line": 1,
@@ -13696,7 +13770,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 310
+       "over": 280
       },
       "draftkings": {
        "line": 1,
@@ -13856,13 +13930,13 @@
      "books": {
       "consensus": {
        "line": 4.5,
-       "over": -138,
-       "under": 105
+       "over": -135,
+       "under": 101
       },
       "draftkings": {
        "line": 4.5,
-       "over": -141,
-       "under": 110
+       "over": -129,
+       "under": 101
       },
       "fanduel": {
        "line": 4.5,
@@ -13875,21 +13949,21 @@
        "under": 105
       }
      },
-     "over": -141,
-     "under": 110
+     "over": -129,
+     "under": 101
     },
     "receiving_yards": {
-     "line": 55.5,
+     "line": 54.5,
      "books": {
       "consensus": {
        "line": 55.5,
-       "over": -111,
+       "over": -114,
        "under": -115
       },
       "draftkings": {
-       "line": 55.5,
-       "over": -111,
-       "under": -113
+       "line": 54.5,
+       "over": -114,
+       "under": -110
       },
       "fanduel": {
        "line": 56.5,
@@ -13902,8 +13976,8 @@
        "under": -113
       }
      },
-     "over": -111,
-     "under": -113
+     "over": -114,
+     "under": -110
     }
    }
   },
@@ -13948,9 +14022,9 @@
      "line": 2.5,
      "books": {
       "consensus": {
-       "line": 1.5,
-       "over": -185,
-       "under": 135
+       "line": 2.5,
+       "over": 130,
+       "under": -170
       },
       "fanduel": {
        "line": 1.5,
@@ -13964,8 +14038,8 @@
       },
       "caesars": {
        "line": 2.5,
-       "over": 137,
-       "under": -182
+       "over": 130,
+       "under": -170
       },
       "betmgm": {
        "line": 1.5,
@@ -13981,8 +14055,8 @@
      "books": {
       "consensus": {
        "line": 18.5,
-       "over": -120,
-       "under": -111
+       "over": -112,
+       "under": -118
       },
       "fanduel": {
        "line": 18.5,
@@ -14021,7 +14095,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 425
+       "over": 500
       },
       "draftkings": {
        "line": 1,
@@ -14111,7 +14185,7 @@
      "books": {
       "consensus": {
        "line": 208.5,
-       "over": -115,
+       "over": -114,
        "under": -114
       },
       "draftkings": {
@@ -14214,24 +14288,24 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -185,
-       "under": 135
+       "over": -170,
+       "under": 125
       }
      },
-     "over": -185,
-     "under": 135
+     "over": -170,
+     "under": 125
     },
     "receiving_yards": {
      "line": 15.5,
      "books": {
       "consensus": {
        "line": 15.5,
-       "over": -140,
-       "under": 105
+       "over": -135,
+       "under": 100
       }
      },
-     "over": -140,
-     "under": 105
+     "over": -135,
+     "under": 100
     }
    }
   },
@@ -14265,7 +14339,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 370
+       "over": 360
       },
       "bet365": {
        "line": 1,
@@ -14347,7 +14421,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 900
+       "over": 1000
       },
       "fanduel": {
        "line": 1,
@@ -14363,7 +14437,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 900
+       "over": 1000
       },
       "bet365": {
        "line": 1,
@@ -14386,7 +14460,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 450
+       "over": 425
       },
       "draftkings": {
        "line": 1,
@@ -14445,7 +14519,7 @@
       "consensus": {
        "line": 1.5,
        "over": -109,
-       "under": -120
+       "under": -121
       },
       "draftkings": {
        "line": 1.5,
@@ -14548,7 +14622,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 900
+       "over": 800
       },
       "draftkings": {
        "line": 1,
@@ -14564,7 +14638,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 900
+       "over": 800
       }
      },
      "over": 900,
@@ -14583,7 +14657,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 210
+       "over": 200
       },
       "draftkings": {
        "line": 1,
@@ -14595,7 +14669,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 210
+       "over": 200
       },
       "betmgm": {
        "line": 1,
@@ -14614,17 +14688,27 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 175,
-       "under": -255
+       "over": 178,
+       "under": -245
       },
       "fanduel": {
        "line": 1.5,
        "over": 178,
        "under": -245
+      },
+      "draftkings": {
+       "line": 1.5,
+       "over": 182,
+       "under": -236
+      },
+      "caesars": {
+       "line": 1.5,
+       "over": 179,
+       "under": -245
       }
      },
-     "over": 178,
-     "under": -245
+     "over": 182,
+     "under": -236
     },
     "receiving_yards": {
      "line": 5.5,
@@ -14639,6 +14723,11 @@
        "over": -120,
        "under": -108
       },
+      "draftkings": {
+       "line": 5.5,
+       "over": -120,
+       "under": -105
+      },
       "caesars": {
        "line": 5.5,
        "over": -115,
@@ -14646,7 +14735,7 @@
       }
      },
      "over": -120,
-     "under": -108
+     "under": -105
     },
     "rushing_yards": {
      "line": 31.5,
@@ -14676,21 +14765,21 @@
      "under": -112
     },
     "rushing_receiving_yards": {
-     "line": 41.5,
+     "line": 40.5,
      "books": {
       "consensus": {
-       "line": 41,
-       "over": 100,
+       "line": 40.5,
+       "over": -117,
        "under": -130
       },
       "caesars": {
-       "line": 41.5,
-       "over": -112,
-       "under": -120
+       "line": 40.5,
+       "over": -117,
+       "under": -114
       }
      },
-     "over": -112,
-     "under": -120
+     "over": -117,
+     "under": -114
     }
    }
   },
@@ -14732,7 +14821,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 425
+       "over": 450
       },
       "draftkings": {
        "line": 1,
@@ -14768,8 +14857,8 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": -139,
-       "under": 109
+       "over": -134,
+       "under": 105
       },
       "fanduel": {
        "line": 1.5,
@@ -14787,8 +14876,8 @@
        "under": -110
       }
      },
-     "over": -139,
-     "under": 109
+     "over": -134,
+     "under": 105
     },
     "receiving_yards": {
      "line": 14.5,
@@ -14835,7 +14924,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 575
+       "over": 600
       },
       "draftkings": {
        "line": 1,
@@ -14862,7 +14951,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": -150
+       "over": -145
       },
       "draftkings": {
        "line": 1,
@@ -14878,7 +14967,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": -160
+       "over": -140
       },
       "bet365": {
        "line": 1,
@@ -14889,18 +14978,17 @@
      "p_anytime_with_vig": 0.583
     },
     "receptions": {
-     "line": 1.5,
+     "line": 2.5,
      "books": {
       "consensus": {
-       "line": 1.5,
-       "over": 132,
-       "under": 145
+       "line": 2.5,
+       "over": 144,
+       "under": -185
       },
       "draftkings": {
        "line": 2.5,
-       "over": 125,
-       "off": true,
-       "under": -160
+       "over": 144,
+       "under": -185
       },
       "fanduel": {
        "line": 1.5,
@@ -14909,8 +14997,8 @@
       },
       "caesars": {
        "line": 2.5,
-       "over": 132,
-       "under": -173
+       "over": 145,
+       "under": -193
       },
       "betmgm": {
        "line": 1.5,
@@ -14918,22 +15006,21 @@
        "under": 145
       }
      },
-     "over": -210,
-     "under": 154
+     "over": 144,
+     "under": -185
     },
     "receiving_yards": {
-     "line": 13.5,
+     "line": 14.5,
      "books": {
       "consensus": {
        "line": 13.5,
-       "over": -113,
-       "under": -115
+       "over": -107,
+       "under": -117
       },
       "draftkings": {
-       "line": 13.5,
-       "over": -115,
-       "off": true,
-       "under": -109
+       "line": 14.5,
+       "over": -107,
+       "under": -117
       },
       "fanduel": {
        "line": 13.5,
@@ -14951,16 +15038,16 @@
        "under": -115
       }
      },
-     "over": -114,
-     "under": -114
+     "over": -107,
+     "under": -117
     },
     "rushing_yards": {
      "line": 63.5,
      "books": {
       "consensus": {
        "line": 63.5,
-       "over": -114,
-       "under": -111
+       "over": -111,
+       "under": -118
       },
       "draftkings": {
        "line": 63.5,
@@ -14987,18 +15074,17 @@
      "under": -111
     },
     "rushing_receiving_yards": {
-     "line": 79.5,
+     "line": 82.5,
      "books": {
       "consensus": {
-       "line": 80,
-       "over": -110,
-       "under": -120
+       "line": 80.5,
+       "over": -115,
+       "under": -115
       },
       "draftkings": {
-       "line": 87.5,
-       "over": -113,
-       "off": true,
-       "under": -113
+       "line": 82.5,
+       "over": -110,
+       "under": -116
       },
       "caesars": {
        "line": 89.5,
@@ -15012,8 +15098,8 @@
        "under": -115
       }
      },
-     "over": -115,
-     "under": -115
+     "over": -110,
+     "under": -116
     }
    }
   },
@@ -15028,7 +15114,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2500
+       "over": 2100
       },
       "fanduel": {
        "line": 1,
@@ -15063,7 +15149,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 125
+       "over": 120
       },
       "draftkings": {
        "line": 1,
@@ -15130,12 +15216,12 @@
      "books": {
       "consensus": {
        "line": 75.5,
-       "over": -115,
-       "under": -115
+       "over": -120,
+       "under": -110
       }
      },
-     "over": -115,
-     "under": -115
+     "over": -120,
+     "under": -110
     }
    }
   },
@@ -15209,7 +15295,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 900
+       "over": 1000
       },
       "fanduel": {
        "line": 1,
@@ -15225,7 +15311,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 775
+       "over": 1050
       },
       "bet365": {
        "line": 1,
@@ -15311,8 +15397,8 @@
      "books": {
       "consensus": {
        "line": 58.5,
-       "over": -115,
-       "under": -110
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
        "line": 58.5,
@@ -15387,8 +15473,8 @@
       },
       "draftkings": {
        "line": 3.5,
-       "over": 105,
-       "under": -133
+       "over": 109,
+       "under": -139
       },
       "fanduel": {
        "line": 3.5,
@@ -15401,8 +15487,8 @@
        "under": -155
       }
      },
-     "over": 105,
-     "under": -133
+     "over": 109,
+     "under": -139
     },
     "receiving_yards": {
      "line": 44.5,
@@ -15488,7 +15574,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2000
+       "over": 1800
       },
       "fanduel": {
        "line": 1,
@@ -15585,9 +15671,9 @@
      "line": 20.5,
      "books": {
       "consensus": {
-       "line": 19.5,
-       "over": -115,
-       "under": -114
+       "line": 20.5,
+       "over": -114,
+       "under": -115
       },
       "fanduel": {
        "line": 19.5,
@@ -15600,9 +15686,9 @@
        "under": -110
       },
       "caesars": {
-       "line": 19.5,
-       "over": -118,
-       "under": -112
+       "line": 20.5,
+       "over": -110,
+       "under": -118
       },
       "betmgm": {
        "line": 20.5,
@@ -15626,7 +15712,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1000
+       "over": 900
       },
       "fanduel": {
        "line": 1,
@@ -15657,12 +15743,12 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 275,
-       "under": -450
+       "over": 300,
+       "under": -500
       }
      },
-     "over": 275,
-     "under": -450
+     "over": 300,
+     "under": -500
     },
     "receiving_yards": {
      "line": 4.5,
@@ -15932,7 +16018,7 @@
      "books": {
       "consensus": {
        "line": 10.5,
-       "over": -115,
+       "over": -114,
        "under": -114
       },
       "fanduel": {
@@ -15965,7 +16051,7 @@
       "consensus": {
        "line": 8.5,
        "over": 100,
-       "under": -117
+       "under": -130
       },
       "fanduel": {
        "line": 8.5,
@@ -15996,7 +16082,7 @@
      "books": {
       "consensus": {
        "line": 22,
-       "over": -109,
+       "over": -130,
        "under": -117
       },
       "draftkings": {
@@ -16176,7 +16262,7 @@
      "books": {
       "consensus": {
        "line": 3.5,
-       "over": 134,
+       "over": 135,
        "under": -174
       },
       "fanduel": {
@@ -16438,7 +16524,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": -190
+       "over": -193
       },
       "draftkings": {
        "line": 1,
@@ -16469,7 +16555,7 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": -154,
+       "over": -150,
        "under": 122
       },
       "draftkings": {
@@ -16500,7 +16586,7 @@
      "line": 16.5,
      "books": {
       "consensus": {
-       "line": 17.5,
+       "line": 16.5,
        "over": -118,
        "under": -110
       },
@@ -16515,9 +16601,9 @@
        "under": -114
       },
       "caesars": {
-       "line": 17.5,
-       "over": -110,
-       "under": -118
+       "line": 16.5,
+       "over": -118,
+       "under": -110
       },
       "betmgm": {
        "line": 17.5,
@@ -16713,8 +16799,8 @@
      "books": {
       "consensus": {
        "line": 63.5,
-       "over": -114,
-       "under": -115
+       "over": -115,
+       "under": -114
       },
       "draftkings": {
        "line": 65.5,
@@ -16777,7 +16863,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 900
+       "over": 800
       },
       "bet365": {
        "line": 1,
@@ -16916,9 +17002,9 @@
      "line": 219.5,
      "books": {
       "consensus": {
-       "line": 219.5,
+       "line": 220.5,
        "over": -114,
-       "under": -114
+       "under": -115
       },
       "draftkings": {
        "line": 219.5,
@@ -17198,7 +17284,7 @@
       "consensus": {
        "line": 1.5,
        "over": -187,
-       "under": 146
+       "under": 145
       },
       "draftkings": {
        "line": 1.5,
@@ -17211,9 +17297,9 @@
        "under": 152
       },
       "caesars": {
-       "line": 1.5,
-       "over": -205,
-       "under": 152
+       "line": 2.5,
+       "over": 143,
+       "under": -190
       },
       "betmgm": {
        "line": 1.5,
@@ -17332,7 +17418,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 450
+       "over": 500
       },
       "draftkings": {
        "line": 1,
@@ -17455,7 +17541,7 @@
       "consensus": {
        "line": 11.5,
        "over": -114,
-       "under": -113
+       "under": -110
       },
       "fanduel": {
        "line": 11.5,
@@ -17529,7 +17615,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": -175
+       "over": -200
       },
       "draftkings": {
        "line": 1,
@@ -17561,7 +17647,7 @@
       "consensus": {
        "line": 1.5,
        "over": 175,
-       "under": -235
+       "under": -240
       },
       "fanduel": {
        "line": 1.5,
@@ -17623,9 +17709,9 @@
      "line": 78.5,
      "books": {
       "consensus": {
-       "line": 80.5,
-       "over": -110,
-       "under": -120
+       "line": 78.5,
+       "over": -114,
+       "under": -115
       },
       "draftkings": {
        "line": 78.5,
@@ -17796,12 +17882,12 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 130,
-       "under": -180
+       "over": 135,
+       "under": -185
       }
      },
-     "over": 130,
-     "under": -180
+     "over": 135,
+     "under": -185
     },
     "receiving_yards": {
      "line": 9,
@@ -17873,12 +17959,12 @@
      "books": {
       "consensus": {
        "line": 14.5,
-       "over": -105,
-       "under": -105
+       "over": -120,
+       "under": -125
       }
      },
-     "over": -105,
-     "under": -105
+     "over": -120,
+     "under": -125
     },
     "rushing_receiving_yards": {
      "line": 9.5,
@@ -18003,9 +18089,9 @@
      "line": 1.5,
      "books": {
       "consensus": {
-       "line": 2.5,
+       "line": 1.5,
        "over": 155,
-       "under": -210
+       "under": 150
       },
       "draftkings": {
        "line": 1.5,
@@ -18018,9 +18104,9 @@
        "under": -220
       },
       "caesars": {
-       "line": 2.5,
-       "over": 163,
-       "under": -218
+       "line": 1.5,
+       "over": -200,
+       "under": 150
       },
       "betmgm": {
        "line": 2.5,
@@ -18032,17 +18118,17 @@
      "under": 172
     },
     "passing_yards": {
-     "line": 268.5,
+     "line": 267.5,
      "books": {
       "consensus": {
        "line": 267.5,
-       "over": -114,
-       "under": -115
+       "over": -115,
+       "under": -114
       },
       "draftkings": {
-       "line": 268.5,
-       "over": -111,
-       "under": -113
+       "line": 267.5,
+       "over": -113,
+       "under": -111
       },
       "fanduel": {
        "line": 267.5,
@@ -18060,8 +18146,8 @@
        "under": -115
       }
      },
-     "over": -111,
-     "under": -113
+     "over": -113,
+     "under": -111
     },
     "rushing_yards": {
      "line": 6.5,
@@ -18082,7 +18168,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 6.5,
+       "line": 7.5,
        "over": -125,
        "under": -105
       }
@@ -18307,16 +18393,16 @@
      "under": -150
     },
     "receiving_yards": {
-     "line": 10.5,
+     "line": 10,
      "books": {
       "consensus": {
-       "line": 10.5,
-       "over": -110,
-       "under": -120
+       "line": 10,
+       "over": -115,
+       "under": -118
       }
      },
-     "over": -110,
-     "under": -120
+     "over": -115,
+     "under": -118
     }
    }
   },
@@ -18331,7 +18417,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 230
+       "over": 220
       },
       "draftkings": {
        "line": 1,
@@ -18394,8 +18480,8 @@
      "books": {
       "consensus": {
        "line": 41.5,
-       "over": -113,
-       "under": -115
+       "over": -115,
+       "under": -111
       },
       "fanduel": {
        "line": 40.5,
@@ -18537,11 +18623,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2500
+       "over": 2200
       }
      },
-     "over": 2500,
-     "p_anytime_with_vig": 0.038
+     "over": 2200,
+     "p_anytime_with_vig": 0.043
     }
    }
   },
@@ -18623,7 +18709,7 @@
       "consensus": {
        "line": 7.5,
        "over": 111,
-       "under": -142
+       "under": -145
       },
       "draftkings": {
        "line": 7.5,
@@ -18792,7 +18878,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 305
+       "over": 290
       },
       "betmgm": {
        "line": 1,
@@ -18811,7 +18897,7 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": 125,
+       "over": 123,
        "under": -162
       },
       "fanduel": {
@@ -19133,9 +19219,9 @@
      "line": 60.5,
      "books": {
       "consensus": {
-       "line": 59,
-       "over": -110,
-       "under": -115
+       "line": 58.5,
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
        "line": 60.5,
@@ -19166,8 +19252,8 @@
      "books": {
       "consensus": {
        "line": 85.5,
-       "over": -113,
-       "under": -115
+       "over": -120,
+       "under": -110
       },
       "draftkings": {
        "line": 88.5,
@@ -19229,7 +19315,7 @@
      "p_anytime_with_vig": 0.213
     },
     "receptions": {
-     "line": 2.5,
+     "line": 3.5,
      "books": {
       "consensus": {
        "line": 3.5,
@@ -19242,14 +19328,14 @@
        "under": -166
       },
       "draftkings": {
-       "line": 2.5,
-       "over": -176,
-       "under": 137
+       "line": 3.5,
+       "over": 137,
+       "under": -176
       },
       "caesars": {
-       "line": 3.5,
-       "over": 127,
-       "under": -170
+       "line": 2.5,
+       "over": -179,
+       "under": 136
       },
       "betmgm": {
        "line": 2.5,
@@ -19257,16 +19343,16 @@
        "under": 145
       }
      },
-     "over": -176,
-     "under": 137
+     "over": 137,
+     "under": -176
     },
     "receiving_yards": {
      "line": 27.5,
      "books": {
       "consensus": {
        "line": 28.5,
-       "over": -112,
-       "under": -115
+       "over": -115,
+       "under": -112
       },
       "fanduel": {
        "line": 28.5,
@@ -19321,7 +19407,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 2200
+       "over": 2500
       },
       "bet365": {
        "line": 1,
@@ -19708,7 +19794,7 @@
       "consensus": {
        "line": 232.5,
        "over": -114,
-       "under": -115
+       "under": -114
       },
       "draftkings": {
        "line": 232.5,
@@ -19740,7 +19826,7 @@
       "consensus": {
        "line": 15.5,
        "over": -114,
-       "under": -113
+       "under": -110
       },
       "draftkings": {
        "line": 16.5,
@@ -19981,7 +20067,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 110
+       "over": 120
       },
       "draftkings": {
        "line": 1,
@@ -20040,17 +20126,17 @@
      "under": -172
     },
     "receiving_yards": {
-     "line": 15.5,
+     "line": 14.5,
      "books": {
       "consensus": {
        "line": 13.5,
-       "over": -114,
+       "over": -118,
        "under": -111
       },
       "draftkings": {
-       "line": 15.5,
-       "over": -108,
-       "under": -116
+       "line": 14.5,
+       "over": -118,
+       "under": -107
       },
       "fanduel": {
        "line": 13.5,
@@ -20058,9 +20144,9 @@
        "under": -114
       },
       "caesars": {
-       "line": 13.5,
-       "over": -118,
-       "under": -110
+       "line": 14.5,
+       "over": -110,
+       "under": -118
       },
       "betmgm": {
        "line": 12.5,
@@ -20068,8 +20154,8 @@
        "under": -111
       }
      },
-     "over": -108,
-     "under": -116
+     "over": -118,
+     "under": -107
     },
     "rushing_yards": {
      "line": 56.5,
@@ -20203,7 +20289,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 450
+       "over": 475
       }
      },
      "over": 360,
@@ -20399,7 +20485,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": -135
+       "over": -130
       }
      },
      "over": -150,
@@ -20475,7 +20561,7 @@
       "consensus": {
        "line": 76.5,
        "over": -114,
-       "under": -114
+       "under": -115
       },
       "draftkings": {
        "line": 73.5,
@@ -20632,7 +20718,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 900
+       "over": 850
       },
       "fanduel": {
        "line": 1,
@@ -20652,7 +20738,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 900
+       "over": 950
       }
      },
      "over": 950,
@@ -20691,7 +20777,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 625
+       "over": 650
       }
      },
      "over": 650,
@@ -20776,7 +20862,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 900
+       "over": 800
       },
       "fanduel": {
        "line": 1,
@@ -20792,11 +20878,11 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 1200
+       "over": 800
       },
       "bet365": {
        "line": 1,
-       "over": 900
+       "over": 950
       }
      },
      "over": 900,
@@ -20919,7 +21005,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 1900
+       "over": 1700
       },
       "bet365": {
        "line": 1,
@@ -21106,7 +21192,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 575
+       "over": 550
       }
      },
      "over": 550,
@@ -21205,7 +21291,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 2000
+       "over": 1800
       }
      },
      "over": 1400,
@@ -21244,7 +21330,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 210
+       "over": 205
       }
      },
      "over": 195,
@@ -21362,7 +21448,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 325
+       "over": 340
       },
       "draftkings": {
        "line": 1,
@@ -21382,7 +21468,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 325
+       "over": 350
       }
      },
      "over": 370,
@@ -21487,7 +21573,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 125
+       "over": 120
       }
      },
      "over": 120,
@@ -21498,8 +21584,8 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": -124,
-       "under": -103
+       "over": -120,
+       "under": -110
       },
       "fanduel": {
        "line": 2.5,
@@ -21562,8 +21648,8 @@
      "books": {
       "consensus": {
        "line": 43.5,
-       "over": -115,
-       "under": -114
+       "over": -110,
+       "under": -120
       },
       "fanduel": {
        "line": 43.5,
@@ -21594,7 +21680,7 @@
      "books": {
       "consensus": {
        "line": 64.5,
-       "over": -111,
+       "over": -113,
        "under": -118
       },
       "draftkings": {
@@ -21650,7 +21736,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 2000
+       "over": 1800
       }
      },
      "over": 1400,
@@ -21808,7 +21894,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 390
+       "over": 375
       }
      },
      "over": 400,
@@ -21851,7 +21937,7 @@
      "books": {
       "consensus": {
        "line": 25.5,
-       "over": -114,
+       "over": -115,
        "under": -114
       },
       "fanduel": {
@@ -21907,7 +21993,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 1300
+       "over": 1250
       }
      },
      "over": 1100,
@@ -21969,12 +22055,12 @@
      "books": {
       "consensus": {
        "line": 10.5,
-       "over": -140,
-       "under": 105
+       "over": -115,
+       "under": -115
       }
      },
-     "over": -140,
-     "under": 105
+     "over": -115,
+     "under": -115
     }
    }
   },
@@ -22009,7 +22095,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 240
+       "over": 235
       }
      },
      "over": 235,
@@ -22112,7 +22198,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 135
+       "over": 130
       }
      },
      "over": 120,
@@ -22124,7 +22210,7 @@
       "consensus": {
        "line": 1.5,
        "over": -151,
-       "under": 115
+       "under": 118
       },
       "fanduel": {
        "line": 1.5,
@@ -22156,7 +22242,7 @@
       "consensus": {
        "line": 10.5,
        "over": -114,
-       "under": -115
+       "under": -114
       },
       "fanduel": {
        "line": 10.5,
@@ -22295,7 +22381,7 @@
       },
       "bet365": {
        "line": 1,
-       "over": 235
+       "over": 245
       }
      },
      "over": 225,
@@ -22481,7 +22567,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 250
+       "over": 275
       },
       "bet365": {
        "line": 1,
@@ -22523,8 +22609,8 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -105,
-       "under": -124
+       "over": -106,
+       "under": -120
       },
       "draftkings": {
        "line": 1.5,
@@ -22543,8 +22629,8 @@
       },
       "betmgm": {
        "line": 1.5,
-       "over": -105,
-       "under": -125
+       "over": -110,
+       "under": -120
       }
      },
      "over": -110,
@@ -22554,7 +22640,7 @@
      "line": 232.5,
      "books": {
       "consensus": {
-       "line": 234.5,
+       "line": 236.5,
        "over": -114,
        "under": -115
       },
@@ -22574,7 +22660,7 @@
        "under": -114
       },
       "betmgm": {
-       "line": 234.5,
+       "line": 237.5,
        "over": -115,
        "under": -115
       }
@@ -22635,7 +22721,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 700
+       "over": 650
       },
       "caesars": {
        "line": 1,
@@ -22714,11 +22800,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2800
+       "over": 2500
       },
       "fanduel": {
        "line": 1,
-       "over": 1200
+       "over": 1300
       },
       "draftkings": {
        "line": 1,
@@ -22730,7 +22816,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 2800
+       "over": 3000
       },
       "bet365": {
        "line": 1,
@@ -22827,7 +22913,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 500
+       "over": 550
       },
       "caesars": {
        "line": 1,
@@ -22835,7 +22921,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 380
+       "over": 375
       },
       "bet365": {
        "line": 1,
@@ -22851,7 +22937,7 @@
       "consensus": {
        "line": 3.5,
        "over": -105,
-       "under": -124
+       "under": -125
       },
       "draftkings": {
        "line": 3.5,
@@ -22901,9 +22987,9 @@
        "under": -113
       },
       "betmgm": {
-       "line": 31.5,
-       "over": -115,
-       "under": -115
+       "line": 32.5,
+       "over": -111,
+       "under": -118
       }
      },
      "over": -110,
@@ -22950,7 +23036,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 160
+       "over": 165
       },
       "draftkings": {
        "line": 1,
@@ -23001,8 +23087,8 @@
       },
       "betmgm": {
        "line": 1.5,
-       "over": -155,
-       "under": 115
+       "over": -150,
+       "under": 110
       }
      },
      "over": -140,
@@ -23013,8 +23099,8 @@
      "books": {
       "consensus": {
        "line": 9.5,
-       "over": -111,
-       "under": -120
+       "over": -114,
+       "under": -115
       },
       "fanduel": {
        "line": 9.5,
@@ -23032,9 +23118,9 @@
        "under": -115
       },
       "betmgm": {
-       "line": 9.5,
-       "over": -111,
-       "under": -120
+       "line": 8.5,
+       "over": -125,
+       "under": -105
       }
      },
      "over": -114,
@@ -23045,8 +23131,8 @@
      "books": {
       "consensus": {
        "line": 58.5,
-       "over": -115,
-       "under": -113
+       "over": -111,
+       "under": -118
       },
       "draftkings": {
        "line": 58.5,
@@ -23064,9 +23150,9 @@
        "under": -113
       },
       "betmgm": {
-       "line": 56.5,
-       "over": -115,
-       "under": -115
+       "line": 57.5,
+       "over": -111,
+       "under": -118
       }
      },
      "over": -113,
@@ -23147,7 +23233,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 650
+       "over": 700
       },
       "caesars": {
        "line": 1,
@@ -23193,7 +23279,7 @@
       "consensus": {
        "line": 0.5,
        "over": -182,
-       "under": 133
+       "under": 136
       },
       "draftkings": {
        "line": 0.5,
@@ -23202,8 +23288,8 @@
       },
       "fanduel": {
        "line": 0.5,
-       "over": -188,
-       "under": 140
+       "over": -182,
+       "under": 136
       },
       "caesars": {
        "line": 0.5,
@@ -23212,8 +23298,8 @@
       },
       "betmgm": {
        "line": 0.5,
-       "over": -160,
-       "under": 120
+       "over": -165,
+       "under": 125
       }
      },
      "over": -170,
@@ -23224,8 +23310,8 @@
      "books": {
       "consensus": {
        "line": 178.5,
-       "over": -115,
-       "under": -112
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
        "line": 177.5,
@@ -23255,9 +23341,9 @@
      "line": 19.5,
      "books": {
       "consensus": {
-       "line": 19.5,
-       "over": -114,
-       "under": -115
+       "line": 19,
+       "over": -110,
+       "under": -118
       },
       "draftkings": {
        "line": 19.5,
@@ -23265,7 +23351,7 @@
        "under": -108
       },
       "fanduel": {
-       "line": 19.5,
+       "line": 18.5,
        "over": -114,
        "under": -114
       },
@@ -23339,11 +23425,11 @@
      "books": {
       "consensus": {
        "line": 9.5,
-       "over": -118,
+       "over": -107,
        "under": -107
       }
      },
-     "over": -118,
+     "over": -107,
      "under": -107
     }
    }
@@ -23367,7 +23453,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 195
+       "over": 200
       },
       "caesars": {
        "line": 1,
@@ -23410,36 +23496,36 @@
      "under": -118
     },
     "rushing_yards": {
-     "line": 35.5,
+     "line": 36.5,
      "books": {
       "consensus": {
-       "line": 35.5,
-       "over": -114,
-       "under": -115
+       "line": 36.5,
+       "over": -111,
+       "under": -117
       },
       "draftkings": {
-       "line": 35.5,
-       "over": -109,
-       "under": -115
+       "line": 36.5,
+       "over": -113,
+       "under": -111
       },
       "fanduel": {
-       "line": 34.5,
+       "line": 36.5,
        "over": -114,
        "under": -114
       },
       "caesars": {
-       "line": 35.5,
+       "line": 36.5,
        "over": -112,
        "under": -117
       },
       "betmgm": {
-       "line": 33.5,
-       "over": -120,
-       "under": -110
+       "line": 35.5,
+       "over": -111,
+       "under": -120
       }
      },
-     "over": -109,
-     "under": -115
+     "over": -113,
+     "under": -111
     },
     "rushing_receiving_yards": {
      "line": 38.5,
@@ -23466,7 +23552,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 3000
+       "over": 2800
       },
       "fanduel": {
        "line": 1,
@@ -23505,7 +23591,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 350
+       "over": 330
       },
       "draftkings": {
        "line": 1,
@@ -23521,7 +23607,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 333
+       "over": 320
       },
       "bet365": {
        "line": 1,
@@ -23556,8 +23642,8 @@
       },
       "betmgm": {
        "line": 3.5,
-       "over": -150,
-       "under": 110
+       "over": -165,
+       "under": 125
       }
      },
      "over": 111,
@@ -23569,7 +23655,7 @@
       "consensus": {
        "line": 35.5,
        "over": -114,
-       "under": -114
+       "under": -115
       },
       "draftkings": {
        "line": 35.5,
@@ -23587,7 +23673,7 @@
        "under": -113
       },
       "betmgm": {
-       "line": 35.5,
+       "line": 36.5,
        "over": -115,
        "under": -115
       }
@@ -23616,7 +23702,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 490
+       "over": 500
       },
       "caesars": {
        "line": 1,
@@ -23639,7 +23725,7 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": 109,
+       "over": 105,
        "under": -140
       },
       "draftkings": {
@@ -23659,8 +23745,8 @@
       },
       "betmgm": {
        "line": 2.5,
-       "over": 105,
-       "under": -140
+       "over": 100,
+       "under": -135
       }
      },
      "over": 105,
@@ -23685,12 +23771,12 @@
        "under": -114
       },
       "caesars": {
-       "line": 24.5,
+       "line": 25.5,
        "over": -114,
        "under": -115
       },
       "betmgm": {
-       "line": 26.5,
+       "line": 27.5,
        "over": -115,
        "under": -115
       }
@@ -23772,7 +23858,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 240
+       "over": 230
       },
       "bet365": {
        "line": 1,
@@ -23787,7 +23873,7 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": -155,
+       "over": -161,
        "under": 126
       },
       "draftkings": {
@@ -23820,8 +23906,8 @@
      "books": {
       "consensus": {
        "line": 36.5,
-       "over": -114,
-       "under": -112
+       "over": -112,
+       "under": -114
       },
       "draftkings": {
        "line": 38.5,
@@ -23890,7 +23976,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 3000
+       "over": 3300
       },
       "bet365": {
        "line": 1,
@@ -23917,7 +24003,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 1200
+       "over": 1300
       },
       "draftkings": {
        "line": 1,
@@ -23952,7 +24038,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 450
+       "over": 470
       },
       "draftkings": {
        "line": 1,
@@ -23960,7 +24046,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 460
+       "over": 470
       },
       "caesars": {
        "line": 1,
@@ -23968,7 +24054,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 380
+       "over": 390
       },
       "bet365": {
        "line": 1,
@@ -23983,8 +24069,8 @@
      "books": {
       "consensus": {
        "line": 2.5,
-       "over": -164,
-       "under": 129
+       "over": -160,
+       "under": 125
       },
       "draftkings": {
        "line": 2.5,
@@ -24003,8 +24089,8 @@
       },
       "betmgm": {
        "line": 2.5,
-       "over": -185,
-       "under": 135
+       "over": -160,
+       "under": 120
       }
      },
      "over": -165,
@@ -24034,9 +24120,9 @@
        "under": -117
       },
       "betmgm": {
-       "line": 31.5,
-       "over": -120,
-       "under": -111
+       "line": 30.5,
+       "over": -115,
+       "under": -115
       }
      },
      "over": -111,
@@ -24136,7 +24222,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 750
+       "over": 725
       },
       "bet365": {
        "line": 1,
@@ -24214,7 +24300,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 250
+       "over": 240
       },
       "bet365": {
        "line": 1,
@@ -24230,7 +24316,7 @@
       "consensus": {
        "line": 3.5,
        "over": 100,
-       "under": -135
+       "under": -130
       },
       "draftkings": {
        "line": 3.5,
@@ -24250,7 +24336,7 @@
       "betmgm": {
        "line": 3.5,
        "over": -105,
-       "under": -130
+       "under": -125
       }
      },
      "over": 108,
@@ -24393,8 +24479,8 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -162,
-       "under": 120
+       "over": -165,
+       "under": 124
       },
       "fanduel": {
        "line": 1.5,
@@ -24413,8 +24499,8 @@
       },
       "betmgm": {
        "line": 1.5,
-       "over": -155,
-       "under": 115
+       "over": -160,
+       "under": 120
       }
      },
      "over": -154,
@@ -24453,17 +24539,17 @@
      "under": -117
     },
     "rushing_yards": {
-     "line": 49.5,
+     "line": 47.5,
      "books": {
       "consensus": {
-       "line": 49.5,
-       "over": -110,
+       "line": 48.5,
+       "over": -111,
        "under": -115
       },
       "draftkings": {
-       "line": 49.5,
-       "over": -110,
-       "under": -114
+       "line": 47.5,
+       "over": -113,
+       "under": -111
       },
       "fanduel": {
        "line": 48.5,
@@ -24471,31 +24557,31 @@
        "under": -114
       },
       "caesars": {
-       "line": 49.5,
-       "over": -107,
-       "under": -125
+       "line": 48.5,
+       "over": -111,
+       "under": -120
       },
       "betmgm": {
-       "line": 50.5,
-       "over": -115,
-       "under": -115
+       "line": 46.5,
+       "over": -120,
+       "under": -111
       }
      },
-     "over": -110,
-     "under": -114
+     "over": -113,
+     "under": -111
     },
     "rushing_receiving_yards": {
-     "line": 64.5,
+     "line": 62.5,
      "books": {
       "consensus": {
-       "line": 65.5,
-       "over": -113,
-       "under": -115
+       "line": 61.5,
+       "over": -120,
+       "under": -110
       },
       "draftkings": {
-       "line": 64.5,
-       "over": -113,
-       "under": -113
+       "line": 62.5,
+       "over": -115,
+       "under": -110
       },
       "caesars": {
        "line": 62.5,
@@ -24504,13 +24590,13 @@
        "under": -115
       },
       "betmgm": {
-       "line": 65.5,
-       "over": -115,
-       "under": -115
+       "line": 61.5,
+       "over": -120,
+       "under": -111
       }
      },
-     "over": -113,
-     "under": -113
+     "over": -115,
+     "under": -110
     }
    }
   },
@@ -24529,7 +24615,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 1900
+       "over": 1800
       },
       "draftkings": {
        "line": 1,
@@ -24618,7 +24704,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 1900
+       "over": 1800
       },
       "draftkings": {
        "line": 1,
@@ -24665,7 +24751,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 270
+       "over": 250
       },
       "bet365": {
        "line": 1,
@@ -24713,7 +24799,7 @@
      "books": {
       "consensus": {
        "line": 37.5,
-       "over": -120,
+       "over": -114,
        "under": -111
       },
       "draftkings": {
@@ -24767,7 +24853,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 4500
+       "over": 4000
       },
       "fanduel": {
        "line": 1,
@@ -24783,7 +24869,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 4500
+       "over": 5000
       },
       "bet365": {
        "line": 1,
@@ -24806,7 +24892,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 200
+       "over": 190
       },
       "draftkings": {
        "line": 1,
@@ -24852,7 +24938,7 @@
       },
       "caesars": {
        "line": 4.5,
-       "over": 113,
+       "over": 112,
        "under": -145
       },
       "betmgm": {
@@ -24924,8 +25010,8 @@
      "books": {
       "consensus": {
        "line": 73.5,
-       "over": -115,
-       "under": -114
+       "over": -114,
+       "under": -115
       },
       "draftkings": {
        "line": 75.5,
@@ -24938,7 +25024,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 74.5,
+       "line": 73.5,
        "over": -113,
        "under": -115
       },
@@ -25650,12 +25736,12 @@
       "consensus": {
        "line": 57.5,
        "over": -115,
-       "under": -115
+       "under": -114
       },
       "caesars": {
        "line": 57.5,
        "over": -117,
-       "under": -115
+       "under": -114
       },
       "betmgm": {
        "line": 57.5,
@@ -25904,7 +25990,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 850
+       "over": 900
       },
       "fanduel": {
        "line": 1,
@@ -25912,7 +25998,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 850
+       "over": 900
       },
       "caesars": {
        "line": 1,
@@ -25923,8 +26009,8 @@
        "over": 900
       }
      },
-     "over": 850,
-     "p_anytime_with_vig": 0.105
+     "over": 900,
+     "p_anytime_with_vig": 0.1
     }
    }
   },
@@ -25960,7 +26046,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2300
+       "over": 3000
       },
       "fanduel": {
        "line": 1,
@@ -25968,7 +26054,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 2800
+       "over": 3000
       },
       "caesars": {
        "line": 1,
@@ -25983,8 +26069,8 @@
        "over": 2000
       }
      },
-     "over": 2800,
-     "p_anytime_with_vig": 0.034
+     "over": 3000,
+     "p_anytime_with_vig": 0.032
     }
    }
   },
@@ -26472,7 +26558,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 295
+       "over": 300
       },
       "fanduel": {
        "line": 1,
@@ -26491,8 +26577,8 @@
        "over": 390
       }
      },
-     "over": 295,
-     "p_anytime_with_vig": 0.253
+     "over": 300,
+     "p_anytime_with_vig": 0.25
     },
     "receptions": {
      "line": 2.5,
@@ -26584,7 +26670,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 475
+       "over": 450
       },
       "fanduel": {
        "line": 1,
@@ -26603,8 +26689,8 @@
        "over": 325
       }
      },
-     "over": 475,
-     "p_anytime_with_vig": 0.174
+     "over": 450,
+     "p_anytime_with_vig": 0.182
     }
    }
   },
@@ -28651,17 +28737,17 @@
      "under": -114
     },
     "rushing_yards": {
-     "line": 77.5,
+     "line": 78.5,
      "books": {
       "consensus": {
-       "line": 77.5,
+       "line": 75.5,
        "over": -115,
        "under": -114
       },
       "draftkings": {
-       "line": 77.5,
-       "over": -113,
-       "under": -111
+       "line": 78.5,
+       "over": -112,
+       "under": -112
       },
       "fanduel": {
        "line": 75.5,
@@ -28679,21 +28765,21 @@
        "under": -115
       }
      },
-     "over": -113,
-     "under": -111
+     "over": -112,
+     "under": -112
     },
     "rushing_receiving_yards": {
-     "line": 98.5,
+     "line": 99.5,
      "books": {
       "consensus": {
-       "line": 98.5,
-       "over": -114,
+       "line": 98,
+       "over": -115,
        "under": -115
       },
       "draftkings": {
-       "line": 98.5,
-       "over": -114,
-       "under": -112
+       "line": 99.5,
+       "over": -111,
+       "under": -115
       },
       "betmgm": {
        "line": 97.5,
@@ -28706,8 +28792,8 @@
        "under": -115
       }
      },
-     "over": -114,
-     "under": -112
+     "over": -111,
+     "under": -115
     }
    }
   },
@@ -29845,7 +29931,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1550
+       "over": 2200
       },
       "fanduel": {
        "line": 1,
@@ -29861,7 +29947,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 1550
+       "over": 1650
       },
       "bet365": {
        "line": 1,
@@ -29926,7 +30012,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 110
+       "over": 105
       },
       "draftkings": {
        "line": 1,
@@ -29972,13 +30058,13 @@
       },
       "caesars": {
        "line": 4.5,
-       "over": 130,
-       "under": -180
+       "over": 122,
+       "under": -170
       },
       "betmgm": {
        "line": 3.5,
-       "over": -150,
-       "under": 110
+       "over": -160,
+       "under": 120
       }
      },
      "over": 110,
@@ -29988,7 +30074,7 @@
      "line": 28.5,
      "books": {
       "consensus": {
-       "line": 28.5,
+       "line": 29,
        "over": -105,
        "under": -125
       },
@@ -30008,9 +30094,9 @@
        "under": -127
       },
       "betmgm": {
-       "line": 28.5,
-       "over": -115,
-       "under": -115
+       "line": 29.5,
+       "over": -105,
+       "under": -125
       }
      },
      "over": -116,
@@ -30021,8 +30107,8 @@
      "books": {
       "consensus": {
        "line": 68.5,
-       "over": -114,
-       "under": -115
+       "over": -117,
+       "under": -113
       },
       "draftkings": {
        "line": 71.5,
@@ -30105,7 +30191,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": -165
+       "over": -155
       },
       "bet365": {
        "line": 1,
@@ -30120,8 +30206,8 @@
      "books": {
       "consensus": {
        "line": 3.5,
-       "over": 102,
-       "under": -136
+       "over": 106,
+       "under": -139
       },
       "fanduel": {
        "line": 3.5,
@@ -30137,6 +30223,11 @@
        "line": 3.5,
        "over": 106,
        "under": -137
+      },
+      "betmgm": {
+       "line": 3.5,
+       "over": 115,
+       "under": -155
       }
      },
      "over": 109,
@@ -30147,8 +30238,8 @@
      "books": {
       "consensus": {
        "line": 17.5,
-       "over": -121,
-       "under": -111
+       "over": -113,
+       "under": -114
       },
       "fanduel": {
        "line": 17.5,
@@ -30164,6 +30255,11 @@
        "line": 17.5,
        "over": -121,
        "under": -111
+      },
+      "betmgm": {
+       "line": 19.5,
+       "over": -120,
+       "under": -110
       }
      },
      "over": -113,
@@ -30173,12 +30269,12 @@
      "line": 56.5,
      "books": {
       "consensus": {
-       "line": 56.5,
+       "line": 57.5,
        "over": -114,
        "under": -114
       },
       "fanduel": {
-       "line": 56.5,
+       "line": 57.5,
        "over": -114,
        "under": -114
       },
@@ -30191,6 +30287,11 @@
        "line": 63.5,
        "over": -105,
        "under": -128
+      },
+      "betmgm": {
+       "line": 59.5,
+       "over": -111,
+       "under": -118
       }
      },
      "over": -115,
@@ -30200,9 +30301,9 @@
      "line": 78.5,
      "books": {
       "consensus": {
-       "line": 77,
-       "over": -125,
-       "under": -105
+       "line": 80.5,
+       "over": -113,
+       "under": -115
       },
       "draftkings": {
        "line": 78.5,
@@ -30214,6 +30315,11 @@
        "over": -113,
        "off": true,
        "under": -118
+      },
+      "betmgm": {
+       "line": 82.5,
+       "over": -115,
+       "under": -115
       }
      },
      "over": -113,
@@ -30248,7 +30354,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 390
+       "over": 400
       },
       "bet365": {
        "line": 1,
@@ -30280,6 +30386,11 @@
        "line": 2.5,
        "over": -154,
        "under": 118
+      },
+      "betmgm": {
+       "line": 2.5,
+       "over": -185,
+       "under": 135
       }
      },
      "over": -167,
@@ -30290,8 +30401,8 @@
      "books": {
       "consensus": {
        "line": 27.5,
-       "over": -120,
-       "under": -110
+       "over": -115,
+       "under": -111
       },
       "fanduel": {
        "line": 27.5,
@@ -30309,9 +30420,9 @@
        "under": -114
       },
       "betmgm": {
-       "line": 24.5,
-       "over": -160,
-       "off": true
+       "line": 26.5,
+       "over": -115,
+       "under": -115
       }
      },
      "over": -113,
@@ -30397,7 +30508,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 725
+       "over": 750
       },
       "bet365": {
        "line": 1,
@@ -30420,7 +30531,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 370
+       "over": 300
       },
       "fanduel": {
        "line": 1,
@@ -30436,7 +30547,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 270
+       "over": 300
       },
       "bet365": {
        "line": 1,
@@ -30451,12 +30562,12 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 225,
-       "under": -350
+       "over": 240,
+       "under": -375
       }
      },
-     "over": 225,
-     "under": -350
+     "over": 240,
+     "under": -375
     },
     "receiving_yards": {
      "line": 3.5,
@@ -30475,18 +30586,18 @@
      "books": {
       "consensus": {
        "line": 30.5,
-       "over": -110,
-       "under": -120
+       "over": -105,
+       "under": -125
       }
      },
-     "over": -110,
-     "under": -120
+     "over": -105,
+     "under": -125
     },
     "rushing_receiving_yards": {
-     "line": 35.5,
+     "line": 36.5,
      "books": {
       "consensus": {
-       "line": 35.5,
+       "line": 36.5,
        "over": -107,
        "under": -107
       }
@@ -30538,8 +30649,8 @@
      "books": {
       "consensus": {
        "line": 3.5,
-       "over": 125,
-       "under": -164
+       "over": 118,
+       "under": -158
       },
       "fanduel": {
        "line": 3.5,
@@ -30555,6 +30666,11 @@
        "line": 3.5,
        "over": 125,
        "under": -164
+      },
+      "betmgm": {
+       "line": 2.5,
+       "over": -165,
+       "under": 125
       }
      },
      "over": 132,
@@ -30565,7 +30681,7 @@
      "books": {
       "consensus": {
        "line": 37.5,
-       "over": -114,
+       "over": -112,
        "under": -114
       },
       "fanduel": {
@@ -30580,8 +30696,8 @@
       },
       "caesars": {
        "line": 37.5,
-       "over": -117,
-       "under": -112
+       "over": -112,
+       "under": -117
       },
       "betmgm": {
        "line": 35.5,
@@ -30671,7 +30787,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 2200
+       "over": 2000
       }
      },
      "over": 2200,
@@ -30813,8 +30929,8 @@
      "line": 208.5,
      "books": {
       "consensus": {
-       "line": 208.5,
-       "over": -111,
+       "line": 207.5,
+       "over": -114,
        "under": -115
       },
       "draftkings": {
@@ -30828,7 +30944,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 208.5,
+       "line": 207.5,
        "over": -114,
        "under": -114
       },
@@ -30876,7 +30992,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 425
+       "over": 450
       },
       "fanduel": {
        "line": 1,
@@ -30954,7 +31070,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 550
+       "over": 500
       },
       "draftkings": {
        "line": 1,
@@ -31002,6 +31118,11 @@
        "line": 2.5,
        "over": 109,
        "under": -141
+      },
+      "betmgm": {
+       "line": 2.5,
+       "over": 110,
+       "under": -150
       }
      },
      "over": 100,
@@ -31012,8 +31133,8 @@
      "books": {
       "consensus": {
        "line": 25.5,
-       "over": -114,
-       "under": -114
+       "over": -120,
+       "under": -111
       },
       "fanduel": {
        "line": 25.5,
@@ -31031,9 +31152,9 @@
        "under": -115
       },
       "betmgm": {
-       "line": 24.5,
-       "over": -155,
-       "off": true
+       "line": 27.5,
+       "over": -120,
+       "under": -111
       }
      },
      "over": -113,
@@ -31083,7 +31204,7 @@
      "books": {
       "consensus": {
        "line": 4.5,
-       "over": 106,
+       "over": 107,
        "under": -140
       },
       "draftkings": {
@@ -31102,10 +31223,9 @@
        "under": -139
       },
       "betmgm": {
-       "line": 3.5,
-       "over": -105,
-       "off": true,
-       "under": -125
+       "line": 4.5,
+       "over": 120,
+       "under": -160
       }
      },
      "over": 103,
@@ -31116,8 +31236,8 @@
      "books": {
       "consensus": {
        "line": 45.5,
-       "over": -117,
-       "under": -112
+       "over": -115,
+       "under": -113
       },
       "draftkings": {
        "line": 48.5,
@@ -31131,8 +31251,8 @@
       },
       "caesars": {
        "line": 47.5,
-       "over": -117,
-       "under": -112
+       "over": -112,
+       "under": -117
       },
       "betmgm": {
        "line": 48.5,
@@ -31245,18 +31365,18 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 250,
-       "under": -400
+       "over": 220,
+       "under": -340
       }
      },
-     "over": 250,
-     "under": -400
+     "over": 220,
+     "under": -340
     },
     "receiving_yards": {
-     "line": 4.5,
+     "line": 5.5,
      "books": {
       "consensus": {
-       "line": 4.5,
+       "line": 5.5,
        "over": -118,
        "under": -118
       }
@@ -31340,7 +31460,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 525
+       "over": 500
       },
       "bet365": {
        "line": 1,
@@ -31372,6 +31492,11 @@
        "line": 1.5,
        "over": -143,
        "under": 110
+      },
+      "betmgm": {
+       "line": 1.5,
+       "over": -155,
+       "under": 115
       }
      },
      "over": -144,
@@ -31381,9 +31506,9 @@
      "line": 17.5,
      "books": {
       "consensus": {
-       "line": 17.5,
-       "over": -120,
-       "under": -105
+       "line": 18.5,
+       "over": -113,
+       "under": -114
       },
       "fanduel": {
        "line": 18.5,
@@ -31396,14 +31521,14 @@
        "under": -111
       },
       "caesars": {
-       "line": 17.5,
-       "over": -118,
-       "under": -110
+       "line": 18.5,
+       "over": -112,
+       "under": -118
       },
       "betmgm": {
-       "line": 17.5,
+       "line": 18.5,
        "over": -120,
-       "under": -110
+       "under": -111
       }
      },
      "over": -113,
@@ -31474,7 +31599,7 @@
      "books": {
       "consensus": {
        "line": 5.5,
-       "over": -117,
+       "over": -144,
        "under": 113
       },
       "draftkings": {
@@ -31502,16 +31627,16 @@
        "under": 105
       }
      },
-     "over": -117,
+     "over": -144,
      "under": 113
     },
     "receiving_yards": {
-     "line": 59.5,
+     "line": 62,
      "books": {
       "consensus": {
-       "line": 59.5,
-       "over": -133,
-       "under": 104
+       "line": 62,
+       "over": -120,
+       "under": -102
       },
       "draftkings": {
        "line": 64.5,
@@ -31538,8 +31663,8 @@
        "under": -115
       }
      },
-     "over": -133,
-     "under": 104
+     "over": -120,
+     "under": -102
     }
    }
   },
@@ -31554,7 +31679,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 440
+       "over": 450
       },
       "draftkings": {
        "line": 1,
@@ -31562,11 +31687,11 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 440
+       "over": 450
       },
       "caesars": {
        "line": 1,
-       "over": 425
+       "over": 450
       },
       "betmgm": {
        "line": 1,
@@ -31636,7 +31761,7 @@
        "under": -114
       },
       "betmgm": {
-       "line": 27.5,
+       "line": 28.5,
        "over": -115,
        "under": -115
       }
@@ -31711,7 +31836,7 @@
       "consensus": {
        "line": 0.5,
        "over": -222,
-       "under": 165
+       "under": 170
       },
       "draftkings": {
        "line": 0.5,
@@ -31730,8 +31855,8 @@
       },
       "betmgm": {
        "line": 0.5,
-       "over": -225,
-       "under": 165
+       "over": -235,
+       "under": 170
       }
      },
      "over": -222,
@@ -31761,7 +31886,7 @@
        "under": -114
       },
       "betmgm": {
-       "line": 180.5,
+       "line": 181.5,
        "over": -118,
        "under": -111
       }
@@ -31814,7 +31939,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2500
+       "over": 2200
       },
       "draftkings": {
        "line": 1,
@@ -31879,7 +32004,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1400
+       "over": 1500
       },
       "fanduel": {
        "line": 1,
@@ -31895,7 +32020,7 @@
       },
       "betmgm": {
        "line": 1,
-       "over": 1350
+       "over": 1600
       },
       "bet365": {
        "line": 1,
@@ -31949,8 +32074,8 @@
      "books": {
       "consensus": {
        "line": 4.5,
-       "over": -110,
-       "under": -120
+       "over": -108,
+       "under": -121
       },
       "fanduel": {
        "line": 4.5,
@@ -31966,6 +32091,11 @@
        "line": 4.5,
        "over": -108,
        "under": -121
+      },
+      "betmgm": {
+       "line": 4.5,
+       "over": 100,
+       "under": -135
       }
      },
      "over": -104,
@@ -31976,8 +32106,8 @@
      "books": {
       "consensus": {
        "line": 39.5,
-       "over": -111,
-       "under": -115
+       "over": -114,
+       "under": -114
       },
       "fanduel": {
        "line": 39.5,
@@ -32043,28 +32173,28 @@
      "p_anytime_with_vig": 0.143
     },
     "receptions": {
-     "line": 2.5,
+     "line": 1.5,
      "books": {
       "consensus": {
-       "line": 2.5,
-       "over": 135,
-       "under": -185
+       "line": 1.5,
+       "over": -155,
+       "under": 115
       }
      },
-     "over": 135,
-     "under": -185
+     "over": -155,
+     "under": 115
     },
     "receiving_yards": {
      "line": 20.5,
      "books": {
       "consensus": {
        "line": 20.5,
-       "over": -135,
-       "under": 100
+       "over": 100,
+       "under": -135
       }
      },
-     "over": -135,
-     "under": 100
+     "over": 100,
+     "under": -135
     }
    }
   },
@@ -32102,11 +32232,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2800
+       "over": 3000
       }
      },
-     "over": 2800,
-     "p_anytime_with_vig": 0.034
+     "over": 3000,
+     "p_anytime_with_vig": 0.032
     }
    }
   },
@@ -32178,7 +32308,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": -115
+       "over": -110
       },
       "fanduel": {
        "line": 1,
@@ -32209,7 +32339,7 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": -155,
+       "over": -158,
        "under": 118
       },
       "fanduel": {
@@ -32274,7 +32404,7 @@
       "consensus": {
        "line": 43.5,
        "over": -110,
-       "under": -122
+       "under": -120
       },
       "draftkings": {
        "line": 42.5,
@@ -32376,7 +32506,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 280
+       "over": 310
       },
       "draftkings": {
        "line": 1,
@@ -32439,8 +32569,8 @@
      "books": {
       "consensus": {
        "line": 39.5,
-       "over": -115,
-       "under": -114
+       "over": -125,
+       "under": -109
       },
       "draftkings": {
        "line": 39.5,
@@ -32566,8 +32696,8 @@
       },
       "caesars": {
        "line": 1.5,
-       "over": -102,
-       "under": -128
+       "over": -105,
+       "under": -127
       },
       "betmgm": {
        "line": 1.5,
@@ -32584,7 +32714,7 @@
       "consensus": {
        "line": 238.5,
        "over": -115,
-       "under": -111
+       "under": -114
       },
       "draftkings": {
        "line": 238.5,
@@ -32597,7 +32727,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 238.5,
+       "line": 237.5,
        "over": -127,
        "under": -105
       },
@@ -32655,7 +32785,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 160
+       "over": 155
       },
       "draftkings": {
        "line": 1,
@@ -32818,7 +32948,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 360
+       "over": 340
       },
       "draftkings": {
        "line": 1,
@@ -32921,7 +33051,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2100
+       "over": 1900
       },
       "fanduel": {
        "line": 1,
@@ -33259,7 +33389,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2800
+       "over": 3500
       },
       "fanduel": {
        "line": 1,
@@ -33290,7 +33420,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 205
+       "over": 220
       },
       "draftkings": {
        "line": 1,
@@ -33302,7 +33432,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 205
+       "over": 198
       },
       "betmgm": {
        "line": 1,
@@ -33337,7 +33467,7 @@
       "caesars": {
        "line": 3.5,
        "over": -170,
-       "under": 129
+       "under": 128
       },
       "betmgm": {
        "line": 4.5,
@@ -33353,8 +33483,8 @@
      "books": {
       "consensus": {
        "line": 45.5,
-       "over": -115,
-       "under": -113
+       "over": -114,
+       "under": -114
       },
       "draftkings": {
        "line": 44.5,
@@ -33456,7 +33586,7 @@
      "books": {
       "consensus": {
        "line": 22.5,
-       "over": -115,
+       "over": -114,
        "under": -114
       },
       "draftkings": {
@@ -33535,7 +33665,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 2200
+       "over": 1900
       },
       "fanduel": {
        "line": 1,
@@ -33636,12 +33766,12 @@
      "books": {
       "consensus": {
        "line": 1.5,
-       "over": 160,
-       "under": -230
+       "over": 155,
+       "under": -220
       }
      },
-     "over": 160,
-     "under": -230
+     "over": 155,
+     "under": -220
     },
     "receiving_yards": {
      "line": 5.5,
@@ -33660,12 +33790,12 @@
      "books": {
       "consensus": {
        "line": 15.5,
-       "over": 100,
-       "under": -135
+       "over": 105,
+       "under": -140
       }
      },
-     "over": 100,
-     "under": -135
+     "over": 105,
+     "under": -140
     },
     "rushing_receiving_yards": {
      "line": 22.5,
@@ -33826,7 +33956,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 1000
+       "over": 900
       },
       "fanduel": {
        "line": 1,
@@ -33838,7 +33968,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 950
+       "over": 900
       },
       "betmgm": {
        "line": 1,
@@ -33952,7 +34082,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 189
+       "over": 200
       },
       "draftkings": {
        "line": 1,
@@ -33982,9 +34112,9 @@
      "line": 4.5,
      "books": {
       "consensus": {
-       "line": 4.5,
+       "line": 3.5,
        "over": 120,
-       "under": -159
+       "under": 125
       },
       "draftkings": {
        "line": 4.5,
@@ -33997,9 +34127,9 @@
        "under": 132
       },
       "caesars": {
-       "line": 4.5,
-       "over": 121,
-       "under": -159
+       "line": 3.5,
+       "over": -170,
+       "under": 130
       },
       "betmgm": {
        "line": 4.5,
@@ -34271,8 +34401,8 @@
      "books": {
       "consensus": {
        "line": 221.5,
-       "over": -115,
-       "under": -112
+       "over": -114,
+       "under": -115
       },
       "draftkings": {
        "line": 222.5,
@@ -34303,7 +34433,7 @@
      "books": {
       "consensus": {
        "line": 22.5,
-       "over": -120,
+       "over": -117,
        "under": -110
       },
       "draftkings": {
@@ -34461,10 +34591,10 @@
      "under": -275
     },
     "receiving_yards": {
-     "line": 3.5,
+     "line": 4.5,
      "books": {
       "consensus": {
-       "line": 3.5,
+       "line": 4.5,
        "over": -118,
        "under": -118
       }
@@ -34477,7 +34607,7 @@
      "books": {
       "consensus": {
        "line": 44.5,
-       "over": -114,
+       "over": -109,
        "under": -115
       },
       "draftkings": {
@@ -34685,7 +34815,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": -145
+       "over": -150
       },
       "draftkings": {
        "line": 1,
@@ -34693,7 +34823,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": -155
+       "over": -150
       },
       "caesars": {
        "line": 1,
@@ -35303,11 +35433,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 750
+       "over": 650
       },
       "fanduel": {
        "line": 1,
-       "over": 750
+       "over": 800
       },
       "draftkings": {
        "line": 1,
@@ -35543,8 +35673,8 @@
       },
       "fanduel": {
        "line": 5.5,
-       "over": 124,
-       "under": -166
+       "over": 134,
+       "under": -180
       },
       "caesars": {
        "line": 4.5,
@@ -35564,9 +35694,9 @@
      "line": 67.5,
      "books": {
       "consensus": {
-       "line": 69.5,
-       "over": -115,
-       "under": -114
+       "line": 67.5,
+       "over": -114,
+       "under": -115
       },
       "draftkings": {
        "line": 67.5,
@@ -35574,12 +35704,12 @@
        "under": -110
       },
       "fanduel": {
-       "line": 69.5,
+       "line": 66.5,
        "over": -114,
        "under": -114
       },
       "caesars": {
-       "line": 69.5,
+       "line": 67.5,
        "over": -115,
        "under": -114
       },
@@ -35645,7 +35775,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 675
+       "over": 650
       },
       "draftkings": {
        "line": 1,
@@ -35653,7 +35783,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 700
+       "over": 750
       },
       "caesars": {
        "line": 1,
@@ -35767,7 +35897,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 100
+       "over": -105
       },
       "caesars": {
        "line": 1,
@@ -35926,7 +36056,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 1700
+       "over": 1600
       },
       "draftkings": {
        "line": 1,
@@ -36110,7 +36240,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 185
+       "over": 200
       },
       "draftkings": {
        "line": 1,
@@ -36118,7 +36248,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 190
+       "over": 200
       },
       "caesars": {
        "line": 1,
@@ -36200,7 +36330,7 @@
      "books": {
       "consensus": {
        "line": 214.5,
-       "over": -114,
+       "over": -115,
        "under": -114
       },
       "draftkings": {
@@ -36232,8 +36362,8 @@
      "books": {
       "consensus": {
        "line": 30.5,
-       "over": -111,
-       "under": -117
+       "over": -112,
+       "under": -118
       },
       "draftkings": {
        "line": 31.5,
@@ -36241,14 +36371,14 @@
        "under": -113
       },
       "fanduel": {
-       "line": 28.5,
+       "line": 30.5,
        "over": -114,
        "under": -114
       },
       "caesars": {
-       "line": 30.5,
-       "over": -113,
-       "under": -117
+       "line": 31.5,
+       "over": -112,
+       "under": -118
       },
       "betmgm": {
        "line": 30.5,
@@ -36387,11 +36517,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 310
+       "over": 320
       },
       "fanduel": {
        "line": 1,
-       "over": 310
+       "over": 320
       },
       "draftkings": {
        "line": 1,
@@ -36434,7 +36564,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 310
+       "over": 320
       },
       "caesars": {
        "line": 1,
@@ -36651,7 +36781,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 125
+       "over": 120
       },
       "caesars": {
        "line": 1,
@@ -36684,8 +36814,8 @@
       },
       "fanduel": {
        "line": 6.5,
-       "over": 116,
-       "under": -154
+       "over": 124,
+       "under": -166
       },
       "caesars": {
        "line": 6.5,
@@ -36705,7 +36835,7 @@
      "line": 77.5,
      "books": {
       "consensus": {
-       "line": 76.5,
+       "line": 75.5,
        "over": -111,
        "under": -113
       },
@@ -36715,7 +36845,7 @@
        "under": -113
       },
       "fanduel": {
-       "line": 76.5,
+       "line": 75.5,
        "over": -114,
        "under": -114
       },
@@ -36849,9 +36979,9 @@
      "line": 262.5,
      "books": {
       "consensus": {
-       "line": 259.5,
+       "line": 260.5,
        "over": -115,
-       "under": -110
+       "under": -114
       },
       "draftkings": {
        "line": 262.5,
@@ -36864,7 +36994,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 259.5,
+       "line": 260.5,
        "over": -115,
        "under": -114
       },
@@ -37011,7 +37141,7 @@
       },
       "fanduel": {
        "line": 1,
-       "over": 380
+       "over": 370
       },
       "caesars": {
        "line": 1,
@@ -37030,28 +37160,38 @@
      "p_anytime_with_vig": 0.19
     },
     "receptions": {
-     "line": 1.5,
+     "line": 2.5,
      "books": {
       "consensus": {
-       "line": 1.5,
-       "over": -170,
-       "under": 141
+       "line": 2.5,
+       "over": 124,
+       "under": -166
+      },
+      "fanduel": {
+       "line": 2.5,
+       "over": 124,
+       "under": -166
       }
      },
-     "over": -170,
-     "under": 141
+     "over": 124,
+     "under": -166
     },
     "receiving_yards": {
-     "line": 20.5,
+     "line": 25.5,
      "books": {
       "consensus": {
-       "line": 20.5,
-       "over": -118,
-       "under": -118
+       "line": 25.5,
+       "over": -114,
+       "under": -114
+      },
+      "fanduel": {
+       "line": 25.5,
+       "over": -114,
+       "under": -114
       }
      },
-     "over": -118,
-     "under": -118
+     "over": -114,
+     "under": -114
     },
     "rushing_receiving_yards": {
      "line": 23.5,
@@ -37255,7 +37395,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 1300
+       "over": 1500
       },
       "caesars": {
        "line": 1,
@@ -37267,8 +37407,8 @@
        "off": true
       }
      },
-     "over": 1300,
-     "p_anytime_with_vig": 0.071
+     "over": 1500,
+     "p_anytime_with_vig": 0.063
     }
    }
   },
@@ -37379,7 +37519,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 1300
+       "over": 1400
       },
       "fanduel": {
        "line": 1,
@@ -37398,8 +37538,8 @@
        "over": 750
       }
      },
-     "over": 1300,
-     "p_anytime_with_vig": 0.071
+     "over": 1400,
+     "p_anytime_with_vig": 0.067
     }
    }
   },
@@ -37418,7 +37558,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 400
+       "over": 390
       },
       "fanduel": {
        "line": 1,
@@ -37437,8 +37577,8 @@
        "over": 425
       }
      },
-     "over": 400,
-     "p_anytime_with_vig": 0.2
+     "over": 390,
+     "p_anytime_with_vig": 0.204
     },
     "receptions": {
      "line": 2.5,
@@ -37664,7 +37804,7 @@
      "books": {
       "consensus": {
        "line": 225.5,
-       "over": -114,
+       "over": -111,
        "under": -115
       },
       "draftkings": {
@@ -37678,7 +37818,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 227.5,
+       "line": 228.5,
        "over": -114,
        "under": -114
       },
@@ -37692,17 +37832,17 @@
      "under": -113
     },
     "rushing_yards": {
-     "line": 14.5,
+     "line": 15.5,
      "books": {
       "consensus": {
        "line": 15.5,
-       "over": -116,
+       "over": -114,
        "under": -114
       },
       "draftkings": {
-       "line": 14.5,
-       "over": -116,
-       "under": -108
+       "line": 15.5,
+       "over": -109,
+       "under": -115
       },
       "fanduel": {
        "line": 15.5,
@@ -37720,8 +37860,8 @@
        "under": -110
       }
      },
-     "over": -116,
-     "under": -108
+     "over": -109,
+     "under": -115
     }
    }
   },
@@ -37740,7 +37880,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 500
+       "over": 600
       },
       "fanduel": {
        "line": 1,
@@ -37759,8 +37899,8 @@
        "over": 450
       }
      },
-     "over": 500,
-     "p_anytime_with_vig": 0.167
+     "over": 600,
+     "p_anytime_with_vig": 0.143
     }
    }
   },
@@ -37942,7 +38082,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": -130
+       "over": -125
       },
       "fanduel": {
        "line": 1,
@@ -37961,8 +38101,8 @@
        "over": -120
       }
      },
-     "over": -130,
-     "p_anytime_with_vig": 0.565
+     "over": -125,
+     "p_anytime_with_vig": 0.556
     },
     "receptions": {
      "line": 3.5,
@@ -37974,8 +38114,8 @@
       },
       "draftkings": {
        "line": 3.5,
-       "over": 136,
-       "under": -175
+       "over": 132,
+       "under": -168
       },
       "fanduel": {
        "line": 3.5,
@@ -37989,25 +38129,25 @@
       },
       "betmgm": {
        "line": 2.5,
-       "over": -185,
-       "under": 135
+       "over": -210,
+       "under": 155
       }
      },
-     "over": 136,
-     "under": -175
+     "over": 132,
+     "under": -168
     },
     "receiving_yards": {
      "line": 17.5,
      "books": {
       "consensus": {
        "line": 17.5,
-       "over": -115,
+       "over": -120,
        "under": -110
       },
       "draftkings": {
        "line": 17.5,
-       "over": -107,
-       "under": -117
+       "over": -113,
+       "under": -111
       },
       "fanduel": {
        "line": 17.5,
@@ -38025,16 +38165,16 @@
        "under": -110
       }
      },
-     "over": -107,
-     "under": -117
+     "over": -113,
+     "under": -111
     },
     "rushing_yards": {
      "line": 61.5,
      "books": {
       "consensus": {
-       "line": 59.5,
-       "over": -120,
-       "under": -110
+       "line": 61.5,
+       "over": -115,
+       "under": -111
       },
       "draftkings": {
        "line": 61.5,
@@ -38047,9 +38187,9 @@
        "under": -114
       },
       "caesars": {
-       "line": 60.5,
-       "over": -125,
-       "under": -107
+       "line": 61.5,
+       "over": -120,
+       "under": -111
       },
       "betmgm": {
        "line": 61.5,
@@ -38061,16 +38201,16 @@
      "under": -114
     },
     "rushing_receiving_yards": {
-     "line": 82.5,
+     "line": 83.5,
      "books": {
       "consensus": {
        "line": 82.5,
-       "over": -111,
-       "under": -115
+       "over": -115,
+       "under": -114
       },
       "draftkings": {
-       "line": 82.5,
-       "over": -111,
+       "line": 83.5,
+       "over": -112,
        "under": -114
       },
       "caesars": {
@@ -38085,7 +38225,7 @@
        "under": -115
       }
      },
-     "over": -111,
+     "over": -112,
      "under": -114
     }
    }
@@ -38101,11 +38241,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 750
+       "over": 675
       },
       "draftkings": {
        "line": 1,
-       "over": 750
+       "over": 800
       },
       "fanduel": {
        "line": 1,
@@ -38124,8 +38264,8 @@
        "over": 550
       }
      },
-     "over": 750,
-     "p_anytime_with_vig": 0.118
+     "over": 800,
+     "p_anytime_with_vig": 0.111
     }
    }
   },
@@ -38166,11 +38306,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 500
+       "over": 525
       },
       "draftkings": {
        "line": 1,
-       "over": 500
+       "over": 550
       },
       "fanduel": {
        "line": 1,
@@ -38189,8 +38329,8 @@
        "over": 500
       }
      },
-     "over": 500,
-     "p_anytime_with_vig": 0.167
+     "over": 550,
+     "p_anytime_with_vig": 0.154
     },
     "receptions": {
      "line": 1.5,
@@ -38207,8 +38347,8 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": 101,
-       "under": -129
+       "over": -103,
+       "under": -124
       },
       "caesars": {
        "line": 1.5,
@@ -38216,8 +38356,8 @@
        "under": -134
       }
      },
-     "over": 101,
-     "under": -129
+     "over": -103,
+     "under": -124
     },
     "receiving_yards": {
      "line": 20.5,
@@ -38264,11 +38404,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 175
+       "over": 180
       },
       "draftkings": {
        "line": 1,
-       "over": 175
+       "over": 180
       },
       "fanduel": {
        "line": 1,
@@ -38287,8 +38427,8 @@
        "over": 180
       }
      },
-     "over": 175,
-     "p_anytime_with_vig": 0.364
+     "over": 180,
+     "p_anytime_with_vig": 0.357
     },
     "receptions": {
      "line": 4.5,
@@ -38326,14 +38466,14 @@
      "line": 42.5,
      "books": {
       "consensus": {
-       "line": 41.5,
-       "over": -111,
+       "line": 42,
+       "over": -114,
        "under": -114
       },
       "draftkings": {
        "line": 42.5,
-       "over": -110,
-       "under": -114
+       "over": -115,
+       "under": -109
       },
       "fanduel": {
        "line": 41.5,
@@ -38341,7 +38481,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 41.5,
+       "line": 42.5,
        "over": -115,
        "under": -114
       },
@@ -38351,8 +38491,8 @@
        "under": -118
       }
      },
-     "over": -110,
-     "under": -114
+     "over": -115,
+     "under": -109
     }
    }
   },
@@ -38397,7 +38537,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 300
+       "over": 310
       },
       "fanduel": {
        "line": 1,
@@ -38416,8 +38556,8 @@
        "over": 280
       }
      },
-     "over": 300,
-     "p_anytime_with_vig": 0.25
+     "over": 310,
+     "p_anytime_with_vig": 0.244
     },
     "receptions": {
      "line": 3.5,
@@ -38455,8 +38595,8 @@
      "line": 37.5,
      "books": {
       "consensus": {
-       "line": 37.5,
-       "over": -115,
+       "line": 38.5,
+       "over": -114,
        "under": -114
       },
       "draftkings": {
@@ -38470,9 +38610,9 @@
        "under": -114
       },
       "caesars": {
-       "line": 37.5,
-       "over": -127,
-       "under": -107
+       "line": 38.5,
+       "over": -125,
+       "under": -108
       },
       "betmgm": {
        "line": 36.5,
@@ -38500,12 +38640,12 @@
      "books": {
       "consensus": {
        "line": 40.5,
-       "over": -115,
-       "under": -115
+       "over": -105,
+       "under": -125
       }
      },
-     "over": -115,
-     "under": -115
+     "over": -105,
+     "under": -125
     }
    }
   },
@@ -38520,7 +38660,7 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 900
+       "over": 850
       },
       "fanduel": {
        "line": 1,
@@ -38528,7 +38668,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 750
+       "over": 850
       },
       "caesars": {
        "line": 1,
@@ -38540,8 +38680,8 @@
        "off": true
       }
      },
-     "over": 750,
-     "p_anytime_with_vig": 0.118
+     "over": 850,
+     "p_anytime_with_vig": 0.105
     }
    }
   },
@@ -38660,7 +38800,7 @@
        "under": -114
       },
       "caesars": {
-       "line": 227.5,
+       "line": 228.5,
        "over": -114,
        "under": -114
       },
@@ -39041,8 +39181,8 @@
      "books": {
       "consensus": {
        "line": 8.5,
-       "over": -110,
-       "under": -118
+       "over": -109,
+       "under": -120
       },
       "fanduel": {
        "line": 8.5,
@@ -39056,8 +39196,8 @@
       },
       "caesars": {
        "line": 8.5,
-       "over": -110,
-       "under": -118
+       "over": -109,
+       "under": -120
       },
       "betmgm": {
        "line": 6.5,
@@ -39183,17 +39323,17 @@
      "under": -115
     },
     "rushing_yards": {
-     "line": 50.5,
+     "line": 51.5,
      "books": {
       "consensus": {
-       "line": 50.5,
-       "over": -114,
+       "line": 49.5,
+       "over": -110,
        "under": -115
       },
       "draftkings": {
-       "line": 50.5,
-       "over": -115,
-       "under": -109
+       "line": 51.5,
+       "over": -110,
+       "under": -114
       },
       "fanduel": {
        "line": 49.5,
@@ -39211,8 +39351,8 @@
        "under": -115
       }
      },
-     "over": -115,
-     "under": -109
+     "over": -110,
+     "under": -114
     },
     "rushing_receiving_yards": {
      "line": 58.5,
@@ -39255,11 +39395,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 150
+       "over": 155
       },
       "draftkings": {
        "line": 1,
-       "over": 150
+       "over": 155
       },
       "fanduel": {
        "line": 1,
@@ -39278,8 +39418,8 @@
        "over": 150
       }
      },
-     "over": 150,
-     "p_anytime_with_vig": 0.4
+     "over": 155,
+     "p_anytime_with_vig": 0.392
     },
     "receptions": {
      "line": 5.5,
@@ -39318,13 +39458,13 @@
      "books": {
       "consensus": {
        "line": 59.5,
-       "over": -110,
-       "under": -120
+       "over": -114,
+       "under": -115
       },
       "draftkings": {
        "line": 61.5,
-       "over": -110,
-       "under": -114
+       "over": -114,
+       "under": -110
       },
       "fanduel": {
        "line": 59.5,
@@ -39342,8 +39482,8 @@
        "under": -115
       }
      },
-     "over": -110,
-     "under": -114
+     "over": -114,
+     "under": -110
     }
    }
   },
@@ -39366,7 +39506,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 1800
+       "over": 1900
       },
       "caesars": {
        "line": 1,
@@ -39377,8 +39517,8 @@
        "over": 3500
       }
      },
-     "over": 1800,
-     "p_anytime_with_vig": 0.053
+     "over": 1900,
+     "p_anytime_with_vig": 0.05
     }
    }
   },
@@ -39450,11 +39590,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 700
+       "over": 800
       },
       "draftkings": {
        "line": 1,
-       "over": 850
+       "over": 1000
       },
       "fanduel": {
        "line": 1,
@@ -39473,8 +39613,8 @@
        "over": 500
       }
      },
-     "over": 850,
-     "p_anytime_with_vig": 0.105
+     "over": 1000,
+     "p_anytime_with_vig": 0.091
     },
     "receptions": {
      "line": 1.5,
@@ -39537,11 +39677,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 800
+       "over": 900
       },
       "draftkings": {
        "line": 1,
-       "over": 800
+       "over": 900
       },
       "fanduel": {
        "line": 1,
@@ -39549,7 +39689,7 @@
       },
       "caesars": {
        "line": 1,
-       "over": 800
+       "over": 900
       },
       "betmgm": {
        "line": 1,
@@ -39560,8 +39700,8 @@
        "over": 900
       }
      },
-     "over": 800,
-     "p_anytime_with_vig": 0.111
+     "over": 900,
+     "p_anytime_with_vig": 0.1
     },
     "receptions": {
      "line": 1.5,
@@ -39578,8 +39718,8 @@
       },
       "draftkings": {
        "line": 1.5,
-       "over": 137,
-       "under": -175
+       "over": 142,
+       "under": -182
       },
       "caesars": {
        "line": 1.5,
@@ -39592,8 +39732,8 @@
        "under": -200
       }
      },
-     "over": 137,
-     "under": -175
+     "over": 142,
+     "under": -182
     },
     "receiving_yards": {
      "line": 9.5,
@@ -39644,7 +39784,7 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 900
+       "over": 1000
       },
       "fanduel": {
        "line": 1,
@@ -39663,8 +39803,8 @@
        "over": 900
       }
      },
-     "over": 900,
-     "p_anytime_with_vig": 0.1
+     "over": 1000,
+     "p_anytime_with_vig": 0.091
     }
    }
   },
@@ -39732,11 +39872,11 @@
      "books": {
       "consensus": {
        "line": 1,
-       "over": 225
+       "over": 250
       },
       "draftkings": {
        "line": 1,
-       "over": 240
+       "over": 235
       },
       "fanduel": {
        "line": 1,
@@ -39755,8 +39895,8 @@
        "over": 190
       }
      },
-     "over": 240,
-     "p_anytime_with_vig": 0.294
+     "over": 235,
+     "p_anytime_with_vig": 0.299
     },
     "receptions": {
      "line": 4.5,
@@ -39857,15 +39997,15 @@
       },
       "draftkings": {
        "line": 1,
-       "over": 1300
+       "over": 1600
       },
       "caesars": {
        "line": 1,
        "over": 1400
       }
      },
-     "over": 1300,
-     "p_anytime_with_vig": 0.071
+     "over": 1600,
+     "p_anytime_with_vig": 0.059
     }
    }
   },
