@@ -53,51 +53,51 @@
  ],
  "lowestGame": [
   {
-   "userId": "467208097522249728",
-   "points": 0,
-   "oppUserId": "471856560138612736",
-   "oppPoints": 4.1,
-   "margin": -4.1,
+   "userId": "869377838724317184",
+   "points": 11.88,
+   "oppUserId": "472225780726755328",
+   "oppPoints": 19.4,
+   "margin": -7.519999999999998,
    "won": false,
    "season": "2026",
    "week": 1
   },
   {
-   "userId": "471856560138612736",
-   "points": 4.1,
-   "oppUserId": "467208097522249728",
-   "oppPoints": 0,
-   "margin": 4.1,
-   "won": true,
+   "userId": "471861310779289600",
+   "points": 16.76,
+   "oppUserId": "470142073480146944",
+   "oppPoints": 57.77,
+   "margin": -41.010000000000005,
+   "won": false,
+   "season": "2026",
+   "week": 1
+  },
+  {
+   "userId": "467208097522249728",
+   "points": 16.8,
+   "oppUserId": "471856560138612736",
+   "oppPoints": 21.04,
+   "margin": -4.239999999999998,
+   "won": false,
+   "season": "2026",
+   "week": 1
+  },
+  {
+   "userId": "471865126467661824",
+   "points": 17.88,
+   "oppUserId": "595734764493791232",
+   "oppPoints": 25.52,
+   "margin": -7.640000000000001,
+   "won": false,
    "season": "2026",
    "week": 1
   },
   {
    "userId": "596864194553368576",
-   "points": 4.1,
+   "points": 19.15,
    "oppUserId": "869712074853523456",
-   "oppPoints": 6.8,
-   "margin": -2.7,
-   "won": false,
-   "season": "2026",
-   "week": 1
-  },
-  {
-   "userId": "869712074853523456",
-   "points": 6.8,
-   "oppUserId": "596864194553368576",
-   "oppPoints": 4.1,
-   "margin": 2.7,
-   "won": true,
-   "season": "2026",
-   "week": 1
-  },
-  {
-   "userId": "596094153587216384",
-   "points": 7,
-   "oppUserId": "469223780661587968",
-   "oppPoints": 12,
-   "margin": -5,
+   "oppPoints": 21.86,
+   "margin": -2.710000000000001,
    "won": false,
    "season": "2026",
    "week": 1
@@ -261,53 +261,53 @@
  ],
  "fewestPointsInWin": [
   {
+   "userId": "472225780726755328",
+   "points": 19.4,
+   "oppUserId": "869377838724317184",
+   "oppPoints": 11.88,
+   "margin": 7.519999999999998,
+   "won": true,
+   "season": "2026",
+   "week": 1
+  },
+  {
    "userId": "471856560138612736",
-   "points": 4.1,
+   "points": 21.04,
    "oppUserId": "467208097522249728",
-   "oppPoints": 0,
-   "margin": 4.1,
+   "oppPoints": 16.8,
+   "margin": 4.239999999999998,
    "won": true,
    "season": "2026",
    "week": 1
   },
   {
    "userId": "869712074853523456",
-   "points": 6.8,
+   "points": 21.86,
    "oppUserId": "596864194553368576",
-   "oppPoints": 4.1,
-   "margin": 2.7,
+   "oppPoints": 19.15,
+   "margin": 2.710000000000001,
    "won": true,
    "season": "2026",
    "week": 1
   },
   {
-   "userId": "469223780661587968",
-   "points": 12,
-   "oppUserId": "596094153587216384",
-   "oppPoints": 7,
-   "margin": 5,
+   "userId": "596094153587216384",
+   "points": 22.83,
+   "oppUserId": "469223780661587968",
+   "oppPoints": 21.98,
+   "margin": 0.8499999999999979,
    "won": true,
    "season": "2026",
    "week": 1
   },
   {
-   "userId": "470142073480146944",
-   "points": 40.07,
-   "oppUserId": "471861310779289600",
-   "oppPoints": 13.96,
-   "margin": 26.11,
+   "userId": "595734764493791232",
+   "points": 25.52,
+   "oppUserId": "471865126467661824",
+   "oppPoints": 17.88,
+   "margin": 7.640000000000001,
    "won": true,
    "season": "2026",
-   "week": 1
-  },
-  {
-   "userId": "471856560138612736",
-   "points": 76.23,
-   "oppUserId": "596094153587216384",
-   "oppPoints": 72.84,
-   "margin": 3.3900000000000006,
-   "won": true,
-   "season": "2025",
    "week": 1
   }
  ],
@@ -400,11 +400,19 @@
  "worstSeasons": [
   {
    "season": "2026",
-   "userId": "595734764493791232",
+   "userId": "869377838724317184",
    "wins": 0,
-   "losses": 0,
+   "losses": 1,
    "ties": 0,
-   "pf": 0
+   "pf": 11.88
+  },
+  {
+   "season": "2026",
+   "userId": "471861310779289600",
+   "wins": 0,
+   "losses": 1,
+   "ties": 0,
+   "pf": 16.76
   },
   {
    "season": "2026",
@@ -412,31 +420,23 @@
    "wins": 0,
    "losses": 1,
    "ties": 0,
-   "pf": 0
+   "pf": 16.8
   },
   {
    "season": "2026",
    "userId": "471865126467661824",
    "wins": 0,
-   "losses": 0,
+   "losses": 1,
    "ties": 0,
-   "pf": 0
+   "pf": 17.88
   },
   {
    "season": "2026",
-   "userId": "472225780726755328",
+   "userId": "596864194553368576",
    "wins": 0,
-   "losses": 0,
+   "losses": 1,
    "ties": 0,
-   "pf": 0
-  },
-  {
-   "season": "2026",
-   "userId": "869377838724317184",
-   "wins": 0,
-   "losses": 0,
-   "ties": 0,
-   "pf": 0
+   "pf": 19.15
   }
  ],
  "highestSeasonPf": [
