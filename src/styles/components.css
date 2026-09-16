@@ -1660,9 +1660,14 @@ td.eff { color: var(--muted); font-variant-numeric: tabular-nums; }
 .pr { margin-bottom: 2.2rem; }
 .pr-note { max-width: 74ch; font-size: 0.86rem; margin: 0 0 0.9rem; }
 .pr-list { margin: 0; padding: 0; list-style: none; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+
+/* Identity on the left, every number in one group on the right. Keeping the
+   numbers together is what lets them drop to a second line on a narrow screen
+   instead of being hidden -- a power ranking with the numbers removed is just
+   a list of names. */
 .pr-row {
   display: grid;
-  grid-template-columns: 2.1rem 2.4rem minmax(0, 1fr) 3.2rem repeat(3, 4.4rem) 4rem;
+  grid-template-columns: 2.1rem 2.4rem minmax(0, 1fr) auto;
   align-items: center;
   gap: 0.5rem;
   padding: 0.55rem 0.8rem;
@@ -1677,24 +1682,103 @@ td.eff { color: var(--muted); font-variant-numeric: tabular-nums; }
 .pr-move.down { color: var(--red); }
 .pr-team { display: grid; gap: 0.05rem; min-width: 0; }
 .pr-team b { font-size: 0.92rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.pr-rec { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 0.82rem; text-align: center; }
-.pr-stat { display: grid; gap: 0.05rem; font-variant-numeric: tabular-nums; font-size: 0.86rem; text-align: right; }
+
+.pr-metrics { display: flex; align-items: center; gap: 0.5rem 0.85rem; }
+.pr-rec { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 0.82rem; text-align: center; min-width: 2.6rem; }
+.pr-stat { display: grid; gap: 0.05rem; font-variant-numeric: tabular-nums; font-size: 0.86rem; text-align: right; min-width: 3.1rem; }
 .pr-stat em {
   font-style: normal; color: var(--muted);
   font-size: 0.56rem; font-weight: 850; letter-spacing: 0.09em; text-transform: uppercase;
 }
-.pr-score { font-variant-numeric: tabular-nums; font-weight: 700; text-align: right; font-size: 0.9rem; }
+.pr-score { font-variant-numeric: tabular-nums; font-weight: 700; text-align: right; font-size: 0.9rem; min-width: 3rem; }
 
-@media (max-width: 860px) {
-  .pr-row { grid-template-columns: 2rem 2.2rem minmax(0, 1fr) 3rem 4.2rem; row-gap: 0.25rem; }
-  /* Ceiling and roster are the columns that explain the order, so they stay;
-     the composite score is the one that can go when space is tight. */
-  .pr-score { display: none; }
+@media (max-width: 760px) {
+  /* The numbers move under the name rather than off the page. */
+  .pr-row {
+    grid-template-columns: 2.1rem 2.2rem minmax(0, 1fr);
+    row-gap: 0.45rem;
+  }
+  .pr-metrics {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    gap: 0.35rem 0.6rem;
+    padding-top: 0.45rem;
+    border-top: 1px solid var(--border);
+  }
+  .pr-stat, .pr-score { text-align: left; min-width: 0; }
+  .pr-rec { text-align: left; min-width: 0; }
+  .pr-score { margin-left: auto; font-size: 0.95rem; }
 }
-@media (max-width: 620px) {
-  .pr-row { grid-template-columns: 1.9rem 2rem minmax(0, 1fr) 4.2rem; }
-  .pr-rec { display: none; }
-  .pr-stat:nth-of-type(n+2) { display: none; }
+@media (max-width: 380px) {
+  .pr-row { padding: 0.5rem 0.6rem; }
+  .pr-metrics { gap: 0.3rem 0.4rem; }
+  .pr-stat { font-size: 0.8rem; }
+  .pr-stat em { font-size: 0.52rem; letter-spacing: 0.06em; }
+}
+
+/* ---- weekly recap ---- */
+.recaps { margin-bottom: 2rem; }
+.recap-results { margin: 0 0 1rem; padding: 0; list-style: none; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+.recap-results li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4.6rem 5.5rem 4.6rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.recap-results li:last-child { border-bottom: 0; }
+.rc-w, .rc-l { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rc-l { text-align: right; color: var(--muted); }
+.rc-pts { font-variant-numeric: tabular-nums; font-weight: 700; text-align: right; }
+.rc-pts.win { color: var(--win); }
+.rc-by {
+  text-align: center; color: var(--muted);
+  font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.recap-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.85rem; }
+.rc-card { border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); padding: 0.85rem 0.95rem; }
+.rc-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.66rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted);
+}
+.rc-top { margin: 0; padding: 0; list-style: none; }
+.rc-top li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 2.2rem 3.4rem;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.22rem 0;
+  font-size: 0.86rem;
+}
+.rc-top .rc-own { display: none; }
+.rc-pl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rc-pos { color: var(--muted); font-size: 0.64rem; letter-spacing: 0.06em; }
+.rc-n { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.rc-line { display: grid; gap: 0.1rem; margin: 0 0 0.7rem; font-size: 0.86rem; }
+.rc-line:last-child { margin-bottom: 0; }
+.rc-line em {
+  font-style: normal; color: var(--muted);
+  font-size: 0.62rem; font-weight: 850; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.rc-line b { font-weight: 600; }
+.rc-line span { color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.rc-line.danger b { color: var(--red); }
+
+@media (min-width: 900px) {
+  .rc-top li { grid-template-columns: minmax(0, 1fr) 2.2rem 3.4rem minmax(0, 6rem); }
+  .rc-top .rc-own { display: block; color: var(--muted); font-size: 0.72rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+@media (max-width: 560px) {
+  .recap-results li { grid-template-columns: minmax(0, 1fr) 3.8rem; row-gap: 0.15rem; }
+  .rc-by { grid-column: 1 / -1; text-align: left; }
+  .rc-l { text-align: left; }
 }
 
 /* ---- power-ranking bump chart ---- */

@@ -146,11 +146,13 @@ const lines = (ranks?.teams ?? []).map((t) => {
                 <b>{t.teamName}</b>
                 <MemberLink id={t.userId} />
               </span>
-              <span class="pr-rec">{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</span>
-              <span class="pr-stat"><em>PPG</em>{t.ppg.toFixed(1)}</span>
-              <span class="pr-stat"><em>Ceiling</em>{t.maxPpg.toFixed(1)}</span>
-              <span class="pr-stat"><em>Roster</em>{t.roster.toFixed(0)}</span>
-              <span class="pr-score">{t.score > 0 ? '+' : ''}{t.score.toFixed(2)}</span>
+              <span class="pr-metrics">
+                <span class="pr-rec">{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</span>
+                <span class="pr-stat"><em>PPG</em>{t.ppg.toFixed(1)}</span>
+                <span class="pr-stat"><em>Ceiling</em>{t.maxPpg.toFixed(1)}</span>
+                <span class="pr-stat"><em>Roster</em>{t.roster.toFixed(0)}</span>
+                <span class="pr-score">{t.score > 0 ? '+' : ''}{t.score.toFixed(2)}</span>
+              </span>
             </li>
           ))}
         </ol>
