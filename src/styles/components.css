@@ -1727,6 +1727,16 @@ td.eff { color: var(--muted); font-variant-numeric: tabular-nums; }
 }
 .bump-dot { fill: var(--c); }
 .bump-av-ring { fill: var(--surface); stroke: var(--c); stroke-width: 2.5; }
+.bump-name {
+  fill: var(--c);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  /* A halo keeps the name readable where another team's line runs behind it. */
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+}
 
 /* Hovering a line dims the rest instead of hiding them, so a team can be
    followed through the tangle without losing the context around it. */

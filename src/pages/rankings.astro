@@ -23,7 +23,7 @@ const columns = [
   { key: 0, label: 'Draft' },
   ...Array.from({ length: lastWeek }, (_, i) => ({ key: i + 1, label: `Week ${i + 1}` })),
 ];
-const PAD = { top: 26, right: 30, bottom: 62, left: 54 };
+const PAD = { top: 26, right: 140, bottom: 62, left: 54 };
 const STEP_X = 72;
 const STEP_Y = 32;   // room for a 22px avatar on every row without crowding
 const AV = 22;
@@ -117,16 +117,17 @@ const lines = (ranks?.teams ?? []).map((t) => {
                     {l.pts.length > 1 && <polyline points={l.d} />}
                     {l.pts.map((p) => <circle class="bump-dot" cx={p.x} cy={p.y} r="3" />)}
                     {[l.first, l.last].filter((p, n, arr) => p && (n === 0 || p.x !== arr[0].x)).map((p) => (
-                      l.avatar ? (
-                        <g class="bump-av">
-                          <circle class="bump-av-ring" cx={p.x} cy={p.y} r={AV / 2 + 1.5} />
-                          <image href={l.avatar} x={p.x - AV / 2} y={p.y - AV / 2} width={AV} height={AV}
+                      <g class="bump-av" transform={`translate(${p.x - AV / 2} ${p.y - AV / 2})`}>
+                        <circle class="bump-av-ring" cx={AV / 2} cy={AV / 2} r={AV / 2 + 1.5} />
+                        {l.avatar && (
+                          <image href={l.avatar} x="0" y="0" width={AV} height={AV}
                                  clip-path={`url(#clip-${l.userId})`} preserveAspectRatio="xMidYMid slice" />
-                        </g>
-                      ) : (
-                        <circle class="bump-av-ring" cx={p.x} cy={p.y} r={AV / 2 - 4} />
-                      )
+                        )}
+                      </g>
                     ))}
+                    <text class="bump-name" x={l.last.x + AV / 2 + 9} y={l.last.y} dy="0.32em">
+                      {l.manager}
+                    </text>
                   </g>
                 ))}
               </svg>
