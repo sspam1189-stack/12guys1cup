@@ -260,12 +260,20 @@ const playoffGameLabel = (g) => g.kind === 'bye'
           <h2>Power Rankings</h2>
           <p class="muted pr-note">
             Through week {ranks.throughWeek}. A record says little this early, so this blends
-            what a team has scored, what its roster scored regardless of who was started, and
-            what its current starters project for the rest of the season &mdash;
-            weighted {Math.round(ranks.weight.results * 100)}% results
-            / {Math.round(ranks.weight.roster * 100)}% roster at this point in the year, shifting
-            toward results as games are played. Separate from the
-            all-time <a href={`${base}/power/`}>ELO ratings</a>, which span every season.
+            what a team has scored with what its roster scored regardless of who was started &mdash;
+            the same points, with lineup luck removed.
+            {ranks.weight.roster > 0 ? (
+              <>
+                {' '}Through the first month a projection of each roster fills the gap the schedule
+                has not filled yet: currently {Math.round(ranks.weight.results * 100)}% results
+                / {Math.round(ranks.weight.roster * 100)}% roster. That projection is retired
+                entirely from week 4, after which this is only what teams have done.
+              </>
+            ) : (
+              <>{' '}From week 4 the roster projection is gone: this is results only.</>
+            )}
+            {' '}Separate from the all-time <a href={`${base}/power/`}>ELO ratings</a>, which span
+            every season.
           </p>
           <ol class="pr-list">
             {ranks.teams.map((t) => (

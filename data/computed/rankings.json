@@ -2,10 +2,10 @@
  "season": "2026",
  "week": 2,
  "throughWeek": 1,
- "builtAt": "2026-09-16T22:51:38.865Z",
+ "builtAt": "2026-09-16T22:54:24.963Z",
  "weight": {
-  "results": 0.2,
-  "roster": 0.8
+  "results": 0.25,
+  "roster": 0.75
  },
  "teams": [
   {
@@ -24,7 +24,7 @@
    "maxPpg": 143.3,
    "eff": 99.9,
    "roster": 1527.2,
-   "score": 1.181,
+   "score": 1.139,
    "parts": {
     "form": 0.87,
     "ceiling": 0.27,
@@ -47,7 +47,7 @@
    "maxPpg": 152.4,
    "eff": 97.6,
    "roster": 1516.2,
-   "score": 0.904,
+   "score": 0.897,
    "parts": {
     "form": 1.07,
     "ceiling": 0.59,
@@ -70,7 +70,7 @@
    "maxPpg": 101.6,
    "eff": 92.6,
    "roster": 1527.6,
-   "score": 0.875,
+   "score": 0.752,
    "parts": {
     "form": -0.91,
     "ceiling": -1.2,
@@ -93,7 +93,7 @@
    "maxPpg": 174.6,
    "eff": 66.8,
    "roster": 1508.8,
-   "score": 0.68,
+   "score": 0.687,
    "parts": {
     "form": -0.09,
     "ceiling": 1.37,
@@ -116,7 +116,7 @@
    "maxPpg": 162.2,
    "eff": 93.2,
    "roster": 1504.1,
-   "score": 0.586,
+   "score": 0.613,
    "parts": {
     "form": 1.16,
     "ceiling": 0.94,
@@ -139,7 +139,7 @@
    "maxPpg": 117.4,
    "eff": 88,
    "roster": 1501.2,
-   "score": 0.17,
+   "score": 0.121,
    "parts": {
     "form": -0.58,
     "ceiling": -0.64,
@@ -162,7 +162,7 @@
    "maxPpg": 118.1,
    "eff": 95.1,
    "roster": 1496,
-   "score": 0.042,
+   "score": 0.01,
    "parts": {
     "form": -0.25,
     "ceiling": -0.61,
@@ -185,7 +185,7 @@
    "maxPpg": 133.1,
    "eff": 78.2,
    "roster": 1485.2,
-   "score": -0.245,
+   "score": -0.247,
    "parts": {
     "form": -0.55,
     "ceiling": -0.09,
@@ -208,7 +208,7 @@
    "maxPpg": 165.4,
    "eff": 89.2,
    "roster": 1461.7,
-   "score": -0.694,
+   "score": -0.585,
    "parts": {
     "form": 1.03,
     "ceiling": 1.05,
@@ -231,7 +231,7 @@
    "maxPpg": 166.3,
    "eff": 92.7,
    "roster": 1450,
-   "score": -1.027,
+   "score": -0.89,
    "parts": {
     "form": 1.27,
     "ceiling": 1.08,
@@ -240,29 +240,6 @@
   },
   {
    "rank": 11,
-   "move": null,
-   "userId": "470142073480146944",
-   "manager": "drapheus",
-   "teamName": "Here we go again",
-   "wins": 0,
-   "losses": 1,
-   "ties": 0,
-   "pf": 75.97,
-   "pa": 116.58,
-   "maxPf": 82.77,
-   "ppg": 76,
-   "maxPpg": 82.8,
-   "eff": 91.8,
-   "roster": 1462.4,
-   "score": -1.231,
-   "parts": {
-    "form": -1.57,
-    "ceiling": -1.86,
-    "roster": -1.1
-   }
-  },
-  {
-   "rank": 12,
    "move": null,
    "userId": "596864194553368576",
    "manager": "trizillah",
@@ -277,11 +254,34 @@
    "maxPpg": 109.8,
    "eff": 72,
    "roster": 1458,
-   "score": -1.241,
+   "score": -1.234,
    "parts": {
     "form": -1.45,
     "ceiling": -0.91,
     "roster": -1.27
+   }
+  },
+  {
+   "rank": 12,
+   "move": null,
+   "userId": "470142073480146944",
+   "manager": "drapheus",
+   "teamName": "Here we go again",
+   "wins": 0,
+   "losses": 1,
+   "ties": 0,
+   "pf": 75.97,
+   "pa": 116.58,
+   "maxPf": 82.77,
+   "ppg": 76,
+   "maxPpg": 82.8,
+   "eff": 91.8,
+   "roster": 1462.4,
+   "score": -1.263,
+   "parts": {
+    "form": -1.57,
+    "ceiling": -1.86,
+    "roster": -1.1
    }
   }
  ]

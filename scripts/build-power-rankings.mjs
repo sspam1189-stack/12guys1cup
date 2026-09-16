@@ -11,10 +11,12 @@
  *   roster    the season projection of its current starters, priced off Vegas
  *             where a market exists -- what it still has in hand
  *
- * Early on almost nothing has been played, so the roster term carries the
- * ranking; as games accumulate the observed terms take over. The crossover is
- * deliberate rather than a constant: weight on results is games/(games+4), so
- * it is half observed by week 4 and three-quarters by week 12.
+ * The roster term is scaffolding, not a permanent input: it exists only because
+ * one or two games say almost nothing, and it is gone by week 4. Weight on
+ * results is games/4, capped at 1 -- a quarter observed after week 1, half
+ * after week 2, and from week 4 on the ranking is what teams have actually
+ * done. A projection that still argued with a month of results would be the
+ * projection refusing to be wrong.
  *
  *   node scripts/build-power-rankings.mjs
  */
@@ -139,7 +141,8 @@ const zCeil = z(rows.map((r) => r.maxPpg));
 const zRost = z(rows.map((r) => r.roster));
 
 const games = Math.max(...rows.map((r) => r.games));
-const wResults = games / (games + 4);
+const RAMP = 4;   // games until the roster projection is fully retired
+const wResults = Math.min(1, games / RAMP);
 for (const r of rows) {
   // Ceiling outweighs form: the same roster that scored 116 while benching 58
   // points is the better description of the team than the 116 is.
