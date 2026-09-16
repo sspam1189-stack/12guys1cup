@@ -7,7 +7,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // done. The page itself stays published and reachable by link — hiding the tab
 // only takes it out of the way for the rest of the season.
 const links = [
-  ['/power/', 'ELO'], ['/standings/', 'All-Time'], ['/h2h/', 'Head-to-Head'], ['/records/', 'Records'],
+  ['/power/', 'ELO'], ['/rankings/', 'Power Rankings'], ['/standings/', 'All-Time'], ['/h2h/', 'Head-to-Head'], ['/records/', 'Records'],
   ['/punishments/', 'Punishments'], ['/rules/', 'Rules'],
 ];
 const seasonLinks = [...seasons].sort((a, b) => b.season.localeCompare(a.season));

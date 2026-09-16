@@ -1,0 +1,157 @@
+---
+import Base from '../layouts/Base.astro';
+import MemberLink from '../components/MemberLink.astro';
+import rankings from '../../data/computed/rankings.json';
+import members from '../../data/computed/members.json';
+import seasons from '../../data/computed/seasons.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const season = seasons.find((x) => x.season === rankings.season) ?? null;
+
+// Rankings are rebuilt per season; only show them on the season they describe.
+const ranks = rankings;
+
+/* Bump chart geometry.
+   The full regular season is laid out from the start -- draft, then every week
+   to the playoffs -- so the chart fills in left to right rather than restretching
+   each week. Ranks run 1..N down the y-axis; a team's line is its rank over time,
+   with its avatar pinned at the draft and again at the most recent week. */
+const hist = ranks?.history ?? [];
+const nTeams = ranks?.teams.length ?? 0;
+const lastWeek = (season?.playoffWeekStart ?? 15) - 1;
+const columns = [
+  { key: 0, label: 'Draft' },
+  ...Array.from({ length: lastWeek }, (_, i) => ({ key: i + 1, label: `Week ${i + 1}` })),
+];
+const PAD = { top: 26, right: 30, bottom: 62, left: 54 };
+const STEP_X = 72;
+const STEP_Y = 32;   // room for a 22px avatar on every row without crowding
+const AV = 22;
+const chartW = PAD.left + (columns.length - 1) * STEP_X + PAD.right;
+const chartH = PAD.top + (Math.max(1, nTeams - 1)) * STEP_Y + PAD.bottom;
+const cx = (col) => PAD.left + col * STEP_X;
+const cy = (rank) => PAD.top + (rank - 1) * STEP_Y;
+const plotBottom = cy(nTeams);
+
+const avatarOf = (userId) => members[userId]?.avatar
+  ? `https://sleepercdn.com/avatars/thumbs/${members[userId].avatar}`
+  : null;
+
+const lines = (ranks?.teams ?? []).map((t) => {
+  const pts = hist
+    .map((h) => {
+      const e = h.teams.find((x) => x.userId === t.userId);
+      return e ? { x: cx(h.week), y: cy(e.rank), rank: e.rank, label: h.label } : null;
+    })
+    .filter(Boolean);
+  return {
+    userId: t.userId,
+    manager: t.manager,
+    avatar: avatarOf(t.userId),
+    d: pts.map((p) => `${p.x},${p.y}`).join(' '),
+    pts,
+    first: pts[0],
+    last: pts[pts.length - 1],
+  };
+}).filter((l) => l.pts.length);
+---
+<Base title={`Power Rankings ${rankings.season} - 12 Guys 1 Cup`}>
+  <h1>Power Rankings</h1>
+  <p class="muted page-dek">
+    {rankings.season} season, rebuilt after every week. The
+    all-time <a href={`${base}/power/`}>ELO ratings</a> answer a different question &mdash; how
+    good a manager has been since 2021 &mdash; and barely move across a single season.
+  </p>
+
+          <section class="pr" aria-label={`${rankings.season} power rankings`}>
+        <h2>Power Rankings</h2>
+        <p class="muted pr-note">
+          Through week {ranks.throughWeek}. A record says little this early, so this blends
+          what a team has scored with what its roster scored regardless of who was started &mdash;
+          the same points, with lineup luck removed.
+          {ranks.weight.roster > 0 ? (
+            <>
+              {' '}Through the first month a projection of each roster fills the gap the schedule
+              has not filled yet: currently {Math.round(ranks.weight.results * 100)}% results
+              / {Math.round(ranks.weight.roster * 100)}% roster. That projection is retired
+              entirely from week 4, after which this is only what teams have done.
+            </>
+          ) : (
+            <>{' '}From week 4 the roster projection is gone: this is results only.</>
+          )}
+          {' '}Separate from the all-time <a href={`${base}/power/`}>ELO ratings</a>, which span
+          every season.
+        </p>
+        {hist.length > 0 && (
+          <figure class="bump">
+            <figcaption>
+              Rank from the draft grade onward. The draft column is the roster each manager
+              left the draft with, scored the same way; the rest fills in as weeks are played.
+            </figcaption>
+            <div class="bump-scroll">
+              <svg viewBox={`0 0 ${chartW} ${chartH}`} width={chartW} height={chartH}
+                   role="img" aria-label={`Power ranking movement from the draft through week ${ranks.throughWeek}`}>
+                <defs>
+                  {lines.filter((l) => l.avatar).map((l) => (
+                    <clipPath id={`clip-${l.userId}`}><circle cx={AV / 2} cy={AV / 2} r={AV / 2} /></clipPath>
+                  ))}
+                </defs>
+
+                {Array.from({ length: nTeams }, (_, i) => i + 1).map((r) => (
+                  <g>
+                    <line class="bump-grid" x1={PAD.left} y1={cy(r)} x2={chartW - PAD.right} y2={cy(r)} />
+                    <text class="bump-rank" x={PAD.left - 26} y={cy(r)} dy="0.32em" text-anchor="end">{r}</text>
+                  </g>
+                ))}
+
+                {columns.map((c) => (
+                  <text class="bump-col" x={cx(c.key)} y={plotBottom + 16}
+                        text-anchor="end" transform={`rotate(-45 ${cx(c.key)} ${plotBottom + 16})`}>
+                    {c.label}
+                  </text>
+                ))}
+
+                {lines.map((l, i) => (
+                  <g class="bump-line" style={`--i:${i}`} data-team={l.userId}>
+                    <title>{l.manager}: {l.first.label} #{l.first.rank} &rarr; {l.last.label} #{l.last.rank}</title>
+                    {l.pts.length > 1 && <polyline points={l.d} />}
+                    {l.pts.map((p) => <circle class="bump-dot" cx={p.x} cy={p.y} r="3" />)}
+                    {[l.first, l.last].filter((p, n, arr) => p && (n === 0 || p.x !== arr[0].x)).map((p) => (
+                      l.avatar ? (
+                        <g class="bump-av">
+                          <circle class="bump-av-ring" cx={p.x} cy={p.y} r={AV / 2 + 1.5} />
+                          <image href={l.avatar} x={p.x - AV / 2} y={p.y - AV / 2} width={AV} height={AV}
+                                 clip-path={`url(#clip-${l.userId})`} preserveAspectRatio="xMidYMid slice" />
+                        </g>
+                      ) : (
+                        <circle class="bump-av-ring" cx={p.x} cy={p.y} r={AV / 2 - 4} />
+                      )
+                    ))}
+                  </g>
+                ))}
+              </svg>
+            </div>
+          </figure>
+        )}
+
+        <ol class="pr-list">
+          {ranks.teams.map((t) => (
+            <li class="pr-row">
+              <span class="pr-rank">{t.rank}</span>
+              <span class={`pr-move ${t.move > 0 ? 'up' : t.move < 0 ? 'down' : ''}`}>
+                {t.move == null ? '' : t.move > 0 ? `▲${t.move}` : t.move < 0 ? `▼${Math.abs(t.move)}` : '—'}
+              </span>
+              <span class="pr-team">
+                <b>{t.teamName}</b>
+                <MemberLink id={t.userId} />
+              </span>
+              <span class="pr-rec">{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</span>
+              <span class="pr-stat"><em>PPG</em>{t.ppg.toFixed(1)}</span>
+              <span class="pr-stat"><em>Ceiling</em>{t.maxPpg.toFixed(1)}</span>
+              <span class="pr-stat"><em>Roster</em>{t.roster.toFixed(0)}</span>
+              <span class="pr-score">{t.score > 0 ? '+' : ''}{t.score.toFixed(2)}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+</Base>
