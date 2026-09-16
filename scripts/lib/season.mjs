@@ -20,7 +20,7 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
     teams.set(rosterId, {
       userId, rosterId,
       teamName: u?.metadata?.team_name || u?.display_name || 'Unnamed',
-      wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, maxPf: 0,
+      wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, maxPf: 0, weekly: [],
       playoffWins: 0, playoffLosses: 0, place: null,
     });
   }
@@ -119,7 +119,9 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
       // anywhere and would otherwise add a 0 that reads as a real result.
       if (!t || !Object.keys(entry.players_points ?? {}).length) continue;
       if (!entry.points && !Object.values(entry.players_points).some((v) => v)) continue;
-      t.maxPf += bestLineup(entry);
+      const max = bestLineup(entry);
+      t.maxPf += max;
+      t.weekly.push({ week, pf: round2(entry.points), maxPf: round2(max) });
     }
     for (const { a, b } of pairWeek(matchups[week])) {
       if (!a.points && !b.points) continue; // unplayed (in-progress season)

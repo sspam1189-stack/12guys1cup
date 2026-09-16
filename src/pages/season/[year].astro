@@ -19,6 +19,40 @@ const projByRoster = Object.fromEntries(
 // Rankings are rebuilt per season; only show them on the season they describe.
 const ranks = rankings.season === s.season ? rankings : null;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+/* Bump chart geometry. Ranks run 1..N down the y-axis, one column per point in
+   history, so a team's line is its rank over time. Laid out here so the markup
+   stays declarative and the viewBox can hold the right-hand labels. */
+const hist = ranks?.history ?? [];
+const nTeams = ranks?.teams.length ?? 0;
+const PAD = { top: 18, right: 132, bottom: 30, left: 34 };
+const STEP_X = 86;
+const STEP_Y = 26;
+const chartW = PAD.left + PAD.right + Math.max(1, hist.length - 1) * STEP_X;
+const chartH = PAD.top + PAD.bottom + Math.max(1, nTeams - 1) * STEP_Y;
+const cx = (i) => PAD.left + i * STEP_X;
+const cy = (rank) => PAD.top + (rank - 1) * STEP_Y;
+
+const lines = (ranks?.teams ?? []).map((t) => {
+  const pts = hist
+    .map((h, i) => {
+      const e = h.teams.find((x) => x.userId === t.userId);
+      return e ? { x: cx(i), y: cy(e.rank), rank: e.rank, label: h.label } : null;
+    })
+    .filter(Boolean);
+  const first = pts[0];
+  const last = pts[pts.length - 1];
+  return {
+    userId: t.userId,
+    manager: t.manager,
+    d: pts.map((p) => `${p.x},${p.y}`).join(' '),
+    pts,
+    first,
+    last,
+    // Draft rank to now: the number the chart exists to show.
+    delta: first && last ? first.rank - last.rank : 0,
+  };
+}).filter((l) => l.pts.length);
 const weeks = s.notStarted ? [] : [...new Set(s.games.map((g) => g.week))].sort((a, b) => b - a);
 const winPct = (t) => {
   const games = t.wins + t.losses + t.ties;
@@ -275,6 +309,39 @@ const playoffGameLabel = (g) => g.kind === 'bye'
             {' '}Separate from the all-time <a href={`${base}/power/`}>ELO ratings</a>, which span
             every season.
           </p>
+          {hist.length > 1 && (
+            <figure class="bump">
+              <figcaption>
+                Rank from the draft grade through week {ranks.throughWeek}. Each line is one
+                manager; the draft column is the roster they left the draft with, scored the
+                same way.
+              </figcaption>
+              <div class="bump-scroll">
+                <svg viewBox={`0 0 ${chartW} ${chartH}`} width={chartW} height={chartH}
+                     role="img" aria-label={`Power ranking movement from the draft through week ${ranks.throughWeek}`}>
+                  {Array.from({ length: nTeams }, (_, i) => i + 1).map((r) => (
+                    <g>
+                      <line class="bump-grid" x1={PAD.left} y1={cy(r)} x2={chartW - PAD.right} y2={cy(r)} />
+                      <text class="bump-rank" x={PAD.left - 10} y={cy(r)} dy="0.32em" text-anchor="end">{r}</text>
+                    </g>
+                  ))}
+                  {hist.map((h, i) => (
+                    <text class="bump-col" x={cx(i)} y={chartH - 10} text-anchor="middle">{h.label}</text>
+                  ))}
+                  {lines.map((l, i) => (
+                    <g class="bump-line" style={`--i:${i}`} data-team={l.userId}>
+                      <polyline points={l.d} />
+                      {l.pts.map((p) => <circle cx={p.x} cy={p.y} r="3.5" />)}
+                      <text class="bump-label" x={chartW - PAD.right + 12} y={l.last.y} dy="0.32em">
+                        {l.manager}
+                      </text>
+                    </g>
+                  ))}
+                </svg>
+              </div>
+            </figure>
+          )}
+
           <ol class="pr-list">
             {ranks.teams.map((t) => (
               <li class="pr-row">
