@@ -117,6 +117,87 @@ const playoffGameLabel = (g) => g.kind === 'bye'
     <>
       <Honors season={s} />
 
+      {s.recaps?.length > 0 && (
+        <section class="recaps" aria-label={`${s.season} weekly recaps`}>
+          <div class="section-heading-row">
+            <h2>Weekly Recap</h2>
+            {s.recaps.length > 1 && (
+              <div class="week-filter" role="tablist" aria-label="Recap week">
+                {s.recaps.map((r, i) => (
+                  <button class="week-filter-button" type="button" aria-selected={i === 0 ? 'true' : 'false'} data-recap-filter={r.week}>W{r.week}</button>
+                ))}
+              </div>
+            )}
+          </div>
+          {s.recaps.map((r, i) => (
+            <div class="recap" data-recap={r.week} hidden={i !== 0}>
+              <ol class="recap-results">
+                {r.results.map((g) => (
+                  <li>
+                    <span class="rc-w"><MemberLink id={g.winner.userId} /></span>
+                    <span class="rc-pts win">{g.winner.points.toFixed(2)}</span>
+                    <span class="rc-by">by {g.margin.toFixed(2)}</span>
+                    <span class="rc-pts">{g.loser.points.toFixed(2)}</span>
+                    <span class="rc-l"><MemberLink id={g.loser.userId} /></span>
+                  </li>
+                ))}
+              </ol>
+
+              <div class="recap-cards">
+                <div class="rc-card">
+                  <h3>Top scorers</h3>
+                  <ol class="rc-top">
+                    {r.topStarters.map((p) => (
+                      <li>
+                        <span class="rc-pl">{p.name}</span>
+                        <span class="rc-pos">{p.pos}</span>
+                        <span class="rc-n">{p.points.toFixed(2)}</span>
+                        <span class="rc-own"><MemberLink id={p.userId} /></span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+
+                <div class="rc-card">
+                  <h3>Lineups</h3>
+                  {r.mostEfficient && (
+                    <p class="rc-line">
+                      <em>Nothing left on the bench</em>
+                      <b><MemberLink id={r.mostEfficient.userId} /></b>
+                      <span>{r.mostEfficient.pct.toFixed(1)}% &mdash; {r.mostEfficient.points.toFixed(2)} of a possible {r.mostEfficient.max.toFixed(2)}</span>
+                    </p>
+                  )}
+                  {r.leastEfficient && (
+                    <p class="rc-line">
+                      <em>Most left behind</em>
+                      <b><MemberLink id={r.leastEfficient.userId} /></b>
+                      <span>{r.leastEfficient.pct.toFixed(1)}% &mdash; {(r.leastEfficient.max - r.leastEfficient.points).toFixed(2)} points unused</span>
+                    </p>
+                  )}
+                  {r.benchMistake ? (
+                    <p class="rc-line danger">
+                      <em>Costly bench</em>
+                      <b><MemberLink id={r.benchMistake.userId} /></b>
+                      <span>sat {r.benchMistake.name} ({r.benchMistake.points.toFixed(2)}) and lost by {r.benchMistake.lostBy.toFixed(2)}</span>
+                    </p>
+                  ) : (
+                    <p class="rc-line"><em>Costly bench</em><b>None</b><span>no benched player would have changed a result</span></p>
+                  )}
+                </div>
+
+                <div class="rc-card">
+                  <h3>The week</h3>
+                  {r.high && <p class="rc-line"><em>High score</em><b><MemberLink id={r.high.userId} /></b><span>{r.high.points.toFixed(2)}</span></p>}
+                  {r.low && <p class="rc-line"><em>Low score</em><b><MemberLink id={r.low.userId} /></b><span>{r.low.points.toFixed(2)}</span></p>}
+                  {r.blowout && <p class="rc-line"><em>Blowout</em><b><MemberLink id={r.blowout.winner.userId} /></b><span>by {r.blowout.margin.toFixed(2)}</span></p>}
+                  {r.nailbiter && <p class="rc-line"><em>Closest</em><b><MemberLink id={r.nailbiter.winner.userId} /></b><span>by {r.nailbiter.margin.toFixed(2)}</span></p>}
+                </div>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
       {s.thisWeek?.length > 0 && (
         <section class="this-week" aria-label={`Week ${s.currentWeek} matchups`}>
           <h2>Week {s.currentWeek} Matchups</h2>
@@ -251,87 +332,6 @@ const playoffGameLabel = (g) => g.kind === 'bye'
           ))}
         </tbody>
       </table></div>
-
-      {s.recaps?.length > 0 && (
-        <section class="recaps" aria-label={`${s.season} weekly recaps`}>
-          <div class="section-heading-row">
-            <h2>Weekly Recap</h2>
-            {s.recaps.length > 1 && (
-              <div class="week-filter" role="tablist" aria-label="Recap week">
-                {s.recaps.map((r, i) => (
-                  <button class="week-filter-button" type="button" aria-selected={i === 0 ? 'true' : 'false'} data-recap-filter={r.week}>W{r.week}</button>
-                ))}
-              </div>
-            )}
-          </div>
-          {s.recaps.map((r, i) => (
-            <div class="recap" data-recap={r.week} hidden={i !== 0}>
-              <ol class="recap-results">
-                {r.results.map((g) => (
-                  <li>
-                    <span class="rc-w"><MemberLink id={g.winner.userId} /></span>
-                    <span class="rc-pts win">{g.winner.points.toFixed(2)}</span>
-                    <span class="rc-by">by {g.margin.toFixed(2)}</span>
-                    <span class="rc-pts">{g.loser.points.toFixed(2)}</span>
-                    <span class="rc-l"><MemberLink id={g.loser.userId} /></span>
-                  </li>
-                ))}
-              </ol>
-
-              <div class="recap-cards">
-                <div class="rc-card">
-                  <h3>Top scorers</h3>
-                  <ol class="rc-top">
-                    {r.topStarters.map((p) => (
-                      <li>
-                        <span class="rc-pl">{p.name}</span>
-                        <span class="rc-pos">{p.pos}</span>
-                        <span class="rc-n">{p.points.toFixed(2)}</span>
-                        <span class="rc-own"><MemberLink id={p.userId} /></span>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-
-                <div class="rc-card">
-                  <h3>Lineups</h3>
-                  {r.mostEfficient && (
-                    <p class="rc-line">
-                      <em>Nothing left on the bench</em>
-                      <b><MemberLink id={r.mostEfficient.userId} /></b>
-                      <span>{r.mostEfficient.pct.toFixed(1)}% &mdash; {r.mostEfficient.points.toFixed(2)} of a possible {r.mostEfficient.max.toFixed(2)}</span>
-                    </p>
-                  )}
-                  {r.leastEfficient && (
-                    <p class="rc-line">
-                      <em>Most left behind</em>
-                      <b><MemberLink id={r.leastEfficient.userId} /></b>
-                      <span>{r.leastEfficient.pct.toFixed(1)}% &mdash; {(r.leastEfficient.max - r.leastEfficient.points).toFixed(2)} points unused</span>
-                    </p>
-                  )}
-                  {r.benchMistake ? (
-                    <p class="rc-line danger">
-                      <em>Costly bench</em>
-                      <b><MemberLink id={r.benchMistake.userId} /></b>
-                      <span>sat {r.benchMistake.name} ({r.benchMistake.points.toFixed(2)}) and lost by {r.benchMistake.lostBy.toFixed(2)}</span>
-                    </p>
-                  ) : (
-                    <p class="rc-line"><em>Costly bench</em><b>None</b><span>no benched player would have changed a result</span></p>
-                  )}
-                </div>
-
-                <div class="rc-card">
-                  <h3>The week</h3>
-                  {r.high && <p class="rc-line"><em>High score</em><b><MemberLink id={r.high.userId} /></b><span>{r.high.points.toFixed(2)}</span></p>}
-                  {r.low && <p class="rc-line"><em>Low score</em><b><MemberLink id={r.low.userId} /></b><span>{r.low.points.toFixed(2)}</span></p>}
-                  {r.blowout && <p class="rc-line"><em>Blowout</em><b><MemberLink id={r.blowout.winner.userId} /></b><span>by {r.blowout.margin.toFixed(2)}</span></p>}
-                  {r.nailbiter && <p class="rc-line"><em>Closest</em><b><MemberLink id={r.nailbiter.winner.userId} /></b><span>by {r.nailbiter.margin.toFixed(2)}</span></p>}
-                </div>
-              </div>
-            </div>
-          ))}
-        </section>
-      )}
 
       <div class="section-heading-row">
         <h2>Weekly Results</h2>
