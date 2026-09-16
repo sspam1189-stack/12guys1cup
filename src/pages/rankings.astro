@@ -66,18 +66,21 @@ const lines = (ranks?.teams ?? []).map((t) => {
           <section class="pr" aria-label={`${rankings.season} power rankings`}>
         <h2>Power Rankings</h2>
         <p class="muted pr-note">
-          Through week {ranks.throughWeek}. A record says little this early, so this blends
-          what a team has scored with what its roster scored regardless of who was started &mdash;
-          the same points, with lineup luck removed.
+          Through week {ranks.throughWeek}. Three measures, each scored against the league
+          average. <b>PPG</b> is what a team has put on the board. <b>Best LU</b> is what its
+          players scored that week whether or not they were started, so a misfired lineup does
+          not disguise a good team. <b>Projection</b> is the only forward-looking one &mdash; the
+          rest-of-season value of the starters it holds right now, priced off Vegas where a
+          market exists, and the one that moves when a roster changes hands.
           {ranks.weight.roster > 0 ? (
             <>
-              {' '}Through the first month a projection of each roster fills the gap the schedule
-              has not filled yet: currently {Math.round(ranks.weight.results * 100)}% results
-              / {Math.round(ranks.weight.roster * 100)}% roster. That projection is retired
-              entirely from week 4, after which this is only what teams have done.
+              {' '}One week decides little, so the blend currently runs
+              {' '}{Math.round(ranks.weight.results * 100)}% on the two played measures and
+              {' '}{Math.round(ranks.weight.roster * 100)}% on the projection. The projection is
+              retired entirely from week 4, after which this is only what teams have done.
             </>
           ) : (
-            <>{' '}From week 4 the roster projection is gone: this is results only.</>
+            <>{' '}From week 4 the projection is gone: this is only what teams have done.</>
           )}
           {' '}Separate from the all-time <a href={`${base}/power/`}>ELO ratings</a>, which span
           every season.
@@ -149,8 +152,8 @@ const lines = (ranks?.teams ?? []).map((t) => {
               <span class="pr-metrics">
                 <span class="pr-rec">{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</span>
                 <span class="pr-stat"><em>PPG</em>{t.ppg.toFixed(1)}</span>
-                <span class="pr-stat"><em>Ceiling</em>{t.maxPpg.toFixed(1)}</span>
-                <span class="pr-stat"><em>Roster</em>{t.roster.toFixed(0)}</span>
+                <span class="pr-stat"><em>Best LU</em>{t.maxPpg.toFixed(1)}</span>
+                <span class="pr-stat"><em>Projection</em>{t.roster.toFixed(0)}</span>
                 <span class="pr-score">{t.score > 0 ? '+' : ''}{t.score.toFixed(2)}</span>
               </span>
             </li>

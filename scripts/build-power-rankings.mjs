@@ -249,7 +249,7 @@ writeFileSync(resolve(REPO, 'data/computed/rankings.json'), JSON.stringify(out, 
 
 console.log(`${season} power rankings through week ${games} `
   + `(results ${(wResults * 100).toFixed(0)}% / roster ${((1 - wResults) * 100).toFixed(0)}%)\n`);
-console.log(' #  move  manager         rec    ppg   maxPpg   eff    roster   score');
+console.log(' #  move  manager         rec    ppg   bestLU   eff     proj   score');
 for (const r of out.teams) {
   const mv = r.move == null ? '  -' : r.move > 0 ? `+${r.move}` : r.move < 0 ? `${r.move}` : ' =';
   console.log(
