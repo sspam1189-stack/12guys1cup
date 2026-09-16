@@ -11,11 +11,10 @@
  *   roster    the season projection of its current starters, priced off Vegas
  *             where a market exists -- what it still has in hand
  *
- * The roster term is scaffolding, not a permanent input: it exists only because
- * one or two games say almost nothing, and it is gone by week 4. Weight on
- * results is games/4, capped at 1 -- a quarter observed after week 1, half
- * after week 2, and from week 4 on the ranking is what teams have actually
- * done. A projection that still argued with a month of results would be the
+ * The projection is scaffolding, not a permanent input: it exists only because
+ * one or two games say almost nothing, and it comes down on a fixed schedule --
+ * 80% of the score after week 1, then 60, 40, 20, and nothing from week 5 on.
+ * A projection that still argued with five weeks of results would be the
  * projection refusing to be wrong.
  *
  *   node scripts/build-power-rankings.mjs
@@ -152,7 +151,9 @@ const z = (vals) => {
   const sd = Math.sqrt(vals.reduce((a, b) => a + (b - m) ** 2, 0) / vals.length) || 1;
   return (x) => (x - m) / sd;
 };
-const RAMP = 4;   // games until the roster projection is fully retired
+// Projection weight steps down a fifth per game played -- 80/60/40/20/0 -- so it
+// is gone once five weeks have been played, not four.
+const RAMP = 5;
 
 /* Score and order a set of teams as of `games` played. Pulled out so the same
    maths produces the current table and every earlier point on the chart. */
@@ -188,7 +189,7 @@ rows.push(...ranked);
 /* ---- history: the draft, then the table as it stood after each week ----
    Roster strength is always the current roster, because an as-of-week-2 roster
    is not recorded anywhere. That only touches weeks 1-3, since the roster term
-   is retired from week 4 -- and week 0 uses the drafted roster, which is. */
+   is retired from week 5 -- and week 0 uses the drafted roster, which is. */
 const history = [];
 {
   const draftRows = rows.map((r) => ({
@@ -248,7 +249,7 @@ const out = {
 writeFileSync(resolve(REPO, 'data/computed/rankings.json'), JSON.stringify(out, null, 1));
 
 console.log(`${season} power rankings through week ${games} `
-  + `(results ${(wResults * 100).toFixed(0)}% / roster ${((1 - wResults) * 100).toFixed(0)}%)\n`);
+  + `(results ${(wResults * 100).toFixed(0)}% / projection ${((1 - wResults) * 100).toFixed(0)}%)\n`);
 console.log(' #  move  manager         rec    ppg   bestLU   eff     proj   score');
 for (const r of out.teams) {
   const mv = r.move == null ? '  -' : r.move > 0 ? `+${r.move}` : r.move < 0 ? `${r.move}` : ' =';
