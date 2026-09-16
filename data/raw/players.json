@@ -2355,6 +2355,10 @@
   "name": "KC Concepcion",
   "position": "WR"
  },
+ "13301": {
+  "name": "Antonio Williams",
+  "position": "WR"
+ },
  "13305": {
   "name": "Mike Washington",
   "position": "RB"
@@ -2435,20 +2439,24 @@
   "name": "Los Angeles Chargers",
   "position": "DEF"
  },
- "ARI": {
-  "name": "Arizona Cardinals",
-  "position": "DEF"
- },
  "SF": {
   "name": "San Francisco 49ers",
   "position": "DEF"
  },
- "WAS": {
-  "name": "Washington Commanders",
-  "position": "DEF"
- },
  "TB": {
   "name": "Tampa Bay Buccaneers",
+  "position": "DEF"
+ },
+ "KC": {
+  "name": "Kansas City Chiefs",
+  "position": "DEF"
+ },
+ "ARI": {
+  "name": "Arizona Cardinals",
+  "position": "DEF"
+ },
+ "WAS": {
+  "name": "Washington Commanders",
   "position": "DEF"
  },
  "NYJ": {
@@ -2481,10 +2489,6 @@
  },
  "CAR": {
   "name": "Carolina Panthers",
-  "position": "DEF"
- },
- "KC": {
-  "name": "Kansas City Chiefs",
   "position": "DEF"
  },
  "CHI": {
