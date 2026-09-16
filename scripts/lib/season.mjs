@@ -20,7 +20,7 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
     teams.set(rosterId, {
       userId, rosterId,
       teamName: u?.metadata?.team_name || u?.display_name || 'Unnamed',
-      wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, maxPf: 0,
+      wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, maxPf: 0, weekly: [],
       playoffWins: 0, playoffLosses: 0, place: null,
     });
   }
@@ -93,22 +93,23 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
     IDP_FLEX: ['DL', 'LB', 'DB'],
   };
   const slots = (league.roster_positions ?? []).filter((s) => s !== 'BN' && s !== 'IR');
-  const bestLineup = (entry) => {
+  const bestEleven = (entry) => {
     const pool = Object.entries(entry.players_points ?? {})
       .map(([pid, pts]) => ({ pid, pts: pts ?? 0, pos: players[pid]?.position ?? '' }))
       .sort((a, b) => b.pts - a.pts);
     const used = new Set();
-    let total = 0;
+    const picked = [];
     const take = (eligible) => {
       const pick = pool.find((p) => !used.has(p.pid) && eligible.includes(p.pos));
       if (!pick) return;
       used.add(pick.pid);
-      total += pick.pts;
+      picked.push(pick);
     };
     for (const slot of slots) if (!FLEX_ELIGIBLE[slot]) take([slot]);
     for (const slot of slots) if (FLEX_ELIGIBLE[slot]) take(FLEX_ELIGIBLE[slot]);
-    return total;
+    return picked;
   };
+  const bestLineup = (entry) => bestEleven(entry).reduce((a, b) => a + b.pts, 0);
 
   // Regular season: weeks 1 .. playoff_week_start - 1.
   for (let week = 1; week < pws; week++) {
@@ -118,7 +119,9 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
       // anywhere and would otherwise add a 0 that reads as a real result.
       if (!t || !Object.keys(entry.players_points ?? {}).length) continue;
       if (!entry.points && !Object.values(entry.players_points).some((v) => v)) continue;
-      t.maxPf += bestLineup(entry);
+      const max = bestLineup(entry);
+      t.maxPf += max;
+      t.weekly.push({ week, pf: round2(entry.points), maxPf: round2(max) });
     }
     for (const { a, b } of pairWeek(matchups[week])) {
       if (!a.points && !b.points) continue; // unplayed (in-progress season)
@@ -242,6 +245,76 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
     player: `${p.metadata?.first_name ?? ''} ${p.metadata?.last_name ?? ''}`.trim(),
     position: p.metadata?.position ?? '',
   }));
+  // A recap per played week: who won, who scored, and the two facts a box score
+  // hides -- who wasted a big week through their lineup, and who could not have
+  // done anything differently. Lineup efficiency is actual over the best legal
+  // lineup, which is why max PF is computed above.
+  const nameOf = (pid) => players[pid]?.name ?? pid;
+  const posOf = (pid) => players[pid]?.position ?? '';
+  const recaps = [];
+  for (let week = 1; week < pws; week++) {
+    const entries = matchups[week] ?? [];
+    const played = entries.filter((e) => Object.values(e.players_points ?? {}).some((v) => v));
+    if (played.length < 2) continue;
+
+    const results = [];
+    for (const { a, b } of pairWeek(entries)) {
+      if (!a.points && !b.points) continue;
+      const ta = teams.get(a.roster_id);
+      const tb = teams.get(b.roster_id);
+      if (!ta || !tb) continue;
+      const aWon = a.points >= b.points;
+      const [w, l] = aWon ? [[ta, a], [tb, b]] : [[tb, b], [ta, a]];
+      results.push({
+        winner: { userId: w[0].userId, teamName: w[0].teamName, points: round2(w[1].points) },
+        loser: { userId: l[0].userId, teamName: l[0].teamName, points: round2(l[1].points) },
+        margin: round2(Math.abs(a.points - b.points)),
+      });
+    }
+    if (!results.length) continue;
+    results.sort((x, y) => y.winner.points - x.winner.points);
+
+    const starters = [];
+    const benched = [];
+    const eff = [];
+    for (const e of played) {
+      const t = teams.get(e.roster_id);
+      if (!t) continue;
+      const lineup = new Set(e.starters ?? []);
+      for (const [pid, pts] of Object.entries(e.players_points ?? {})) {
+        const row = { pid, name: nameOf(pid), pos: posOf(pid), points: round2(pts ?? 0), userId: t.userId, teamName: t.teamName };
+        (lineup.has(pid) ? starters : benched).push(row);
+      }
+      const max = bestEleven(e).reduce((acc, p) => acc + p.pts, 0);
+      if (max > 0) {
+        eff.push({ userId: t.userId, teamName: t.teamName, points: round2(e.points), max: round2(max), pct: round2((e.points / max) * 100) });
+      }
+    }
+    starters.sort((a, b) => b.points - a.points);
+    benched.sort((a, b) => b.points - a.points);
+    eff.sort((a, b) => b.pct - a.pct);
+
+    // A bench mistake only counts when starting the player would have changed
+    // the result -- otherwise it is trivia, not a mistake.
+    const lostBy = {};
+    for (const r of results) lostBy[r.loser.userId] = r.margin;
+    const costly = benched.find((b) => lostBy[b.userId] != null && b.points > lostBy[b.userId]);
+
+    recaps.push({
+      week,
+      results,
+      topStarters: starters.slice(0, 5),
+      mostEfficient: eff[0] ?? null,
+      leastEfficient: eff[eff.length - 1] ?? null,
+      benchMistake: costly ? { ...costly, lostBy: lostBy[costly.userId] } : null,
+      high: results[0] ? results[0].winner : null,
+      low: [...results].sort((a, b) => a.loser.points - b.loser.points)[0]?.loser ?? null,
+      blowout: [...results].sort((a, b) => b.margin - a.margin)[0] ?? null,
+      nailbiter: [...results].sort((a, b) => a.margin - b.margin)[0] ?? null,
+    });
+  }
+  recaps.reverse();   // newest first, which is how the page reads it
+
   // This week's head-to-head slate, for a season still being played. Scores are
   // whatever Sleeper has so far -- zeros before kickoff, live totals during the
   // week -- so the page shows the pairings either way rather than waiting for
@@ -270,7 +343,7 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
 
   return {
     season, name: league.name, playoffWeekStart: pws, inProgress,
-    currentWeek, thisWeek,
+    currentWeek, thisWeek, recaps,
     standings: [...teams.values()].sort((a, b) => a.place - b.place),
     champion, runnerUp, third, pfChamp, lastPlace, games,
     playoffBracket: playoffBracket.sort(bracketSort),

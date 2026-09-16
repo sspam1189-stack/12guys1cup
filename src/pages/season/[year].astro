@@ -4,6 +4,7 @@ import MemberLink from '../../components/MemberLink.astro';
 import Honors from '../../components/Honors.astro';
 import seasons from '../../../data/computed/seasons.json';
 import weekly from '../../../data/computed/week.json';
+import rankings from '../../../data/computed/rankings.json';
 import members from '../../../data/computed/members.json';
 
 export function getStaticPaths() {
@@ -15,6 +16,43 @@ const wk = weekly.season === Number(s.season) && weekly.week === s.currentWeek ?
 const projByRoster = Object.fromEntries(
   (wk?.games ?? []).flatMap((g) => [g.a, g.b]).map((t) => [t.userId, t]),
 );
+// Rankings are rebuilt per season; only show them on the season they describe.
+const ranks = rankings.season === s.season ? rankings : null;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+/* Bump chart geometry. Ranks run 1..N down the y-axis, one column per point in
+   history, so a team's line is its rank over time. Laid out here so the markup
+   stays declarative and the viewBox can hold the right-hand labels. */
+const hist = ranks?.history ?? [];
+const nTeams = ranks?.teams.length ?? 0;
+const PAD = { top: 18, right: 132, bottom: 30, left: 34 };
+const STEP_X = 86;
+const STEP_Y = 26;
+const chartW = PAD.left + PAD.right + Math.max(1, hist.length - 1) * STEP_X;
+const chartH = PAD.top + PAD.bottom + Math.max(1, nTeams - 1) * STEP_Y;
+const cx = (i) => PAD.left + i * STEP_X;
+const cy = (rank) => PAD.top + (rank - 1) * STEP_Y;
+
+const lines = (ranks?.teams ?? []).map((t) => {
+  const pts = hist
+    .map((h, i) => {
+      const e = h.teams.find((x) => x.userId === t.userId);
+      return e ? { x: cx(i), y: cy(e.rank), rank: e.rank, label: h.label } : null;
+    })
+    .filter(Boolean);
+  const first = pts[0];
+  const last = pts[pts.length - 1];
+  return {
+    userId: t.userId,
+    manager: t.manager,
+    d: pts.map((p) => `${p.x},${p.y}`).join(' '),
+    pts,
+    first,
+    last,
+    // Draft rank to now: the number the chart exists to show.
+    delta: first && last ? first.rank - last.rank : 0,
+  };
+}).filter((l) => l.pts.length);
 const weeks = s.notStarted ? [] : [...new Set(s.games.map((g) => g.week))].sort((a, b) => b - a);
 const winPct = (t) => {
   const games = t.wins + t.losses + t.ties;
@@ -251,6 +289,162 @@ const playoffGameLabel = (g) => g.kind === 'bye'
         </tbody>
       </table></div>
 
+      {ranks && (
+        <section class="pr" aria-label={`${s.season} power rankings`}>
+          <h2>Power Rankings</h2>
+          <p class="muted pr-note">
+            Through week {ranks.throughWeek}. A record says little this early, so this blends
+            what a team has scored with what its roster scored regardless of who was started &mdash;
+            the same points, with lineup luck removed.
+            {ranks.weight.roster > 0 ? (
+              <>
+                {' '}Through the first month a projection of each roster fills the gap the schedule
+                has not filled yet: currently {Math.round(ranks.weight.results * 100)}% results
+                / {Math.round(ranks.weight.roster * 100)}% roster. That projection is retired
+                entirely from week 4, after which this is only what teams have done.
+              </>
+            ) : (
+              <>{' '}From week 4 the roster projection is gone: this is results only.</>
+            )}
+            {' '}Separate from the all-time <a href={`${base}/power/`}>ELO ratings</a>, which span
+            every season.
+          </p>
+          {hist.length > 1 && (
+            <figure class="bump">
+              <figcaption>
+                Rank from the draft grade through week {ranks.throughWeek}. Each line is one
+                manager; the draft column is the roster they left the draft with, scored the
+                same way.
+              </figcaption>
+              <div class="bump-scroll">
+                <svg viewBox={`0 0 ${chartW} ${chartH}`} width={chartW} height={chartH}
+                     role="img" aria-label={`Power ranking movement from the draft through week ${ranks.throughWeek}`}>
+                  {Array.from({ length: nTeams }, (_, i) => i + 1).map((r) => (
+                    <g>
+                      <line class="bump-grid" x1={PAD.left} y1={cy(r)} x2={chartW - PAD.right} y2={cy(r)} />
+                      <text class="bump-rank" x={PAD.left - 10} y={cy(r)} dy="0.32em" text-anchor="end">{r}</text>
+                    </g>
+                  ))}
+                  {hist.map((h, i) => (
+                    <text class="bump-col" x={cx(i)} y={chartH - 10} text-anchor="middle">{h.label}</text>
+                  ))}
+                  {lines.map((l, i) => (
+                    <g class="bump-line" style={`--i:${i}`} data-team={l.userId}>
+                      <polyline points={l.d} />
+                      {l.pts.map((p) => <circle cx={p.x} cy={p.y} r="3.5" />)}
+                      <text class="bump-label" x={chartW - PAD.right + 12} y={l.last.y} dy="0.32em">
+                        {l.manager}
+                      </text>
+                    </g>
+                  ))}
+                </svg>
+              </div>
+            </figure>
+          )}
+
+          <ol class="pr-list">
+            {ranks.teams.map((t) => (
+              <li class="pr-row">
+                <span class="pr-rank">{t.rank}</span>
+                <span class={`pr-move ${t.move > 0 ? 'up' : t.move < 0 ? 'down' : ''}`}>
+                  {t.move == null ? '' : t.move > 0 ? `▲${t.move}` : t.move < 0 ? `▼${Math.abs(t.move)}` : '—'}
+                </span>
+                <span class="pr-team">
+                  <b>{t.teamName}</b>
+                  <MemberLink id={t.userId} />
+                </span>
+                <span class="pr-rec">{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</span>
+                <span class="pr-stat"><em>PPG</em>{t.ppg.toFixed(1)}</span>
+                <span class="pr-stat"><em>Ceiling</em>{t.maxPpg.toFixed(1)}</span>
+                <span class="pr-stat"><em>Roster</em>{t.roster.toFixed(0)}</span>
+                <span class="pr-score">{t.score > 0 ? '+' : ''}{t.score.toFixed(2)}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      {s.recaps?.length > 0 && (
+        <section class="recaps" aria-label={`${s.season} weekly recaps`}>
+          <div class="section-heading-row">
+            <h2>Weekly Recap</h2>
+            {s.recaps.length > 1 && (
+              <div class="week-filter" role="tablist" aria-label="Recap week">
+                {s.recaps.map((r, i) => (
+                  <button class="week-filter-button" type="button" aria-selected={i === 0 ? 'true' : 'false'} data-recap-filter={r.week}>W{r.week}</button>
+                ))}
+              </div>
+            )}
+          </div>
+          {s.recaps.map((r, i) => (
+            <div class="recap" data-recap={r.week} hidden={i !== 0}>
+              <ol class="recap-results">
+                {r.results.map((g) => (
+                  <li>
+                    <span class="rc-w"><MemberLink id={g.winner.userId} /></span>
+                    <span class="rc-pts win">{g.winner.points.toFixed(2)}</span>
+                    <span class="rc-by">by {g.margin.toFixed(2)}</span>
+                    <span class="rc-pts">{g.loser.points.toFixed(2)}</span>
+                    <span class="rc-l"><MemberLink id={g.loser.userId} /></span>
+                  </li>
+                ))}
+              </ol>
+
+              <div class="recap-cards">
+                <div class="rc-card">
+                  <h3>Top scorers</h3>
+                  <ol class="rc-top">
+                    {r.topStarters.map((p) => (
+                      <li>
+                        <span class="rc-pl">{p.name}</span>
+                        <span class="rc-pos">{p.pos}</span>
+                        <span class="rc-n">{p.points.toFixed(2)}</span>
+                        <span class="rc-own"><MemberLink id={p.userId} /></span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+
+                <div class="rc-card">
+                  <h3>Lineups</h3>
+                  {r.mostEfficient && (
+                    <p class="rc-line">
+                      <em>Nothing left on the bench</em>
+                      <b><MemberLink id={r.mostEfficient.userId} /></b>
+                      <span>{r.mostEfficient.pct.toFixed(1)}% &mdash; {r.mostEfficient.points.toFixed(2)} of a possible {r.mostEfficient.max.toFixed(2)}</span>
+                    </p>
+                  )}
+                  {r.leastEfficient && (
+                    <p class="rc-line">
+                      <em>Most left behind</em>
+                      <b><MemberLink id={r.leastEfficient.userId} /></b>
+                      <span>{r.leastEfficient.pct.toFixed(1)}% &mdash; {(r.leastEfficient.max - r.leastEfficient.points).toFixed(2)} points unused</span>
+                    </p>
+                  )}
+                  {r.benchMistake ? (
+                    <p class="rc-line danger">
+                      <em>Costly bench</em>
+                      <b><MemberLink id={r.benchMistake.userId} /></b>
+                      <span>sat {r.benchMistake.name} ({r.benchMistake.points.toFixed(2)}) and lost by {r.benchMistake.lostBy.toFixed(2)}</span>
+                    </p>
+                  ) : (
+                    <p class="rc-line"><em>Costly bench</em><b>None</b><span>no benched player would have changed a result</span></p>
+                  )}
+                </div>
+
+                <div class="rc-card">
+                  <h3>The week</h3>
+                  {r.high && <p class="rc-line"><em>High score</em><b><MemberLink id={r.high.userId} /></b><span>{r.high.points.toFixed(2)}</span></p>}
+                  {r.low && <p class="rc-line"><em>Low score</em><b><MemberLink id={r.low.userId} /></b><span>{r.low.points.toFixed(2)}</span></p>}
+                  {r.blowout && <p class="rc-line"><em>Blowout</em><b><MemberLink id={r.blowout.winner.userId} /></b><span>by {r.blowout.margin.toFixed(2)}</span></p>}
+                  {r.nailbiter && <p class="rc-line"><em>Closest</em><b><MemberLink id={r.nailbiter.winner.userId} /></b><span>by {r.nailbiter.margin.toFixed(2)}</span></p>}
+                </div>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
       <div class="section-heading-row">
         <h2>Weekly Results</h2>
         <div class="week-filter" role="tablist" aria-label="Weekly results filter">
@@ -402,3 +596,16 @@ const playoffGameLabel = (g) => g.kind === 'bye'
     </>
   )}
 </Base>
+
+<script>
+  document.querySelectorAll('[data-recap-filter]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const wk = btn.dataset.recapFilter;
+      document.querySelectorAll('[data-recap-filter]').forEach((b) =>
+        b.setAttribute('aria-selected', String(b === btn)));
+      document.querySelectorAll('[data-recap]').forEach((el) => {
+        el.hidden = el.dataset.recap !== wk;
+      });
+    });
+  });
+</script>

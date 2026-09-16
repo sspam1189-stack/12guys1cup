@@ -1590,3 +1590,158 @@ details summary {
 
 /* Lineup efficiency reads as a secondary stat next to the raw totals. */
 td.eff { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* ---- weekly recap ---- */
+.recaps { margin-bottom: 2rem; }
+.recap-results { margin: 0 0 1rem; padding: 0; list-style: none; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+.recap-results li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4.6rem 5.5rem 4.6rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.recap-results li:last-child { border-bottom: 0; }
+.rc-w, .rc-l { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rc-l { text-align: right; color: var(--muted); }
+.rc-pts { font-variant-numeric: tabular-nums; font-weight: 700; text-align: right; }
+.rc-pts.win { color: var(--win); }
+.rc-by {
+  text-align: center; color: var(--muted);
+  font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.recap-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.85rem; }
+.rc-card { border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); padding: 0.85rem 0.95rem; }
+.rc-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.66rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted);
+}
+.rc-top { margin: 0; padding: 0; list-style: none; }
+.rc-top li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 2.2rem 3.4rem;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.22rem 0;
+  font-size: 0.86rem;
+}
+.rc-top .rc-own { display: none; }
+.rc-pl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rc-pos { color: var(--muted); font-size: 0.64rem; letter-spacing: 0.06em; }
+.rc-n { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.rc-line { display: grid; gap: 0.1rem; margin: 0 0 0.7rem; font-size: 0.86rem; }
+.rc-line:last-child { margin-bottom: 0; }
+.rc-line em {
+  font-style: normal; color: var(--muted);
+  font-size: 0.62rem; font-weight: 850; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.rc-line b { font-weight: 600; }
+.rc-line span { color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.rc-line.danger b { color: var(--red); }
+
+@media (min-width: 900px) {
+  .rc-top li { grid-template-columns: minmax(0, 1fr) 2.2rem 3.4rem minmax(0, 6rem); }
+  .rc-top .rc-own { display: block; color: var(--muted); font-size: 0.72rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+@media (max-width: 560px) {
+  .recap-results li { grid-template-columns: minmax(0, 1fr) 3.8rem; row-gap: 0.15rem; }
+  .rc-by { grid-column: 1 / -1; text-align: left; }
+  .rc-l { text-align: left; }
+}
+
+/* ---- in-season power rankings ---- */
+.pr { margin-bottom: 2.2rem; }
+.pr-note { max-width: 74ch; font-size: 0.86rem; margin: 0 0 0.9rem; }
+.pr-list { margin: 0; padding: 0; list-style: none; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+.pr-row {
+  display: grid;
+  grid-template-columns: 2.1rem 2.4rem minmax(0, 1fr) 3.2rem repeat(3, 4.4rem) 4rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.8rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.pr-row:last-child { border-bottom: 0; }
+.pr-row:nth-child(-n+3) .pr-rank { color: var(--gold); }
+.pr-rank { font-weight: 850; font-size: 1.05rem; font-variant-numeric: tabular-nums; text-align: center; }
+.pr-move { font-size: 0.7rem; font-weight: 700; text-align: center; color: var(--muted); }
+.pr-move.up { color: var(--win); }
+.pr-move.down { color: var(--red); }
+.pr-team { display: grid; gap: 0.05rem; min-width: 0; }
+.pr-team b { font-size: 0.92rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pr-rec { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 0.82rem; text-align: center; }
+.pr-stat { display: grid; gap: 0.05rem; font-variant-numeric: tabular-nums; font-size: 0.86rem; text-align: right; }
+.pr-stat em {
+  font-style: normal; color: var(--muted);
+  font-size: 0.56rem; font-weight: 850; letter-spacing: 0.09em; text-transform: uppercase;
+}
+.pr-score { font-variant-numeric: tabular-nums; font-weight: 700; text-align: right; font-size: 0.9rem; }
+
+@media (max-width: 860px) {
+  .pr-row { grid-template-columns: 2rem 2.2rem minmax(0, 1fr) 3rem 4.2rem; row-gap: 0.25rem; }
+  /* Ceiling and roster are the columns that explain the order, so they stay;
+     the composite score is the one that can go when space is tight. */
+  .pr-score { display: none; }
+}
+@media (max-width: 620px) {
+  .pr-row { grid-template-columns: 1.9rem 2rem minmax(0, 1fr) 4.2rem; }
+  .pr-rec { display: none; }
+  .pr-stat:nth-of-type(n+2) { display: none; }
+}
+
+/* ---- power-ranking bump chart ---- */
+.bump { margin: 0 0 1.1rem; }
+.bump figcaption { color: var(--muted); font-size: 0.8rem; margin-bottom: 0.5rem; max-width: 72ch; }
+/* A 12-line chart cannot compress below a legible width, so it scrolls in its
+   own container rather than squeezing the page. */
+.bump-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 0.4rem 0.2rem;
+}
+.bump-scroll svg { display: block; max-width: none; }
+
+.bump-grid { stroke: var(--border); stroke-width: 1; }
+.bump-rank, .bump-col {
+  fill: var(--muted);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+}
+.bump-col { letter-spacing: 0.06em; }
+
+/* Twelve hues around the wheel, evenly spaced, so neighbouring ranks never
+   share a colour. Saturation and lightness are fixed so no single line shouts. */
+.bump-line {
+  --hue: calc(var(--i) * 30deg);
+  --c: hsl(var(--hue) 62% 52%);
+}
+.bump-line polyline {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 2.25;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+.bump-line circle { fill: var(--c); }
+.bump-label { fill: var(--c); font-family: inherit; font-size: 11.5px; font-weight: 700; }
+
+/* Hover isolates one team without hiding the rest entirely. */
+.bump-scroll:hover .bump-line { opacity: 0.22; }
+.bump-scroll .bump-line:hover { opacity: 1; }
+.bump-scroll .bump-line:hover polyline { stroke-width: 3.25; opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bump-line, .bump-line polyline { transition: none; }
+}
