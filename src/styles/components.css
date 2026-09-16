@@ -1700,48 +1700,40 @@ td.eff { color: var(--muted); font-variant-numeric: tabular-nums; }
 /* ---- power-ranking bump chart ---- */
 .bump { margin: 0 0 1.1rem; }
 .bump figcaption { color: var(--muted); font-size: 0.8rem; margin-bottom: 0.5rem; max-width: 72ch; }
-/* A 12-line chart cannot compress below a legible width, so it scrolls in its
-   own container rather than squeezing the page. */
+/* The whole season is laid out from week one, so the chart is wider than the
+   page and scrolls in its own container rather than squeezing. */
 .bump-scroll {
   overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: var(--surface);
-  padding: 0.4rem 0.2rem;
+  padding: 0.5rem 0.25rem 0.2rem;
 }
 .bump-scroll svg { display: block; max-width: none; }
 
 .bump-grid { stroke: var(--border); stroke-width: 1; }
-.bump-rank, .bump-col {
-  fill: var(--muted);
-  font-family: inherit;
-  font-size: 11px;
-  font-weight: 700;
-}
-.bump-col { letter-spacing: 0.06em; }
+.bump-rank, .bump-col { fill: var(--muted); font-family: inherit; font-weight: 700; }
+.bump-rank { font-size: 11.5px; }
+.bump-col { font-size: 11px; letter-spacing: 0.04em; }
 
-/* Twelve hues around the wheel, evenly spaced, so neighbouring ranks never
-   share a colour. Saturation and lightness are fixed so no single line shouts. */
-.bump-line {
-  --hue: calc(var(--i) * 30deg);
-  --c: hsl(var(--hue) 62% 52%);
-}
+/* Twelve hues evenly spaced round the wheel, so adjacent ranks never share one. */
+.bump-line { --hue: calc(var(--i) * 30deg); --c: hsl(var(--hue) 64% 52%); }
 .bump-line polyline {
   fill: none;
   stroke: var(--c);
-  stroke-width: 2.25;
+  stroke-width: 3;
   stroke-linejoin: round;
   stroke-linecap: round;
-  opacity: 0.85;
 }
-.bump-line circle { fill: var(--c); }
-.bump-label { fill: var(--c); font-family: inherit; font-size: 11.5px; font-weight: 700; }
+.bump-dot { fill: var(--c); }
+.bump-av-ring { fill: var(--surface); stroke: var(--c); stroke-width: 2.5; }
 
-/* Hover isolates one team without hiding the rest entirely. */
-.bump-scroll:hover .bump-line { opacity: 0.22; }
+/* Hovering a line dims the rest instead of hiding them, so a team can be
+   followed through the tangle without losing the context around it. */
+.bump-scroll:hover .bump-line { opacity: 0.18; }
 .bump-scroll .bump-line:hover { opacity: 1; }
-.bump-scroll .bump-line:hover polyline { stroke-width: 3.25; opacity: 1; }
+.bump-scroll .bump-line:hover polyline { stroke-width: 4; }
 
 @media (prefers-reduced-motion: reduce) {
-  .bump-line, .bump-line polyline { transition: none; }
+  .bump-line { transition: none; }
 }
