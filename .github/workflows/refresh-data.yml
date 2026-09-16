@@ -36,6 +36,10 @@ jobs:
         continue-on-error: true
       - run: npm run compute:weekly
         continue-on-error: true
+      # Power rankings need the season summary and the weekly market, so they
+      # run last. Off-season there is nothing played to rank and it no-ops.
+      - run: npm run compute:rankings
+        continue-on-error: true
 
       - run: npm test
       - name: Commit refreshed data
