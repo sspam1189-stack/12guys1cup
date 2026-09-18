@@ -34,14 +34,6 @@
     },
     {
      "money": -115,
-     "value": 1525.5,
-     "team_id": 154,
-     "player_id": 54135,
-     "outcome_id": 2800441314,
-     "option_type_id": 170
-    },
-    {
-     "money": -115,
      "value": 1375.5,
      "team_id": 126,
      "player_id": 241887,
@@ -62,14 +54,6 @@
      "team_id": 151,
      "player_id": 241851,
      "outcome_id": 2800441309,
-     "option_type_id": 171
-    },
-    {
-     "money": -115,
-     "value": 1525.5,
-     "team_id": 154,
-     "player_id": 54135,
-     "outcome_id": 2800441313,
      "option_type_id": 171
     },
     {
@@ -119,14 +103,6 @@
     },
     {
      "money": -115,
-     "value": 1525.5,
-     "team_id": 154,
-     "player_id": 54135,
-     "outcome_id": 2800427299,
-     "option_type_id": 170
-    },
-    {
-     "money": -115,
      "value": 1725.5,
      "team_id": 151,
      "player_id": 241851,
@@ -147,14 +123,6 @@
      "team_id": 126,
      "player_id": 241887,
      "outcome_id": 2800427344,
-     "option_type_id": 171
-    },
-    {
-     "money": -115,
-     "value": 1525.5,
-     "team_id": 154,
-     "player_id": 54135,
-     "outcome_id": 2800427300,
      "option_type_id": 171
     }
    ]
@@ -181,24 +149,9 @@
    "logo": "https://static.sprtactn.co/teamlogos/nfl/100/atl.png",
    "full_name": "Atlanta Falcons",
    "display_name": "Falcons"
-  },
-  {
-   "id": 154,
-   "abbr": "SF",
-   "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sf.png",
-   "full_name": "San Francisco 49ers",
-   "display_name": "49ers"
   }
  ],
  "players": [
-  {
-   "id": 54135,
-   "abbr": "C.McCaffrey",
-   "image": "https://assets.actionnetwork.com/200x200/9bfffe652e4d4a39be9570267415af2b.png",
-   "team_id": 154,
-   "url_slug": "christian-mccaffrey-54135-2",
-   "full_name": "Christian McCaffrey"
-  },
   {
    "id": 241840,
    "abbr": "J.Gibbs",

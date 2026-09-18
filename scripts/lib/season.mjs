@@ -92,6 +92,14 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
     SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'],
     IDP_FLEX: ['DL', 'LB', 'DB'],
   };
+  // Mid-week, some games have been played and others have not, so the entries
+  // carry partial scores. Counting those as a result gives every team a phantom
+  // extra game at a fraction of its real total. Sleeper's `leg` is the week
+  // currently being played, so a week is settled only once the league is past
+  // it -- or once the season itself is over.
+  const leg = league.settings.leg ?? 1;
+  const settled = (week) => league.status === 'complete' || week < leg;
+
   const slots = (league.roster_positions ?? []).filter((s) => s !== 'BN' && s !== 'IR');
   const bestEleven = (entry) => {
     const pool = Object.entries(entry.players_points ?? {})
@@ -113,6 +121,7 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
 
   // Regular season: weeks 1 .. playoff_week_start - 1.
   for (let week = 1; week < pws; week++) {
+    if (!settled(week)) continue;
     for (const entry of matchups[week] ?? []) {
       const t = teams.get(entry.roster_id);
       // Only weeks that were actually played; an unplayed week has no points
@@ -253,6 +262,7 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
   const posOf = (pid) => players[pid]?.position ?? '';
   const recaps = [];
   for (let week = 1; week < pws; week++) {
+    if (!settled(week)) continue;
     const entries = matchups[week] ?? [];
     const played = entries.filter((e) => Object.values(e.players_points ?? {}).some((v) => v));
     if (played.length < 2) continue;

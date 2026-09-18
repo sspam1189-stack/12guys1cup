@@ -1051,7 +1051,7 @@
     "abbreviation": "12+"
    }
   },
-  "sort_order": null
+  "sort_order": 15
  },
  "line_type": "moneyline",
  "core_market_id": 23691176,
@@ -1090,14 +1090,6 @@
      "player_id": 110812,
      "outcome_id": 2832247798,
      "option_type_id": 12099
-    },
-    {
-     "money": -175,
-     "value": null,
-     "team_id": 251,
-     "player_id": 54607,
-     "outcome_id": 2832247731,
-     "option_type_id": 9168
     },
     {
      "money": -170,
@@ -1366,17 +1358,17 @@
     {
      "money": 200,
      "value": null,
-     "team_id": 127,
-     "player_id": 333931,
-     "outcome_id": 2803407291,
+     "team_id": 149,
+     "player_id": 333944,
+     "outcome_id": 2803407289,
      "option_type_id": null
     },
     {
      "money": 200,
      "value": null,
-     "team_id": 149,
-     "player_id": 333944,
-     "outcome_id": 2803407289,
+     "team_id": 127,
+     "player_id": 333931,
+     "outcome_id": 2803407291,
      "option_type_id": null
     },
     {
@@ -1514,14 +1506,6 @@
      "player_id": 87622,
      "outcome_id": 2832247870,
      "option_type_id": 12367
-    },
-    {
-     "money": 325,
-     "value": null,
-     "team_id": 251,
-     "player_id": 54607,
-     "outcome_id": 2832247722,
-     "option_type_id": 9169
     },
     {
      "money": 350,
@@ -1931,17 +1915,17 @@
     {
      "money": 200,
      "value": null,
-     "team_id": 127,
-     "player_id": 333931,
-     "outcome_id": 2803387576,
+     "team_id": 149,
+     "player_id": 333944,
+     "outcome_id": 2803387589,
      "option_type_id": null
     },
     {
      "money": 200,
      "value": null,
-     "team_id": 149,
-     "player_id": 333944,
-     "outcome_id": 2803387589,
+     "team_id": 127,
+     "player_id": 333931,
+     "outcome_id": 2803387576,
      "option_type_id": null
     },
     {
@@ -1980,14 +1964,6 @@
      "player_id": 87622,
      "outcome_id": 2832241405,
      "option_type_id": 12366
-    },
-    {
-     "money": -175,
-     "value": null,
-     "team_id": 251,
-     "player_id": 54607,
-     "outcome_id": 2832246444,
-     "option_type_id": 9168
     },
     {
      "money": -175,
@@ -2396,14 +2372,6 @@
      "player_id": 87809,
      "outcome_id": 2832241298,
      "option_type_id": 12367
-    },
-    {
-     "money": 325,
-     "value": null,
-     "team_id": 251,
-     "player_id": 54607,
-     "outcome_id": 2832240577,
-     "option_type_id": 9169
     },
     {
      "money": 350,
@@ -2970,13 +2938,6 @@
    "display_name": "49ers"
   },
   {
-   "id": 251,
-   "abbr": "LA",
-   "logo": "https://assets.actionnetwork.com/524632_rams.png",
-   "full_name": "Los Angeles Rams",
-   "display_name": "Rams"
-  },
-  {
    "id": 1325,
    "abbr": "LAC",
    "logo": "https://static.sprtactn.co/teamlogos/nfl/100/sd.png",
@@ -3015,14 +2976,6 @@
    "team_id": 139,
    "url_slug": "chris-jones-5089-2",
    "full_name": "Chris Jones"
-  },
-  {
-   "id": 54607,
-   "abbr": "M.Garrett",
-   "image": "https://assets.actionnetwork.com/200x200/df7e3aeb7afe40d9b9d14d62fecd08ab.png",
-   "team_id": 251,
-   "url_slug": "myles-garrett-54607-de",
-   "full_name": "Myles Garrett"
   },
   {
    "id": 59895,
