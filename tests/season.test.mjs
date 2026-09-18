@@ -107,3 +107,55 @@ describe('summarizeSeason', () => {
     expect(pre.notStarted).toBe(true);
   });
 });
+
+describe('a week still being played', () => {
+  // Sleeper fills a week's entries in as its games finish, so mid-week some
+  // teams carry most of a score and the rest carry almost nothing. Reading that
+  // as a result gave every team a phantom extra game: after one Thursday night
+  // the 2026 standings showed six teams at 2-0 with points per game halved.
+  const inProgress = {
+    ...season,
+    league: { ...season.league, status: 'in_season', settings: { ...season.league.settings, leg: 2 } },
+    matchups: {
+      ...season.matchups,
+      // Week 1 finished, so it carries player-level scores and earns a recap.
+      1: season.matchups[1].map((e, i) => ({
+        ...e,
+        starters: [`s${i}`],
+        players_points: { [`s${i}`]: e.points },
+      })),
+      2: [
+        { matchup_id: 1, roster_id: 1, points: 66.2, starters: [], players_points: { p1: 66.2 } },
+        { matchup_id: 1, roster_id: 2, points: 0, starters: [], players_points: { p2: 0 } },
+        { matchup_id: 2, roster_id: 3, points: 7.1, starters: [], players_points: { p3: 7.1 } },
+        { matchup_id: 2, roster_id: 4, points: 0, starters: [], players_points: { p4: 0 } },
+      ],
+    },
+  };
+  const s = summarizeSeason(inProgress);
+  const t = (id) => s.standings.find((x) => x.userId === id);
+
+  it('is left out of records and points until the league moves past it', () => {
+    expect(t('u1')).toMatchObject({ wins: 1, losses: 0, pf: 100 });
+    expect(t('u2')).toMatchObject({ wins: 0, losses: 1, pf: 90 });
+    for (const team of s.standings) {
+      expect(team.wins + team.losses + team.ties).toBe(1);
+    }
+  });
+
+  it('is left out of the games list and the recaps', () => {
+    // Playoff and shit-bowl games come from the brackets, not the week loop.
+    const regular = s.games.filter((g) => g.type === 'regular');
+    expect(regular.every((g) => g.week === 1)).toBe(true);
+    expect(regular).toHaveLength(2);
+    expect(s.recaps.map((r) => r.week)).toEqual([1]);
+  });
+
+  it('counts the week once the league has moved on', () => {
+    const later = summarizeSeason({
+      ...inProgress,
+      league: { ...inProgress.league, settings: { ...inProgress.league.settings, leg: 3 } },
+    });
+    expect(later.standings.find((x) => x.userId === 'u1')).toMatchObject({ wins: 2, pf: 166.2 });
+  });
+});
