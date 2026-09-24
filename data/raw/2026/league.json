@@ -54,7 +54,7 @@
   "trade_review_days": 1,
   "bench_lock": 1,
   "offseason_adds": 0,
-  "leg": 2,
+  "leg": 3,
   "reserve_slots": 1,
   "reserve_allow_cov": 1,
   "daily_waivers_last_ran": 8
@@ -131,14 +131,14 @@
  "season_type": "regular",
  "shard": 275,
  "sport": "nfl",
- "last_message_id": "1408145960437141504",
+ "last_message_id": "1408873799797035008",
  "last_author_avatar": null,
  "last_author_display_name": "sys",
  "last_author_id": "166666666666666666",
  "last_author_is_bot": true,
  "last_message_attachment": null,
  "last_message_text_map": null,
- "last_message_time": 1790090668358,
+ "last_message_time": 1790264198783,
  "last_pinned_message_id": "1405454883234062336",
  "last_read_id": null,
  "draft_id": "1382479927412015104",
@@ -147,8 +147,6 @@
  "bracket_id": null,
  "bracket_overrides_id": null,
  "group_id": null,
- "loser_bracket_id": null,
- "loser_bracket_overrides_id": null,
  "roster_positions": [
   "QB",
   "RB",
@@ -166,5 +164,7 @@
   "BN",
   "BN"
  ],
+ "loser_bracket_id": null,
+ "loser_bracket_overrides_id": null,
  "total_rosters": 12
 }

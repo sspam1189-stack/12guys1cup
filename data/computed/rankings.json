@@ -1,11 +1,11 @@
 {
  "season": "2026",
- "week": 2,
- "throughWeek": 1,
- "builtAt": "2026-09-22T16:45:59.375Z",
+ "week": 3,
+ "throughWeek": 2,
+ "builtAt": "2026-09-24T15:40:27.291Z",
  "weight": {
-  "results": 0.2,
-  "roster": 0.8
+  "results": 0.4,
+  "roster": 0.6
  },
  "history": [
   {
@@ -81,62 +81,128 @@
     {
      "userId": "595734764493791232",
      "rank": 1,
-     "score": 1.231
+     "score": 1.237
     },
     {
      "userId": "471856560138612736",
      "rank": 2,
-     "score": 1.23
+     "score": 1.236
     },
     {
      "userId": "471861310779289600",
      "rank": 3,
-     "score": 1.129
+     "score": 1.137
     },
     {
      "userId": "869377838724317184",
      "rank": 4,
-     "score": 0.329
+     "score": 0.347
     },
     {
      "userId": "472225780726755328",
      "rank": 5,
-     "score": 0.005
+     "score": 0.034
     },
     {
      "userId": "470142073480146944",
      "rank": 6,
-     "score": -0.034
+     "score": -0.01
     },
     {
      "userId": "869712074853523456",
      "rank": 7,
-     "score": -0.104
+     "score": -0.071
     },
     {
      "userId": "471865126467661824",
      "rank": 8,
-     "score": -0.159
-    },
-    {
-     "userId": "469223780661587968",
-     "rank": 9,
-     "score": -0.44
+     "score": -0.121
     },
     {
      "userId": "596094153587216384",
+     "rank": 9,
+     "score": -0.619
+    },
+    {
+     "userId": "469223780661587968",
      "rank": 10,
-     "score": -0.672
+     "score": -0.778
     },
     {
      "userId": "467208097522249728",
      "rank": 11,
-     "score": -1.061
+     "score": -0.999
     },
     {
      "userId": "596864194553368576",
      "rank": 12,
-     "score": -1.453
+     "score": -1.392
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "label": "W2",
+   "teams": [
+    {
+     "userId": "595734764493791232",
+     "rank": 1,
+     "score": 1.135
+    },
+    {
+     "userId": "471861310779289600",
+     "rank": 2,
+     "score": 0.995
+    },
+    {
+     "userId": "471856560138612736",
+     "rank": 3,
+     "score": 0.896
+    },
+    {
+     "userId": "470142073480146944",
+     "rank": 4,
+     "score": 0.359
+    },
+    {
+     "userId": "472225780726755328",
+     "rank": 5,
+     "score": -0.006
+    },
+    {
+     "userId": "467208097522249728",
+     "rank": 6,
+     "score": -0.204
+    },
+    {
+     "userId": "869712074853523456",
+     "rank": 7,
+     "score": -0.217
+    },
+    {
+     "userId": "471865126467661824",
+     "rank": 8,
+     "score": -0.259
+    },
+    {
+     "userId": "869377838724317184",
+     "rank": 9,
+     "score": -0.469
+    },
+    {
+     "userId": "596094153587216384",
+     "rank": 10,
+     "score": -0.481
+    },
+    {
+     "userId": "469223780661587968",
+     "rank": 11,
+     "score": -0.482
+    },
+    {
+     "userId": "596864194553368576",
+     "rank": 12,
+     "score": -1.266
     }
    ]
   }
@@ -144,140 +210,140 @@
  "teams": [
   {
    "rank": 1,
-   "move": 2,
+   "move": 0,
    "userId": "595734764493791232",
    "manager": "clvnluu",
    "teamName": "clvnluu",
    "wins": 1,
-   "losses": 0,
+   "losses": 1,
    "ties": 0,
-   "pf": 151.15,
-   "pa": 143.09,
-   "maxPf": 162.15,
-   "ppg": 151.2,
-   "maxPpg": 162.2,
-   "eff": 93.2,
+   "pf": 260.39,
+   "pa": 265.79,
+   "maxPf": 292.79,
+   "ppg": 130.2,
+   "maxPpg": 146.4,
+   "eff": 88.9,
    "roster": 280.8,
-   "score": 1.231,
+   "score": 1.135,
    "parts": {
-    "form": 1.16,
-    "ceiling": 0.94,
-    "roster": 1.28
+    "form": 0.9,
+    "ceiling": 0.91,
+    "roster": 1.29
    }
   },
   {
    "rank": 2,
-   "move": -1,
-   "userId": "471856560138612736",
-   "manager": "VietMagic312",
-   "teamName": "Watson My Brown DK",
-   "wins": 0,
-   "losses": 1,
-   "ties": 0,
-   "pf": 148.67,
-   "pa": 154.18,
-   "maxPf": 152.37,
-   "ppg": 148.7,
-   "maxPpg": 152.4,
-   "eff": 97.6,
-   "roster": 282.1,
-   "score": 1.23,
-   "parts": {
-    "form": 1.07,
-    "ceiling": 0.59,
-    "roster": 1.34
-   }
-  },
-  {
-   "rank": 3,
    "move": 1,
    "userId": "471861310779289600",
    "manager": "jerv",
    "teamName": "Rolling  stones",
-   "wins": 1,
+   "wins": 2,
    "losses": 0,
    "ties": 0,
-   "pf": 116.58,
-   "pa": 75.97,
-   "maxPf": 174.56,
-   "ppg": 116.6,
-   "maxPpg": 174.6,
-   "eff": 66.8,
+   "pf": 225.19,
+   "pa": 162.53,
+   "maxPf": 302.77,
+   "ppg": 112.6,
+   "maxPpg": 151.4,
+   "eff": 74.4,
    "roster": 279.2,
-   "score": 1.129,
+   "score": 0.995,
    "parts": {
-    "form": -0.09,
-    "ceiling": 1.37,
-    "roster": 1.21
+    "form": -0.21,
+    "ceiling": 1.22,
+    "roster": 1.22
+   }
+  },
+  {
+   "rank": 3,
+   "move": -1,
+   "userId": "471856560138612736",
+   "manager": "VietMagic312",
+   "teamName": "Watson My Brown DK",
+   "wins": 1,
+   "losses": 1,
+   "ties": 0,
+   "pf": 255.3,
+   "pa": 228.44,
+   "maxPf": 259.5,
+   "ppg": 127.7,
+   "maxPpg": 129.8,
+   "eff": 98.4,
+   "roster": 282.1,
+   "score": 0.896,
+   "parts": {
+    "form": 0.74,
+    "ceiling": -0.13,
+    "roster": 1.35
    }
   },
   {
    "rank": 4,
-   "move": 1,
-   "userId": "869377838724317184",
-   "manager": "alvo123",
-   "teamName": "Hot Corum On My Jeantys",
-   "wins": 0,
+   "move": 2,
+   "userId": "470142073480146944",
+   "manager": "drapheus",
+   "teamName": "Here we go again",
+   "wins": 1,
    "losses": 1,
    "ties": 0,
-   "pf": 94.08,
-   "pa": 112.33,
-   "maxPf": 101.6,
-   "ppg": 94.1,
-   "maxPpg": 101.6,
-   "eff": 92.6,
-   "roster": 267,
-   "score": 0.329,
+   "pf": 242.24,
+   "pa": 215.4,
+   "maxPf": 270.8,
+   "ppg": 121.1,
+   "maxPpg": 135.4,
+   "eff": 89.5,
+   "roster": 260.4,
+   "score": 0.359,
    "parts": {
-    "form": -0.91,
-    "ceiling": -1.2,
-    "roster": 0.68
+    "form": 0.33,
+    "ceiling": 0.22,
+    "roster": 0.42
    }
   },
   {
    "rank": 5,
-   "move": 1,
+   "move": 0,
    "userId": "472225780726755328",
    "manager": "alexngo1994",
    "teamName": "Last place",
-   "wins": 1,
+   "wins": 2,
    "losses": 0,
    "ties": 0,
-   "pf": 112.33,
-   "pa": 94.08,
-   "maxPf": 118.13,
-   "ppg": 112.3,
-   "maxPpg": 118.1,
-   "eff": 95.1,
+   "pf": 233.6,
+   "pa": 189.24,
+   "maxPf": 248.9,
+   "ppg": 116.8,
+   "maxPpg": 124.5,
+   "eff": 93.9,
    "roster": 254.3,
-   "score": 0.005,
+   "score": -0.006,
    "parts": {
-    "form": -0.25,
-    "ceiling": -0.61,
-    "roster": 0.12
+    "form": 0.06,
+    "ceiling": -0.46,
+    "roster": 0.16
    }
   },
   {
    "rank": 6,
-   "move": 3,
-   "userId": "470142073480146944",
-   "manager": "drapheus",
-   "teamName": "Here we go again",
-   "wins": 0,
-   "losses": 1,
+   "move": 5,
+   "userId": "467208097522249728",
+   "manager": "aprounh",
+   "teamName": "Koo Kupp Klan",
+   "wins": 2,
+   "losses": 0,
    "ties": 0,
-   "pf": 75.97,
-   "pa": 116.58,
-   "maxPf": 82.77,
-   "ppg": 76,
-   "maxPpg": 82.8,
-   "eff": 91.8,
-   "roster": 260.4,
-   "score": -0.034,
+   "pf": 298.51,
+   "pa": 266.01,
+   "maxPf": 315.01,
+   "ppg": 149.3,
+   "maxPpg": 157.5,
+   "eff": 94.8,
+   "roster": 214.5,
+   "score": -0.204,
    "parts": {
-    "form": -1.57,
-    "ceiling": -1.86,
-    "roster": 0.39
+    "form": 2.09,
+    "ceiling": 1.6,
+    "roster": -1.54
    }
   },
   {
@@ -287,20 +353,20 @@
    "manager": "djho57",
    "teamName": "It’s Not Our Year",
    "wins": 1,
-   "losses": 0,
+   "losses": 1,
    "ties": 0,
-   "pf": 104.06,
-   "pa": 79.08,
-   "maxPf": 133.06,
-   "ppg": 104.1,
-   "maxPpg": 133.1,
-   "eff": 78.2,
+   "pf": 202.88,
+   "pa": 245.35,
+   "maxPf": 255.78,
+   "ppg": 101.4,
+   "maxPpg": 127.9,
+   "eff": 79.3,
    "roster": 250,
-   "score": -0.104,
+   "score": -0.217,
    "parts": {
-    "form": -0.55,
-    "ceiling": -0.09,
-    "roster": -0.06
+    "form": -0.9,
+    "ceiling": -0.25,
+    "roster": -0.02
    }
   },
   {
@@ -310,112 +376,112 @@
    "manager": "zichen225",
    "teamName": "Ceedeez Nuts",
    "wins": 0,
-   "losses": 1,
+   "losses": 2,
    "ties": 0,
-   "pf": 143.09,
-   "pa": 151.15,
-   "maxPf": 143.29,
-   "ppg": 143.1,
-   "maxPpg": 143.3,
-   "eff": 99.9,
+   "pf": 229.65,
+   "pa": 259.76,
+   "maxPf": 253.01,
+   "ppg": 114.8,
+   "maxPpg": 126.5,
+   "eff": 90.8,
    "roster": 244,
-   "score": -0.159,
+   "score": -0.259,
    "parts": {
-    "form": 0.87,
-    "ceiling": 0.27,
-    "roster": -0.33
+    "form": -0.07,
+    "ceiling": -0.33,
+    "roster": -0.28
    }
   },
   {
    "rank": 9,
-   "move": -7,
-   "userId": "469223780661587968",
-   "manager": "henitals",
-   "teamName": "No more black love ",
+   "move": -5,
+   "userId": "869377838724317184",
+   "manager": "alvo123",
+   "teamName": "Hot Corum On My Jeantys",
    "wins": 0,
-   "losses": 1,
+   "losses": 2,
    "ties": 0,
-   "pf": 103.26,
-   "pa": 147.53,
-   "maxPf": 117.36,
-   "ppg": 103.3,
-   "maxPpg": 117.4,
-   "eff": 88,
-   "roster": 242.4,
-   "score": -0.44,
+   "pf": 168.34,
+   "pa": 218.96,
+   "maxPf": 187.06,
+   "ppg": 84.2,
+   "maxPpg": 93.5,
+   "eff": 90,
+   "roster": 267,
+   "score": -0.469,
    "parts": {
-    "form": -0.58,
-    "ceiling": -0.64,
-    "roster": -0.4
+    "form": -1.99,
+    "ceiling": -2.39,
+    "roster": 0.7
    }
   },
   {
    "rank": 10,
-   "move": 0,
+   "move": -1,
    "userId": "596094153587216384",
    "manager": "CheeksSlapper",
    "teamName": "Da igual: negro o blanco",
    "wins": 1,
-   "losses": 0,
+   "losses": 1,
    "ties": 0,
-   "pf": 147.53,
-   "pa": 103.26,
-   "maxPf": 165.43,
-   "ppg": 147.5,
-   "maxPpg": 165.4,
-   "eff": 89.2,
+   "pf": 242.69,
+   "pa": 224.53,
+   "maxPf": 275.07,
+   "ppg": 121.3,
+   "maxPpg": 137.5,
+   "eff": 88.2,
    "roster": 226.3,
-   "score": -0.672,
+   "score": -0.481,
    "parts": {
-    "form": 1.03,
-    "ceiling": 1.05,
-    "roster": -1.1
+    "form": 0.34,
+    "ceiling": 0.35,
+    "roster": -1.04
    }
   },
   {
    "rank": 11,
-   "move": 1,
-   "userId": "467208097522249728",
-   "manager": "aprounh",
-   "teamName": "Koo Kupp Klan",
+   "move": -1,
+   "userId": "469223780661587968",
+   "manager": "henitals",
+   "teamName": "No more black love ",
    "wins": 1,
-   "losses": 0,
+   "losses": 1,
    "ties": 0,
-   "pf": 154.18,
-   "pa": 148.67,
-   "maxPf": 166.28,
-   "ppg": 154.2,
-   "maxPpg": 166.3,
-   "eff": 92.7,
-   "roster": 214.5,
-   "score": -1.061,
+   "pf": 225.96,
+   "pa": 256.77,
+   "maxPf": 268.86,
+   "ppg": 113,
+   "maxPpg": 134.4,
+   "eff": 84,
+   "roster": 231.3,
+   "score": -0.482,
    "parts": {
-    "form": 1.27,
-    "ceiling": 1.08,
-    "roster": -1.62
+    "form": -0.18,
+    "ceiling": 0.16,
+    "roster": -0.82
    }
   },
   {
    "rank": 12,
-   "move": -1,
+   "move": 0,
    "userId": "596864194553368576",
    "manager": "trizillah",
    "teamName": "Ceedee had a Little Lamb",
    "wins": 0,
-   "losses": 1,
+   "losses": 2,
    "ties": 0,
-   "pf": 79.08,
-   "pa": 104.06,
-   "maxPf": 109.78,
-   "ppg": 79.1,
-   "maxPpg": 109.8,
-   "eff": 72,
+   "pf": 196.42,
+   "pa": 248.39,
+   "maxPf": 235.22,
+   "ppg": 98.2,
+   "maxPpg": 117.6,
+   "eff": 83.5,
    "roster": 216.4,
-   "score": -1.453,
+   "score": -1.266,
    "parts": {
-    "form": -1.45,
-    "ceiling": -0.91,
-    "roster": -1.53
+    "form": -1.11,
+    "ceiling": -0.89,
+    "roster": -1.46
    }
   }
  ]

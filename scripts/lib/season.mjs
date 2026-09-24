@@ -98,7 +98,15 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
   // currently being played, so a week is settled only once the league is past
   // it -- or once the season itself is over.
   const leg = league.settings.leg ?? 1;
-  const settled = (week) => league.status === 'complete' || week < leg;
+  // `leg` is the safe signal but a slow one: Sleeper had not advanced it by the
+  // Tuesday refresh after week 2, so a finished week sat out of the standings
+  // until the next run two days later. Every team plays every week, so a week
+  // where all twelve entries have scored is over whatever `leg` still says.
+  const allScored = (week) => {
+    const entries = matchups[week] ?? [];
+    return entries.length > 0 && entries.every((e) => (e.points ?? 0) > 0);
+  };
+  const settled = (week) => league.status === 'complete' || week < leg || allScored(week);
 
   const slots = (league.roster_positions ?? []).filter((s) => s !== 'BN' && s !== 'IR');
   const bestEleven = (entry) => {
