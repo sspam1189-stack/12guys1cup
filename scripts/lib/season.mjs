@@ -106,7 +106,10 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
     const entries = matchups[week] ?? [];
     return entries.length > 0 && entries.every((e) => (e.points ?? 0) > 0);
   };
-  const settled = (week) => league.status === 'complete' || week < leg || allScored(week);
+  // A week the league has not reached yet is never settled, whatever scores
+  // happen to be sitting in it.
+  const settled = (week) =>
+    league.status === 'complete' || week < leg || (week === leg && allScored(week));
 
   const slots = (league.roster_positions ?? []).filter((s) => s !== 'BN' && s !== 'IR');
   const bestEleven = (entry) => {

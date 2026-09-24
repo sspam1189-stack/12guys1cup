@@ -152,10 +152,37 @@ describe('a week still being played', () => {
   });
 
   it('counts the week once the league has moved on', () => {
+    const { 3: _unplayed, ...throughTwo } = inProgress.matchups;
     const later = summarizeSeason({
       ...inProgress,
       league: { ...inProgress.league, settings: { ...inProgress.league.settings, leg: 3 } },
+      matchups: throughTwo,
     });
     expect(later.standings.find((x) => x.userId === 'u1')).toMatchObject({ wins: 2, pf: 166.2 });
+  });
+
+  it('counts the current week as soon as every team has scored', () => {
+    const finished = summarizeSeason({
+      ...inProgress,
+      matchups: {
+        ...inProgress.matchups,
+        2: inProgress.matchups[2].map((e, i) => ({ ...e, points: [66.2, 55.1, 7.1, 44.3][i] })),
+        3: undefined,
+      },
+    });
+    // leg is still 2, but nothing in week 2 is outstanding.
+    expect(finished.standings.find((x) => x.userId === 'u1')).toMatchObject({ wins: 2 });
+  });
+
+  it('never counts a week the league has not reached', () => {
+    const ahead = summarizeSeason({
+      ...inProgress,
+      matchups: {
+        ...inProgress.matchups,
+        2: inProgress.matchups[2].map((e, i) => ({ ...e, points: [66.2, 55.1, 7.1, 44.3][i] })),
+      },
+    });
+    // week 3 carries scores in the fixture but leg is 2, so it stays out.
+    expect(ahead.games.filter((g) => g.type === 'regular').every((g) => g.week <= 2)).toBe(true);
   });
 });
