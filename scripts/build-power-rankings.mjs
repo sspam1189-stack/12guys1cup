@@ -13,9 +13,9 @@
  *
  * The projection is scaffolding, not a permanent input: it exists only because
  * one or two games say almost nothing, and it comes down on a fixed schedule --
- * 80% of the score after week 1, then 60, 40, 20, and nothing from week 5 on.
- * A projection that still argued with five weeks of results would be the
- * projection refusing to be wrong.
+ * 80% of the score before a game is played, then 60, 40, 20, and nothing once
+ * four weeks are in the books. A projection that still argued with a month of
+ * results would be the projection refusing to be wrong.
  *
  *   node scripts/build-power-rankings.mjs
  */
@@ -151,9 +151,11 @@ const z = (vals) => {
   const sd = Math.sqrt(vals.reduce((a, b) => a + (b - m) ** 2, 0) / vals.length) || 1;
   return (x) => (x - m) / sd;
 };
-// Projection weight steps down a fifth per game played -- 80/60/40/20/0 -- so it
-// is gone once five weeks have been played, not four.
-const RAMP = 5;
+// Projection weight: 80% before a game is played, then a fifth off per week --
+// 80/60/40/20/0 -- so it is gone once four weeks are in the books. Indexed by
+// games played, not by week number: during week 4 three games have been played,
+// which is the 20% step.
+const projectionWeight = (games) => Math.max(0, 0.8 - 0.2 * games);
 
 /* Score and order a set of teams as of `games` played. Pulled out so the same
    maths produces the current table and every earlier point on the chart. */
@@ -161,7 +163,7 @@ function rank(list, games) {
   const zForm = z(list.map((r) => r.ppg));
   const zCeil = z(list.map((r) => r.maxPpg));
   const zRost = z(list.map((r) => r.roster));
-  const wResults = Math.min(1, games / RAMP);
+  const wResults = 1 - projectionWeight(games);
   const scored = list.map((r) => {
     // Ceiling outweighs form: the same roster that scored 116 while benching 58
     // points is the better description of the team than the 116 is.
