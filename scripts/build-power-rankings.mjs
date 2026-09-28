@@ -6,6 +6,10 @@
  * So the ranking blends three things a record hides:
  *
  *   form      points per game -- what the team has actually produced
+ *   spread    the week-to-week standard deviation of those points, entered
+ *             negatively: two teams averaging 120 are not the same team if one
+ *             posts 118/120/122 and the other 160/90/110, and the steady one
+ *             beats an average opponent more often
  *   ceiling   max PF per game -- what its roster produced regardless of who
  *             was started, which strips out lineup luck
  *   roster    the season projection of its current starters, priced off Vegas
@@ -125,6 +129,14 @@ for (const p of draftPicks) {
   (draftRosters[owner] ??= []).push(String(p.player_id));
 }
 
+// Population SD of a team's weekly scores. A single game has no spread, so it
+// reads as zero and the term drops out until there are two.
+const sdOf = (vals) => {
+  if (vals.length < 2) return 0;
+  const m = vals.reduce((a, b) => a + b, 0) / vals.length;
+  return Math.sqrt(vals.reduce((a, b) => a + (b - m) ** 2, 0) / vals.length);
+};
+
 /* ---- assemble ---- */
 const nm = Object.fromEntries(users.map((u) => [u.user_id, u.display_name]));
 const standing = Object.fromEntries(summary.standings.map((t) => [t.userId, t]));
@@ -141,6 +153,7 @@ for (const r of rosters) {
     pf: t.pf, pa: t.pa, maxPf: t.maxPf,
     ppg: games ? t.pf / games : 0,
     maxPpg: games ? t.maxPf / games : 0,
+    sd: sdOf((t.weekly ?? []).map((w) => w.pf)),
     eff: t.maxPf ? (t.pf / t.maxPf) * 100 : null,
     roster: rosterStrength(r.players),
   });
@@ -163,17 +176,29 @@ function rank(list, games) {
   const zForm = z(list.map((r) => r.ppg));
   const zCeil = z(list.map((r) => r.maxPpg));
   const zRost = z(list.map((r) => r.roster));
+  const zSd = z(list.map((r) => r.sd ?? 0));
   const wResults = 1 - projectionWeight(games);
+  // Spread needs two games before it means anything and is the noisiest of the
+  // three, so it takes the smallest share.
+  const hasSpread = games >= 2 && list.some((r) => (r.sd ?? 0) > 0);
+  const W = hasSpread
+    ? { form: 0.35, ceiling: 0.45, spread: 0.20 }
+    : { form: 0.4, ceiling: 0.6, spread: 0 };
   const scored = list.map((r) => {
     // Ceiling outweighs form: the same roster that scored 116 while benching 58
     // points is the better description of the team than the 116 is.
-    const observed = 0.4 * zForm(r.ppg) + 0.6 * zCeil(r.maxPpg);
+    // Spread is negated: a bigger standard deviation is a worse description of
+    // a team, holding its average the same.
+    const observed = W.form * zForm(r.ppg)
+      + W.ceiling * zCeil(r.maxPpg)
+      + W.spread * -zSd(r.sd ?? 0);
     return {
       ...r,
       score: wResults * observed + (1 - wResults) * zRost(r.roster),
       parts: {
         form: +zForm(r.ppg).toFixed(2),
         ceiling: +zCeil(r.maxPpg).toFixed(2),
+        spread: +(-zSd(r.sd ?? 0)).toFixed(2),
         roster: +zRost(r.roster).toFixed(2),
       },
     };
@@ -243,6 +268,7 @@ const out = {
     pf: +r.pf.toFixed(2), pa: +r.pa.toFixed(2), maxPf: +r.maxPf.toFixed(2),
     ppg: +r.ppg.toFixed(1), maxPpg: +r.maxPpg.toFixed(1),
     eff: r.eff == null ? null : +r.eff.toFixed(1),
+    sd: +(r.sd ?? 0).toFixed(1),
     roster: +r.roster.toFixed(1),
     score: +r.score.toFixed(3),
     parts: r.parts,
@@ -252,13 +278,14 @@ writeFileSync(resolve(REPO, 'data/computed/rankings.json'), JSON.stringify(out, 
 
 console.log(`${season} power rankings through week ${games} `
   + `(results ${(wResults * 100).toFixed(0)}% / projection ${((1 - wResults) * 100).toFixed(0)}%)\n`);
-console.log(' #  move  manager         rec    ppg   bestLU   eff     proj   score');
+console.log(' #  move  manager         rec    ppg   bestLU     sd    eff     proj   score');
 for (const r of out.teams) {
   const mv = r.move == null ? '  -' : r.move > 0 ? `+${r.move}` : r.move < 0 ? `${r.move}` : ' =';
   console.log(
     String(r.rank).padStart(2) + '  ' + mv.padStart(4) + '  ' + r.manager.padEnd(15)
     + `${r.wins}-${r.losses}`.padEnd(6) + String(r.ppg).padStart(6) + String(r.maxPpg).padStart(8)
-    + (r.eff == null ? '    -' : String(r.eff) + '%').padStart(8) + String(r.roster).padStart(9)
+    + String(r.sd).padStart(7)
+    + (r.eff == null ? '    -' : String(r.eff) + '%').padStart(7) + String(r.roster).padStart(9)
     + String(r.score).padStart(8),
   );
 }

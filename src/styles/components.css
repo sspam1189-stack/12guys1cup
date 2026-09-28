@@ -1683,9 +1683,9 @@ td.eff { color: var(--muted); font-variant-numeric: tabular-nums; }
 .pr-team { display: grid; gap: 0.05rem; min-width: 0; }
 .pr-team b { font-size: 0.92rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-.pr-metrics { display: flex; align-items: center; gap: 0.5rem 0.85rem; }
+.pr-metrics { display: flex; align-items: center; gap: 0.5rem 0.7rem; }
 .pr-rec { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 0.82rem; text-align: center; min-width: 2.6rem; }
-.pr-stat { display: grid; gap: 0.05rem; font-variant-numeric: tabular-nums; font-size: 0.86rem; text-align: right; min-width: 3.1rem; }
+.pr-stat { display: grid; gap: 0.05rem; font-variant-numeric: tabular-nums; font-size: 0.86rem; text-align: right; min-width: 2.9rem; }
 .pr-stat em {
   font-style: normal; color: var(--muted);
   font-size: 0.56rem; font-weight: 850; letter-spacing: 0.09em; text-transform: uppercase;
