@@ -67,9 +67,10 @@ const lines = (ranks?.teams ?? []).map((t) => {
         <h2>Power Rankings</h2>
         <p class="muted pr-note">
           Through week {ranks.throughWeek}. Three measures, each scored against the league
-          average. <b>PPG</b> is what a team has put on the board. <b>Best LU</b> is what its
-          players scored that week whether or not they were started, so a misfired lineup does
-          not disguise a good team. <b>Spread</b> is the week-to-week standard deviation of
+          average, and both scoring measures are per game. <b>PPG</b> is what a team has put on
+          the board. <b>Best LU/G</b> is the same figure for the lineup it could have set with
+          hindsight &mdash; every rostered player counted, started or benched &mdash; so a
+          misfired lineup does not disguise a good team. <b>Spread</b> is the week-to-week standard deviation of
           those scores, counted against a team: two sides averaging 120 are not the same if one
           posts 118/120/122 and the other 160/90/110, and the steady one beats an average
           opponent more often. <b>Projection</b> is the only forward-looking one &mdash; the
@@ -157,7 +158,7 @@ const lines = (ranks?.teams ?? []).map((t) => {
               <span class="pr-metrics">
                 <span class="pr-rec">{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</span>
                 <span class="pr-stat"><em>PPG</em>{t.ppg.toFixed(1)}</span>
-                <span class="pr-stat"><em>Best LU</em>{t.maxPpg.toFixed(1)}</span>
+                <span class="pr-stat"><em>Best LU/G</em>{t.maxPpg.toFixed(1)}</span>
                 <span class="pr-stat"><em>Spread</em>{t.sd == null ? '—' : t.sd.toFixed(1)}</span>
                 <span class="pr-stat"><em>Projection</em>{t.roster.toFixed(0)}</span>
                 <span class="pr-score">{t.score > 0 ? '+' : ''}{t.score.toFixed(2)}</span>
