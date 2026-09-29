@@ -64,6 +64,13 @@ for (const league of leagues) {
 
 // Trim the huge players blob to the ids this repo actually reads: anyone
 // traded, plus anyone who ever scored in a lineup.
+// The NFL's own week is the only signal that says a week is over. Sleeper's
+// league `leg` lags it by a day or more, and "every team has scored" is true
+// by Sunday afternoon while Monday night is still to come.
+const nflState = await fetchJson('/state/nfl');
+await writeFile(new URL('nfl-state.json', RAW), JSON.stringify(nflState, null, 1));
+console.log(`NFL state: week ${nflState.week} (${nflState.season_type})`);
+
 console.log('Fetching player list…');
 const allPlayers = await fetchJson('/players/nfl');
 const players = {};

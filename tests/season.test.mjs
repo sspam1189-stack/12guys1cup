@@ -161,17 +161,46 @@ describe('a week still being played', () => {
     expect(later.standings.find((x) => x.userId === 'u1')).toMatchObject({ wins: 2, pf: 166.2 });
   });
 
-  it('counts the current week as soon as every team has scored', () => {
+  it('counts the week once the NFL has moved past it, even with leg behind', () => {
+    // Sleeper's league `leg` lags the real week by a day or more, so the NFL's
+    // own week is what says a week is over. leg is still 2 here.
     const finished = summarizeSeason({
       ...inProgress,
+      state: { season_type: 'regular', week: 3 },
       matchups: {
         ...inProgress.matchups,
         2: inProgress.matchups[2].map((e, i) => ({ ...e, points: [66.2, 55.1, 7.1, 44.3][i] })),
         3: undefined,
       },
     });
-    // leg is still 2, but nothing in week 2 is outstanding.
     expect(finished.standings.find((x) => x.userId === 'u1')).toMatchObject({ wins: 2 });
+  });
+
+  it('holds a week back while its games are still being played', () => {
+    // Every team carries a score by Sunday afternoon with Monday night to come,
+    // so scores alone must not settle a week: only the week counters do.
+    const midWeek = summarizeSeason({
+      ...inProgress,
+      state: { season_type: 'regular', week: 2 },
+      matchups: {
+        ...inProgress.matchups,
+        2: inProgress.matchups[2].map((e, i) => ({ ...e, points: [66.2, 55.1, 7.1, 44.3][i] })),
+        3: undefined,
+      },
+    });
+    expect(midWeek.standings.find((x) => x.userId === 'u1')).toMatchObject({ wins: 1 });
+  });
+
+  it('ignores an off-season state, falling back to the league leg', () => {
+    const off = summarizeSeason({
+      ...inProgress,
+      state: { season_type: 'off', week: 18 },
+      matchups: {
+        ...inProgress.matchups,
+        2: inProgress.matchups[2].map((e, i) => ({ ...e, points: [66.2, 55.1, 7.1, 44.3][i] })),
+      },
+    });
+    expect(off.games.filter((g) => g.type === 'regular').every((g) => g.week < 2)).toBe(true);
   });
 
   it('never counts a week the league has not reached', () => {

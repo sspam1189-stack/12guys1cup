@@ -35018,7 +35018,7 @@
     "a": {
      "userId": "469223780661587968",
      "teamName": "No more black love ",
-     "points": 112.3
+     "points": 138.1
     },
     "b": {
      "userId": "471865126467661824",
@@ -35037,7 +35037,7 @@
     "b": {
      "userId": "472225780726755328",
      "teamName": "Last place",
-     "points": 65.08
+     "points": 87.5
     }
    },
    {
@@ -35088,7 +35088,7 @@
     "a": {
      "userId": "596864194553368576",
      "teamName": "Ceedee had a Little Lamb",
-     "points": 101.13
+     "points": 109.63
     },
     "b": {
      "userId": "869377838724317184",
@@ -35123,9 +35123,9 @@
       "loser": {
        "userId": "469223780661587968",
        "teamName": "No more black love ",
-       "points": 112.3
+       "points": 138.1
       },
-      "margin": 35.41
+      "margin": 9.61
      },
      {
       "winner": {
@@ -35149,9 +35149,9 @@
       "loser": {
        "userId": "596864194553368576",
        "teamName": "Ceedee had a Little Lamb",
-       "points": 101.13
+       "points": 109.63
       },
-      "margin": 17.55
+      "margin": 9.05
      },
      {
       "winner": {
@@ -35162,9 +35162,9 @@
       "loser": {
        "userId": "472225780726755328",
        "teamName": "Last place",
-       "points": 65.08
+       "points": 87.5
       },
-      "margin": 47.63
+      "margin": 25.21
      },
      {
       "winner": {
@@ -35230,11 +35230,11 @@
      "pct": 99.92
     },
     "leastEfficient": {
-     "userId": "472225780726755328",
-     "teamName": "Last place",
-     "points": 65.08,
-     "max": 91.16,
-     "pct": 71.39
+     "userId": "869712074853523456",
+     "teamName": "It’s Not Our Year",
+     "points": 108.85,
+     "max": 129.35,
+     "pct": 84.15
     },
     "benchMistake": {
      "pid": "421",
@@ -35251,22 +35251,22 @@
      "points": 151.49
     },
     "low": {
-     "userId": "472225780726755328",
-     "teamName": "Last place",
-     "points": 65.08
+     "userId": "596094153587216384",
+     "teamName": "Da igual: negro o blanco",
+     "points": 83.2
     },
     "blowout": {
      "winner": {
-      "userId": "595734764493791232",
-      "teamName": "clvnluu",
-      "points": 112.71
+      "userId": "471861310779289600",
+      "teamName": "Rolling  stones",
+      "points": 151.49
      },
      "loser": {
-      "userId": "472225780726755328",
-      "teamName": "Last place",
-      "points": 65.08
+      "userId": "869712074853523456",
+      "teamName": "It’s Not Our Year",
+      "points": 108.85
      },
-     "margin": 47.63
+     "margin": 42.64
     },
     "nailbiter": {
      "winner": {
@@ -35661,7 +35661,7 @@
     "ties": 0,
     "pf": 419.38,
     "pa": 379.96,
-    "maxPf": 436.58,
+    "maxPf": 436.98,
     "weekly": [
      {
       "week": 1,
@@ -35676,7 +35676,7 @@
      {
       "week": 3,
       "pf": 120.87,
-      "maxPf": 121.57
+      "maxPf": 121.97
      }
     ],
     "playoffWins": 0,
@@ -35692,7 +35692,7 @@
     "ties": 0,
     "pf": 376.68,
     "pa": 271.38,
-    "maxPf": 459.2,
+    "maxPf": 462,
     "weekly": [
      {
       "week": 1,
@@ -35707,7 +35707,7 @@
      {
       "week": 3,
       "pf": 151.49,
-      "maxPf": 156.43
+      "maxPf": 159.23
      }
     ],
     "playoffWins": 0,
@@ -35722,7 +35722,7 @@
     "losses": 1,
     "ties": 0,
     "pf": 373.1,
-    "pa": 330.87,
+    "pa": 353.29,
     "maxPf": 416.1,
     "weekly": [
      {
@@ -35783,9 +35783,9 @@
     "wins": 2,
     "losses": 1,
     "ties": 0,
-    "pf": 298.68,
+    "pf": 321.1,
     "pa": 301.95,
-    "maxPf": 340.06,
+    "maxPf": 347.36,
     "weekly": [
      {
       "week": 1,
@@ -35799,8 +35799,8 @@
      },
      {
       "week": 3,
-      "pf": 65.08,
-      "maxPf": 91.16
+      "pf": 87.5,
+      "maxPf": 98.46
      }
     ],
     "playoffWins": 0,
@@ -35815,8 +35815,8 @@
     "losses": 2,
     "ties": 0,
     "pf": 377.36,
-    "pa": 372.06,
-    "maxPf": 406.52,
+    "pa": 397.86,
+    "maxPf": 419.42,
     "weekly": [
      {
       "week": 1,
@@ -35831,12 +35831,43 @@
      {
       "week": 3,
       "pf": 147.71,
-      "maxPf": 153.51
+      "maxPf": 166.41
      }
     ],
     "playoffWins": 0,
     "playoffLosses": 0,
     "place": 6
+   },
+   {
+    "userId": "469223780661587968",
+    "rosterId": 1,
+    "teamName": "No more black love ",
+    "wins": 1,
+    "losses": 2,
+    "ties": 0,
+    "pf": 364.06,
+    "pa": 404.48,
+    "maxPf": 408.86,
+    "weekly": [
+     {
+      "week": 1,
+      "pf": 103.26,
+      "maxPf": 117.36
+     },
+     {
+      "week": 2,
+      "pf": 122.7,
+      "maxPf": 151.5
+     },
+     {
+      "week": 3,
+      "pf": 138.1,
+      "maxPf": 140
+     }
+    ],
+    "playoffWins": 0,
+    "playoffLosses": 0,
+    "place": 7
    },
    {
     "userId": "470142073480146944",
@@ -35863,37 +35894,6 @@
       "week": 3,
       "pf": 113.95,
       "maxPf": 118.65
-     }
-    ],
-    "playoffWins": 0,
-    "playoffLosses": 0,
-    "place": 7
-   },
-   {
-    "userId": "469223780661587968",
-    "rosterId": 1,
-    "teamName": "No more black love ",
-    "wins": 1,
-    "losses": 2,
-    "ties": 0,
-    "pf": 338.26,
-    "pa": 404.48,
-    "maxPf": 385.66,
-    "weekly": [
-     {
-      "week": 1,
-      "pf": 103.26,
-      "maxPf": 117.36
-     },
-     {
-      "week": 2,
-      "pf": 122.7,
-      "maxPf": 151.5
-     },
-     {
-      "week": 3,
-      "pf": 112.3,
-      "maxPf": 116.8
      }
     ],
     "playoffWins": 0,
@@ -35970,7 +35970,7 @@
     "losses": 2,
     "ties": 0,
     "pf": 287.02,
-    "pa": 320.09,
+    "pa": 328.59,
     "maxPf": 305.84,
     "weekly": [
      {
@@ -36000,7 +36000,7 @@
     "wins": 0,
     "losses": 3,
     "ties": 0,
-    "pf": 297.55,
+    "pf": 306.05,
     "pa": 367.07,
     "maxPf": 358.75,
     "weekly": [
@@ -36016,7 +36016,7 @@
      },
      {
       "week": 3,
-      "pf": 101.13,
+      "pf": 109.63,
       "maxPf": 123.53
      }
     ],
@@ -36193,7 +36193,7 @@
     "type": "regular",
     "a": {
      "userId": "469223780661587968",
-     "points": 112.3
+     "points": 138.1
     },
     "b": {
      "userId": "471865126467661824",
@@ -36210,7 +36210,7 @@
     },
     "b": {
      "userId": "472225780726755328",
-     "points": 65.08
+     "points": 87.5
     }
    },
    {
@@ -36258,7 +36258,7 @@
     "type": "regular",
     "a": {
      "userId": "596864194553368576",
-     "points": 101.13
+     "points": 109.63
     },
     "b": {
      "userId": "869377838724317184",
@@ -36293,9 +36293,9 @@
     "placement": null,
     "type": "playoff",
     "kind": "bye",
-    "advancesUserId": "472225780726755328",
+    "advancesUserId": "471861310779289600",
     "a": {
-     "userId": "472225780726755328",
+     "userId": "471861310779289600",
      "points": null
     },
     "b": {
@@ -36309,7 +36309,7 @@
     "season": "2026",
     "week": 15,
     "round": 1,
-    "match": "3-t1",
+    "match": "4-t1",
     "placement": null,
     "type": "shit bowl",
     "kind": "bye",
@@ -36327,7 +36327,7 @@
     "season": "2026",
     "week": 15,
     "round": 1,
-    "match": "4-t1",
+    "match": "3-t1",
     "placement": null,
     "type": "shit bowl",
     "kind": "bye",

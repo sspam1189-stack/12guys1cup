@@ -2,7 +2,7 @@
  "season": "2026",
  "week": 3,
  "throughWeek": 3,
- "builtAt": "2026-09-28T12:34:02.305Z",
+ "builtAt": "2026-09-29T13:18:11.300Z",
  "weight": {
   "results": 0.8,
   "roster": 0.2
@@ -147,62 +147,62 @@
     {
      "userId": "595734764493791232",
      "rank": 1,
-     "score": 0.962
+     "score": 0.959
     },
     {
      "userId": "471861310779289600",
      "rank": 2,
-     "score": 0.794
+     "score": 0.791
     },
     {
      "userId": "471856560138612736",
      "rank": 3,
-     "score": 0.595
+     "score": 0.587
     },
     {
      "userId": "467208097522249728",
      "rank": 4,
-     "score": 0.338
+     "score": 0.339
     },
     {
      "userId": "470142073480146944",
      "rank": 5,
-     "score": 0.063
-    },
-    {
-     "userId": "869712074853523456",
-     "rank": 6,
-     "score": -0.047
+     "score": 0.044
     },
     {
      "userId": "472225780726755328",
+     "rank": 6,
+     "score": 0.03
+    },
+    {
+     "userId": "869712074853523456",
      "rank": 7,
-     "score": -0.114
+     "score": -0.037
     },
     {
      "userId": "469223780661587968",
      "rank": 8,
-     "score": -0.158
+     "score": -0.243
     },
     {
      "userId": "471865126467661824",
      "rank": 9,
-     "score": -0.324
+     "score": -0.335
     },
     {
      "userId": "596094153587216384",
      "rank": 10,
-     "score": -0.356
+     "score": -0.367
     },
     {
      "userId": "869377838724317184",
      "rank": 11,
-     "score": -0.757
+     "score": -0.759
     },
     {
      "userId": "596864194553368576",
      "rank": 12,
-     "score": -0.997
+     "score": -1.01
     }
    ]
   },
@@ -213,62 +213,62 @@
     {
      "userId": "471861310779289600",
      "rank": 1,
-     "score": 1.189
+     "score": 1.137
     },
     {
      "userId": "467208097522249728",
      "rank": 2,
-     "score": 0.833
+     "score": 0.79
     },
     {
      "userId": "595734764493791232",
      "rank": 3,
-     "score": 0.788
+     "score": 0.72
     },
     {
      "userId": "471865126467661824",
      "rank": 4,
+     "score": 0.296
+    },
+    {
+     "userId": "469223780661587968",
+     "rank": 5,
      "score": 0.259
     },
     {
      "userId": "869712074853523456",
-     "rank": 5,
-     "score": 0.078
-    },
-    {
-     "userId": "469223780661587968",
      "rank": 6,
-     "score": 0.046
+     "score": 0.008
     },
     {
      "userId": "471856560138612736",
      "rank": 7,
-     "score": -0.045
+     "score": -0.117
     },
     {
      "userId": "470142073480146944",
      "rank": 8,
-     "score": -0.074
-    },
-    {
-     "userId": "596094153587216384",
-     "rank": 9,
-     "score": -0.643
+     "score": -0.165
     },
     {
      "userId": "472225780726755328",
+     "rank": 9,
+     "score": -0.407
+    },
+    {
+     "userId": "596094153587216384",
      "rank": 10,
-     "score": -0.756
+     "score": -0.731
     },
     {
      "userId": "596864194553368576",
      "rank": 11,
-     "score": -0.759
+     "score": -0.793
     },
     {
      "userId": "869377838724317184",
      "rank": 12,
-     "score": -0.916
+     "score": -0.995
     }
    ]
   }
@@ -285,17 +285,17 @@
    "ties": 0,
    "pf": 376.68,
    "pa": 271.38,
-   "maxPf": 459.2,
+   "maxPf": 462,
    "ppg": 125.6,
-   "maxPpg": 153.1,
-   "eff": 82,
+   "maxPpg": 154,
+   "eff": 81.5,
    "sd": 18.6,
    "roster": 279.2,
-   "score": 1.189,
+   "score": 1.137,
    "parts": {
-    "form": 0.9,
-    "ceiling": 1.86,
-    "spread": 0.15,
+    "form": 0.82,
+    "ceiling": 1.78,
+    "spread": 0.13,
     "roster": 1.22
    }
   },
@@ -310,17 +310,17 @@
    "ties": 0,
    "pf": 419.38,
    "pa": 379.96,
-   "maxPf": 436.58,
+   "maxPf": 436.98,
    "ppg": 139.8,
-   "maxPpg": 145.5,
-   "eff": 96.1,
+   "maxPpg": 145.7,
+   "eff": 96,
    "sd": 14,
    "roster": 214.5,
-   "score": 0.833,
+   "score": 0.79,
    "parts": {
-    "form": 2.01,
-    "ceiling": 1.3,
-    "spread": 0.68,
+    "form": 2,
+    "ceiling": 1.18,
+    "spread": 0.7,
     "roster": -1.54
    }
   },
@@ -334,18 +334,18 @@
    "losses": 1,
    "ties": 0,
    "pf": 373.1,
-   "pa": 330.87,
+   "pa": 353.29,
    "maxPf": 416.1,
    "ppg": 124.4,
    "maxPpg": 138.7,
    "eff": 89.7,
    "sd": 19,
    "roster": 280.8,
-   "score": 0.788,
+   "score": 0.72,
    "parts": {
-    "form": 0.8,
-    "ceiling": 0.8,
-    "spread": 0.11,
+    "form": 0.72,
+    "ceiling": 0.69,
+    "spread": 0.08,
     "roster": 1.29
    }
   },
@@ -359,23 +359,48 @@
    "losses": 2,
    "ties": 0,
    "pf": 377.36,
-   "pa": 372.06,
-   "maxPf": 406.52,
+   "pa": 397.86,
+   "maxPf": 419.42,
    "ppg": 125.8,
-   "maxPpg": 135.5,
-   "eff": 92.8,
+   "maxPpg": 139.8,
+   "eff": 90,
    "sd": 27.8,
    "roster": 244,
-   "score": 0.259,
+   "score": 0.296,
    "parts": {
-    "form": 0.91,
-    "ceiling": 0.56,
-    "spread": -0.9,
+    "form": 0.84,
+    "ceiling": 0.76,
+    "spread": -0.99,
     "roster": -0.28
    }
   },
   {
    "rank": 5,
+   "move": 3,
+   "userId": "469223780661587968",
+   "manager": "henitals",
+   "teamName": "No more black love ",
+   "wins": 1,
+   "losses": 2,
+   "ties": 0,
+   "pf": 364.06,
+   "pa": 404.48,
+   "maxPf": 408.86,
+   "ppg": 121.4,
+   "maxPpg": 136.3,
+   "eff": 89,
+   "sd": 14.3,
+   "roster": 231.3,
+   "score": 0.259,
+   "parts": {
+    "form": 0.47,
+    "ceiling": 0.51,
+    "spread": 0.66,
+    "roster": -0.82
+   }
+  },
+  {
+   "rank": 6,
    "move": 1,
    "userId": "869712074853523456",
    "manager": "djho57",
@@ -391,37 +416,12 @@
    "eff": 80.9,
    "sd": 4.1,
    "roster": 250,
-   "score": 0.078,
+   "score": 0.008,
    "parts": {
-    "form": -0.8,
-    "ceiling": 0.04,
-    "spread": 1.82,
+    "form": -0.97,
+    "ceiling": -0.05,
+    "spread": 1.9,
     "roster": -0.02
-   }
-  },
-  {
-   "rank": 6,
-   "move": 2,
-   "userId": "469223780661587968",
-   "manager": "henitals",
-   "teamName": "No more black love ",
-   "wins": 1,
-   "losses": 2,
-   "ties": 0,
-   "pf": 338.26,
-   "pa": 404.48,
-   "maxPf": 385.66,
-   "ppg": 112.8,
-   "maxPpg": 128.6,
-   "eff": 87.7,
-   "sd": 7.9,
-   "roster": 231.3,
-   "score": 0.046,
-   "parts": {
-    "form": -0.11,
-    "ceiling": 0.05,
-    "spread": 1.38,
-    "roster": -0.82
    }
   },
   {
@@ -441,11 +441,11 @@
    "eff": 97.5,
    "sd": 24.6,
    "roster": 282.1,
-   "score": -0.045,
+   "score": -0.117,
    "parts": {
-    "form": 0.09,
-    "ceiling": -0.71,
-    "spread": -0.53,
+    "form": -0.04,
+    "ceiling": -0.78,
+    "spread": -0.59,
     "roster": 1.35
    }
   },
@@ -466,17 +466,42 @@
    "eff": 91.5,
    "sd": 37,
    "roster": 260.4,
-   "score": -0.074,
+   "score": -0.165,
    "parts": {
-    "form": 0.36,
-    "ceiling": 0.15,
-    "spread": -1.95,
+    "form": 0.25,
+    "ceiling": 0.05,
+    "spread": -2.11,
     "roster": 0.42
    }
   },
   {
    "rank": 9,
-   "move": 1,
+   "move": -3,
+   "userId": "472225780726755328",
+   "manager": "alexngo1994",
+   "teamName": "Last place",
+   "wins": 2,
+   "losses": 1,
+   "ties": 0,
+   "pf": 321.1,
+   "pa": 301.95,
+   "maxPf": 347.36,
+   "ppg": 107,
+   "maxPpg": 115.8,
+   "eff": 92.4,
+   "sd": 14.3,
+   "roster": 254.3,
+   "score": -0.407,
+   "parts": {
+    "form": -0.72,
+    "ceiling": -0.96,
+    "spread": 0.66,
+    "roster": 0.16
+   }
+  },
+  {
+   "rank": 10,
+   "move": 0,
    "userId": "596094153587216384",
    "manager": "CheeksSlapper",
    "teamName": "Da igual: negro o blanco",
@@ -491,37 +516,12 @@
    "eff": 89.5,
    "sd": 27.9,
    "roster": 226.3,
-   "score": -0.643,
+   "score": -0.731,
    "parts": {
-    "form": -0.43,
-    "ceiling": -0.47,
-    "spread": -0.91,
+    "form": -0.58,
+    "ceiling": -0.55,
+    "spread": -1.01,
     "roster": -1.04
-   }
-  },
-  {
-   "rank": 10,
-   "move": -3,
-   "userId": "472225780726755328",
-   "manager": "alexngo1994",
-   "teamName": "Last place",
-   "wins": 2,
-   "losses": 1,
-   "ties": 0,
-   "pf": 298.68,
-   "pa": 301.95,
-   "maxPf": 340.06,
-   "ppg": 99.6,
-   "maxPpg": 113.4,
-   "eff": 87.8,
-   "sd": 24.7,
-   "roster": 254.3,
-   "score": -0.756,
-   "parts": {
-    "form": -1.14,
-    "ceiling": -1.07,
-    "spread": -0.54,
-    "roster": 0.16
    }
   },
   {
@@ -533,19 +533,19 @@
    "wins": 0,
    "losses": 3,
    "ties": 0,
-   "pf": 297.55,
+   "pf": 306.05,
    "pa": 367.07,
    "maxPf": 358.75,
-   "ppg": 99.2,
+   "ppg": 102,
    "maxPpg": 119.6,
-   "eff": 82.9,
-   "sd": 15.7,
+   "eff": 85.3,
+   "sd": 16.5,
    "roster": 216.4,
-   "score": -0.759,
+   "score": -0.793,
    "parts": {
-    "form": -1.17,
-    "ceiling": -0.61,
-    "spread": 0.49,
+    "form": -1.13,
+    "ceiling": -0.68,
+    "spread": 0.39,
     "roster": -1.46
    }
   },
@@ -559,18 +559,18 @@
    "losses": 2,
    "ties": 0,
    "pf": 287.02,
-   "pa": 320.09,
+   "pa": 328.59,
    "maxPf": 305.84,
    "ppg": 95.7,
    "maxPpg": 101.9,
    "eff": 93.8,
    "sd": 18.2,
    "roster": 267,
-   "score": -0.916,
+   "score": -0.995,
    "parts": {
-    "form": -1.44,
-    "ceiling": -1.91,
-    "spread": 0.2,
+    "form": -1.66,
+    "ceiling": -1.95,
+    "spread": 0.19,
     "roster": 0.7
    }
   }

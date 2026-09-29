@@ -92,24 +92,17 @@ export function summarizeSeason(raw, overrides = {}, players = {}) {
     SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'],
     IDP_FLEX: ['DL', 'LB', 'DB'],
   };
-  // Mid-week, some games have been played and others have not, so the entries
-  // carry partial scores. Counting those as a result gives every team a phantom
-  // extra game at a fraction of its real total. Sleeper's `leg` is the week
-  // currently being played, so a week is settled only once the league is past
-  // it -- or once the season itself is over.
+  // A week is over when the NFL has moved past it. Two weaker signals were tried
+  // first and both misfired: Sleeper's league `leg` lags the real week by a day
+  // or more, so a finished week sat out of the standings; and "every team has a
+  // score" is already true on Sunday afternoon with Monday night still to play,
+  // which counted week 3 a day early and left every figure derived from it low.
+  // Take whichever of the two week counters is further along, so a stale `leg`
+  // cannot hold a finished week back and neither can run ahead of the games.
   const leg = league.settings.leg ?? 1;
-  // `leg` is the safe signal but a slow one: Sleeper had not advanced it by the
-  // Tuesday refresh after week 2, so a finished week sat out of the standings
-  // until the next run two days later. Every team plays every week, so a week
-  // where all twelve entries have scored is over whatever `leg` still says.
-  const allScored = (week) => {
-    const entries = matchups[week] ?? [];
-    return entries.length > 0 && entries.every((e) => (e.points ?? 0) > 0);
-  };
-  // A week the league has not reached yet is never settled, whatever scores
-  // happen to be sitting in it.
-  const settled = (week) =>
-    league.status === 'complete' || week < leg || (week === leg && allScored(week));
+  const nflWeek = raw.state?.season_type === 'regular' ? (raw.state.week ?? 0) : 0;
+  const current = Math.max(leg, nflWeek);
+  const settled = (week) => league.status === 'complete' || week < current;
 
   const slots = (league.roster_positions ?? []).filter((s) => s !== 'BN' && s !== 'IR');
   const bestEleven = (entry) => {
