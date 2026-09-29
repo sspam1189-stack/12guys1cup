@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 4,
- "builtAt": "2026-09-29T13:18:10.020Z",
- "marketPlayers": 142,
+ "builtAt": "2026-09-29T18:00:17.185Z",
+ "marketPlayers": 146,
  "games": [
   {
    "matchupId": 2,
@@ -10,7 +10,7 @@
     "rosterId": 1,
     "userId": "469223780661587968",
     "matchupId": 2,
-    "proj": 122.86,
+    "proj": 120.45,
     "lineup": [
      {
       "id": "4984",
@@ -18,9 +18,9 @@
       "pos": "QB",
       "team": "BUF",
       "opp": "NE",
-      "proj": 24.5,
+      "proj": 24.73,
       "mkt": 0.73,
-      "atd": 0.545
+      "atd": 0.535
      },
      {
       "id": "8138",
@@ -28,9 +28,9 @@
       "pos": "RB",
       "team": "BUF",
       "opp": "NE",
-      "proj": 14.35,
+      "proj": 14.4,
       "mkt": 0.65,
-      "atd": 0.6
+      "atd": 0.608
      },
      {
       "id": "13287",
@@ -38,9 +38,9 @@
       "pos": "RB",
       "team": "ARI",
       "opp": "NYG",
-      "proj": 13.15,
-      "mkt": 0.66,
-      "atd": 0.535
+      "proj": 13.3,
+      "mkt": 0.65,
+      "atd": 0.524
      },
      {
       "id": "7525",
@@ -48,9 +48,9 @@
       "pos": "WR",
       "team": "PHI",
       "opp": "LAR",
-      "proj": 11.43,
-      "mkt": 0.6,
-      "atd": 0.4
+      "proj": 11.49,
+      "mkt": 0.81,
+      "atd": 0.351
      },
      {
       "id": "12519",
@@ -58,7 +58,7 @@
       "pos": "WR",
       "team": "CHI",
       "opp": "NYJ",
-      "proj": 9.44,
+      "proj": 10.33,
       "mkt": 0,
       "atd": null
      },
@@ -68,7 +68,7 @@
       "pos": "WR",
       "team": "BAL",
       "opp": "TEN",
-      "proj": 6.88,
+      "proj": 6.44,
       "mkt": 0,
       "atd": null
      },
@@ -78,7 +78,7 @@
       "pos": "TE",
       "team": "NO",
       "opp": "ATL",
-      "proj": 9.61,
+      "proj": 9.55,
       "mkt": 0,
       "atd": null
      },
@@ -88,7 +88,7 @@
       "pos": "RB",
       "team": "NE",
       "opp": "BUF",
-      "proj": 11.98,
+      "proj": 8.85,
       "mkt": 0,
       "atd": null
      },
@@ -108,7 +108,7 @@
       "pos": "DEF",
       "team": "MIN",
       "opp": "MIA",
-      "proj": 13.66,
+      "proj": 13.5,
       "mkt": 0,
       "atd": null
      }
@@ -118,7 +118,7 @@
     "rosterId": 9,
     "userId": "472225780726755328",
     "matchupId": 2,
-    "proj": 111.23,
+    "proj": 113.38,
     "lineup": [
      {
       "id": "6904",
@@ -126,9 +126,9 @@
       "pos": "QB",
       "team": "PHI",
       "opp": "LAR",
-      "proj": 16.58,
-      "mkt": 0.41,
-      "atd": 0.385
+      "proj": 15.91,
+      "mkt": 0.79,
+      "atd": 0.37
      },
      {
       "id": "4034",
@@ -136,7 +136,7 @@
       "pos": "RB",
       "team": "SF",
       "opp": "DEN",
-      "proj": 16.4,
+      "proj": 16.37,
       "mkt": 0.58,
       "atd": 0.73
      },
@@ -146,8 +146,8 @@
       "pos": "RB",
       "team": "CHI",
       "opp": "NYJ",
-      "proj": 14.84,
-      "mkt": 0.47,
+      "proj": 15.03,
+      "mkt": 0.46,
       "atd": 0.608
      },
      {
@@ -156,8 +156,8 @@
       "pos": "WR",
       "team": "HOU",
       "opp": "DAL",
-      "proj": 12.88,
-      "mkt": 0.69,
+      "proj": 13,
+      "mkt": 0.68,
       "atd": 0.465
      },
      {
@@ -166,9 +166,9 @@
       "pos": "WR",
       "team": "LAR",
       "opp": "PHI",
-      "proj": 10.26,
-      "mkt": 0,
-      "atd": null
+      "proj": 12.65,
+      "mkt": 0.81,
+      "atd": 0.524
      },
      {
       "id": "11632",
@@ -176,9 +176,9 @@
       "pos": "WR",
       "team": "NYG",
       "opp": "ARI",
-      "proj": 10.05,
+      "proj": 10.17,
       "mkt": 0.74,
-      "atd": 0.408
+      "atd": 0.4
      },
      {
       "id": "8110",
@@ -196,7 +196,7 @@
       "pos": "RB",
       "team": "WAS",
       "opp": "IND",
-      "proj": 10.76,
+      "proj": 10.93,
       "mkt": 0.54,
       "atd": 0.488
      },
@@ -206,7 +206,7 @@
       "pos": "K",
       "team": "DET",
       "opp": "CAR",
-      "proj": 7.85,
+      "proj": 7.76,
       "mkt": 0,
       "atd": null
      },
@@ -216,7 +216,7 @@
       "pos": "DEF",
       "team": "CIN",
       "opp": "JAX",
-      "proj": 4.84,
+      "proj": 4.79,
       "mkt": 0,
       "atd": null
      }
@@ -229,7 +229,7 @@
     "rosterId": 2,
     "userId": "595734764493791232",
     "matchupId": 4,
-    "proj": 104.7,
+    "proj": 104.81,
     "lineup": [
      {
       "id": "6797",
@@ -247,9 +247,9 @@
       "pos": "RB",
       "team": "BAL",
       "opp": "TEN",
-      "proj": 18.92,
+      "proj": 19.06,
       "mkt": 0.49,
-      "atd": 0.714
+      "atd": 0.71
      },
      {
       "id": "9226",
@@ -267,7 +267,7 @@
       "pos": "WR",
       "team": "KC",
       "opp": "LV",
-      "proj": 11.17,
+      "proj": 11.19,
       "mkt": 0.46,
       "atd": 0.37
      },
@@ -279,7 +279,7 @@
       "opp": "IND",
       "proj": 8.53,
       "mkt": 0.76,
-      "atd": 0.282
+      "atd": 0.29
      },
      {
       "id": "9487",
@@ -287,9 +287,9 @@
       "pos": "WR",
       "team": "JAX",
       "opp": "CIN",
-      "proj": 13.38,
+      "proj": 13.46,
       "mkt": 0.75,
-      "atd": 0.4
+      "atd": 0.408
      },
      {
       "id": "8130",
@@ -297,9 +297,9 @@
       "pos": "TE",
       "team": "ARI",
       "opp": "NYG",
-      "proj": 14.41,
+      "proj": 14.39,
       "mkt": 0.73,
-      "atd": 0.465
+      "atd": 0.455
      },
      {
       "id": "4217",
@@ -307,9 +307,9 @@
       "pos": "TE",
       "team": "SF",
       "opp": "DEN",
-      "proj": 9.88,
+      "proj": 9.86,
       "mkt": 0.55,
-      "atd": 0.408
+      "atd": 0.4
      },
      {
       "id": "3451",
@@ -317,7 +317,7 @@
       "pos": "K",
       "team": "HOU",
       "opp": "DAL",
-      "proj": 8.85,
+      "proj": 8.76,
       "mkt": 0,
       "atd": null
      },
@@ -337,7 +337,7 @@
     "rosterId": 4,
     "userId": "471856560138612736",
     "matchupId": 4,
-    "proj": 100.76,
+    "proj": 101.45,
     "lineup": [
      {
       "id": "7523",
@@ -345,7 +345,7 @@
       "pos": "QB",
       "team": "JAX",
       "opp": "CIN",
-      "proj": 19,
+      "proj": 18.9,
       "mkt": 0.81,
       "atd": 0.244
      },
@@ -355,9 +355,9 @@
       "pos": "RB",
       "team": "IND",
       "opp": "WAS",
-      "proj": 18.48,
-      "mkt": 0.64,
-      "atd": 0.722
+      "proj": 18.88,
+      "mkt": 0.63,
+      "atd": 0.733
      },
      {
       "id": "8155",
@@ -385,9 +385,9 @@
       "pos": "WR",
       "team": "GB",
       "opp": "TB",
-      "proj": 12.79,
-      "mkt": 0.67,
-      "atd": 0.385
+      "proj": 12.67,
+      "mkt": 0.68,
+      "atd": 0.392
      },
      {
       "id": "5846",
@@ -395,9 +395,9 @@
       "pos": "WR",
       "team": "PIT",
       "opp": "CLE",
-      "proj": 8.25,
+      "proj": 8.38,
       "mkt": 0.71,
-      "atd": 0.299
+      "atd": 0.313
      },
      {
       "id": "12518",
@@ -405,8 +405,8 @@
       "pos": "TE",
       "team": "IND",
       "opp": "WAS",
-      "proj": 10.11,
-      "mkt": 0.71,
+      "proj": 10.28,
+      "mkt": 0.73,
       "atd": 0.392
      },
      {
@@ -415,8 +415,8 @@
       "pos": "RB",
       "team": "CLE",
       "opp": "PIT",
-      "proj": 9.13,
-      "mkt": 0.85,
+      "proj": 9.28,
+      "mkt": 0.86,
       "atd": 0.476
      },
      {
@@ -425,7 +425,7 @@
       "pos": "K",
       "team": "GB",
       "opp": "TB",
-      "proj": 7.27,
+      "proj": 7.31,
       "mkt": 0,
       "atd": null
      },
@@ -435,7 +435,7 @@
       "pos": "DEF",
       "team": "SF",
       "opp": "DEN",
-      "proj": 7.2,
+      "proj": 7.22,
       "mkt": 0,
       "atd": null
      }
@@ -448,7 +448,7 @@
     "rosterId": 3,
     "userId": "467208097522249728",
     "matchupId": 3,
-    "proj": 112.38,
+    "proj": 112.58,
     "lineup": [
      {
       "id": "8183",
@@ -456,7 +456,7 @@
       "pos": "QB",
       "team": "SF",
       "opp": "DEN",
-      "proj": 17.91,
+      "proj": 17.86,
       "mkt": 0.51,
       "atd": 0.235
      },
@@ -466,8 +466,8 @@
       "pos": "RB",
       "team": "KC",
       "opp": "LV",
-      "proj": 16.52,
-      "mkt": 0.63,
+      "proj": 17.1,
+      "mkt": 0.61,
       "atd": 0.643
      },
      {
@@ -476,9 +476,9 @@
       "pos": "RB",
       "team": "TB",
       "opp": "GB",
-      "proj": 10.88,
-      "mkt": 0.75,
-      "atd": 0.465
+      "proj": 11.01,
+      "mkt": 0.74,
+      "atd": 0.455
      },
      {
       "id": "7547",
@@ -486,8 +486,8 @@
       "pos": "WR",
       "team": "DET",
       "opp": "CAR",
-      "proj": 15.35,
-      "mkt": 0.69,
+      "proj": 15.11,
+      "mkt": 0.7,
       "atd": 0.545
      },
      {
@@ -506,7 +506,7 @@
       "pos": "WR",
       "team": "SF",
       "opp": "DEN",
-      "proj": 7.32,
+      "proj": 7.26,
       "mkt": 0,
       "atd": null
      },
@@ -516,7 +516,7 @@
       "pos": "TE",
       "team": "KC",
       "opp": "LV",
-      "proj": 9.41,
+      "proj": 9.43,
       "mkt": 0.54,
       "atd": 0.385
      },
@@ -526,7 +526,7 @@
       "pos": "RB",
       "team": "DEN",
       "opp": "SF",
-      "proj": 7.73,
+      "proj": 7.7,
       "mkt": 0.63,
       "atd": 0.476
      },
@@ -536,7 +536,7 @@
       "pos": "K",
       "team": "BAL",
       "opp": "TEN",
-      "proj": 8.27,
+      "proj": 8.18,
       "mkt": 0,
       "atd": null
      },
@@ -546,7 +546,7 @@
       "pos": "DEF",
       "team": "GB",
       "opp": "TB",
-      "proj": 9.35,
+      "proj": 9.29,
       "mkt": 0,
       "atd": null
      }
@@ -556,7 +556,7 @@
     "rosterId": 7,
     "userId": "471861310779289600",
     "matchupId": 3,
-    "proj": 112.45,
+    "proj": 112.12,
     "lineup": [
      {
       "id": "12545",
@@ -574,8 +574,8 @@
       "pos": "RB",
       "team": "DET",
       "opp": "CAR",
-      "proj": 22.27,
-      "mkt": 0.68,
+      "proj": 22.5,
+      "mkt": 0.66,
       "atd": 0.767
      },
      {
@@ -594,8 +594,8 @@
       "pos": "WR",
       "team": "ATL",
       "opp": "NO",
-      "proj": 12.83,
-      "mkt": 0.56,
+      "proj": 12.63,
+      "mkt": 0.57,
       "atd": 0.364
      },
      {
@@ -604,7 +604,7 @@
       "pos": "WR",
       "team": "LV",
       "opp": "KC",
-      "proj": 7.21,
+      "proj": 7.05,
       "mkt": 0,
       "atd": null
      },
@@ -614,8 +614,8 @@
       "pos": "WR",
       "team": "ARI",
       "opp": "NYG",
-      "proj": 11.44,
-      "mkt": 0.7,
+      "proj": 11.55,
+      "mkt": 0.69,
       "atd": 0.351
      },
      {
@@ -624,9 +624,9 @@
       "pos": "TE",
       "team": "NYG",
       "opp": "ARI",
-      "proj": 9.23,
-      "mkt": 0.71,
-      "atd": 0.294
+      "proj": 9.26,
+      "mkt": 0.72,
+      "atd": 0.303
      },
      {
       "id": "7594",
@@ -634,9 +634,9 @@
       "pos": "RB",
       "team": "CAR",
       "opp": "DET",
-      "proj": 13.87,
-      "mkt": 0.68,
-      "atd": 0.565
+      "proj": 13.86,
+      "mkt": 0.69,
+      "atd": 0.574
      },
      {
       "id": "7839",
@@ -644,7 +644,7 @@
       "pos": "K",
       "team": "CIN",
       "opp": "JAX",
-      "proj": 8.54,
+      "proj": 8.24,
       "mkt": 0,
       "atd": null
      },
@@ -654,7 +654,7 @@
       "pos": "DEF",
       "team": "SEA",
       "opp": "LAC",
-      "proj": 10.93,
+      "proj": 10.9,
       "mkt": 0,
       "atd": null
      }
@@ -667,7 +667,7 @@
     "rosterId": 5,
     "userId": "470142073480146944",
     "matchupId": 5,
-    "proj": 105.89,
+    "proj": 106.25,
     "lineup": [
      {
       "id": "9228",
@@ -675,9 +675,9 @@
       "pos": "QB",
       "team": "CAR",
       "opp": "DET",
-      "proj": 17.59,
+      "proj": 17.35,
       "mkt": 0.88,
-      "atd": 0.175
+      "atd": 0.143
      },
      {
       "id": "8150",
@@ -685,9 +685,9 @@
       "pos": "RB",
       "team": "LAR",
       "opp": "PHI",
-      "proj": 11.38,
-      "mkt": 0.47,
-      "atd": 0.476
+      "proj": 11.8,
+      "mkt": 0.48,
+      "atd": 0.565
      },
      {
       "id": "12507",
@@ -695,8 +695,8 @@
       "pos": "RB",
       "team": "LAC",
       "opp": "SEA",
-      "proj": 9.04,
-      "mkt": 0.7,
+      "proj": 9.27,
+      "mkt": 0.68,
       "atd": 0.545
      },
      {
@@ -715,8 +715,8 @@
       "pos": "WR",
       "team": "DEN",
       "opp": "SF",
-      "proj": 9.23,
-      "mkt": 0.62,
+      "proj": 9.36,
+      "mkt": 0.61,
       "atd": 0.328
      },
      {
@@ -725,7 +725,7 @@
       "pos": "WR",
       "team": "MIN",
       "opp": "MIA",
-      "proj": 9.43,
+      "proj": 9.12,
       "mkt": 0,
       "atd": null
      },
@@ -735,9 +735,9 @@
       "pos": "TE",
       "team": "DET",
       "opp": "CAR",
-      "proj": 8.74,
-      "mkt": 0.78,
-      "atd": 0.351
+      "proj": 8.79,
+      "mkt": 0.8,
+      "atd": 0.333
      },
      {
       "id": "11624",
@@ -745,7 +745,7 @@
       "pos": "WR",
       "team": "KC",
       "opp": "LV",
-      "proj": 8.03,
+      "proj": 8.1,
       "mkt": 0,
       "atd": null
      },
@@ -755,7 +755,7 @@
       "pos": "K",
       "team": "DAL",
       "opp": "HOU",
-      "proj": 8.85,
+      "proj": 8.76,
       "mkt": 0,
       "atd": null
      },
@@ -765,7 +765,7 @@
       "pos": "DEF",
       "team": "NE",
       "opp": "BUF",
-      "proj": 4.42,
+      "proj": 4.52,
       "mkt": 0,
       "atd": null
      }
@@ -775,7 +775,7 @@
     "rosterId": 12,
     "userId": "869377838724317184",
     "matchupId": 5,
-    "proj": 101.68,
+    "proj": 102.82,
     "lineup": [
      {
       "id": "4943",
@@ -803,9 +803,9 @@
       "pos": "RB",
       "team": "NYG",
       "opp": "ARI",
-      "proj": 12.85,
-      "mkt": 0.71,
-      "atd": 0.565
+      "proj": 13.22,
+      "mkt": 0.7,
+      "atd": 0.574
      },
      {
       "id": "9493",
@@ -813,7 +813,7 @@
       "pos": "WR",
       "team": "LAR",
       "opp": "PHI",
-      "proj": 15.79,
+      "proj": 15.7,
       "mkt": 0,
       "atd": null
      },
@@ -823,7 +823,7 @@
       "pos": "WR",
       "team": "NYJ",
       "opp": "CHI",
-      "proj": 13.41,
+      "proj": 13.39,
       "mkt": 0.55,
       "atd": 0.465
      },
@@ -833,9 +833,9 @@
       "pos": "WR",
       "team": "DET",
       "opp": "CAR",
-      "proj": 8.28,
-      "mkt": 0.76,
-      "atd": 0.333
+      "proj": 8.5,
+      "mkt": 0.78,
+      "atd": 0.299
      },
      {
       "id": "5967",
@@ -843,9 +843,9 @@
       "pos": "RB",
       "team": "TEN",
       "opp": "BAL",
-      "proj": 8.42,
-      "mkt": 0.8,
-      "atd": 0.426
+      "proj": 8.52,
+      "mkt": 0.79,
+      "atd": 0.417
      },
      {
       "id": "6650",
@@ -853,7 +853,7 @@
       "pos": "K",
       "team": "TB",
       "opp": "GB",
-      "proj": 7.16,
+      "proj": 7.69,
       "mkt": 0,
       "atd": null
      },
@@ -863,7 +863,7 @@
       "pos": "DEF",
       "team": "KC",
       "opp": "LV",
-      "proj": 8.65,
+      "proj": 8.68,
       "mkt": 0,
       "atd": null
      }
@@ -876,7 +876,7 @@
     "rosterId": 6,
     "userId": "596094153587216384",
     "matchupId": 6,
-    "proj": 111.93,
+    "proj": 109.97,
     "lineup": [
      {
       "id": "4881",
@@ -884,9 +884,9 @@
       "pos": "QB",
       "team": "BAL",
       "opp": "TEN",
-      "proj": 19.02,
-      "mkt": 0.59,
-      "atd": 0.345
+      "proj": 18.79,
+      "mkt": 0.6,
+      "atd": 0.351
      },
      {
       "id": "9224",
@@ -894,8 +894,8 @@
       "pos": "RB",
       "team": "CIN",
       "opp": "JAX",
-      "proj": 15.8,
-      "mkt": 0.64,
+      "proj": 15.51,
+      "mkt": 0.65,
       "atd": 0.63
      },
      {
@@ -904,8 +904,8 @@
       "pos": "RB",
       "team": "HOU",
       "opp": "DAL",
-      "proj": 13.55,
-      "mkt": 0.54,
+      "proj": 12.91,
+      "mkt": 0.57,
       "atd": 0.583
      },
      {
@@ -914,7 +914,7 @@
       "pos": "WR",
       "team": "MIN",
       "opp": "MIA",
-      "proj": 14.07,
+      "proj": 13.56,
       "mkt": 0,
       "atd": null
      },
@@ -924,9 +924,9 @@
       "pos": "WR",
       "team": "TB",
       "opp": "GB",
-      "proj": 8.94,
-      "mkt": 0.79,
-      "atd": 0.274
+      "proj": 8.88,
+      "mkt": 0.78,
+      "atd": 0.267
      },
      {
       "id": "5927",
@@ -934,9 +934,9 @@
       "pos": "WR",
       "team": "WAS",
       "opp": "IND",
-      "proj": 9.32,
+      "proj": 9.42,
       "mkt": 0.82,
-      "atd": 0.294
+      "atd": 0.303
      },
      {
       "id": "10236",
@@ -944,9 +944,9 @@
       "pos": "TE",
       "team": "BUF",
       "opp": "NE",
-      "proj": 8.62,
-      "mkt": 0.8,
-      "atd": 0.364
+      "proj": 8.51,
+      "mkt": 0.81,
+      "atd": 0.37
      },
      {
       "id": "8134",
@@ -954,8 +954,8 @@
       "pos": "WR",
       "team": "BUF",
       "opp": "NE",
-      "proj": 5.99,
-      "mkt": 0.85,
+      "proj": 5.93,
+      "mkt": 0.86,
       "atd": 0.313
      },
      {
@@ -964,7 +964,7 @@
       "pos": "K",
       "team": "SEA",
       "opp": "LAC",
-      "proj": 8.62,
+      "proj": 8.44,
       "mkt": 0,
       "atd": null
      },
@@ -974,7 +974,7 @@
       "pos": "DEF",
       "team": "LAR",
       "opp": "PHI",
-      "proj": 8,
+      "proj": 8.02,
       "mkt": 0,
       "atd": null
      }
@@ -984,7 +984,7 @@
     "rosterId": 11,
     "userId": "596864194553368576",
     "matchupId": 6,
-    "proj": 114.05,
+    "proj": 114.93,
     "lineup": [
      {
       "id": "6770",
@@ -992,7 +992,7 @@
       "pos": "QB",
       "team": "CIN",
       "opp": "JAX",
-      "proj": 18.31,
+      "proj": 18.35,
       "mkt": 0.86,
       "atd": 0.095
      },
@@ -1002,8 +1002,8 @@
       "pos": "RB",
       "team": "PHI",
       "opp": "LAR",
-      "proj": 13.03,
-      "mkt": 0.56,
+      "proj": 13.21,
+      "mkt": 0.57,
       "atd": 0.488
      },
      {
@@ -1032,8 +1032,8 @@
       "pos": "WR",
       "team": "CIN",
       "opp": "JAX",
-      "proj": 11.55,
-      "mkt": 0.71,
+      "proj": 11.87,
+      "mkt": 0.7,
       "atd": 0.408
      },
      {
@@ -1042,9 +1042,9 @@
       "pos": "WR",
       "team": "CAR",
       "opp": "DET",
-      "proj": 10.89,
+      "proj": 11.03,
       "mkt": 0.81,
-      "atd": 0.465
+      "atd": 0.435
      },
      {
       "id": "3214",
@@ -1054,17 +1054,17 @@
       "opp": "BUF",
       "proj": 6.41,
       "mkt": 0.76,
-      "atd": 0.286
+      "atd": 0.282
      },
      {
-      "id": "11646",
-      "name": "Jalen Coker",
-      "pos": "WR",
-      "team": "CAR",
-      "opp": "DET",
-      "proj": 11.97,
-      "mkt": 0,
-      "atd": null
+      "id": "4199",
+      "name": "Aaron Jones",
+      "pos": "RB",
+      "team": "MIN",
+      "opp": "MIA",
+      "proj": 12.66,
+      "mkt": 0.49,
+      "atd": 0.565
      },
      {
       "id": "11786",
@@ -1072,7 +1072,7 @@
       "pos": "K",
       "team": "JAX",
       "opp": "CIN",
-      "proj": 8.66,
+      "proj": 8.11,
       "mkt": 0,
       "atd": null
      },
@@ -1082,7 +1082,7 @@
       "pos": "DEF",
       "team": "HOU",
       "opp": "DAL",
-      "proj": 6.73,
+      "proj": 6.79,
       "mkt": 0,
       "atd": null
      }
@@ -1095,7 +1095,7 @@
     "rosterId": 8,
     "userId": "471865126467661824",
     "matchupId": 1,
-    "proj": 123.56,
+    "proj": 123.36,
     "lineup": [
      {
       "id": "3163",
@@ -1103,7 +1103,7 @@
       "pos": "QB",
       "team": "DET",
       "opp": "CAR",
-      "proj": 17.53,
+      "proj": 17.45,
       "mkt": 0.87,
       "atd": 0.091
      },
@@ -1113,7 +1113,7 @@
       "pos": "RB",
       "team": "ATL",
       "opp": "NO",
-      "proj": 19.83,
+      "proj": 19.88,
       "mkt": 0.6,
       "atd": 0.667
      },
@@ -1123,8 +1123,8 @@
       "pos": "RB",
       "team": "JAX",
       "opp": "CIN",
-      "proj": 10.8,
-      "mkt": 0.64,
+      "proj": 10.68,
+      "mkt": 0.65,
       "atd": 0.524
      },
      {
@@ -1133,8 +1133,8 @@
       "pos": "WR",
       "team": "NO",
       "opp": "ATL",
-      "proj": 15.28,
-      "mkt": 0.51,
+      "proj": 15.16,
+      "mkt": 0.52,
       "atd": 0.444
      },
      {
@@ -1143,19 +1143,19 @@
       "pos": "WR",
       "team": "BAL",
       "opp": "TEN",
-      "proj": 13.55,
-      "mkt": 0.5,
+      "proj": 12.99,
+      "mkt": 0.52,
       "atd": 0.377
      },
      {
-      "id": "9754",
-      "name": "Quentin Johnston",
+      "id": "3634",
+      "name": "Kalif Raymond",
       "pos": "WR",
-      "team": "LAC",
-      "opp": "SEA",
-      "proj": 6.11,
-      "mkt": 0.73,
-      "atd": 0.235
+      "team": "CHI",
+      "opp": "NYJ",
+      "proj": 8.12,
+      "mkt": 0,
+      "atd": null
      },
      {
       "id": "11604",
@@ -1163,19 +1163,19 @@
       "pos": "TE",
       "team": "LV",
       "opp": "KC",
-      "proj": 13.59,
-      "mkt": 0.5,
+      "proj": 13.45,
+      "mkt": 0.51,
       "atd": 0.357
      },
      {
-      "id": "5001",
-      "name": "Dalton Schultz",
-      "pos": "TE",
-      "team": "HOU",
-      "opp": "DAL",
-      "proj": 8.18,
-      "mkt": 0,
-      "atd": null
+      "id": "5045",
+      "name": "Courtland Sutton",
+      "pos": "WR",
+      "team": "DEN",
+      "opp": "SF",
+      "proj": 7.5,
+      "mkt": 0.51,
+      "atd": 0.278
      },
      {
       "id": "8259",
@@ -1183,7 +1183,7 @@
       "pos": "K",
       "team": "LAC",
       "opp": "SEA",
-      "proj": 7.52,
+      "proj": 6.97,
       "mkt": 0,
       "atd": null
      },
@@ -1193,7 +1193,7 @@
       "pos": "DEF",
       "team": "BAL",
       "opp": "TEN",
-      "proj": 11.17,
+      "proj": 11.16,
       "mkt": 0,
       "atd": null
      }
@@ -1203,7 +1203,7 @@
     "rosterId": 10,
     "userId": "869712074853523456",
     "matchupId": 1,
-    "proj": 111.4,
+    "proj": 111.58,
     "lineup": [
      {
       "id": "3294",
@@ -1211,9 +1211,9 @@
       "pos": "QB",
       "team": "DAL",
       "opp": "HOU",
-      "proj": 17.1,
+      "proj": 17.14,
       "mkt": 0.85,
-      "atd": 0.133
+      "atd": 0.167
      },
      {
       "id": "7588",
@@ -1231,9 +1231,9 @@
       "pos": "RB",
       "team": "SEA",
       "opp": "LAC",
-      "proj": 9.63,
+      "proj": 9.57,
       "mkt": 0.55,
-      "atd": 0.545
+      "atd": 0.512
      },
      {
       "id": "7564",
@@ -1241,9 +1241,9 @@
       "pos": "WR",
       "team": "CIN",
       "opp": "JAX",
-      "proj": 15.3,
-      "mkt": 0.7,
-      "atd": 0.524
+      "proj": 15.38,
+      "mkt": 0.71,
+      "atd": 0.535
      },
      {
       "id": "8137",
@@ -1251,8 +1251,8 @@
       "pos": "WR",
       "team": "DAL",
       "opp": "HOU",
-      "proj": 10.34,
-      "mkt": 0.82,
+      "proj": 10.46,
+      "mkt": 0.81,
       "atd": 0.357
      },
      {
@@ -1261,8 +1261,8 @@
       "pos": "WR",
       "team": "IND",
       "opp": "WAS",
-      "proj": 11.62,
-      "mkt": 0.79,
+      "proj": 11.6,
+      "mkt": 0.8,
       "atd": 0.345
      },
      {
@@ -1271,9 +1271,9 @@
       "pos": "TE",
       "team": "GB",
       "opp": "TB",
-      "proj": 7.31,
-      "mkt": 0.72,
-      "atd": 0.294
+      "proj": 7.25,
+      "mkt": 0.73,
+      "atd": 0.27
      },
      {
       "id": "4983",
@@ -1281,8 +1281,8 @@
       "pos": "WR",
       "team": "BUF",
       "opp": "NE",
-      "proj": 10.88,
-      "mkt": 0.71,
+      "proj": 10.98,
+      "mkt": 0.7,
       "atd": 0.37
      },
      {
@@ -1291,7 +1291,7 @@
       "pos": "K",
       "team": "KC",
       "opp": "LV",
-      "proj": 8.42,
+      "proj": 8.36,
       "mkt": 0,
       "atd": null
      },
@@ -1301,7 +1301,7 @@
       "pos": "DEF",
       "team": "NYG",
       "opp": "ARI",
-      "proj": 7.32,
+      "proj": 7.36,
       "mkt": 0,
       "atd": null
      }
