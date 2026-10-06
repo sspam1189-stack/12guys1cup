@@ -8,7 +8,7 @@
  },
  "settings": {
   "best_ball": 0,
-  "last_report": 3,
+  "last_report": 4,
   "waiver_budget": 200,
   "disable_adds": 0,
   "divisions": 0,
@@ -27,7 +27,7 @@
   "playoff_type": 0,
   "taxi_slots": 0,
   "sub_start_time_eligibility": 0,
-  "last_scored_leg": 3,
+  "last_scored_leg": 4,
   "daily_waivers_days": 1093,
   "playoff_week_start": 15,
   "waiver_clear_days": 1,
@@ -60,9 +60,11 @@
   "daily_waivers_last_ran": 8
  },
  "avatar": "85191aaca12ef4baf9310df437b6ec34",
+ "company_id": null,
  "sport": "nfl",
  "season_type": "regular",
  "season": "2026",
+ "last_message_id": "1413219349765894144",
  "shard": 275,
  "scoring_settings": {
   "sack": 1,
@@ -130,21 +132,23 @@
   "pts_allow_7_13": 13,
   "st_ff": 1
  },
- "company_id": null,
- "last_message_id": "1412363060743557120",
- "draft_id": "1382479927412015104",
  "last_author_avatar": null,
  "last_author_display_name": "sys",
  "last_author_id": "166666666666666666",
  "last_author_is_bot": true,
  "last_message_attachment": null,
  "last_message_text_map": null,
- "last_message_time": 1791096103419,
+ "last_message_time": 1791300258632,
  "last_pinned_message_id": "1405454883234062336",
  "last_read_id": null,
+ "draft_id": "1382479927412015104",
  "league_id": "1382479927399419904",
  "previous_league_id": "1180086415546798080",
+ "bracket_id": null,
+ "bracket_overrides_id": null,
  "group_id": null,
+ "loser_bracket_id": null,
+ "loser_bracket_overrides_id": null,
  "roster_positions": [
   "QB",
   "RB",
@@ -162,9 +166,5 @@
   "BN",
   "BN"
  ],
- "bracket_id": null,
- "bracket_overrides_id": null,
- "loser_bracket_id": null,
- "loser_bracket_overrides_id": null,
  "total_rosters": 12
 }
