@@ -54,7 +54,7 @@
   "trade_review_days": 1,
   "bench_lock": 1,
   "offseason_adds": 0,
-  "leg": 8,
+  "leg": 9,
   "reserve_slots": 1,
   "reserve_allow_cov": 1,
   "daily_waivers_last_ran": 8
@@ -129,9 +129,9 @@
  },
  "season": "2026",
  "season_type": "regular",
- "shard": 275,
  "sport": "nfl",
- "last_message_id": "1423381374261288960",
+ "shard": 275,
+ "last_message_id": "1424209695341588480",
  "draft_id": "1382479927412015104",
  "last_author_avatar": null,
  "last_author_display_name": "sys",
@@ -139,11 +139,12 @@
  "last_author_is_bot": true,
  "last_message_attachment": null,
  "last_message_text_map": null,
- "last_message_time": 1793723074073,
+ "last_message_time": 1793920561207,
  "last_pinned_message_id": "1405454883234062336",
+ "last_read_id": null,
  "league_id": "1382479927399419904",
  "previous_league_id": "1180086415546798080",
- "last_read_id": null,
+ "group_id": null,
  "bracket_id": null,
  "bracket_overrides_id": null,
  "roster_positions": [
@@ -163,7 +164,6 @@
   "BN",
   "BN"
  ],
- "group_id": null,
  "loser_bracket_id": null,
  "loser_bracket_overrides_id": null,
  "total_rosters": 12
